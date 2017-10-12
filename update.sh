@@ -1,6 +1,6 @@
 hexo clean
-hexo g && gulp
+hexo g
 hexo deploy
-git add .
+git add -A
 git commit -m 'update hexo backup'
 git push origin hexo
