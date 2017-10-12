@@ -104,9 +104,9 @@ menu_icons:
 
 # Schemes
 # scheme: Muse
-scheme: Mist
+# scheme: Mist
 # scheme: Pisces
-# scheme: Gemini
+scheme: Gemini
 
 
 # ---------------------------------------------------------------
@@ -118,9 +118,12 @@ scheme: Mist
 # Key is the link label showing to end users.
 # Value before `||` delimeter is the target permalink.
 # Value after `||` delimeter is the name of FontAwesome icon. If icon (with or without delimeter) is not specified, globe icon will be loaded.
-#social:
-  #GitHub: https://github.com/yourname || github
-  #E-Mail: mailto:yourname@gmail.com || envelope
+social:
+  GitHub: https://github.com/YunYouJun || github
+  E-Mail: mailto:me@yunyoujun.cn || envelope
+  Weibo: http://weibo.com/jizhideyunyoujun || weibo
+  bilibili: https://space.bilibili.com/1579790 || stop
+  Wordpress: http://www.yunyoujun.cn || wordpress
   #Google: https://plus.google.com/yourname || google
   #Twitter: https://twitter.com/yourname || twitter
   #FB Page: https://www.facebook.com/yourname || facebook
@@ -388,16 +391,21 @@ valine:
 # Gitment
 # Introduction: https://imsun.net/posts/gitment-introduction/
 gitment:
-  enable: false
+  enable: true
   mint: true # RECOMMEND, A mint on Gitment, to support count, language and proxy_gateway
   count: true # Show comments count in post meta area
   lazy: false # Comments lazy loading with a button
   cleanly: false # Hide 'Powered by ...' on footer, and more
-  language: zh-Hans # Force language, or auto switch by theme
-  github_user: # MUST HAVE, Your Github ID
-  github_repo: # MUST HAVE, The repo you use to store Gitment comments
-  client_id:   # MUST HAVE, Github client id for the Gitment
-  client_secret: # EITHER this or proxy_gateway, Github access secret token for the Gitment
+  language: zh-Hans
+  # Force language, or auto switch by theme
+  github_user: YunYouJun
+  # MUST HAVE, Your Github ID
+  github_repo: hexo-blog-comment
+  # MUST HAVE, The repo you use to store Gitment comments
+  client_id: '52626b3948c0467c8ac5'
+  # MUST HAVE, Github client id for the Gitment
+  client_secret: 'c7d1cb09c82a8848a649ab713ea1277f1b4b07d9'
+  # EITHER this or proxy_gateway, Github access secret token for the Gitment
   proxy_gateway: # Address of api proxy, See: https://github.com/aimingoo/intersect
   redirect_protocol: # Protocol of redirect_uri with force_redirect_protocol when mint enabled
 
