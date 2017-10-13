@@ -108,7 +108,7 @@ jsonContent:
       tags: true
 
 algolia:
-  appId: 'CJXXAGRCYN'
+  applicationID: 'CJXXAGRCYN'
   apiKey: '6e0b4848221994ad8cfac232530e0b72'
   adminApiKey: '736c166e953237acd3218a02e503c96c'
   indexName: 'my-hexo-blog'
