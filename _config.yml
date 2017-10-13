@@ -74,11 +74,18 @@ pagination_dir: page
 ## Themes: https://hexo.io/themes/
 theme: next
 
+feed: # RSS订阅插件
+  type: atom
+  path: atom.xml
+  limit: 0
+
 # Deployment
 ## Docs: https://hexo.io/docs/deployment.html
 deploy:
   type: git
-  repository: https://github.com/YunYouJun/yunyoujun.github.io.git
+  repository: 
+    github: https://github.com/YunYouJun/yunyoujun.github.io.git
+    coding: https://git.coding.net/YunYouJun/yunyoujun.coding.me.git
   branch: master
 
 jsonContent:
@@ -99,3 +106,15 @@ jsonContent:
       excerpt: false
       categories: false
       tags: true
+
+algolia:
+  appId: 'CJXXAGRCYN'
+  apiKey: '6e0b4848221994ad8cfac232530e0b72'
+  adminApiKey: '736c166e953237acd3218a02e503c96c'
+  indexName: 'my-hexo-blog'
+  chunkSize: 5000
+  fields:
+    - title
+    - slug
+    - path
+    - content:strip
