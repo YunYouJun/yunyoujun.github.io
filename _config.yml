@@ -76,6 +76,9 @@ pagination_dir: page
 # Extensions
 ## Plugins: https://hexo.io/plugins/
 ## Themes: https://hexo.io/themes/
+plugins:
+  - hexo-algoliasearch
+
 theme: next
 
 feed: # RSS订阅插件
@@ -93,13 +96,18 @@ deploy:
   branch: master
 
 algolia:
-  applicationID: 'CJXXAGRCYN'
+  appId: 'CJXXAGRCYN'
   apiKey: '6e0b4848221994ad8cfac232530e0b72'
   adminApiKey: '736c166e953237acd3218a02e503c96c'
   indexName: 'my-hexo-blog'
   chunkSize: 5000
-  fields:
-    - title
+  fields:   
+    - excerpt
+    - excerpt:strip
+    - gallery
+    - permalink
+    - photos
     - slug
-    - path
-    - content:strip
+    - tags
+    - title
+    # - content:strip

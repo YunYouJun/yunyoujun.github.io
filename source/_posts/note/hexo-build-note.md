@@ -10,6 +10,7 @@ date: 2017-10-13 12:40:32
 ---
 
 > Wordpress 你放心，我暂时是不会抛弃你的。
+- 2017.12.11 抛弃
 
 * * *
 
@@ -44,42 +45,70 @@ date: 2017-10-13 12:40:32
 *   在本地的 GitHub Pages 的项目(xxx.github.io)中,通过 `git bash` 建立新的分支 hexo
 (可以现在 GitHub 上新建再 clone 自自己的文件夹)
 
-    git checkout -b hexo
-    `</pre>
+```
+git checkout -b hexo
+```
 
 *   `git checkout hexo` 切换至 hexo 分支
 *   此后对 hexo 源文件的配置修改等操作，默认在此分支下操作即可
 *   将修改推送至远程分支
 
-    <pre class="line-numbers prism-highlight" data-start="1">`git add -A
-    git commit -m 'update hexo backup'
-    git push origin hexo
-    `</pre>
+```
+git add -A
+git commit -m 'update hexo backup'
+git push origin hexo
+```
 
     #### 每次命令执行繁琐，使用批处理
 
 *   在 Hexo 根目录下新建批处理文件 `update.sh`,并编辑如下内容。
 
-    <pre class="line-numbers prism-highlight" data-start="1">`hexo clean
+    ```
+    hexo clean
     hexo g
     hexo deploy
     git add -A
     git commit -m 'update hexo backup'
     git push origin hexo
-    `</pre>
+    ```
 
     (作用分别是清除缓存重新部署 Hexo ，和备份 Hexo 源文件。)
 
 *   在 Hexo 根目录下，通过如下命令执行。
 
-    <pre class="line-numbers prism-highlight" data-start="1">`./update.sh
+    ```
+    ./update.sh
+    ```
 
-#### [集成 Algolia 搜索插件](https://jobbym.github.io/2017/01/16/Hexo%E9%9B%86%E6%88%90Algolia%E6%90%9C%E7%B4%A2%E6%8F%92%E4%BB%B6/)
+#### [集成 Algolia 搜索插件](https://www.npmjs.com/package/hexo-algoliasearch)
 
 [**Algolia**](https://www.algolia.com/)
 The Most Reliable Platform for Building Search.
 
-Hexo 集成 Algolia 搜索插件 ( npm 中 algolia 插件已经更新到 `1.2.3`，不过 `Hexo 5.1.3` 中集成的得用 `0.2.0` 版本)
+在 hexo 的 _config.yml 文件中，添加 algolia 配置。
+
+```
+algolia:
+  appId: 'xxx'
+  apiKey: 'xxx'
+  adminApiKey: 'xxx'
+  indexName: 'my-hexo-blog' // 填写在 aloglia 中设置的名称
+  chunkSize: 5000
+  fields:   
+    - excerpt
+    - excerpt:strip
+    - gallery
+    - permalink
+    - photos
+    - slug
+    - tags
+    - title
+```
+
+```
+npm install hexo-algoliasearch --save // 使用 npm 安装 hexo-algoliasearch 插件
+hexo algolia // 生成index
+```
 
 #### 为 Next 主题添加阅读次数统计
 
