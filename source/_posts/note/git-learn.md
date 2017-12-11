@@ -18,10 +18,19 @@ date: 2017-08-21 16:46:13
 
 * * *
 
-#### 修改远程仓库地址
+#### 远程仓库
 
 *   删除远程仓库地址： `git remote rm origin`
 *   增加远程仓库地址： `git remote add origin git@github.com:xxx/xxx.git`
+( origin 为远程仓库命名)
+* 查看远程库信息： `git remote -v`
+* 关联多个远程仓库: 
+```
+git remote rm origin
+git remote add github git@github.com:xxx/xxx.git
+git remote add gitee git@gitee.com:xxx/xxx.git
+git remote add coding git@git.coding.net:xxx/xxx.git
+```
 
 * * *
 
