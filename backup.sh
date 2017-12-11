@@ -1,3 +1,4 @@
 git add -A
 git commit -m 'hexo backup'
-git push origin hexo
+git push github hexo
+git push coding hexo
