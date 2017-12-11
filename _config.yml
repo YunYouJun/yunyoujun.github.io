@@ -3,19 +3,23 @@
 ## Source: https://github.com/hexojs/hexo/
 
 # Site
-title: Hexo
-subtitle:
-description:
-author: John Doe
-language:
-timezone:
+title: 云浦之南
+subtitle: All at sea.
+description: 云游君的小站~
+author: YunYouJun
+language: zh-Hans
+timezone: Asia/Shanghai
 
 # URL
 ## If your site is put in a subdirectory, set url as 'http://yoursite.com/child' and root as '/child/'
-url: http://yoursite.com
+url: http://yunyoujun.cn
 root: /
-permalink: :year/:month/:day/:title/
+permalink:
+  :title
+  # :category/:title 
+  # :year/:month/:day/:title/
 permalink_defaults:
+  lang: en
 
 # Directory
 source_dir: source
@@ -25,7 +29,7 @@ archive_dir: archives
 category_dir: categories
 code_dir: downloads/code
 i18n_dir: :lang
-skip_render:
+skip_render: README.md
 
 # Writing
 new_post_name: :title.md # File name of new posts
@@ -49,7 +53,7 @@ highlight:
 # order_by: Posts order. (Order by date descending by default)
 index_generator:
   path: ''
-  per_page: 10
+  per_page: 7
   order_by: -date
   
 # Category & Tag
@@ -72,9 +76,41 @@ pagination_dir: page
 # Extensions
 ## Plugins: https://hexo.io/plugins/
 ## Themes: https://hexo.io/themes/
-theme: landscape
+
+theme: next
+
+feed: # RSS订阅插件
+  type: atom
+  path: atom.xml
+  limit: 0
 
 # Deployment
 ## Docs: https://hexo.io/docs/deployment.html
+# deploy:
+#   type: git
+#   repo: 
+#     github: https://github.com/YunYouJun/yunyoujun.github.io.git,master
+#     coding: https://git.coding.net/YunYouJun/yunyoujun.coding.me.git,master
+#   message: 
+#   extend_dirs: 
 deploy:
-  type:
+  type: git
+  repository: https://github.com/YunYouJun/yunyoujun.github.io
+  branch: master    
+
+
+algolia:
+  appId: 'CJXXAGRCYN'
+  apiKey: '6e0b4848221994ad8cfac232530e0b72'
+  adminApiKey: '736c166e953237acd3218a02e503c96c'
+  indexName: 'my-hexo-blog'
+  chunkSize: 5000
+  fields:   
+    - excerpt
+    - excerpt:strip
+    - gallery
+    - permalink
+    - photos
+    - slug
+    - tags
+    - title
