@@ -3,15 +3,16 @@ title: JSRUN 前端在线编辑器
 tags:
   - 分享
   - 前端
-id: 545
 categories:
-  - 朋友吃安利吗？
+  - 云游的大安利
 date: 2017-10-16 20:29:00
 ---
 
 # [JSRUN](http://jsrun.net/)
 
 [JSRUN](http://jsrun.net/) 是一个很新的，类似于 [JSFiddle](https://jsfiddle.net/) 的前端在线编辑平台。
+
+<!-- more -->
 
 前不久看慕课网上的一些教程，看到讲师用的是 [codepen](https://codepen.io/)，将 html 和 css 以及 javascript 的代码编辑栏，还有**预览效果**都集成在了一个页面上，写前端一些东西很是方便。
 

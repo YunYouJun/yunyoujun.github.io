@@ -3,7 +3,6 @@ title: 临摹一只智障女神∠( ᐛ 」∠)＿
 tags:
   - 作品
   - 瞎鸡儿画
-id: 525
 categories:
   - 云游的小画册
 date: 2017-08-25 15:05:26
@@ -13,7 +12,8 @@ date: 2017-08-25 15:05:26
 
 [![阿库娅](http://media.yunyoujun.cn/draw/konosuba-aqua.jpg "阿库娅")](http://media.yunyoujun.cn/draw/konosuba-aqua.jpg "阿库娅")
 
-* * *
+<!-- more -->
+
 **原图：**
 
 [![原图](http://media.yunyoujun.cn/draw/96.png "原图")](http://media.yunyoujun.cn/draw/96.png "原图")

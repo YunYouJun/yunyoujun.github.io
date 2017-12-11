@@ -5,7 +5,7 @@ tags:
   - 分享
 id: 537
 categories:
-  - 朋友吃安利吗？
+  - 云游的大安利
 date: 2017-10-06 15:56:20
 ---
 
@@ -16,6 +16,7 @@ NPM是随同NodeJS一起安装的包管理工具，能解决NodeJS代码部署�
 
 摘自：[http://www.runoob.com/nodejs/nodejs-npm.html](http://www.runoob.com/nodejs/nodejs-npm.html)
 
+<!-- more -->
 * * *
 
 > nvm
