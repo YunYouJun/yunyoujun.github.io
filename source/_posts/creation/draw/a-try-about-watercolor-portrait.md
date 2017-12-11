@@ -4,7 +4,6 @@ tags:
   - 作品
   - 原创
   - 瞎鸡儿画
-id: 344
 categories:
   - 云游的小画册
 date: 2017-07-12 21:15:06
@@ -16,4 +15,4 @@ http://tieba.baidu.com/p/4735600472
 
 颜色可能还是显得脏，=w=第一次尝试水彩风格加原创。（<del>自我满足感还是有的</del>）
 
-![头像](http://www.yunyoujun.cn/wp-content/uploads/2017/07/duo-water-2.jpg "头像")
+![头像](http://media.yunyoujun.cn/draw/duo-water-2.jpg)

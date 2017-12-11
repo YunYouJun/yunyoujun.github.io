@@ -2,7 +2,8 @@
 title: 记Laravel线上部署的坑
 tags:
   - 学习
-id: 511
+  - Laravel
+  - 笔记
 categories:
   - 云游的小笔记
 date: 2017-08-20 22:48:22
@@ -12,7 +13,9 @@ date: 2017-08-20 22:48:22
 > 
 >   [lnmp一键安装包](http://www.yunyoujun.cn/2017/08/20/lnmp%E4%B8%80%E9%94%AE%E5%AE%89%E8%A3%85%E5%8C%85/)
 
-* * *
+<!-- more -->
+
+---
 > **1.php函数功能被关闭**
 
 *   [Symfony\Component\Process\Exception\RuntimeException]

@@ -2,9 +2,8 @@
 title: LNMP一键安装包
 tags:
   - 分享
-id: 510
 categories:
-  - 朋友吃安利吗？
+  - 云游的大安利
 date: 2017-08-20 19:33:25
 ---
 
@@ -17,6 +16,8 @@ date: 2017-08-20 19:33:25
 直到有一天，我发现了所谓的一键（<del>女装</del>）安装包。
 
 > [https://lnmp.org/](https://lnmp.org/)
+
+<!-- more -->
 
 **使用方法：**
 [https://lnmp.org/install.html](https://lnmp.org/install.html)

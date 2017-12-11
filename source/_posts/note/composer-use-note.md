@@ -2,12 +2,14 @@
 title: Composer使用笔记
 tags:
   - 学习
-id: 530
+  - 笔记
+  - php
 categories:
-  - 未分类
+  - 云游的小笔记
 date: 2017-09-02 18:55:29
 ---
 
+<!-- more -->
 > #### autoload
 
 在 `composer.json` 中找到 `autoload` 字段

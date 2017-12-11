@@ -3,13 +3,15 @@ title: Laravel 使用笔记
 tags:
   - php
   - 学习
-id: 517
+  - Laravel
 categories:
   - 云游的小笔记
 date: 2017-08-21 16:26:58
 ---
 
 * * *
+
+<!-- more -->
 
 ## 线上部署
 

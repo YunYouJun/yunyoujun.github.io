@@ -15,7 +15,8 @@ timezone: Asia/Shanghai
 url: http://yunyoujun.github.io
 root: /
 permalink:
-  :category/:title 
+  :year-:month-:day-:title.html
+  # :category/:title 
   # :year/:month/:day/:title/
 permalink_defaults:
   lang: en

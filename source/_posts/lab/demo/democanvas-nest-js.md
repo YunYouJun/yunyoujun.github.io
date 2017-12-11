@@ -1,12 +1,13 @@
 ---
 title: 'Demo:Canvas-nest.js'
-id: 501
 categories:
-  - 朋友吃安利吗？
+  - 云游的大安利
 date: 2017-01-23 18:16:40
 tags:
+  - demo
 ---
 
 ### Canvas-nest.js - demo
 
+<!-- more -->
 <script src="//cdn.bootcss.com/canvas-nest.js/1.0.1/canvas-nest.min.js"></script><script src="//cdn.bootcss.com/canvas-nest.js/1.0.1/canvas-nest.min.js"></script>

@@ -21,4 +21,4 @@ date: 2017-07-19 22:43:20
 
 今年收到了两个生日礼物（而且恰巧是来自两个湖南朋友的。2333），差不多是自十岁生日以来收到过最多的一次了吧。稍微有点活到下个生日的信心了呢。
 
-![](http://www.yunyoujun.cn/wp-content/uploads/2017/07/QQ%E5%9B%BE%E7%89%8720170721140213.jpg)
+![](http://media.yunyoujun.cn/meme/smile-and-pity.png)

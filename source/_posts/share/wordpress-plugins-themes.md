@@ -2,11 +2,12 @@
 title: Wordpress的实用插件与主题推荐
 tags:
   - 分享
-id: 432
 categories:
-  - 朋友吃安利吗？
+  - 云游的大安利
 date: 2017-08-04 10:56:26
 ---
+
+自己使用的一些关于 wordpress 的插件与主题推荐。（以前爱折腾的自己，现在以及转投 hexo 了。）
 
 > ### Plug-ins
 

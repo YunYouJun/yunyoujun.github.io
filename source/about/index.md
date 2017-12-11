@@ -44,15 +44,14 @@ type: "about"
 
 ---
 
-> # Me
+> # Me - (云游君)
 <small>All at sea.</small>
 
 -----
 <div style="text-align:center;">
-<img src="https://s.gravatar.com/avatar/18898984c2aeb0dae7530a738f150cba" alt="portrait" title="portrait"
+<img src="https://s.gravatar.com/avatar/18898984c2aeb0dae7530a738f150cba" alt="portrait" title="ID : 云游君"
 style="border-radius:100px;padding: 4px;line-height: 1.42857143;background-color: #fff;border: 1px solid #ddd;">
 </div>
-<h4 style="text-align:center;"> ID : 云游君 </h4>
 
 > 学生党一只。还在努力学习中。
 

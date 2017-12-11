@@ -3,9 +3,8 @@ title: 【分享】网页背景效果插件Canvas-Nest.js
 tags:
   - 分享
   - 前端
-id: 80
 categories:
-  - 朋友吃安利吗？
+  - 云游的大安利
 date: 2017-01-23 21:04:48
 ---
 
@@ -14,6 +13,8 @@ date: 2017-01-23 21:04:48
 > ### Github项目源地址：
 > 
 >   [https://github.com/hustcc/canvas-nest.js](https://github.com/hustcc/canvas-nest.js)
+
+<!-- more -->
 
 ### 配置方法：
 
@@ -36,4 +37,4 @@ date: 2017-01-23 21:04:48
     <pre class="line-numbers prism-highlight" data-start="1">`&lt;script type="text/javascript" color="0,0,255" opacity='0.7' zIndex="-2" count="99" src="//cdn.bootcss.com/canvas-nest.js/1.0.1/canvas-nest.min.js"&gt;
     &lt;/script&gt;
 
-> 效果就如 [canvas-nest-demo](http://www.yunyoujun.cn/2017/01/23/democanvas-nest-js/) 啦！
+> 效果就如 [canvas-nest-demo](http://www.yunyoujun.cn/lab/demo/2017-01-23-democanvas-nest-js.html) 啦！
