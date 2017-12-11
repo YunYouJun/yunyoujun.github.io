@@ -3,9 +3,8 @@ title: 【分享】Laravel-Admin(基于Laravel的后台管理模板)
 tags:
   - php
   - 分享
-id: 534
 categories:
-  - 朋友吃安利吗？
+  - 云游的大安利
 date: 2017-09-13 22:56:42
 ---
 

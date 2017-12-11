@@ -14,8 +14,11 @@ timezone: Asia/Shanghai
 ## If your site is put in a subdirectory, set url as 'http://yoursite.com/child' and root as '/child/'
 url: http://yunyoujun.github.io
 root: /
-permalink: :year/:month/:day/:title/
+permalink:
+  :category/:title 
+  # :year/:month/:day/:title/
 permalink_defaults:
+  lang: en
 
 # Directory
 source_dir: source
@@ -87,25 +90,6 @@ deploy:
     github: https://github.com/YunYouJun/yunyoujun.github.io.git
     coding: https://git.coding.net/YunYouJun/yunyoujun.coding.me.git
   branch: master
-
-jsonContent:
-    meta: false
-    pages: false
-    posts:
-      title: true
-      date: true
-      path: true
-      text: false
-      raw: false
-      content: false
-      slug: false
-      updated: false
-      comments: false
-      link: false
-      permalink: false
-      excerpt: false
-      categories: false
-      tags: true
 
 algolia:
   applicationID: 'CJXXAGRCYN'
