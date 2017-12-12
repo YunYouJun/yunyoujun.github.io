@@ -2,14 +2,15 @@
 title: My Web Project
 tags:
   - 作品
-id: 504
+  - web
 categories:
-  - 云游的小作品
+  - 云游的小项目
 date: 2017-07-10 18:23:53
 ---
 
-    业余学习、练习实践的工程项目。
+业余学习、练习实践的工程项目。
 
+<!-- more -->
 * * *
 
 > *   [幻星科幻协会-FantasyStar](http://fantasystar.yunyoujun.cn)（2016.10）

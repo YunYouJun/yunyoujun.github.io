@@ -1,0 +1,2 @@
+./update.sh
+./backup.sh
