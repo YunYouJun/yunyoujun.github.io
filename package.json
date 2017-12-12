@@ -6,7 +6,6 @@
     "version": "3.4.3"
   },
   "dependencies": {
-    "bluebird": "^3.5.1",
     "hexo": "^3.4.3",
     "hexo-algoliasearch": "^0.2.3",
     "hexo-deployer-git": "^0.3.1",
