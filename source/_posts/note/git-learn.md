@@ -42,7 +42,7 @@ git remote add coding git@git.coding.net:xxx/xxx.git
 *   将代码推送到 GitHub： `$ git push` or `$ git push -u origin master`
 *   强制推送： `git push -u origin master -f`
 
-- 清空文件夹的本地缓存: `git rm -r --cached path`
+- 清空文件夹的本地缓存: `git rm -r --cached <path>`
 
 * * *
 
