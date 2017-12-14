@@ -45,7 +45,7 @@ footer:
   icon: cloud
 
   # If not defined, will be used `author` from Hexo main config.
-  copyright: 'YunYouJun <br/> Hosted by <a href="https://pages.coding.me" style="font-weight: normal">Coding Pages</a>'
+  copyright: 'YunYouJun'
   # -------------------------------------------------------------
   # Hexo link (Powered by Hexo).
   powered: true
@@ -57,7 +57,7 @@ footer:
     version: true
   # -------------------------------------------------------------
   # Any custom text can be defined here.
-  #custom_text: Hosted by <a target="_blank" href="https://pages.github.com">GitHub Pages</a>
+  custom_text: <a href="http://www.miitbeian.gov.cn">苏ICP备17038157号</a> Hosted by <a target="_blank" href="https://pages.coding.me" style="font-weight:normal">Coding Pages</a>
 
 # ---------------------------------------------------------------
 # SEO Settings
@@ -152,7 +152,8 @@ links:
 # Sidebar Avatar
 # in theme directory(source/images): /images/avatar.gif
 # in site  directory(source/uploads): /uploads/avatar.gif
-avatar: 'https://s.gravatar.com/avatar/18898984c2aeb0dae7530a738f150cba?s=150'
+avatar: /assets/img/avatar.jpg
+  # 'https://s.gravatar.com/avatar/18898984c2aeb0dae7530a738f150cba?s=150' gravatar
 
 # Table Of Contents in the Sidebar
 toc:
@@ -537,7 +538,7 @@ leancloud_visitors:
 # Get more information on http://ibruce.info/2015/04/04/busuanzi/
 busuanzi_count:
   # count values only if the other configs are false
-  enable: false
+  enable: true
   # custom uv span for the whole site
   site_uv: true
   site_uv_header: <i class="fa fa-user"></i>
@@ -547,7 +548,7 @@ busuanzi_count:
   site_pv_header: <i class="fa fa-eye"></i>
   site_pv_footer:
   # custom pv span for one page only
-  page_pv: true
+  page_pv: false
   page_pv_header: <i class="fa fa-file-o"></i>
   page_pv_footer:
 
