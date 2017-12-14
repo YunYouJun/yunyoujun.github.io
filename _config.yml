@@ -53,7 +53,7 @@ highlight:
 # order_by: Posts order. (Order by date descending by default)
 index_generator:
   path: ''
-  per_page: 7
+  per_page: 5
   order_by: -date
   
 # Category & Tag
@@ -83,6 +83,11 @@ feed: # RSS订阅插件
   type: atom
   path: atom.xml
   limit: 0
+
+sitemap:  
+  path: sitemap.xml  
+baidusitemap:  
+  path: baidusitemap.xml  
 
 # Deployment
 # Docs: https://hexo.io/docs/deployment.html
