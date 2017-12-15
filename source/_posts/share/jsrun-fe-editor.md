@@ -26,70 +26,17 @@ date: 2017-10-16 20:29:00
 *   国内访问速度快
 *   可随时随地编辑存储，且开源代码项目存储免费
 *   自动运行预览（试着用 js 写了个死循环，网页会崩溃，重新打开后的内容为上一次正常运行时保存过的代码）
-*   便于分享，可生成外部嵌入代码（参加下方 Example）
+*   便于分享，可生成外部嵌入代码（参见下方 [Example](#Example) ）
 
 ### 与其他平台对比
 
-<table>
-<thead>
-<tr>
-  <th>平台</th>
-  <th>国内打开速度</th>
-  <th>emmet</th>
-  <th>自动运行</th>
-  <th>皮肤</th>
-  <th>赞赏收款</th>
-  <th>VIP/PRO</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-  <td>JSRUN</td>
-  <td>快</td>
-  <td>支持</td>
-  <td>支持</td>
-  <td>黑白切换</td>
-  <td>支持</td>
-  <td>￥39/年</td>
-</tr>
-<tr>
-  <td>JSFiddle</td>
-  <td>超级慢</td>
-  <td>支持</td>
-  <td>不支持</td>
-  <td>白色</td>
-  <td>不支持</td>
-  <td>无</td>
-</tr>
-<tr>
-  <td>jsbin</td>
-  <td>还可以</td>
-  <td>支持</td>
-  <td>支持</td>
-  <td>白色</td>
-  <td>不支持</td>
-  <td>£99.99/年</td>
-</tr>
-<tr>
-  <td>codepen</td>
-  <td>还可以</td>
-  <td>不支持</td>
-  <td>支持</td>
-  <td>黑色</td>
-  <td>不支持</td>
-  <td>$9/月起</td>
-</tr>
-<tr>
-  <td>runjs</td>
-  <td>快</td>
-  <td>不支持</td>
-  <td>支持</td>
-  <td>黑色</td>
-  <td>不支持</td>
-  <td>无</td>
-</tr>
-</tbody>
-</table>
+平台|国内打开速度|emmet|自动运行|皮肤|赞赏收款|VIP/PRO
+---|---|---|---|---|---|---
+JSRUN|快|支持|支持|黑白切换|支持|￥39/年
+JSFiddle|超级慢|支持|不支持|白色|不支持|无
+jsbin|还可以|支持|支持|白色|不支持|£99.99/年
+codepen|还可以|不支持|支持|黑色|不支持|$9/月起
+runjs|快|不支持|支持|黑色|不支持|无
 
 参考 ： [http://jsrun.net/note/nkKKp](http://jsrun.net/note/nkKKp)
 
