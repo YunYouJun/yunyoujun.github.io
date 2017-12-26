@@ -100,8 +100,9 @@ deploy:
   message: 
   extend_dirs: 
 
+# appId for algoliasearch    application for theme-next-check
 algolia:
-  # applicationID: 'CJXXAGRCYN'
+  applicationID: 'CJXXAGRCYN'
   appId: 'CJXXAGRCYN'
   apiKey: '6e0b4848221994ad8cfac232530e0b72'
   adminApiKey: '736c166e953237acd3218a02e503c96c'
