@@ -71,16 +71,18 @@ git remote add coding git@git.coding.net:xxx/xxx.git
 
 *   如果希望保留生产服务器上所做的改动,仅仅并入新配置项, 处理方法如下:
 
-    <pre class="line-numbers prism-highlight" data-start="1">`git stash
+    ```
+    git stash
     git pull
     git stash pop
-    `</pre>
+    ```
 
 *   反过来,如果希望用代码库中的文件完全覆盖本地工作版本. 方法如下:
 
-    <pre class="line-numbers prism-highlight" data-start="1">`git reset --hard //重置到上次提交的状态
+    ```
+    git reset --hard //重置到上次提交的状态
     git pull
-    `</pre>
+    ```
 
     参见：[http://blog.csdn.net/iefreer/article/details/7679631](http://blog.csdn.net/iefreer/article/details/7679631)
 
@@ -91,9 +93,10 @@ git remote add coding git@git.coding.net:xxx/xxx.git
 *   正常情况应显示 [user]name 与 email 的信息。
 *   若无，通过如下代码修改 git 配置。
 
-    <pre class="line-numbers prism-highlight" data-start="1">`git config --global user.name "用户名"
+    ```
+    git config --global user.name "用户名"
     git config --global user.email "Git账户邮箱"
-    `</pre>
+    ```
 
 *   修改已经使用invalid-email提交的commit信息
     修改方法：[https://github.com/kadishmal/tilchi.com/wiki/GitHub-Fix-invalid-email-address-in-Repository-History](https://github.com/kadishmal/tilchi.com/wiki/GitHub-Fix-invalid-email-address-in-Repository-History)
@@ -117,28 +120,33 @@ git remote add coding git@git.coding.net:xxx/xxx.git
 
     如果当前分支与远程分支之间存在追踪关系，则本地分支和远程分支都可以省略。
 
-    <pre class="line-numbers prism-highlight" data-start="1">`git push origin
-    `</pre>
+    ```
+    git push origin
+    ```
 
     上面命令表示，将当前分支推送到origin主机的对应分支。如果当前分支只有一个追踪分支，那么主机名都可以省略,使用 `git push`。
 
     如果当前分支与多个主机存在追踪关系，则可以使用-u选项指定一个默认主机，这样后面就可以不加任何参数使用 `git push`。
 
-    <pre class="line-numbers prism-highlight" data-start="1">`git push -u origin master
-    `</pre>
+    ```
+    git push -u origin master
+    ```
 
     上面命令将本地的 `master` 分支推送到 `origin` 主机，同时指定 `origin` 为默认主机，后面就可以不加任何参数使用 `git push` 了。
 
     不带任何参数的 `git push` ，默认只推送当前分支，这叫做 `simple` 方式。此外，还有一种 `matching` 方式，会推送所有有对应的远程分支的本地分支。Git 2.0版本之前，默认采用 `matching` 方法，现在改为默认采用 `simple` 方式。如果要修改这个设置，可以采用 `git config` 命令。
 
-    <pre class="line-numbers prism-highlight" data-start="1">`$ git config --global push.default matching
+    ```
+    $ git config --global push.default matching
     # or
     $ git config --global push.default simple
-    `</pre>
+    ```
 
     还有一种情况，就是不管是否存在对应的远程分支，将本地的所有分支都推送到远程主机，这时需要使用–all选项。
 
-    <pre class="line-numbers prism-highlight" data-start="1">`git push --all origin
+    ```
+    git push --all origin
+    ```
 
 上面命令表示，将所有本地分支都推送到 `origin` 主机。
 
