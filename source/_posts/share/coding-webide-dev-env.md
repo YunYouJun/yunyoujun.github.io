@@ -4,7 +4,6 @@ tags:
   - web
   - 分享
   - 学习
-id: 542
 categories:
   - 云游的大安利
 date: 2017-10-11 16:21:12
@@ -61,36 +60,41 @@ date: 2017-10-11 16:21:12
 
 预置 Maven 环境，所以使用 Maven 创建 Web 应用程序项目。
 
-**1.** 在终端输入以下命令，并确定项目名称，创建 Web 项目。
+1. 在终端输入以下命令，并确定项目名称，创建 Web 项目。
 
+    ```
     $ mvn archetype:generate -DgroupId=com.yiibai -DartifactId=项目名称 -DarchetypeArtifactId=maven-archetype-webapp -DinteractiveMode=false
-    `</pre>
+    ```  
 
-    **2.** 此时项目文件夹下会生成 `pom.xml` 文件，打开，并找到如下 `&lt;build&gt;` 标签。
+2. 此时项目文件夹下会生成 `pom.xml` 文件，打开，并找到如下 `<build>` 标签。
 
-    <pre class="line-numbers prism-highlight" data-start="1">`&lt;build&gt;
-    &lt;finalName&gt;你的项目名称&lt;/finalName&gt;
-    &lt;/build&gt;
-    `</pre>
+    ```
+    <build>
+    <finalName>你的项目名称</finalName>
+    </build>
+    ```
 
-    **3.** 在 `&lt;build&gt;` 中增加如下的 `&lt;plugins&gt;` 标签。
+3. 在 `<build>` 中增加如下的 `<plugins>` 标签。
 
-    <pre class="line-numbers prism-highlight" data-start="1">`&lt;plugins&gt;
-    &lt;plugin&gt;
-    &lt;groupId&gt;org.apache.tomcat.maven&lt;/groupId&gt;    &lt;artifactId&gt;tomcat7-maven-plugin&lt;/artifactId&gt;
-    &lt;version&gt;2.1&lt;/version&gt;
-    &lt;/plugin&gt;
-    &lt;/plugins&gt;
-    `</pre>
+    ```
+    <plugins>
+    <plugin>
+    <groupId>org.apache.tomcat.maven</groupId>    <artifactId>tomcat7-maven-plugin</artifactId>
+    <version>2.1</version>
+    </plugin>
+    </plugins>
+    ```
 
     (此处作用是添加 `maven tomcat7` 插件，默认配置的是 `tomcat6` 插件，不支持 `jdk1.8`)
 
-    **4.** 进入项目文件夹，运行如下命令，开启 `tomcat7` 服务器。（注意要加 7 ）
+4. 进入项目文件夹，运行如下命令，开启 `tomcat7` 服务器。（注意要加 7 ）
 
-    <pre class="line-numbers prism-highlight" data-start="1">`cd 你的项目文件夹
+    ```
+    cd 你的项目文件夹
     mvn tomcat7:run
+    ```
 
-**5.** 点击 Coding WebIDE 界面右边界处的生成链接(默认是8080端口)，访问生成的链接即可看到 JavaWeb 的页面了。
+5. 点击 Coding WebIDE 界面右边界处的生成链接(默认是8080端口)，访问生成的链接即可看到 JavaWeb 的页面了。
 
 > 参考教程： [http://www.yiibai.com/maven/create-a-web-application-project-with-maven.html](http://www.yiibai.com/maven/create-a-web-application-project-with-maven.html)
 

@@ -100,7 +100,7 @@ deploy:
   message: 
   extend_dirs: 
 
-# appId for algoliasearch    application for theme-next-check
+# appId for algoliasearch    applicationID for theme-next-check
 algolia:
   applicationID: 'CJXXAGRCYN'
   appId: 'CJXXAGRCYN'
