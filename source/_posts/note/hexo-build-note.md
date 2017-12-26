@@ -85,10 +85,13 @@ updated: 2017-12-11 12:40:32
 [**Algolia**](https://www.algolia.com/)
 The Most Reliable Platform for Building Search.
 
-在 hexo 的 _config.yml 文件中，添加 algolia 配置。
+在 hexo 的 _config.yml 文件中，添加 algolia 配置。（注释记得去掉）
 
 ```
+# 此处添加 applicationID ,是因为 next 主题检查applicationID
+# 而插件我们用了 algoliasearch , 插件真正调用的配置是 appID
 algolia:
+  applicationID: 'xxx'   
   appId: 'xxx'
   apiKey: 'xxx'
   adminApiKey: 'xxx'
