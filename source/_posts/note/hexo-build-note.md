@@ -46,21 +46,21 @@ updated: 2017-12-11 12:40:32
 *   在本地的 GitHub Pages 的项目(xxx.github.io)中,通过 `git bash` 建立新的分支 hexo
 (可以现在 GitHub 上新建再 clone 自自己的文件夹)
 
-```
-git checkout -b hexo
-```
+    ```
+    git checkout -b hexo
+    ```
 
 *   `git checkout hexo` 切换至 hexo 分支
 *   此后对 hexo 源文件的配置修改等操作，默认在此分支下操作即可
 *   将修改推送至远程分支
 
-```
-git add -A
-git commit -m 'update hexo backup'
-git push origin hexo
-```
+    ```
+    git add -A
+    git commit -m 'update hexo backup'
+    git push origin hexo
+    ```
 
-    #### 每次命令执行繁琐，使用批处理
+#### 每次命令执行繁琐，使用批处理
 
 *   在 Hexo 根目录下新建批处理文件 `update.sh`,并编辑如下内容。
 

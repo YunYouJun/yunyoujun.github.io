@@ -4,9 +4,10 @@
 
 # Site
 title: 云浦之南
-subtitle: 云游君的小站~
+subtitle: ~ 云游君的小站 ~
 author: 云游君
-description: All at sea.
+signature: All at sea.
+# description: 云游君的小站
 language: zh-Hans
 timezone: Asia/Shanghai
 
@@ -100,7 +101,8 @@ deploy:
   extend_dirs: 
 
 algolia:
-  applicationID: 'CJXXAGRCYN'
+  # applicationID: 'CJXXAGRCYN'
+  appId: 'CJXXAGRCYN'
   apiKey: '6e0b4848221994ad8cfac232530e0b72'
   adminApiKey: '736c166e953237acd3218a02e503c96c'
   indexName: 'my-hexo-blog'
