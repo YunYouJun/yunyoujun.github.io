@@ -35,26 +35,32 @@ categories:
 
 ## 过程
 
-起先是自己在 Windows 上先试验看看的。
 
-1. 需要先安装 python ，官网下载地址 <https://www.python.org/download>
+
+### 需要先安装 python (起先是自己在 Windows 上先试验看看的)，官网下载地址 <https://www.python.org/download>
 Windows 64位的话下载 `Windows x86-64 executable installer` 版本即可，其他系统也各自对应。
 
-2. 安装 qqbot （参照 qqbot 文档）
+### 安装 qqbot
+
+参照 qqbot 文档 <https://github.com/pandolia/qqbot>
 ```
 pip install qqbot
 ```
 
-3. 启动 qqbot （进入命令行窗口，`git bash` 或者 `cmd` 都可以）
+### 启动 qqbot
+
+进入命令行窗口，`git bash` 或者 `cmd` 都可以。
 推荐 `cmd` , `git bash` 中文可能会乱码。
 ```
 qqbot -q xxxx // 这里填自己想要登陆的qq号（建议还是用小号安全些啦）
 ```
 直接输入 qqbot ,用想要登陆的 qq 号扫弹出的二维码也可以。（当然上面那样也是要扫的，只是多个号时方便区分，并且会存储一定时间的登陆信息。）
 
-4. 再打开一个命令行窗口，以便对 qqbot 进行指令操作。（指令可参照项目文档）
+### 指令操作
 
-5. 自定义消息响应
+需要再打开一个命令行窗口，以便对 qqbot 进行指令操作。（指令可参照项目文档）
+
+### 自定义消息响应
 
 自己使用 python 的语法进行各种逻辑编写即可，提供的接口和属性可参见文档。
 
@@ -87,13 +93,13 @@ if '小爱' in content and not bot.isMe(contact, member):
 
 将以上代码另存为 `sample.py` （名字可以随便取，注意保存为 utf8 编码的文件）。放到 `~/.qqbot-tmp/plugins/` 目录下（ ~ 代表用户主目录， windows 下为 `C:\Users\xxx\.qqbot-tmp\plugins\`, xxx 代表用户名 ），或系统中可以 `import` 到的目录下（如 `python` 的安装目录下的 `Lib/site-packages` 目录）。
 
-6. 加载自定义插件（即刚刚自己编写的逻辑）
+### 加载自定义插件（即刚刚自己编写的逻辑）
 ```
 qq plug sample
 ```
 这些操作过程中不要关闭运行 qqbot 的命令行窗口。这是后，机器人就可以对收到的 qq 消息进行爬去检测，并进行自定义的回复了。
 
-7. 挂载至服务器
+### 挂载至服务器
 
 以上通过编写逻辑代码，已经基本可以完成自定义消息回复的功能。但是实际是自己的电脑充当服务器功能，当把执行有 qqbot 的命令行窗口关闭时，便无法继续检测了。
 
@@ -137,7 +143,7 @@ Linux 远程服务器的话，当然没法弹出二维码扫描了，这时需�
 qqbot -u somebody // 此处 somebody 为上述自行定义的配置，名称也可修改
 ```
 
-8. WebHooks 自动部署
+### WebHooks 自动部署
 
 每次突然想要修改小爱的某个回复之类的，还要重新传输文件部署，也是很麻烦的事情。所以这时候就需要配合 GitHub 搭建 WebHooks , 当自己在本地提交修改时，服务器上的小爱也接收到消息，自动进行修改并部署。
 
@@ -145,7 +151,7 @@ qqbot -u somebody // 此处 somebody 为上述自行定义的配置，名称也�
 
 接下来，编写脚本(这几个文件可以和自定义消息的脚本 `sample.py` 放在一起，便于 git 备份)
 
-__start_webkook.py__
+#### start_webkook.py
 ```
 # coding=utf-8
 # start_webkook.py
@@ -160,7 +166,7 @@ print('Serving HTTP on port 8000...')
 httpd.serve_forever()
 ```
 
-__webhook.py__
+#### webhook.py
 ```
 # coding=utf-8
 # webhook.py
@@ -184,7 +190,7 @@ def application(environ, start_response):
 nohup python start_webhook.py & // nohup 与 & 连用使得脚本在后台执行
 ```
 
-9. 就此结束，只要在本地 git 提交修改小爱的代码，服务器就可以收到请求并自动部署啦。
+### 就此结束，只要在本地 git 提交修改小爱的代码，服务器就可以收到请求并自动部署啦。
 
 ## 后记
 
