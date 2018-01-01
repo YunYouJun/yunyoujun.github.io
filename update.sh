@@ -1,3 +1,2 @@
 hexo clean
-hexo d -g
-hexo algolia
+hexo g -d

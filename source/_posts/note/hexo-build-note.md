@@ -80,7 +80,9 @@ updated: 2017-12-11 12:40:32
     ./update.sh
     ```
 
-#### [集成 Algolia 搜索插件](https://www.npmjs.com/package/hexo-algoliasearch)
+#### [集成 Algolia 搜索插件](https://www.npmjs.com/package/hexo-algolia)
+```
+```
 
 [**Algolia**](https://www.algolia.com/)
 The Most Reliable Platform for Building Search.
@@ -88,11 +90,8 @@ The Most Reliable Platform for Building Search.
 在 hexo 的 _config.yml 文件中，添加 algolia 配置。（注释记得去掉）
 
 ```
-# 此处添加 applicationID ,是因为 next 主题检查applicationID
-# 而插件我们用了 algoliasearch , 插件真正调用的配置是 appID
 algolia:
   applicationID: 'xxx'   
-  appId: 'xxx'
   apiKey: 'xxx'
   adminApiKey: 'xxx'
   indexName: 'my-hexo-blog' // 填写在 aloglia 中设置的名称
@@ -109,7 +108,7 @@ algolia:
 ```
 
 ```
-npm install hexo-algoliasearch --save // 使用 npm 安装 hexo-algoliasearch 插件
+npm install hexo-algolia@0.2.0 --save // 使用 npm 安装 hexo-algolia 插件
 hexo algolia // 生成index
 ```
 
