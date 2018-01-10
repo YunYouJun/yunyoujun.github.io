@@ -48,6 +48,15 @@ date: 2017-07-10 18:23:53
 
 自学一些前端，html5的webgl等知识的实验用地。
 
+---
+
+> *   [AIS.js](http://ais.yunyoujun.cn) (2017.12-2018.1)
+
+船舶自动识别系统 (Automatic Identification System) 使用 js 构建 web 端。
+
+- GitHub: <https://github.com/YunYouJun/ais.js>
+- Description: <http://yunyoujun.cn/lab/project/ais-js>
+
 * * *
 
 Be Continued ……

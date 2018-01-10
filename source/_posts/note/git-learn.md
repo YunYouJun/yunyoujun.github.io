@@ -3,6 +3,7 @@ title: Git常用语句与学习笔记
 tags:
   - 学习
   - 笔记
+  - git
 categories:
   - 云游的小笔记
 date: 2017-08-21 16:46:13
