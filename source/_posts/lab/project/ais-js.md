@@ -2,8 +2,8 @@
 title: AIS.js
 date: 2018-01-10 12:30:17
 tags:
-  - javascript
-  - node.js
+  - JavaScript
+  - Node.js
   - Vue
   - 项目
 categories:
@@ -18,8 +18,8 @@ categories:
 
 `src` 中的 `ais` 包以及分离出来，打包成了 `npm` 包。（因名称重复，命名为 `ais-json` ）
 
-- NPM(ais-json): <https://www.npmjs.com/package/ais-json>
-- GitHub(ais.js): <https://github.com/YunYouJun/ais.js>
-- GitHub(ais-json): <https://github.com/YunYouJun/ais-json>
+- NPM (`ais-json`) : <https://www.npmjs.com/package/ais-json>
+- GitHub (`ais.js`) : <https://github.com/YunYouJun/ais.js>
+- GitHub (`ais-json`) : <https://github.com/YunYouJun/ais-json>
 
 使用方法参见网址中文档即可。

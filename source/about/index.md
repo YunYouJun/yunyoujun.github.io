@@ -18,7 +18,7 @@ type: "about"
 
 -----
 
-> ### Time
+> ## Time
 
 - __2016.12.31__ 建站
 名称：**失去的时光**
@@ -77,5 +77,4 @@ Bangumi: [云游君](http://bangumi.tv/user/yunyoujun)
 
 GitHub: [YunYouJun](https://github.com/YunYouJun)
 
-Email：<me@yunyoujun.cn>
-（大概只用得到自己仍然有钱续费域名的时候吧！~~（笑）~~）
+Email：<me@yunyoujun.cn> （大概只用得到自己仍然有钱续费域名的时候吧！~~（笑）~~）

@@ -1,11 +1,11 @@
 ---
-title: npm 常用工具包
+title: npm 常用工具包与命令使用
 tags:
-  - node.js
+  - Node.js
   - 分享
-id: 537
+  - 笔记
 categories:
-  - 云游的大安利
+  - 云游的小笔记
 date: 2017-10-06 15:56:20
 ---
 
@@ -18,6 +18,7 @@ NPM是随同NodeJS一起安装的包管理工具，能解决NodeJS代码部署�
 
 <!-- more -->
 * * *
+## Package
 
 > nvm
 
@@ -47,6 +48,15 @@ Windows 系统下，可下载 [nvm-setup.zip](https://github.com/coreybutler/nvm
 *   官网 ： [https://expressjs.com/](https://expressjs.com/)
 *   中文网 ： [http://www.expressjs.com.cn/](http://www.expressjs.com.cn/)
 
-* * *
+---
+
+## Command
+
+### npm package
+- `npm login` 登陆 npm (若使用其他镜像，需要切换回官网 `npm config set registry http://registry.npmjs.org` )
+- `npm publish` 发布 npm 包
+- `npm version major | minor | patch` 更新不同版本号
+
+---
 
 To Be Continued.
