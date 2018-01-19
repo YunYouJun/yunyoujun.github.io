@@ -19,6 +19,9 @@ categories:
 
 顺带一提，我深刻感悟到了 `Deadline 是第一生产力` 这一真理。
 
+自己还画了乱七八糟的插画。（ 2018-01-19 ）
+![hamster-universe](http://media.yunyoujun.cn/draw/hamster-universe.jpg)
+
 <!-- more -->
 
 # 正文
