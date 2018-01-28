@@ -14,7 +14,7 @@ type: "about"
 
 ~~虽然此刻很想发一个表情!~~
 
-![不存在的.jpg](http://media.yunyoujun.cn/meme/不存在的.jpg)
+![不存在的.jpg](https://qcloud-media.yunyoujun.cn/meme/no-exist.jpg)
 
 -----
 
@@ -61,7 +61,7 @@ style="border-radius:100px;padding: 4px;line-height: 1.42857143;background-color
 - 目标：Web 前端 || php 后端工程师/独立游戏制作人(目♂前)
 - 梦想：漫画家/动画人/作家（不切实际的）
 
-![image](http://media.yunyoujun.cn/meme/nowork.jpg)
+![工作就输了](https://qcloud-media.yunyoujun.cn/meme/no-work.jpg)
 
 以及种花种草，养狗养猫，孤独终老。
 

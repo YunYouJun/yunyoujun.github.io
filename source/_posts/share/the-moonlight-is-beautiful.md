@@ -34,7 +34,8 @@ date: 2017-09-05 19:07:45
 
 虽然嘴上说着，‘禁言禁言啊!’，‘不吃，滚.jpg’ …… 这些话
 
-[![不吃，滚.jpg](http://media.yunyoujun.cn/meme/%E4%B8%8D%E5%90%83%EF%BC%8C%E6%BB%9A.jpg "不吃，滚.jpg")](http://media.yunyoujun.cn/meme/%E4%B8%8D%E5%90%83%EF%BC%8C%E6%BB%9A.jpg "不吃，滚.jpg")
+![不吃，滚.jpg](https://qcloud-media.yunyoujun.cn/meme/no-eat-gun.jpg)
+
 但是，其实还是很羡慕的吧，也挺为他们开心的。（毕竟摆出一副单身狗的怨念出来，会让这群秀恩爱的家伙的幸福感提高的吧。）
 
 今天则有空看了看，此前听说过的《月色真美》。那种淡淡的、青涩的恋爱，真的是很让人向往啊。（<del>啊，老夫的少女心</del>）
