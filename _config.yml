@@ -16,7 +16,7 @@ timezone: Asia/Shanghai
 url: http://yunyoujun.cn
 root: /
 permalink:
-  :title
+  :title/
   # :category/:title 
   # :year/:month/:day/:title/
 permalink_defaults:
