@@ -1,7 +1,7 @@
 ---
 title: My Web Project
 tags:
-  - 作品
+  - 项目
   - Web
 categories:
   - 云游的小项目
