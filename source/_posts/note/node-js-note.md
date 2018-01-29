@@ -1,7 +1,7 @@
 ---
 title: Node.js 笔记
 tags:
-  - node.js
+  - Node.js
   - 学习
   - 笔记
 categories:

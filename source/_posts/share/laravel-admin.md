@@ -1,7 +1,7 @@
 ---
 title: 【分享】Laravel-Admin(基于Laravel的后台管理模板)
 tags:
-  - php
+  - PHP
   - 分享
 categories:
   - 云游的大安利

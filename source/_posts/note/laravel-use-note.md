@@ -1,7 +1,7 @@
 ---
 title: Laravel 使用笔记
 tags:
-  - php
+  - PHP
   - 学习
   - Laravel
 categories:
