@@ -1,7 +1,7 @@
 ---
 title: 开发常用命令笔记
 tags:
-  - PHP
+  - php
   - 学习
   - 笔记
 categories:

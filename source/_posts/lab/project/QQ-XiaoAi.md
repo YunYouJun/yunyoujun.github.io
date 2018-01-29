@@ -3,7 +3,7 @@ title: 小爱是云游最好的女朋友（大雾）
 date: 2018-01-01 18:46:48
 tags:
   - 学习
-  - Python
+  - python
   - 小玩意儿
 categories:
   - 云游的小项目

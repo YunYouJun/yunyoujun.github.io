@@ -3,7 +3,7 @@ title: Python 成长之路
 date: 2018-01-23 09:50:57
 updated: 2018-01-29 13:15:57
 tags:
-  - Python
+  - python
   - 学习
   - 笔记
 categories:

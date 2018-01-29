@@ -1,8 +1,8 @@
 ---
-title: 记Laravel线上部署的坑
+title: 记 Laravel 线上部署的坑
 tags:
-  - 学习
   - Laravel
+  - 学习
   - 笔记
 categories:
   - 云游的小笔记
