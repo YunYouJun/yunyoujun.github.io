@@ -7,6 +7,7 @@ tags:
 categories:
   - 云游的小笔记
 date: 2017-10-06 15:56:20
+updated: 2018-01-29 15:04:44
 ---
 
 NPM是随同NodeJS一起安装的包管理工具，能解决NodeJS代码部署上的很多问题，常见的使用场景有以下几种：
@@ -56,6 +57,9 @@ Windows 系统下，可下载 [nvm-setup.zip](https://github.com/coreybutler/nvm
 - `npm login` 登陆 npm (若使用其他镜像，需要切换回官网 `npm config set registry http://registry.npmjs.org` )
 - `npm publish` 发布 npm 包
 - `npm version major | minor | patch` 更新不同版本号
+
+- 使用 `npm update <package>` 可以把当前目录下node_modules子目录里边的对应模块更新至最新版本。
+- 使用 `npm update <package> -g` 可以把全局安装的对应命令行程序更新至最新版。
 
 ---
 
