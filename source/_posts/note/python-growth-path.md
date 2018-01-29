@@ -1,5 +1,5 @@
 ---
-title: Python成长之路
+title: Python 成长之路
 date: 2018-01-23 09:50:57
 updated: 2018-01-29 13:15:57
 tags:
@@ -15,6 +15,8 @@ categories:
 最近和朋友一起学 Python 啦。
 
 记录一些学习路上的问题与技巧。
+
+<!-- more -->
 
 # 准备
 ## 教程

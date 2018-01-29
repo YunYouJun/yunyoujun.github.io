@@ -15,6 +15,8 @@ categories:
 
 记录 TypeScript 使用过程中遇到的小问题和解决方案。
 
+<!-- more -->
+
 ## 坑
 ### cannot find name 'require'
 ```
