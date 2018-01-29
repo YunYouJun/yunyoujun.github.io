@@ -39,7 +39,7 @@ updated: 2017-12-11 12:40:32
 
 * * *
 
-> ## 一些解决方案
+## 一些解决方案
 
 ### 备份自己的 Hexo 源文件
 
@@ -121,7 +121,18 @@ hexo algolia // 生成index
 * 进入创建的应用中，选择左侧导航栏中的“存储”，随后点击“创建Class”，将 Class 名称填为 Counter，并选择**无限制**选项。
 * 进入 Next 主题配置文件 `_config.yml`,配置 `leancloud_visitors` 属性 `enable` 为 `true`，并配置对应的 `App ID` 与 `App Key` 。 (在 `LeanCloud` 左侧导航栏的设置界面，单击“应用Key”可以看到应用的App ID和App Key。)
 
-* * *
+## 小技巧
+
+### 自动生成目录
+开启 toc (Table of Contents)
+```
+---
+title: xxx
+toc: true
+---
+...
+```
+
 
 ## Example
 

@@ -14,6 +14,8 @@ categories:
 
 最近和朋友一起学 Python 啦。
 
+# Intro
+
 记录一些学习路上的问题与技巧。
 
 <!-- more -->

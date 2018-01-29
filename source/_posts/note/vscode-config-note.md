@@ -27,6 +27,8 @@ categories:
 "editor.tabSize": 2,  // tab 键替换为 2 空格
 ```
 
+# 相关
+ [Python 配置](https://yunyoujun.cn/note/python-growth-path/#编辑器)
 
 ---
 

@@ -11,7 +11,7 @@ categories:
   - 云游的小笔记
 ---
 
-# 前言
+# Intro
 
 记录 TypeScript 使用过程中遇到的小问题和解决方案。
 
