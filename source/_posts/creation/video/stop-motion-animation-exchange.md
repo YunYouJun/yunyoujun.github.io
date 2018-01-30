@@ -3,7 +3,6 @@ title: '[定格动画]交换/EXchange'
 tags:
   - 作品
   - 动画
-  - 原创
   - 定格
 categories:
   - 云游的小视频

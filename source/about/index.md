@@ -2,14 +2,18 @@
 title: About
 date: 2017-10-12 10:48:25
 type: "about"
-updated: 2018-01-28 15:10:32
+updated: 2018-01-30 15:10:32
 ---
 
-> # Blog
+<iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width=330 height=450 src="//music.163.com/outchain/player?type=0&id=308168565&auto=1&height=430"></iframe>
 
-= =,这里大概是个博客。
+> 因为版权问题，外链歌单里只有几首能放啦。
 
-> 所以大概会记录一些自己学习、生活上的事情与业余创作~~瞎搞~~。
+# Blog
+
+> 这里应该算是个博客。所以大概会记录一些自己学习、生活上的事情与业余创作 ~~瞎搞~~ 。 =w=
+
+本博客所有文章默认为原创，除特别声明外，均采用 [CC BY-NC-SA 3.0](https://creativecommons.org/licenses/by-nc-sa/3.0/) 许可协议。转载注明出处即可(~~不过好像也不会有~~)。
 
 **十分欢迎无意中点进来的同学，给我留言和建议！**
 
@@ -17,32 +21,32 @@ updated: 2018-01-28 15:10:32
 
 ![不存在的.jpg](https://qcloud-media.yunyoujun.cn/meme/no-exist.jpg)
 
------
+## Time
 
-> ## Time
-
-- __2016.12.31__ 建站
-名称：**失去的时光**
+- ### 2016.12.31  建站
+> 名称：**失去的时光**
 域名：<http://yunyoujun.online>
-一时兴起，就建个站玩玩吧~ （By wordpress）
+一时兴起，就建个站玩玩吧~ （By Wordpress）
 因为做东西总是三分钟热度，更新一次会间隔很久的样子。（~~不过反正也不会有人看到的吧。~~）
 这里就像是承载着被遗忘了的时光一样.（~~点题了是不是！~~）
 
-- __2017.07.05__ 更换域名
-域名更换：<http://yunyoujun.cn>
+- ### 2017.07.05  新域名
+> 域名更换：<http://yunyoujun.cn>
 (缘由是online太长了，又不好备案什么的吧)
 
 
-- __2017.08.03__ 
-注册了个有意思的新域名：<http://elpsy.cn>
+- ### 2017.08.03  elpsy.cn
+> 注册了个有意思的新域名：<http://elpsy.cn>
 (不过还没想好干什么用)
 
-- __2017.11.20__ 博客更名
-更名：**云浦之南**  ……
+- ### 2017.11.20  更名
+> 更名：云浦之南  ……
 
-- __2017.11.20__ [博客迁移至 hexo](https://yunyoujun.cn/note/hexo-build-note)
+- ### 2017.11.20  迁移
+> [博客迁移至 Hexo](https://yunyoujun.cn/note/hexo-build-note)
 
-- __2018.01.28__ 网站开启强制 HTTPS 访问
+- ### 2018.01.28  HTTPS
+> 网站开启强制 HTTPS 访问, 使用 亚信 SSL 免费证书, 腾讯云存储服务
 
 ……
 
@@ -59,11 +63,12 @@ style="border-radius:100px;padding: 4px;line-height: 1.42857143;background-color
 
 > 学生党一只。还在努力学习中。
 
-- 爱好：[ACGN](https://baike.baidu.com/item/ACGN)、画画、科幻、Web（以及有趣的东西）
+- 爱好：[ACGN](https://baike.baidu.com/item/ACGN)、画画、科幻、开源、Web（以及有趣的东西）
+- 喜欢：家
 - 讨厌：国外无脑吹、腾讯无脑黑、肥肉（啊，我是指吃的那种）
-- 运动：乒乓球🏓(因为也不会啥别的运动了吧……)
-- 目标：Web 前端 || php 后端工程师/独立游戏制作人(目♂前)
-- 梦想：漫画家/动画人/作家（不切实际的）
+- 运动：乒乓球🏓 (因为本死宅也不会啥别的运动了吧……)
+- 目标：前端工程师 || 全栈工程师 || 独立游戏制作人 (目♂前)
+- 梦想：漫画家 && 动画人 && 作家（不切实际的）
 
 ![工作就输了](https://qcloud-media.yunyoujun.cn/meme/no-work.jpg)
 
@@ -78,6 +83,8 @@ style="border-radius:100px;padding: 4px;line-height: 1.42857143;background-color
 BiliBili: [机智的云游君](https://space.bilibili.com/1579790)
 
 Bangumi: [云游君](http://bangumi.tv/user/yunyoujun)
+
+网易云音乐: [机智的云游君](http://music.163.com/#/user/home?id=247102977)
 
 GitHub: [YunYouJun](https://github.com/YunYouJun)
 

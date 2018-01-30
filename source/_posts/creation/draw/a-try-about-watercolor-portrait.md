@@ -2,7 +2,6 @@
 title: 水彩原创头像尝试
 tags:
   - 作品
-  - 原创
   - 瞎鸡儿画
 categories:
   - 云游的小画册

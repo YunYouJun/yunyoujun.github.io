@@ -9,9 +9,14 @@ categories:
 date: 2017-08-21 16:46:13
 ---
 
-<!-- more -->
+# Intro
 
-#### 拉取代码
+记录 Git 的一些常用指令与问题解决方案。
+
+<!-- more -->
+# 常用指令
+
+## 拉取代码
 
 *   从远程仓库获取线上代码: `git clone git@github.com:用户名/项目名.git`
 *   关联远程仓库: `git remote add origin git@github.com:xxx/xxx.git` (git clone后已自动关联)
@@ -19,7 +24,7 @@ date: 2017-08-21 16:46:13
 
 * * *
 
-#### 远程仓库
+## 远程仓库
 
 *   删除远程仓库地址： `git remote rm origin`
 *   增加远程仓库地址： `git remote add origin git@github.com:xxx/xxx.git`
@@ -35,7 +40,7 @@ git remote add coding git@git.coding.net:xxx/xxx.git
 
 * * *
 
-#### 代码推送
+## 代码推送
 
 *   git 初始化： `$ git init`
 *   保存到暂存区： `$ git add -A`
@@ -47,8 +52,9 @@ git remote add coding git@git.coding.net:xxx/xxx.git
 
 * * *
 
-#### 分支管理
-
+## 分支管理
+- 显示当前分支 `git branch -v`
+- 显示远程分支 `git remote -v`
 *   将当前分支切换到 master 分支上: `git checkout master`
 *   创建一个名为 xxx 的新分支: `git checkout -b xxx` , `-b` 选项表示创建指定名称的新分支。
 *   新建远程分支： `git push origin 推送的分支:远程的分支`
@@ -58,9 +64,9 @@ git remote add coding git@git.coding.net:xxx/xxx.git
 
 * * *
 
-> ### 问题解决方案
+# 问题解决方案
 
-#### 1\. 合并代码冲突
+## 合并代码冲突
 
 *   如果系统中有一些配置文件在服务器上做了配置修改,然后后续开发又新添加一些配置项的时候,
 在发布这个配置文件的时候,会发生代码冲突:
@@ -113,7 +119,9 @@ git remote add coding git@git.coding.net:xxx/xxx.git
 
     * * *
 
-    > #### git push 详解
+# 详解
+
+## git push 详解
 
 *   `git push origin master`
 
@@ -125,9 +133,9 @@ git remote add coding git@git.coding.net:xxx/xxx.git
     git push origin
     ```
 
-    上面命令表示，将当前分支推送到origin主机的对应分支。如果当前分支只有一个追踪分支，那么主机名都可以省略,使用 `git push`。
+    上面命令表示，将当前分支推送到 origin 主机的对应分支。如果当前分支只有一个追踪分支，那么主机名都可以省略,使用 `git push`。
 
-    如果当前分支与多个主机存在追踪关系，则可以使用-u选项指定一个默认主机，这样后面就可以不加任何参数使用 `git push`。
+    如果当前分支与多个主机存在追踪关系，则可以使用 `-u` 选项指定一个默认主机，这样后面就可以不加任何参数使用 `git push`。
 
     ```
     git push -u origin master
