@@ -18,23 +18,25 @@ date: 2017-01-23 21:04:48
 
 <!-- more -->
 
-## 配置方法：
+## 配置方法
+
+使用 [BootCDN](http://www.bootcdn.cn/) 提供的免费 CDN 服务。
 
 <del>（极其简洁=v=）</del>
-将下面的代码插入到`&lt;body&gt;`和`&lt;/body&gt;`标签之间
+将下面的代码插入到`<body>`和`</body>`标签之间
 
 ```
 <script type="text/javascript" src="//cdn.bootcss.com/canvas-nest.js/1.0.1/canvas-nest.min.js"></script>
 ```
 
-### 自定义样式：
+### 自定义样式
 
 - **color** : 线条颜色, 默认: '0,0,0' ；三个数字分别为(R,G,B)，注意用,分割
 - **opacity** : 线条透明度（0~1）, 默认: 0.5
 - **count** : 线条的总数量, 默认: 150
 - **zIndex** : 背景的 z-index 属性，css 属性用于控制所在层的位置, 默认: -1
 
-### Example：
+### Example
 
 <script type="text/javascript" color="0,0,255" opacity='0.7' zIndex="-2" count="99" src="//cdn.bootcss.com/canvas-nest.js/1.0.1/canvas-nest.min.js"></script>
 
