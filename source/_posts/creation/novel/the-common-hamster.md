@@ -11,7 +11,7 @@ categories:
 ---
 
 # 前言
-> 此作为[仓鼠](http://yunyoujun.cn/creation/novel/hamster)的续写。参加某比赛的第二轮产物。
+> 此作为[仓鼠](http://yunyoujun.cn/creation/novel/hamster)的续写。参加[某比赛](http://sci.kpcswa.org.cn/index/catalog/tid/89)的第二轮产物。
 
 实际最初第一作完成时，根本没有考虑过会有什么后续。所以内容根本是临时抱佛脚，想到什么写什么。故事大概也不堪卒读。但这终究是自己连续花费几个整天所赶出来的东西，直接丢掉这种事情也绝对做不到。
 
