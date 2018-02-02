@@ -3,12 +3,11 @@
   "version": "0.0.0",
   "private": true,
   "hexo": {
-    "version": "3.4.3"
+    "version": "3.5.0"
   },
   "dependencies": {
-    "hexo": "^3.4.3",
-    "hexo-algolia": "^0.2.0",
-    "hexo-algoliasearch": "^0.2.3",
+    "hexo": "^3.5.0",
+    "hexo-algolia": "^1.2.4",
     "hexo-deployer-git": "^0.3.1",
     "hexo-generator-archive": "^0.1.4",
     "hexo-generator-baidu-sitemap": "^0.1.2",
@@ -19,7 +18,7 @@
     "hexo-generator-tag": "^0.2.0",
     "hexo-migrator-wordpress": "^0.1.2",
     "hexo-renderer-ejs": "^0.3.0",
-    "hexo-renderer-marked": "^0.3.0",
+    "hexo-renderer-marked": "^0.3.2",
     "hexo-renderer-stylus": "^0.3.1",
     "hexo-server": "^0.2.2",
     "hexo-tag-aplayer": "^2.0.7"

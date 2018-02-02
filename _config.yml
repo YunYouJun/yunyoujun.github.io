@@ -5,10 +5,10 @@
 # Site
 title: 云浦之南
 subtitle: ~ 云游君的小站 ~
+description: 云游君的小站
 author: 云游君
 signature: All at sea.
-# description: 云游君的小站
-language: zh-Hans
+language: zh-CN
 timezone: Asia/Shanghai
 
 # URL
@@ -54,7 +54,7 @@ highlight:
 # order_by: Posts order. (Order by date descending by default)
 index_generator:
   path: ''
-  per_page: 5
+  per_page: 7
   order_by: -date
   
 # Category & Tag
@@ -77,7 +77,6 @@ pagination_dir: page
 # Extensions
 ## Plugins: https://hexo.io/plugins/
 ## Themes: https://hexo.io/themes/
-
 theme: next
 
 feed: # RSS订阅插件
@@ -100,12 +99,9 @@ deploy:
   message: 
   extend_dirs: 
 
-# appId for algoliasearch    applicationID for theme-next-check
 algolia:
   applicationID: 'CJXXAGRCYN'
-  appId: 'CJXXAGRCYN'
-  apiKey: '6e0b4848221994ad8cfac232530e0b72'
-  adminApiKey: '736c166e953237acd3218a02e503c96c'
+  apiKey: '6af02e5bb9dc6381072d2096be55b601'
   indexName: 'my-hexo-blog'
   chunkSize: 5000
   fields:   

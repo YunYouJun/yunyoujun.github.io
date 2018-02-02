@@ -63,4 +63,8 @@ Windows 系统下，可下载 [nvm-setup.zip](https://github.com/coreybutler/nvm
 
 ---
 
+### update
+
+- 更新 npm : `npm install npm -g` 
+
 To Be Continued.

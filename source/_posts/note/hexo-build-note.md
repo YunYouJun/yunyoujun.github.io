@@ -7,7 +7,7 @@ tags:
 categories:
   - 云游的小笔记
 date: 2017-10-13 12:40:32
-updated: 2017-12-11 12:40:32
+updated: 2017-02-02 12:40:32
 ---
 
 > Wordpress 你放心，我暂时是不会抛弃你的。
@@ -82,16 +82,15 @@ git push origin hexo
 
 ### [集成 Algolia 搜索插件](https://www.npmjs.com/package/hexo-algolia)
 
-[**Algolia**](https://www.algolia.com/)
+#### [Algolia](https://www.algolia.com/)
 The Most Reliable Platform for Building Search.
 
-在 hexo 的 _config.yml 文件中，添加 algolia 配置。（注释记得去掉）
+在 hexo 的 `_config.yml` 文件中，添加 algolia 配置。（注释记得去掉）
 
 ```
 algolia:
   applicationID: 'xxx'   
   apiKey: 'xxx'
-  adminApiKey: 'xxx'
   indexName: 'my-hexo-blog' // 填写在 aloglia 中设置的名称
   chunkSize: 5000
   fields:   
@@ -106,9 +105,16 @@ algolia:
 ```
 
 ```
-npm install hexo-algolia@0.2.0 --save // 使用 npm 安装 hexo-algolia 插件
+npm install hexo-algolia --save // 使用 npm 安装 hexo-algolia 插件
+export HEXO_ALGOLIA_INDEXING_KEY=xxx // xxx 为 apiKey
+hexo clean
 hexo algolia // 生成index
 ```
+#### Next-Algolia
+
+Hexo 主题 Next 6.0 版本将用到的第三方都提取成了模块。
+
+> 使用方法参见： [theme-next-algolia-instant-search](https://github.com/theme-next/theme-next-algolia-instant-search)
 
 ### 为 Next 主题添加阅读次数统计
 
@@ -119,12 +125,18 @@ hexo algolia // 生成index
 
 * 进入官网，注册账号，创建应用（开发版为免费使用）
 * 进入创建的应用中，选择左侧导航栏中的“存储”，随后点击“创建Class”，将 Class 名称填为 Counter，并选择**无限制**选项。
-* 进入 Next 主题配置文件 `_config.yml`,配置 `leancloud_visitors` 属性 `enable` 为 `true`，并配置对应的 `App ID` 与 `App Key` 。 (在 `LeanCloud` 左侧导航栏的设置界面，单击“应用Key”可以看到应用的App ID和App Key。)
+* 进入 Next 主题配置文件 `_config.yml` ，配置 `leancloud_visitors` 属性 `enable` 为 `true`，并配置对应的 `App ID` 与 `App Key` 。 (在 `LeanCloud` 左侧导航栏的设置界面，单击“应用Key”可以看到应用的App ID和App Key。)
+
+---
 
 ## 小技巧
+### 配置 theme/next 
+可以在 `source` 文件夹(含有 `_post` 的文件夹)下新建 `_data` 文件夹，并在其中新建 `next.yml`。其后将需要特定的配置从 `theme/next/_config.yml` 中复制过来即可。
+
+如果需要覆盖 `_config.yml` 默认配置， 修改 `_config.yml` 中 `override: true`。
 
 ### 自动生成目录
-开启 toc (Table of Contents)
+开启 toc (Table of Contents)，
 ```
 ---
 title: xxx
@@ -133,6 +145,12 @@ toc: true
 ...
 ```
 
+也可以在设置 `next.yml`中设置默认开启。
+```
+# Table Of Contents in the Sidebar
+toc:
+  enable: true
+```
 
 ## Example
 
