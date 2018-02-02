@@ -34,8 +34,11 @@ updated: 2017-02-02 12:40:32
 
 ## 推荐主题
 
-* [NexT](http://theme-next.iissnan.com/)
-* [yilia](https://github.com/litten/hexo-theme-yilia)
+### [NexT](https://theme-next.org/)
+
+> GitHub: <https://github.com/theme-next/hexo-theme-next>
+
+### [yilia](https://github.com/litten/hexo-theme-yilia)
 
 * * *
 
@@ -133,7 +136,7 @@ Hexo 主题 Next 6.0 版本将用到的第三方都提取成了模块。
 ### 配置 theme/next 
 可以在 `source` 文件夹(含有 `_post` 的文件夹)下新建 `_data` 文件夹，并在其中新建 `next.yml`。其后将需要特定的配置从 `theme/next/_config.yml` 中复制过来即可。
 
-如果需要覆盖 `_config.yml` 默认配置， 修改 `_config.yml` 中 `override: true`。
+如果需要覆盖 `_config.yml` 默认配置， 修改 `next.yml` 中 `override: true`。
 
 ### 自动生成目录
 开启 toc (Table of Contents)，

@@ -1,0 +1,84 @@
+---
+title:
+  archive: Архив
+  category: Категория
+  tag: Тэг
+  schedule: Календарь
+author: Автор
+menu:
+  home: Главная
+  archives: Архив
+  categories: Категории
+  tags: Тэги
+  about: О сайте
+  search: Поиск
+  schedule: Календарь
+  sitemap: Карта сайта
+  commonweal: Страница 404
+sidebar:
+  overview: Обзор
+  toc: Содержание
+post:
+  created: Дата создания записи
+  modified: Дата обновления записи
+  sticky: Ссылка
+  posted: Размещено
+  in: в категории
+  more: more
+  read_more: Читать полностью
+  untitled: Без имени
+  toc_empty: Эта запись без оглавления
+  visitors: Просмотров
+  symbols_count: Кол-во символов в статье
+  symbols_time: Время чтения в минутах
+  total_symbols: Общее кол-во символов в записях
+  total_time: Время чтения всего сайта
+  copyright:
+    author: Автор записи
+    link: Ссылка на запись
+    license_title: Информация об авторских правах
+    license_content: "Все записи на этом сайте защищены лицензией %s, если не указано дополнительно."
+page:
+  totally: Всего
+  tags: тэги
+footer:
+  powered: "Генератор — %s"
+  theme: Тема
+counter:
+  tag_cloud:
+    zero: Нет тэгов.
+    one: 1 тэг.
+    other: "%d тэгов всего."
+  categories:
+    zero: Нет категорий.
+    one: 1 категория.
+    other: "%d категорий всего."
+  archive_posts:
+    zero: Нет записей.
+    one: 1 запись.
+    other: "%d записей всего."
+state:
+  posts: Архив
+  pages: Страницы
+  tags: Тэги
+  categories: Категории
+search:
+  placeholder: Поиск...
+cheers:
+  um: Эм..
+  ok: OK
+  nice: Неплохо
+  good: Хорошо
+  great: Замечательно
+  excellent: Великолепно
+keep_on: Продолжаю писать.
+symbol:
+  comma: ", "
+  period: ". "
+  colon: ":"
+reward:
+  donate: Донат
+  wechatpay: WeChat Pay
+  alipay: Alipay
+  bitcoin: Bitcoin
+gitmentbutton: Открыть Gitment комментарии
