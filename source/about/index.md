@@ -15,7 +15,7 @@ updated: 2018-01-30 15:10:32
 
 本博客所有文章默认为原创，除特别声明外，均采用 [CC BY-NC-SA 3.0](https://creativecommons.org/licenses/by-nc-sa/3.0/) 许可协议。转载注明出处即可(~~不过好像也不会有~~)。
 
-**十分欢迎无意中点进来的同学，给我留言和建议！**
+__十分欢迎无意中点进来的同学，给我留言和建议！__
 
 ~~虽然此刻很想发一个表情!~~
 
@@ -24,6 +24,7 @@ updated: 2018-01-30 15:10:32
 ## Time
 
 - ### 2016.12.31  建站
+
 > 名称：**失去的时光**
 域名：<http://yunyoujun.online>
 一时兴起，就建个站玩玩吧~ （By Wordpress）
@@ -31,21 +32,26 @@ updated: 2018-01-30 15:10:32
 这里就像是承载着被遗忘了的时光一样.（~~点题了是不是！~~）
 
 - ### 2017.07.05  新域名
+
 > 域名更换：<http://yunyoujun.cn>
-(缘由是online太长了，又不好备案什么的吧)
+(缘由是 online 太长了，又不好备案什么的吧)
 
 
 - ### 2017.08.03  elpsy.cn
+
 > 注册了个有意思的新域名：<http://elpsy.cn>
 (不过还没想好干什么用)
 
 - ### 2017.11.20  更名
+
 > 更名：云浦之南  ……
 
 - ### 2017.11.20  迁移
+
 > [博客迁移至 Hexo](https://yunyoujun.cn/note/hexo-build-note)
 
 - ### 2018.01.28  HTTPS
+
 > 网站开启强制 HTTPS 访问, 使用 亚信 SSL 免费证书, 腾讯云存储服务
 
 ……
@@ -55,7 +61,7 @@ updated: 2018-01-30 15:10:32
 > # Me
 <small>All at sea.</small>
 
------
+---
 <div style="text-align:center;">
 <img src="https://s.gravatar.com/avatar/18898984c2aeb0dae7530a738f150cba" alt="portrait" title="ID : 云游君"
 style="border-radius:100px;padding: 4px;line-height: 1.42857143;background-color: #fff;border: 1px solid #ddd;">
@@ -74,7 +80,7 @@ style="border-radius:100px;padding: 4px;line-height: 1.42857143;background-color
 
 以及种花种草，养狗养猫，孤独终老。
 
------
+---
 
 > ## Contact
 
