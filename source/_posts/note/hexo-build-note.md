@@ -23,10 +23,10 @@ updated: 2017-02-02 12:40:32
 
 ## 优点
 
-* 多语言文档（含中文）
-* 静态博客，无需服务器
-* 部署、迁移、备份方便
-* Geek
+- 多语言文档（含中文）
+- 静态博客，无需服务器
+- 部署、迁移、备份方便
+- Geek
 
 ## 部署
 
@@ -40,24 +40,24 @@ updated: 2017-02-02 12:40:32
 
 ### [yilia](https://github.com/litten/hexo-theme-yilia)
 
-* * *
+---
 
 ## 一些解决方案
 
 ### 备份自己的 Hexo 源文件
 
-* 在本地的 GitHub Pages 的项目(xxx.github.io)中,通过 `git bash` 建立新的分支 hexo
+- 在本地的 GitHub Pages 的项目(xxx.github.io)中,通过 `git bash` 建立新的分支 hexo
 (可以现在 GitHub 上新建再 clone 自自己的文件夹)
 
-```
+```bash
 git checkout -b hexo
 ```
 
-* `git checkout hexo` 切换至 hexo 分支
-* 此后对 hexo 源文件的配置修改等操作，默认在此分支下操作即可
-* 将修改推送至远程分支
+- `git checkout hexo` 切换至 hexo 分支
+- 此后对 hexo 源文件的配置修改等操作，默认在此分支下操作即可
+- 将修改推送至远程分支
 
-```
+```bash
 git add -A
 git commit -m 'update hexo backup'
 git push origin hexo
@@ -67,36 +67,37 @@ git push origin hexo
 
 - 在 Hexo 根目录下新建批处理文件 `update.sh`,并编辑如下内容。
 
-    ```
-    hexo clean
-    hexo d -g
-    git add -A
-    git commit -m 'update hexo backup'
-    git push origin hexo
-    ```
+```bash
+hexo clean
+hexo d -g
+git add -A
+git commit -m 'update hexo backup'
+git push origin hexo
+```
 
     (作用分别是清除缓存重新部署 Hexo ，和备份 Hexo 源文件。)
 
 - 在 Hexo 根目录下，通过如下命令执行。
 
-    ```
-    ./update.sh
-    ```
+```bash
+./update.sh
+```
 
 ### [集成 Algolia 搜索插件](https://www.npmjs.com/package/hexo-algolia)
 
 #### [Algolia](https://www.algolia.com/)
+
 The Most Reliable Platform for Building Search.
 
 在 hexo 的 `_config.yml` 文件中，添加 algolia 配置。（注释记得去掉）
 
-```
+```yml
 algolia:
-  applicationID: 'xxx'   
+  applicationID: 'xxx'
   apiKey: 'xxx'
   indexName: 'my-hexo-blog' // 填写在 aloglia 中设置的名称
   chunkSize: 5000
-  fields:   
+  fields:
     - excerpt
     - excerpt:strip
     - gallery
@@ -107,12 +108,13 @@ algolia:
     - title
 ```
 
-```
+```sh
 npm install hexo-algolia --save // 使用 npm 安装 hexo-algolia 插件
 export HEXO_ALGOLIA_INDEXING_KEY=xxx // xxx 为 apiKey
 hexo clean
 hexo algolia // 生成index
 ```
+
 #### Next-Algolia
 
 Hexo 主题 Next 6.0 版本将用到的第三方都提取成了模块。
@@ -126,9 +128,9 @@ Hexo 主题 Next 6.0 版本将用到的第三方都提取成了模块。
 
 [Next](http://theme-next.iissnan.com/) 主题集成了 LeanCloud 统计。
 
-* 进入官网，注册账号，创建应用（开发版为免费使用）
-* 进入创建的应用中，选择左侧导航栏中的“存储”，随后点击“创建Class”，将 Class 名称填为 Counter，并选择**无限制**选项。
-* 进入 Next 主题配置文件 `_config.yml` ，配置 `leancloud_visitors` 属性 `enable` 为 `true`，并配置对应的 `App ID` 与 `App Key` 。 (在 `LeanCloud` 左侧导航栏的设置界面，单击“应用Key”可以看到应用的App ID和App Key。)
+- 进入官网，注册账号，创建应用（开发版为免费使用）
+- 进入创建的应用中，选择左侧导航栏中的“存储”，随后点击“创建Class”，将 Class 名称填为 Counter，并选择**无限制**选项。
+- 进入 Next 主题配置文件 `_config.yml` ，配置 `leancloud_visitors` 属性 `enable` 为 `true`，并配置对应的 `App ID` 与 `App Key` 。 (在 `LeanCloud` 左侧导航栏的设置界面，单击“应用Key”可以看到应用的App ID和App Key。)
 
 ---
 
@@ -139,8 +141,10 @@ Hexo 主题 Next 6.0 版本将用到的第三方都提取成了模块。
 如果需要覆盖 `_config.yml` 默认配置， 修改 `next.yml` 中 `override: true`。
 
 ### 自动生成目录
+
 开启 toc (Table of Contents)，
-```
+
+```md
 ---
 title: xxx
 toc: true
@@ -149,7 +153,8 @@ toc: true
 ```
 
 也可以在设置 `next.yml`中设置默认开启。
-```
+
+```yml
 # Table Of Contents in the Sidebar
 toc:
   enable: true
