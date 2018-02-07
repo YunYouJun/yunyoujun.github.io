@@ -21,6 +21,7 @@ categories:
 <!-- more -->
 
 # 准备
+
 ## 教程
 网上随便搜了搜，排去火热的培训班。
 剩下两个感觉似乎还不错的教程。
@@ -75,6 +76,17 @@ Python 文件名和变量名推荐的命名规范是 `snake_case`
 
 - 全小写
 - 可使用下划线连接
+
+## Python2 & Python3
+
+Python2 中的 `urllib2`, 在 Python3 中为 `urllib.request`
+```py
+import urllib2
+# 修改为
+import urllib.request
+
+```
+
 
 ---
 
