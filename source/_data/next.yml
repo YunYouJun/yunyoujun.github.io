@@ -81,7 +81,7 @@ footer:
     version: true
   # -------------------------------------------------------------
   # Any custom text can be defined here.
-  custom_text: <a href="http://www.miitbeian.gov.cn">苏ICP备17038157号</a> | Hosted by <a target="_blank" rel="external nofollow" href="https://pages.coding.me">Coding Pages</a>
+  custom_text: <a target="_blank" href="http://www.miitbeian.gov.cn">苏ICP备17038157号</a> | Hosted by <a target="_blank" rel="external nofollow" href="https://pages.coding.me">Coding Pages</a>
 
 # ---------------------------------------------------------------
 # SEO Settings
