@@ -7,6 +7,7 @@ tags:
 categories:
   - 云游的小笔记
 date: 2017-08-21 23:49:30
+updated: 2018-02-19 22:49:30
 ---
 
 > # Linux
@@ -14,6 +15,19 @@ date: 2017-08-21 23:49:30
 - 迭代删除文件夹中所有内容 ： `rm -rf &lt;filename or dirname&gt;`
 
 ## Bash
+
+### 命令行打开网页或文件夹
+
+- Linux : `open xxx`
+- Windows : 打开网页 `start xxx` | 打开文件资源管理器 `explorer`
+
+#### Example
+
+打开网址 <www.yunyoujun.cn>：
+`start www.yunyoujun.cn`
+
+打开当前目录：
+`explorer .`
 
 ### && 与 ||
 
