@@ -30,7 +30,7 @@ categories:
 
 Vue 官方提供的模板 [vuejs-template/webpack](https://github.com/vuejs-templates/webpack) 是基于 Webpack 打包的。所以尝试着用 parcel.js 来替代 webpack 与 vue 结合在一起。
 
-- [vue-parcel-demo] : https://github.com/YunYouJun/vue-parcel-demo>
+- [vue-parcel-demo] : <https://github.com/YunYouJun/vue-parcel-demo>
 
 # 过程
 
