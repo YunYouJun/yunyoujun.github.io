@@ -11,6 +11,8 @@ categories:
 ---
 # [Vue](https://cn.vuejs.org)
 
+使用 Vue.js 过程中的一些笔记。
+
 <!-- more -->
 
 ## FAQ

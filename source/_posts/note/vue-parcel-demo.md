@@ -12,7 +12,7 @@ categories:
 
 去年年末便听得新一代打包工具 Parcel.js 的风风火火，今日也终于得以静下心来试一试。
 
----
+<!-- more -->
 
 ## [Parcel](https://parceljs.org)
 
@@ -28,7 +28,7 @@ categories:
 
 Vue 官方提供的模板 [vuejs-template/webpack](https://github.com/vuejs-templates/webpack) 是基于 Webpack 打包的。所以尝试着用 parcel.js 来替代 webpack 与 vue 结合在一起。
 
-<!-- more -->
+- [vue-parcel-demo] : https://github.com/YunYouJun/vue-parcel-demo>
 
 # 过程
 
@@ -138,6 +138,29 @@ emmm, 纠结地搜到了这个答案。简体中文页面原来是用 `lang="zh-
 }
 ```
 
+## .gitignore
+
+使用 git 管理仓库时，切记添加自定义忽略文件
+
+- `.cache` 是 `parcel` 构建时的缓存
+- `dist` 是打包后的文件
+
+```
+# Custom
+.cache
+dist
+
+# ...
+
+node_modules/
+
+# ...
+```
+
+如果使用 VS Code 编辑器，也可以对工作区进行配置，不对 `.cache` `dist` 等文件夹进行搜索。
+
+[搜索排除](https://yunyoujun.cn/note/vscode-config-note/#%E6%90%9C%E7%B4%A2%E6%8E%92%E9%99%A4)
+
 ## Command
 
 - `npm run dev` 运行 
@@ -171,6 +194,8 @@ import HelloWorld from '@/components/HelloWorld'
 ---
 import HelloWorld from '../components/HelloWorld'
 ```
+
+再次运行 `npm run dev`, 打开 `http://localhost:1234` 即可看到 Vue 的主页了。
 
 
 # FAQ
