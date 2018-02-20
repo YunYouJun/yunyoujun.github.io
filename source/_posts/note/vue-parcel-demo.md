@@ -1,10 +1,12 @@
 ---
-title: Parcel.js + Vue 搭配笔记
+title: Parcel.js + Vue 搭建笔记
 date: 2018-02-20 21:13:42
 updated: 2018-02-20 21:13:42
 tags:
   - Vue
   - Parcel
+  - 笔记
+  - 学习
 categories:
   - 云游的小笔记
 ---
@@ -195,7 +197,7 @@ import HelloWorld from '@/components/HelloWorld'
 import HelloWorld from '../components/HelloWorld'
 ```
 
-再次运行 `npm run dev`, 打开 `http://localhost:1234` 即可看到 Vue 的主页了。
+再次运行 `npm run dev`, 打开 <http://localhost:1234> 即可看到 Vue 的主页了。
 
 
 # FAQ
