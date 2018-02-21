@@ -35,7 +35,7 @@ categories:
 
 全局搜索时，不去搜索某些文件夹。
 
-```
+```json
   "search.exclude": {
     "**/node_modules": true,
     "**/bower_components": true,
@@ -62,12 +62,11 @@ categories:
   "terminal.integrated.shell.windows": "C:\\Program Files\\Git\\bin\\bash.exe",
 ```
 
-
-
 # 常用快捷键
 
 快捷键|命令|位置
 ---|---|---
+`Ctrl+Shift+N`|新建窗口|文件 -> 新建窗口
 `Ctrl+K Ctrl+S`|键盘快捷方式|文件 -> 首选项 -> 键盘快捷方式
 `Ctrl+Shift+P`|显示所有命令|
 `Ctrl+` `|切换集成终端|
