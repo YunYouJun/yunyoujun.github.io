@@ -167,6 +167,20 @@ Run the file:
 
 > 参见：[http://blog.csdn.net/lindexi_gd/article/details/52554159](http://blog.csdn.net/lindexi_gd/article/details/52554159)
 
+## 删除已经上传至 GitHub 中的文件
+
+上传项目的时候有些需要忽略的文件夹并未加入 `.gitignore` 文件中，导致上传了一些并不想上传的文件。
+
+我们想要在github上面删除，但又不想在本地删除。
+
+Example:
+
+```sh
+git rm -r --cached .idea  #--cached不会把本地的 .idea 删除
+git commit -m 'delete .idea dir'
+git push -u origin master
+```
+
 ---
 
 # 详解

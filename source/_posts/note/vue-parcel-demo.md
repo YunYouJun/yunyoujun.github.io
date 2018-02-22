@@ -86,7 +86,7 @@ yarn add vue-template-compiler css-loader -D
 
 修改 `.babelrc` 文件如下
 
-```
+```json
 {
   "presets": ["env"]
 }
@@ -116,7 +116,7 @@ emmm, 纠结地搜到了这个答案。简体中文页面原来是用 `lang="zh-
 
 ## `package.json` 添加 `scripts` 字段
 
-```
+```json
 {
   "name": "vue-parcel-demo",
   "version": "1.0.0",
@@ -147,7 +147,7 @@ emmm, 纠结地搜到了这个答案。简体中文页面原来是用 `lang="zh-
 - `.cache` 是 `parcel` 构建时的缓存
 - `dist` 是打包后的文件
 
-```
+```sh
 # Custom
 .cache
 dist
@@ -165,7 +165,7 @@ node_modules/
 
 ## Command
 
-- `npm run dev` 运行 
+- `npm run dev` 运行
 - `npm run build` 构建
 
 输入 `npm run dev` 运行试试。
@@ -177,7 +177,7 @@ node_modules/
 
 原因是 `@` 是 webpack 默认配置中使用 alias (别名) 指代 src 文件夹的符号。
 
-```
+```json
 // 位于 build/webpack.base.conf
 
 resolve: {
@@ -191,7 +191,7 @@ resolve: {
 
 进入 `src/router/index.js` , 将路径修改为相对路径
 
-```
+```js
 import HelloWorld from '@/components/HelloWorld'
 ---
 import HelloWorld from '../components/HelloWorld'
@@ -199,14 +199,13 @@ import HelloWorld from '../components/HelloWorld'
 
 再次运行 `npm run dev`, 打开 <http://localhost:1234> 即可看到 Vue 的主页了。
 
-
 # FAQ
 
 ## [运行时 + 编译器 vs. 只包含运行时](https://cn.vuejs.org/v2/guide/installation.html#%E8%BF%90%E8%A1%8C%E6%97%B6-%E7%BC%96%E8%AF%91%E5%99%A8-vs-%E5%8F%AA%E5%8C%85%E5%90%AB%E8%BF%90%E8%A1%8C%E6%97%B6)
 
 在使用 vue 脚手架 `vue init webpack vue-parcel-demo` 生成 vue-webpack 模板过程中，有如下提示：
 
-```
+```sh
 ? Vue build (Use arrow keys)
 > Runtime + Compiler: recommended for most users
   Runtime-only: about 6KB lighter min+gzip, but templates (or any Vue-specific HTML) are ONLY allowed in .vue files - render functions are required elsewhere
@@ -236,8 +235,9 @@ new Vue({
 })
 ```
 
-如果选择 `Runtime + Compiler`, `main.js` 为 
-```
+如果选择 `Runtime + Compiler`, `main.js` 为
+
+```js
 ...
 new Vue({
   el: '#app',
@@ -248,7 +248,8 @@ new Vue({
 ```
 
 如果选择 `Runtime-only`, `main.js` 则为
-```
+
+```js
 ...
 new Vue({
   el: '#app',
@@ -259,7 +260,7 @@ new Vue({
 
 Vue 模板中 webpack 的默认配置通过 alias 设置了 vue 的别名，引用了完整版的 vue 。
 
-```
+```json
 // 位于 build/webpack.base.conf
 
 resolve: {
