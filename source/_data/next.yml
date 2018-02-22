@@ -582,10 +582,10 @@ vkontakte_api:
 
 # Star rating support to each article.
 # To get your ID visit https://widgetpack.com
-rating:
-  enable: false
-  id:     9395
-  color:  fc6423
+# rating:
+#   enable: false
+#   id:     9395
+#   color:  fc6423
 # ---------------------------------------------------------------
 
 # Show number of visitors to each article.
@@ -723,7 +723,7 @@ tabs:
 # Dependencies: https://github.com/theme-next/theme-next-reading-progress
 reading_progress:
   enable: true
-  color: "#37c6c0"
+  color: "#000000"
   height: 2px
 
 
@@ -784,7 +784,7 @@ pace: true
 #pace-theme-minimal
 # For example
 # pace_theme: pace-theme-center-simple
-pace_theme: pace-theme-fill-left
+pace_theme: pace-theme-custom
 
 # Canvas-nest
 # Dependencies: https://github.com/theme-next/theme-next-canvas-nest
@@ -795,7 +795,7 @@ canvas_nest: false
 # three_waves
 three_waves: false
 # canvas_lines
-canvas_lines: true
+canvas_lines: false
 # canvas_sphere
 canvas_sphere: false
 

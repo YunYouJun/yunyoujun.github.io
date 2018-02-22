@@ -266,7 +266,7 @@ resolve: {
     // 路径别名
     alias: {
         '@': resolve('src'),
-        'vue$': 'vue/dist/vue.esm.js' // 这一个之后解释
+        'vue$': 'vue/dist/vue.esm.js' // 即此处
     }
 },
 ```
@@ -274,4 +274,3 @@ resolve: {
 最终打好的包里实际上是不需要编译器的，所以只用运行时版本即可。
 
 Parcel 使用 `runtime-only`, 修改 `main.js` 中内容为 `Runtime-only` 形式 `render: h => h(App)` 即可。
-
