@@ -45,6 +45,7 @@ git remote add coding git@git.coding.net:xxx/xxx.git
 - git 初始化： `git init`
 - 保存到暂存区： `git add -A`
 - 输入描述信息并提交到本地的 Git： `git commit -m "Say something"`
+- 修改已经提交的描述： `git commit --amend`
 - 将代码推送到 GitHub： `git push` or `git push -u origin master` ( `-u` 选项指定一个默认主机,后面就可以不加任何参数使用 `git push` )
 - 强制推送： `git push -u origin master -f`
 - [git push 详解](#git-push-详解)

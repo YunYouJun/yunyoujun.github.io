@@ -68,6 +68,12 @@ Windows 系统下，可下载 [nvm-setup.zip](https://github.com/coreybutler/nvm
 npm install -g yrm
 ```
 
+> ### [gh-pages](https://www.npmjs.com/package/gh-pages)
+
+帮助快速发布 `gh-pages` 。
+
+[npm的gh-pages结合github发布repository网站](https://segmentfault.com/a/1190000010672318)
+
 ---
 
 ## Framework

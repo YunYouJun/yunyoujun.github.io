@@ -126,7 +126,7 @@ emmm, 纠结地搜到了这个答案。简体中文页面原来是用 `lang="zh-
   "license": "MIT",
   "scripts": {
     "dev": "parcel index.html",
-    "build": "parcel build index.html --public-url /"
+    "build": "parcel build index.html --public-url ./"
   },
   "devDependencies": {
     "babel-preset-env": "^1.6.1",
