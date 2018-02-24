@@ -186,7 +186,7 @@ git push -u origin master
 
 # 详解
 
-## git push 详解
+## git push
 
 - `git push origin master`
 
@@ -225,6 +225,12 @@ git push --all origin
 上面命令表示，将所有本地分支都推送到 `origin` 主机。
 
 > 参见: [http://www.yiibai.com/git/git_push.html](http://www.yiibai.com/git/git_push.html)
+
+## git add
+
+- `git add -u`  提交被修改(modified)和被删除(deleted)文件，不包括新文件(new)
+- `git add .`  提交新文件(new)和被修改(modified)文件，不包括被删除(deleted)文件
+- `git add -A`  提交所有变化（`git add --all` 的缩写）
 
 ---
 
