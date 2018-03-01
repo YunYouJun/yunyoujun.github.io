@@ -62,10 +62,17 @@ Windows 系统下，可下载 [nvm-setup.zip](https://github.com/coreybutler/nvm
 
 > ### yrm
 
-作用和使用方法都与 [nrm](#nrm) 类似，可切换 `yarn registries`。
+作用和使用方法都与 [nrm](#nrm) 类似，可切换 `yarn registries`。(不过使用时发现两者其实是对同一个源进行切换，其实 `nrm` 就足够了。)
 
 ```sh
 npm install -g yrm
+```
+
+```sh
+$ yrm use npm
+
+   YARN Registry has been set to: https://registry.npmjs.org/
+   NPM Registry has been set to: https://registry.npmjs.org/
 ```
 
 > ### [gh-pages](https://www.npmjs.com/package/gh-pages)
