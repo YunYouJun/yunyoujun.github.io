@@ -45,7 +45,7 @@ git remote add coding git@git.coding.net:xxx/xxx.git
 - git 初始化： `git init`
 - 保存到暂存区： `git add -A`
 - 输入描述信息并提交到本地的 Git： `git commit -m "Say something"`
-- 修改已经提交的描述： `git commit --amend`
+- 修改已经提交的描述： `git commit --amend` [修改已提交内容](#修改已提交内容)
 - 将代码推送到 GitHub： `git push` or `git push -u origin master` ( `-u` 选项指定一个默认主机,后面就可以不加任何参数使用 `git push` )
 - 强制推送： `git push -u origin master -f`
 - [git push 详解](#git-push-详解)
@@ -180,6 +180,53 @@ Example:
 git rm -r --cached .idea  #--cached不会把本地的 .idea 删除
 git commit -m 'delete .idea dir'
 git push -u origin master
+```
+
+## 修改已提交内容
+
+> 参考: [git 修改已提交的内容 - CSDN](http://blog.csdn.net/sodaslay/article/details/72948722)
+
+### 修改之前已经上传的提交
+
+1. 查看修改
+
+```sh
+git rebase -i HEAD~1   #当前版本的倒数第一次状态
+```
+
+2. 显示结果如下，修改 `pick` 为 `edit` ，并按 `esc` 输入 `:wq` 保存退出
+
+```sh
+pick 578ba7a hexo backup
+
+# Rebase eeb9c17..578ba7a onto eeb9c17 (1 command)
+#
+# Commands:
+#  pick = use commit
+#  edit = use commit, but stop for amending //改上面的 pick 为 edit
+#  squash = use commit, but meld into previous commit
+#
+# If you remove a line here THAT COMMIT WILL BE LOST.
+# However, if you remove everything, the rebase will be aborted.
+#
+```
+
+3. 进行修改
+
+```sh
+#修改需要修改的地方（只是修改commit message就不用做)
+git add . #这一步如果只是修改commit message不用输入
+git commit --amend 
+#输入修改后的commit message，保存
+```
+
+4. 输入 `git rebase –continue` 完成操作
+
+5. 强制推送
+
+```sh
+git push <remote> <branch> -f
+# Example: git push origin add-something -f
 ```
 
 ---
