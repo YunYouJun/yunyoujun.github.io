@@ -1,2 +1,3 @@
+info=$1
 ./update.sh
-./backup.sh
+./backup.sh "$info"
