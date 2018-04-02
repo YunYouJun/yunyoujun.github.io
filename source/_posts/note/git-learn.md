@@ -59,7 +59,7 @@ git remote add coding git@git.coding.net:xxx/xxx.git
 
 在Git中，用HEAD表示当前版本，，上一个版本就是HEAD^，上上一个版本就是HEAD^^，当然往上100个版本写100个^比较容易数不过来，所以写成HEAD~100。
 
-- 回退到指定版本 `git rest --hard id` (id 为 commit 版本号，填写前数位保证不重复即可)
+- 回退到指定版本 `git reset --hard id` (id 为 commit 版本号，填写前数位保证不重复即可)
 - 通过 `git log` 查看历史版本
 
 ---
