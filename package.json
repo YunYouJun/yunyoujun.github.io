@@ -1,6 +1,6 @@
 {
-  "name": "hexo-site",
-  "version": "0.0.0",
+  "name": "yunyoujun.github.io",
+  "version": "0.1.0",
   "private": true,
   "hexo": {
     "version": "3.5.0"
@@ -20,6 +20,17 @@
     "hexo-renderer-ejs": "^0.3.0",
     "hexo-renderer-marked": "^0.3.2",
     "hexo-renderer-stylus": "^0.3.1",
-    "hexo-server": "^0.3.1"
-  }
+    "hexo-server": "^0.3.1",
+    "valine": "^1.1.9-beta9"
+  },
+  "description": "YunYouJun Blog",
+  "devDependencies": {},
+  "scripts": {
+    "deploy": "hexo g -d"
+  },
+  "keywords": [
+    "YunYouJun"
+  ],
+  "author": "YunYouJun",
+  "license": "ISC"
 }

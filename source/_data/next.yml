@@ -451,16 +451,15 @@ changyan:
 # You can get your appid and appkey from https://leancloud.cn
 # more info please open https://valine.js.org
 valine:
-  enable: false
-  appid:  # your leancloud application appid
-  appkey:  # your leancloud application appkey
-  notify: false # mail notifier , https://github.com/xCss/Valine/wiki
-  verify: false # Verification code
-  placeholder: Just go go # comment box placeholder
-  avatar: mm # gravatar style
+  enable: true
+  appid: 9IqtNXQeNstvoi8Oenkr85bb-gzGzoHsz # your leancloud application appid
+  appkey:  hy91bS29CzhE5JxNVOoe53GS # your leancloud application appkey
+  notify: true # mail notifier , https://github.com/xCss/Valine/wiki
+  verify: true # Verification code
+  placeholder: ヾﾉ≧∀≦)o来啊，快活啊! # comment box placeholder
+  avatar: '' # gravatar style
   guest_info: nick,mail,link # custom comment header
   pageSize: 10 # pagination size
-
 
 # Support for youyan comments system.
 # You can get your uid from http://www.uyan.cc
@@ -473,7 +472,7 @@ valine:
 # Gitment
 # Introduction: https://imsun.net/posts/gitment-introduction/
 gitment:
-  enable: true
+  enable: false
   mint: true # RECOMMEND, A mint on Gitment, to support count, language and proxy_gateway
   count: true # Show comments count in post meta area
   lazy: false # Comments lazy loading with a button
