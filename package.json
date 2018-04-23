@@ -26,7 +26,9 @@
   "description": "YunYouJun Blog",
   "devDependencies": {},
   "scripts": {
-    "deploy": "hexo g -d"
+    "algolia": "hexo clean && hexo algolia",
+    "predeploy": "hexo clean && hexo g",
+    "deploy": "hexo d"
   },
   "keywords": [
     "YunYouJun"

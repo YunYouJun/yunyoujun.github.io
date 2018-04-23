@@ -1,3 +1,3 @@
 info=$1
-./update.sh
+npm run deploy
 ./backup.sh "$info"
