@@ -29,7 +29,7 @@
     "algolia": "hexo clean && hexo algolia",
     "predeploy": "hexo clean && hexo g",
     "deploy": "hexo d",
-    "backup": "git add -A && git commit -m 'backup' && git push github hexo; git push coding hexo"
+    "backup": "git add -A && git commit -m 'backup' && git push github hexo && git push coding hexo"
   },
   "keywords": [
     "YunYouJun"
