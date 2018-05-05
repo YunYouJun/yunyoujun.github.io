@@ -126,17 +126,21 @@ $ yrm use npm
 `myVar` 为自定义变量名称
 
 ```sh
-npm run <script> --myVar=2333
+npm run <script> -- <something>
 ```
+
+Example:
 
 ```json
 "scripts": {
-    "start": "console.log({ myVar: process.env.npm_config_myVar });"
+    "hello": "echo hello"
 }
 ```
 
-```js
-{ myVar: 'something' }
+```sh
+npm run hello -- yunyoujun
+# result
+hello "yunyoujun"
 ```
 
 ---
