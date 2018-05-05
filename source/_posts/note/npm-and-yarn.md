@@ -35,32 +35,32 @@ Yarn 对你的代码来说是一个包管理器， 你可以通过它使用全�
 
 ---
 
-# Package
+## Package
 
----
+### Tools
 
-## Tools
+#### nvm
 
-> ### nvm
+- 简介：可用来安装与管理 `node.js`与 `npm` 版本。(严格来说，并不算npm的工具包，不过是管理 `node.js` 与 `npm` 的好工具。)
+- GitHub : <https://github.com/creationix/nvm>
+- 使用方法 ： 参见GitHub主页说明。（推荐使用git方式安装，更新方便。）
 
-* 简介：可用来安装与管理 `node.js`与 `npm` 版本。(严格来说，并不算npm的工具包，不过是管理 `node.js` 与 `npm` 的好工具。)
-* GitHub : https://github.com/creationix/nvm
-* 使用方法 ： 参见GitHub主页说明。（推荐使用git方式安装，更新方便。）
-
-    //从github克隆nvm项目代码
-    git clone https://github.com/creationix/nvm.git
-    //安装稳定版本
-    nvm install stable 或者 latest
+```sh
+//从github克隆nvm项目代码
+git clone https://github.com/creationix/nvm.git
+//安装稳定版本
+nvm install stable 或者 latest
+```
 
 Windows 系统下，可下载 [nvm-setup.zip](https://github.com/coreybutler/nvm-windows/releases) 解压后使用 exe 文件直接安装即可。
 
-> ### nrm
+#### nrm
 
-* 简介： nrm 可以帮助你方便快捷地在不同的 `npm registries` 中切换。(不同 npm 工具包下载源) 现包括: `npm`, `cnpm`, `taobao`, `nj(nodejitsu)`, `rednpm` .
-* GitHUb : [https://github.com/Pana/nrm](https://github.com/Pana/nrm)
-* 使用方法 ： 可参见 GitHub 主页说明。
+- 简介： nrm 可以帮助你方便快捷地在不同的 `npm registries` 中切换。(不同 npm 工具包下载源) 现包括: `npm`, `cnpm`, `taobao`, `nj(nodejitsu)`, `rednpm` .
+- GitHUb : [https://github.com/Pana/nrm](https://github.com/Pana/nrm)
+- 使用方法 ： 可参见 GitHub 主页说明。
 
-> ### yrm
+#### yrm
 
 作用和使用方法都与 [nrm](#nrm) 类似，可切换 `yarn registries`。(不过使用时发现两者其实是对同一个源进行切换，其实 `nrm` 就足够了。)
 
@@ -87,12 +87,12 @@ $ yrm use npm
 
 > ### express
 
-* 简介： 基于 `Node.js` 平台，快速、开放、极简的 web 开发框架。
-* GitHub : [https://github.com/expressjs/express](https://github.com/expressjs/express)
-* 使用方法 ： 可参见GitHub主页说明。
-* 安装方法 ： `npm install express`
-* 官网 ： [https://expressjs.com/](https://expressjs.com/)
-* 中文网 ： [http://www.expressjs.com.cn/](http://www.expressjs.com.cn/)
+- 简介： 基于 `Node.js` 平台，快速、开放、极简的 web 开发框架。
+- GitHub : [https://github.com/expressjs/express](https://github.com/expressjs/express)
+- 使用方法 ： 可参见GitHub主页说明。
+- 安装方法 ： `npm install express`
+- 官网 ： [https://expressjs.com/](https://expressjs.com/)
+- 中文网 ： [http://www.expressjs.com.cn/](http://www.expressjs.com.cn/)
 
 > ### [koa](http://koajs.com/)
 
@@ -104,11 +104,12 @@ $ yrm use npm
 
 ---
 
-# Command
+## Command
 
 ## npm
 
 ### npm package
+
 - `npm login` 登陆 npm (若使用其他镜像，需要切换回官网 `npm config set registry http://registry.npmjs.org` )
 - `npm publish` 发布 npm 包
 - `npm version major | minor | patch` 更新不同版本号
@@ -118,7 +119,25 @@ $ yrm use npm
 
 ### update
 
-- 更新 npm : `npm install npm -g` 
+- 更新 npm : `npm install npm -g`
+
+### 传入参数
+
+`myVar` 为自定义变量名称
+
+```sh
+npm run <script> --myVar=2333
+```
+
+```json
+"scripts": {
+    "start": "console.log({ myVar: process.env.npm_config_myVar });"
+}
+```
+
+```js
+{ myVar: 'something' }
+```
 
 ---
 
@@ -128,7 +147,6 @@ $ yrm use npm
 
 - 更新 yarn : `yarn upgrade [package]`
 - 强制更新 : `yarn upgrade [package] --latest`
-
 
 ---
 

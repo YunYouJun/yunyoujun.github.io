@@ -14,7 +14,7 @@ categories:
 
 <!-- more -->
 
-# 配置
+## 配置
 
 文件 -> 首选项 -> 设置
 
@@ -31,7 +31,7 @@ categories:
 }
 ```
 
-## 搜索排除
+### 搜索排除
 
 全局搜索时，不去搜索某些文件夹。
 
@@ -44,25 +44,25 @@ categories:
   },
 ```
 
-## 自动换行
+### 自动换行
 
 ```json
   "editor.wordWrap": "on",  // 超出显示范围，自动换行（只是显示效果上，并没有真正换行）
 ```
 
-## TAB 转空格
+### TAB 转空格
 
 ```json
   "editor.tabSize": 2,  // tab 键替换为 2 空格
 ```
 
-## 终端改为 Git Bash
+### 终端改为 Git Bash
 
 ```json
   "terminal.integrated.shell.windows": "C:\\Program Files\\Git\\bin\\bash.exe",
 ```
 
-# 常用快捷键
+## 常用快捷键
 
 快捷键|命令|位置
 ---|---|---
@@ -71,7 +71,7 @@ categories:
 `Ctrl+Shift+P`|显示所有命令|
 `Ctrl+` `|切换集成终端|
 
-# 相关
+## 相关
 
  [Python 配置](https://yunyoujun.cn/note/python-growth-path/#编辑器)
 
