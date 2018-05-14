@@ -1,7 +1,7 @@
 ---
 title: Parcel.js + Vue 搭建笔记
 date: 2018-02-20 21:13:42
-updated: 2018-02-20 21:13:42
+updated: 2018-05-14 21:13:42
 tags:
   - Vue
   - Parcel
@@ -29,6 +29,8 @@ categories:
 ---
 
 Vue 官方提供的模板 [vuejs-template/webpack](https://github.com/vuejs-templates/webpack) 是基于 Webpack 打包的。所以尝试着用 parcel.js 来替代 webpack 与 vue 结合在一起。
+
+### 自己的小 Demo
 
 - [vue-parcel-demo] : <https://github.com/YunYouJun/vue-parcel-demo>
 
@@ -275,3 +277,9 @@ resolve: {
 最终打好的包里实际上是不需要编译器的，所以只用运行时版本即可。
 
 Parcel 使用 `runtime-only`, 修改 `main.js` 中内容为 `Runtime-only` 形式 `render: h => h(App)` 即可。
+
+# 后记
+
+## Parcel + Vue 实现的一个小玩意儿~
+
+[我很可爱，请给我钱！](https://yunyoujun.cn/lab/project/please-give-me-money/)
