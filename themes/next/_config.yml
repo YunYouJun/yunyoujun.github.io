@@ -52,11 +52,8 @@ favicon:
   #android_manifest: /images/manifest.json
   #ms_browserconfig: /images/browserconfig.xml
 
-# Set default keywords (Use a comma to separate)
-keywords: "Hexo, NexT"
-
 # Set rss to false to disable feed link.
-# Leave rss as empty to use site's feed link.
+# Leave rss as empty to use site's feed link, and install hexo-generator-feed: `npm install hexo-generator-feed --save`.
 # Set rss to specific value if you have burned your feed already.
 rss:
 
@@ -66,13 +63,23 @@ footer:
   #since: 2015
 
   # Icon between year and copyright info.
-  icon: user
+  icon:
+    # Icon name in fontawesome, see: https://fontawesome.com/v4.7.0/icons
+    # `heart` is recommended with animation in red (#ff0000).
+    name: user
+    # If you want to animate the icon, set it to true.
+    animated: false
+    # Change the color of icon, using Hex Code.
+    color: "#808080"
 
   # If not defined, will be used `author` from Hexo main config.
   copyright:
   # -------------------------------------------------------------
-  # Hexo link (Powered by Hexo).
-  powered: true
+  powered:
+    # Hexo link (Powered by Hexo).
+    enable: true
+    # Version info of Hexo after Hexo link (vX.X.X).
+    version: true
 
   theme:
     # Theme & scheme info link (Theme - NexT.scheme).
@@ -183,9 +190,17 @@ links_layout: block
   #Title: http://example.com/
 
 # Sidebar Avatar
-# in theme directory(source/images): /images/avatar.gif
-# in site  directory(source/uploads): /uploads/avatar.gif
-#avatar: /images/avatar.gif
+avatar:
+  # in theme directory(source/images): /images/avatar.gif
+  # in site  directory(source/uploads): /uploads/avatar.gif
+  # You can also use other linking images.
+  url: #/images/avatar.gif
+  # If true, the avatar would be dispalyed in circle. 
+  rounded: false
+  # The value of opacity should be choose from 0 to 1 to set the opacity of the avatar.
+  opacity: 1
+  # If true, the avatar would be rotated with the cursor.
+  rotated: false
 
 # Table Of Contents in the Sidebar
 toc:
@@ -254,9 +269,12 @@ auto_excerpt:
 post_meta:
   item_text: true
   created_at: true
-  updated_at: false
-  # Only show 'updated' if different from 'created'.
-  updated_diff: false
+  updated_at:
+    enabled: true
+    # If true, show updated date label only if `updated date` different from 'created date' (post edited in another day than was created).
+    # And if post will edited in same day as created, edited time will show in popup title under created time label.
+    # If false show anyway, but if post edited in same day, show only edited time.
+    another_day: true
   categories: true
 
 # Post wordcount display settings
@@ -265,8 +283,18 @@ symbols_count_time:
   separated_meta: true
   item_text_post: true
   item_text_total: false
-  awl: 5
-  wpm: 200
+  awl: 4
+  wpm: 275
+
+codeblock:
+  # Manual define the border radius in codeblock
+  # Leave it empty for the default 1
+  border_radius:
+  # Add copy button on codeblock
+  copy_button:
+    enable: false
+    # Show text copy result
+    show_result: false
 
 # Wechat Subscriber
 #wechat_subscriber:
@@ -280,10 +308,30 @@ symbols_count_time:
 #alipay: /images/alipay.jpg
 #bitcoin: /images/bitcoin.png
 
+# Related popular posts
+# Dependencies: https://github.com/tea3/hexo-related-popular-posts
+related_posts:
+  enable: false
+  title: # custom header, leave empty to use the default one
+  display_in_home: false
+  params:
+    maxCount: 5
+    #PPMixingRate: 0.0
+    #isDate: false
+    #isImage: false
+    #isExcerpt: false
+
 # Declare license on posts
 post_copyright:
   enable: false
-  license: <a href="https://creativecommons.org/licenses/by-nc-sa/3.0/" rel="external nofollow" target="_blank">CC BY-NC-SA 3.0</a>
+  license: <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" rel="external nofollow" target="_blank">CC BY-NC-SA 4.0</a>
+
+# Post edit
+# Dependencies: https://github.com/hexojs/hexo-deployer-git
+post_edit:
+  enable: false
+  url: https://github.com/theme-next/theme-next.org/_posts/tree/master/ # Link for view source.
+# url: https://github.com/theme-next/theme-next.org/_posts/edit/master/ # Link for fork & edit.
 
 
 # ---------------------------------------------------------------
@@ -306,8 +354,7 @@ custom_logo:
   image:
 
 # Code Highlight theme
-# Available value:
-#    normal | night | night eighties | night blue | night bright
+# Available values: normal | night | night eighties | night blue | night bright
 # https://github.com/chriskempson/tomorrow-theme
 highlight_theme: normal
 
@@ -318,6 +365,11 @@ cheers_enabled: true
 # !!Only available for Gemini Scheme currently
 # Leave it empty for the default 75% (suggest not less than 1000px)
 #max_content_width: 1000px
+
+# Manual define the sidebar width
+# !!Only available for Gemini Scheme currently
+# Leave it empty for the default 240
+sidebar_width:
 
 # ---------------------------------------------------------------
 # Font Settings
@@ -342,13 +394,13 @@ font:
   # `family: Times New Roman`. Without any quotes.
   # `size: xx`. Use `px` as unit.
 
-  # Global font settings used on <body> element.
+  # Global font settings used for all elements in <body>.
   global:
     external: true
     family: Lato
     size:
 
-  # Font settings for Headlines (h1, h2, h3, h4, h5, h6).
+  # Font settings for Headlines (H1, H2, H3, H4, H5, H6).
   # Fallback to `global` font settings.
   headings:
     external: true
@@ -496,6 +548,7 @@ gitment:
 # Warning: JiaThis does not support https.
 #jiathis:
   ##uid: Get this uid from http://www.jiathis.com/
+
 #add_this_id:
 
 # NeedMoreShare2
@@ -591,6 +644,11 @@ leancloud_visitors:
   enable: false
   app_id: #<app_id>
   app_key: #<app_key>
+  # Dependencies: https://github.com/theme-next/hexo-leancloud-counter-security
+  # If you don't care about security in lc counter and just want to use it directly
+  # (without hexo-leancloud-counter-security plugin), set the `security` to `false`.
+  security: true
+  betterPerformance: false
 
 # Another tool to show number of visitors to each article.
 # visit https://console.firebase.google.com/u/0/ to get apiKey and projectId
@@ -602,23 +660,16 @@ firestore:
   projectId: #required
   bluebird: false #enable this if you want to include bluebird 3.5.1(core version) Promise polyfill
 
-# Show PV/UV of the website/page with busuanzi.
+# Show Views/Visitors of the website/page with busuanzi.
 # Get more information on http://ibruce.info/2015/04/04/busuanzi/
 busuanzi_count:
-  # count values only if the other configs are false
   enable: false
-  # custom uv span for the whole site
-  site_uv: true
-  site_uv_header: <i class="fa fa-user"></i>
-  site_uv_footer:
-  # custom pv span for the whole site
-  site_pv: true
-  site_pv_header: <i class="fa fa-eye"></i>
-  site_pv_footer:
-  # custom pv span for one page only
-  page_pv: true
-  page_pv_header: <i class="fa fa-file-o"></i>
-  page_pv_footer:
+  total_visitors: true
+  total_visitors_icon: user
+  total_views: true
+  total_views_icon: eye
+  post_views: true
+  post_views_icon: eye
 
 
 # Tencent analytics ID
@@ -649,6 +700,7 @@ calendar:
   maxResults: 250
 
 # Algolia Search
+# See: https://github.com/theme-next/hexo-theme-next/blob/master/docs/ALGOLIA-SEARCH.md
 # Dependencies: https://github.com/theme-next/theme-next-algolia-instant-search
 algolia_search:
   enable: false
@@ -888,7 +940,7 @@ vendors:
 
   # Internal version: 3.3.0
   # https://github.com/ethantw/Han
-  han:
+  Han:
 
   # Internal version: 3.3.0
   # https://github.com/vinta/pangu.js
@@ -904,11 +956,18 @@ vendors:
   # https://github.com/theme-next/theme-next-bookmark
   bookmark:
 
+  # reading_progress
+  # Internal version: 1.0
+  # https://github.com/theme-next/theme-next-reading-progress
+  # Example: https://cdn.jsdelivr.net/gh/theme-next/theme-next-reading-progress@1.1/reading_progress.min.js
+  reading_progress:
+
+  # valine comment
+  # Example: https://cdn.jsdelivr.net/npm/valine@1.1.8/dist/Valine.min.js
+  valine:
+
 
 # Assets
 css: css
 js: js
 images: images
-
-# Theme version
-version: 6.0.3

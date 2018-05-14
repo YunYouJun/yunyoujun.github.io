@@ -2,7 +2,7 @@
 {% import '_macro/sidebar.swig' as sidebar_template %}
 
   {% block title %}{#
-  #}{% set page_title_suffix = ' | ' + config.title %}{#
+  #}{% set page_title_suffix = ' | ' + title %}{#
 
   #}{% if page.type === "categories" and not page.title %}{#
     #}{{ __('title.category') + page_title_suffix }}{#
@@ -66,6 +66,7 @@
       {### END PAGE BODY ###}
       {#####################}
     </div>
+    {% include '_partials/breadcrumb.swig' %}
     {######################}
     {### END PAGE BLOCK ###}
     {######################}

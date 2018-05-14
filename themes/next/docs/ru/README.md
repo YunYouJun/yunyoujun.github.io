@@ -21,7 +21,7 @@
 * :heart_decoration: Muse тема: [LEAFERx](https://leaferx.online) | [XiaMo](https://notes.wanghao.work) | [OAwan](https://oawan.me)
 * :six_pointed_star: Mist тема: [Jeff](https://blog.zzbd.org) | [uchuhimo](http://uchuhimo.me) | [xirong](http://www.ixirong.com)
 * :pisces: Pisces тема: [Vi](http://notes.iissnan.com) | [Acris](https://acris.me) | [Rainy](https://rainylog.com)
-* :gemini: Gemini тема: [Ivan.Nginx](https://almostover.ru) | [Alynx](http://sh.alynx.xyz) | [Raincal](https://raincal.top)
+* :gemini: Gemini тема: [Ivan.Nginx](https://almostover.ru) | [Raincal](https://raincal.com) | [Dandy](https://dandyxu.me)
 
 Больше примеров «NexT» [здесь](https://github.com/iissnan/hexo-theme-next/issues/119).
 
@@ -62,7 +62,7 @@ $ git pull
 А если всплывают ошибки во время обновления (что-то наподобии **«Commit your changes or stash them before you can merge»**), рекомендуется ознакомиться с особенностью хранения [дата-файлов в Hexo][docs-data-files-url].\
 Как бы то ни было, можно обойти ошибки при обновлении если «Закомитить», «Стэшнуть» или «Откатить» локальные изменения. Смотрим  [здесь](https://stackoverflow.com/a/15745424/5861495) как это сделать.
 
-Если нужно обновиться с версии v5.1.x на v6.0.x, читаем [здесь][docs-update-5-1-x-url].
+**Если нужно обновиться с версии v5.1.x на v6.0.x, читаем [здесь][docs-update-5-1-x-url].**
 
 ## Известные баги
 
@@ -85,22 +85,22 @@ $ git pull
 [lang-image]: https://d322cqt584bo4o.cloudfront.net/theme-next/localized.svg "Добавить или улучшить перевод за несколько секунд!"
 [lang-url]: https://crwd.in/theme-next
 
-[gitter-image]: https://badges.gitter.im/Join%20Chat.svg
+[gitter-image]: https://img.shields.io/badge/gitter-chat-orange.svg "Вступить в нашу комнату Gitter'а"
 [gitter-url]: https://gitter.im/theme-next
 
-[riot-image]: https://img.shields.io/badge/riot-join%20chat-green.svg
+[riot-image]: https://img.shields.io/badge/riot-chat-DCAB08.svg "Вступить в нашу комнату Riot'а"
 [riot-url]: https://riot.im/app/#/room/#NexT:matrix.org
 
-[t-chat-image]: https://img.shields.io/badge/telegram-chat-lightgrey.svg
-[t-chat-url]: https://t.me/joinchat/GUNHXA-vZkgSMuimL1VmMw
+[t-chat-image]: https://img.shields.io/badge/telegram-chat-BAB210.svg "Вступить в нашу группу Telegram'а"
+[t-chat-url]: https://t.me/theme_next
 
-[t-news-image]: https://img.shields.io/badge/telegram-news-lightgrey.svg
-[t-news-url]: https://t.me/theme_next
+[t-news-image]: https://img.shields.io/badge/telegram-news-98B919.svg "Подписаться на канал Telegram'а с новостями"
+[t-news-url]: https://t.me/theme_next_news
 
 [travis-image]: https://travis-ci.org/theme-next/hexo-theme-next.svg?branch=master
 [travis-url]: https://travis-ci.org/theme-next/hexo-theme-next?branch=master "Travis CI [Linux]"
 
-[hexo-image]: https://img.shields.io/badge/hexo-%3E%3D%203.0-blue.svg
+[hexo-image]: https://img.shields.io/badge/hexo-%3E%3D%203.5.0-blue.svg
 [hexo-url]: http://hexo.io
 
 [lic-image]: https://img.shields.io/badge/license-%20AGPL-blue.svg

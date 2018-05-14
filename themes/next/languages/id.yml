@@ -4,7 +4,6 @@ title:
   category: Kategori
   tag: Tag
   schedule: Schedule
-author: Penulis
 menu:
   home: Beranda
   archives: Arsip
@@ -19,20 +18,21 @@ sidebar:
   overview: Ikhtisar
   toc: Daftar Isi
 post:
+  posted: Diposting di
+  edited: Edited on
   created: Post created
   modified: Updated at
-  sticky: Sticky
-  posted: Diposting di
+  edit: Edit this post
   in: Di
   more: more
   read_more: Baca lebih
   untitled: Tidak ada title
+  sticky: Sticky
   toc_empty: Posting ini tidak memiliki Daftar Isi
-  visitors: Pengunjung
-  symbols_count: Symbols count in article
-  symbols_time: Reading time
-  total_symbols: Symbols count total
-  total_time: Reading time total
+  views: Views
+  comments_count: Comments
+  related_posts: Related Posts
+  copy_button: Copy
   copyright:
     author: Post author
     link: Post link
@@ -44,6 +44,8 @@ page:
 footer:
   powered: "Powered by %s"
   theme: Tema
+  total_views: Total Views
+  total_visitors: Total Visitors
 counter:
   tag_cloud:
     zero: Tidak ada tags
@@ -75,10 +77,20 @@ keep_on: Terus Posting.
 symbol:
   comma: ", "
   period: ". "
-  colon: ":"
+  colon: ": "
 reward:
   donate: Donate
   wechatpay: WeChat Pay
   alipay: Alipay
   bitcoin: Bitcoin
 gitmentbutton: Show comments from Gitment
+accessibility:
+  nav_toggle: Toggle navigation bar
+  prev_page: Previous page
+  next_page: Next page
+symbols_count_time:
+  count: Symbols count in article
+  count_total: Symbols count total
+  time: Reading time
+  time_total: Reading time total
+  time_minutes: mins.
