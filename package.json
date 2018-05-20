@@ -32,7 +32,8 @@
     "backup": "git add -A && git commit -m 'backup' && git push github hexo && git push coding hexo"
   },
   "keywords": [
-    "YunYouJun"
+    "YunYouJun",
+    "云游君"
   ],
   "author": "YunYouJun",
   "license": "ISC"

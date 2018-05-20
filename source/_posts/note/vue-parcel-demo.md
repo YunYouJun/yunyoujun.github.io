@@ -63,23 +63,26 @@ Vue 官方提供的模板 [vuejs-template/webpack](https://github.com/vuejs-temp
 ## 安装依赖
 
 ```sh
-yarn add vue vue-router parcel-bundler parcel-plugin-vue babel-preset-env --dev
+yarn add vue vue-router parcel-bundler babel-preset-env --dev
 ```
 
-此时安装的过程中会提示同级依赖的警告。
+[parcel-plugin-vue](https://github.com/BoltDoggy/parcel-plugin-vue)
+
+> parcel-bundler/parcel @1.7.0 support Vue Now. This plugin will be not recommended.
+
+Parcel 1.7.0 版本似乎已经支持 Vue 了。所以不需要再安装 `parcel-plugin-vue` 插件了。（~~默默删去了一段~~）
+
+(果然配置越来越少 2333，再之后这篇文章说不定都没有存在的必要了。)
+
+---
+
+虽说零配置，实际上是 Parcel 帮我们把要配置的东西做了。
+
+在打包 Vue 的时候，发现它调用 yarn 安装了几个插件。当然我们也可以自己先安装上。
 
 ```sh
-> warning "parcel-plugin-vue > vueify-bolt@1.0.2" has unmet peer dependency "vue-template-compiler@~2".
-> warning "parcel-plugin-vue > vueify-bolt > vue-loader@13.7.1" has unmet peer dependency "css-loader@*".
-> warning "parcel-plugin-vue > vueify-bolt > vue-loader@13.7.1" has unmet peer dependency "vue-template-compiler@^2.0.0".
-> warning " > parcel-plugin-vue@1.5.0" has unmet peer dependency "vue-template-compiler@~2".
-```
-
-本强迫症就又根据提示安装了这几个包
-
-```sh
-yarn add vue-template-compiler css-loader -D
-// -D 与 --dev 一个意思，将依赖安装在 devDependencies
+yarn add -D vue-template-compiler @vue/component-compiler-utils vue-hot-reload-api
+# -D 与 --dev 一个意思，将依赖安装在 devDependencies
 ```
 
 ## Babel 配置
@@ -127,20 +130,28 @@ emmm, 纠结地搜到了这个答案。简体中文页面原来是用 `lang="zh-
   "author": "YunYouJun <me@yunyoujun.cn>",
   "license": "MIT",
   "scripts": {
-    "dev": "parcel index.html",
-    "build": "parcel build index.html --public-url ./"
+    "start": "npm run dev",
+    "dev": "parcel index.html -p 2333 --open",
+    "build": "parcel build index.html --public-url ./ --no-cache"
   },
   "devDependencies": {
-    "babel-preset-env": "^1.6.1",
-    "css-loader": "^0.28.9",
-    "parcel-bundler": "^1.6.2",
-    "parcel-plugin-vue": "^1.5.0",
-    "vue": "^2.5.13",
+    "@vue/component-compiler-utils": "^1.2.1",
+    "babel-preset-env": "^1.7.0",
+    "node-sass": "^4.9.0",
+    "parcel-bundler": "^1.8.1",
+    "vue": "^2.5.16",
+    "vue-hot-reload-api": "^2.3.0",
     "vue-router": "^3.0.1",
-    "vue-template-compiler": "^2.5.13"
-  }
+    "vue-template-compiler": "^2.5.16"
+  },
+  "dependencies": {}
 }
 ```
+
+- `-p 2333` 设置端口号为 `2333`
+- `--open` 自动打开浏览器
+- `--public-url ./` 设置要提供服务的公共 URL(`./` 也就是设置为当前 `dist` 目录下)
+- `--no-cache` 禁用文件系统缓存
 
 ## .gitignore
 
