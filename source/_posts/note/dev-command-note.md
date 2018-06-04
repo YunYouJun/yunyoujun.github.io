@@ -16,6 +16,14 @@ updated: 2018-02-19 22:49:30
 
 ## Bash
 
+### 环境变量
+
+- 显示所有环境变量 `env`
+- 导出变量 `export NODE_ENV='production'`
+- 删除变量 `unset NODE_ENV`
+
+> NODE_ENV 为举例变量名，可使用任意名称
+
 ### 命令行打开网页或文件夹
 
 - Linux : `open xxx`
