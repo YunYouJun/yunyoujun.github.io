@@ -66,13 +66,23 @@ footer:
   since: 2016
 
   # Icon between year and copyright info.
-  icon: cloud
+  icon:
+    # Icon name in fontawesome, see: https://fontawesome.com/v4.7.0/icons
+    # `heart` is recommended with animation in red (#ff0000).
+    name: cloud
+    # If you want to animate the icon, set it to true.
+    animated: true
+    # Change the color of icon, using Hex Code.
+    color: "#808080"
 
   # If not defined, will be used `author` from Hexo main config.
   copyright: 'YunYouJun'
   # -------------------------------------------------------------
-  # Hexo link (Powered by Hexo).
-  powered: true
+  powered:
+    # Hexo link (Powered by Hexo).
+    enable: true
+    # Version info of Hexo after Hexo link (vX.X.X).
+    version: true
 
   theme:
     # Theme & scheme info link (Theme - NexT.scheme).
@@ -190,10 +200,18 @@ links_layout: block
   # 失去的时光: http://www.yunyoujun.cn/
 
 # Sidebar Avatar
-# in theme directory(source/images): /images/avatar.gif
-# in site  directory(source/uploads): /uploads/avatar.gif
-avatar: /images/avatar.jpg
-  # 'https://s.gravatar.com/avatar/18898984c2aeb0dae7530a738f150cba?s=150' gravatar
+avatar:
+  # in theme directory(source/images): /images/avatar.gif
+  # in site  directory(source/uploads): /uploads/avatar.gif
+  # You can also use other linking images.
+  url: /images/avatar.jpg
+    # 'https://s.gravatar.com/avatar/18898984c2aeb0dae7530a738f150cba?s=150' gravatar
+  # If true, the avatar would be dispalyed in circle. 
+  rounded: false
+  # The value of opacity should be choose from 0 to 1 to set the opacity of the avatar.
+  opacity: 1
+  # If true, the avatar would be rotated with the cursor.
+  rotated: false
 
 # Table Of Contents in the Sidebar
 toc:
@@ -262,9 +280,12 @@ auto_excerpt:
 post_meta:
   item_text: true
   created_at: true
-  updated_at: true
-  # Only show 'updated' if different from 'created'.
-  updated_diff: true
+  updated_at:
+    enabled: true
+    # If true, show updated date label only if `updated date` different from 'created date' (post edited in another day than was created).
+    # And if post will edited in same day as created, edited time will show in popup title under created time label.
+    # If false show anyway, but if post edited in same day, show only edited time.
+    another_day: true
   categories: true
 
 # Post wordcount display settings
