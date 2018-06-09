@@ -9,8 +9,9 @@ install:
 script:
   - npm run deploy
 before_install:
-  - openssl aes-256-cbc -K $encrypted_8f758fb5d001_key -iv $encrypted_8f758fb5d001_iv -in travis_rsa.enc -out ~/.ssh/travis_rsa -d
-  - chmod 600 ~/.ssh/id_rsa
+  - openssl aes-256-cbc -K $encrypted_8f758fb5d001_key -iv $encrypted_8f758fb5d001_iv 
+  -in travis_rsa.enc -out ~/.ssh/travis_rsa -d
+  - chmod 600 ~/.ssh/travis_rsa
   - git config --global user.name "YunYouJun"
   - git config --global user.email me@yunyoujun.cn
 branches:
