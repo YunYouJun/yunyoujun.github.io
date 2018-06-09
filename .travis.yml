@@ -1,19 +1,27 @@
 language: node_js
 node_js:
-- lts/*
+  - lts/*
 cache:
   directories:
   - node_modules
 install:
-- npm install
+  - npm install
 script:
-- npm run deploy
+  - npm run predeploy
 before_install:
-- openssl aes-256-cbc -K $encrypted_8f758fb5d001_key -iv $encrypted_8f758fb5d001_iv
-  -in travis_rsa.enc -out ~/.ssh/id_rsa -d
-- chmod 600 ~/.ssh/id_rsa
-- git config --global user.name "YunYouJun"
-- git config --global user.email me@yunyoujun.cn
+  - git config --global user.name "YunYouJun"
+  - git config --global user.email me@yunyoujun.cn
+after_success:
+  - cd public
+  - git init
+  - git add .
+  - git commit -m "Update Hexo Blog"
+  - git push --force --quiet "https://${GH_TOKEN}@${GH_REF}" master:master
+  - git push --force --quiet "https://${CODING_TOKEN}@${CD_REF}" master:master
 branches:
   only:
   - hexo
+env:
+ global:
+   - GH_REF: github.com/YunYouJun/yunyoujun.github.io.git
+   - CD_REF: git.coding.net/YunYouJun/yunyoujun.coding.me.git
