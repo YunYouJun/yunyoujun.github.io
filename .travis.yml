@@ -16,8 +16,8 @@ after_success:
   - git config user.email "me@yunyoujun.cn"
   - git add .
   - git commit -m "Update Hexo Blog"
-  - git push --force --quiet "https://$GH_TOKEN@${GH_REF}" master:master
-  - git push --force --quiet "https://$CODING_TOKEN@${CD_REF}" master:master
+  - git push --force "https://$GH_TOKEN@${GH_REF}" master:master
+  - git push --force "https://YunYouJun:$CODING_TOKEN@${CD_REF}" master:master
 branches:
   only:
     - hexo
