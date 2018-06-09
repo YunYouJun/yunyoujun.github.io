@@ -26,7 +26,6 @@
   "description": "YunYouJun Hexo Blog",
   "devDependencies": {},
   "scripts": {
-    "key": "export HEXO_ALGOLIA_INDEXING_KEY=6af02e5bb9dc6381072d2096be55b601",
     "algolia": "hexo clean && hexo algolia",
     "predeploy": "hexo clean && hexo g",
     "deploy": "hexo d",
