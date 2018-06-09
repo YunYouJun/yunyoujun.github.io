@@ -1,19 +1,18 @@
 language: node_js
 node_js:
-  - lts/*
+- lts/*
 cache:
   directories:
-    - node_modules
+  - node_modules
 install:
-  - npm install
+- npm install
 script:
-  - npm run deploy
+- npm run deploy
 before_install:
-  - openssl aes-256-cbc -K $encrypted_8f758fb5d001_key -iv $encrypted_8f758fb5d001_iv 
-  -in travis_rsa.enc -out ~/.ssh/travis_rsa -d
-  - chmod 600 ~/.ssh/travis_rsa
-  - git config --global user.name "YunYouJun"
-  - git config --global user.email me@yunyoujun.cn
+- openssl aes-256-cbc -K $encrypted_8f758fb5d001_key -iv $encrypted_8f758fb5d001_iv
+  -in travis_rsa.enc -out travis_rsa -d
+- git config --global user.name "YunYouJun"
+- git config --global user.email me@yunyoujun.cn
 branches:
   only:
-    - hexo
+  - hexo
