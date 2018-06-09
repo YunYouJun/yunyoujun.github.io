@@ -20,8 +20,8 @@ after_success:
   - git push --force --quiet "https://${CODING_TOKEN}@${CD_REF}" master:master
 branches:
   only:
-  - hexo
+    - hexo
 env:
- global:
-   - GH_REF: github.com/YunYouJun/yunyoujun.github.io.git
-   - CD_REF: git.coding.net/YunYouJun/yunyoujun.coding.me.git
+  global:
+    - GH_REF: github.com/YunYouJun/yunyoujun.github.io.git
+    - CD_REF: git.coding.net/YunYouJun/yunyoujun.coding.me.git
