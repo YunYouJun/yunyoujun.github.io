@@ -46,6 +46,29 @@ after_success:
 travis encrypt -r YunYouJun/repo GH_TOKEN=XXX
 ```
 
+## Token
+
+### GitHub Pages
+
+```sh
+git push --force "https://${GH_TOKEN}@${GH_REF}" master:master
+```
+
+### Coding Pages
+
+Coding 还需要加 用户名 前缀 `https://xxx:${CODING_TOKEN}@${CD_REF}`
+
+```sh
+git push --force "https://yunyoujun:${CODING_TOKEN}@${CD_REF}" master:master
+```
+
+```yml
+env:
+  global:
+    - GH_REF: github.com/YunYouJun/yunyoujun.github.io.git
+    - CD_REF: git.coding.net/YunYouJun/yunyoujun.coding.me.git
+```
+
 ---
 
 To Be Continued.
