@@ -15,4 +15,4 @@ before_install:
   - git config --global user.email me@yunyoujun.cn
 branches:
   only:
-    - master
+    - hexo
