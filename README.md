@@ -10,3 +10,7 @@
 ## Intend
 
 - [ ] add travis-ci
+
+## FAQ
+
+- Travis Bad decrypt (Because of Windows)
