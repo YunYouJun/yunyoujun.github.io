@@ -13,4 +13,6 @@
 
 ## FAQ
 
-- Travis Bad decrypt (Because of Windows)
+### Travis Bad decrypt (Because of Windows)
+
+Remove ssh_rsa env
