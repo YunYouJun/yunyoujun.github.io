@@ -8,6 +8,8 @@ install:
   - npm install
 script:
   - npm run predeploy
+  - npm run key
+  - npm run algolia
 before_install:
   - git config --global user.name "YunYouJun"
   - git config --global user.email me@yunyoujun.cn
@@ -16,8 +18,8 @@ after_success:
   - git init
   - git add .
   - git commit -m "Update Hexo Blog"
-  - git push --force --quiet "https://${GH_TOKEN}@${GH_REF}" master:master
-  - git push --force --quiet "https://${CODING_TOKEN}@${CD_REF}" master:master
+  - git push --force --quiet "https://$GH_TOKEN@${GH_REF}" master:master
+  - git push --force --quiet "https://$CODING_TOKEN@${CD_REF}" master:master
 branches:
   only:
     - hexo
