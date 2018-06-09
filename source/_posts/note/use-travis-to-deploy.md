@@ -8,6 +8,8 @@ categories:
   - 云游的小笔记
 ---
 
+# Travis-CI
+
 <!-- more -->
 
 - [heroku](https://www.heroku.com/)
@@ -34,6 +36,14 @@ script:
 after_success:
   - export SSHPASS=$VPS_PWD
   - sshpass -e ssh -o stricthostkeychecking=no root@139.199.22.90 "sh /data/wwwroot/coc.yunyoujun.cn/deploy-ci.sh $TOKEN"
+```
+
+## 加密 Token
+
+使用 [Travis CI](https://github.com/travis-ci/travis.rb#readme) 的命令行工具加密 GitHub 的 Personal Access Token。
+
+```sh
+travis encrypt -r YunYouJun/repo GH_TOKEN=XXX
 ```
 
 ---

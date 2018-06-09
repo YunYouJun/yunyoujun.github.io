@@ -65,6 +65,7 @@ git remote add coding git@git.coding.net:xxx/xxx.git
 ---
 
 ## 分支管理
+
 - 显示当前分支 `git branch -v`
 - 显示远程分支 `git remote -v`
 - 将当前分支切换到 master 分支上: `git checkout master`
@@ -73,6 +74,7 @@ git remote add coding git@git.coding.net:xxx/xxx.git
 - 合并分支： `git merge fake-branch`
 - 删除分支： `git branch -d fake-branch`
 - 删除远程分支：`git push origin –delete 分支名`
+- 修改分支名称：`git branch -m old_branch_name new_branch_name`
 
 ---
 
@@ -108,8 +110,7 @@ git pull
 
 ## 提交至 GitHub 时出现 invalid-email-address
 
-- 查看git设置：
-`cat $HOME/.gitconfig`
+- 查看git设置：`cat $HOME/.gitconfig`
 - 正常情况应显示 [user]name 与 email 的信息。
 - 若无，通过如下代码修改 git 配置。
 
@@ -121,44 +122,7 @@ git config --global user.email "Git账户邮箱"
 - 修改已经使用 invalid-email 提交的 commit 信息
 - (若不知道无效邮箱的具体地址，可通过 `git log` 查看提交时的邮箱地址。)
 
-{% blockquote Esen Sagynov "https://github.com/kadishmal/tilchi.com/wiki/GitHub-Fix-invalid-email-address-in-Repository-History" "GitHub Fix invalid email address in Repository Historys" %}
-Create a `fix_repo.sh` file in your repo:
-
-	cd my_repo
-	nano fix_repo.sh
-
-And add the following code:
-
-	#!/bin/sh
-
-	git filter-branch --env-filter '
-
-	am="$GIT_AUTHOR_EMAIL"
-	cm="$GIT_COMMITTER_EMAIL"
-
-	if [ "$GIT_COMMITTER_EMAIL" = "none@none" ]
-	then
-	    cm="kadishmal@gmail.com"
-	fi
-	if [ "$GIT_AUTHOR_EMAIL" = "none@none" ]
-	then
-	    am="kadishmal@gmail.com"
-	fi
-
-	export GIT_AUTHOR_EMAIL="$am"
-	export GIT_COMMITTER_EMAIL="$cm"
-	'
-
-Don't forget to leave the single quote (') at the end of the last line and at the end of the first line.
-
-Set the file to be executable:
-
-	chmod a+x fix_repo.sh
-
-Run the file:
-
-	./fix_repo.sh
-{% endblockquote %}
+> [GitHub Fix invalid email address in Repository History](https://github.com/kadishmal/tilchi.com/wiki/GitHub-Fix-invalid-email-address-in-Repository-History)
 
 ## 合并两个不同的项目，出现错误
 
@@ -188,13 +152,13 @@ git push -u origin master
 
 ### 修改之前已经上传的提交
 
-1. 查看修改
+- 查看修改
 
 ```sh
 git rebase -i HEAD~1   #当前版本的倒数第一次状态
 ```
 
-2. 显示结果如下，修改 `pick` 为 `edit` ，并按 `esc` 输入 `:wq` 保存退出
+- 显示结果如下，修改 `pick` 为 `edit` ，并按 `esc` 输入 `:wq` 保存退出
 
 ```sh
 pick 578ba7a hexo backup
@@ -211,7 +175,7 @@ pick 578ba7a hexo backup
 #
 ```
 
-3. 进行修改
+- 进行修改
 
 ```sh
 #修改需要修改的地方（只是修改commit message就不用做)
@@ -220,9 +184,9 @@ git commit --amend
 #输入修改后的commit message，保存
 ```
 
-4. 输入 `git rebase –continue` 完成操作
+- 输入 `git rebase –continue` 完成操作
 
-5. 强制推送
+- 强制推送
 
 ```sh
 git push <remote> <branch> -f
