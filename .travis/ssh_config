@@ -1,5 +1,0 @@
-Host github.com
-User git
-StrictHostKeyChecking no
-IdentityFile ~/.ssh/travis_rsa
-IdentitiesOnly yes
