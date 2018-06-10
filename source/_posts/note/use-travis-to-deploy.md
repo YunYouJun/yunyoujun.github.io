@@ -1,7 +1,7 @@
 ---
 title: Travis-CI 持续集成部署
 date: 2018-05-24 15:04:42
-updated: 2018-05-24 15:04:42
+updated: 2018-06-10 15:04:42
 tags:
   - 笔记
 categories:
@@ -10,10 +10,23 @@ categories:
 
 # Travis-CI
 
+> Travis CI - Test and Deploy Your Code with Confidence
+
+[travis-ci.org](https://www.travis-ci.org/)
+
 <!-- more -->
+
+## Intro
+
+正如字面上的意思，Travis 可以用来测试和帮助自己部署网站。
+
+一般自己闲来会写些并无卵用的小玩意儿，纯静态的页面话，便会部署在 [GitHub Pages](https://pages.github.com/) 上。
+而动态网站则部署在自己的服务器上，又或是如下有一些可以部署测试的动态服务。（当然那样的话，自定义域名之类的服务就要收费了。）
 
 - [heroku](https://www.heroku.com/)
 - [now.sh](https://zeit.co/now)
+
+---
 
 ```sh
 language: node_js
