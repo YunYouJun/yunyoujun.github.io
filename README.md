@@ -16,3 +16,7 @@
 ### Travis Bad decrypt (Because of Windows)
 
 Remove ssh_rsa env
+
+### Git Clone
+
+Third Plugin
