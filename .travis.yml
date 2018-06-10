@@ -6,6 +6,13 @@ cache:
   - node_modules
 install:
   - npm install
+  - cd themes/next
+  - git clone https://github.com/theme-next/theme-next-algolia-instant-search source/lib/algolia-instant-search
+  - git clone https://github.com/theme-next/theme-next-fancybox3 source/lib/fancybox
+  - git clone https://github.com/theme-next/theme-next-pace source/lib/pace
+  - git clone https://github.com/theme-next/theme-next-reading-progress source/lib/reading_progress
+  - git clone https://github.com/theme-next/theme-next-needmoreshare2 source/lib/needsharebutton
+  - git clone https://github.com/theme-next/theme-next-three source/lib/three
 script:
   - npm run algolia
   - npm run predeploy
