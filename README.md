@@ -7,16 +7,14 @@
 - [GitHub](https://github.com/YunYouJun/yunyoujun.github.io)
 - [Coding](https://coding.net/u/YunYouJun/p/yunyoujun.coding.me)
 
-## Intend
+## Build
 
-- [ ] add travis-ci
+- use Travis-ci
+- git clone themes/next
+- git clone theme-next-third-plugin
 
 ## FAQ
 
 ### Travis Bad decrypt (Because of Windows)
 
 Remove ssh_rsa env
-
-### Git Clone
-
-Third Plugin
