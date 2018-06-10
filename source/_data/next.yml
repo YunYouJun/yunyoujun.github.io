@@ -801,7 +801,7 @@ pace: true
 #pace-theme-minimal
 # For example
 # pace_theme: pace-theme-center-simple
-pace_theme: pace-theme-custom
+pace_theme: pace-theme-fill-left
 
 # Canvas-nest
 # Dependencies: https://github.com/theme-next/theme-next-canvas-nest
