@@ -554,7 +554,7 @@ needmoreshare2:
 #google_site_verification:
 
 # Google Analytics
-#google_analytics:
+google_analytics: UA-121354150-1
 
 # Bing Webmaster tools verification setting
 # See: https://www.bing.com/webmaster/
@@ -565,7 +565,7 @@ needmoreshare2:
 #yandex_site_verification:
 
 # CNZZ count
-cnzz_siteid: 1272876091
+# cnzz_siteid: 1272876091
 
 # Application Insights
 # See https://azure.microsoft.com/en-us/services/application-insights/
@@ -611,14 +611,14 @@ vkontakte_api:
 # Show number of visitors to each article.
 # You can visit https://leancloud.cn get AppID and AppKey.
 leancloud_visitors:
-  enable: true
+  enable: TRUE
   app_id: 4x0IwQ1sy95mOGQDTO8MYCeA-gzGzoHsz
   app_key: 9loqwF3UDklPDHaP9IN2uwN8
   # Dependencies: https://github.com/theme-next/hexo-leancloud-counter-security
   # If you don't care about security in lc counter and just want to use it directly
   # (without hexo-leancloud-counter-security plugin), set the `security` to `false`.
-  # security: true
-  # betterPerformance: false
+  security: true
+  betterPerformance: false
 
 # Another tool to show number of visitors to each article.
 # visit https://console.firebase.google.com/u/0/ to get apiKey and projectId
@@ -630,7 +630,7 @@ firestore:
   projectId: #required
   bluebird: false #enable this if you want to include bluebird 3.5.1(core version) Promise polyfill
 
-# Show PV/UV of the website/page with busuanzi.
+# Show Views/Visitors of the website/page with busuanzi.
 # Get more information on http://ibruce.info/2015/04/04/busuanzi/
 busuanzi_count:
   enable: true
@@ -638,7 +638,7 @@ busuanzi_count:
   total_visitors_icon: user
   total_views: true
   total_views_icon: eye
-  post_views: false
+  post_views: true
   post_views_icon: eye
 
 # Tencent analytics ID
