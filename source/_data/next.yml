@@ -611,7 +611,7 @@ vkontakte_api:
 # Show number of visitors to each article.
 # You can visit https://leancloud.cn get AppID and AppKey.
 leancloud_visitors:
-  enable: false
+  enable: true
   app_id: 4x0IwQ1sy95mOGQDTO8MYCeA-gzGzoHsz
   app_key: 9loqwF3UDklPDHaP9IN2uwN8
   # Dependencies: https://github.com/theme-next/hexo-leancloud-counter-security
@@ -638,7 +638,7 @@ busuanzi_count:
   total_visitors_icon: user
   total_views: true
   total_views_icon: eye
-  post_views: true
+  post_views: false
   post_views_icon: eye
 
 # Tencent analytics ID
