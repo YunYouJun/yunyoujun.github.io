@@ -473,18 +473,15 @@ changyan:
 # more info please open https://valine.js.org
 valine:
   enable: true
-  appid: 9IqtNXQeNstvoi8Oenkr85bb-gzGzoHsz # your leancloud application appid
-  appkey:  hy91bS29CzhE5JxNVOoe53GS # your leancloud application appkey
+  appid: 4x0IwQ1sy95mOGQDTO8MYCeA-gzGzoHsz # your leancloud application appid
+  appkey:  9loqwF3UDklPDHaP9IN2uwN8 # your leancloud application appkey
   notify: true # mail notifier , https://github.com/xCss/Valine/wiki
   verify: true # Verification code
   placeholder: ヾﾉ≧∀≦)o来啊，快活啊! # comment box placeholder
   avatar: '' # gravatar style
   guest_info: nick,mail,link # custom comment header
   pageSize: 10 # pagination size
-
-# Support for youyan comments system.
-# You can get your uid from http://www.uyan.cc
-#youyan_uid: your uid
+  visitor: true # leancloud-counter-security is not supported for now. When visitor is set to be true, appid and appkey are recommended to be the same as leancloud_visitors' for counter compatibility. Article reading statistic https://valine.js.org/visitor.html
 
 # Support for LiveRe comments system.
 # You can get your uid from https://livere.com/insight/myCode (General web site)
@@ -602,10 +599,10 @@ vkontakte_api:
 
 # Star rating support to each article.
 # To get your ID visit https://widgetpack.com
-# rating:
-#   enable: false
-#   id:     9395
-#   color:  fc6423
+rating:
+  enable: false
+  id:     9395
+  color:  fc6423
 # ---------------------------------------------------------------
 
 # Show number of visitors to each article.
@@ -618,7 +615,7 @@ leancloud_visitors:
   # If you don't care about security in lc counter and just want to use it directly
   # (without hexo-leancloud-counter-security plugin), set the `security` to `false`.
   security: true
-  betterPerformance: false
+  betterPerformance: true
 
 # Another tool to show number of visitors to each article.
 # visit https://console.firebase.google.com/u/0/ to get apiKey and projectId
