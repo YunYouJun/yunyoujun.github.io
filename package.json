@@ -7,7 +7,7 @@
   },
   "dependencies": {
     "hexo": "^3.7.1",
-    "hexo-algolia": "^1.2.4",
+    "hexo-algolia": "^1.2.5",
     "hexo-deployer-git": "^0.3.1",
     "hexo-generator-archive": "^0.1.4",
     "hexo-generator-baidu-sitemap": "^0.1.2",
@@ -20,8 +20,8 @@
     "hexo-renderer-ejs": "^0.3.0",
     "hexo-renderer-marked": "^0.3.2",
     "hexo-renderer-stylus": "^0.3.1",
-    "hexo-server": "^0.3.1",
-    "valine": "^1.1.9-beta9"
+    "hexo-server": "^0.3.2",
+    "valine": "^1.3.0"
   },
   "description": "YunYouJun Hexo Blog",
   "devDependencies": {},
