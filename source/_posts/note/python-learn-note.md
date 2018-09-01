@@ -1,5 +1,5 @@
 ---
-title: Python 成长之路
+title: Python 学习笔记
 date: 2018-01-23 09:50:57
 updated: 2018-02-21 13:15:57
 tags:
@@ -9,38 +9,34 @@ tags:
 categories:
   - 云游的小笔记
 ---
-# 前言
-
-最近和朋友一起学 Python 啦。
-
 # Intro
 
-记录一些学习路上的问题与技巧。
+记录一些关于 Python 学习的问题与技巧。
 
 <!-- more -->
 
-# 准备
+# About
 
 ## 教程
 
-网上随便搜了搜，排去火热的培训班。
-剩下两个感觉似乎还不错的教程。
-
-- [Crossin的编程教室](http://crossincode.com/home/)
+- [Python教程 - 廖雪峰的官方网站](https://www.liaoxuefeng.com/wiki/0014316089557264a6b348958f449949df42a6d3a2e542c000)
 - [《简明 Python 教程》](https://bop.mol.uno/)
+- [Crossin的编程教室](http://crossincode.com/home/)
 
-初步决定使用第一个教程，顺便注册个账号可以记录自己学习到的进度。每天看几课。
+## Code
+
+- [python-learn](https://github.com/YunYouJun/python-learn)
 
 ## 编辑器
 
-教程里使用的还是 Windows 上 Python 附带的 IDLE ( IDE )。
-不是很符合自己的审美，加之成了 `VS Code` 粉。便配置配置 `VS Code` 当 Python 的 IDE 了。
+- [VS Code](https://code.visualstudio.com/)（自己目前使用的是这个，需要配置。因为自己还写些其他语言代码，为省事便配置在了一起。）
+- [PyCharm](https://www.jetbrains.com/pycharm/)
 
 ### 配置
 
 `ctrl + p`
 
-安装插件 `Python` （就叫 Python），输入如下命令，或者直接在扩展里搜就可以了。
+安装插件 `Python` （就叫 Python），输入如下命令，或直接在扩展里搜索。
 
 ```sh
 ext install python
@@ -106,9 +102,31 @@ Python2 `thread` 模块已被废弃。用户可以使用 threading 模块代替�
 
 [Python3 多线程 | 菜鸟教程](http://www.runoob.com/python3/python3-multithreading.html)
 
+# Q&A
+
+## 如何退出解释器提示符
+
+### Linux & OS X
+
+按下 <kbd>ctrl</kbd> + <kbd>d</kbd> 组合键或输入 `exit()` 并敲下 <kbd>enter</kbd>
+
+### Windows
+
+按下 <kbd>ctrl</kbd> + <kbd>z</kbd> 组合键并敲击 <kbd>enter</kbd>
+
+## 获取帮助
+
+如果你需要获得 Python 中有关任何函数或语句的快速信息，你可以使用其内置的 `help` 功能。
+
+例如，运行 `help('len')` 命令——这将显示出有关 len 函数的帮助，了解其是用来计算项目数量的。
+
+> 按下 <kbd>q</kbd> 键可以退出帮助。
+
 # TIMELINE
 
-- [x] 2018-02-20 Crossin 的编程教师 - Python入门
+- [x] 2018-02-20 Crossin 的编程教室 - Python入门
+- [ ] 2018-09-01 Python 教程 - 廖雪峰的官方网站
+- [ ] 2018-09-01 简明 Python 教程
 
 ---
 
