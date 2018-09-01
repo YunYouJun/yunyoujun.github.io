@@ -1,6 +1,7 @@
 ---
 title: AIS.js
 date: 2018-01-10 12:30:17
+updated: 2018-01-10 12:30:17
 tags:
   - JavaScript
   - Node.js

@@ -5,6 +5,7 @@ tags:
 categories:
   - 云游的大安利
 date: 2017-08-04 10:56:26
+updated: 2017-08-04 10:56:26
 ---
 
 自己使用的一些关于 Wordpress 的插件与主题推荐。（以前爱折腾这些，现在已经转投 [Hexo](https://hexo.io) 啦。）
