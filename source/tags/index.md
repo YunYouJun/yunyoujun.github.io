@@ -1,6 +1,6 @@
 ---
 title: 标签
 date: 2017-10-09 19:11:58
-type: "tags"
+type: tags
 comments: false
 ---

@@ -11,10 +11,10 @@ updated: 2017-08-25 15:05:26
 
 断断续续画了好久，一开始临摹时画的是黑白色，后来用了颜色模式图层，进行了魔改上色…（2333）
 
-![阿库娅](https://qcloud-media.yunyoujun.cn/draw/konosuba-aqua.jpg)
+![阿库娅](/source/images/draw/konosuba-aqua.jpg)
 
 <!-- more -->
 
 **原图：**
 
-![原图](https://qcloud-media.yunyoujun.cn/draw/96.png)
+![原图](/source/images/draw/96.png)
