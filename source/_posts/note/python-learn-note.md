@@ -19,9 +19,9 @@ categories:
 
 ## 教程
 
-- [Python教程 - 廖雪峰的官方网站](https://www.liaoxuefeng.com/wiki/0014316089557264a6b348958f449949df42a6d3a2e542c000)
-- [《简明 Python 教程》](https://bop.mol.uno/)
-- [Crossin的编程教室](http://crossincode.com/home/)
+- [Python教程 - 廖雪峰的官方网站](https://www.liaoxuefeng.com/wiki/0014316089557264a6b348958f449949df42a6d3a2e542c000) （内容详细）
+- [《简明 Python 教程》](https://bop.mol.uno/) （排版舒适）
+- [Crossin的编程教室](http://crossincode.com/home/) （适合初学）
 
 ## Code
 

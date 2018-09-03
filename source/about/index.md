@@ -7,8 +7,6 @@ updated: 2018-01-30 15:10:32
 
 <iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width=330 height=450 src="//music.163.com/outchain/player?type=0&id=308168565&auto=1&height=430"></iframe>
 
-> 因为版权问题，外链歌单里只有几首能放啦。
-
 # Blog
 
 > 这里应该算是个博客。所以大概会记录一些自己学习、生活上的事情与业余创作 ~~瞎搞~~ 。 =w=
@@ -19,57 +17,52 @@ __十分欢迎无意中点进来的同学，给我留言和建议！__
 
 ~~虽然此刻很想发一个表情!~~
 
-![不存在的.jpg](https://qcloud-media.yunyoujun.cn/meme/no-exist.jpg)
+![不存在的.jpg](/source/images/meme/no-exist.jpg)
 
 ## Time
 
-- ### 2016.12.31  建站
-
+> ### 2016.12.31  建站
 > 名称：**失去的时光**
 域名：<http://yunyoujun.online>
 一时兴起，就建个站玩玩吧~ （By Wordpress）
 因为做东西总是三分钟热度，更新一次会间隔很久的样子。（~~不过反正也不会有人看到的吧。~~）
 这里就像是承载着被遗忘了的时光一样.（~~点题了是不是！~~）
 
-- ### 2017.07.05  新域名
-
+> ### 2017.07.05  新域名
 > 域名更换：<http://yunyoujun.cn>
 (缘由是 online 太长了，又不好备案什么的吧)
 
-
-- ### 2017.08.03  elpsy.cn
-
+> ### 2017.08.03  elpsy.cn
 > 注册了个有意思的新域名：<http://elpsy.cn>
 (不过还没想好干什么用)
 
-- ### 2017.11.20  更名
-
+> ### 2017.11.20  更名
 > 更名：云浦之南  ……
 
-- ### 2017.11.20  迁移
-
+> ### 2017.11.20  迁移
 > [博客迁移至 Hexo](https://yunyoujun.cn/note/hexo-build-note)
 
-- ### 2018.01.28  HTTPS
-
+> ### 2018.01.28  HTTPS
 > 网站开启强制 HTTPS 访问, 使用 亚信 SSL 免费证书, 腾讯云存储服务
 
-- ### 2018.03.08  yunle.fun
-
+> ### 2018.03.08  yunle.fun
 > 又注册了个新域名：<http://yunle.fun> 云乐坊
-以后要是能开工作室就用这个名字吧（笑
+以后要是能开工作室就用这个名字吧(~~笑~~)
 
-……
+> ### 2017.11.20  更名
+> 更名：阴霾天空
+> 此刻的我，大概正处于阴霾之下。
+
+> ……
 
 ---
 
 > # Me
-<small>All at sea.</small>
+> All at sea.
 
----
 <div style="text-align:center;">
 <img src="https://s.gravatar.com/avatar/18898984c2aeb0dae7530a738f150cba" alt="portrait" title="ID : 云游君"
-style="border-radius:100px;padding: 4px;line-height: 1.42857143;background-color: #fff;border: 1px solid #ddd;">
+style="border-radius:100px;padding: 4px;line-height: 1.5;background-color: #fff;border: 1px solid #ddd;">
 </div>
 
 > 学生党一只。还在努力学习中。
@@ -81,26 +74,19 @@ style="border-radius:100px;padding: 4px;line-height: 1.42857143;background-color
 - 目标：前端工程师 || 全栈工程师 || 独立游戏制作人 (目♂前)
 - 梦想：漫画家 && 动画人 && 作家（不切实际的）
 
-![工作就输了](https://qcloud-media.yunyoujun.cn/meme/no-work.jpg)
+![工作就输了](/source/images/meme/no-work.jpg)
 
 以及种花种草，养狗养猫，孤独终老。
 
 ---
 
-> ## Contact
+## Contact
 
-微博：[机智的云游君](https://weibo.com/jizhideyunyoujun)
-
-BiliBili: [机智的云游君](https://space.bilibili.com/1579790)
-
-Bangumi: [云游君](http://bangumi.tv/user/yunyoujun)
-
-Pixiv: [云游君](https://pixiv.me/yunyoujun)
-
-豆瓣: [云游君](https://www.douban.com/people/yunyoujun/)
-
-网易云音乐: [机智的云游君](http://music.163.com/#/user/home?id=247102977)
-
-GitHub: [YunYouJun](https://github.com/YunYouJun)
-
-Email：<me@yunyoujun.cn> （大概只用得到自己仍然有钱续费域名的时候吧！~~（笑）~~）
+- 微博：[机智的云游君](https://weibo.com/jizhideyunyoujun)
+- BiliBili: [机智的云游君](https://space.bilibili.com/1579790)
+- Bangumi: [云游君](http://bangumi.tv/user/yunyoujun)
+- Pixiv: [云游君](https://pixiv.me/yunyoujun)
+- 豆瓣: [云游君](https://www.douban.com/people/yunyoujun/)
+- 网易云音乐: [机智的云游君](http://music.163.com/#/user/home?id=247102977)
+- GitHub: [YunYouJun](https://github.com/YunYouJun)
+- Email：<me@yunyoujun.cn> （大概只用得到自己仍然有钱续费域名的时候吧！~~（笑）~~）
