@@ -9,11 +9,11 @@ date: 2017-01-23 21:04:48
 updated: 2017-01-23 21:04:48
 ---
 
-## Intro
+# Intro
 
 一个基于html5 canvas绘制的网页背景效果,=w=很绚丽啊。mark一下。
 
-## Github 
+## Github
 
 [canvas-nest.js](https://github.com/hustcc/canvas-nest.js)
 
@@ -23,10 +23,10 @@ updated: 2017-01-23 21:04:48
 
 使用 [BootCDN](http://www.bootcdn.cn/) 提供的免费 CDN 服务。
 
-<del>（极其简洁=v=）</del>
+~~（极其简洁=v=）~~
 将下面的代码插入到`<body>`和`</body>`标签之间
 
-```
+```js
 <script type="text/javascript" src="//cdn.bootcss.com/canvas-nest.js/1.0.1/canvas-nest.min.js"></script>
 ```
 
@@ -39,6 +39,10 @@ updated: 2017-01-23 21:04:48
 
 ### Example
 
+```js
 <script type="text/javascript" color="0,0,255" opacity='0.7' zIndex="-2" count="99" src="//cdn.bootcss.com/canvas-nest.js/1.0.1/canvas-nest.min.js"></script>
+```
 
-> 效果就如 [本 Demo 页面](http://www.yunyoujun.cn/lab/demo/demo-canvas-nest-js/) 啦！
+> 效果就如 [本 Demo 页面](https://yunyoujun.cn/lab/demo/demo-canvas-nest-js/) 啦！
+
+<script type="text/javascript" color="0,0,255" opacity='0.7' zIndex="-2" count="99" src="//cdn.bootcss.com/canvas-nest.js/1.0.1/canvas-nest.min.js"></script>

@@ -15,6 +15,6 @@ updated: 2017-08-25 15:05:26
 
 <!-- more -->
 
-**原图：**
-
-![原图](/source/images/draw/96.png)
+> 原图
+> 
+> ![原图](/source/images/draw/96.png)
