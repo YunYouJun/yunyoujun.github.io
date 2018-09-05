@@ -22,7 +22,7 @@ updated: 2017-12-11 13:10:05
 
 如果失败的话，我大致已经可以预见到未来的自己，谨遵父命，考个公务员又或是教师证，呆坐在办公室或是机房里，过完几十岁的人生。
 
-![工作就输了](/source/images/meme/no-work.jpg)
+![工作就输了](/images/meme/no-work.jpg)
 
 > 打工是不可能打工的，这辈子不可能打工的啦！
 > I'm not going to work in my life.

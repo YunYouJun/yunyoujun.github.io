@@ -37,12 +37,12 @@ cache:
 # ---------------------------------------------------------------
 
 # To get or check favicons visit: https://realfavicongenerator.net
-# Put your favicons into `hexo-site/source/` (recommend) or `hexo-site/themes/next/source/images/` directory.
+# Put your favicons into `hexo-site/source/` (recommend) or `hexo-site/themes/next/images/` directory.
 
-# Default NexT favicons placed in `hexo-site/themes/next/source/images/` directory.
+# Default NexT favicons placed in `hexo-site/themes/next/images/` directory.
 # And if you want to place your icons in `hexo-site/source/` root directory, you must remove `/images` prefix from pathes.
 
-# For example, you put your favicons into `hexo-site/source/images` directory.
+# For example, you put your favicons into `hexo-site/images` directory.
 # Then need to rename & redefine they on any other names, otherwise icons from Next will rewrite your custom icons in Hexo.
 favicon:
   small: /favicon.ico
@@ -201,7 +201,7 @@ links_layout: block
 
 # Sidebar Avatar
 avatar:
-  # in theme directory(source/images): /images/avatar.gif
+  # in theme directory(images): /images/avatar.gif
   # in site  directory(source/uploads): /uploads/avatar.gif
   # You can also use other linking images.
   url: /images/avatar.jpg
