@@ -17,7 +17,7 @@ __十分欢迎无意中点进来的同学，给我留言和建议！__
 
 ~~虽然此刻很想发一个表情!~~
 
-![不存在的.jpg](/source/images/meme/no-exist.jpg)
+![不存在的.jpg](/images/meme/no-exist.jpg)
 
 ## Time
 
@@ -74,7 +74,7 @@ style="border-radius:100px;padding: 4px;line-height: 1.5;background-color: #fff;
 - 目标：前端工程师 || 全栈工程师 || 独立游戏制作人 (目♂前)
 - 梦想：漫画家 && 动画人 && 作家（不切实际的）
 
-![工作就输了](/source/images/meme/no-work.jpg)
+![工作就输了](/images/meme/no-work.jpg)
 
 以及种花种草，养狗养猫，孤独终老。
 
