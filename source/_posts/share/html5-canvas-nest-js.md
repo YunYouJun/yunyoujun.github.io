@@ -4,7 +4,7 @@ tags:
   - 分享
   - 前端
 categories:
-  - 云游的大安利
+  - 云游的小安利
 date: 2017-01-23 21:04:48
 updated: 2017-01-23 21:04:48
 ---
@@ -43,6 +43,6 @@ updated: 2017-01-23 21:04:48
 <script type="text/javascript" color="0,0,255" opacity='0.7' zIndex="-2" count="99" src="//cdn.bootcss.com/canvas-nest.js/1.0.1/canvas-nest.min.js"></script>
 ```
 
-> 效果就如 [本 Demo 页面](https://yunyoujun.cn/lab/demo/demo-canvas-nest-js/) 啦！
+> 效果就如本页面所示！
 
 <script type="text/javascript" color="0,0,255" opacity='0.7' zIndex="-2" count="99" src="//cdn.bootcss.com/canvas-nest.js/1.0.1/canvas-nest.min.js"></script>

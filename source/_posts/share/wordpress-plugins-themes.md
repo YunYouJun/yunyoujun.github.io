@@ -3,7 +3,7 @@ title: Wordpress 的实用插件与主题推荐
 tags:
   - 分享
 categories:
-  - 云游的大安利
+  - 云游的小安利
 date: 2017-08-04 10:56:26
 updated: 2017-08-04 10:56:26
 ---
