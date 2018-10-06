@@ -140,9 +140,9 @@ menu_settings:
 
 # Schemes
 # scheme: Muse
-#scheme: Mist
-#scheme: Pisces
-scheme: Gemini
+# scheme: Mist
+scheme: Pisces
+# scheme: Gemini
 
 
 # ---------------------------------------------------------------
@@ -164,7 +164,7 @@ social:
   微博: http://weibo.com/jizhideyunyoujun || weibo
   豆瓣: https://www.douban.com/people/yunyoujun/ || book
   网易云音乐: http://music.163.com/#/user/home?id=247102977 || music
-  bangumi: http://bangumi.tv/user/yunyoujun || television
+  # bangumi: http://bangumi.tv/user/yunyoujun || television
   pixiv: https://pixiv.me/yunyoujun || paint-brush
   #Google: https://plus.google.com/yourname || google
   #Twitter: https://twitter.com/yourname || twitter
@@ -188,7 +188,7 @@ social_icons:
 # Usage: `permalink || title`
 # Value before `||` delimeter is the target permalink.
 # Value after `||` delimeter is the title and aria-label name.
-github_banner: https://github.com/YunYouJun || Follow me on GitHub
+# github_banner: https://github.com/YunYouJun || Follow me on GitHub
 
 # Blog rolls
 links_icon: link
@@ -449,7 +449,7 @@ pangu: false
 #swiftype_key:
 
 # Baidu Analytics ID
-baidu_analytics: d408b4e48d300f6006fc096c576a1e64
+# baidu_analytics: d408b4e48d300f6006fc096c576a1e64
 
 # Disqus
 disqus:
@@ -646,7 +646,7 @@ tencent_analytics: 64704817
 
 
 # Enable baidu push so that the blog will push the url to baidu automatically which is very helpful for SEO
-baidu_push: true
+baidu_push: false
 
 # Google Calendar
 # Share your recent schedule to others via calendar page
@@ -798,7 +798,7 @@ pace: true
 #pace-theme-minimal
 # For example
 # pace_theme: pace-theme-center-simple
-pace_theme: pace-theme-fill-left
+pace_theme: pace-theme-flash
 
 # Canvas-nest
 # Dependencies: https://github.com/theme-next/theme-next-canvas-nest
