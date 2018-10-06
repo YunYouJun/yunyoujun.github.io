@@ -62,7 +62,7 @@ export default {
 </script>
 ```
 
-最后设置一下画布 `margin` & `padding` 好看一些。
+最后为了美观设置一下画布 `margin` & `padding` 。
 
 ```css
 <style>
