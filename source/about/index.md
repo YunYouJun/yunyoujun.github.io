@@ -82,11 +82,11 @@ style="border-radius:100px;padding: 4px;line-height: 1.5;background-color: #fff;
 
 ## Contact
 
-- 微博：[机智的云游君](https://weibo.com/jizhideyunyoujun)
+- Email：<me@yunyoujun.cn> （大概只用得到自己仍然有钱续费域名的时候吧！~~（笑）~~）
+- GitHub: [YunYouJun](https://github.com/YunYouJun)
+- Weibo：[机智的云游君](https://weibo.com/jizhideyunyoujun)
 - BiliBili: [机智的云游君](https://space.bilibili.com/1579790)
-- Bangumi: [云游君](http://bangumi.tv/user/yunyoujun)
 - Pixiv: [云游君](https://pixiv.me/yunyoujun)
 - 豆瓣: [云游君](https://www.douban.com/people/yunyoujun/)
 - 网易云音乐: [机智的云游君](http://music.163.com/#/user/home?id=247102977)
-- GitHub: [YunYouJun](https://github.com/YunYouJun)
-- Email：<me@yunyoujun.cn> （大概只用得到自己仍然有钱续费域名的时候吧！~~（笑）~~）
+<!-- - Bangumi: [云游君](http://bangumi.tv/user/yunyoujun) -->
