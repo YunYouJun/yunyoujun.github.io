@@ -37,7 +37,10 @@ categories:
 
 ## Dev
 
+### Code
+
 - [GitHub](https://github.com/)
+- [Coding - Web IDE](https://coding.net/)
 
 ### Deploy
 
@@ -47,7 +50,8 @@ categories:
 
 在线编辑器，适合在线写一些效果类的 Demo 并分享。
 
-- [JSFiddle](https://jsfiddle.net/)
+- [JSFiddle](https:/
+- /jsfiddle.net/)
 - [CodePen](https://codepen.io/)
 - [JSRun](http://jsrun.net)
 
@@ -58,7 +62,13 @@ categories:
 - [阿里云](https://www.aliyun.com/)
 - [Heroku](https://www.heroku.com/)
 
-### 模拟器
+### Tools
+
+#### Mail
+
+- [MailChimp - 邮件订阅工具](https://mailchimp.com/)
+
+#### 模拟器
 
 - [网易 mumu 模拟器](http://mumu.163.com/)
 
