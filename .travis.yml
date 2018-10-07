@@ -6,7 +6,6 @@ cache:
   - node_modules
 install:
   - npm install
-  - rm -rf themes/next
   - git clone https://github.com/theme-next/hexo-theme-next themes/next
   - cd themes/next
   - git clone https://github.com/theme-next/theme-next-algolia-instant-search source/lib/algolia-instant-search
