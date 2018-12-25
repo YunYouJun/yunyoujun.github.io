@@ -11,7 +11,7 @@ categories:
 ---
 # Intro
 
-记录一些关于 Python 学习的问题与技巧。
+记录一些关于 Python 学习过程中的规范、问题与技巧。
 
 <!-- more -->
 
@@ -72,12 +72,81 @@ ext install python
 ...
 ```
 
-## 命名规范
+## 规范
 
-Python 文件名和变量名推荐的命名规范是 `snake_case`
+### 缩进规范
+
+官方推荐使用 4 个空格缩进
+
+### 命名规范
+
+#### 模块
+
+文件名
+
+- 尽量使用小写命名
+- 首字母保持小写
+- 尽量不要用下划线(除非多个单词，且数量不多的情况)
+
+```py
+snake_case
+# 正确的模块名
+import decoder
+import html_parser
+
+# 不推荐的模块名
+import Decoder
+```
+
+#### 类名
+
+使用驼峰(CamelCase)命名风格
+
+- 首字母大写
+- 私有类可用一个下划线开头
+
+```py
+class Farm():
+    pass
+
+class AnimalFarm(Farm):
+    pass
+
+class _PrivateFarm(Farm):
+    pass
+```
+
+#### 函数
 
 - 全小写
 - 可使用下划线连接
+
+```py
+def func():
+    pass
+
+def func_with_some():
+    pass
+class Person():
+    # 私有函数
+    def _private_func():
+        pass
+```
+
+#### 变量名
+
+- 全小写
+- 可使用下划线连接
+
+```py
+if __name__ == '__main__':
+    count = 0
+    school_name = ''
+
+# 常量采用全大写，如有多个单词，使用下划线隔开
+MAX_NUM = 100
+MAX_IQ = 1000
+```
 
 ## Python2 & Python3
 
