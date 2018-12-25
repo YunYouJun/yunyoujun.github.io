@@ -1,3 +1,3 @@
-info=$1?$1:"update"
+info=$1
 npm run deploy
 ./backup.sh "$info"
