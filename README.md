@@ -2,6 +2,16 @@
 
 [![Build Status](https://www.travis-ci.org/YunYouJun/yunyoujun.github.io.svg?branch=hexo)](https://www.travis-ci.org/YunYouJun/yunyoujun.github.io)
 
+## Use
+
+### 日常发布
+
+```sh
+npm run backup
+# 同时推送至 GitHub 与 Coding 的 hexo 分支
+# 线上 Travis 会自动进行构建生成静态页面推送至 GitHub 与 Coding 的 master 分支
+```
+
 ## BackUp
 
 - [GitHub](https://github.com/YunYouJun/yunyoujun.github.io)

@@ -1,4 +1,4 @@
-info=$1?$1:"backup"
+info=$1
 git add -A
 git commit -m "$info"
 git push github hexo
