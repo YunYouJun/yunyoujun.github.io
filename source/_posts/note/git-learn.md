@@ -74,7 +74,7 @@ git remote add coding git@git.coding.net:xxx/xxx.git
 - 新建远程分支： `git push origin 推送的分支:远程的分支`
 - 合并分支： `git merge fake-branch`
 - 删除分支： `git branch -d fake-branch`
-- 删除远程分支：`git push origin –delete 分支名`
+- 删除远程分支：`git push origin –-delete 分支名`
 - 修改分支名称：`git branch -m old_branch_name new_branch_name`
 
 ---
