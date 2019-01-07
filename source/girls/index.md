@@ -34,7 +34,7 @@ updated: 2019-01-07 11:17:35
 24. [古河渚](https://zh.moegirl.org/古河渚)
 25. [由比滨结衣](https://zh.moegirl.org/由比滨结衣)
 26. [古贺朋绘](https://zh.moegirl.org/古贺朋绘)
-27. [白](https://zh.moegirl.org/白(No_Game_No_Life_游戏人生))
+27. [白][白]
 28. [史蒂芬妮·多拉](https://zh.moegirl.org/史蒂芬妮·多拉)
 29. [吉普莉尔](https://zh.moegirl.org/吉普莉尔)
 30. [凉宫春日](https://zh.moegirl.org/凉宫春日)
@@ -82,3 +82,4 @@ updated: 2019-01-07 11:17:35
 [阿库娅]: https://zh.moegirl.org/阿库娅(为美好的世界献上祝福)
 [人类小姐]: https://zh.moegirl.org/主人公(人类衰退之后)
 [雷姆]: https://zh.moegirl.org/雷姆(Re:从零开始的异世界生活)
+[白]: https://zh.moegirl.org/白(No_Game_No_Life_游戏人生)
