@@ -84,7 +84,7 @@ updated: 2019-01-07 11:17:35
 
 To Be Continued.
 
-<!-- Beacause markdown () -->
+<!-- Beacause markdown link bracket problem -->
 
 [明石]: https://zh.moegirl.org/明石(四叠半神话大系)
 [阿库娅]: https://zh.moegirl.org/阿库娅(为美好的世界献上祝福)

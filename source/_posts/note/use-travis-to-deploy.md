@@ -79,7 +79,7 @@ git push --force "https://yunyoujun:${CODING_TOKEN}@${CD_REF}" master:master
 env:
   global:
     - GH_REF: github.com/YunYouJun/yunyoujun.github.io.git
-    - CD_REF: git.coding.net/YunYouJun/yunyoujun.coding.me.git
+    - CD_REF: git.dev.tencent.com/YunYouJun/yunyoujun.coding.me.git
 ```
 
 ---
