@@ -40,7 +40,7 @@ categories:
 ### Code
 
 - [GitHub](https://github.com/)
-- [Coding - Web IDE](https://coding.net/)
+- [Coding - Web IDE](https://coding.net/)(被腾讯收购改名腾讯开发者平台 <https://dev.tencent.com>)
 
 ### Deploy
 

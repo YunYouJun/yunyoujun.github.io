@@ -85,7 +85,7 @@ deploy:
   type: git
   repo: 
     github: https://github.com/YunYouJun/yunyoujun.github.io.git,master
-    coding: https://git.coding.net/YunYouJun/yunyoujun.coding.me.git,master
+    coding: https://git.dev.tencent.com/YunYouJun/yunyoujun.coding.me.git,master
   message: 
   extend_dirs: 
 

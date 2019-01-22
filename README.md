@@ -15,7 +15,7 @@ npm run backup
 ## BackUp
 
 - [GitHub](https://github.com/YunYouJun/yunyoujun.github.io)
-- [Coding](https://coding.net/u/YunYouJun/p/yunyoujun.coding.me)
+- [Coding](https://git.dev.tencent.com/YunYouJun/yunyoujun.coding.me.git)
 
 ## Build
 
@@ -28,3 +28,7 @@ npm run backup
 ### Travis Bad decrypt (Because of Windows)
 
 Remove ssh_rsa env
+
+## Change Log
+
+- 2019-01-22 return to github pages
