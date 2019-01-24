@@ -45,6 +45,7 @@ categories:
 ### Deploy
 
 - [Travis-CI - 持续集成](https://travis-ci.org/)
+- [Netlify: All-in-one platform for automating modern web projects.](https://www.netlify.com/)
 
 ### FE Code Playground
 
