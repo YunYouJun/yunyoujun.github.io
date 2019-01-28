@@ -9,9 +9,11 @@ categories:
 date: 2017-10-06 15:56:20
 updated: 2018-02-07 15:04:44
 ---
-# Intro
+# npm & yarn
 
-## [npm](https://www.npmjs.com/)
+## Intro
+
+### [npm](https://www.npmjs.com/)
 
 NPM 是随同 NodeJS 一起安装的包管理工具，能解决NodeJS代码部署上的很多问题，常见的使用场景有以下几种：
 
@@ -21,7 +23,7 @@ NPM 是随同 NodeJS 一起安装的包管理工具，能解决NodeJS代码部�
 
 摘自：[http://www.runoob.com/nodejs/nodejs-npm.html](http://www.runoob.com/nodejs/nodejs-npm.html)
 
-## [yarn](https://yarnpkg.com/zh-Hans/)
+### [yarn](https://yarnpkg.com/zh-Hans/)
 
 Yarn 对你的代码来说是一个包管理器， 你可以通过它使用全世界开发者的代码，或者分享自己的代码。 Yarn 做这些快捷、安全、可靠，所以你不用担心什么。
 
@@ -32,6 +34,58 @@ Yarn 对你的代码来说是一个包管理器， 你可以通过它使用全�
 > 实质上，yarn 使用的还是 npm 中的包。
 
 <!-- more -->
+
+---
+
+## Docs
+
+[package.json](https://docs.npmjs.com/files/package.json)
+
+## Command
+
+### npm
+
+#### npm package
+
+- `npm login` 登陆 npm (若使用其他镜像，需要切换回官网 `npm config set registry http://registry.npmjs.org` )
+- `npm publish` 发布 npm 包
+- `npm version major | minor | patch` 更新不同版本号
+
+- 使用 `npm update <package>` 可以把当前目录下node_modules子目录里边的对应模块更新至最新版本。
+- 使用 `npm update <package> -g` 可以把全局安装的对应命令行程序更新至最新版。
+
+#### update
+
+- 更新 npm : `npm install npm -g`
+
+#### 传入参数
+
+`myVar` 为自定义变量名称
+
+```sh
+npm run <script> -- <something>
+```
+
+Example:
+
+```json
+"scripts": {
+    "hello": "echo hello"
+}
+```
+
+```sh
+npm run hello -- yunyoujun
+# result
+hello "yunyoujun"
+```
+
+### yarn
+
+#### [upgrade](https://yarnpkg.com/lang/en/docs/cli/upgrade/)
+
+- 更新 yarn : `yarn upgrade [package]`
+- 强制更新 : `yarn upgrade [package] --latest`
 
 ---
 
@@ -98,61 +152,9 @@ $ yrm use npm
 
 ---
 
-## Others
+## Reference
 
-[npm scripts 使用指南](http://www.ruanyifeng.com/blog/2016/10/npm_scripts.html)
-
-...
-
----
-
-## Command
-
-## npm
-
-### npm package
-
-- `npm login` 登陆 npm (若使用其他镜像，需要切换回官网 `npm config set registry http://registry.npmjs.org` )
-- `npm publish` 发布 npm 包
-- `npm version major | minor | patch` 更新不同版本号
-
-- 使用 `npm update <package>` 可以把当前目录下node_modules子目录里边的对应模块更新至最新版本。
-- 使用 `npm update <package> -g` 可以把全局安装的对应命令行程序更新至最新版。
-
-### update
-
-- 更新 npm : `npm install npm -g`
-
-### 传入参数
-
-`myVar` 为自定义变量名称
-
-```sh
-npm run <script> -- <something>
-```
-
-Example:
-
-```json
-"scripts": {
-    "hello": "echo hello"
-}
-```
-
-```sh
-npm run hello -- yunyoujun
-# result
-hello "yunyoujun"
-```
-
----
-
-## yarn
-
-### [upgrade](https://yarnpkg.com/lang/en/docs/cli/upgrade/)
-
-- 更新 yarn : `yarn upgrade [package]`
-- 强制更新 : `yarn upgrade [package] --latest`
+- [npm scripts 使用指南](http://www.ruanyifeng.com/blog/2016/10/npm_scripts.html)
 
 ---
 
