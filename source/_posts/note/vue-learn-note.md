@@ -37,7 +37,11 @@ Webpack 文档中存在这样的选项，也就是注明 `externals`。
 ```js
 module.exports = {
   configureWebpack: {
-    externals: ['v-tooltip']
+    // externals: ['v-tooltip']
+    // 但是连字符可能识别有问题, 不能这么写
+    externas: {
+      VTooltip: 'v-tooltip'
+    }
   }
 }
 ```
