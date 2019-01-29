@@ -149,6 +149,11 @@ git push -u origin master
 
 ## 修改已提交内容
 
+```sh
+git commit --amend
+# 修改 commit message
+```
+
 > 参考: [git 修改已提交的内容 - CSDN](http://blog.csdn.net/sodaslay/article/details/72948722)
 
 ### 修改之前已经上传的提交
