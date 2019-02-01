@@ -41,6 +41,26 @@ Yarn 对你的代码来说是一个包管理器， 你可以通过它使用全�
 
 [package.json](https://docs.npmjs.com/files/package.json)
 
+### pre-commit
+
+```sh
+yarn add -D pre-commit
+```
+
+在提交 commit 前进行构建
+
+```json
+{
+  ...
+  "scripts": {
+    "build": "gulp build",
+    "prepublish": "yarn build"
+  },
+  "pre-commit": ["build"]
+  ...
+}
+```
+
 ## Command
 
 ### npm

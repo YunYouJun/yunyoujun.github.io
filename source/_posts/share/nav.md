@@ -47,12 +47,15 @@ categories:
 - [Travis-CI - 持续集成](https://travis-ci.org/)
 - [Netlify: All-in-one platform for automating modern web projects.](https://www.netlify.com/)
 
+### Build
+
+- [Electron - 使用 JavaScript, HTML 和 CSS 构建跨平台的桌面应用](https://electronjs.org/)
+
 ### FE Code Playground
 
 在线编辑器，适合在线写一些效果类的 Demo 并分享。
 
-- [JSFiddle](https:/
-- /jsfiddle.net/)
+- [JSFiddle](https://jsfiddle.net/)
 - [CodePen](https://codepen.io/)
 - [JSRun](http://jsrun.net)
 
@@ -72,6 +75,10 @@ categories:
 #### 模拟器
 
 - [网易 mumu 模拟器](http://mumu.163.com/)
+
+#### 抓包工具
+
+- [fiddler](https://www.telerik.com/fiddler)
 
 ## System
 
