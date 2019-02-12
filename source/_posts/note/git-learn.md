@@ -77,9 +77,15 @@ git remote add coding git@git.coding.net:xxx/xxx.git
 - 删除远程分支：`git push origin –-delete 分支名`
 - 修改分支名称：`git branch -m old_branch_name new_branch_name`
 
----
+## 清除缓存
 
-# 问题解决方案
+- `git rm --cached [文件路径]`
+  - `-r` 递归
+  - `-f` 强制
+  
+Example: `git rm -r --cached .`
+
+# Q&A
 
 ## 合并代码冲突
 
