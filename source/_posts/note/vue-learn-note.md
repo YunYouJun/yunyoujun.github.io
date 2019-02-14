@@ -46,6 +46,46 @@ module.exports = {
 }
 ```
 
+### SPA 预渲染
+
+使用[HTML5 History 模式](https://router.vuejs.org/zh/guide/essentials/history-mode.html#html5-history-%E6%A8%A1%E5%BC%8F)可以使 URL 显得更美观。
+但与此同时，由于是单页应用，没有后台配置支持的话，直接访问相关路由或刷新时会导致页面访问 404。
+这时，又不想配置后台，又不想放弃 History 模式，则还有另外一条出路。
+
+也就是进行预渲染。
+
+可用的插件：
+
+- [prerender-spa-plugin](https://github.com/chrisvfritz/prerender-spa-plugin)
+
+Install
+
+```sh
+yarn add -D prerender-spa-plugin
+```
+
+Config
+
+```js
+// vue.config.js
+const path = require('path')
+const PrerenderSPAPlugin = require('prerender-spa-plugin')
+
+module.exports = {
+  configureWebpack: {
+    plugins: [
+      new PrerenderSPAPlugin({
+        // Required - The path to the webpack-outputted app to prerender.
+        staticDir: path.join(__dirname, 'dist'),
+        // Required - Routes to render.
+        routes: ['/', '/go', '/unit']
+      })
+    ]
+  }
+}
+
+```
+
 ---
 
 To Be Continued.
