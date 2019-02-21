@@ -68,6 +68,12 @@ categories:
 
 ### Tools
 
+#### Connect
+
+- [WinSCP]
+- [XSHELL](https://www.netsarang.com/zh/xshell/)
+- [XFTP](https://www.netsarang.com/zh/xftp/)
+
 #### Mail
 
 - [MailChimp - 邮件订阅工具](https://mailchimp.com/)
