@@ -45,6 +45,12 @@ yum -y install java-1.8.0-openjdk
 
 #### Download
 
+几经辗转，发现官服是安装不了插件的。
+
+<http://mineplugin.org>
+
+如有兴趣，可参考百科安装不同服务器版本。
+
 ```sh
 mkdir /opt/minecraft
 cd /opt/minecraft
@@ -100,7 +106,7 @@ chmod +x /opt/minecraft/startminecraft.sh
 # 若没有 screen，需先安装
 # yum -y screen
 screen -S minecraft
-/opt/minecraft/startminecraft.sh
+/opt/minecraft/start-mc.sh
 ```
 
 ### Backup
@@ -116,10 +122,13 @@ screen -S minecraft
 - [腾讯云开发者平台](https://dev.tencent.com)
 
 ```sh
-cd xxx
-git add -A
-git commit -m "mc-server-world-backup"
-git push
+# /opt/minecraft/mc-server-backup.sh
+cd /opt/minecraft/ && git add -A && git commit -m "mc-server-world-backup" && git push
+# 注意 linux 和 windows 换行符
+# cd /opt/minecraft
+# git add -A
+# git commit -m "mc-server-world-backup"
+# git push -u origin master
 ```
 
 设置定时备份任务
@@ -131,7 +140,7 @@ vi /etc/crontab
 键入以下内容
 
 ```sh
-30 2 * * * root /backup/xxx-backup.sh
+30 2 * * * root /opt/minecraft/mc-server-backup.sh
 # 每天 2:30 执行备份任务
 ```
 
@@ -142,9 +151,31 @@ vi /etc/crontab
 服务器默认会对版权进行校验，如果不是使用正版 MC 登陆，会出现 `登入失败：无效会话`。
 需要将服务器中 `server.properties` 文件中， `online-mode` 对应值修改为 `false`。
 
+## Command
+
+### Server
+
+服务端执行
+
+```sh
+# 赋予管理权限
+/op 用户名
+```
+
+### Client
+
+```sh
+# 死亡不掉落
+/gamerule keepInventory true
+```
+
 ## Referene
 
 - [如何搭建“我的世界”服务器](https://linux.cn/article-9480-1.html)
+
+## 后话
+
+服务器全天在线，所以时间也会相应流逝，颇有些加速世界的无限制中立空间的感觉。
 
 ---
 
