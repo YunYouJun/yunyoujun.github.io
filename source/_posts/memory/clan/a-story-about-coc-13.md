@@ -14,7 +14,7 @@ updated: 2017-07-08 23:01:53
 没过多久，便有人点了接受。毫无意外地，是小乔。
 
 > “哟，小云回来啦！”小乔在部落聊天框内发到。
->   “嗯。”
+> “嗯。”
 
 此时已回忆不起得多余的言语，只知道那时，分明有种冲动让我想要落下泪来。
 
@@ -44,11 +44,13 @@ updated: 2017-07-08 23:01:53
 我们坐在一起，喝着茶，看着互相。然后一个一个介绍着自己。
 
 哈哈，你就是小乔啊，你女儿呢？
-关爱智障.jpg
-![](http://www.yunyoujun.cn/wp-content/uploads/2017/07/%E5%85%B3%E7%88%B1%E6%99%BA%E9%9A%9C.jpg)
+
+![关爱智障.gif](/images/meme/care-fool.gif)
+
 清风妹子还真是汉子啊！？
-仰望高端玩家.jpg
-![](http://www.yunyoujun.cn/wp-content/uploads/2017/07/%E4%BB%B0%E6%9C%9B%E9%AB%98%E7%AB%AF%E7%8E%A9%E5%AE%B6.jpg)
+
+![仰望高端玩家.jpg](/images/meme/look-up-to-high-player.jpg)
+
 还是龙叔帅哦！继续围观女儿。
 小猪、熊二你们吃着自己的同胞干啥？美C快拦住她。
 那边那个抠鼻屎的，你ID是不是叫帅得Q鼻屎。
@@ -56,7 +58,9 @@ updated: 2017-07-08 23:01:53
 品创那个傻逼怎么又出去浪了
 三爷你儿子是不是该叫小三爷…
 烈你不要再锤桌子了，塑料瓶飞不起来的。
-![](http://www.yunyoujun.cn/wp-content/uploads/2017/07/%E9%94%A4%E6%A1%8C%E5%AD%90.jpg)
+
+![锤桌子.jpg](/images/meme/hammer-the-table.jpg)
+
 狂笑妹子你笑啥笑，尊重点烈。
 末帝:冒泡，潜水。
 …
