@@ -105,8 +105,23 @@ chmod +x /opt/minecraft/startminecraft.sh
 ```sh
 # 若没有 screen，需先安装
 # yum -y screen
-screen -S minecraft
+screen -S mc
 /opt/minecraft/start-mc.sh
+```
+
+### 加入自启动
+
+使 Linux 重启时，自动运行该脚本
+
+```sh
+nano /etc/rc.local
+```
+
+进入文件，加入以下内容
+
+```sh
+screen -dm -S mc /opt/minecraft/start-mc.sh
+exit 0
 ```
 
 ### Backup
@@ -175,7 +190,7 @@ vi /etc/crontab
 
 ## 后话
 
-服务器全天在线，所以时间也会相应流逝，颇有些加速世界的无限制中立空间的感觉。
+因为服务器全天在线，所以时间也会相应流逝，颇有些加速世界的无限制中立空间的感觉。
 
 ---
 
