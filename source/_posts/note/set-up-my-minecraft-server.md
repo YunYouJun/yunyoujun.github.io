@@ -3,7 +3,10 @@ title: 搭建自己的 Minecraft 服务器
 date: 2019-02-21 15:27:40
 updated: 2019-02-21 15:27:40
 tags:
+  - Minecraft
+  - 笔记
 categories:
+  - 云游的小笔记
 ---
 
 # Minecraft Server
