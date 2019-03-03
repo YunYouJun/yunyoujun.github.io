@@ -1,5 +1,5 @@
 ---
-title: minecraft-command-note
+title: Minecraft 常用命令
 date: 2019-03-01 21:25:29
 updated: 2019-03-01 21:25:29
 tags:
