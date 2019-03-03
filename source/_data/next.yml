@@ -358,7 +358,7 @@ related_posts:
 # Dependencies: https://github.com/hexojs/hexo-deployer-git
 post_edit:
   enable: true
-  url: https://github.com/YunYouJun/yunyoujun.github.io/tree/hexo/source/_posts # Link for view source.
+  url: https://github.com/YunYouJun/yunyoujun.github.io/tree/hexo/source/ # Link for view source.
   #url: https://github.com/user-name/repo-name/edit/branch-name/subdirectory-name # Link for fork & edit.
 
 
