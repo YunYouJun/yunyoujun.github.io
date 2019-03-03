@@ -194,11 +194,11 @@ node_modules/
 // 位于 build/webpack.base.conf
 
 resolve: {
-    // 路径别名
-    alias: {
-        '@': resolve('src'),
-        'vue$': 'vue/dist/vue.esm.js' // 这一个之后解释
-    }
+  // 路径别名
+  alias: {
+    '@': resolve('src'),
+    'vue$': 'vue/dist/vue.esm.js' // 这一个之后解释
+  }
 },
 ```
 
@@ -277,11 +277,11 @@ Vue 模板中 webpack 的默认配置通过 alias 设置了 vue 的别名，引�
 // 位于 build/webpack.base.conf
 
 resolve: {
-    // 路径别名
-    alias: {
-        '@': resolve('src'),
-        'vue$': 'vue/dist/vue.esm.js' // 即此处
-    }
+  // 路径别名
+  alias: {
+    '@': resolve('src'),
+    'vue$': 'vue/dist/vue.esm.js' // 即此处
+  }
 },
 ```
 
@@ -293,4 +293,4 @@ Parcel 使用 `runtime-only`, 修改 `main.js` 中内容为 `Runtime-only` 形�
 
 ## Parcel + Vue 实现的一个小玩意儿~
 
-[我很可爱，请给我钱！](https://yunyoujun.cn/lab/project/please-give-me-money/)
+[我很可爱，请给我钱！](https://github.com/YunYouJun/give-me-money)
