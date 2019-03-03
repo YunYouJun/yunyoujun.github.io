@@ -1,5 +1,5 @@
 ---
-title: Minecraft 常用命令
+title: Minecraft 常用指令
 date: 2019-03-01 21:25:29
 updated: 2019-03-01 21:25:29
 tags:
@@ -9,19 +9,17 @@ categories:
   - 云游的小笔记
 ---
 
-# Command Note
+## 简介
 
-## Intro
-
-记录 Minecraft 中常用的命令
+记录 Minecraft 中常用的指令
 
 <!-- more -->
 
-## Command
+## 指令
 
 ### gamemode
 
-/gamemode
+更改游戏模式
 
 ```sh
 # Example
@@ -44,8 +42,8 @@ categories:
 |rm|大于半径区域|
 |type| 实体种类 |
 
-- `[r=R]` 只选择以命令的执行处为中心，半径小于R的区块里的目标。
-- `[rm=RM]` 只选择以命令的执行处为中心，半径大于RM的区块里的目标。
+- `[r=R]` 只选择以指令的执行处为中心，半径小于R的区块里的目标。
+- `[rm=RM]` 只选择以指令的执行处为中心，半径大于RM的区块里的目标。
 
 ### scoreboard
 
