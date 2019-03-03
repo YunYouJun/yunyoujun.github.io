@@ -671,7 +671,7 @@ google_analytics:
 
 # Bing Webmaster tools verification setting
 # See: https://www.bing.com/webmaster/
-#bing_site_verification:
+bing_site_verification: BA398191C556A182355D78E1FE74F222
 
 # Yandex Webmaster tools verification setting
 # See: https://webmaster.yandex.ru/
