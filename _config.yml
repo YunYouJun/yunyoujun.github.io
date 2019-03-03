@@ -97,8 +97,6 @@ feed: # RSS订阅插件
 
 sitemap:
   path: sitemap.xml
-baidusitemap:
-  path: baidusitemap.xml
 
 algolia:
   applicationID: 'CJXXAGRCYN'
