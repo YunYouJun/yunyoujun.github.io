@@ -45,7 +45,7 @@ git push coding hexo
 
 添加记录 设置 CNAME 的线路类型 -> 搜索引擎 -> 百度
 
-![set-domain-cname-type-baidu.png](/images/baidu-seo-about-github-pages/set-domain-cname-type-baidu.png)
+![set-domain-cname-type-baidu.png](/images/posts/baidu-seo-about-github-pages/set-domain-cname-type-baidu.png)
 
 此时再使用[百度站点管理](https://ziyuan.baidu.com/site)抓取，便可显示抓取成功。
 
