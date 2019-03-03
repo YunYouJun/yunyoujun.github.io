@@ -95,10 +95,10 @@ feed: # RSS订阅插件
   path: atom.xml
   limit: 0
 
-sitemap:  
-  path: sitemap.xml  
-baidusitemap:  
-  path: baidusitemap.xml  
+sitemap:
+  path: sitemap.xml
+baidusitemap:
+  path: baidusitemap.xml
 
 algolia:
   applicationID: 'CJXXAGRCYN'
