@@ -548,7 +548,7 @@ quicklink:
 #swiftype_key:
 
 # Baidu Analytics ID
-# baidu_analytics: d408b4e48d300f6006fc096c576a1e64
+baidu_analytics: d408b4e48d300f6006fc096c576a1e64
 
 # Growingio Analytics ID
 # Copyright 2015-2018 GrowingIO, Inc. More info available at https://www.growingio.com
@@ -679,7 +679,7 @@ google_analytics:
 
 # Baidu Webmaster tools verification setting
 # See: https://ziyuan.baidu.com/site
-#baidu_site_verification:
+baidu_site_verification: agK25kdltb
 
 # CNZZ count
 # cnzz_siteid: 1272876091
