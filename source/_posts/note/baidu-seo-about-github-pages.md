@@ -3,11 +3,14 @@ title: 让百度收录你的 GitHub Pages 博客
 date: 2019-03-03 21:52:57
 updated: 2019-03-03 21:52:57
 tags:
+  - GitHub
   - SEO
   - 笔记
 categories:
   - 云游的小笔记
 ---
+
+实用性有待检验...
 
 ## 前言
 
