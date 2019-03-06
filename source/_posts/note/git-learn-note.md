@@ -1,5 +1,5 @@
 ---
-title: Git 常用语句与学习笔记
+title: Git 学习笔记
 tags:
   - 学习
   - 笔记
@@ -56,12 +56,17 @@ git remote add coding git@git.coding.net:xxx/xxx.git
 
 ## 代码回滚
 
-- 回滚到上一版本：`git reset --hard HEAD^`
-
 在Git中，用HEAD表示当前版本，，上一个版本就是HEAD^，上上一个版本就是HEAD^^，当然往上100个版本写100个^比较容易数不过来，所以写成HEAD~100。
 
+`--hard` 会包括当前源码回到上次状态。
+保留当前更改，只回退 commit 信息可使用 `--soft`。
+清除缓存区中准备提交的内容，只保留修改的状态，可不加参数，或使用 `--mixed`。
+
+- 回滚到上一版本：`git reset --hard HEAD^`
 - 回退到指定版本 `git reset --hard id` (id 为 commit 版本号，填写前数位保证不重复即可)
 - 通过 `git log` 查看历史版本
+
+[More Info](#git-reset)
 
 ---
 
@@ -262,6 +267,27 @@ git push --all origin
 - `git add -u`  提交被修改(modified)和被删除(deleted)文件，不包括新文件(new)
 - `git add .`  提交新文件(new)和被修改(modified)文件，不包括被删除(deleted)文件
 - `git add -A`  提交所有变化（`git add --all` 的缩写）
+
+## git reset
+
+[git reset | Git Docs](https://git-scm.com/docs/git-reset)
+
+index 也被称为 staging area ，是指一整套即将被下一个提交的文件集合。
+
+`git add -A` 便是将当前修改文件加入 staging area 。
+
+### --mixed
+
+默认方式，回退到某个版本，只保留源码，回退 commit 和 index 信息。
+
+### --hard
+
+彻底回退到某个版本，本地源码变为上一个版本内容。
+
+### --soft
+
+回退到某个版本，只回退 commit 的信息，保留 index 信息。
+譬如如果还要提交，直接 commit 即可。
 
 ---
 
