@@ -259,15 +259,17 @@ sidebar:
 
   # Sidebar offset from top menubar in pixels (only for Pisces | Gemini).
   offset: 12
-  # Back to top in sidebar.
-  b2t: true
-  # Scroll percent label in b2t button.
-  scrollpercent: true
   # Enable sidebar on narrow view (only for Muse | Mist).
   onmobile: true
   # Click any blank part of the page to close sidebar (only for Muse | Mist).
   dimmer: false
 
+back2top:
+  enable: true
+  # Back to top in sidebar.
+  sidebar: false
+  # Scroll percent label in b2t button.
+  scrollpercent: true
 
 # ---------------------------------------------------------------
 # Post Settings
