@@ -99,6 +99,18 @@ Example:
 - white(白色)
 - reset(恢复到预设的颜色)
 
+## 插件
+
+一些有趣的插件
+
+### [Dragon Mounts 2 | 龙骑士]
+
+孵化末影龙
+
+[官网下载地址](https://minecraft.curseforge.com/projects/dm2/files)
+
+依赖 [llibrary](https://minecraft.curseforge.com/projects/llibrary)
+
 ## Reference
 
 - [指令(游戏[Minecraft]中的运算机制)](https://baike.baidu.com/item/指令/18765029)
