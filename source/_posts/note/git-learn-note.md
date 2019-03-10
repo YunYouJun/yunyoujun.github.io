@@ -169,7 +169,7 @@ git commit --amend
 
 ### 修改之前已经上传的提交
 
-- 查看修改
+#### 修改方法一
 
 ```sh
 git rebase -i HEAD~1   #当前版本的倒数第一次状态
@@ -192,22 +192,22 @@ pick 578ba7a hexo backup
 #
 ```
 
-- 进行修改
+#### 修改方法二
 
 ```sh
-#修改需要修改的地方（只是修改commit message就不用做)
-git add . #这一步如果只是修改commit message不用输入
-git commit --amend 
-#输入修改后的commit message，保存
+# 修改需要修改的地方（只是修改 commit message 就不用做)
+git add . #这一步如果只是修改 commit message 不用输入
+git commit --amend
+# 输入修改后的 commit message，保存
 ```
 
 - 输入 `git rebase –continue` 完成操作
 
-- 强制推送
+- 推送
 
 ```sh
-git push <remote> <branch> -f
-# Example: git push origin add-something -f
+git push <remote> <branch>
+# Example: git push origin add-something
 ```
 
 ## 增加子模块
