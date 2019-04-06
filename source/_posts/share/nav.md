@@ -16,10 +16,6 @@ categories:
 
 # Nav
 
-## Document
-
-- [腾讯文档](https://docs.qq.com/)
-
 ## Web
 
 ### Blog
@@ -40,7 +36,7 @@ categories:
 ### Code
 
 - [GitHub](https://github.com/)
-- [Coding - Web IDE](https://coding.net/)(被腾讯收购改名腾讯开发者平台 <https://dev.tencent.com>)
+- [Coding - Web IDE](https://coding.net/)(后被腾讯收购改名腾讯开发者平台 <https://dev.tencent.com>)
 
 ### Deploy
 
@@ -67,6 +63,11 @@ categories:
 - [Heroku](https://www.heroku.com/)
 
 ### Tools
+
+#### Docs
+
+- [腾讯文档](https://docs.qq.com/)
+- [语雀](https://www.yuque.com/)
 
 #### Connect
 
