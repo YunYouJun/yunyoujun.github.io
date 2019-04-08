@@ -20,7 +20,11 @@ Learn JavaScript.
 
 ## Manual
 
+### Promise
+
 - [ ] [JavaScript Promise迷你书（中文版）](http://liubin.org/promises-book/)
+- [ ] [使用 Promises - JavaScript | MDN](https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Guide/Using_promises)
+- [ ] [Promise - JavaScript | MDN](https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Global_Objects/Promise)
 
 ---
 
