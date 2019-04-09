@@ -30,3 +30,10 @@ categories:
 Solution:
 
 > 设置 -> 显示 -> 屏幕 -> 显卡控制器 -> 切换为 VBoxVGA
+
+## Command
+
+> 常用命令
+
+- 为文件目录树全部赋予权限：`chmod 775 -R filename`
+- 迭代删除文件夹中所有内容：`rm -rf &lt;filename or dirname&gt;`

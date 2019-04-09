@@ -10,11 +10,13 @@ date: 2017-08-21 23:49:30
 updated: 2018-02-19 22:49:30
 ---
 
-> # Linux
-
-- 迭代删除文件夹中所有内容 ： `rm -rf &lt;filename or dirname&gt;`
+Some Commands Record.
 
 ## Bash
+
+### [Linux](https://yunyoujun.cn/note/linux-learn-note/)
+
+### [Git](https://yunyoujun.cn/note/git-learn-note/)
 
 ### 环境变量
 
@@ -22,7 +24,7 @@ updated: 2018-02-19 22:49:30
 - 导出变量 `export NODE_ENV='production'`
 - 删除变量 `unset NODE_ENV`
 
-> NODE_ENV 为举例变量名，可使用任意名称
+> `NODE_ENV` 为举例变量名，可使用任意名称
 
 ### 命令行打开网页或文件夹
 
@@ -54,23 +56,18 @@ hexo algolia
 
 - `hexo clean && hexo algolia` 则意味着 `hexo clean` 执行成功，才会执行 `hexo algolia`
 
-
 ---
 
-> ## Laravel
+### Java MVN
 
-### 前端
+- 编译 Java :
+`mvn compile (默认放在 src/main/java 目录下)`
 
-*   将 .scss 文件编译为 .css 正常使用，编译命令如下： `npm run dev`
-*   在每次检测到 .scss 文件发生更改时，自动将其编译为 .css 文件： `npm run watch-poll`
+- 执行 java 类 :
+`mvn exec:java -Dexec.mainClass="bean.User"`
 
-> 此处实质是 npm 内 package.json 的 scripts 字段，预先定义的脚本操作。
-
----
-
-> ## Git
-
-[Git常用语句](http://www.yunyoujun.cn/2017/08/21/git%e5%b8%b8%e7%94%a8%e8%af%ad%e5%8f%a5/)
+- 运行服务器 :
+`mvn tomcat7:run`
 
 ---
 
