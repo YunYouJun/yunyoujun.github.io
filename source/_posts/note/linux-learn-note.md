@@ -29,4 +29,4 @@ categories:
 
 Solution:
 
-设置 -> 显示 -> 屏幕 -> 显卡控制器 -> 切换为 VBoxVGA
+> 设置 -> 显示 -> 屏幕 -> 显卡控制器 -> 切换为 VBoxVGA
