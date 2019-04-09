@@ -9,13 +9,14 @@ tags:
 categories:
   - 云游的小笔记
 ---
-# [Vue](https://cn.vuejs.org)
 
-使用 Vue.js 过程中的一些笔记。
+使用 [Vue.js](https://cn.vuejs.org) 过程中的一些笔记。
 
 <!-- more -->
 
 ## FAQ
+
+记录一些细节问题以及不易搜索到的解决方法。
 
 ### [Parcel.js + Vue](https://yunyoujun.cn/note/vue-parcel-demo/)
 
