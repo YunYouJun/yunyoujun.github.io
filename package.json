@@ -31,5 +31,5 @@
     "backup": "git add -A && git commit -m 'backup' && git push github hexo && git push coding hexo"
   },
   "author": "YunYouJun <me@yunyoujun.cn>",
-  "license": "ISC"
+  "license": "CC BY-NC-SA 4.0"
 }
