@@ -160,7 +160,7 @@ GitHub 项目地址：[software-engineering-notes](https://github.com/YunYouJun/
 
 ### 中传研招办官网 RSS
 
-当初因为苦等通知无果，所以写了个爬虫生成 RSS 订阅。
+当初因为苦等通知无果，所以写了个爬虫生成 RSS 订阅源。
 有 RSS 软件订阅的话，可以有新公告就通知自己。
 
 刚写好，测试刷新页面的时候，通知结果就突然出来了。导致还没派上用场。
