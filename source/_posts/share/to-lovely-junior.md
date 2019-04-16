@@ -230,7 +230,7 @@ GitHub 项目地址：[software-engineering-notes](https://github.com/YunYouJun/
 
 ### 是学长还是学姐？
 
-嗯，男孩子。年长大家一年。
+嗯，男孩子。年长大家一年。（理论上）
 
 ## 后记与鸡汤
 
@@ -244,7 +244,7 @@ GitHub 项目地址：[software-engineering-notes](https://github.com/YunYouJun/
 
 生如夏花
 
-> 生当作人杰
+> 生当作人杰，死亦为鬼雄。
 
 人生本该如此。
 
