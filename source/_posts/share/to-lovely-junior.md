@@ -152,7 +152,7 @@ GitHub 项目地址：[software-engineering-notes](https://github.com/YunYouJun/
 
 - [中国传媒大学研招网](http://yz.cuc.edu.cn/)
 
-### 研招办官网 RSS
+### 中传研招办官网 RSS
 
 当初因为苦等通知无果，所以写了个爬虫生成 RSS 订阅。
 有 RSS 软件订阅的话，可以有新公告就通知自己。
@@ -164,11 +164,20 @@ GitHub 项目地址：[software-engineering-notes](https://github.com/YunYouJun/
 
 ### 2019
 
+#### 初试公告
+
 - [中国传媒大学2019年攻读硕士学位研究生招生简章[2018-09-21]](http://yz.cuc.edu.cn/newsWYFHY/1bdfe0db-62ac-4185-8e8e-3485ea8142b8.htm)
 - [中国传媒大学2019年攻读硕士学位研究生招生专业目录[2018-09-21]](http://yz.cuc.edu.cn/newsWYFHY/b5c47dcf-173e-4760-83bc-b066dad468de.htm)
 - [中国传媒大学2019年攻读硕士学位研究生招生考试大纲[2018-10-17]](http://yz.cuc.edu.cn/newsWYFHY/ed32bd1c-0c7f-44eb-b8e7-efea9dc0c8aa.htm)
+
+#### 复试公告
+
+- [中国传媒大学2019年攻读硕士学位研究生复试及同等学力加试科目[2019-03-15]](http://yz.cuc.edu.cn/newsWYFHY/bdfee770-340d-425f-ae13-22fc83a89056.htm)
 - [中国传媒大学2019年硕士学位研究生入学考试复试笔试主要参考书目[2019-03-15]](http://yz.cuc.edu.cn/newsWYFHY/acac3293-06a7-454b-a0d4-5004660560c3.htm)
 - [中国传媒大学2019年全国硕士研究生招生考试考生进入复试的初试成绩基本要求[2019-03-19]](http://yz.cuc.edu.cn/newsWYFHY/680ca73e-760e-4539-abef-f1aaec7bd206.htm)
+- [中国传媒大学2019年全国硕士研究生招生复试办法[2019-03-20]](http://yz.cuc.edu.cn/newsWYFHY/b7f02dd1-e9aa-46a1-97c9-21b405eab244.htm)
+- [中国传媒大学2019年全国硕士研究生招生复试日程安排以及考生须知[2019-03-21]](http://yz.cuc.edu.cn/newsWYFHY/d609ae54-001d-40d8-a669-64886b4d383b.htm)
+- [中国传媒大学2019年硕士复试各培养单位安排汇总[2019-03-30]](http://yz.cuc.edu.cn/newsWYFHY/09521533-778f-4efe-8d06-3b90a3b2a358.htm)
 
 ### Learn
 
