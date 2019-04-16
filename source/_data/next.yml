@@ -1086,7 +1086,6 @@ vendors:
   # See: https://www.npmjs.com/package/leancloud-storage
   # Example:
   # leancloud: //cdn.jsdelivr.net/npm/leancloud-storage@3/dist/av-min.js
-  leancloud: //cdn.jsdelivr.net/npm/leancloud-storage@3/dist/av-min.js
 
   # valine
   # See: https://github.com/xCss/Valine
