@@ -26,4 +26,16 @@ categories:
 
 ---
 
+> 无限大な梦のあとの 在无限大的梦想后面
+> 何もない世の中じゃ 这什么也没有的世界
+> そうさ爱しい 亲爱的
+> 想いも负けそうになるけど 即使我对你的思念比不上你
+> Stayしがちなイメージだらけの 就算有一双满身停留影像的
+> 頼りない翼でも 不可靠翅膀
+> きっと飞べるさ 也一定能高飞的
+
+<iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width=330 height=86 src="//music.163.com/outchain/player?type=2&id=557584656&auto=1&height=66"></iframe>
+
+---
+
 To Be Continued.
