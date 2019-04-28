@@ -1,0 +1,1470 @@
+<!DOCTYPE html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<html class="theme-next muse" lang="zh-CN">
+<head><meta name="generator" content="Hexo 3.8.0">
+  <meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
+<meta name="theme-color" content="#222">
+
+
+  
+  
+    
+  
+  <link rel="stylesheet" href="//cdn.jsdelivr.net/gh/theme-next/theme-next-needmoreshare2@1/needsharebutton.min.css">
+
+
+
+
+
+
+
+
+
+
+
+  <meta name="msvalidate.01" content="BA398191C556A182355D78E1FE74F222">
+
+
+
+
+
+  <meta name="baidu-site-verification" content="dxyOQaCWUs">
+
+
+
+  
+  
+    
+  
+  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.6/jquery.fancybox.min.css">
+
+
+
+
+
+
+
+  
+
+<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.2/css/font-awesome.min.css">
+
+<link rel="stylesheet" href="/css/main.css?v=7.1.0">
+
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/favicon.png?v=7.1.0">
+
+
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon.png?v=7.1.0">
+
+
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon.ico?v=7.1.0">
+
+
+  <link rel="mask-icon" href="/favicon.png?v=7.1.0" color="#222">
+
+
+
+
+
+
+
+<script id="hexo.configurations">
+  var NexT = window.NexT || {};
+  var CONFIG = {
+    root: '/',
+    scheme: 'Muse',
+    version: '7.1.0',
+    sidebar: {"position":"left","display":"post","offset":12,"onmobile":true,"dimmer":false},
+    back2top: true,
+    back2top_sidebar: false,
+    fancybox: true,
+    fastclick: false,
+    lazyload: false,
+    tabs: true,
+    motion: {"enable":false,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},
+    algolia: {
+      applicationID: 'CJXXAGRCYN',
+      apiKey: '6af02e5bb9dc6381072d2096be55b601',
+      indexName: 'my-hexo-blog',
+      hits: {"per_page":true},
+      labels: {"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}
+    }
+  };
+</script>
+
+
+  
+
+
+<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<script>
+  (adsbygoogle = window.adsbygoogle || []).push({
+    google_ad_client: "ca-pub-2245427233262012",
+    enable_page_level_ads: true
+  });
+</script>
+
+
+  <meta name="description" content="npm &amp;amp; yarnIntronpmNPM 是随同 NodeJS 一起安装的包管理工具，能解决NodeJS代码部署上的很多问题，常见的使用场景有以下几种：  允许用户从 NPM 服务器下载别人编写的第三方包到本地使用。 允许用户从 NPM 服务器下载并安装别人编写的命令行程序到本地使用。 允许用户将自己编写的包或命令行程序上传到NPM服务器供别人使用。  摘自：http://www.run">
+<meta name="keywords" content="笔记,分享,Node.js">
+<meta property="og:type" content="article">
+<meta property="og:title" content="npm &amp; yarn 常用包与命令">
+<meta property="og:url" content="https://yunyoujun.cn/note/npm-and-yarn/index.html">
+<meta property="og:site_name" content="云游君的小站">
+<meta property="og:description" content="npm &amp;amp; yarnIntronpmNPM 是随同 NodeJS 一起安装的包管理工具，能解决NodeJS代码部署上的很多问题，常见的使用场景有以下几种：  允许用户从 NPM 服务器下载别人编写的第三方包到本地使用。 允许用户从 NPM 服务器下载并安装别人编写的命令行程序到本地使用。 允许用户将自己编写的包或命令行程序上传到NPM服务器供别人使用。  摘自：http://www.run">
+<meta property="og:locale" content="zh-CN">
+<meta property="og:updated_time" content="2018-02-07T07:04:44.000Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="npm &amp; yarn 常用包与命令">
+<meta name="twitter:description" content="npm &amp;amp; yarnIntronpmNPM 是随同 NodeJS 一起安装的包管理工具，能解决NodeJS代码部署上的很多问题，常见的使用场景有以下几种：  允许用户从 NPM 服务器下载别人编写的第三方包到本地使用。 允许用户从 NPM 服务器下载并安装别人编写的命令行程序到本地使用。 允许用户将自己编写的包或命令行程序上传到NPM服务器供别人使用。  摘自：http://www.run">
+
+
+
+  <link rel="alternate" href="/atom.xml" title="云游君的小站" type="application/atom+xml">
+
+
+
+  
+  
+  <link rel="canonical" href="https://yunyoujun.cn/note/npm-and-yarn/">
+
+
+
+<script id="page.configurations">
+  CONFIG.page = {
+    sidebar: "",
+  };
+</script>
+
+  <title>npm & yarn 常用包与命令 | 云游君的小站</title>
+  
+
+
+
+
+  <script async src="//www.googletagmanager.com/gtag/js?id=UA-121354150-1"></script>
+  <script>
+    var host = window.location.hostname;
+    if (host !== "localhost" || !true) {
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'UA-121354150-1');
+    }
+  </script>
+
+
+
+
+
+
+
+
+
+  <noscript>
+  <style>
+  .use-motion .motion-element,
+  .use-motion .brand,
+  .use-motion .menu-item,
+  .sidebar-inner,
+  .use-motion .post-block,
+  .use-motion .pagination,
+  .use-motion .comments,
+  .use-motion .post-header,
+  .use-motion .post-body,
+  .use-motion .collection-title { opacity: initial; }
+
+  .use-motion .logo,
+  .use-motion .site-title,
+  .use-motion .site-subtitle {
+    opacity: initial;
+    top: initial;
+  }
+
+  .use-motion .logo-line-before i { left: initial; }
+  .use-motion .logo-line-after i { right: initial; }
+  </style>
+</noscript>
+
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage" lang="zh-CN">
+
+  
+  
+    
+  
+
+  <div class="container sidebar-position-left page-post-detail">
+    <div class="headband"></div>
+
+    <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-wrapper">
+  <div class="site-meta">
+    
+
+    <div class="custom-logo-site-title">
+      <a href="/" class="brand" rel="start">
+        <span class="logo-line-before"><i></i></span>
+        <span class="site-title">云游君的小站</span>
+        <span class="logo-line-after"><i></i></span>
+      </a>
+    </div>
+    
+      
+        <h1 class="site-subtitle" itemprop="description">在这世界的某个角落 - 但盼风雨来</h1>
+      
+    
+    
+  </div>
+
+  <div class="site-nav-toggle">
+    <button aria-label="切换导航栏">
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+    </button>
+  </div>
+</div>
+
+
+
+<nav class="site-nav">
+  
+    <ul id="menu" class="menu">
+      
+        
+        
+        
+          
+          <li class="menu-item menu-item-home">
+
+    
+    
+    
+      
+    
+
+    
+      
+    
+
+    <a href="/" rel="section"><i class="menu-item-icon fa fa-fw fa-home"></i> <br>首页</a>
+
+  </li>
+        
+        
+        
+          
+          <li class="menu-item menu-item-about">
+
+    
+    
+    
+      
+    
+
+    
+      
+    
+
+    <a href="/about/" rel="section"><i class="menu-item-icon fa fa-fw fa-user"></i> <br>关于</a>
+
+  </li>
+        
+        
+        
+          
+          <li class="menu-item menu-item-tags">
+
+    
+    
+    
+      
+    
+
+    
+      
+    
+
+    <a href="/tags/" rel="section"><i class="menu-item-icon fa fa-fw fa-tags"></i> <br>标签<span class="badge">43</span></a>
+
+  </li>
+        
+        
+        
+          
+          <li class="menu-item menu-item-categories">
+
+    
+    
+    
+      
+    
+
+    
+      
+    
+
+    <a href="/categories/" rel="section"><i class="menu-item-icon fa fa-fw fa-th"></i> <br>分类<span class="badge">14</span></a>
+
+  </li>
+        
+        
+        
+          
+          <li class="menu-item menu-item-archives">
+
+    
+    
+    
+      
+    
+
+    
+      
+    
+
+    <a href="/archives/" rel="section"><i class="menu-item-icon fa fa-fw fa-archive"></i> <br>归档<span class="badge">87</span></a>
+
+  </li>
+
+      
+      
+        <li class="menu-item menu-item-search">
+          
+            <a href="javascript:;" class="popup-trigger">
+          
+            
+              <i class="menu-item-icon fa fa-search fa-fw"></i> <br>搜索</a>
+        </li>
+      
+    </ul>
+  
+
+  
+    
+
+  
+
+  
+    <div class="site-search">
+      
+  
+  <div class="algolia-popup popup search-popup">
+    <div class="algolia-search">
+      <div class="algolia-search-input-icon">
+        <i class="fa fa-search"></i>
+      </div>
+      <div class="algolia-search-input" id="algolia-search-input"></div>
+    </div>
+
+    <div class="algolia-results">
+      <div id="algolia-stats"></div>
+      <div id="algolia-hits"></div>
+      <div id="algolia-pagination" class="algolia-pagination"></div>
+    </div>
+
+    <span class="popup-btn-close">
+      <i class="fa fa-times-circle"></i>
+    </span>
+  </div>
+
+
+
+
+    </div>
+  
+</nav>
+
+
+
+  
+
+
+
+</div>
+    </header>
+
+    
+
+
+    <main id="main" class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          
+          <div id="content" class="content">
+            
+
+  <div id="posts" class="posts-expand">
+    
+
+  
+
+  
+  
+  
+
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="https://yunyoujun.cn/note/npm-and-yarn/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="云游君">
+      <meta itemprop="description" content="All at sea.">
+      <meta itemprop="image" content="/images/avatar.jpg">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="云游君的小站">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h2 class="post-title" itemprop="name headline">npm & yarn 常用包与命令<a href="https://github.com/YunYouJun/yunyoujun.github.io/tree/hexo/source/_posts/note/npm-and-yarn.md" class="post-edit-link" title="编辑" rel="noopener" target="_blank"><i class="fa fa-pencil"></i></a>
+
+              
+            
+          </h2>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+
+            
+            
+            
+
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+
+              
+                
+              
+
+              <time title="创建时间：2017-10-06 15:56:20" itemprop="dateCreated datePublished" datetime="2017-10-06T15:56:20+08:00">2017-10-06</time>
+            
+
+            
+          </span>
+
+          
+            <span class="post-category">
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/云游的小笔记/" itemprop="url" rel="index"><span itemprop="name">云游的小笔记</span></a></span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+            
+          
+
+          
+          
+
+          
+            <span class="post-meta-divider">|</span>
+            <span class="post-meta-item-icon">
+            <i class="fa fa-eye"></i>
+             阅读次数： 
+            <span class="busuanzi-value" id="busuanzi_value_page_pv"></span>
+            </span>
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        <h1 id="npm-amp-yarn"><a href="#npm-amp-yarn" class="headerlink" title="npm &amp; yarn"></a>npm &amp; yarn</h1><h2 id="Intro"><a href="#Intro" class="headerlink" title="Intro"></a>Intro</h2><h3 id="npm"><a href="#npm" class="headerlink" title="npm"></a><a href="https://www.npmjs.com/" target="_blank" rel="noopener">npm</a></h3><p>NPM 是随同 NodeJS 一起安装的包管理工具，能解决NodeJS代码部署上的很多问题，常见的使用场景有以下几种：</p>
+<ul>
+<li>允许用户从 NPM 服务器下载别人编写的第三方包到本地使用。</li>
+<li>允许用户从 NPM 服务器下载并安装别人编写的命令行程序到本地使用。</li>
+<li>允许用户将自己编写的包或命令行程序上传到NPM服务器供别人使用。</li>
+</ul>
+<p>摘自：<a href="http://www.runoob.com/nodejs/nodejs-npm.html" target="_blank" rel="noopener">http://www.runoob.com/nodejs/nodejs-npm.html</a></p>
+<h3 id="yarn"><a href="#yarn" class="headerlink" title="yarn"></a><a href="https://yarnpkg.com/zh-Hans/" target="_blank" rel="noopener">yarn</a></h3><p>Yarn 对你的代码来说是一个包管理器， 你可以通过它使用全世界开发者的代码，或者分享自己的代码。 Yarn 做这些快捷、安全、可靠，所以你不用担心什么。</p>
+<p>通过 Yarn 你可以使用其他开发者针对不同问题的解决方案，使自己的开发过程更简单。 使用过程中遇到问题，你可以将其上报或者贡献解决方案。一旦问题被修复，Yarn会更新保持同步。</p>
+<p>代码通过包（package）（或者称为模块（module））的方式来共享。 一个包里包含所有需要共享的代码，以及描述包信息的文件，称为 package.json。</p>
+<blockquote>
+<p>实质上，yarn 使用的还是 npm 中的包。</p>
+</blockquote>
+<a id="more"></a>
+<hr>
+<h2 id="Docs"><a href="#Docs" class="headerlink" title="Docs"></a>Docs</h2><p><a href="https://docs.npmjs.com/files/package.json" target="_blank" rel="noopener">package.json</a></p>
+<h3 id="pre-commit"><a href="#pre-commit" class="headerlink" title="pre-commit"></a>pre-commit</h3><figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">yarn add -D pre-commit</span><br></pre></td></tr></table></figure>
+<p>在提交 commit 前进行构建</p>
+<figure class="highlight"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">&#123;</span><br><span class="line">  ...</span><br><span class="line">  "scripts": &#123;</span><br><span class="line">    "build": "gulp build",</span><br><span class="line">    "prepublish": "yarn build"</span><br><span class="line">  &#125;,</span><br><span class="line">  "pre-commit": ["build"]</span><br><span class="line">  ...</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<h2 id="Command"><a href="#Command" class="headerlink" title="Command"></a>Command</h2><h3 id="npm-1"><a href="#npm-1" class="headerlink" title="npm"></a>npm</h3><h4 id="npm-package"><a href="#npm-package" class="headerlink" title="npm package"></a>npm package</h4><ul>
+<li><code>npm login</code> 登陆 npm (若使用其他镜像，需要切换回官网 <code>npm config set registry http://registry.npmjs.org</code> )</li>
+<li><code>npm publish</code> 发布 npm 包</li>
+<li><p><code>npm version major | minor | patch</code> 更新不同版本号</p>
+</li>
+<li><p>使用 <code>npm update &lt;package&gt;</code> 可以把当前目录下node_modules子目录里边的对应模块更新至最新版本。</p>
+</li>
+<li>使用 <code>npm update &lt;package&gt; -g</code> 可以把全局安装的对应命令行程序更新至最新版。</li>
+</ul>
+<h4 id="update"><a href="#update" class="headerlink" title="update"></a>update</h4><ul>
+<li>更新 npm : <code>npm install npm -g</code></li>
+</ul>
+<h4 id="传入参数"><a href="#传入参数" class="headerlink" title="传入参数"></a>传入参数</h4><p><code>myVar</code> 为自定义变量名称</p>
+<figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm run &lt;script&gt; -- &lt;something&gt;</span><br></pre></td></tr></table></figure>
+<p>Example:</p>
+<figure class="highlight"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">"scripts": &#123;</span><br><span class="line">    "hello": "echo hello"</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">npm run hello -- yunyoujun</span><br><span class="line"><span class="comment"># result</span></span><br><span class="line">hello <span class="string">"yunyoujun"</span></span><br></pre></td></tr></table></figure>
+<h3 id="yarn-1"><a href="#yarn-1" class="headerlink" title="yarn"></a>yarn</h3><h4 id="upgrade"><a href="#upgrade" class="headerlink" title="upgrade"></a><a href="https://yarnpkg.com/lang/en/docs/cli/upgrade/" target="_blank" rel="noopener">upgrade</a></h4><ul>
+<li>更新 yarn : <code>yarn upgrade [package]</code></li>
+<li>强制更新 : <code>yarn upgrade [package] --latest</code></li>
+</ul>
+<hr>
+<h2 id="Package"><a href="#Package" class="headerlink" title="Package"></a>Package</h2><h3 id="Tools"><a href="#Tools" class="headerlink" title="Tools"></a>Tools</h3><h4 id="nvm"><a href="#nvm" class="headerlink" title="nvm"></a>nvm</h4><ul>
+<li>简介：可用来安装与管理 <code>node.js</code>与 <code>npm</code> 版本。(严格来说，并不算npm的工具包，不过是管理 <code>node.js</code> 与 <code>npm</code> 的好工具。)</li>
+<li>GitHub : <a href="https://github.com/creationix/nvm" target="_blank" rel="noopener">https://github.com/creationix/nvm</a></li>
+<li>使用方法 ： 参见GitHub主页说明。（推荐使用git方式安装，更新方便。）</li>
+</ul>
+<figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">//从github克隆nvm项目代码</span><br><span class="line">git <span class="built_in">clone</span> https://github.com/creationix/nvm.git</span><br><span class="line">//安装稳定版本</span><br><span class="line">nvm install stable 或者 latest</span><br></pre></td></tr></table></figure>
+<p>Windows 系统下，可下载 <a href="https://github.com/coreybutler/nvm-windows/releases" target="_blank" rel="noopener">nvm-setup.zip</a> 解压后使用 exe 文件直接安装即可。</p>
+<h4 id="nrm"><a href="#nrm" class="headerlink" title="nrm"></a>nrm</h4><ul>
+<li>简介： nrm 可以帮助你方便快捷地在不同的 <code>npm registries</code> 中切换。(不同 npm 工具包下载源) 现包括: <code>npm</code>, <code>cnpm</code>, <code>taobao</code>, <code>nj(nodejitsu)</code>, <code>rednpm</code> .</li>
+<li>GitHUb : <a href="https://github.com/Pana/nrm" target="_blank" rel="noopener">https://github.com/Pana/nrm</a></li>
+<li>使用方法 ： 可参见 GitHub 主页说明。</li>
+</ul>
+<h4 id="yrm"><a href="#yrm" class="headerlink" title="yrm"></a>yrm</h4><p>作用和使用方法都与 <a href="#nrm">nrm</a> 类似，可切换 <code>yarn registries</code>。(不过使用时发现两者其实是对同一个源进行切换，其实 <code>nrm</code> 就足够了。)</p>
+<figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm install -g yrm</span><br></pre></td></tr></table></figure>
+<figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">$ yrm use npm</span><br><span class="line"></span><br><span class="line">   YARN Registry has been <span class="built_in">set</span> to: https://registry.npmjs.org/</span><br><span class="line">   NPM Registry has been <span class="built_in">set</span> to: https://registry.npmjs.org/</span><br></pre></td></tr></table></figure>
+<blockquote>
+<h3 id="gh-pages"><a href="#gh-pages" class="headerlink" title="gh-pages"></a><a href="https://www.npmjs.com/package/gh-pages" target="_blank" rel="noopener">gh-pages</a></h3></blockquote>
+<p>帮助快速发布 <code>gh-pages</code> 。</p>
+<p><a href="https://segmentfault.com/a/1190000010672318" target="_blank" rel="noopener">npm的gh-pages结合github发布repository网站</a></p>
+<hr>
+<h2 id="Framework"><a href="#Framework" class="headerlink" title="Framework"></a>Framework</h2><blockquote>
+<h3 id="express"><a href="#express" class="headerlink" title="express"></a>express</h3></blockquote>
+<ul>
+<li>简介： 基于 <code>Node.js</code> 平台，快速、开放、极简的 web 开发框架。</li>
+<li>GitHub : <a href="https://github.com/expressjs/express" target="_blank" rel="noopener">https://github.com/expressjs/express</a></li>
+<li>使用方法 ： 可参见GitHub主页说明。</li>
+<li>安装方法 ： <code>npm install express</code></li>
+<li>官网 ： <a href="https://expressjs.com/" target="_blank" rel="noopener">https://expressjs.com/</a></li>
+<li>中文网 ： <a href="http://www.expressjs.com.cn/" target="_blank" rel="noopener">http://www.expressjs.com.cn/</a></li>
+</ul>
+<blockquote>
+<h3 id="koa"><a href="#koa" class="headerlink" title="koa"></a><a href="http://koajs.com/" target="_blank" rel="noopener">koa</a></h3></blockquote>
+<hr>
+<h2 id="Reference"><a href="#Reference" class="headerlink" title="Reference"></a>Reference</h2><ul>
+<li><a href="http://www.ruanyifeng.com/blog/2016/10/npm_scripts.html" target="_blank" rel="noopener">npm scripts 使用指南</a></li>
+</ul>
+<hr>
+<p>To Be Continued.</p>
+
+      
+    </div>
+
+    
+
+    
+    
+    
+
+    
+
+    
+      
+    
+    
+      <div>
+        <div id="reward-container">
+  <div></div>
+  <button id="reward-button" disable="enable" onclick="var qr = document.getElementById(&quot;qr&quot;); qr.style.display = (qr.style.display === 'none') ? 'block' : 'none';">
+    打赏
+  </button>
+  <div id="qr" style="display: none;">
+
+    
+      
+      
+        
+      
+      <div style="display: inline-block">
+        <img src="/images/donate/wechatpay.png" alt="云游君 微信支付">
+        <p>微信支付</p>
+      </div>
+    
+      
+      
+        
+      
+      <div style="display: inline-block">
+        <img src="/images/donate/alipay.jpg" alt="云游君 支付宝">
+        <p>支付宝</p>
+      </div>
+    
+
+  </div>
+</div>
+
+      </div>
+    
+
+    
+      <div>
+        
+
+
+
+
+  
+
+
+
+<ul class="post-copyright">
+  <li class="post-copyright-author">
+    <strong>本文作者： </strong>云游君</li>
+  <li class="post-copyright-link">
+    <strong>本文链接：</strong>
+    
+    <a href="https://yunyoujun.cn/note/npm-and-yarn/" title="npm & yarn 常用包与命令">https://yunyoujun.cn/note/npm-and-yarn/</a>
+  </li>
+  <li class="post-copyright-license">
+    <strong>版权声明： </strong>本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh" rel="noopener" target="_blank"><i class="fa fa-fw fa-creative-commons"></i>BY-NC-SA</a> 许可协议。转载请注明出处！</li>
+</ul>
+
+      </div>
+    
+
+    <footer class="post-footer">
+      
+        <div class="post-tags">
+          
+            <a href="/tags/笔记/" rel="tag"># 笔记</a>
+          
+            <a href="/tags/分享/" rel="tag"># 分享</a>
+          
+            <a href="/tags/Node-js/" rel="tag"># Node.js</a>
+          
+        </div>
+      
+
+      
+      
+        <div class="post-widgets">
+        
+
+        
+
+        
+          
+          <div class="social_share">
+            
+            
+              <div id="needsharebutton-postbottom">
+                <span class="btn">
+                  <i class="fa fa-share-alt" aria-hidden="true"></i>
+                </span>
+              </div>
+            
+            
+          </div>
+        
+        </div>
+      
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/diary/as-summer-flowers/" rel="next" title="像夏花一样绚烂">
+                <i class="fa fa-chevron-left"></i> 像夏花一样绚烂
+              </a>
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+              <a href="/share/coding-webide-dev-env/" rel="prev" title="Coding WebIDE 云端开发实验室">
+                Coding WebIDE 云端开发实验室 <i class="fa fa-chevron-right"></i>
+              </a>
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<script>
+  (adsbygoogle = window.adsbygoogle || []).push({
+    google_ad_client: "ca-pub-2245427233262012",
+    enable_page_level_ads: true
+  });
+</script>
+  </div>
+
+
+          </div>
+          
+
+  
+    <div class="comments" id="gitalk-container">
+    </div>
+
+  
+
+
+
+        </div>
+        
+          
+  
+  <div class="sidebar-toggle">
+    <div class="sidebar-toggle-line-wrap">
+      <span class="sidebar-toggle-line sidebar-toggle-line-first"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-last"></span>
+    </div>
+  </div>
+
+  <aside id="sidebar" class="sidebar">
+    <div class="sidebar-inner">
+
+      
+
+      
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            站点概览
+          </li>
+        </ul>
+      
+
+      <div class="site-overview-wrap sidebar-panel">
+        <div class="site-overview">
+          <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            
+              <img class="site-author-image" itemprop="image" src="/images/avatar.jpg" alt="云游君">
+            
+              <p class="site-author-name" itemprop="name">云游君</p>
+              <div class="site-description motion-element" itemprop="description">All at sea.</div>
+          </div>
+
+          
+            <nav class="site-state motion-element">
+              
+                <div class="site-state-item site-state-posts">
+                
+                  <a href="/archives/">
+                
+                    <span class="site-state-item-count">87</span>
+                    <span class="site-state-item-name">日志</span>
+                  </a>
+                </div>
+              
+
+              
+                
+                
+                <div class="site-state-item site-state-categories">
+                  
+                    
+                      <a href="/categories/">
+                    
+                  
+                    
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                    <span class="site-state-item-count">14</span>
+                    <span class="site-state-item-name">分类</span>
+                  </a>
+                </div>
+              
+
+              
+                
+                
+                <div class="site-state-item site-state-tags">
+                  
+                    
+                      <a href="/tags/">
+                    
+                  
+                    
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                    <span class="site-state-item-count">42</span>
+                    <span class="site-state-item-name">标签</span>
+                  </a>
+                </div>
+              
+            </nav>
+          
+
+          
+            <div class="feed-link motion-element">
+              <a href="/atom.xml" rel="alternate">
+                <i class="fa fa-rss"></i>
+                RSS
+              </a>
+            </div>
+          
+
+          
+
+          
+            <div class="links-of-author motion-element">
+              
+                <span class="links-of-author-item">
+                  
+                  
+                    
+                  
+                  
+                    
+                  
+                  <a href="https://github.com/YunYouJun" title="GitHub &rarr; https://github.com/YunYouJun" rel="noopener" target="_blank"><i class="fa fa-fw fa-github"></i>GitHub</a>
+                </span>
+              
+                <span class="links-of-author-item">
+                  
+                  
+                    
+                  
+                  
+                    
+                  
+                  <a href="mailto:me@yunyoujun.cn" title="E-Mail &rarr; mailto:me@yunyoujun.cn"><i class="fa fa-fw fa-envelope"></i>E-Mail</a>
+                </span>
+              
+                <span class="links-of-author-item">
+                  
+                  
+                    
+                  
+                  
+                    
+                  
+                  <a href="https://space.bilibili.com/1579790" title="bilibili &rarr; https://space.bilibili.com/1579790" rel="noopener" target="_blank"><i class="fa fa-fw fa-bolt"></i>bilibili</a>
+                </span>
+              
+                <span class="links-of-author-item">
+                  
+                  
+                    
+                  
+                  
+                    
+                  
+                  <a href="http://weibo.com/jizhideyunyoujun" title="微博 &rarr; http://weibo.com/jizhideyunyoujun" rel="noopener" target="_blank"><i class="fa fa-fw fa-weibo"></i>微博</a>
+                </span>
+              
+                <span class="links-of-author-item">
+                  
+                  
+                    
+                  
+                  
+                    
+                  
+                  <a href="https://www.douban.com/people/yunyoujun/" title="豆瓣 &rarr; https://www.douban.com/people/yunyoujun/" rel="noopener" target="_blank"><i class="fa fa-fw fa-book"></i>豆瓣</a>
+                </span>
+              
+                <span class="links-of-author-item">
+                  
+                  
+                    
+                  
+                  
+                    
+                  
+                  <a href="http://music.163.com/#/user/home?id=247102977" title="网易云音乐 &rarr; http://music.163.com/#/user/home?id=247102977" rel="noopener" target="_blank"><i class="fa fa-fw fa-music"></i>网易云音乐</a>
+                </span>
+              
+                <span class="links-of-author-item">
+                  
+                  
+                    
+                  
+                  
+                    
+                  
+                  <a href="https://pixiv.me/yunyoujun" title="pixiv &rarr; https://pixiv.me/yunyoujun" rel="noopener" target="_blank"><i class="fa fa-fw fa-paint-brush"></i>pixiv</a>
+                </span>
+              
+                <span class="links-of-author-item">
+                  
+                  
+                    
+                  
+                  
+                    
+                  
+                  <a href="https://twitter.com/yunyoujun" title="Twitter &rarr; https://twitter.com/yunyoujun" rel="noopener" target="_blank"><i class="fa fa-fw fa-twitter"></i>Twitter</a>
+                </span>
+              
+            </div>
+          
+
+          
+
+          
+          
+
+          
+            
+          
+          
+
+        </div>
+      </div>
+
+      
+      <!--noindex-->
+        <div class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+            
+            
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#npm-amp-yarn"><span class="nav-number">1.</span> <span class="nav-text">npm &amp; yarn</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#Intro"><span class="nav-number">1.1.</span> <span class="nav-text">Intro</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#npm"><span class="nav-number">1.1.1.</span> <span class="nav-text">npm</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#yarn"><span class="nav-number">1.1.2.</span> <span class="nav-text">yarn</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Docs"><span class="nav-number">1.2.</span> <span class="nav-text">Docs</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#pre-commit"><span class="nav-number">1.2.1.</span> <span class="nav-text">pre-commit</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Command"><span class="nav-number">1.3.</span> <span class="nav-text">Command</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#npm-1"><span class="nav-number">1.3.1.</span> <span class="nav-text">npm</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#npm-package"><span class="nav-number">1.3.1.1.</span> <span class="nav-text">npm package</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#update"><span class="nav-number">1.3.1.2.</span> <span class="nav-text">update</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#传入参数"><span class="nav-number">1.3.1.3.</span> <span class="nav-text">传入参数</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#yarn-1"><span class="nav-number">1.3.2.</span> <span class="nav-text">yarn</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#upgrade"><span class="nav-number">1.3.2.1.</span> <span class="nav-text">upgrade</span></a></li></ol></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Package"><span class="nav-number">1.4.</span> <span class="nav-text">Package</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#Tools"><span class="nav-number">1.4.1.</span> <span class="nav-text">Tools</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#nvm"><span class="nav-number">1.4.1.1.</span> <span class="nav-text">nvm</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#nrm"><span class="nav-number">1.4.1.2.</span> <span class="nav-text">nrm</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#yrm"><span class="nav-number">1.4.1.3.</span> <span class="nav-text">yrm</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#gh-pages"><span class="nav-number">1.4.2.</span> <span class="nav-text">gh-pages</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Framework"><span class="nav-number">1.5.</span> <span class="nav-text">Framework</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#express"><span class="nav-number">1.5.1.</span> <span class="nav-text">express</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#koa"><span class="nav-number">1.5.2.</span> <span class="nav-text">koa</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Reference"><span class="nav-number">1.6.</span> <span class="nav-text">Reference</span></a></li></ol></li></ol></div>
+            
+
+          </div>
+        </div>
+      <!--/noindex-->
+      
+
+      
+
+    </div>
+  </aside>
+  
+
+
+        
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="footer-inner">
+        <div class="copyright">  <a href="http://www.beian.miit.gov.cn" rel="noopener" target="_blank">苏ICP备17038157号 </a>&copy; 2016 – <span itemprop="copyrightYear">2019</span>
+  <span class="with-love" id="animate">
+    <i class="fa fa-cloud"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">YunYouJun</span>
+
+  
+
+  
+</div>
+
+
+  <div class="powered-by">由 <a href="https://hexo.io" class="theme-link" rel="noopener" target="_blank">Hexo</a> 强力驱动 v3.8.0</div>
+
+
+
+  <span class="post-meta-divider">|</span>
+
+
+
+  <div class="theme-info">主题 – <a href="https://theme-next.org" class="theme-link" rel="noopener" target="_blank">NexT.Muse</a> v7.1.0</div>
+
+
+
+
+        
+<div class="busuanzi-count">
+  <script async src="https://busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+
+  
+    <span class="post-meta-item-icon">
+      <i class="fa fa-user"></i>
+    </span>
+    <span class="site-uv" title="总访客量">
+      <span class="busuanzi-value" id="busuanzi_value_site_uv"></span>
+    </span>
+  
+
+  
+    <span class="post-meta-divider">|</span>
+  
+
+  
+    <span class="post-meta-item-icon">
+      <i class="fa fa-eye"></i>
+    </span>
+    <span class="site-pv" title="总访问量">
+      <span class="busuanzi-value" id="busuanzi_value_site_pv"></span>
+    </span>
+  
+</div>
+
+
+
+
+
+  <script>
+    (function() {
+      var hm = document.createElement("script");
+      hm.src = "//tajs.qq.com/stats?sId=64704817";
+      var s = document.getElementsByTagName("script")[0];
+      s.parentNode.insertBefore(hm, s);
+    })();
+  </script>
+
+
+
+
+
+        
+      </div>
+    </footer>
+
+    
+      <div class="back-to-top">
+        <i class="fa fa-arrow-up"></i>
+        
+          <span id="scrollpercent"><span>0</span>%</span>
+        
+      </div>
+    
+
+    
+
+    
+
+    
+  </div>
+
+  
+
+<script>
+  if (Object.prototype.toString.call(window.Promise) !== '[object Function]') {
+    window.Promise = null;
+  }
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  <script src="/lib/jquery/index.js?v=2.1.3"></script>
+
+  
+  <script src="//cdnjs.cloudflare.com/ajax/libs/velocity/1.2.1/velocity.min.js"></script>
+
+  
+  <script src="//cdnjs.cloudflare.com/ajax/libs/velocity/1.2.1/velocity.ui.min.js"></script>
+
+  
+  <script src="//cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.6/jquery.fancybox.min.js"></script>
+
+
+  
+
+
+  <script src="/js/utils.js?v=7.1.0"></script>
+
+  <script src="/js/motion.js?v=7.1.0"></script>
+
+
+
+  
+  
+
+
+  <script src="/js/schemes/muse.js?v=7.1.0"></script>
+
+
+
+  
+  <script src="/js/scrollspy.js?v=7.1.0"></script>
+<script src="/js/post-details.js?v=7.1.0"></script>
+
+
+
+  
+
+
+  <script src="/js/next-boot.js?v=7.1.0"></script>
+
+
+  
+  <script src="/js/js.cookie.js?v=7.1.0"></script>
+  <script src="/js/scroll-cookie.js?v=7.1.0"></script>
+
+
+  
+
+  
+  
+  
+
+  
+
+  
+  
+  
+
+
+  
+
+
+  
+    
+
+  
+
+<script src="//cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.min.js"></script>
+
+
+
+  
+
+<link rel="stylesheet" href="//cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.css">
+
+
+
+<script src="//cdn.jsdelivr.net/npm/js-md5@0.7.3/src/md5.min.js"></script>
+
+<script>
+  var gitalk = new Gitalk({
+    clientID: 'ff03975ca04a3232ce1a',
+    clientSecret: 'aefe7b1d3f4b2af31110d8f364d4805d48bf284f',
+    repo: 'yunyoujun.github.io',
+    owner: 'YunYouJun',
+    admin: ['YunYouJun'],
+    id: md5(location.pathname),
+    
+      language: window.navigator.language || window.navigator.userLanguage,
+    
+    distractionFreeMode: 'true'
+  });
+  gitalk.render('gitalk-container');
+</script>
+
+  
+
+
+  
+
+
+
+  
+  
+  
+    
+  
+  <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/instantsearch.js@2/dist/instantsearch.min.css">
+
+  
+  
+    
+  
+  <script src="//cdn.jsdelivr.net/npm/instantsearch.js@2/dist/instantsearch.js"></script>
+  
+
+  <script src="/js/algolia-search.js?v=7.1.0"></script>
+
+
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+  <script>
+    (function(){
+      var bp = document.createElement('script');
+      var curProtocol = window.location.protocol.split(':')[0];
+      bp.src = (curProtocol === 'https') ? 'https://zz.bdstatic.com/linksubmit/push.js' : 'http://push.zhanzhang.baidu.com/push.js';
+      var s = document.getElementsByTagName("script")[0];
+      s.parentNode.insertBefore(bp, s);
+    })();
+  </script>
+
+
+  
+
+  
+  
+  
+    
+  
+  <script src="//cdn.jsdelivr.net/gh/theme-next/theme-next-needmoreshare2@1/needsharebutton.min.js"></script>
+  <script>
+    
+      pbOptions = {};
+      
+        pbOptions.iconStyle = "box";
+      
+        pbOptions.boxForm = "horizontal";
+      
+        pbOptions.position = "bottomCenter";
+      
+        pbOptions.networks = "Weibo,Wechat,Douban,QQZone,Twitter,Facebook";
+      
+      new needShareButton('#needsharebutton-postbottom', pbOptions);
+    
+    
+  </script>
+
+
+  
+
+  
+
+  
+
+  
+<script>
+  $('.highlight').each(function(i, e) {
+    var $wrap = $('<div>').addClass('highlight-wrap');
+    $(e).after($wrap);
+    $wrap.append($('<button>').addClass('copy-btn').append('复制').on('click', function(e) {
+      var code = $(this).parent().find('.code').find('.line').map(function(i, e) {
+        return $(e).text();
+      }).toArray().join('\n');
+      var ta = document.createElement('textarea');
+      var yPosition = window.pageYOffset || document.documentElement.scrollTop;
+      ta.style.top = yPosition + 'px'; // Prevent page scroll
+      ta.style.position = 'absolute';
+      ta.style.opacity = '0';
+      ta.readOnly = true;
+      ta.value = code;
+      document.body.appendChild(ta);
+      ta.select();
+      ta.setSelectionRange(0, code.length);
+      ta.readOnly = false;
+      var result = document.execCommand('copy');
+      
+        if (result) $(this).text('复制成功');
+        else $(this).text('复制失败');
+      
+      ta.blur(); // For iOS
+      $(this).blur();
+    })).on('mouseleave', function(e) {
+      var $b = $(this).find('.copy-btn');
+      setTimeout(function() {
+        $b.text('复制');
+      }, 300);
+    }).append(e);
+  })
+</script>
+
+
+  
+
+  
+
+</body>
+</html>

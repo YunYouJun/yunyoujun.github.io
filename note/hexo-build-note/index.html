@@ -1,0 +1,1454 @@
+<!DOCTYPE html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<html class="theme-next muse" lang="zh-CN">
+<head><meta name="generator" content="Hexo 3.8.0">
+  <meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
+<meta name="theme-color" content="#222">
+
+
+  
+  
+    
+  
+  <link rel="stylesheet" href="//cdn.jsdelivr.net/gh/theme-next/theme-next-needmoreshare2@1/needsharebutton.min.css">
+
+
+
+
+
+
+
+
+
+
+
+  <meta name="msvalidate.01" content="BA398191C556A182355D78E1FE74F222">
+
+
+
+
+
+  <meta name="baidu-site-verification" content="dxyOQaCWUs">
+
+
+
+  
+  
+    
+  
+  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.6/jquery.fancybox.min.css">
+
+
+
+
+
+
+
+  
+
+<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.2/css/font-awesome.min.css">
+
+<link rel="stylesheet" href="/css/main.css?v=7.1.0">
+
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/favicon.png?v=7.1.0">
+
+
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon.png?v=7.1.0">
+
+
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon.ico?v=7.1.0">
+
+
+  <link rel="mask-icon" href="/favicon.png?v=7.1.0" color="#222">
+
+
+
+
+
+
+
+<script id="hexo.configurations">
+  var NexT = window.NexT || {};
+  var CONFIG = {
+    root: '/',
+    scheme: 'Muse',
+    version: '7.1.0',
+    sidebar: {"position":"left","display":"post","offset":12,"onmobile":true,"dimmer":false},
+    back2top: true,
+    back2top_sidebar: false,
+    fancybox: true,
+    fastclick: false,
+    lazyload: false,
+    tabs: true,
+    motion: {"enable":false,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},
+    algolia: {
+      applicationID: 'CJXXAGRCYN',
+      apiKey: '6af02e5bb9dc6381072d2096be55b601',
+      indexName: 'my-hexo-blog',
+      hits: {"per_page":true},
+      labels: {"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}
+    }
+  };
+</script>
+
+
+  
+
+
+<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<script>
+  (adsbygoogle = window.adsbygoogle || []).push({
+    google_ad_client: "ca-pub-2245427233262012",
+    enable_page_level_ads: true
+  });
+</script>
+
+
+  <meta name="description" content="Wordpress 你放心，我暂时是不会抛弃你的。  2017.12.11 正式抛弃 2333    Hexo快速、简洁且高效的博客框架">
+<meta name="keywords" content="笔记,学习,分享">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Hexo 静态博客搭建笔记">
+<meta property="og:url" content="https://yunyoujun.cn/note/hexo-build-note/index.html">
+<meta property="og:site_name" content="云游君的小站">
+<meta property="og:description" content="Wordpress 你放心，我暂时是不会抛弃你的。  2017.12.11 正式抛弃 2333    Hexo快速、简洁且高效的博客框架">
+<meta property="og:locale" content="zh-CN">
+<meta property="og:updated_time" content="2017-02-02T04:40:32.000Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Hexo 静态博客搭建笔记">
+<meta name="twitter:description" content="Wordpress 你放心，我暂时是不会抛弃你的。  2017.12.11 正式抛弃 2333    Hexo快速、简洁且高效的博客框架">
+
+
+
+  <link rel="alternate" href="/atom.xml" title="云游君的小站" type="application/atom+xml">
+
+
+
+  
+  
+  <link rel="canonical" href="https://yunyoujun.cn/note/hexo-build-note/">
+
+
+
+<script id="page.configurations">
+  CONFIG.page = {
+    sidebar: "",
+  };
+</script>
+
+  <title>Hexo 静态博客搭建笔记 | 云游君的小站</title>
+  
+
+
+
+
+  <script async src="//www.googletagmanager.com/gtag/js?id=UA-121354150-1"></script>
+  <script>
+    var host = window.location.hostname;
+    if (host !== "localhost" || !true) {
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'UA-121354150-1');
+    }
+  </script>
+
+
+
+
+
+
+
+
+
+  <noscript>
+  <style>
+  .use-motion .motion-element,
+  .use-motion .brand,
+  .use-motion .menu-item,
+  .sidebar-inner,
+  .use-motion .post-block,
+  .use-motion .pagination,
+  .use-motion .comments,
+  .use-motion .post-header,
+  .use-motion .post-body,
+  .use-motion .collection-title { opacity: initial; }
+
+  .use-motion .logo,
+  .use-motion .site-title,
+  .use-motion .site-subtitle {
+    opacity: initial;
+    top: initial;
+  }
+
+  .use-motion .logo-line-before i { left: initial; }
+  .use-motion .logo-line-after i { right: initial; }
+  </style>
+</noscript>
+
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage" lang="zh-CN">
+
+  
+  
+    
+  
+
+  <div class="container sidebar-position-left page-post-detail">
+    <div class="headband"></div>
+
+    <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-wrapper">
+  <div class="site-meta">
+    
+
+    <div class="custom-logo-site-title">
+      <a href="/" class="brand" rel="start">
+        <span class="logo-line-before"><i></i></span>
+        <span class="site-title">云游君的小站</span>
+        <span class="logo-line-after"><i></i></span>
+      </a>
+    </div>
+    
+      
+        <h1 class="site-subtitle" itemprop="description">在这世界的某个角落 - 但盼风雨来</h1>
+      
+    
+    
+  </div>
+
+  <div class="site-nav-toggle">
+    <button aria-label="切换导航栏">
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+    </button>
+  </div>
+</div>
+
+
+
+<nav class="site-nav">
+  
+    <ul id="menu" class="menu">
+      
+        
+        
+        
+          
+          <li class="menu-item menu-item-home">
+
+    
+    
+    
+      
+    
+
+    
+      
+    
+
+    <a href="/" rel="section"><i class="menu-item-icon fa fa-fw fa-home"></i> <br>首页</a>
+
+  </li>
+        
+        
+        
+          
+          <li class="menu-item menu-item-about">
+
+    
+    
+    
+      
+    
+
+    
+      
+    
+
+    <a href="/about/" rel="section"><i class="menu-item-icon fa fa-fw fa-user"></i> <br>关于</a>
+
+  </li>
+        
+        
+        
+          
+          <li class="menu-item menu-item-tags">
+
+    
+    
+    
+      
+    
+
+    
+      
+    
+
+    <a href="/tags/" rel="section"><i class="menu-item-icon fa fa-fw fa-tags"></i> <br>标签<span class="badge">43</span></a>
+
+  </li>
+        
+        
+        
+          
+          <li class="menu-item menu-item-categories">
+
+    
+    
+    
+      
+    
+
+    
+      
+    
+
+    <a href="/categories/" rel="section"><i class="menu-item-icon fa fa-fw fa-th"></i> <br>分类<span class="badge">14</span></a>
+
+  </li>
+        
+        
+        
+          
+          <li class="menu-item menu-item-archives">
+
+    
+    
+    
+      
+    
+
+    
+      
+    
+
+    <a href="/archives/" rel="section"><i class="menu-item-icon fa fa-fw fa-archive"></i> <br>归档<span class="badge">87</span></a>
+
+  </li>
+
+      
+      
+        <li class="menu-item menu-item-search">
+          
+            <a href="javascript:;" class="popup-trigger">
+          
+            
+              <i class="menu-item-icon fa fa-search fa-fw"></i> <br>搜索</a>
+        </li>
+      
+    </ul>
+  
+
+  
+    
+
+  
+
+  
+    <div class="site-search">
+      
+  
+  <div class="algolia-popup popup search-popup">
+    <div class="algolia-search">
+      <div class="algolia-search-input-icon">
+        <i class="fa fa-search"></i>
+      </div>
+      <div class="algolia-search-input" id="algolia-search-input"></div>
+    </div>
+
+    <div class="algolia-results">
+      <div id="algolia-stats"></div>
+      <div id="algolia-hits"></div>
+      <div id="algolia-pagination" class="algolia-pagination"></div>
+    </div>
+
+    <span class="popup-btn-close">
+      <i class="fa fa-times-circle"></i>
+    </span>
+  </div>
+
+
+
+
+    </div>
+  
+</nav>
+
+
+
+  
+
+
+
+</div>
+    </header>
+
+    
+
+
+    <main id="main" class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          
+          <div id="content" class="content">
+            
+
+  <div id="posts" class="posts-expand">
+    
+
+  
+
+  
+  
+  
+
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="https://yunyoujun.cn/note/hexo-build-note/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="云游君">
+      <meta itemprop="description" content="All at sea.">
+      <meta itemprop="image" content="/images/avatar.jpg">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="云游君的小站">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h2 class="post-title" itemprop="name headline">Hexo 静态博客搭建笔记<a href="https://github.com/YunYouJun/yunyoujun.github.io/tree/hexo/source/_posts/note/hexo-build-note.md" class="post-edit-link" title="编辑" rel="noopener" target="_blank"><i class="fa fa-pencil"></i></a>
+
+              
+            
+          </h2>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+
+            
+            
+            
+
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+
+              
+                
+              
+
+              <time title="创建时间：2017-10-13 12:40:32" itemprop="dateCreated datePublished" datetime="2017-10-13T12:40:32+08:00">2017-10-13</time>
+            
+
+            
+          </span>
+
+          
+            <span class="post-category">
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/云游的小笔记/" itemprop="url" rel="index"><span itemprop="name">云游的小笔记</span></a></span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+            
+          
+
+          
+          
+
+          
+            <span class="post-meta-divider">|</span>
+            <span class="post-meta-item-icon">
+            <i class="fa fa-eye"></i>
+             阅读次数： 
+            <span class="busuanzi-value" id="busuanzi_value_page_pv"></span>
+            </span>
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        <blockquote>
+<p>Wordpress 你放心，我暂时是不会抛弃你的。</p>
+<ul>
+<li>2017.12.11 正式抛弃 2333</li>
+</ul>
+</blockquote>
+<hr>
+<h1 id="Hexo"><a href="#Hexo" class="headerlink" title="Hexo"></a><a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a></h1><p>快速、简洁且高效的博客框架</p>
+<a id="more"></a>
+<h2 id="优点"><a href="#优点" class="headerlink" title="优点"></a>优点</h2><ul>
+<li>多语言文档（含中文）</li>
+<li>静态博客，无需服务器</li>
+<li>部署、迁移、备份方便</li>
+<li>Geek</li>
+</ul>
+<h2 id="部署"><a href="#部署" class="headerlink" title="部署"></a>部署</h2><p>跟随文档步骤即可：<a href="https://hexo.io/zh-cn/docs/" target="_blank" rel="noopener">https://hexo.io/zh-cn/docs/</a></p>
+<h2 id="推荐主题"><a href="#推荐主题" class="headerlink" title="推荐主题"></a>推荐主题</h2><h3 id="NexT"><a href="#NexT" class="headerlink" title="NexT"></a><a href="https://theme-next.org/" target="_blank" rel="noopener">NexT</a></h3><blockquote>
+<p>GitHub: <a href="https://github.com/theme-next/hexo-theme-next" target="_blank" rel="noopener">https://github.com/theme-next/hexo-theme-next</a></p>
+</blockquote>
+<h3 id="yilia"><a href="#yilia" class="headerlink" title="yilia"></a><a href="https://github.com/litten/hexo-theme-yilia" target="_blank" rel="noopener">yilia</a></h3><hr>
+<h2 id="一些解决方案"><a href="#一些解决方案" class="headerlink" title="一些解决方案"></a>一些解决方案</h2><h3 id="备份自己的-Hexo-源文件"><a href="#备份自己的-Hexo-源文件" class="headerlink" title="备份自己的 Hexo 源文件"></a>备份自己的 Hexo 源文件</h3><ul>
+<li>在本地的 GitHub Pages 的项目(xxx.github.io)中,通过 <code>git bash</code> 建立新的分支 hexo<br>(可以现在 GitHub 上新建再 clone 自自己的文件夹)</li>
+</ul>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git checkout -b hexo</span><br></pre></td></tr></table></figure>
+<ul>
+<li><code>git checkout hexo</code> 切换至 hexo 分支</li>
+<li>此后对 hexo 源文件的配置修改等操作，默认在此分支下操作即可</li>
+<li>将修改推送至远程分支</li>
+</ul>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">git add -A</span><br><span class="line">git commit -m <span class="string">'update hexo backup'</span></span><br><span class="line">git push origin hexo</span><br></pre></td></tr></table></figure>
+<h3 id="每次命令执行繁琐，使用批处理"><a href="#每次命令执行繁琐，使用批处理" class="headerlink" title="每次命令执行繁琐，使用批处理"></a>每次命令执行繁琐，使用批处理</h3><ul>
+<li>在 Hexo 根目录下新建批处理文件 <code>update.sh</code>,并编辑如下内容。</li>
+</ul>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">hexo clean</span><br><span class="line">hexo d -g</span><br><span class="line">git add -A</span><br><span class="line">git commit -m <span class="string">'update hexo backup'</span></span><br><span class="line">git push origin hexo</span><br></pre></td></tr></table></figure>
+<pre><code>(作用分别是清除缓存重新部署 Hexo ，和备份 Hexo 源文件。)
+</code></pre><ul>
+<li>在 Hexo 根目录下，通过如下命令执行。</li>
+</ul>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">./update.sh</span><br></pre></td></tr></table></figure>
+<h3 id="集成-Algolia-搜索插件"><a href="#集成-Algolia-搜索插件" class="headerlink" title="集成 Algolia 搜索插件"></a><a href="https://www.npmjs.com/package/hexo-algolia" target="_blank" rel="noopener">集成 Algolia 搜索插件</a></h3><h4 id="Algolia"><a href="#Algolia" class="headerlink" title="Algolia"></a><a href="https://www.algolia.com/" target="_blank" rel="noopener">Algolia</a></h4><p>The Most Reliable Platform for Building Search.</p>
+<p>在 hexo 的 <code>_config.yml</code> 文件中，添加 algolia 配置。（注释记得去掉）</p>
+<figure class="highlight yml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line"><span class="attr">algolia:</span></span><br><span class="line"><span class="attr">  applicationID:</span> <span class="string">'xxx'</span></span><br><span class="line"><span class="attr">  apiKey:</span> <span class="string">'xxx'</span></span><br><span class="line"><span class="attr">  indexName:</span> <span class="string">'my-hexo-blog'</span> <span class="string">//</span> <span class="string">填写在</span> <span class="string">aloglia</span> <span class="string">中设置的名称</span></span><br><span class="line"><span class="attr">  chunkSize:</span> <span class="number">5000</span></span><br><span class="line"><span class="attr">  fields:</span></span><br><span class="line"><span class="bullet">    -</span> <span class="string">excerpt</span></span><br><span class="line"><span class="attr">    - excerpt:</span><span class="string">strip</span></span><br><span class="line"><span class="bullet">    -</span> <span class="string">gallery</span></span><br><span class="line"><span class="bullet">    -</span> <span class="string">permalink</span></span><br><span class="line"><span class="bullet">    -</span> <span class="string">photos</span></span><br><span class="line"><span class="bullet">    -</span> <span class="string">slug</span></span><br><span class="line"><span class="bullet">    -</span> <span class="string">tags</span></span><br><span class="line"><span class="bullet">    -</span> <span class="string">title</span></span><br></pre></td></tr></table></figure>
+<figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">npm install hexo-algolia --save // 使用 npm 安装 hexo-algolia 插件</span><br><span class="line"><span class="built_in">export</span> HEXO_ALGOLIA_INDEXING_KEY=xxx // xxx 为 apiKey</span><br><span class="line">hexo clean</span><br><span class="line">hexo algolia // 生成index</span><br></pre></td></tr></table></figure>
+<h4 id="Next-Algolia"><a href="#Next-Algolia" class="headerlink" title="Next-Algolia"></a>Next-Algolia</h4><p>Hexo 主题 Next 6.0 版本将用到的第三方都提取成了模块。</p>
+<blockquote>
+<p>使用方法参见： <a href="https://github.com/theme-next/theme-next-algolia-instant-search" target="_blank" rel="noopener">theme-next-algolia-instant-search</a></p>
+</blockquote>
+<h3 id="为-Next-主题添加阅读次数统计"><a href="#为-Next-主题添加阅读次数统计" class="headerlink" title="为 Next 主题添加阅读次数统计"></a>为 Next 主题添加阅读次数统计</h3><p><a href="http://leancloud.cn" target="_blank" rel="noopener"><strong>LeanCloud</strong></a><br>采用第三方 LeanCloud 服务实现</p>
+<p><a href="http://theme-next.iissnan.com/" target="_blank" rel="noopener">Next</a> 主题集成了 LeanCloud 统计。</p>
+<ul>
+<li>进入官网，注册账号，创建应用（开发版为免费使用）</li>
+<li>进入创建的应用中，选择左侧导航栏中的“存储”，随后点击“创建Class”，将 Class 名称填为 Counter，并选择<strong>无限制</strong>选项。</li>
+<li>进入 Next 主题配置文件 <code>_config.yml</code> ，配置 <code>leancloud_visitors</code> 属性 <code>enable</code> 为 <code>true</code>，并配置对应的 <code>App ID</code> 与 <code>App Key</code> 。 (在 <code>LeanCloud</code> 左侧导航栏的设置界面，单击“应用Key”可以看到应用的App ID和App Key。)</li>
+</ul>
+<hr>
+<h2 id="小技巧"><a href="#小技巧" class="headerlink" title="小技巧"></a>小技巧</h2><h3 id="配置-theme-next"><a href="#配置-theme-next" class="headerlink" title="配置 theme/next"></a>配置 theme/next</h3><p>可以在 <code>source</code> 文件夹(含有 <code>_post</code> 的文件夹)下新建 <code>_data</code> 文件夹，并在其中新建 <code>next.yml</code>。其后将需要特定的配置从 <code>theme/next/_config.yml</code> 中复制过来即可。</p>
+<p>如果需要覆盖 <code>_config.yml</code> 默认配置， 修改 <code>next.yml</code> 中 <code>override: true</code>。</p>
+<h3 id="自动生成目录"><a href="#自动生成目录" class="headerlink" title="自动生成目录"></a>自动生成目录</h3><p>开启 toc (Table of Contents)，</p>
+<figure class="highlight md"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">---</span><br><span class="line">title: xxx</span><br><span class="line">toc: true</span><br><span class="line">---</span><br><span class="line">...</span><br></pre></td></tr></table></figure>
+<p>也可以在设置 <code>next.yml</code>中设置默认开启。</p>
+<figure class="highlight yml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># Table Of Contents in the Sidebar</span></span><br><span class="line"><span class="attr">toc:</span></span><br><span class="line"><span class="attr">  enable:</span> <span class="literal">true</span></span><br></pre></td></tr></table></figure>
+<h2 id="Example"><a href="#Example" class="headerlink" title="Example"></a>Example</h2><p>在 <a href="http://yunyoujun.github.io" target="_blank" rel="noopener">GitHub Pages</a> 和 <a href="http://yunyoujun.coding.me" target="_blank" rel="noopener">Coding Pages</a> 上都进行了部署。</p>
+<p><code>_config.yml</code> 可参考 <a href="https://github.com/YunYouJun/yunyoujun.github.io" target="_blank" rel="noopener">GitHub Address</a></p>
+
+      
+    </div>
+
+    
+
+    
+    
+    
+
+    
+
+    
+      
+    
+    
+      <div>
+        <div id="reward-container">
+  <div></div>
+  <button id="reward-button" disable="enable" onclick="var qr = document.getElementById(&quot;qr&quot;); qr.style.display = (qr.style.display === 'none') ? 'block' : 'none';">
+    打赏
+  </button>
+  <div id="qr" style="display: none;">
+
+    
+      
+      
+        
+      
+      <div style="display: inline-block">
+        <img src="/images/donate/wechatpay.png" alt="云游君 微信支付">
+        <p>微信支付</p>
+      </div>
+    
+      
+      
+        
+      
+      <div style="display: inline-block">
+        <img src="/images/donate/alipay.jpg" alt="云游君 支付宝">
+        <p>支付宝</p>
+      </div>
+    
+
+  </div>
+</div>
+
+      </div>
+    
+
+    
+      <div>
+        
+
+
+
+
+  
+
+
+
+<ul class="post-copyright">
+  <li class="post-copyright-author">
+    <strong>本文作者： </strong>云游君</li>
+  <li class="post-copyright-link">
+    <strong>本文链接：</strong>
+    
+    <a href="https://yunyoujun.cn/note/hexo-build-note/" title="Hexo 静态博客搭建笔记">https://yunyoujun.cn/note/hexo-build-note/</a>
+  </li>
+  <li class="post-copyright-license">
+    <strong>版权声明： </strong>本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh" rel="noopener" target="_blank"><i class="fa fa-fw fa-creative-commons"></i>BY-NC-SA</a> 许可协议。转载请注明出处！</li>
+</ul>
+
+      </div>
+    
+
+    <footer class="post-footer">
+      
+        <div class="post-tags">
+          
+            <a href="/tags/笔记/" rel="tag"># 笔记</a>
+          
+            <a href="/tags/学习/" rel="tag"># 学习</a>
+          
+            <a href="/tags/分享/" rel="tag"># 分享</a>
+          
+        </div>
+      
+
+      
+      
+        <div class="post-widgets">
+        
+
+        
+
+        
+          
+          <div class="social_share">
+            
+            
+              <div id="needsharebutton-postbottom">
+                <span class="btn">
+                  <i class="fa fa-share-alt" aria-hidden="true"></i>
+                </span>
+              </div>
+            
+            
+          </div>
+        
+        </div>
+      
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/share/coding-webide-dev-env/" rel="next" title="Coding WebIDE 云端开发实验室">
+                <i class="fa fa-chevron-left"></i> Coding WebIDE 云端开发实验室
+              </a>
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+              <a href="/share/discourse-forum/" rel="prev" title="Discourse 新一代开源论坛">
+                Discourse 新一代开源论坛 <i class="fa fa-chevron-right"></i>
+              </a>
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<script>
+  (adsbygoogle = window.adsbygoogle || []).push({
+    google_ad_client: "ca-pub-2245427233262012",
+    enable_page_level_ads: true
+  });
+</script>
+  </div>
+
+
+          </div>
+          
+
+  
+    <div class="comments" id="gitalk-container">
+    </div>
+
+  
+
+
+
+        </div>
+        
+          
+  
+  <div class="sidebar-toggle">
+    <div class="sidebar-toggle-line-wrap">
+      <span class="sidebar-toggle-line sidebar-toggle-line-first"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-last"></span>
+    </div>
+  </div>
+
+  <aside id="sidebar" class="sidebar">
+    <div class="sidebar-inner">
+
+      
+
+      
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            站点概览
+          </li>
+        </ul>
+      
+
+      <div class="site-overview-wrap sidebar-panel">
+        <div class="site-overview">
+          <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            
+              <img class="site-author-image" itemprop="image" src="/images/avatar.jpg" alt="云游君">
+            
+              <p class="site-author-name" itemprop="name">云游君</p>
+              <div class="site-description motion-element" itemprop="description">All at sea.</div>
+          </div>
+
+          
+            <nav class="site-state motion-element">
+              
+                <div class="site-state-item site-state-posts">
+                
+                  <a href="/archives/">
+                
+                    <span class="site-state-item-count">87</span>
+                    <span class="site-state-item-name">日志</span>
+                  </a>
+                </div>
+              
+
+              
+                
+                
+                <div class="site-state-item site-state-categories">
+                  
+                    
+                      <a href="/categories/">
+                    
+                  
+                    
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                    <span class="site-state-item-count">14</span>
+                    <span class="site-state-item-name">分类</span>
+                  </a>
+                </div>
+              
+
+              
+                
+                
+                <div class="site-state-item site-state-tags">
+                  
+                    
+                      <a href="/tags/">
+                    
+                  
+                    
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                    <span class="site-state-item-count">42</span>
+                    <span class="site-state-item-name">标签</span>
+                  </a>
+                </div>
+              
+            </nav>
+          
+
+          
+            <div class="feed-link motion-element">
+              <a href="/atom.xml" rel="alternate">
+                <i class="fa fa-rss"></i>
+                RSS
+              </a>
+            </div>
+          
+
+          
+
+          
+            <div class="links-of-author motion-element">
+              
+                <span class="links-of-author-item">
+                  
+                  
+                    
+                  
+                  
+                    
+                  
+                  <a href="https://github.com/YunYouJun" title="GitHub &rarr; https://github.com/YunYouJun" rel="noopener" target="_blank"><i class="fa fa-fw fa-github"></i>GitHub</a>
+                </span>
+              
+                <span class="links-of-author-item">
+                  
+                  
+                    
+                  
+                  
+                    
+                  
+                  <a href="mailto:me@yunyoujun.cn" title="E-Mail &rarr; mailto:me@yunyoujun.cn"><i class="fa fa-fw fa-envelope"></i>E-Mail</a>
+                </span>
+              
+                <span class="links-of-author-item">
+                  
+                  
+                    
+                  
+                  
+                    
+                  
+                  <a href="https://space.bilibili.com/1579790" title="bilibili &rarr; https://space.bilibili.com/1579790" rel="noopener" target="_blank"><i class="fa fa-fw fa-bolt"></i>bilibili</a>
+                </span>
+              
+                <span class="links-of-author-item">
+                  
+                  
+                    
+                  
+                  
+                    
+                  
+                  <a href="http://weibo.com/jizhideyunyoujun" title="微博 &rarr; http://weibo.com/jizhideyunyoujun" rel="noopener" target="_blank"><i class="fa fa-fw fa-weibo"></i>微博</a>
+                </span>
+              
+                <span class="links-of-author-item">
+                  
+                  
+                    
+                  
+                  
+                    
+                  
+                  <a href="https://www.douban.com/people/yunyoujun/" title="豆瓣 &rarr; https://www.douban.com/people/yunyoujun/" rel="noopener" target="_blank"><i class="fa fa-fw fa-book"></i>豆瓣</a>
+                </span>
+              
+                <span class="links-of-author-item">
+                  
+                  
+                    
+                  
+                  
+                    
+                  
+                  <a href="http://music.163.com/#/user/home?id=247102977" title="网易云音乐 &rarr; http://music.163.com/#/user/home?id=247102977" rel="noopener" target="_blank"><i class="fa fa-fw fa-music"></i>网易云音乐</a>
+                </span>
+              
+                <span class="links-of-author-item">
+                  
+                  
+                    
+                  
+                  
+                    
+                  
+                  <a href="https://pixiv.me/yunyoujun" title="pixiv &rarr; https://pixiv.me/yunyoujun" rel="noopener" target="_blank"><i class="fa fa-fw fa-paint-brush"></i>pixiv</a>
+                </span>
+              
+                <span class="links-of-author-item">
+                  
+                  
+                    
+                  
+                  
+                    
+                  
+                  <a href="https://twitter.com/yunyoujun" title="Twitter &rarr; https://twitter.com/yunyoujun" rel="noopener" target="_blank"><i class="fa fa-fw fa-twitter"></i>Twitter</a>
+                </span>
+              
+            </div>
+          
+
+          
+
+          
+          
+
+          
+            
+          
+          
+
+        </div>
+      </div>
+
+      
+      <!--noindex-->
+        <div class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+            
+            
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#Hexo"><span class="nav-number">1.</span> <span class="nav-text">Hexo</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#优点"><span class="nav-number">1.1.</span> <span class="nav-text">优点</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#部署"><span class="nav-number">1.2.</span> <span class="nav-text">部署</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#推荐主题"><span class="nav-number">1.3.</span> <span class="nav-text">推荐主题</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#NexT"><span class="nav-number">1.3.1.</span> <span class="nav-text">NexT</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#yilia"><span class="nav-number">1.3.2.</span> <span class="nav-text">yilia</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#一些解决方案"><span class="nav-number">1.4.</span> <span class="nav-text">一些解决方案</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#备份自己的-Hexo-源文件"><span class="nav-number">1.4.1.</span> <span class="nav-text">备份自己的 Hexo 源文件</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#每次命令执行繁琐，使用批处理"><span class="nav-number">1.4.2.</span> <span class="nav-text">每次命令执行繁琐，使用批处理</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#集成-Algolia-搜索插件"><span class="nav-number">1.4.3.</span> <span class="nav-text">集成 Algolia 搜索插件</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#Algolia"><span class="nav-number">1.4.3.1.</span> <span class="nav-text">Algolia</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#Next-Algolia"><span class="nav-number">1.4.3.2.</span> <span class="nav-text">Next-Algolia</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#为-Next-主题添加阅读次数统计"><span class="nav-number">1.4.4.</span> <span class="nav-text">为 Next 主题添加阅读次数统计</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#小技巧"><span class="nav-number">1.5.</span> <span class="nav-text">小技巧</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#配置-theme-next"><span class="nav-number">1.5.1.</span> <span class="nav-text">配置 theme/next</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#自动生成目录"><span class="nav-number">1.5.2.</span> <span class="nav-text">自动生成目录</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Example"><span class="nav-number">1.6.</span> <span class="nav-text">Example</span></a></li></ol></li></ol></div>
+            
+
+          </div>
+        </div>
+      <!--/noindex-->
+      
+
+      
+
+    </div>
+  </aside>
+  
+
+
+        
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="footer-inner">
+        <div class="copyright">  <a href="http://www.beian.miit.gov.cn" rel="noopener" target="_blank">苏ICP备17038157号 </a>&copy; 2016 – <span itemprop="copyrightYear">2019</span>
+  <span class="with-love" id="animate">
+    <i class="fa fa-cloud"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">YunYouJun</span>
+
+  
+
+  
+</div>
+
+
+  <div class="powered-by">由 <a href="https://hexo.io" class="theme-link" rel="noopener" target="_blank">Hexo</a> 强力驱动 v3.8.0</div>
+
+
+
+  <span class="post-meta-divider">|</span>
+
+
+
+  <div class="theme-info">主题 – <a href="https://theme-next.org" class="theme-link" rel="noopener" target="_blank">NexT.Muse</a> v7.1.0</div>
+
+
+
+
+        
+<div class="busuanzi-count">
+  <script async src="https://busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+
+  
+    <span class="post-meta-item-icon">
+      <i class="fa fa-user"></i>
+    </span>
+    <span class="site-uv" title="总访客量">
+      <span class="busuanzi-value" id="busuanzi_value_site_uv"></span>
+    </span>
+  
+
+  
+    <span class="post-meta-divider">|</span>
+  
+
+  
+    <span class="post-meta-item-icon">
+      <i class="fa fa-eye"></i>
+    </span>
+    <span class="site-pv" title="总访问量">
+      <span class="busuanzi-value" id="busuanzi_value_site_pv"></span>
+    </span>
+  
+</div>
+
+
+
+
+
+  <script>
+    (function() {
+      var hm = document.createElement("script");
+      hm.src = "//tajs.qq.com/stats?sId=64704817";
+      var s = document.getElementsByTagName("script")[0];
+      s.parentNode.insertBefore(hm, s);
+    })();
+  </script>
+
+
+
+
+
+        
+      </div>
+    </footer>
+
+    
+      <div class="back-to-top">
+        <i class="fa fa-arrow-up"></i>
+        
+          <span id="scrollpercent"><span>0</span>%</span>
+        
+      </div>
+    
+
+    
+
+    
+
+    
+  </div>
+
+  
+
+<script>
+  if (Object.prototype.toString.call(window.Promise) !== '[object Function]') {
+    window.Promise = null;
+  }
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  <script src="/lib/jquery/index.js?v=2.1.3"></script>
+
+  
+  <script src="//cdnjs.cloudflare.com/ajax/libs/velocity/1.2.1/velocity.min.js"></script>
+
+  
+  <script src="//cdnjs.cloudflare.com/ajax/libs/velocity/1.2.1/velocity.ui.min.js"></script>
+
+  
+  <script src="//cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.6/jquery.fancybox.min.js"></script>
+
+
+  
+
+
+  <script src="/js/utils.js?v=7.1.0"></script>
+
+  <script src="/js/motion.js?v=7.1.0"></script>
+
+
+
+  
+  
+
+
+  <script src="/js/schemes/muse.js?v=7.1.0"></script>
+
+
+
+  
+  <script src="/js/scrollspy.js?v=7.1.0"></script>
+<script src="/js/post-details.js?v=7.1.0"></script>
+
+
+
+  
+
+
+  <script src="/js/next-boot.js?v=7.1.0"></script>
+
+
+  
+  <script src="/js/js.cookie.js?v=7.1.0"></script>
+  <script src="/js/scroll-cookie.js?v=7.1.0"></script>
+
+
+  
+
+  
+  
+  
+
+  
+
+  
+  
+  
+
+
+  
+
+
+  
+    
+
+  
+
+<script src="//cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.min.js"></script>
+
+
+
+  
+
+<link rel="stylesheet" href="//cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.css">
+
+
+
+<script src="//cdn.jsdelivr.net/npm/js-md5@0.7.3/src/md5.min.js"></script>
+
+<script>
+  var gitalk = new Gitalk({
+    clientID: 'ff03975ca04a3232ce1a',
+    clientSecret: 'aefe7b1d3f4b2af31110d8f364d4805d48bf284f',
+    repo: 'yunyoujun.github.io',
+    owner: 'YunYouJun',
+    admin: ['YunYouJun'],
+    id: md5(location.pathname),
+    
+      language: window.navigator.language || window.navigator.userLanguage,
+    
+    distractionFreeMode: 'true'
+  });
+  gitalk.render('gitalk-container');
+</script>
+
+  
+
+
+  
+
+
+
+  
+  
+  
+    
+  
+  <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/instantsearch.js@2/dist/instantsearch.min.css">
+
+  
+  
+    
+  
+  <script src="//cdn.jsdelivr.net/npm/instantsearch.js@2/dist/instantsearch.js"></script>
+  
+
+  <script src="/js/algolia-search.js?v=7.1.0"></script>
+
+
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+  <script>
+    (function(){
+      var bp = document.createElement('script');
+      var curProtocol = window.location.protocol.split(':')[0];
+      bp.src = (curProtocol === 'https') ? 'https://zz.bdstatic.com/linksubmit/push.js' : 'http://push.zhanzhang.baidu.com/push.js';
+      var s = document.getElementsByTagName("script")[0];
+      s.parentNode.insertBefore(bp, s);
+    })();
+  </script>
+
+
+  
+
+  
+  
+  
+    
+  
+  <script src="//cdn.jsdelivr.net/gh/theme-next/theme-next-needmoreshare2@1/needsharebutton.min.js"></script>
+  <script>
+    
+      pbOptions = {};
+      
+        pbOptions.iconStyle = "box";
+      
+        pbOptions.boxForm = "horizontal";
+      
+        pbOptions.position = "bottomCenter";
+      
+        pbOptions.networks = "Weibo,Wechat,Douban,QQZone,Twitter,Facebook";
+      
+      new needShareButton('#needsharebutton-postbottom', pbOptions);
+    
+    
+  </script>
+
+
+  
+
+  
+
+  
+
+  
+<script>
+  $('.highlight').each(function(i, e) {
+    var $wrap = $('<div>').addClass('highlight-wrap');
+    $(e).after($wrap);
+    $wrap.append($('<button>').addClass('copy-btn').append('复制').on('click', function(e) {
+      var code = $(this).parent().find('.code').find('.line').map(function(i, e) {
+        return $(e).text();
+      }).toArray().join('\n');
+      var ta = document.createElement('textarea');
+      var yPosition = window.pageYOffset || document.documentElement.scrollTop;
+      ta.style.top = yPosition + 'px'; // Prevent page scroll
+      ta.style.position = 'absolute';
+      ta.style.opacity = '0';
+      ta.readOnly = true;
+      ta.value = code;
+      document.body.appendChild(ta);
+      ta.select();
+      ta.setSelectionRange(0, code.length);
+      ta.readOnly = false;
+      var result = document.execCommand('copy');
+      
+        if (result) $(this).text('复制成功');
+        else $(this).text('复制失败');
+      
+      ta.blur(); // For iOS
+      $(this).blur();
+    })).on('mouseleave', function(e) {
+      var $b = $(this).find('.copy-btn');
+      setTimeout(function() {
+        $b.text('复制');
+      }, 300);
+    }).append(e);
+  })
+</script>
+
+
+  
+
+  
+
+</body>
+</html>

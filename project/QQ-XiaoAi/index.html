@@ -1,0 +1,1455 @@
+<!DOCTYPE html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<html class="theme-next muse" lang="zh-CN">
+<head><meta name="generator" content="Hexo 3.8.0">
+  <meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
+<meta name="theme-color" content="#222">
+
+
+  
+  
+    
+  
+  <link rel="stylesheet" href="//cdn.jsdelivr.net/gh/theme-next/theme-next-needmoreshare2@1/needsharebutton.min.css">
+
+
+
+
+
+
+
+
+
+
+
+  <meta name="msvalidate.01" content="BA398191C556A182355D78E1FE74F222">
+
+
+
+
+
+  <meta name="baidu-site-verification" content="dxyOQaCWUs">
+
+
+
+  
+  
+    
+  
+  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.6/jquery.fancybox.min.css">
+
+
+
+
+
+
+
+  
+
+<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.2/css/font-awesome.min.css">
+
+<link rel="stylesheet" href="/css/main.css?v=7.1.0">
+
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/favicon.png?v=7.1.0">
+
+
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon.png?v=7.1.0">
+
+
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon.ico?v=7.1.0">
+
+
+  <link rel="mask-icon" href="/favicon.png?v=7.1.0" color="#222">
+
+
+
+
+
+
+
+<script id="hexo.configurations">
+  var NexT = window.NexT || {};
+  var CONFIG = {
+    root: '/',
+    scheme: 'Muse',
+    version: '7.1.0',
+    sidebar: {"position":"left","display":"post","offset":12,"onmobile":true,"dimmer":false},
+    back2top: true,
+    back2top_sidebar: false,
+    fancybox: true,
+    fastclick: false,
+    lazyload: false,
+    tabs: true,
+    motion: {"enable":false,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},
+    algolia: {
+      applicationID: 'CJXXAGRCYN',
+      apiKey: '6af02e5bb9dc6381072d2096be55b601',
+      indexName: 'my-hexo-blog',
+      hits: {"per_page":true},
+      labels: {"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}
+    }
+  };
+</script>
+
+
+  
+
+
+<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<script>
+  (adsbygoogle = window.adsbygoogle || []).push({
+    google_ad_client: "ca-pub-2245427233262012",
+    enable_page_level_ads: true
+  });
+</script>
+
+
+  <meta name="description" content="鉴于某群的朋友，总会说着‘反正云游不在，赶紧撤回。’之类的话语，就想着可不可以写一个小脚本，来监测 QQ 群内的信息，根据关键词，自动回复指定信息。 标题似乎有点死宅。没错，最后诞生的她我就叫作小爱了。">
+<meta name="keywords" content="学习,python,小玩意儿">
+<meta property="og:type" content="article">
+<meta property="og:title" content="小爱是云游最好的女朋友（大雾）">
+<meta property="og:url" content="https://yunyoujun.cn/project/QQ-XiaoAi/index.html">
+<meta property="og:site_name" content="云游君的小站">
+<meta property="og:description" content="鉴于某群的朋友，总会说着‘反正云游不在，赶紧撤回。’之类的话语，就想着可不可以写一个小脚本，来监测 QQ 群内的信息，根据关键词，自动回复指定信息。 标题似乎有点死宅。没错，最后诞生的她我就叫作小爱了。">
+<meta property="og:locale" content="zh-CN">
+<meta property="og:updated_time" content="2018-01-01T10:46:48.000Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="小爱是云游最好的女朋友（大雾）">
+<meta name="twitter:description" content="鉴于某群的朋友，总会说着‘反正云游不在，赶紧撤回。’之类的话语，就想着可不可以写一个小脚本，来监测 QQ 群内的信息，根据关键词，自动回复指定信息。 标题似乎有点死宅。没错，最后诞生的她我就叫作小爱了。">
+
+
+
+  <link rel="alternate" href="/atom.xml" title="云游君的小站" type="application/atom+xml">
+
+
+
+  
+  
+  <link rel="canonical" href="https://yunyoujun.cn/project/QQ-XiaoAi/">
+
+
+
+<script id="page.configurations">
+  CONFIG.page = {
+    sidebar: "",
+  };
+</script>
+
+  <title>小爱是云游最好的女朋友（大雾） | 云游君的小站</title>
+  
+
+
+
+
+  <script async src="//www.googletagmanager.com/gtag/js?id=UA-121354150-1"></script>
+  <script>
+    var host = window.location.hostname;
+    if (host !== "localhost" || !true) {
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'UA-121354150-1');
+    }
+  </script>
+
+
+
+
+
+
+
+
+
+  <noscript>
+  <style>
+  .use-motion .motion-element,
+  .use-motion .brand,
+  .use-motion .menu-item,
+  .sidebar-inner,
+  .use-motion .post-block,
+  .use-motion .pagination,
+  .use-motion .comments,
+  .use-motion .post-header,
+  .use-motion .post-body,
+  .use-motion .collection-title { opacity: initial; }
+
+  .use-motion .logo,
+  .use-motion .site-title,
+  .use-motion .site-subtitle {
+    opacity: initial;
+    top: initial;
+  }
+
+  .use-motion .logo-line-before i { left: initial; }
+  .use-motion .logo-line-after i { right: initial; }
+  </style>
+</noscript>
+
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage" lang="zh-CN">
+
+  
+  
+    
+  
+
+  <div class="container sidebar-position-left page-post-detail">
+    <div class="headband"></div>
+
+    <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-wrapper">
+  <div class="site-meta">
+    
+
+    <div class="custom-logo-site-title">
+      <a href="/" class="brand" rel="start">
+        <span class="logo-line-before"><i></i></span>
+        <span class="site-title">云游君的小站</span>
+        <span class="logo-line-after"><i></i></span>
+      </a>
+    </div>
+    
+      
+        <h1 class="site-subtitle" itemprop="description">在这世界的某个角落 - 但盼风雨来</h1>
+      
+    
+    
+  </div>
+
+  <div class="site-nav-toggle">
+    <button aria-label="切换导航栏">
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+    </button>
+  </div>
+</div>
+
+
+
+<nav class="site-nav">
+  
+    <ul id="menu" class="menu">
+      
+        
+        
+        
+          
+          <li class="menu-item menu-item-home">
+
+    
+    
+    
+      
+    
+
+    
+      
+    
+
+    <a href="/" rel="section"><i class="menu-item-icon fa fa-fw fa-home"></i> <br>首页</a>
+
+  </li>
+        
+        
+        
+          
+          <li class="menu-item menu-item-about">
+
+    
+    
+    
+      
+    
+
+    
+      
+    
+
+    <a href="/about/" rel="section"><i class="menu-item-icon fa fa-fw fa-user"></i> <br>关于</a>
+
+  </li>
+        
+        
+        
+          
+          <li class="menu-item menu-item-tags">
+
+    
+    
+    
+      
+    
+
+    
+      
+    
+
+    <a href="/tags/" rel="section"><i class="menu-item-icon fa fa-fw fa-tags"></i> <br>标签<span class="badge">43</span></a>
+
+  </li>
+        
+        
+        
+          
+          <li class="menu-item menu-item-categories">
+
+    
+    
+    
+      
+    
+
+    
+      
+    
+
+    <a href="/categories/" rel="section"><i class="menu-item-icon fa fa-fw fa-th"></i> <br>分类<span class="badge">14</span></a>
+
+  </li>
+        
+        
+        
+          
+          <li class="menu-item menu-item-archives">
+
+    
+    
+    
+      
+    
+
+    
+      
+    
+
+    <a href="/archives/" rel="section"><i class="menu-item-icon fa fa-fw fa-archive"></i> <br>归档<span class="badge">87</span></a>
+
+  </li>
+
+      
+      
+        <li class="menu-item menu-item-search">
+          
+            <a href="javascript:;" class="popup-trigger">
+          
+            
+              <i class="menu-item-icon fa fa-search fa-fw"></i> <br>搜索</a>
+        </li>
+      
+    </ul>
+  
+
+  
+    
+
+  
+
+  
+    <div class="site-search">
+      
+  
+  <div class="algolia-popup popup search-popup">
+    <div class="algolia-search">
+      <div class="algolia-search-input-icon">
+        <i class="fa fa-search"></i>
+      </div>
+      <div class="algolia-search-input" id="algolia-search-input"></div>
+    </div>
+
+    <div class="algolia-results">
+      <div id="algolia-stats"></div>
+      <div id="algolia-hits"></div>
+      <div id="algolia-pagination" class="algolia-pagination"></div>
+    </div>
+
+    <span class="popup-btn-close">
+      <i class="fa fa-times-circle"></i>
+    </span>
+  </div>
+
+
+
+
+    </div>
+  
+</nav>
+
+
+
+  
+
+
+
+</div>
+    </header>
+
+    
+
+
+    <main id="main" class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          
+          <div id="content" class="content">
+            
+
+  <div id="posts" class="posts-expand">
+    
+
+  
+
+  
+  
+  
+
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="https://yunyoujun.cn/project/QQ-XiaoAi/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="云游君">
+      <meta itemprop="description" content="All at sea.">
+      <meta itemprop="image" content="/images/avatar.jpg">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="云游君的小站">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h2 class="post-title" itemprop="name headline">小爱是云游最好的女朋友（大雾）<a href="https://github.com/YunYouJun/yunyoujun.github.io/tree/hexo/source/_posts/project/QQ-XiaoAi.md" class="post-edit-link" title="编辑" rel="noopener" target="_blank"><i class="fa fa-pencil"></i></a>
+
+              
+            
+          </h2>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+
+            
+            
+            
+
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+
+              
+                
+              
+
+              <time title="创建时间：2018-01-01 18:46:48" itemprop="dateCreated datePublished" datetime="2018-01-01T18:46:48+08:00">2018-01-01</time>
+            
+
+            
+          </span>
+
+          
+            <span class="post-category">
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/云游的小项目/" itemprop="url" rel="index"><span itemprop="name">云游的小项目</span></a></span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+            
+          
+
+          
+          
+
+          
+            <span class="post-meta-divider">|</span>
+            <span class="post-meta-item-icon">
+            <i class="fa fa-eye"></i>
+             阅读次数： 
+            <span class="busuanzi-value" id="busuanzi_value_page_pv"></span>
+            </span>
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        <p>鉴于某群的朋友，总会说着‘反正云游不在，赶紧撤回。’之类的话语，就想着可不可以写一个小脚本，来监测 QQ 群内的信息，根据关键词，自动回复指定信息。</p>
+<p>标题似乎有点死宅。<br>没错，最后诞生的她我就叫作小爱了。</p>
+<a id="more"></a>
+<p>这种东西，凭自己的能力和惰性肯定是要先找找有没有现成的轮子可以使用啦。</p>
+<p>便直接上 <code>github</code> 搜了搜关键词 qq ，按 star 数量排下来，和 qq 相关，又是符合自己期待的回复相关的便是一个 python 写的 qqbot 。 </p>
+<blockquote>
+<p>项目源地址： <a href="https://github.com/pandolia/qqbot" target="_blank" rel="noopener">https://github.com/pandolia/qqbot</a></p>
+</blockquote>
+<ul>
+<li>语言： python</li>
+<li>环境： Linux, Windows or Mac OSX</li>
+<li>使用 SmartQQ 协议（即过去的 WebQQ）</li>
+</ul>
+<h2 id="一些废话"><a href="#一些废话" class="headerlink" title="一些废话"></a>一些废话</h2><p>（中途嫌弃文档麻烦，又试了试所谓的酷Q之类的软件，但可定制性不强，还有收费权限之类的）<br>最好还是决定好好来看看 qqbot 的使用文档。（<del>没错，我就是想白嫖</del>）</p>
+<p>虽然没学过 python （等我有空，我会来学的，请等着我啊！），不过看起来使用也很方便。语法的差异，便边百度边学了。（虽然踩了些小坑，但结果上来说还是满意的。）</p>
+<h2 id="过程"><a href="#过程" class="headerlink" title="过程"></a>过程</h2><h3 id="需要先安装-python-起先是自己在-Windows-上先试验看看的-，官网下载地址-https-www-python-org-download"><a href="#需要先安装-python-起先是自己在-Windows-上先试验看看的-，官网下载地址-https-www-python-org-download" class="headerlink" title="需要先安装 python (起先是自己在 Windows 上先试验看看的)，官网下载地址 https://www.python.org/download"></a>需要先安装 python (起先是自己在 Windows 上先试验看看的)，官网下载地址 <a href="https://www.python.org/download" target="_blank" rel="noopener">https://www.python.org/download</a></h3><p>Windows 64位的话下载 <code>Windows x86-64 executable installer</code> 版本即可，其他系统也各自对应。</p>
+<h3 id="安装-qqbot"><a href="#安装-qqbot" class="headerlink" title="安装 qqbot"></a>安装 qqbot</h3><p>参照 qqbot 文档 <a href="https://github.com/pandolia/qqbot" target="_blank" rel="noopener">https://github.com/pandolia/qqbot</a><br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">pip install qqbot</span><br></pre></td></tr></table></figure></p>
+<h3 id="启动-qqbot"><a href="#启动-qqbot" class="headerlink" title="启动 qqbot"></a>启动 qqbot</h3><p>进入命令行窗口，<code>git bash</code> 或者 <code>cmd</code> 都可以。<br>推荐 <code>cmd</code> , <code>git bash</code> 中文可能会乱码。<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">qqbot -q xxxx // 这里填自己想要登陆的qq号（建议还是用小号安全些啦）</span><br></pre></td></tr></table></figure></p>
+<p>直接输入 qqbot ,用想要登陆的 qq 号扫弹出的二维码也可以。（当然上面那样也是要扫的，只是多个号时方便区分，并且会存储一定时间的登陆信息。）</p>
+<h3 id="指令操作"><a href="#指令操作" class="headerlink" title="指令操作"></a>指令操作</h3><p>需要再打开一个命令行窗口，以便对 qqbot 进行指令操作。（指令可参照项目文档）</p>
+<h3 id="自定义消息响应"><a href="#自定义消息响应" class="headerlink" title="自定义消息响应"></a>自定义消息响应</h3><p>自己使用 python 的语法进行各种逻辑编写即可，提供的接口和属性可参见文档。</p>
+<p>示例代码：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"># -*- coding: utf-8 -*-</span><br><span class="line"></span><br><span class="line">def onQQMessage(bot, contact, member, content):</span><br><span class="line">    if content == &apos;-hello&apos;:</span><br><span class="line">        bot.SendTo(contact, &apos;你好，我是QQ机器人&apos;)</span><br><span class="line">    elif content == &apos;-stop&apos;:</span><br><span class="line">        bot.SendTo(contact, &apos;QQ机器人已关闭&apos;)</span><br><span class="line">        bot.Stop()</span><br></pre></td></tr></table></figure></p>
+<ul>
+<li>content 即收到的文本信息，if 判断文本消息是否位 ‘-hello’，执行相应的操作。</li>
+<li>bot.SendTo(contact, ‘回复的消息’) 让机器人进行回复</li>
+</ul>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">···</span><br><span class="line">if &apos;小爱&apos; in content and not bot.isMe(contact, member):</span><br><span class="line">      if &apos;你好&apos; in content:</span><br><span class="line">        bot.SendTo(contact, &apos;你好，我是云游酱的女朋友~&apos;)</span><br><span class="line">···</span><br></pre></td></tr></table></figure>
+<blockquote>
+<p>可参见：<a href="https://github.com/YunYouJun/XiaoAi" target="_blank" rel="noopener">https://github.com/YunYouJun/XiaoAi</a></p>
+</blockquote>
+<ul>
+<li>python 中语法使用 in 判断是否包含这个词，缩进进行嵌套，还有 if 后的冒号，也要切记。</li>
+<li>isMe() 判断是否为自己所发的消息 （之前自己就作死写了个自己触发自己的循环，结果在群里触发 bug 刷屏了）</li>
+</ul>
+<p>将以上代码另存为 <code>sample.py</code> （名字可以随便取，注意保存为 utf8 编码的文件）。放到 <code>~/.qqbot-tmp/plugins/</code> 目录下（ ~ 代表用户主目录， windows 下为 <code>C:\Users\xxx\.qqbot-tmp\plugins\</code>, xxx 代表用户名 ），或系统中可以 <code>import</code> 到的目录下（如 <code>python</code> 的安装目录下的 <code>Lib/site-packages</code> 目录）。</p>
+<h3 id="加载自定义插件（即刚刚自己编写的逻辑）"><a href="#加载自定义插件（即刚刚自己编写的逻辑）" class="headerlink" title="加载自定义插件（即刚刚自己编写的逻辑）"></a>加载自定义插件（即刚刚自己编写的逻辑）</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">qq plug sample</span><br></pre></td></tr></table></figure>
+<p>这些操作过程中不要关闭运行 qqbot 的命令行窗口。这是后，机器人就可以对收到的 qq 消息进行爬去检测，并进行自定义的回复了。</p>
+<h3 id="挂载至服务器"><a href="#挂载至服务器" class="headerlink" title="挂载至服务器"></a>挂载至服务器</h3><p>以上通过编写逻辑代码，已经基本可以完成自定义消息回复的功能。但是实际是自己的电脑充当服务器功能，当把执行有 qqbot 的命令行窗口关闭时，便无法继续检测了。</p>
+<p>这时就需要挂载到 24h 运行的服务器上了。自己这里买了阿里学生云的主机，便直接拿来使用了。</p>
+<p>安装 python （我使用的是 Linux Ubuntu 系统）<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo apt-get install python3.5</span><br></pre></td></tr></table></figure></p>
+<p>（其他不同系统安装皆可百度或谷歌解决）</p>
+<p>Linux 插件目录为 <code>~/.qqbot-tmp/plugins/</code>(~ 代表用户主目录 <code>/root</code>)</p>
+<hr>
+<p>Linux 远程服务器的话，当然没法弹出二维码扫描了，这时需要进行配置。</p>
+<p>参考：<a href="https://github.com/pandolia/qqbot#七二维码管理器qqbot-配置命令行参数以及工作目录" target="_blank" rel="noopener">https://github.com/pandolia/qqbot#七二维码管理器qqbot-配置命令行参数以及工作目录</a></p>
+<p>进入 ‘~/.qqbot-tmp/v2.x.conf’ 文件，进行修改。<br>（使用 sftp 类型的软件或者 vim 皆可 ）<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line"># 用户 somebody 的配置</span><br><span class="line">    &quot;somebody&quot; : &#123;</span><br><span class="line">      ···</span><br><span class="line">      # 自动登录的 QQ 号</span><br><span class="line">        &quot;qq&quot; : &quot;xxx&quot;,</span><br><span class="line">      # 接收二维码图片的邮箱账号</span><br><span class="line">        &quot;mailAccount&quot; : &quot;xxx@qq.com&quot;,</span><br><span class="line">      # 该邮箱的 IMAP/SMTP 服务授权码</span><br><span class="line">        &quot;mailAuthCode&quot; : &quot;xxxxxxxxxxxx&quot;,</span><br><span class="line">      # 在后台运行 qqbot ( daemon 模式)</span><br><span class="line">        &quot;daemon&quot;: False,   // 修改为 True</span><br><span class="line">      ···</span><br><span class="line">    &#125;</span><br></pre></td></tr></table></figure></p>
+<p>主要填写修改以上几处即可。</p>
+<p>使用如下命令加载配置：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">qqbot -u somebody // 此处 somebody 为上述自行定义的配置，名称也可修改</span><br></pre></td></tr></table></figure></p>
+<h3 id="WebHooks-自动部署"><a href="#WebHooks-自动部署" class="headerlink" title="WebHooks 自动部署"></a>WebHooks 自动部署</h3><p>每次突然想要修改小爱的某个回复之类的，还要重新传输文件部署，也是很麻烦的事情。所以这时候就需要配合 GitHub 搭建 WebHooks , 当自己在本地提交修改时，服务器上的小爱也接收到消息，自动进行修改并部署。</p>
+<p>首先要将自己的自定义插件 git 化， 在 github 上创建自己的项目，并将自己的自定义代码提交到其上。（此后的 WebHooks 是基于 GitHub 所提供的功能，当自己提交代码时， GitHub 将会向事先设定好的地址端口发送 Post 信息，再在自己服务器这边监听端口于收到的消息，执行 pull 与 插件加载等自动化脚本。）</p>
+<p>接下来，编写脚本(这几个文件可以和自定义消息的脚本 <code>sample.py</code> 放在一起，便于 git 备份)</p>
+<h4 id="start-webkook-py"><a href="#start-webkook-py" class="headerlink" title="start_webkook.py"></a>start_webkook.py</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"># coding=utf-8</span><br><span class="line"># start_webkook.py</span><br><span class="line">#!/usr/bin/env python</span><br><span class="line">from wsgiref.simple_server import make_server</span><br><span class="line"># 导入我们自己编写的application函数</span><br><span class="line">from webhook import application</span><br><span class="line"># 创建一个服务器，IP地址为空，端口是8000，处理函数是application:</span><br><span class="line">httpd = make_server(&apos;&apos;, 8000, application)</span><br><span class="line">print(&apos;Serving HTTP on port 8000...&apos;)</span><br><span class="line"># 开始监听HTTP请求:</span><br><span class="line">httpd.serve_forever()</span><br></pre></td></tr></table></figure>
+<h4 id="webhook-py"><a href="#webhook-py" class="headerlink" title="webhook.py"></a>webhook.py</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line"># coding=utf-8</span><br><span class="line"># webhook.py</span><br><span class="line">import os</span><br><span class="line">def application(environ, start_response):</span><br><span class="line">    start_response(&apos;200 OK&apos;, [(&apos;Content-Type&apos;, &apos;text/html&apos;)])</span><br><span class="line">    DeployPath = &apos;/root/.qqbot-tmp/plugins&apos;</span><br><span class="line">    os.system(&apos;cd &apos; + DeployPath)</span><br><span class="line">    os.system(&apos;git reset --hard&apos;) </span><br><span class="line">    os.system(&apos;git pull&apos;)  // 这里强制使得服务器代码与本地提交的代码，保持一致</span><br><span class="line">    os.system(&apos;qq plug custom&apos;)</span><br><span class="line">    print(&apos;XiaoAi pull finish&apos;)</span><br><span class="line">    return [b&apos;Hello, XiaoAi!&apos;] // b 代表 bytes ,将 unicode 转为 bytes</span><br><span class="line">    //此处返回值，用户告诉 GitHub 的 Webhooks 已接收到信息，并进行了处理</span><br></pre></td></tr></table></figure>
+<ul>
+<li><code># coding=utf-8</code> 这个一定要放在定义行，指定编码格式</li>
+</ul>
+<p>最后在文件所在的目录，执行：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">nohup python start_webhook.py &amp; // nohup 与 &amp; 连用使得脚本在后台执行</span><br></pre></td></tr></table></figure></p>
+<h3 id="就此结束，只要在本地-git-提交修改小爱的代码，服务器就可以收到请求并自动部署啦。"><a href="#就此结束，只要在本地-git-提交修改小爱的代码，服务器就可以收到请求并自动部署啦。" class="headerlink" title="就此结束，只要在本地 git 提交修改小爱的代码，服务器就可以收到请求并自动部署啦。"></a>就此结束，只要在本地 git 提交修改小爱的代码，服务器就可以收到请求并自动部署啦。</h3><h2 id="后记"><a href="#后记" class="headerlink" title="后记"></a>后记</h2><p>自己对 python 语法并不熟悉，只能日后有时间再深入进行学习。买的小米多功能网关以及种种也都到货了，现在终于可以在床上叫小爱帮忙关灯了。</p>
+<p>小米的AI音箱，我想着要是有个开放的云平台就好了，让大家可以自己编程生成更多有趣的技能，也能接入小爱的智能平台。结果一搜，真的有，不过看了看，很多还不完善，有的还显示敬请期待。不过，既然有这份心思，让我对小爱的好感又升一层了。</p>
+<blockquote>
+<p>水滴平台-小米开放平台 <a href="https://shuidi.mi.com/" target="_blank" rel="noopener">https://shuidi.mi.com/</a></p>
+</blockquote>
+<p>试着申请了开发者权限，要是能将 qqbot 的这个小爱接入到真正的小爱上就好了。</p>
+<p>新的一年，也终于到来了。希望自己能继续努力，取得新的成长吧~</p>
+
+      
+    </div>
+
+    
+
+    
+    
+    
+
+    
+
+    
+      
+    
+    
+      <div>
+        <div id="reward-container">
+  <div></div>
+  <button id="reward-button" disable="enable" onclick="var qr = document.getElementById(&quot;qr&quot;); qr.style.display = (qr.style.display === 'none') ? 'block' : 'none';">
+    打赏
+  </button>
+  <div id="qr" style="display: none;">
+
+    
+      
+      
+        
+      
+      <div style="display: inline-block">
+        <img src="/images/donate/wechatpay.png" alt="云游君 微信支付">
+        <p>微信支付</p>
+      </div>
+    
+      
+      
+        
+      
+      <div style="display: inline-block">
+        <img src="/images/donate/alipay.jpg" alt="云游君 支付宝">
+        <p>支付宝</p>
+      </div>
+    
+
+  </div>
+</div>
+
+      </div>
+    
+
+    
+      <div>
+        
+
+
+
+
+  
+
+
+
+<ul class="post-copyright">
+  <li class="post-copyright-author">
+    <strong>本文作者： </strong>云游君</li>
+  <li class="post-copyright-link">
+    <strong>本文链接：</strong>
+    
+    <a href="https://yunyoujun.cn/project/QQ-XiaoAi/" title="小爱是云游最好的女朋友（大雾）">https://yunyoujun.cn/project/QQ-XiaoAi/</a>
+  </li>
+  <li class="post-copyright-license">
+    <strong>版权声明： </strong>本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh" rel="noopener" target="_blank"><i class="fa fa-fw fa-creative-commons"></i>BY-NC-SA</a> 许可协议。转载请注明出处！</li>
+</ul>
+
+      </div>
+    
+
+    <footer class="post-footer">
+      
+        <div class="post-tags">
+          
+            <a href="/tags/学习/" rel="tag"># 学习</a>
+          
+            <a href="/tags/python/" rel="tag"># python</a>
+          
+            <a href="/tags/小玩意儿/" rel="tag"># 小玩意儿</a>
+          
+        </div>
+      
+
+      
+      
+        <div class="post-widgets">
+        
+
+        
+
+        
+          
+          <div class="social_share">
+            
+            
+              <div id="needsharebutton-postbottom">
+                <span class="btn">
+                  <i class="fa fa-share-alt" aria-hidden="true"></i>
+                </span>
+              </div>
+            
+            
+          </div>
+        
+        </div>
+      
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/diary/after-graduate-exam/" rel="next" title="永远相信美好的事情即将发生">
+                <i class="fa fa-chevron-left"></i> 永远相信美好的事情即将发生
+              </a>
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+              <a href="/creation/novel/the-common-hamster/" rel="prev" title="仓生">
+                仓生 <i class="fa fa-chevron-right"></i>
+              </a>
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<script>
+  (adsbygoogle = window.adsbygoogle || []).push({
+    google_ad_client: "ca-pub-2245427233262012",
+    enable_page_level_ads: true
+  });
+</script>
+  </div>
+
+
+          </div>
+          
+
+  
+    <div class="comments" id="gitalk-container">
+    </div>
+
+  
+
+
+
+        </div>
+        
+          
+  
+  <div class="sidebar-toggle">
+    <div class="sidebar-toggle-line-wrap">
+      <span class="sidebar-toggle-line sidebar-toggle-line-first"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-last"></span>
+    </div>
+  </div>
+
+  <aside id="sidebar" class="sidebar">
+    <div class="sidebar-inner">
+
+      
+
+      
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            站点概览
+          </li>
+        </ul>
+      
+
+      <div class="site-overview-wrap sidebar-panel">
+        <div class="site-overview">
+          <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            
+              <img class="site-author-image" itemprop="image" src="/images/avatar.jpg" alt="云游君">
+            
+              <p class="site-author-name" itemprop="name">云游君</p>
+              <div class="site-description motion-element" itemprop="description">All at sea.</div>
+          </div>
+
+          
+            <nav class="site-state motion-element">
+              
+                <div class="site-state-item site-state-posts">
+                
+                  <a href="/archives/">
+                
+                    <span class="site-state-item-count">87</span>
+                    <span class="site-state-item-name">日志</span>
+                  </a>
+                </div>
+              
+
+              
+                
+                
+                <div class="site-state-item site-state-categories">
+                  
+                    
+                      <a href="/categories/">
+                    
+                  
+                    
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                    <span class="site-state-item-count">14</span>
+                    <span class="site-state-item-name">分类</span>
+                  </a>
+                </div>
+              
+
+              
+                
+                
+                <div class="site-state-item site-state-tags">
+                  
+                    
+                      <a href="/tags/">
+                    
+                  
+                    
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                    <span class="site-state-item-count">42</span>
+                    <span class="site-state-item-name">标签</span>
+                  </a>
+                </div>
+              
+            </nav>
+          
+
+          
+            <div class="feed-link motion-element">
+              <a href="/atom.xml" rel="alternate">
+                <i class="fa fa-rss"></i>
+                RSS
+              </a>
+            </div>
+          
+
+          
+
+          
+            <div class="links-of-author motion-element">
+              
+                <span class="links-of-author-item">
+                  
+                  
+                    
+                  
+                  
+                    
+                  
+                  <a href="https://github.com/YunYouJun" title="GitHub &rarr; https://github.com/YunYouJun" rel="noopener" target="_blank"><i class="fa fa-fw fa-github"></i>GitHub</a>
+                </span>
+              
+                <span class="links-of-author-item">
+                  
+                  
+                    
+                  
+                  
+                    
+                  
+                  <a href="mailto:me@yunyoujun.cn" title="E-Mail &rarr; mailto:me@yunyoujun.cn"><i class="fa fa-fw fa-envelope"></i>E-Mail</a>
+                </span>
+              
+                <span class="links-of-author-item">
+                  
+                  
+                    
+                  
+                  
+                    
+                  
+                  <a href="https://space.bilibili.com/1579790" title="bilibili &rarr; https://space.bilibili.com/1579790" rel="noopener" target="_blank"><i class="fa fa-fw fa-bolt"></i>bilibili</a>
+                </span>
+              
+                <span class="links-of-author-item">
+                  
+                  
+                    
+                  
+                  
+                    
+                  
+                  <a href="http://weibo.com/jizhideyunyoujun" title="微博 &rarr; http://weibo.com/jizhideyunyoujun" rel="noopener" target="_blank"><i class="fa fa-fw fa-weibo"></i>微博</a>
+                </span>
+              
+                <span class="links-of-author-item">
+                  
+                  
+                    
+                  
+                  
+                    
+                  
+                  <a href="https://www.douban.com/people/yunyoujun/" title="豆瓣 &rarr; https://www.douban.com/people/yunyoujun/" rel="noopener" target="_blank"><i class="fa fa-fw fa-book"></i>豆瓣</a>
+                </span>
+              
+                <span class="links-of-author-item">
+                  
+                  
+                    
+                  
+                  
+                    
+                  
+                  <a href="http://music.163.com/#/user/home?id=247102977" title="网易云音乐 &rarr; http://music.163.com/#/user/home?id=247102977" rel="noopener" target="_blank"><i class="fa fa-fw fa-music"></i>网易云音乐</a>
+                </span>
+              
+                <span class="links-of-author-item">
+                  
+                  
+                    
+                  
+                  
+                    
+                  
+                  <a href="https://pixiv.me/yunyoujun" title="pixiv &rarr; https://pixiv.me/yunyoujun" rel="noopener" target="_blank"><i class="fa fa-fw fa-paint-brush"></i>pixiv</a>
+                </span>
+              
+                <span class="links-of-author-item">
+                  
+                  
+                    
+                  
+                  
+                    
+                  
+                  <a href="https://twitter.com/yunyoujun" title="Twitter &rarr; https://twitter.com/yunyoujun" rel="noopener" target="_blank"><i class="fa fa-fw fa-twitter"></i>Twitter</a>
+                </span>
+              
+            </div>
+          
+
+          
+
+          
+          
+
+          
+            
+          
+          
+
+        </div>
+      </div>
+
+      
+      <!--noindex-->
+        <div class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+            
+            
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#一些废话"><span class="nav-number">1.</span> <span class="nav-text">一些废话</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#过程"><span class="nav-number">2.</span> <span class="nav-text">过程</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#需要先安装-python-起先是自己在-Windows-上先试验看看的-，官网下载地址-https-www-python-org-download"><span class="nav-number">2.1.</span> <span class="nav-text">需要先安装 python (起先是自己在 Windows 上先试验看看的)，官网下载地址 https://www.python.org/download</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#安装-qqbot"><span class="nav-number">2.2.</span> <span class="nav-text">安装 qqbot</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#启动-qqbot"><span class="nav-number">2.3.</span> <span class="nav-text">启动 qqbot</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#指令操作"><span class="nav-number">2.4.</span> <span class="nav-text">指令操作</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#自定义消息响应"><span class="nav-number">2.5.</span> <span class="nav-text">自定义消息响应</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#加载自定义插件（即刚刚自己编写的逻辑）"><span class="nav-number">2.6.</span> <span class="nav-text">加载自定义插件（即刚刚自己编写的逻辑）</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#挂载至服务器"><span class="nav-number">2.7.</span> <span class="nav-text">挂载至服务器</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#WebHooks-自动部署"><span class="nav-number">2.8.</span> <span class="nav-text">WebHooks 自动部署</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#start-webkook-py"><span class="nav-number">2.8.1.</span> <span class="nav-text">start_webkook.py</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#webhook-py"><span class="nav-number">2.8.2.</span> <span class="nav-text">webhook.py</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#就此结束，只要在本地-git-提交修改小爱的代码，服务器就可以收到请求并自动部署啦。"><span class="nav-number">2.9.</span> <span class="nav-text">就此结束，只要在本地 git 提交修改小爱的代码，服务器就可以收到请求并自动部署啦。</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#后记"><span class="nav-number">3.</span> <span class="nav-text">后记</span></a></li></ol></div>
+            
+
+          </div>
+        </div>
+      <!--/noindex-->
+      
+
+      
+
+    </div>
+  </aside>
+  
+
+
+        
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="footer-inner">
+        <div class="copyright">  <a href="http://www.beian.miit.gov.cn" rel="noopener" target="_blank">苏ICP备17038157号 </a>&copy; 2016 – <span itemprop="copyrightYear">2019</span>
+  <span class="with-love" id="animate">
+    <i class="fa fa-cloud"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">YunYouJun</span>
+
+  
+
+  
+</div>
+
+
+  <div class="powered-by">由 <a href="https://hexo.io" class="theme-link" rel="noopener" target="_blank">Hexo</a> 强力驱动 v3.8.0</div>
+
+
+
+  <span class="post-meta-divider">|</span>
+
+
+
+  <div class="theme-info">主题 – <a href="https://theme-next.org" class="theme-link" rel="noopener" target="_blank">NexT.Muse</a> v7.1.0</div>
+
+
+
+
+        
+<div class="busuanzi-count">
+  <script async src="https://busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+
+  
+    <span class="post-meta-item-icon">
+      <i class="fa fa-user"></i>
+    </span>
+    <span class="site-uv" title="总访客量">
+      <span class="busuanzi-value" id="busuanzi_value_site_uv"></span>
+    </span>
+  
+
+  
+    <span class="post-meta-divider">|</span>
+  
+
+  
+    <span class="post-meta-item-icon">
+      <i class="fa fa-eye"></i>
+    </span>
+    <span class="site-pv" title="总访问量">
+      <span class="busuanzi-value" id="busuanzi_value_site_pv"></span>
+    </span>
+  
+</div>
+
+
+
+
+
+  <script>
+    (function() {
+      var hm = document.createElement("script");
+      hm.src = "//tajs.qq.com/stats?sId=64704817";
+      var s = document.getElementsByTagName("script")[0];
+      s.parentNode.insertBefore(hm, s);
+    })();
+  </script>
+
+
+
+
+
+        
+      </div>
+    </footer>
+
+    
+      <div class="back-to-top">
+        <i class="fa fa-arrow-up"></i>
+        
+          <span id="scrollpercent"><span>0</span>%</span>
+        
+      </div>
+    
+
+    
+
+    
+
+    
+  </div>
+
+  
+
+<script>
+  if (Object.prototype.toString.call(window.Promise) !== '[object Function]') {
+    window.Promise = null;
+  }
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  <script src="/lib/jquery/index.js?v=2.1.3"></script>
+
+  
+  <script src="//cdnjs.cloudflare.com/ajax/libs/velocity/1.2.1/velocity.min.js"></script>
+
+  
+  <script src="//cdnjs.cloudflare.com/ajax/libs/velocity/1.2.1/velocity.ui.min.js"></script>
+
+  
+  <script src="//cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.6/jquery.fancybox.min.js"></script>
+
+
+  
+
+
+  <script src="/js/utils.js?v=7.1.0"></script>
+
+  <script src="/js/motion.js?v=7.1.0"></script>
+
+
+
+  
+  
+
+
+  <script src="/js/schemes/muse.js?v=7.1.0"></script>
+
+
+
+  
+  <script src="/js/scrollspy.js?v=7.1.0"></script>
+<script src="/js/post-details.js?v=7.1.0"></script>
+
+
+
+  
+
+
+  <script src="/js/next-boot.js?v=7.1.0"></script>
+
+
+  
+  <script src="/js/js.cookie.js?v=7.1.0"></script>
+  <script src="/js/scroll-cookie.js?v=7.1.0"></script>
+
+
+  
+
+  
+  
+  
+
+  
+
+  
+  
+  
+
+
+  
+
+
+  
+    
+
+  
+
+<script src="//cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.min.js"></script>
+
+
+
+  
+
+<link rel="stylesheet" href="//cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.css">
+
+
+
+<script src="//cdn.jsdelivr.net/npm/js-md5@0.7.3/src/md5.min.js"></script>
+
+<script>
+  var gitalk = new Gitalk({
+    clientID: 'ff03975ca04a3232ce1a',
+    clientSecret: 'aefe7b1d3f4b2af31110d8f364d4805d48bf284f',
+    repo: 'yunyoujun.github.io',
+    owner: 'YunYouJun',
+    admin: ['YunYouJun'],
+    id: md5(location.pathname),
+    
+      language: window.navigator.language || window.navigator.userLanguage,
+    
+    distractionFreeMode: 'true'
+  });
+  gitalk.render('gitalk-container');
+</script>
+
+  
+
+
+  
+
+
+
+  
+  
+  
+    
+  
+  <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/instantsearch.js@2/dist/instantsearch.min.css">
+
+  
+  
+    
+  
+  <script src="//cdn.jsdelivr.net/npm/instantsearch.js@2/dist/instantsearch.js"></script>
+  
+
+  <script src="/js/algolia-search.js?v=7.1.0"></script>
+
+
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+  <script>
+    (function(){
+      var bp = document.createElement('script');
+      var curProtocol = window.location.protocol.split(':')[0];
+      bp.src = (curProtocol === 'https') ? 'https://zz.bdstatic.com/linksubmit/push.js' : 'http://push.zhanzhang.baidu.com/push.js';
+      var s = document.getElementsByTagName("script")[0];
+      s.parentNode.insertBefore(bp, s);
+    })();
+  </script>
+
+
+  
+
+  
+  
+  
+    
+  
+  <script src="//cdn.jsdelivr.net/gh/theme-next/theme-next-needmoreshare2@1/needsharebutton.min.js"></script>
+  <script>
+    
+      pbOptions = {};
+      
+        pbOptions.iconStyle = "box";
+      
+        pbOptions.boxForm = "horizontal";
+      
+        pbOptions.position = "bottomCenter";
+      
+        pbOptions.networks = "Weibo,Wechat,Douban,QQZone,Twitter,Facebook";
+      
+      new needShareButton('#needsharebutton-postbottom', pbOptions);
+    
+    
+  </script>
+
+
+  
+
+  
+
+  
+
+  
+<script>
+  $('.highlight').each(function(i, e) {
+    var $wrap = $('<div>').addClass('highlight-wrap');
+    $(e).after($wrap);
+    $wrap.append($('<button>').addClass('copy-btn').append('复制').on('click', function(e) {
+      var code = $(this).parent().find('.code').find('.line').map(function(i, e) {
+        return $(e).text();
+      }).toArray().join('\n');
+      var ta = document.createElement('textarea');
+      var yPosition = window.pageYOffset || document.documentElement.scrollTop;
+      ta.style.top = yPosition + 'px'; // Prevent page scroll
+      ta.style.position = 'absolute';
+      ta.style.opacity = '0';
+      ta.readOnly = true;
+      ta.value = code;
+      document.body.appendChild(ta);
+      ta.select();
+      ta.setSelectionRange(0, code.length);
+      ta.readOnly = false;
+      var result = document.execCommand('copy');
+      
+        if (result) $(this).text('复制成功');
+        else $(this).text('复制失败');
+      
+      ta.blur(); // For iOS
+      $(this).blur();
+    })).on('mouseleave', function(e) {
+      var $b = $(this).find('.copy-btn');
+      setTimeout(function() {
+        $b.text('复制');
+      }, 300);
+    }).append(e);
+  })
+</script>
+
+
+  
+
+  
+
+</body>
+</html>
