@@ -92,6 +92,19 @@ Linux 下似乎识别不了 `169.254.x.x` 网段，所以如果在此段的打�
 
 GitHub 上星数很多的一个项目，自己还没有搞明白，不过大致是可以帮助更方便使用 bash 的工具。
 
+#### Git
+
+```sh
+sudo apt-get install git
+```
+
+##### git config --global
+
+```sh
+git config --global user.email "me@yunyoujun.cn"
+git config --global user.name "YunYouJun"
+```
+
 #### [Node.js](https://github.com/nodejs/help/wiki/Installation)
 
 [nvm](https://github.com/nvm-sh/nvm)
