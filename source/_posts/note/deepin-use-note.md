@@ -66,6 +66,16 @@ connect YourDeviceMacAddress # 连接该设备
 # 这时候键盘上的指示灯不再闪烁，则键盘已成功连接
 ```
 
+or
+
+##### blueman
+
+一款功能强大的蓝牙管理器
+
+```sh
+sudo apt install blueman
+```
+
 > [deepin连接罗技蓝牙键盘K380](https://www.lolimay.cn/2018/11/07/deepin-keyboard-k380/)
 
 #### 打印机
