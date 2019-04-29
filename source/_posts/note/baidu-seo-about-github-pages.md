@@ -41,10 +41,10 @@ git push github hexo
 git push coding hexo
 ```
 
-或者将 Coding 设置为镜像：
+Usage:
 
 ```sh
-git remote add --mirror=push coding https://git.dev.tencent.com/YunYouJun/yunyoujun.coding.me.git
+./backup.sh 'update blog'
 ```
 
 重点则在于设置域名的解析。
