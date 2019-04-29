@@ -11,7 +11,7 @@ npm run backup
 # 同时推送至 GitHub 与 Coding 的 hexo 分支
 # 线上 Travis 会自动进行构建生成静态页面推送至 GitHub 与 Coding 的 master 分支
 # or
-./backup.sh 'change info'
+sh backup.sh 'change info'
 ```
 
 ## BackUp
