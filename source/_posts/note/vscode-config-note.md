@@ -8,7 +8,8 @@ tags:
 categories:
  - 云游的小笔记
 ---
-# Intro
+
+## Intro
 
 记录一些 `VS Code` 的一些常用配置。
 
@@ -70,6 +71,12 @@ categories:
 `Ctrl+K Ctrl+S`|键盘快捷方式|文件 -> 首选项 -> 键盘快捷方式
 `Ctrl+Shift+P`|显示所有命令|
 `Ctrl+` `|切换集成终端|
+
+### 命令行打开
+
+```sh
+code xxx.xxx
+```
 
 ## 相关
 
