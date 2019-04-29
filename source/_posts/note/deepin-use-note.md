@@ -105,6 +105,10 @@ git config --global user.email "me@yunyoujun.cn"
 git config --global user.name "YunYouJun"
 ```
 
+```sh
+git config --global credential.helper store
+```
+
 #### [Node.js](https://github.com/nodejs/help/wiki/Installation)
 
 [nvm](https://github.com/nvm-sh/nvm)
