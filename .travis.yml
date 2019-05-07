@@ -2,13 +2,16 @@ language: node_js
 node_js:
   - lts/*
 
-cache:
-  directories:
-  - node_modules
+# cache:
+#   directories:
+#   - node_modules
 
 branches:
   only:
     - hexo
+
+before_install: 
+  - export TZ='Asia/Shanghai' #配置时区为东八区UTC+8
 
 install:
   - npm install

@@ -100,16 +100,23 @@ Linux 下似乎识别不了 `169.254.x.x` 网段，所以如果在此段的打�
 
 ##### [oh-my-zsh](https://github.com/robbyrussell/oh-my-zsh)
 
+需要先安装 `zsh`
+
 GitHub 上星数很多的一个项目，自己还没有搞明白，不过大致是可以帮助更方便使用 bash 的工具。
 
 ###### incr 自动补全插件
 
+[Incremental completion on zsh](http://mimosa-pudica.net/zsh-incremental.html)
+
 ```sh
+mkdir ~/.oh-my-zsh/plugins/incr
+cd ~/.oh-my-zsh/plugins/incr
 wget http://mimosa-pudica.net/src/incr-0.2.zsh
 ```
 
 ```sh
 # ~/.zshrc 下添加
+vim ~/.zshrc
 source ~/.oh-my-zsh/plugins/incr/incr-0.2.zsh
 ```
 
