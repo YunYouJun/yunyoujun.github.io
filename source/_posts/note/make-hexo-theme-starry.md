@@ -1,5 +1,6 @@
 ---
 title: hexo-theme-starry
+dated: 2019-04-27 12:00:00
 tags:
   - 项目
   - 笔记
