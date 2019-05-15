@@ -104,7 +104,7 @@ sitemap:
 
 algolia:
   applicationID: 'CJXXAGRCYN'
-  apiKey: '6af02e5bb9dc6381072d2096be55b601'
+  apiKey: '55c104ea148641be5ec329b8bc83de99'
   indexName: 'my-hexo-blog'
   chunkSize: 5000
   fields:   
