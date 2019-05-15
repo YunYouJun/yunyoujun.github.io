@@ -228,3 +228,10 @@ LRQ 的外公、外婆们交流的方言，似乎算苏州与上海嘉定的混�
 > 太阳每天依旧要升起
 > 希望永远种在你心里
 > ——《侠客行》
+
+## 后记
+
+回家恰已十日，却梦见重返上海，告别之时，LRQ 身着大红羽绒服，小 piao 则是紫色运动背心，SB 的黄色格子衫。
+只觉配色鲜亮，似曾相识，醒来一搜。
+
+![天线宝宝](https://gss1.bdstatic.com/9vo3dSag_xI4khGkpoWK1HF6hhy/baike/c0%3Dbaike80%2C5%2C5%2C80%2C26/sign=535c4da7f8d3572c72ef948eeb7a0842/fcfaaf51f3deb48fd5d9bb90fa1f3a292cf578cf.jpg)
