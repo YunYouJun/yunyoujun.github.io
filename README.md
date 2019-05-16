@@ -19,11 +19,16 @@ sh backup.sh 'change info'
 - [GitHub](https://github.com/YunYouJun/yunyoujun.github.io)
 - [Coding](https://git.dev.tencent.com/YunYouJun/yunyoujun.coding.me.git)
 
+```sh
+git clone https://github.com/YunYouJun/yunyoujun.github.io
+# coding
+git remote add coding https://dev.tencent.com/u/YunYouJun/p/yunyoujun.coding.me
+```
+
 ## Build
 
 - use Travis-ci
 - git clone themes/next
-- git clone theme-next-third-plugin
 
 ## FAQ
 
