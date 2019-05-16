@@ -3,7 +3,11 @@ title: Deepin 使用笔记
 date: 2019-04-29 18:23:47
 updated: 2019-04-29 18:23:47
 tags:
+  - 学习
+  - 笔记
+  - Linux
 categories:
+  - 云游的小笔记
 ---
 
 [Deepin](https://www.deepin.org/)
@@ -17,6 +21,8 @@ categories:
 因为最近电脑中了恶意软件的圈套，清除又恨麻烦。
 想到兴许还有几月便可以换上新装备，而现今有没有对电脑的稳定需求，便索性安装成 Linux 尝尝鲜。
 早便听得 Deepin 的本土化和常用软件兼容性做得很好，便以其为主，记录一下还原当初 Windows 工作环境的过程。
+
+More info: [Linux 使用笔记](../linux-use-note/)
 
 ## Install
 
@@ -36,13 +42,6 @@ U 盘启动器制作工具：
 不需要 `vim /etc/apt/sources.list` 修改
 
 `系统设置菜单 > 更新 > 更新设置 > 切换镜像源` 即可，若为显示 `切换镜像源`，需要先关闭 `智能镜像源`。
-
-#### apt-get
-
-```sh
-sudp apt-get update
-sudo apt-get install xxx
-```
 
 #### 蓝牙键盘
 
@@ -93,86 +92,6 @@ Linux 下似乎识别不了 `169.254.x.x` 网段，所以如果在此段的打�
 
 设置为 `DHCP`后，会自动切换到 `192.168.x.x`。
 此时再输入 `hp-setup` 设置无线打印机，最后 `ho-setup 192.168.x.x` 添加无线打印机。
-
-### Dev
-
-#### Shell
-
-##### [oh-my-zsh](https://github.com/robbyrussell/oh-my-zsh)
-
-需要先安装 `zsh`
-
-GitHub 上星数很多的一个项目，自己还没有搞明白，不过大致是可以帮助更方便使用 bash 的工具。
-
-###### [zsh-autosuggestions](https://github.com/zsh-users/zsh-autosuggestions)
-
-[INSTALL.md#oh-myzsh](https://github.com/zsh-users/zsh-autosuggestions/blob/master/INSTALL.md#oh-my-zsh)
-
-命令建议插件
-
-###### incr 自动补全插件
-
-[Incremental completion on zsh](http://mimosa-pudica.net/zsh-incremental.html)
-
-```sh
-mkdir ~/.oh-my-zsh/plugins/incr
-cd ~/.oh-my-zsh/plugins/incr
-wget http://mimosa-pudica.net/src/incr-0.2.zsh
-```
-
-```sh
-# ~/.zshrc 下添加
-vim ~/.zshrc
-source ~/.oh-my-zsh/plugins/incr/incr-0.2.zsh
-```
-
-###### [autojump](https://github.com/robbyrussell/oh-my-zsh/tree/master/plugins/autojump)
-
-###### [zsh-syntax-highlighting](https://github.com/zsh-users/zsh-syntax-highlighting)
-
-#### Git
-
-```sh
-sudo apt-get install git
-```
-
-##### git config --global
-
-```sh
-git config --global user.email "me@yunyoujun.cn"
-git config --global user.name "YunYouJun"
-```
-
-记住密码
-
-```sh
-git config --global credential.helper store
-```
-
-> [Git-工具-凭证存储](https://git-scm.com/book/zh/v2/Git-%E5%B7%A5%E5%85%B7-%E5%87%AD%E8%AF%81%E5%AD%98%E5%82%A8)
-
-#### [Node.js](https://github.com/nodejs/help/wiki/Installation)
-
-[nvm](https://github.com/nvm-sh/nvm)
-
-Linux 安装 `Node.js` 的最方便的工具
-
-##### 安装 nvm
-
-```sh
-curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.34.0/install.sh | bash
-# or
-wget -qO- https://raw.githubusercontent.com/nvm-sh/nvm/v0.34.0/install.sh | bash
-```
-
-##### 安装 Node
-
-```sh
-# install latest node
-nvm install node
-# install stable node
-nvm install stable
-```
 
 ---
 
