@@ -30,6 +30,31 @@ git remote add coding https://dev.tencent.com/u/YunYouJun/p/yunyoujun.coding.me
 - use Travis-ci
 - git clone themes/next
 
+## Commit Lint
+
+```sh
+git commit -m 'xxx'
+```
+
+### 更新博客内容
+
+```sh
+blog: update content
+```
+
+### 页面
+
+```sh
+blog(page): xxx
+```
+
+### Other
+
+```sh
+chore(xxx): xxx
+xxx: xxx
+```
+
 ## FAQ
 
 ### Travis Bad decrypt (Because of Windows)

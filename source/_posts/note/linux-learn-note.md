@@ -26,6 +26,19 @@ categories:
 
 - [Virual Box](https://www.virtualbox.org/)
 
+### Some tools
+
+#### nscd
+
+管理 DNS 缓存
+
+```sh
+sudo apt install nscd
+sudo service nscd restart
+# or
+# sudo /etc/init.d/nscd restart
+```
+
 ## Dev
 
 ### Shell
@@ -51,6 +64,25 @@ plugins=(
   autojump
 )
 ```
+
+- [oh-my-zsh | wiki](https://github.com/robbyrussell/oh-my-zsh/wiki)
+
+##### [git]
+
+[Plugin:git | wiki](https://github.com/robbyrussell/oh-my-zsh/wiki/Plugin:git)
+
+`git` 中的一些缩写
+
+Example:
+
+|Alias|Command|
+|-----|-------|
+| g | git |
+| ga | git add |
+| gaa | git add -all|
+| gcm | git checkout master |
+| gcmsg | git commit -m |
+
 
 ##### [zsh-autosuggestions](https://github.com/zsh-users/zsh-autosuggestions)
 
