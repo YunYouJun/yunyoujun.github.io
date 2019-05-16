@@ -104,6 +104,12 @@ Linux 下似乎识别不了 `169.254.x.x` 网段，所以如果在此段的打�
 
 GitHub 上星数很多的一个项目，自己还没有搞明白，不过大致是可以帮助更方便使用 bash 的工具。
 
+###### [zsh-autosuggestions](https://github.com/zsh-users/zsh-autosuggestions)
+
+[INSTALL.md#oh-myzsh](https://github.com/zsh-users/zsh-autosuggestions/blob/master/INSTALL.md#oh-my-zsh)
+
+命令建议插件
+
 ###### incr 自动补全插件
 
 [Incremental completion on zsh](http://mimosa-pudica.net/zsh-incremental.html)
@@ -119,6 +125,10 @@ wget http://mimosa-pudica.net/src/incr-0.2.zsh
 vim ~/.zshrc
 source ~/.oh-my-zsh/plugins/incr/incr-0.2.zsh
 ```
+
+###### [autojump](https://github.com/robbyrussell/oh-my-zsh/tree/master/plugins/autojump)
+
+###### [zsh-syntax-highlighting](https://github.com/zsh-users/zsh-syntax-highlighting)
 
 #### Git
 
