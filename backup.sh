@@ -1,6 +1,6 @@
 info=$1
 if ["$info" = ""];
-then info="Update Blog"
+then info="blog: update content"
 fi
 git add -A
 git commit -m "$info"
