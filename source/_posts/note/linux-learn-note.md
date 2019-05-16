@@ -16,13 +16,149 @@ categories:
 
 ## Install
 
+### Version
+
+#### [Deepin](https://www.deepin.org/)
+
+- [Deepin 使用笔记](../deepin-use-note/)
+
 ### Virtual Machine
 
 - [Virual Box](https://www.virtualbox.org/)
 
-### FAQ
+## Dev
 
-#### Virtual Box 安装 CentOS 时，鼠标不显示
+### Shell
+
+#### [oh-my-zsh](https://github.com/robbyrussell/oh-my-zsh)
+
+需要先安装 `zsh`
+
+GitHub 上星数很多的一个项目，自己还没有搞明白，不过大致是可以帮助更方便使用 bash 的工具。
+
+配置插件
+
+```sh
+# vim ~/.zshrc
+plugins=(
+  git
+  zsh-autosuggestions
+  zsh-syntax-highlighting
+  node
+  npm
+  python
+  sudo
+  autojump
+)
+```
+
+##### [zsh-autosuggestions](https://github.com/zsh-users/zsh-autosuggestions)
+
+[INSTALL.md#oh-myzsh](https://github.com/zsh-users/zsh-autosuggestions/blob/master/INSTALL.md#oh-my-zsh)
+
+命令建议插件
+
+##### incr 自动补全插件
+
+[Incremental completion on zsh](http://mimosa-pudica.net/zsh-incremental.html)
+
+```sh
+mkdir ~/.oh-my-zsh/plugins/incr
+cd ~/.oh-my-zsh/plugins/incr
+wget http://mimosa-pudica.net/src/incr-0.2.zsh
+```
+
+```sh
+# ~/.zshrc 下添加
+# vim ~/.zshrc
+source ~/.oh-my-zsh/plugins/incr/incr-0.2.zsh
+```
+
+##### [autojump](https://github.com/robbyrussell/oh-my-zsh/tree/master/plugins/autojump)
+
+```sh
+sudo apt install autojump
+# usage
+j xxx
+```
+
+##### [zsh-syntax-highlighting](https://github.com/zsh-users/zsh-syntax-highlighting)
+
+### Git
+
+```sh
+sudo apt-get install git
+```
+
+#### git config --global
+
+```sh
+git config --global user.email "me@yunyoujun.cn"
+git config --global user.name "YunYouJun"
+```
+
+记住密码
+
+```sh
+git config --global credential.helper store
+```
+
+> [Git-工具-凭证存储](https://git-scm.com/book/zh/v2/Git-%E5%B7%A5%E5%85%B7-%E5%87%AD%E8%AF%81%E5%AD%98%E5%82%A8)
+
+### [Node.js](https://github.com/nodejs/help/wiki/Installation)
+
+[nvm](https://github.com/nvm-sh/nvm)
+
+Linux 安装 `Node.js` 的最方便的工具
+
+#### 安装 nvm
+
+```sh
+curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.34.0/install.sh | bash
+# or
+wget -qO- https://raw.githubusercontent.com/nvm-sh/nvm/v0.34.0/install.sh | bash
+```
+
+如果仍然 `command not found`，可以添加进 `~/.bashrc`, `~/.zshrc`。
+
+```sh
+# vim ~/.zshrc
+export NVM_DIR="$HOME/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
+[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
+```
+
+#### 安装 Node
+
+```sh
+# install latest node
+nvm install node
+# install stable node
+nvm install stable
+```
+
+### Command
+
+#### apt apt-get
+
+`apt` = `apt-get` + `apt-cache` + `apt-config`
+
+简单来说就是：apt = apt-get、apt-cache 和 apt-config 中最常用命令选项的集合。
+
+```sh
+sudo apt update
+sudo apt install xxx
+sudo apt remove xxx
+```
+
+> 常用命令
+
+- 为文件目录树全部赋予权限：`chmod 775 -R filename`
+- 迭代删除文件夹中所有内容：`rm -rf &lt;filename or dirname&gt;`
+
+## FAQ
+
+### Virtual Box 安装 CentOS 时，鼠标不显示
 
 - Virtual Box 6.0
 - CentOS 7.x
@@ -31,9 +167,6 @@ Solution:
 
 > 设置 -> 显示 -> 屏幕 -> 显卡控制器 -> 切换为 VBoxVGA
 
-## Command
+---
 
-> 常用命令
-
-- 为文件目录树全部赋予权限：`chmod 775 -R filename`
-- 迭代删除文件夹中所有内容：`rm -rf &lt;filename or dirname&gt;`
+To Be Continued.
