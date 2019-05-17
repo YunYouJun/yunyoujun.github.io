@@ -91,7 +91,7 @@ gitalk:
   enable: true
   clientID: 50b02b53bbd595df0b51 # Github Application Client ID
   clientSecret: cf2970e64ffcb5521700d91d95e4e96018ae0d69 # Github Application Client Secret
-  repo: hexo-theme-starry-docs # GitHub repo
+  repo: yunyoujun.github.io # GitHub repo
   owner: YunYouJun # GitHub repo owner
   admin: ['YunYouJun'] # GitHub repo owner and collaborators, only these guys can initialize github issues
 
