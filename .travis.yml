@@ -11,7 +11,7 @@ branches:
     - hexo
 
 before_install: 
-  - export TZ='Asia/Shanghai' #配置时区为东八区UTC+8
+  - export TZ='Asia/Shanghai'
 
 install:
   - npm install
@@ -41,4 +41,4 @@ after_success:
 
 env:
   global:
-    - CD_REF: git.dev.tencent.com/YunYouJun/yunyoujun.coding.me.git
+    - CD_REF='git.dev.tencent.com/YunYouJun/yunyoujun.coding.me.git'
