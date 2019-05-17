@@ -89,8 +89,8 @@ add_this_id: ra-5cc836b673a8e0ef
 # See: https://github.com/gitalk/gitalk
 gitalk:
   enable: true
-  clientID: 50b02b53bbd595df0b51 # Github Application Client ID
-  clientSecret: cf2970e64ffcb5521700d91d95e4e96018ae0d69 # Github Application Client Secret
+  clientID: ff03975ca04a3232ce1a # Github Application Client ID
+  clientSecret: aefe7b1d3f4b2af31110d8f364d4805d48bf284f # Github Application Client Secret
   repo: yunyoujun.github.io # GitHub repo
   owner: YunYouJun # GitHub repo owner
   admin: ['YunYouJun'] # GitHub repo owner and collaborators, only these guys can initialize github issues
