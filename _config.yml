@@ -22,7 +22,6 @@ root: /
 permalink:
   :title/
   # :category/:title 
-  # :year/:month/:day/:title/
 permalink_defaults:
   lang: en
 
@@ -82,10 +81,11 @@ pagination_dir: page
 # Extensions
 ## Plugins: https://hexo.io/plugins/
 ## Themes: https://hexo.io/themes/
-theme: next
+theme: starry
 
 # Deployment
 # Docs: https://hexo.io/docs/deployment.html
+# https://github.com/hexojs/hexo-deployer-git
 deploy:
   type: git
   repo: 
@@ -94,25 +94,25 @@ deploy:
   message: 
   extend_dirs: 
 
-feed: # RSS订阅插件
+# https://github.com/hexojs/hexo-generator-feed
+feed:
   type: atom
   path: atom.xml
-  limit: 0
+  limit: 20
+  hub:
+  content:
+  content_limit: 140
+  content_limit_delim: ' '
+  order_by: -updated
+  icon: icon.png
 
+# https://github.com/hexojs/hexo-generator-sitemap
 sitemap:
   path: sitemap.xml
 
+# https://github.com/oncletom/hexo-algolia
 algolia:
   applicationID: 'CJXXAGRCYN'
   apiKey: '55c104ea148641be5ec329b8bc83de99'
   indexName: 'my-hexo-blog'
   chunkSize: 5000
-  fields:   
-    - excerpt
-    - excerpt:strip
-    - gallery
-    - permalink
-    - photos
-    - slug
-    - tags
-    - title
