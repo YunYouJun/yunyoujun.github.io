@@ -47,11 +47,11 @@ updated: 2017-07-08 23:01:53
 
 哈哈，你就是小乔啊，你女儿呢？
 
-![关爱智障.gif](/images/meme/care-fool.gif)
+![关爱智障.gif](https://cdn.jsdelivr.net/gh/YunYouJun/cdn/img/meme/care-fool.gif)
 
 清风妹子还真是汉子啊！？
 
-![仰望高端玩家.jpg](/images/meme/look-up-to-high-player.jpg)
+![仰望高端玩家.jpg](https://cdn.jsdelivr.net/gh/YunYouJun/cdn/img/meme/look-up-to-high-player.jpg)
 
 还是龙叔帅哦！继续围观女儿。
 小猪、熊二你们吃着自己的同胞干啥？美C快拦住她。
@@ -61,7 +61,7 @@ updated: 2017-07-08 23:01:53
 三爷你儿子是不是该叫小三爷…
 烈你不要再锤桌子了，塑料瓶飞不起来的。
 
-![锤桌子.jpg](/images/meme/hammer-the-table.jpg)
+![锤桌子.jpg](https://cdn.jsdelivr.net/gh/YunYouJun/cdn/img/meme/hammer-the-table.jpg)
 
 狂笑妹子你笑啥笑，尊重点烈。
 末帝:冒泡，潜水。
