@@ -169,6 +169,39 @@ nvm install node
 nvm install stable
 ```
 
+#### 安装 Python3
+
+使用 [淘宝镜像](https://npm.taobao.org/mirrors/python/3.7.3/) 快一些
+
+<https://npm.taobao.org/mirrors/python/3.7.3/>
+
+```sh
+wget https://npm.taobao.org/mirrors/python/3.7.3/Python-3.7.3.tgz
+tar -xvzf Python-3.7.3.tgz
+cd Python-3.7.3
+# 这个需要提前安装 否则 make install 可能报错
+sudo apt-get install libffi-dev
+sudo apt install libssl-dev libncurses5-dev libsqlite3-dev libreadline-dev libtk8.5 libgdm-dev libdb4o-cil-dev libpcap-dev
+./configure --with-ssl
+make
+sudo make install
+```
+
+> [pip is configured with locations that require TLS/SSL, however the ssl module in Python is not available](https://stackoverflow.com/questions/45954528/pip-is-configured-with-locations-that-require-tls-ssl-however-the-ssl-module-in)
+
+临时解决方案
+
+```sh
+pip3 install -i http://mirrors.aliyun.com/pypi/simple/ --trusted-host mirrors.aliyun.com ssl xxx
+```
+
+通用解决方案
+
+```sh
+sudo apt install libssl-dev libncurses5-dev libsqlite3-dev libreadline-dev libtk8.5 libgdm-dev libdb4o-cil-dev libpcap-dev
+# 随后重新编译安装
+```
+
 ### Command
 
 #### apt apt-get
