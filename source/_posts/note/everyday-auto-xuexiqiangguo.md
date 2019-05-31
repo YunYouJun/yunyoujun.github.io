@@ -70,7 +70,8 @@ chmod +x ./Fuck学习强国
 # vim /home/yunyou/bash/start-xxqg.sh
 # start-xxqg.sh
 python3 /home/yunyou/bash/close-xxqg.py
-sleep ${RANDOM}'s'
+screen -r xxqg
+# sleep ${RANDOM}'s'
 export DISPLAY=:9.0
 cd /home/yunyou/github/fuck-xuexiqiangguo
 ./Fuck学习强国 --headless

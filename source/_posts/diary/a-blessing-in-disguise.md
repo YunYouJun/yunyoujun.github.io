@@ -9,7 +9,7 @@ categories:
   - 云游的小日记
 ---
 
-<iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width=330 height=86 src="//music.163.com/outchain/player?type=2&id=26270008&auto=1&height=66"></iframe>
+<iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width=330 height=86 src="//music.163.com/outchain/player?type=2&id=26270008&auto=0&height=66"></iframe>
 
 <!-- more -->
 
@@ -37,7 +37,7 @@ categories:
 
 踏上出站的电梯时，脑内却突然冒出了《武林外传》的片头曲。
 
-<iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width=330 height=86 src="//music.163.com/outchain/player?type=2&id=28678042&auto=1&height=66"></iframe>
+<iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width=330 height=86 src="//music.163.com/outchain/player?type=2&id=28678042&auto=0&height=66"></iframe>
 
 > 嘿 兄弟
 > 我们好久不见 你在哪里
@@ -219,7 +219,7 @@ LRQ 的外公、外婆们交流的方言，似乎算苏州与上海嘉定的混�
 
 所以当取得自己喜爱的吹泡泡专业（数字娱乐与动画技术，我想应该正等于 计算机 + 动画）研究生拟录取之后，在与室友的久别重逢之后，我就明白，此后我将继续前行，再无懊悔。
 
-<iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width=330 height=86 src="//music.163.com/outchain/player?type=2&id=28700552&auto=1&height=66"></iframe>
+<iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width=330 height=86 src="//music.163.com/outchain/player?type=2&id=28700552&auto=0&height=66"></iframe>
 
 为承前启后，我决定以《武林外传》片尾曲歌词结尾。
 
