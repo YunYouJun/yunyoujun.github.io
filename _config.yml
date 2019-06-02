@@ -94,6 +94,13 @@ deploy:
   message: 
   extend_dirs: 
 
+# plugins
+symbols_count_time:
+  symbols: true
+  time: true
+  total_symbols: true
+  total_time: true
+
 # https://github.com/hexojs/hexo-generator-feed
 feed:
   type: atom
