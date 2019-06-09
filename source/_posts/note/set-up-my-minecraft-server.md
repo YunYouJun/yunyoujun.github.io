@@ -46,6 +46,8 @@ yum -y install java-1.8.0-openjdk
 
 安装 Minecraft 服务器版本
 
+[下载 MINECRAFT ：JAVA 版的服务器](https://www.minecraft.net/zh-hans/download/server/)
+
 #### Download
 
 几经辗转，发现官服是安装不了插件的。
@@ -59,12 +61,12 @@ mkdir /opt/minecraft
 cd /opt/minecraft
 # 若没有 wget，需先安装
 # yum -y wget
-wget https://s3.amazonaws.com/Minecraft.Download/versions/1.12.2/minecraft_server.1.12.2.jar
+wget https://launcher.mojang.com/v1/objects/808be3869e2ca6b62378f9f4b33c946621620019/server.jar
 ```
 
 ```sh
 # 编译安装
-java -Xms512M -Xmx1024M -jar minecraft_server.1.12.2.jar nogui
+java -Xms512M -Xmx1024M -jar server.jar nogui
 # 初次允许结束会返回一个错误，将会生成一个新的 eula.txt 文件
 ```
 
@@ -78,7 +80,7 @@ java -Xms512M -Xmx1024M -jar minecraft_server.1.12.2.jar nogui
 ```sh
 sed -i.orig 's/eula=false/eula=true/g' eula.txt
 # 再次运行
-java -Xms512M -Xmx1024M -jar minecraft_server.1.12.2.jar nogui
+java -Xms512M -Xmx1024M -jar server.jar nogui
 ```
 
 ### 编写自动化脚本
@@ -91,7 +93,7 @@ nano /opt/minecraft/startminecraft.sh
 
 ```sh
 #!/bin/bash
-cd /opt/minecraft/ && java -Xms2048M -Xmx3472M -jar minecraft_server.1.12.2.jar nogui
+cd /opt/minecraft/ && java -Xms2048M -Xmx3472M -jar server.jar nogui
 # 保存并退出
 # 按 ctrl+x y 回车
 ```
