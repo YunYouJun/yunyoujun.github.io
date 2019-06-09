@@ -14,6 +14,10 @@ categories:
 
 <!-- more -->
 
+## Ref
+
+- [鸟哥的 Linux 私房菜](http://linux.vbird.org/)
+
 ## Install
 
 ### Version
