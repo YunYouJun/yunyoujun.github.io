@@ -125,6 +125,8 @@ docker pull richardchien/cqhttp:latest
 
 或者 [手动安装](https://cqhttp.cc/docs/4.10/#/?id=手动安装)
 
+#### Run Coolq
+
 ```sh
 docker run -ti --rm --name cqhttp-test \
             -v $(pwd)/coolq:/home/user/coolq \  # 将宿主目录挂载到容器内用于持久化 酷Q 的程序文件
