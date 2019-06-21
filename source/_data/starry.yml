@@ -140,3 +140,9 @@ google_adsense:
 google_analytics:
   enable: true
   id: UA-121354150-1
+
+links:
+  enable: true
+  icon: icon-open-arm-line
+  title: 云游和他的小伙伴们
+  url: /links
