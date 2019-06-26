@@ -146,3 +146,7 @@ links:
   icon: icon-open-arm-line
   title: 云游和他的小伙伴们
   url: /links
+
+post_edit:
+  enable: true
+  url: https://github.com/YunYouJun/yunyoujun.github.io/tree/hexo/source/
