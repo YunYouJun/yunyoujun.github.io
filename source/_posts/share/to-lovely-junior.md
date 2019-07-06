@@ -202,9 +202,15 @@ GitHub 项目地址：[software-engineering-notes](https://github.com/YunYouJun/
 
 [中国传媒大学2019年全国硕士研究生招生考试考生进入复试的初试成绩基本要求](http://yz.cuc.edu.cn/newsWYFHY/680ca73e-760e-4539-abef-f1aaec7bd206.htm)
 
-往年也在
+往年的情况也在。
+
+当当当，以及大家今年最关心的这个出炉。
+
+![2019 计算机应用技术 录取名单](../../images/posts/to-lovely-junior/admission-list.png)
 
 ### 中传 2019 年计算机招生情况
+
+2020 似乎有大的变动，请耐心等待招生简章。
 
 #### 学硕
 
