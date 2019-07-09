@@ -78,6 +78,21 @@ categories:
 code xxx.xxx
 ```
 
+## 常用插件及推荐
+
+### [Code Time](https://marketplace.visualstudio.com/items?itemName=softwaredotcom.swdc-vscode)
+
+统计你的编码时间
+
+在线查看：<https://app.software.com/>
+
+### Theme
+
+- [Material Theme](https://marketplace.visualstudio.com/items?itemName=Equinusocio.vsc-material-theme)
+- [Material Icon Theme](https://marketplace.visualstudio.com/items?itemName=PKief.material-icon-theme)
+
+图标和配色很漂亮
+
 ## 相关
 
  [Python 配置](https://yunyoujun.cn/note/python-growth-path/#编辑器)
