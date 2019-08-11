@@ -1,6 +1,6 @@
 # Hexo 站点源文件
 
-[![Build Status](https://www.travis-ci.org/YunYouJun/yunyoujun.github.io.svg?branch=hexo)](https://www.travis-ci.org/YunYouJun/yunyoujun.github.io)
+[![Build Status](https://www.travis-ci.com/YunYouJun/yunyoujun.github.io.svg?branch=hexo)](https://www.travis-ci.com/YunYouJun/yunyoujun.github.io)
 
 ## Use
 

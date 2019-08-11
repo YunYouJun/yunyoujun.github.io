@@ -20,66 +20,73 @@ categories:
 
 ## 常用快捷键
 
-`Mac` 替换 `Ctrl` 为 `Cmd`
+`Windows` 替换 <kbd>⌘</kbd> 为 <kbd>Ctrl</kbd> ，<kbd>⌥</kbd> 为 <kbd>Alt</kbd>即可
+
+Mac:
+
+<kbd>⌘</kbd>: <kbd>Cmd</kbd>
+<kbd>⌥</kbd>: <kbd>Option</kbd>
+<kbd>⇧</kbd>: <kbd>Shift</kbd>
+<kbd>⌃</kbd>: <kbd>Ctrl</kbd>
 
 ### 窗口
 
-| 功能 | 快捷键 |
+| 快捷键 | 功能 |
 | --- | --- |
-| 隐藏左侧工具栏 | T |
-| 显示当前视图相关属性 | N |
+| <kbd>T</kbd> | 隐藏左侧工具栏 |
+| <kbd>N</kbd> | 显示当前视图相关属性 |
 
 ### 视图
 
-| 功能 | 快捷键 |
+| 快捷键 | 功能 |
 | --- | --- |
-| 平移视图 | Shift + 鼠标中键 |
-| 打开视图切换 - 饼菜单 | ` |
-| 四格视图 | Ctrl + Alt + Q |
-| 前（后）视图 | (Ctrl + ) 1 |
-| 右（左）视图 | (Ctrl + ) 3 |
-| 顶视图 | 7 |
-| 底视图 | 9 |
-| 正交透视视图切换 | 5 |
-| 摄影机视图 | 0 |
-| 将选择的物体设置为激活的摄影机 | Ctrl + 0 |
-| 最大化选择的物体匹配到视图 | . |
-| 翻转视图 | 2/4/6/8 |
+| <kbd>⇧</kbd> + 鼠标中键 | 平移视图 |
+| <kbd>`</kbd> | 打开视图切换 - 饼菜单 |
+| <kbd>⌘</kbd> + <kbd>⌥</kbd> + <kbd>Q</kbd> | 四格视图 |
+| (<kbd>⌘</kbd>) <kbd>1</kbd> | 前（后）视图 |
+| (<kbd>⌘</kbd>) <kbd>3</kbd> | 右（左）视图 |
+| <kbd>7</kbd> | 顶视图 |
+| <kbd>9</kbd> | 底视图 |
+| <kbd>5</kbd> | 正交透视视图切换 |
+| <kbd>0</kbd> | 摄影机视图 |
+| <kbd>⌘</kbd> + <kbd>0</kbd> | 将选择的物体设置为激活的摄影机 |
+| <kbd>.</kbd> | 最大化选择的物体匹配到视图 |
+| <kbd>2/4/6/8</kbd> | 翻转视图 |
 
 ### 选择
 
 | 功能 | 快捷键 |
 | --- | --- |
-| 全选 | A |
-| 框选 | B |
-| 绘选 | C |
-| Select Grouped (根据物体相同的属性组进行选择) | Shift + G |
-| Select Linked (根据物体关联的属性组进行选择) | Shift + L |
+| <kbd>A</kbd> | 全选 |
+| <kbd>B</kbd> | 框选 |
+| <kbd>C</kbd> | 绘选 |
+| <kbd>⇧</kbd> + <kbd>G</kbd> | Select Grouped (根据物体相同的属性组进行选择) |
+| <kbd>⇧</kbd>+ <kbd>L</kbd> | Select Linked (根据物体关联的属性组进行选择) |
 
 ### 基础操作
 
 | 功能 | 快捷键 |
 | --- | --- |
-| 3D 光标 | Shift + 鼠标右键 |
-| (清除)位移 | (Alt +) G |
-| (清除)旋转 | (Alt +) R |
-| (清除)缩放 | (Alt +) S |
-| 隐藏选择的物体 | H |
-| 显示选择的物体 | Alt + H |
-| 隔离显示选择的物体 | Shift + H |
-| 复制 | Shift + D |
-| 关联复制 | Alt + D |
-| 重复上一次的命令 | Shift + R |
+| <kbd>⇧</kbd> + 鼠标右键 | 3D 光标 |
+| (<kbd>⌥</kbd>) <kbd>R</kbd> | (清除)旋转 |
+| (<kbd>⌥</kbd>) <kbd>G</kbd> | (清除)位移 |
+| (<kbd>⌥</kbd>) <kbd>S</kbd> | (清除)缩放 |
+| <kbd>H</kbd> | 隐藏选择的物体 |
+| <kbd>⌥</kbd> + <kbd>H</kbd> | 显示选择的物体 |
+| <kbd>⇧</kbd> + <kbd>H</kbd> | 隔离显示选择的物体 |
+| <kbd>⇧</kbd> + <kbd>D</kbd> | 复制 |
+| <kbd>⌥</kbd> + <kbd>D</kbd> | 关联复制 |
+| <kbd>⇧</kbd> + <kbd>R</kbd> | 重复上一次的命令 |
 
 ### 物体 Object
 
 | 功能 | 快捷键 |
 | --- | --- |
-| 新建物体 | Shift + A |
-| 设置父子关系（先子后父） | Ctrl + P |
-| 清除父子连接关系| Alt + P |
-| Move to Collection | M |
-| Make Links... （设置关联，先选关联到后选） | Ctrl + L |
+| <kbd>⇧</kbd> + <kbd>A</kbd> | 新建物体 |
+| <kbd>⌘</kbd> + <kbd>P</kbd> | 设置父子关系（先子后父） |
+| <kbd>⌥</kbd> + <kbd>P</kbd> | 清除父子连接关系|
+| <kbd>M</kbd> | Move to Collection |
+| <kbd>⌘</kbd> + <kbd>L</kbd> | Make Links... （设置关联，先选关联到后选） |
 
 ## Tips
 
