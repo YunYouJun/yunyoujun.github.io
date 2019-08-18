@@ -39,7 +39,7 @@ git commit -m 'xxx'
 ### 更新博客内容
 
 ```sh
-blog: update content
+blog(post): update
 ```
 
 ### 页面
