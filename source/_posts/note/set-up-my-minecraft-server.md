@@ -8,16 +8,13 @@ tags:
 categories:
   - 云游的小笔记
 ---
-
-# Minecraft Server
-
 ## 闲话
 
 腾讯云的学生机其实续费了几年，也没怎么使用它。
 阿里云的学生机更是到前几个月，干脆让它过期了。
 
 如今，既别无他用，有想到群内的小伙伴们之前一起在玩 MC ，便索性用来搭建一个私服。
-记录下过程，已便看官参考，或自己日后复现。
+记录下过程，以便看官参考，或自己日后复现。
 
 <!-- more -->
 
@@ -38,7 +35,7 @@ yum -y list java*
 
 ```sh
 # 安装 java
-yum -y install java-1.8.0-openjdk
+yum -y install java-latest-openjdk
 # apt-get
 ```
 
@@ -56,12 +53,15 @@ yum -y install java-1.8.0-openjdk
 
 如有兴趣，可参考百科安装不同服务器版本。
 
+你可以在 [这里](https://www.minecraft.net/zh-hans/download/server/) 下载官方 JAVA 版的最新版本服务器。
+
 ```sh
 mkdir /opt/minecraft
 cd /opt/minecraft
 # 若没有 wget，需先安装
 # yum -y wget
-wget https://launcher.mojang.com/v1/objects/808be3869e2ca6b62378f9f4b33c946621620019/server.jar
+wget https://launcher.mojang.com/v1/objects/3dc3d84a581f14691199cf6831b71ed1296a9fdf/server.jar
+# 1.14.4
 ```
 
 ```sh
@@ -86,7 +86,7 @@ java -Xms512M -Xmx1024M -jar server.jar nogui
 ### 编写自动化脚本
 
 ```sh
-nano /opt/minecraft/startminecraft.sh
+nano /opt/minecraft/start-mc.sh
 ```
 
 键入以下内容
@@ -100,7 +100,7 @@ cd /opt/minecraft/ && java -Xms2048M -Xmx3472M -jar server.jar nogui
 
 ```sh
 # 给予执行权限
-chmod +x /opt/minecraft/startminecraft.sh
+chmod +x /opt/minecraft/start-mc.sh
 ```
 
 退出 SSH 时，服务端也会关闭。

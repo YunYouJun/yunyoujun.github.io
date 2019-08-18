@@ -35,6 +35,7 @@ Mac:
 | --- | --- |
 | <kbd>T</kbd> | 隐藏左侧工具栏 |
 | <kbd>N</kbd> | 显示当前视图相关属性 |
+| <kbd>Q</kbd> | Quick Favorites 快捷（键）收藏夹 |
 
 ### 视图
 
@@ -89,6 +90,12 @@ Mac:
 | <kbd>⌘</kbd> + <kbd>L</kbd> | Make Links... （设置关联，先选关联到后选） |
 
 ## Tips
+
+### 导出
+
+推荐导出 `.abc` 格式。
+
+> [三维文件格式知多少](http://www.bgteach.com/article/132)
 
 ...
 
