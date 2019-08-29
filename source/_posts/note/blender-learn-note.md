@@ -89,6 +89,12 @@ Mac:
 | <kbd>M</kbd> | Move to Collection |
 | <kbd>⌘</kbd> + <kbd>L</kbd> | Make Links... （设置关联，先选关联到后选） |
 
+## Nav
+
+### 摄影机视图
+
+进入行走模式： `View > Navigation > Walk Navigation`
+
 ## Tips
 
 ### 导出
