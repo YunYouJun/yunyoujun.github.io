@@ -1,5 +1,5 @@
 ---
-title: 【动画电影】《声之形》（The Shape of Voice）
+title: 【动画电影】《声之形》观后感
 date: 2018-02-03 19:40:18
 updated: 2018-02-03 19:40:18
 tags:
