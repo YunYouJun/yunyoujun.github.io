@@ -10,7 +10,9 @@ categories:
   - 云游的小笔记
 ---
 
-<!-- more -->v
+<!-- more -->
+
+## Learn
 
 - [ ] [入门教程: 认识 React](https://zh-hans.reactjs.org/tutorial/tutorial.html)
 

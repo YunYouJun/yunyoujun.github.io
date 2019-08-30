@@ -67,13 +67,13 @@ gitalk:
 # More info available at https://valine.js.org
 valine:
   enable: true
-  appid: 4x0IwQ1sy95mOGQDTO8MYCeA-gzGzoHsz # your leancloud application appid
-  appkey: 9loqwF3UDklPDHaP9IN2uwN8 # your leancloud application appkey
+  appId: 4x0IwQ1sy95mOGQDTO8MYCeA-gzGzoHsz # your leancloud application appid
+  appKey: 9loqwF3UDklPDHaP9IN2uwN8 # your leancloud application appkey
   notify: false # mail notifier, See: https://github.com/xCss/Valine/wiki
   verify: false # Verification code
   placeholder: Just go go # comment box placeholder
   avatar: # gravatar style
-  guest_info: nick,mail,link # custom comment header
+  meta: nick,mail,link # custom comment header
   pageSize: 10 # pagination size
 
 # Footer Settings
