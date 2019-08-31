@@ -14,7 +14,7 @@ updated: 2019-01-07 11:17:35
 4. [仓岛千百合](https://zh.moegirl.org/仓岛千百合)
 5. [筒隐月子](https://zh.moegirl.org/筒隐月子)
 6. [小豆梓](https://zh.moegirl.org/小豆梓)
-7. [明石(四叠半神话大系)][明石]
+7. [明石(四叠半神话大系)][https://zh.moegirl.org/%E6%98%8E%E7%9F%B3(%E5%9B%9B%E5%8F%A0%E5%8D%8A%E7%A5%9E%E8%AF%9D%E5%A4%A7%E7%B3%BB)]
 8. [松前绪花](https://zh.moegirl.org/松前绪花)
 9. [惠惠](https://zh.moegirl.org/惠惠)
 10. [阿库娅][阿库娅]
@@ -78,7 +78,7 @@ updated: 2019-01-07 11:17:35
 68. [雏鹤爱](https://zh.moegirl.org/雏鹤爱)
 69. [源静香](https://zh.moegirl.org/源静香)
 70. [晓][晓]
-71. ……
+71. [千石抚子](https://zh.moegirl.org/%E5%8D%83%E7%9F%B3%E6%8A%9A%E5%AD%90)
 
 ---
 
