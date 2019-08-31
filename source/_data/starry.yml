@@ -150,3 +150,21 @@ links:
 post_edit:
   enable: true
   url: https://github.com/YunYouJun/yunyoujun.github.io/tree/hexo/source/
+
+words:
+  -
+    content: 我们一日日度过的所谓日常,实际上可能是接连不断的奇迹。
+    source: 《日常》
+    url: https://baike.baidu.com/item/日常/5844361
+  -
+    content: 是啊，我所爱的，即非群星，也非银河。
+    source: YunYouJun
+    url: https://yunyoujun.cn
+  -
+    content: 隐约雷鸣 阴霾天空 但盼风雨来 能留你在此
+    source: 《万叶集》雷神短歌
+    url: https://book.douban.com/subject/1066538/
+  -
+    content: 人类的悲欢并不相通，我只是觉得他们吵闹。
+    source: 鲁迅《小杂感》
+    url: https://baike.baidu.com/item/小杂感
