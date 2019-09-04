@@ -8,15 +8,15 @@ categories:
   - 云游的小安利
 ---
 
-# Intro
-
 记录自己常用的导航工具
 
 <!-- more -->
 
-# Nav
-
 ## Web
+
+### Chrome Plugins
+
+- [Wappalyzer - Identify technology on websites](https://www.wappalyzer.com/): 查询网站使用技术
 
 ### Blog
 
