@@ -36,6 +36,7 @@ Mac:
 | <kbd>T</kbd> | 隐藏左侧工具栏 |
 | <kbd>N</kbd> | 显示当前视图相关属性 |
 | <kbd>Q</kbd> | Quick Favorites 快捷（键）收藏夹 |
+| <kbd>⌥</kbd> <kbd>⌘</kbd> <kbd>Space</kbd> | 切换全屏（与 Mac Finder 搜索快捷键冲突） |
 
 ### 视图
 
@@ -43,7 +44,7 @@ Mac:
 | --- | --- |
 | <kbd>⇧</kbd> + 鼠标中键 | 平移视图 |
 | <kbd>`</kbd> | 打开视图切换 - 饼菜单 |
-| <kbd>⌘</kbd> + <kbd>⌥</kbd> + <kbd>Q</kbd> | 四格视图 |
+| <kbd>⌃</kbd> + <kbd>⌥</kbd> + <kbd>Q</kbd> | 四格视图 |
 | (<kbd>⌘</kbd>) <kbd>1</kbd> | 前（后）视图 |
 | (<kbd>⌘</kbd>) <kbd>3</kbd> | 右（左）视图 |
 | <kbd>7</kbd> | 顶视图 |
@@ -53,22 +54,24 @@ Mac:
 | <kbd>⌘</kbd> + <kbd>0</kbd> | 将选择的物体设置为激活的摄影机 |
 | <kbd>.</kbd> | 最大化选择的物体匹配到视图 |
 | <kbd>2/4/6/8</kbd> | 翻转视图 |
+| <kbd>⇧</kbd> <kbd>~</kbd> |步行模式|
 
 ### 选择
 
-| 功能 | 快捷键 |
+| 快捷键 | 功能 |
 | --- | --- |
 | <kbd>A</kbd> | 全选 |
 | <kbd>B</kbd> | 框选 |
 | <kbd>C</kbd> | 绘选 |
 | <kbd>⇧</kbd> + <kbd>G</kbd> | Select Grouped (根据物体相同的属性组进行选择) |
-| <kbd>⇧</kbd>+ <kbd>L</kbd> | Select Linked (根据物体关联的属性组进行选择) |
+| <kbd>⇧</kbd> + <kbd>L</kbd> | Select Linked (根据物体关联的属性组进行选择) |
 
 ### 基础操作
 
-| 功能 | 快捷键 |
+| 快捷键 | 功能 |
 | --- | --- |
 | <kbd>⇧</kbd> + 鼠标右键 | 3D 光标 |
+| <kbd>⇧</kbd> <kbd>S</kbd> | 打开 3D 光标菜单 |
 | (<kbd>⌥</kbd>) <kbd>R</kbd> | (清除)旋转 |
 | (<kbd>⌥</kbd>) <kbd>G</kbd> | (清除)位移 |
 | (<kbd>⌥</kbd>) <kbd>S</kbd> | (清除)缩放 |
@@ -81,13 +84,19 @@ Mac:
 
 ### 物体 Object
 
-| 功能 | 快捷键 |
+| 快捷键 | 功能 |
 | --- | --- |
 | <kbd>⇧</kbd> + <kbd>A</kbd> | 新建物体 |
 | <kbd>⌘</kbd> + <kbd>P</kbd> | 设置父子关系（先子后父） |
 | <kbd>⌥</kbd> + <kbd>P</kbd> | 清除父子连接关系|
 | <kbd>M</kbd> | Move to Collection |
 | <kbd>⌘</kbd> + <kbd>L</kbd> | Make Links... （设置关联，先选关联到后选） |
+
+### 显示
+
+| 快捷键                    | 功能                       |
+| ------------------------- | -------------------------- |
+| <kbd>⇧</kbd> <kbd>Z</kbd> | 当前模式与线框模式相互切换 |
 
 ## Nav
 
