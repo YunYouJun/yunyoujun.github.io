@@ -65,12 +65,13 @@ categories:
 
 ## 常用快捷键
 
-快捷键|命令|位置
----|---|---
-`Ctrl+Shift+N`|新建窗口|文件 -> 新建窗口
-`Ctrl+K Ctrl+S`|键盘快捷方式|文件 -> 首选项 -> 键盘快捷方式
-`Ctrl+Shift+P`|显示所有命令|
-`Ctrl+` `|切换集成终端|
+|快捷键|命令|位置|
+|---|---|---|
+| `Ctrl+Shift+N`|新建窗口|文件 -> 新建窗口|
+| `Ctrl+K Ctrl+S`|键盘快捷方式|文件 -> 首选项 -> 键盘快捷方式|
+| `Ctrl+Shift+P`|显示所有命令|
+| `Ctrl+` `|切换集成终端|
+|`Shift`+`Cmd`+`E`| 激活资源管理器窗口 |
 
 ### 命令行打开
 
@@ -95,7 +96,8 @@ code xxx.xxx
 
 ## 相关
 
- [Python 配置](https://yunyoujun.cn/note/python-growth-path/#编辑器)
+- [Building your C++ application with Visual Studio Code](https://devblogs.microsoft.com/cppblog/building-your-c-application-with-visual-studio-code/)
+- [Python 配置](https://yunyoujun.cn/note/python-growth-path/#编辑器)
 
 ---
 
