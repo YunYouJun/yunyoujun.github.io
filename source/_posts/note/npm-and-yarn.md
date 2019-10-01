@@ -9,8 +9,6 @@ categories:
 date: 2017-10-06 15:56:20
 updated: 2018-02-07 15:04:44
 ---
-# npm & yarn
-
 ## Intro
 
 ### [npm](https://www.npmjs.com/)
