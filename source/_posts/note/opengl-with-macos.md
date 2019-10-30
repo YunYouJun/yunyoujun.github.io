@@ -136,4 +136,4 @@ int main(void)
 ```
 
 > ref: <https://www.cnblogs.com/shayue/p/Mac-CLion-xiaOpenGL-huan-jing-pei-zhi.html>
-> 对原文多处进行了修改， CMakeLists.txt 内容缩减。使得步骤更为简单。
+> 对原文多处进行了修改，CMakeLists.txt 内容缩减。使得步骤更为简单。
