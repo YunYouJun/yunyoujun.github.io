@@ -135,10 +135,105 @@ extra parameters or packages included.
 \thanks{funded by the Overleaf team}
 ```
 
-<!-- 可以在标题命令的大括号内在作者的姓名之后添加此名称。它将在括号内添加上标和脚注以及文本。
-如果您需要在文章中感谢一个机构，该功能将非常有用。 -->
+这可以被添加在标题命令的大括号里作者的姓名之后。它将会添加上标和有着括号内文本的脚注。
+如果您需要在文章中感谢一个机构，该功能将非常有用。
+
+```latex
+\date{February 2014}
+```
+
+您可以手动输入日期或使用命令 `\today`，以便在编译文档时自动更新日期。
+
+添加这些行后，您的 `preamble` 应该看起来像这样
+
+``` latex
+\documentclass[12pt, letterpaper, twoside]{article}
+\usepackage[utf8]{inputenc}
+
+\title{First document}
+\author{Hubert Farnsworth \thanks{funded by the Overleaf team}}
+\date{February 2017}
+```
+
+现在，您已经为文档指定了标题，作者和日期，您可以使用 `\maketitle` 命令在文档上打印此信息。这应被包含在文档的 `body`（主体，原文加粗，作为 LaTeX 术语） 中您像要打印标题的位置。
+
+```latex
+\begin{document}
+
+\maketitle
+
+We have now added a title, author and date to our first \LaTeX{} document!
+
+\end{document}
+```
+
+![Learnlatex1.PNG](https://cdn.overleaf.com/learn-scripts/images/e/e9/Learnlatex1.PNG)
+
+[Open an example in Overleaf](https://www.sharelatex.com/project/new/template?zipUrl=/project/582dbeacf220531c2d4bdaaa/download/zip&templateName=Learn%20LaTeX%20in%2020%20minutes:%20Part%202&compiler=pdflatex)
 
 ## 添加注释
+
+与任何你正在编写的任何代码一样，包含注释通常会很有用。注释是您可以包含在文档中的几段文字，这些文字不会被打印，也不会以任何方式影响文档。在调试时，它们对于组织工作，做笔记或注释行/节很有用。要在 LaTeX 中进行注释，只需在行首写一个 ％ 符号，如下所示：
+
+```latex
+\begin{document}
+
+\maketitle
+
+We have now added a title, author and date to our first \LaTeX{} document!
+
+% This line here is a comment. It will not be printed in the document.
+
+\end{document}
+```
+
+![Learnlatex1.PNG](https://cdn.overleaf.com/learn-scripts/images/e/e9/Learnlatex1.PNG)
+
+[Open an example in Overleaf](https://www.sharelatex.com/project/new/template?zipUrl=/project/58a308db13712fef4e9deff7/download/zip&templateName=Learn%20LaTeX%20in%2020%20minutes:%20Part%203&compiler=pdflatex)
+
+## 粗体，斜体和下划线
+
+现在，我们来看一些简单的文本格式命令。
+
+- **粗体**：LaTeX 中的粗体文本使用 `\textbf{...}` 命令编写。
+- *斜体*：LaTeX 中的斜体文本使用 `\textit{...}` 命令编写。
+- <u>下划线</u>：LaTeX 中带下划线的文本使用 `\underline{...}` 命令编写。
+
+下面展示了其中每个实例的示例：
+
+```latex
+Some of the \textbf{greatest}
+discoveries in \underline{science}
+were made by \textbf{\textit{accident}}.
+```
+
+![Biu1.png](https://cdn.overleaf.com/learn-scripts/images/a/a9/Biu1.png)
+
+另一个非常有用的命令是 `\emph{...}` 命令。实际上，`\emph` 命令使用其参数的操作取决于上下文 - 在普通文本中，强调的文本是斜体，但是如果在斜体文本中使用，则此行为是相反的 - 请参见以下示例：
+
+```latex
+Some of the greatest \emph{discoveries}
+in science
+were made by accident.
+
+\textit{Some of the greatest \emph{discoveries}
+in science
+were made by accident.}
+
+\textbf{Some of the greatest \emph{discoveries}
+in science
+were made by accident.}
+```
+
+![Biu5.png](https://cdn.overleaf.com/learn-scripts/images/5/5d/Biu5.png)
+
+此外，某些软件包，例如 [`Beamer`](https://cn.overleaf.com/learn/Beamer)，更改了 `\emph` 命令的行为方式。
+
+[Open an example in Overleaf](https://www.sharelatex.com/project/new/template?zipUrl=/project/58a30a6813712fef4e9df06b/download/zip&templateName=Learn%20LaTeX%20in%2020%20minutes:%20Part%204&compiler=pdflatex)
+
+## 添加图片
+
+
 
 ---
 
