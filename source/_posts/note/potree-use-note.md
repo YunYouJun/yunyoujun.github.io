@@ -32,9 +32,7 @@ python -m http.server    #python3中启动一个简单的http服务器
 
 macOS
 
-[]
-
-![](http://b265.photo.store.qq.com/psb?/V11qBdwm3PSUwe/.8oaaCQjHeWc8xOgaOxTkrxOJ1oxhXcCpa5Ba9FOh3s!/b/dAkBAAAAAAAA&bo=vACxALwAsQACKQ0!&rf=viewer_4)
+![关爱智障.jpg](http://b265.photo.store.qq.com/psb?/V11qBdwm3PSUwe/.8oaaCQjHeWc8xOgaOxTkrxOJ1oxhXcCpa5Ba9FOh3s!/b/dAkBAAAAAAAA&bo=vACxALwAsQACKQ0!&rf=viewer_4)
 
 ---
 

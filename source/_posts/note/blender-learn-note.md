@@ -12,19 +12,22 @@ categories:
 
 [Blender]((https://www.blender.org/)): Free and Open 3D Creation Software.
 
-- [ ] [官方参考手册](https://docs.blender.org/manual/zh-hans/dev/index.html)
-
 <!-- more -->
 
 Blender 是一款轻量且自由开源的 3D 创意软件。
 3D 软件应接不暇，但若立志进入游戏/动画行业，自然也非得掌握一种不可。
 于是我选择了 Blender，当然其中最吸引我的莫过于开源二字。
+在对比后，2.8 之后的颜值也是不得不称道的事情。
 
-找了个教程，准备开始学习。
+## Ref
 
-占位记录。
+- [ ] [Blender 官方参考手册](https://docs.blender.org/manual/zh-hans/latest/)
+- [ ] [Blender 官方中文基础视频 - YouTube](https://www.youtube.com/playlist?list=PLa1F2ddGya_-UvuAqHAksYnB0qL9yWDO6&feature=share)
+- [x] [从0开始学习Blender 2.8 | 饼干教育](http://www.bgteach.com/my/course/60)
 
-- [ ] [从0开始学习Blender 2.8 | 饼干教育](http://www.bgteach.com/my/course/60)
+### Other Video
+
+- [Blender 创造者谈及它的未来 - bilibili](https://www.bilibili.com/video/av22732936/?spm_id_from=333.788.videocard.0)（充满热情的创造者）
 
 ## 常用快捷键
 
