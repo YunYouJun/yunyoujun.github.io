@@ -231,9 +231,48 @@ were made by accident.}
 
 [Open an example in Overleaf](https://www.sharelatex.com/project/new/template?zipUrl=/project/58a30a6813712fef4e9df06b/download/zip&templateName=Learn%20LaTeX%20in%2020%20minutes:%20Part%204&compiler=pdflatex)
 
-## 添加图片
+## 添加图像
 
+现在，我们将研究如何将图像添加到 LaTeX 文档中。在 Overleaf 上，您首先必须[上传图像](https://cn.overleaf.com/learn/Including_images_in_ShareLaTeX)。
 
+以下是一个如何包含图片的示例。
+
+> 译者注：前文使用的是 image ，这里使用的是 picture ，所以分别译为图像、图片。
+
+```latex
+\documentclass{article}
+\usepackage{graphicx}
+\graphicspath{ {images/} }
+
+\begin{document}
+The universe is immense and it seems to be homogeneous, 
+in a large scale, everywhere we look at.
+
+\includegraphics{universe}
+
+There's a picture of a galaxy above
+\end{document}
+```
+
+![InsertingImagesEx1.png](https://cdn.overleaf.com/learn-scripts/images/9/9d/InsertingImagesEx1.png)
+
+[Open an example in Overleaf](https://www.sharelatex.com/project/new/template?zipUrl=/project/58a30b7413712fef4e9df0a8/download/zip&templateName=Learn%20LaTeX%20in%2020%20minutes:%20Part%205&compiler=pdflatex)
+
+LaTeX 不能单独管理图像，因此您需要使用一个包。包可用于更改 LaTeX 文档的默认外观，或允许更多功能。
+这种情况下，您需要在我们的文档中包含一个图像，因此您应该使用 `graphicx` 包。
+该软件包提供了新命令 `\includegraphics{...}` 和 `\graphicspath{...}`。
+要使用 `graphicx` 包，请在你的 `preamble` 中包含以下行：`\usepackage{graphicx}`。
+
+命令 `\graphicspath{ {images/} }告诉 LaTeX，图像被保存在当前目录下名为 *images* 的文件夹中。
+
+`\includegraphics{universe}` 是将图像实际包含在文档中的命令。
+这里的 *universe*（宇宙）是包含图像的文件不带扩展名时的名称，所以 *universe.PNG* 就变成了 *universe*。
+图像的文件名不应包含空格或多个点。
+
+> 注意：文件扩展名是被允许包括进来的，但是最好忽略它。如果省略文件扩展名，它将提示 LaTeX 搜索所有支持的格式。在上传图像文件时，通常也建议使用小写字母作为文件扩展名。有关更多详细信息，请参见[生成高分辨率和低分辨率图像](https://cn.overleaf.com/learn/latex/Learn_LaTeX_in_30_minutes#Generating_high-res_and_low-res_images)的部分。
+> 译者注：该段落原文给出的链接无法跳转到相应的信息部分。
+
+## 标题，标签和参考
 
 ---
 
