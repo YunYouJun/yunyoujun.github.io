@@ -19,4 +19,4 @@ updated: 2017-08-25 15:05:26
 
 ## 原图
 
-> ![原图](https://cdn.jsdelivr.net/gh/YunYouJun/cdn/img/draw/96.png)
+> ![原图](https://cdn.jsdelivr.net/gh/YunYouJun/cdn/img/draw/rf/konosuba.png)
