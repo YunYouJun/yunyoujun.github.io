@@ -120,6 +120,19 @@ j xxx
 
 ##### [zsh-syntax-highlighting](https://github.com/zsh-users/zsh-syntax-highlighting)
 
+#### Other
+
+配置环境变量
+
+```sh
+code ~/.zshrc
+# 进入文件
+export PATH="应用程序路径:$PATH"
+# $PATH 不可丢掉，是环境中别的变量，冒号为分隔符。
+```
+
+
+
 ### Git
 
 ```sh
