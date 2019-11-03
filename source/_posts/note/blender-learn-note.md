@@ -24,10 +24,17 @@ Blender 是一款轻量且自由开源的 3D 创意软件。
 - [ ] [Blender 官方参考手册](https://docs.blender.org/manual/zh-hans/latest/)
 - [ ] [Blender 官方中文基础视频 - YouTube](https://www.youtube.com/playlist?list=PLa1F2ddGya_-UvuAqHAksYnB0qL9yWDO6&feature=share)
 - [x] [从0开始学习Blender 2.8 | 饼干教育](http://www.bgteach.com/my/course/60)
+- [ ] [Blender 学习笔记 - 语雀](https://www.yuque.com/ziguiti/blender)（私货）
 
 ### Other Video
 
 - [Blender 创造者谈及它的未来 - bilibili](https://www.bilibili.com/video/av22732936/?spm_id_from=333.788.videocard.0)（充满热情的创造者）
+
+> But I was never interested in money.
+> It's not interesting.
+> I call myself a maker, I want to make stuff.
+> I want to make stuff, that's my passion.
+> -- Ton Roosendaal (Blender 之父)
 
 ## 常用快捷键
 

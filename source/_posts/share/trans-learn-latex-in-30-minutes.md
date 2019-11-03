@@ -274,6 +274,178 @@ LaTeX 不能单独管理图像，因此您需要使用一个包。包可用于�
 
 ## 标题，标签和参考
 
+可以通过图形环境对图像添加标题、标签和引用，如下所示：
+
+```latex
+\begin{figure}[h]
+    \centering
+    \includegraphics[width=0.25\textwidth]{mesh}
+    \caption{a nice plot}
+    \label{fig:mesh1}
+\end{figure}
+
+As you can see in the figure \ref{fig:mesh1}, the
+function grows near 0. Also, in the page \pageref{fig:mesh1}
+is the same example.
+```
+
+![InsertingImages.PNG](https://cdn.overleaf.com/learn-scripts/images/2/25/InsertingImages.PNG)
+
+[Open an example in Overleaf](https://www.sharelatex.com/project/new/template?zipUrl=/project/58a30c5613712fef4e9df0e8/download/zip&templateName=Learn%20LaTeX%20in%2020%20minutes:%20Part%206&compiler=pdflatex)
+
+该示例中包含三个重要的命令：
+
+- `\caption{a nice plot}`：您可能会期望此命令为图形设置标题。如果你创建了一个图形列表，那么标题将会被用在这里。您可以将其放在图的上方或下方。
+- `\label{fig:mesh1}`：如果您需要在文档中引用图像，请使用此命令设置标签。标签将为图像编号，并与下一个命令结合使用，以供您参考。
+- `\ref{fig:mesh1}`：该代码将替换为与参考图相对应的数字。
+
+将图像放置在 LaTeX 文档中时，我们应始终将它们放置在图形环境或类似环境中，以便 LaTeX 可以用适合您剩余文本的方式放置图像。
+
+> 注意：如果您在自己的计算机上使用标题和参考，那你将必须编译两次文档才能使参考正常工作。Overleaf 会自动为您完成此操作。
+
+## 在 LaTeX 中创建列表
+
+在 LaTeX 中创建列表非常简单。您可以使用不同的列表环境创建列表。
+环境是我们文档中您希望以与文档其余部分不同方式进行呈现的部分。
+它们以 `\begin{...}` 命令开始，以 `\end{...}` 命令结束。
+
+列表主要有两种不同的类型，有序列表和无序列表。各自将使用不同的环境。
+
+### 无序列表
+
+无序列表是由 `itemize`（逐项列记之意，原文为专有名词）环境生成的。每个条目之前必须带有控制序列 `\item`，如下所示。
+
+```latex
+\begin{itemize}
+  \item The individual entries are indicated with a black dot, a so-called bullet.
+  \item The text in the entries may be of any length.
+\end{itemize}
+```
+
+![Itemize.png](https://cdn.overleaf.com/learn-scripts/images/e/ea/Itemize.png)
+
+默认情况下，各个独立的条目都用黑点标示，即所谓的项目符号。条目中的文本可以有任意长度。
+
+[Open an example in Overleaf](https://www.sharelatex.com/project/new/template?zipUrl=/project/52fe74766a6237452e000088/download/zip&templateName=Lists%20Examples&compiler=pdflatex)
+
+### 有序列表
+
+在不同环境中，有序列表具有相同的句法规则。我们使用 `enumerate`（枚举之意，原文为专有名词）环境制作有序列表：
+
+```latex
+\begin{enumerate}
+  \item This is the first entry in our list
+  \item The list numbers increase with each entry we add
+\end{enumerate}
+```
+
+![Enumerate.png](https://cdn.overleaf.com/learn-scripts/images/3/3a/Enumerate.png)
+
+与无序列表一样，每个条目之前必须带有控制序列 `\item`，它将自动生成标记该项目的数字。枚举标签由从 1 开始的序列号组成。
+
+[Open an example in Overleaf](https://www.sharelatex.com/project/new/template?zipUrl=/project/52fe74766a6237452e000088/download/zip&templateName=Lists%20Examples&compiler=pdflatex)
+
+## 为 LaTeX 添加数学符号
+
+LaTeX 的主要优点之一是易于编写数学表达式。
+LaTeX 允许两种用于数学表达式的书写模式：`inline`（内联）模式和 `display`（显示）模式。
+第一种方式用于编写作为文本一部分的公式。第二种方式用于编写不属于文本或段落的表达式，因此被放在单独的行上。
+让我们看一个 `inline` 模式的例子：
+
+```latex
+In physics, the mass-energy equivalence is stated 
+by the equation $E=mc^2$, discovered in 1905 by Albert Einstein.
+```
+
+![Einstein1.png](https://cdn.overleaf.com/learn-scripts/images/d/db/Einstein1.png)
+
+要使用 `inline` 模式来放置方程式，请使用以下定界符之一：`\( ... \)`，`$ ... $` 或 `\begin{math} ... \end{math}`。它们都能够起作用，选择那种取决于个人口味。
+
+`displayed` 模式有两种版本：已编号和未编号。
+
+```latex
+The mass-energy equivalence is described by the famous equation
+
+\[ E=mc^2 \]
+
+discovered in 1905 by Albert Einstein. 
+In natural units ($c = 1$), the formula expresses the identity
+
+\begin{equation}
+E=m
+\end{equation}
+```
+
+![Einstein2.png](https://cdn.overleaf.com/learn-scripts/images/3/3a/Einstein2.png)
+
+要在 `display` 模式下打印方程式，请使用以下定界符之一：`\[ ... \]`，`\begin{displaymath} ... \end{displaymath}` 或 `\begin{equation} ... \end{equation}`。
+[不鼓励](https://texfaq.org/FAQ-dolldoll)使用 `$$ ... $$`，因为它会产生不一致的间距，并且和某些数学程序包一起使用时可能表现得不是很好。
+
+> 重要说明：equation* 环境是由外部软件包提供的，请参阅 [amsmath](https://cn.overleaf.com/learn/Aligning_equations) 的文章。
+
+[Open an example in Overleaf](https://www.sharelatex.com/project/new/template?zipUrl=/project/52ec4e44b43917a25a000e96/download/zip&templateName=Math%20Expressions&compiler=pdflatex)
+
+许多数学模式命令都需要 `amsmath` 程序包，因此在编写数学公式时请确保将其包括在内。
+下面显示了一些基本数学模式命令的示例。
+
+```latex
+Subscripts in math mode are written as $a_b$ and superscripts are written as $a^b$. These can be combined an nested to write expressions such as
+
+\[ T^{i_1 i_2 \dots i_p}_{j_1 j_2 \dots j_q} = T(x^{i_1},\dots,x^{i_p},e_{j_1},\dots,e_{j_q}) \]
+
+We write integrals using $\int$ and fractions using $\frac{a}{b}$. Limits are placed on integrals using superscripts and subscripts:
+
+\[ \int_0^1 \frac{1}{e^x} =  \frac{e-1}{e} \]
+
+Lower case Greek letters are written as $\omega$ $\delta$ etc. while upper case Greek letters are written as $\Omega$ $\Delta$.
+
+Mathematical operators are prefixed with a backslash as $\sin(\beta)$, $\cos(\alpha)$, $\log(x)$ etc.
+```
+
+![Math.PNG](https://cdn.overleaf.com/learn-scripts/images/2/22/Math.PNG)
+
+[Open an example in Overleaf](https://www.sharelatex.com/project/new/template?zipUrl=/project/58a30cfd13712fef4e9df123/download/zip&templateName=Learn%20LaTeX%20in%2020%20minutes:%20Part%207&compiler=pdflatex)
+
+在 LaTeX 中数学的可能性是无穷的，不可能在这里将它们都列出来。
+请务必查看我们这儿的其他文章
+
+- [数学表达式 - Mathematical expressions](https://cn.overleaf.com/learn/Mathematical_expressions)
+- [下标和上标 - Subscripts and superscripts](https://cn.overleaf.com/learn/Subscripts_and_superscripts)
+- [方括号和圆括号 - Brackets and Parentheses](https://cn.overleaf.com/learn/Brackets_and_Parentheses)
+- [分数和二项式 - Fractions and Binomials](https://cn.overleaf.com/learn/Fractions_and_Binomials)
+- [对齐等式 - Aligning Equations](https://cn.overleaf.com/learn/Aligning_equations_with_amsmath)
+- [运算符 - Operators](https://cn.overleaf.com/learn/Operators)
+- [数学模式下的间距 - Spacing in math mode](https://cn.overleaf.com/learn/Spacing_in_math_mode)
+- [积分，总和与极限 - Integrals, sums and limits](https://cn.overleaf.com/learn/Integrals,_sums_and_limits)
+- [在数学模式下显示样式 - Display style in math mode](https://cn.overleaf.com/learn/Display_style_in_math_mode)
+- [希腊字母和数学符号列表 - List of Greek letters and math symbols](https://cn.overleaf.com/learn/List_of_Greek_letters_and_math_symbols)
+- [数学字体 - Mathematical fonts](https://cn.overleaf.com/learn/Mathematical_fonts)
+
+## 基本格式
+
+现在，我们将研究如何编写摘要，以及如何将 LaTeX 文档格式化为不同的章、节和段落。
+
+### 摘要
+
+在科学文献中，通常的做法是简要概述论文的主题。
+在 LaTeX 中有一个 `abstract`（摘要）的环境。`abstract` 环境会将文本以特殊格式放在你文档的顶部。
+
+```latex
+\begin{document}
+
+\begin{abstract}
+This is a simple paragraph at the beginning of the 
+document. A brief introduction about the main subject.
+\end{abstract}
+\end{document}
+```
+
+![Abstractsmall.PNG](https://cdn.overleaf.com/learn-scripts/images/d/db/Abstractsmall.PNG)
+
+[Open an example in Overleaf](https://www.sharelatex.com/project/new/template?zipUrl=/project/58a30dd713712fef4e9df14e/download/zip&templateName=Learn%20LaTeX%20in%2020%20minutes:%20Part%208&compiler=pdflatex)
+
+### 段落和换行符
+
 ---
 
 To Be Continued.
