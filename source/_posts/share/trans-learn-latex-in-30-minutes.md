@@ -446,6 +446,113 @@ document. A brief introduction about the main subject.
 
 ### 段落和换行符
 
+```latex
+\begin{document}
+
+\begin{abstract}
+This is a simple paragraph at the beginning of the 
+document. A brief introduction about the main subject.
+\end{abstract}
+
+Now that we have written our abstract, we can begin writing our first paragraph.
+
+This line will start a second Paragraph.
+\end{document}
+```
+
+![Abstractnonewline.PNG](https://cdn.overleaf.com/learn-scripts/images/d/d3/Abstractnonewline.PNG)
+
+[Open an example in Overleaf](https://www.sharelatex.com/project/new/template?zipUrl=/project/58a30dd713712fef4e9df14e/download/zip&templateName=Learn%20LaTeX%20in%2020%20minutes:%20Part%208&compiler=pdflatex)
+
+在编写文档内容时，如果需要开始新的段落，你必须按两次 “Enter” 键（以插入双空行）。
+注意，LaTeX 会自动缩进段落。
+
+想要开始新行而不实际开始新段落，请插入一个*换行*点，这可以通过 \\（在示例中为双反斜杠）或 `\newline` 命令来实现。
+
+注意不要使用多个 \\ 或 `\newlines` 来“模拟”段落之间具有较大间距的段落，因为这可能会干扰 LaTeX 的排版算法。
+推荐的方法是继续使用双空行创建没有任何 \\ 的新段落，然后将 `\usepackage{parskip}` 添加到序言中。
+
+您可以在 [段落和换行](https://cn.overleaf.com/learn/Paragraphs_and_new_lines) 文章中找到更多信息。
+
+### 章节
+
+组织文档的命令因文档类型而异，最简单的组织形式是分段，所有格式均可用。
+
+```latex
+\chapter{First Chapter}
+
+\section{Introduction}
+
+This is the first section.
+
+Lorem  ipsum  dolor  sit  amet,  consectetuer  adipiscing  
+elit.   Etiam  lobortisfacilisis sem.  Nullam nec mi et 
+neque pharetra sollicitudin.  Praesent imperdietmi nec ante. 
+Donec ullamcorper, felis non sodales...
+
+\section{Second Section}
+
+Lorem ipsum dolor sit amet, consectetuer adipiscing elit.  
+Etiam lobortis facilisissem.  Nullam nec mi et neque pharetra 
+sollicitudin.  Praesent imperdiet mi necante...
+
+\subsection{First Subsection}
+Praesent imperdietmi nec ante. Donec ullamcorper, felis non sodales...
+
+\section*{Unnumbered Section}
+Lorem ipsum dolor sit amet, consectetuer adipiscing elit.  
+Etiam lobortis facilisissem
+```
+
+![Sections1.PNG](https://cdn.overleaf.com/learn-scripts/images/7/7c/Sections1.PNG)
+
+[Open an example in Overleaf](https://www.sharelatex.com/project/new/template?zipUrl=/project/58a30e7b13712fef4e9df182/download/zip&templateName=Learn%20LaTeX%20in%2020%20minutes:%20Part%209&compiler=pdflatex)
+
+命令 `\section{}` 标记新节的开始，在大括号内设置标题。
+段编号是自动生成的，可以通过在段命令中包含 * 作为 `\section*{} 来禁用。
+我们也可以有 `\subsection{}s，甚至还有 `\subsubsection{}s。下面列出了基本的深度级别：
+
+| -1 | \part{part} |
+| --- | --- |
+| 0 | \chapter{chapter} |
+| 1 | \section{section} |
+| 2 | \subsection{subsection} |
+| 3 | \subsubsection{subsubsection} |
+| 4 | \paragraph{paragraph} |
+| 5 | \subparagraph{subparagraph} |
+
+请注意，`\part` 和 `\chapter` 仅在 `report`（报告）和 `book`（书籍）文档类中可用。
+
+有关文档结构的更完整讨论，请参见[有关节和章的文章](https://cn.overleaf.com/learn/Sections_and_chapters)。
+
+## 创建表哥
+
+### 在 LaTeX 中创建一个简单的表
+
+下面，您可以看到一个表格最简单的工作示例
+
+```latex
+\begin{center}
+\begin{tabular}{ c c c }
+ cell1 & cell2 & cell3 \\
+ cell4 & cell5 & cell6 \\  
+ cell7 & cell8 & cell9
+\end{tabular}
+\end{center}
+```
+
+![TablesEx1.png](https://cdn.overleaf.com/learn-scripts/images/c/c2/TablesEx1.png)
+
+`tabular`（表格）环境是 LaTeX 创建表格的默认方法。您必须为此环境指定一个参数，在这种情况下为 `{c c c}`。
+这告诉 LaTeX 这里将有三列，并且每列中的文本必须居中。您也可以使用 `r` 将文本向右对齐，使用 `l` 进行左对齐。
+对齐符号 `＆` 用于指定表格条目中的分隔符。每行中的对齐符号必须始终少于列数。
+要转到表格的下一行，我们使用*换行*命令 `\\`。我们将整个表格包装在 `center`（中心）环境中，以便它出现在页面的中心。
+
+[Open an example in Overleaf](https://www.sharelatex.com/project/new/template?zipUrl=/project/58a3101d13712fef4e9df258/download/zip&templateName=Learn%20LaTeX%20in%2020%20minutes:%20Part%2010&compiler=pdflatex)
+
+### 添加边框
+
 ---
+
 
 To Be Continued.
