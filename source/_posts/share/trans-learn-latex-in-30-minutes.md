@@ -1,7 +1,7 @@
 ---
 title: 【译】30分钟学会 LaTeX
 date: 2019-10-28 16:02:36
-updated: 2019-10-28 16:02:36
+updated: 2019-11-05 16:09:36
 tags:
   - LaTeX
   - 译文
@@ -552,7 +552,138 @@ Etiam lobortis facilisissem
 
 ### 添加边框
 
----
+`tabular` 环境更加灵活，您可以在每列之间放置分隔线。
 
+```latex
+\begin{center}
+\begin{tabular}{ |c|c|c| }
+ \hline
+ cell1 & cell2 & cell3 \\
+ cell4 & cell5 & cell6 \\
+ cell7 & cell8 & cell9 \\
+ \hline
+\end{tabular}
+\end{center}
+```
 
-To Be Continued.
+![TablesEx2.png](https://cdn.overleaf.com/learn-scripts/images/2/25/TablesEx2.png)
+
+您可以使用水平线命令 `\hline` 和垂直线参数 `|` 添加边框。
+
+- `{ |c|c|c| }`：这声明了被垂直线分割的三列，并将被应用在表格中。`|` 符号指定这些列应由一条垂直线分隔。
+- `\hline`：这将插入一条水平线。在这里，我们在表格的顶部和底部包括了水平线。你使用 `\hline` 的次数没有限制。
+
+在下面您可以看到第二个示例。
+
+```latex
+\begin{center}
+ \begin{tabular}{||c c c c||}
+ \hline
+ Col1 & Col2 & Col2 & Col3 \\ [0.5ex]
+ \hline\hline
+ 1 & 6 & 87837 & 787 \\
+ \hline
+ 2 & 7 & 78 & 5415 \\
+ \hline
+ 3 & 545 & 778 & 7507 \\
+ \hline
+ 4 & 545 & 18744 & 7560 \\
+ \hline
+ 5 & 88 & 788 & 6344 \\ [1ex]
+ \hline
+\end{tabular}
+\end{center}
+```
+
+![TablesEx3.png](https://cdn.overleaf.com/learn-scripts/images/2/2c/TablesEx3.png)
+
+有时在 LaTeX 中创建表格可能会有些棘手，因此您可能想使用 [TablesGenerator.com](https://www.tablesgenerator.com/) 在线工具导出表格的 [LaTeX] 代码。`File > Paste table data`（文件 > 粘贴表格数据）选项使您可以从电子表格应用程序复制和粘贴数据。
+
+[Open an example in Overleaf](https://www.sharelatex.com/project/new/template?zipUrl=/project/58a3101d13712fef4e9df258/download/zip&templateName=Learn%20LaTeX%20in%2020%20minutes:%20Part%2010&compiler=pdflatex)
+
+### 表格说明（标题），标签和参考
+
+您可以使用与图像几乎相同的方式添加标题和引用表格。唯一的区别是，使用 `table`（表）环境代替了 `figure`（图）环境。
+
+```latex
+Table \ref{table:data} is an example of referenced \LaTeX{} elements.
+
+\begin{table}[h!]
+\centering
+\begin{tabular}{||c c c c||}
+ \hline
+ Col1 & Col2 & Col2 & Col3 \\ [0.5ex]
+ \hline\hline
+ 1 & 6 & 87837 & 787 \\
+ 2 & 7 & 78 & 5415 \\
+ 3 & 545 & 778 & 7507 \\
+ 4 & 545 & 18744 & 7560 \\
+ 5 & 88 & 788 & 6344 \\ [1ex]
+ \hline
+\end{tabular}
+\caption{Table to test captions and labels}
+\label{table:data}
+\end{table}
+```
+
+![Ourtablelabel.PNG](https://cdn.overleaf.com/learn-scripts/images/2/26/Ourtablelabel.PNG)
+
+[Open an example in Overleaf](https://www.sharelatex.com/project/new/template?zipUrl=/project/58a3101d13712fef4e9df258/download/zip&templateName=Learn%20LaTeX%20in%2020%20minutes:%20Part%2010&compiler=pdflatex)
+
+> 注意：如果您在自己的计算机上使用标题说明和参考，则必须编译两次文档才能使参考正常工作。Overleaf 会自动为您完成此操作。
+
+### 添加目录
+
+创建目录很简单，命令 `\tableofcontents` 为您完成所有的工作：
+
+```latex
+\documentclass{article}
+\usepackage[utf8]{inputenc}
+
+\title{Sections and Chapters}
+\author{Gubert Farnsworth}
+\date{ }
+
+\begin{document}
+
+\maketitle
+
+\tableofcontents
+
+\section{Introduction}
+
+This is the first section.
+
+Lorem  ipsum  dolor  sit  amet,  consectetuer  adipiscing  
+elit.   Etiam  lobortisfacilisis sem.  Nullam nec mi et 
+neque pharetra sollicitudin.  Praesent imperdietmi nec ante. 
+Donec ullamcorper, felis non sodales...
+
+\addcontentsline{toc}{section}{Unnumbered Section}
+\section*{Unnumbered Section}
+
+Lorem ipsum dolor sit amet, consectetuer adipiscing elit.  
+Etiam lobortis facilisissem.  Nullam nec mi et neque pharetra 
+sollicitudin.  Praesent imperdiet mi necante...
+
+\section{Second Section}
+
+Lorem ipsum dolor sit amet, consectetuer adipiscing elit.  
+Etiam lobortis facilisissem.  Nullam nec mi et neque pharetra 
+sollicitudin.  Praesent imperdiet mi necante...
+
+\end{document}
+```
+
+![TableOfContentsEx1.png](https://cdn.overleaf.com/learn-scripts/images/6/6d/TableOfContentsEx1.png)
+
+节，小节和章将自动被包含在目录中。要手动添加条目（例如，当您想要一个未编号的部分时），请使用示例中的命令 `\addcontentsline`。
+
+[Open an example in Overleaf](https://www.sharelatex.com/project/new/template?zipUrl=/project/58a3103d13712fef4e9df25b/download/zip&templateName=Learn%20LaTeX%20in%2020%20minutes:%20Part%2011&compiler=pdflatex)
+
+## 下载你完成的文件
+
+您可以通过从上方的左侧菜单中点击 PDF 下载你完成的 PDF。
+还有一个更快的选择就是单击 PDF 查看器上的 `Download PDF`（下载 PDF）按钮，如下所示。
+
+![Downloadpdf.PNG](https://cdn.overleaf.com/learn-scripts/images/6/6c/Downloadpdf.PNG)

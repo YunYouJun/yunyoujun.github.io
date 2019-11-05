@@ -33,7 +33,7 @@ categories:
 
 尝试翻译一下，顺带练习英文吧。
 
-- [【译】30分钟学会 LaTeX](https://yunyoujun.cn/share/trans-learn-latex-in-30-minutes/)：施工中……
+- [x][【译】30分钟学会 LaTeX](https://yunyoujun.cn/share/trans-learn-latex-in-30-minutes/)
 
 ## 其他
 
