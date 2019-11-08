@@ -525,7 +525,7 @@ Etiam lobortis facilisissem
 
 有关文档结构的更完整讨论，请参见[有关节和章的文章](https://cn.overleaf.com/learn/Sections_and_chapters)。
 
-## 创建表哥
+## 创建表格
 
 ### 在 LaTeX 中创建一个简单的表
 
