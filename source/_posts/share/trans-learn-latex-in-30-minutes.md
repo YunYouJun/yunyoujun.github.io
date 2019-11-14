@@ -1,5 +1,5 @@
 ---
-title: 【译】30分钟学会 LaTeX
+title: 【译】30 分钟学会 LaTeX
 date: 2019-10-28 16:02:36
 updated: 2019-11-05 16:09:36
 tags:
