@@ -70,55 +70,7 @@ plugins=(
 ```
 
 - [oh-my-zsh | wiki](https://github.com/robbyrussell/oh-my-zsh/wiki)
-
-##### [git]
-
-[Plugin:git | wiki](https://github.com/robbyrussell/oh-my-zsh/wiki/Plugin:git)
-
-`git` 中的一些缩写
-
-Example:
-
-|Alias|Command|
-|-----|-------|
-| g | git |
-| ga | git add |
-| gaa | git add -all|
-| gcm | git checkout master |
-| gcmsg | git commit -m |
-
-
-##### [zsh-autosuggestions](https://github.com/zsh-users/zsh-autosuggestions)
-
-[INSTALL.md#oh-myzsh](https://github.com/zsh-users/zsh-autosuggestions/blob/master/INSTALL.md#oh-my-zsh)
-
-命令建议插件
-
-##### incr 自动补全插件
-
-[Incremental completion on zsh](http://mimosa-pudica.net/zsh-incremental.html)
-
-```sh
-mkdir ~/.oh-my-zsh/plugins/incr
-cd ~/.oh-my-zsh/plugins/incr
-wget http://mimosa-pudica.net/src/incr-0.2.zsh
-```
-
-```sh
-# ~/.zshrc 下添加
-# vim ~/.zshrc
-source ~/.oh-my-zsh/plugins/incr/incr-0.2.zsh
-```
-
-##### [autojump](https://github.com/robbyrussell/oh-my-zsh/tree/master/plugins/autojump)
-
-```sh
-sudo apt install autojump
-# usage
-j xxx
-```
-
-##### [zsh-syntax-highlighting](https://github.com/zsh-users/zsh-syntax-highlighting)
+- [oh-my-zsh 常用插件配置指南](https://www.yuque.com/yunyoujun/notes/oh-my-zsh)
 
 #### Other
 
