@@ -30,10 +30,14 @@ categories:
 
 - [Overleaf, Online LaTex Editor](https://www.overleaf.com)
 - [Learn LaTeX in 30 minutes - Overleaf](https://cn.overleaf.com/learn/latex/Learn_LaTeX_in_30_minutes)
+- [【译】30分钟学会 LaTeX](https://yunyoujun.cn/share/trans-learn-latex-in-30-minutes/)(XP，自己翻译的)
 
-尝试翻译一下，顺带练习英文吧。
+### Bibtex
 
-- [x][【译】30分钟学会 LaTeX](https://yunyoujun.cn/share/trans-learn-latex-in-30-minutes/)
+管理参考文献（最喜欢的功能了）
+
+- [Bibliography management in LaTeX](https://www.overleaf.com/learn/latex/Bibliography_management_in_LaTeX)
+- [Bibliography management with bibtex - Overleaf](https://www.overleaf.com/learn/latex/Bibliography_management_with_bibtex)
 
 ## 其他
 
