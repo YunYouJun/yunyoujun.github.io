@@ -83,8 +83,6 @@ export PATH="应用程序路径:$PATH"
 # $PATH 不可丢掉，是环境中别的变量，冒号为分隔符。
 ```
 
-
-
 ### Git
 
 ```sh
@@ -114,11 +112,8 @@ Linux 安装 `Node.js` 的最方便的工具
 
 #### 安装 nvm
 
-```sh
-curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.34.0/install.sh | bash
-# or
-wget -qO- https://raw.githubusercontent.com/nvm-sh/nvm/v0.34.0/install.sh | bash
-```
+> https://github.com/nvm-sh/nvm#installation-and-update
+> 参考官方文档使用最新的安装脚本
 
 如果仍然 `command not found`，可以添加进 `~/.bashrc`, `~/.zshrc`。
 
