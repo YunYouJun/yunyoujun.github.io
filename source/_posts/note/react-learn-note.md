@@ -16,6 +16,14 @@ categories:
 
 - [ ] [入门教程: 认识 React](https://zh-hans.reactjs.org/tutorial/tutorial.html)
 
+### [Next.js](https://nextjs.org/)
+
+React Framework 的各种解决方案
+
+Vue 对应的则是 [Nuxt.js](https://nuxtjs.org/)
+
+- [ ] [Learn - Getting Started | Next.js](https://nextjs.org/learn/basics/getting-started)（英文，UI 简洁，有进度记录，看得很舒服。）
+
 ## Dev Env
 
 ### VSCode Plugin
