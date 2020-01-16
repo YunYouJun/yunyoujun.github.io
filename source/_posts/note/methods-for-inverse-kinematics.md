@@ -33,7 +33,11 @@ categories:
 - [角色动画研究 —— IK的三种结算方法](https://blog.csdn.net/noahzuo/article/details/53908141)
 - [Cyclic Coordinate Descent in 2D](http://www.ryanjuckett.com/programming/cyclic-coordinate-descent-in-2d/)
 
-### p5.js
+### CCD - [p5.js](https://p5js.org/zh-Hans/)
+
+<iframe width="100%" height="500" src="https://editor.p5js.org/YunYouJun/embed/kJJqXPATQ"></iframe>
+
+Editor: <https://editor.p5js.org/YunYouJun/sketches/kJJqXPATQ>
 
 > 代码参考自：[Simple Inverse Kinematics - Dave Pagurek](https://www.davepagurek.com/blog/inverse-kinematics/)
 
@@ -45,11 +49,9 @@ FABRIK 是一种[启发式算法](https://baike.baidu.com/item/%E5%90%AF%E5%8F%9
 
 算法的大致描述看[这里](https://blog.csdn.net/noahzuo/article/details/80188366)也可以理解，就不再多述。
 
-### p5.js
+### FABRIK - [p5.js](https://p5js.org/zh-Hans/)
 
-使用 [p5.js](https://p5js.org/zh-Hans/) 写的 Demo 。
-
-<iframe src="https://editor.p5js.org/YunYouJun/embed/bS8jB3EsC"></iframe>
+<iframe width="100%" height="500" src="https://editor.p5js.org/YunYouJun/embed/bS8jB3EsC"></iframe>
 
 Editor: <https://editor.p5js.org/YunYouJun/sketches/bS8jB3EsC>
 
