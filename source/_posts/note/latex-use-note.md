@@ -31,6 +31,7 @@ categories:
 - [Overleaf, Online LaTex Editor](https://www.overleaf.com)
 - [Learn LaTeX in 30 minutes - Overleaf](https://cn.overleaf.com/learn/latex/Learn_LaTeX_in_30_minutes)
 - [【译】30分钟学会 LaTeX](https://yunyoujun.cn/share/trans-learn-latex-in-30-minutes/)(XP，自己翻译的)
+- [CTeX-org/lshort-zh-cn - 一份（不太）简短的 LaTex 中文介绍](https://github.com/CTeX-org/lshort-zh-cn/releases)
 
 ### Bibtex
 
