@@ -9,15 +9,18 @@ categories:
 date: 2017-08-21 16:46:13
 updated: 2017-08-21 16:46:13
 ---
-# Intro
-
 记录 Git 的一些常用指令与问题解决方案。
 
 <!-- more -->
 
-# 常用指令
+## ref
 
-## 拉取代码
+- [git-tips](https://github.com/git-tips/tips)
+- [Git的奇技淫巧](https://github.com/521xueweihan/git-tips)
+
+## 常用指令
+
+### 拉取代码
 
 - 从远程仓库获取线上代码: `git clone git@github.com:用户名/项目名.git`
 - 关联远程仓库: `git remote add origin git@github.com:xxx/xxx.git` (git clone后已自动关联)
@@ -25,7 +28,7 @@ updated: 2017-08-21 16:46:13
 
 ---
 
-## 远程仓库
+### 远程仓库
 
 - 删除远程仓库地址： `git remote rm origin`
 - 增加远程仓库地址： `git remote add origin git@github.com:xxx/xxx.git` or `git remote add origin https://github.com/xxx/xxx` ( origin 为远程仓库命名)
@@ -41,7 +44,7 @@ git remote add coding git@git.coding.net:xxx/xxx.git
 
 ---
 
-## 代码推送
+### 代码推送
 
 - git 初始化： `git init`
 - 保存到暂存区： `git add -A`
@@ -54,7 +57,7 @@ git remote add coding git@git.coding.net:xxx/xxx.git
 
 ---
 
-## 代码回滚
+### 代码回滚
 
 在Git中，用HEAD表示当前版本，，上一个版本就是HEAD^，上上一个版本就是HEAD^^，当然往上100个版本写100个^比较容易数不过来，所以写成HEAD~100。
 
@@ -70,7 +73,7 @@ git remote add coding git@git.coding.net:xxx/xxx.git
 
 ---
 
-## 分支管理
+### 分支管理
 
 - 显示当前分支 `git branch -v`
 - 显示远程分支 `git remote -v`
@@ -82,7 +85,7 @@ git remote add coding git@git.coding.net:xxx/xxx.git
 - 删除远程分支：`git push origin –-delete 分支名`
 - 修改分支名称：`git branch -m old_branch_name new_branch_name`
 
-## 清除缓存
+### 清除缓存
 
 - `git rm --cached [文件路径]`
   - `-r` 递归
@@ -90,9 +93,9 @@ git remote add coding git@git.coding.net:xxx/xxx.git
   
 Example: `git rm -r --cached .`
 
-# Q&A
+## Q&A
 
-## 合并代码冲突
+### 合并代码冲突
 
 - 如果系统中有一些配置文件在服务器上做了配置修改,然后后续开发又新添加一些配置项的时候,
 在发布这个配置文件的时候,会发生代码冲突:
@@ -120,7 +123,7 @@ git pull
 
 > 参见：[http://blog.csdn.net/iefreer/article/details/7679631](http://blog.csdn.net/iefreer/article/details/7679631)
 
-## 提交至 GitHub 时出现 invalid-email-address
+### 提交至 GitHub 时出现 invalid-email-address
 
 - 查看git设置：`cat $HOME/.gitconfig`
 - 正常情况应显示 [user]name 与 email 的信息。
@@ -136,7 +139,7 @@ git config --global user.email "Git账户邮箱"
 
 > [GitHub Fix invalid email address in Repository History](https://github.com/kadishmal/tilchi.com/wiki/GitHub-Fix-invalid-email-address-in-Repository-History)
 
-## 合并两个不同的项目，出现错误
+### 合并两个不同的项目，出现错误
 
 - `fatal: refusing to merge unrelated histories`
 - 因为他们是两个不同的项目，要把两个不同的项目合并，git需要添加一句代码，在`git pull`后添加`--allow-unrelated-histories`
@@ -144,7 +147,7 @@ git config --global user.email "Git账户邮箱"
 
 > 参见：[http://blog.csdn.net/lindexi_gd/article/details/52554159](http://blog.csdn.net/lindexi_gd/article/details/52554159)
 
-## 删除已经上传至 GitHub 中的文件
+### 删除已经上传至 GitHub 中的文件
 
 上传项目的时候有些需要忽略的文件夹并未加入 `.gitignore` 文件中，导致上传了一些并不想上传的文件。
 
@@ -158,7 +161,7 @@ git commit -m 'delete .idea dir'
 git push -u origin master
 ```
 
-## 修改已提交内容
+### 修改已提交内容
 
 ```sh
 git commit --amend
@@ -210,7 +213,7 @@ git push <remote> <branch>
 # Example: git push origin add-something
 ```
 
-## 增加子模块
+### 增加子模块
 
 ```sh
 git submodule add https://github.com/XXX/XXX
@@ -220,9 +223,9 @@ git submodule add https://github.com/XXX/XXX
 
 ---
 
-# 详解
+## 详解
 
-## git push
+### git push
 
 - `git push origin master`
 
@@ -262,13 +265,13 @@ git push --all origin
 
 > 参见: [http://www.yiibai.com/git/git_push.html](http://www.yiibai.com/git/git_push.html)
 
-## git add
+### git add
 
 - `git add -u`  提交被修改(modified)和被删除(deleted)文件，不包括新文件(new)
 - `git add .`  提交新文件(new)和被修改(modified)文件，不包括被删除(deleted)文件
 - `git add -A`  提交所有变化（`git add --all` 的缩写）
 
-## git reset
+### git reset
 
 [git reset | Git Docs](https://git-scm.com/docs/git-reset)
 
@@ -276,15 +279,15 @@ index 也被称为 staging area ，是指一整套即将被下一个提交的文
 
 `git add -A` 便是将当前修改文件加入 staging area 。
 
-### --mixed
+#### --mixed
 
 默认方式，回退到某个版本，只保留源码，回退 commit 和 index 信息。
 
-### --hard
+#### --hard
 
 彻底回退到某个版本，本地源码变为上一个版本内容。
 
-### --soft
+#### --soft
 
 回退到某个版本，只回退 commit 的信息，保留 index 信息。
 譬如如果还要提交，直接 commit 即可。
