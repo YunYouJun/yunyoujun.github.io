@@ -53,3 +53,20 @@ Demo:
 
 - [张鑫旭博文：深入理解css中的层叠上下文和层叠顺序](https://link.jianshu.com/?t=http://www.zhangxinxu.com/wordpress/2016/01/understand-css-stacking-context-order-z-index/)
 - [Segmentfault回答：Transform 引起的 z-index "失效"](https://link.jianshu.com/?t=https://segmentfault.com/q/1010000002480824)
+
+### img 与父级元素下边框存在空隙
+
+Demo:
+
+<p class="codepen" data-height="265" data-theme-id="default" data-default-tab="html,result" data-user="YunYouJun" data-slug-hash="dyPxmGY" style="height: 265px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;" data-pen-title="img space with father">
+  <span>See the Pen <a href="https://codepen.io/YunYouJun/pen/dyPxmGY">
+  img space with father</a> by YunYouJun (<a href="https://codepen.io/YunYouJun">@YunYouJun</a>)
+  on <a href="https://codepen.io">CodePen</a>.</span>
+</p>
+
+可以看到在底部，背景的红色透了出来。
+其主要原因是文字默认的行高所产生的问题。（参见 demo）
+
+**解决方案**：默认的 `verticacl-align` 属性为 `baseline`，我们只需要**为 `img` **添加 `verticacl-align: bottom` （`middle | top | bottom` 都可以）。
+
+> [CSS深入理解vertical-align和line-height的基友关系](https://www.zhangxinxu.com/wordpress/2015/08/css-deep-understand-vertical-align-and-line-height/)
