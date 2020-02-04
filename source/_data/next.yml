@@ -605,8 +605,8 @@ gitment:
   language: zh-CN # Force language, or auto switch by theme
   github_user: YunYouJun # MUST HAVE, Your Github Username
   github_repo: hexo-blog-comment # MUST HAVE, The name of the repo you use to store Gitment comments
-  client_id: '52626b3948c0467c8ac5' # MUST HAVE, Github client id for the Gitment
-  client_secret: 'c7d1cb09c82a8848a649ab713ea1277f1b4b07d9' # EITHER this or proxy_gateway, Github access secret token for the Gitment
+  client_id: '' # MUST HAVE, Github client id for the Gitment
+  client_secret: '' # EITHER this or proxy_gateway, Github access secret token for the Gitment
   proxy_gateway: # Address of api proxy, See: https://github.com/aimingoo/intersect
   redirect_protocol: # Protocol of redirect_uri with force_redirect_protocol when mint enabled
 
@@ -617,8 +617,8 @@ gitalk:
   enable: true
   github_id: YunYouJun # Github repo owner
   repo: yunyoujun.github.io # Repository name to store issues.
-  client_id: ff03975ca04a3232ce1a # Github Application Client ID
-  client_secret: aefe7b1d3f4b2af31110d8f364d4805d48bf284f # Github Application Client Secret
+  client_id: # Github Application Client ID
+  client_secret: # Github Application Client Secret
   admin_user: YunYouJun # GitHub repo owner and collaborators, only these guys can initialize github issues
   distraction_free_mode: true # Facebook-like distraction free mode
 
