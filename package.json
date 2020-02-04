@@ -4,27 +4,28 @@
   "version": "1.1.0",
   "private": true,
   "hexo": {
-    "version": "3.9.0"
+    "version": "4.2.0"
   },
   "dependencies": {
-    "hexo": "^3.9.0",
+    "hexo": "^4.2.0",
     "hexo-algolia": "^1.3.1",
-    "hexo-deployer-git": "^1.0.0",
-    "hexo-generator-archive": "^0.1.4",
-    "hexo-generator-category": "^0.1.3",
-    "hexo-generator-feed": "^1.2.2",
-    "hexo-generator-index": "^0.2.0",
+    "hexo-deployer-git": "^2.1.0",
+    "hexo-generator-archive": "^1.0.0",
+    "hexo-generator-category": "^1.0.0",
+    "hexo-generator-feed": "^2.2.0",
+    "hexo-generator-index": "^1.0.0",
     "hexo-generator-search": "^2.4.0",
-    "hexo-generator-sitemap": "^1.2.0",
-    "hexo-generator-tag": "^0.2.0",
+    "hexo-generator-sitemap": "^2.0.0",
+    "hexo-generator-tag": "^1.0.0",
     "hexo-render-pug": "^2.1.4",
-    "hexo-renderer-marked": "^0.3.2",
-    "hexo-renderer-stylus": "^0.3.1",
-    "hexo-symbols-count-time": "^0.6.0"
+    "hexo-renderer-marked": "^2.0.0",
+    "hexo-renderer-stylus": "^1.1.0",
+    "hexo-symbols-count-time": "^0.7.0"
   },
   "devDependencies": {
+    "eslint-config-hexo": "^4.1.0",
     "hexo-browsersync": "^0.3.0",
-    "hexo-server": "^0.3.3"
+    "hexo-server": "^1.0.0"
   },
   "scripts": {
     "algolia": "hexo clean && hexo algolia",
