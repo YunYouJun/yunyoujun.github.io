@@ -10,6 +10,10 @@ categories:
   - 云游的小笔记
 ---
 
+LaTeX 使用过程的一些笔记与资源
+
+<!-- more -->
+
 ## 前言
 
 想起毕业论文虽然是用 [LaTeX](https://baike.baidu.com/item/LaTeX) 写的，还特地改了一个模版出来。
@@ -23,8 +27,6 @@ categories:
 便打算好好磨练一番技巧。
 
 ![Overleaf + ShareLaTeX](https://www.sharelatex.com/img/ol_plus_sl.png)
-
-<!-- more -->
 
 ## 资源
 

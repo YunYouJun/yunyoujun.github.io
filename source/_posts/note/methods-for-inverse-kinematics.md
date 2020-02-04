@@ -10,13 +10,12 @@ categories:
   - 云游的小笔记
 ---
 
+<!-- more -->
 
 动力学主要分为正向动力学（FK）和反向动力学（IK）。
 正向动力学实现起来十分简单，了解点基本原理，或者网上一搜，都能写出来。
 反向动力学中比较流行的方法则是 Cyclic Coordinate Descent（CCD）和 [Forward And Backward Reaching Inverse Kinematics](https://www.sciencedirect.com/science/article/pii/S1524070311000178) (FABRIK)。
 还有几何分析与雅可比矩阵的方法，计算起来比较复杂，用的不是太多。
-
-<!-- more -->
 
 - [Inverse kinematics](https://en.wikipedia.org/wiki/Inverse_kinematics)
 - [Making Kine More Flexible](http://www.cs.cmu.edu/~15464-s13/lectures/lecture6/jlander_gamedev_nov98.pdf)
