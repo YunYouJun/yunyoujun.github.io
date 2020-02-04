@@ -11,7 +11,7 @@ updated: 2017-08-20 22:48:22
 ---
 # Trap
 
-采用 [lnmp一键安装包](http://www.yunyoujun.cn/2017/08/20/lnmp%E4%B8%80%E9%94%AE%E5%AE%89%E8%A3%85%E5%8C%85/) 部署基础环境。
+采用 [lnmp一键安装包](https://yunyoujun.cn/2017/08/20/lnmp%E4%B8%80%E9%94%AE%E5%AE%89%E8%A3%85%E5%8C%85/) 部署基础环境。
 
 <!-- more -->
 
