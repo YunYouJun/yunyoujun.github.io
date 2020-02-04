@@ -33,8 +33,8 @@ Some Commands Record.
 
 #### Example
 
-打开网址 <www.yunyoujun.cn>：
-`start www.yunyoujun.cn`
+打开网址 <yunyoujun.cn>：
+`start yunyoujun.cn`
 
 打开当前目录：
 `explorer .`
