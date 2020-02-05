@@ -21,7 +21,7 @@ url: https://yunyoujun.cn
 root: /
 permalink:
   :title/
-  # :category/:title 
+  # :category/:title
 permalink_defaults:
   lang: en
 
@@ -50,17 +50,17 @@ highlight:
   line_number: true
   auto_detect: false
   tab_replace:
-  
+
 # Home page setting
 # path: Root path for your blogs index page. (default = '')
 # per_page: Posts displayed per page. (0 = disable pagination)
 # order_by: Posts order. (Order by date descending by default)
 index_generator:
-  path: ''
+  path: ""
   per_page: 6
-  order_by: -updated 
+  order_by: -updated
   # - mean descend
-  
+
 # Category & Tag
 default_category: uncategorized
 category_map:
@@ -88,11 +88,11 @@ theme: starry
 # https://github.com/hexojs/hexo-deployer-git
 deploy:
   type: git
-  repo: 
+  repo:
     github: https://github.com/YunYouJun/yunyoujun.github.io.git,master
     coding: https://git.dev.tencent.com/YunYouJun/yunyoujun.coding.me.git,master
-  message: 
-  extend_dirs: 
+  message:
+  extend_dirs:
 
 # plugins
 symbols_count_time:
@@ -109,7 +109,7 @@ feed:
   hub:
   content:
   content_limit: 140
-  content_limit_delim: ' '
+  content_limit_delim: " "
   order_by: -updated
   icon: icon.png
 
@@ -119,14 +119,14 @@ sitemap:
 
 # https://github.com/oncletom/hexo-algolia
 algolia:
-  applicationID: 'CJXXAGRCYN'
-  apiKey: '55c104ea148641be5ec329b8bc83de99'
-  indexName: 'my-hexo-blog'
+  applicationID: "CJXXAGRCYN"
+  apiKey: "55c104ea148641be5ec329b8bc83de99"
+  indexName: "my-hexo-blog"
   chunkSize: 5000
 
 # https://github.com/hexojs/hexo-renderer-markdown-it
 markdown:
   anchors:
-    permalink: true            
+    permalink: true
     permalinkClass: header-anchor
-    permalinkSymbol: '#'
+    permalinkSymbol: "#"
