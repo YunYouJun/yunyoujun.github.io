@@ -34,8 +34,7 @@ categories:
 
 ### CCD - [p5.js](https://p5js.org/zh-Hans/)
 
-<iframe width="100%" height="500" src="https://editor.p5js.org/YunYouJun/embed/kJJqXPATQ"></iframe>
-
+Fullscreen: <https://editor.p5js.org/YunYouJun/full/kJJqXPATQ>
 Editor: <https://editor.p5js.org/YunYouJun/sketches/kJJqXPATQ>
 
 > 代码参考自：[Simple Inverse Kinematics - Dave Pagurek](https://www.davepagurek.com/blog/inverse-kinematics/)
@@ -50,8 +49,7 @@ FABRIK 是一种[启发式算法](https://baike.baidu.com/item/%E5%90%AF%E5%8F%9
 
 ### FABRIK - [p5.js](https://p5js.org/zh-Hans/)
 
-<iframe width="100%" height="500" src="https://editor.p5js.org/YunYouJun/embed/bS8jB3EsC"></iframe>
-
+Fullscreen: <https://editor.p5js.org/YunYouJun/embed/bS8jB3EsC>
 Editor: <https://editor.p5js.org/YunYouJun/sketches/bS8jB3EsC>
 
 > 代码参考自：[Inverse Kinematics - Fixed Point - Coding Challenge #64.3 · The Coding Train](https://thecodingtrain.com/CodingChallenges/064.3-inverse-kinematics-fixed-point)
