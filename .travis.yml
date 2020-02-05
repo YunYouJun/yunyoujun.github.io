@@ -22,10 +22,11 @@ script:
   - npm run predeploy
 
 deploy:
+  edge: true
   provider: pages
   token: $GH_TOKEN
-  target-branch: master
-  local-dir: public
+  target_branch: master
+  local_dir: public
   on:
     branch: hexo
 
