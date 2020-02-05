@@ -18,7 +18,7 @@ sh backup.sh
 ## BackUp
 
 - [GitHub](https://github.com/YunYouJun/yunyoujun.github.io)
-- [Coding](https://e.coding.net/YunYouJun/yunyoujun.coding.me.git)
+- [Coding](https://e.coding.net/YunYouJun/yunyoujun.coding.me)
 
 ```sh
 git clone https://github.com/YunYouJun/yunyoujun.github.io
@@ -26,10 +26,21 @@ git clone https://github.com/YunYouJun/yunyoujun.github.io
 git remote add coding https://e.coding.net/YunYouJun/yunyoujun.coding.me.git
 ```
 
+### 同时推送
+
+```sh
+git remote set-url --add origin https://e.coding.net/YunYouJun/yunyoujun.coding.me.git
+```
+
 ## Build
 
-- use Travis-ci
-- git clone https://github.com/YunYouJun/hexo-theme-starry themes/starry
+[yunyoujun.github.io - Travis CI](https://www.travis-ci.com/YunYouJun/yunyoujun.github.io)
+
+### Install Theme
+
+```sh
+git clone https://github.com/YunYouJun/hexo-theme-starry themes/starry
+```
 
 ## Commit Lint
 
