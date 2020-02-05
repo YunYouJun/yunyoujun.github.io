@@ -72,6 +72,14 @@ categories:
 
 ![set-different-cname-for-domain](https://cos.yunyoujun.cn/blog/set-different-cname-for-domain.png)
 
+### 配置缓存
+
+默认的缓存时间非常长，不配置的话就会导致 CDN 的文件长时间没有更新。
+
+可以参见腾讯云文档 [缓存配置问题](https://cloud.tencent.com/document/product/228/2968#.E7.BC.93.E5.AD.98.E9.85.8D.E7.BD.AE.E9.97.AE.E9.A2.98)
+
+也可以在 [刷新预热](https://console.cloud.tencent.com/cdn/refresh) 处手动刷新。
+
 ## 后话
 
 测试发现首页基本可以秒开，速度确实不错。
