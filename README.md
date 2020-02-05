@@ -9,28 +9,31 @@
 ```sh
 npm run backup
 # 同时推送至 GitHub 与 Coding 的 hexo 分支
-# 线上 Travis 会自动进行构建生成静态页面推送至 GitHub 与 Coding 的 master 分支
+# 线上 Travis 会自动进行构建生成静态页面推送至 GitHub
 # or
-sh backup.sh 'change info'
+sh backup.sh
+# sh backup.sh 'change info'
 ```
 
 ## BackUp
 
 - [GitHub](https://github.com/YunYouJun/yunyoujun.github.io)
-- [Coding](https://git.dev.tencent.com/YunYouJun/yunyoujun.coding.me.git)
+- [Coding](https://e.coding.net/YunYouJun/yunyoujun.coding.me.git)
 
 ```sh
 git clone https://github.com/YunYouJun/yunyoujun.github.io
 # coding
-git remote add coding https://dev.tencent.com/u/YunYouJun/p/yunyoujun.coding.me
+git remote add coding https://e.coding.net/YunYouJun/yunyoujun.coding.me.git
 ```
 
 ## Build
 
 - use Travis-ci
-- git clone themes/next
+- git clone https://github.com/YunYouJun/hexo-theme-starry themes/starry
 
 ## Commit Lint
+
+[gitmoji](https://gitmoji.carloscuesta.me/)
 
 ```sh
 git commit -m 'xxx'
@@ -39,20 +42,43 @@ git commit -m 'xxx'
 ### 更新博客内容
 
 ```sh
-blog(post): update
+📝 update
 ```
 
-### 页面
+### Fixing typos
 
 ```sh
-blog(page): xxx
+✏️ typo
+```
+
+### UI
+
+```sh
+💄 xxx
+```
+
+### Improving structure / format of the code
+
+```sh
+🎨 xxx
+```
+
+### Fixing CI Build
+
+```sh
+💚 travis
+```
+
+### Changing configuration files
+
+```sh
+🔧 config
 ```
 
 ### Other
 
 ```sh
 chore(xxx): xxx
-xxx: xxx
 ```
 
 ## FAQ
