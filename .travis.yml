@@ -2,15 +2,7 @@ language: node_js
 node_js:
   - lts/*
 
-# cache:
-#   directories:
-#   - node_modules
-
-branches:
-  only:
-    - hexo
-
-before_install: 
+before_install:
   - export TZ='Asia/Shanghai'
 
 install:
@@ -22,23 +14,9 @@ script:
   - npm run predeploy
 
 deploy:
-  edge: true
   provider: pages
   token: $GH_TOKEN
   target_branch: master
   local_dir: public
   on:
     branch: hexo
-
-after_success:
-  - cd public
-  - git init
-  - git config user.name "YunYouJun"
-  - git config user.email "me@yunyoujun.cn"
-  - git add .
-  - git commit -m "deploy hexo blog"
-  - git push --force "https://yunyoujun:${CODING_TOKEN}@${CD_REF}" master:master
-
-env:
-  global:
-    - CD_REF='git.dev.tencent.com/YunYouJun/yunyoujun.coding.me.git'
