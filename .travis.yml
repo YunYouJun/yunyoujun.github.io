@@ -15,6 +15,7 @@ script:
   - npm run predeploy
 
 deploy:
+  edge: true
   provider: pages
   token: $GH_TOKEN
   target_branch: master
