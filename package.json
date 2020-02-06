@@ -1,6 +1,6 @@
 {
   "name": "yunyoujun.github.io",
-  "description": "YunYouJun Hexo Blog",
+  "description": "YunYouJun Blog",
   "version": "1.1.0",
   "private": true,
   "hexo": {
@@ -35,5 +35,24 @@
     "backup": "sh backup.sh"
   },
   "author": "YunYouJun <me@yunyoujun.cn>",
+  "homepage": "https://yunyoujun.cn",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/YunYouJun/yunyoujun.github.io.git"
+  },
+  "bugs": {
+    "url": "https://github.com/YunYouJun/ak-ui/issues"
+  },
+  "files": [
+    "source/_posts/*"
+  ],
+  "keywords": [
+    "yunyoujun.cn",
+    "YunYouJun",
+    "云游君",
+    "Blog",
+    "博客",
+    "云游君的小站"
+  ],
   "license": "CC BY-NC-SA 4.0"
 }
