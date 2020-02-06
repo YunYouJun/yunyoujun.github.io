@@ -56,7 +56,7 @@ extra parameters or packages included.
 \end{document}
 ```
 
-![Firstdocsmall.PNG](https://cdn.overleaf.com/learn-scripts/images/0/01/Firstdocsmall.PNG)
+![Firstdocsmall.PNG](https://sharelatex-wiki-cdn-671420.c.cdn77.org/learn-scripts/images/0/01/Firstdocsmall.PNG)
 
 你可以看到 LaTeX 已经通过缩进段落的第一行，为你处理了第一段格式。
 让我们来仔细看一下我们代码的每个部分的功能。
@@ -167,7 +167,7 @@ We have now added a title, author and date to our first \LaTeX{} document!
 \end{document}
 ```
 
-![Learnlatex1.PNG](https://cdn.overleaf.com/learn-scripts/images/e/e9/Learnlatex1.PNG)
+![Learnlatex1.PNG](https://sharelatex-wiki-cdn-671420.c.cdn77.org/learn-scripts/images/e/e9/Learnlatex1.PNG)
 
 [Open an example in Overleaf](https://www.sharelatex.com/project/new/template?zipUrl=/project/582dbeacf220531c2d4bdaaa/download/zip&templateName=Learn%20LaTeX%20in%2020%20minutes:%20Part%202&compiler=pdflatex)
 
@@ -187,7 +187,7 @@ We have now added a title, author and date to our first \LaTeX{} document!
 \end{document}
 ```
 
-![Learnlatex1.PNG](https://cdn.overleaf.com/learn-scripts/images/e/e9/Learnlatex1.PNG)
+![Learnlatex1.PNG](https://sharelatex-wiki-cdn-671420.c.cdn77.org/learn-scripts/images/e/e9/Learnlatex1.PNG)
 
 [Open an example in Overleaf](https://www.sharelatex.com/project/new/template?zipUrl=/project/58a308db13712fef4e9deff7/download/zip&templateName=Learn%20LaTeX%20in%2020%20minutes:%20Part%203&compiler=pdflatex)
 
@@ -207,7 +207,7 @@ discoveries in \underline{science}
 were made by \textbf{\textit{accident}}.
 ```
 
-![Biu1.png](https://cdn.overleaf.com/learn-scripts/images/a/a9/Biu1.png)
+![Biu1.png](https://sharelatex-wiki-cdn-671420.c.cdn77.org/learn-scripts/images/a/a9/Biu1.png)
 
 另一个非常有用的命令是 `\emph{...}` 命令。实际上，`\emph` 命令使用其参数的操作取决于上下文 - 在普通文本中，强调的文本是斜体，但是如果在斜体文本中使用，则此行为是相反的 - 请参见以下示例：
 
@@ -225,7 +225,7 @@ in science
 were made by accident.}
 ```
 
-![Biu5.png](https://cdn.overleaf.com/learn-scripts/images/5/5d/Biu5.png)
+![Biu5.png](https://sharelatex-wiki-cdn-671420.c.cdn77.org/learn-scripts/images/5/5d/Biu5.png)
 
 此外，某些软件包，例如 [`Beamer`](https://cn.overleaf.com/learn/Beamer)，更改了 `\emph` 命令的行为方式。
 
@@ -254,7 +254,7 @@ There's a picture of a galaxy above
 \end{document}
 ```
 
-![InsertingImagesEx1.png](https://cdn.overleaf.com/learn-scripts/images/9/9d/InsertingImagesEx1.png)
+![InsertingImagesEx1.png](https://sharelatex-wiki-cdn-671420.c.cdn77.org/learn-scripts/images/9/9d/InsertingImagesEx1.png)
 
 [Open an example in Overleaf](https://www.sharelatex.com/project/new/template?zipUrl=/project/58a30b7413712fef4e9df0a8/download/zip&templateName=Learn%20LaTeX%20in%2020%20minutes:%20Part%205&compiler=pdflatex)
 
@@ -289,7 +289,7 @@ function grows near 0. Also, in the page \pageref{fig:mesh1}
 is the same example.
 ```
 
-![InsertingImages.PNG](https://cdn.overleaf.com/learn-scripts/images/2/25/InsertingImages.PNG)
+![InsertingImages.PNG](https://sharelatex-wiki-cdn-671420.c.cdn77.org/learn-scripts/images/2/25/InsertingImages.PNG)
 
 [Open an example in Overleaf](https://www.sharelatex.com/project/new/template?zipUrl=/project/58a30c5613712fef4e9df0e8/download/zip&templateName=Learn%20LaTeX%20in%2020%20minutes:%20Part%206&compiler=pdflatex)
 
@@ -322,7 +322,7 @@ is the same example.
 \end{itemize}
 ```
 
-![Itemize.png](https://cdn.overleaf.com/learn-scripts/images/e/ea/Itemize.png)
+![Itemize.png](https://sharelatex-wiki-cdn-671420.c.cdn77.org/learn-scripts/images/e/ea/Itemize.png)
 
 默认情况下，各个独立的条目都用黑点标示，即所谓的项目符号。条目中的文本可以有任意长度。
 
@@ -339,7 +339,7 @@ is the same example.
 \end{enumerate}
 ```
 
-![Enumerate.png](https://cdn.overleaf.com/learn-scripts/images/3/3a/Enumerate.png)
+![Enumerate.png](https://sharelatex-wiki-cdn-671420.c.cdn77.org/learn-scripts/images/3/3a/Enumerate.png)
 
 与无序列表一样，每个条目之前必须带有控制序列 `\item`，它将自动生成标记该项目的数字。枚举标签由从 1 开始的序列号组成。
 
@@ -357,7 +357,7 @@ In physics, the mass-energy equivalence is stated
 by the equation $E=mc^2$, discovered in 1905 by Albert Einstein.
 ```
 
-![Einstein1.png](https://cdn.overleaf.com/learn-scripts/images/d/db/Einstein1.png)
+![Einstein1.png](https://sharelatex-wiki-cdn-671420.c.cdn77.org/learn-scripts/images/d/db/Einstein1.png)
 
 要使用 `inline` 模式来放置方程式，请使用以下定界符之一：`\( ... \)`，`$ ... $` 或 `\begin{math} ... \end{math}`。它们都能够起作用，选择那种取决于个人口味。
 
@@ -376,7 +376,7 @@ E=m
 \end{equation}
 ```
 
-![Einstein2.png](https://cdn.overleaf.com/learn-scripts/images/3/3a/Einstein2.png)
+![Einstein2.png](https://sharelatex-wiki-cdn-671420.c.cdn77.org/learn-scripts/images/3/3a/Einstein2.png)
 
 要在 `display` 模式下打印方程式，请使用以下定界符之一：`\[ ... \]`，`\begin{displaymath} ... \end{displaymath}` 或 `\begin{equation} ... \end{equation}`。
 [不鼓励](https://texfaq.org/FAQ-dolldoll)使用 `$$ ... $$`，因为它会产生不一致的间距，并且和某些数学程序包一起使用时可能表现得不是很好。
@@ -402,7 +402,7 @@ Lower case Greek letters are written as $\omega$ $\delta$ etc. while upper case 
 Mathematical operators are prefixed with a backslash as $\sin(\beta)$, $\cos(\alpha)$, $\log(x)$ etc.
 ```
 
-![Math.PNG](https://cdn.overleaf.com/learn-scripts/images/2/22/Math.PNG)
+![Math.PNG](https://sharelatex-wiki-cdn-671420.c.cdn77.org/learn-scripts/images/2/22/Math.PNG)
 
 [Open an example in Overleaf](https://www.sharelatex.com/project/new/template?zipUrl=/project/58a30cfd13712fef4e9df123/download/zip&templateName=Learn%20LaTeX%20in%2020%20minutes:%20Part%207&compiler=pdflatex)
 
@@ -440,7 +440,7 @@ document. A brief introduction about the main subject.
 \end{document}
 ```
 
-![Abstractsmall.PNG](https://cdn.overleaf.com/learn-scripts/images/d/db/Abstractsmall.PNG)
+![Abstractsmall.PNG](https://sharelatex-wiki-cdn-671420.c.cdn77.org/learn-scripts/images/d/db/Abstractsmall.PNG)
 
 [Open an example in Overleaf](https://www.sharelatex.com/project/new/template?zipUrl=/project/58a30dd713712fef4e9df14e/download/zip&templateName=Learn%20LaTeX%20in%2020%20minutes:%20Part%208&compiler=pdflatex)
 
@@ -460,7 +460,7 @@ This line will start a second Paragraph.
 \end{document}
 ```
 
-![Abstractnonewline.PNG](https://cdn.overleaf.com/learn-scripts/images/d/d3/Abstractnonewline.PNG)
+![Abstractnonewline.PNG](https://sharelatex-wiki-cdn-671420.c.cdn77.org/learn-scripts/images/d/d3/Abstractnonewline.PNG)
 
 [Open an example in Overleaf](https://www.sharelatex.com/project/new/template?zipUrl=/project/58a30dd713712fef4e9df14e/download/zip&templateName=Learn%20LaTeX%20in%2020%20minutes:%20Part%208&compiler=pdflatex)
 
@@ -504,7 +504,7 @@ Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
 Etiam lobortis facilisissem
 ```
 
-![Sections1.PNG](https://cdn.overleaf.com/learn-scripts/images/7/7c/Sections1.PNG)
+![Sections1.PNG](https://sharelatex-wiki-cdn-671420.c.cdn77.org/learn-scripts/images/7/7c/Sections1.PNG)
 
 [Open an example in Overleaf](https://www.sharelatex.com/project/new/template?zipUrl=/project/58a30e7b13712fef4e9df182/download/zip&templateName=Learn%20LaTeX%20in%2020%20minutes:%20Part%209&compiler=pdflatex)
 
@@ -541,7 +541,7 @@ Etiam lobortis facilisissem
 \end{center}
 ```
 
-![TablesEx1.png](https://cdn.overleaf.com/learn-scripts/images/c/c2/TablesEx1.png)
+![TablesEx1.png](https://sharelatex-wiki-cdn-671420.c.cdn77.org/learn-scripts/images/c/c2/TablesEx1.png)
 
 `tabular`（表格）环境是 LaTeX 创建表格的默认方法。您必须为此环境指定一个参数，在这种情况下为 `{c c c}`。
 这告诉 LaTeX 这里将有三列，并且每列中的文本必须居中。您也可以使用 `r` 将文本向右对齐，使用 `l` 进行左对齐。
@@ -566,7 +566,7 @@ Etiam lobortis facilisissem
 \end{center}
 ```
 
-![TablesEx2.png](https://cdn.overleaf.com/learn-scripts/images/2/25/TablesEx2.png)
+![TablesEx2.png](https://sharelatex-wiki-cdn-671420.c.cdn77.org/learn-scripts/images/2/25/TablesEx2.png)
 
 您可以使用水平线命令 `\hline` 和垂直线参数 `|` 添加边框。
 
@@ -595,7 +595,7 @@ Etiam lobortis facilisissem
 \end{center}
 ```
 
-![TablesEx3.png](https://cdn.overleaf.com/learn-scripts/images/2/2c/TablesEx3.png)
+![TablesEx3.png](https://sharelatex-wiki-cdn-671420.c.cdn77.org/learn-scripts/images/2/2c/TablesEx3.png)
 
 有时在 LaTeX 中创建表格可能会有些棘手，因此您可能想使用 [TablesGenerator.com](https://www.tablesgenerator.com/) 在线工具导出表格的 [LaTeX] 代码。`File > Paste table data`（文件 > 粘贴表格数据）选项使您可以从电子表格应用程序复制和粘贴数据。
 
@@ -626,7 +626,7 @@ Table \ref{table:data} is an example of referenced \LaTeX{} elements.
 \end{table}
 ```
 
-![Ourtablelabel.PNG](https://cdn.overleaf.com/learn-scripts/images/2/26/Ourtablelabel.PNG)
+![Ourtablelabel.PNG](https://sharelatex-wiki-cdn-671420.c.cdn77.org/learn-scripts/images/2/26/Ourtablelabel.PNG)
 
 [Open an example in Overleaf](https://www.sharelatex.com/project/new/template?zipUrl=/project/58a3101d13712fef4e9df258/download/zip&templateName=Learn%20LaTeX%20in%2020%20minutes:%20Part%2010&compiler=pdflatex)
 
@@ -675,7 +675,7 @@ sollicitudin.  Praesent imperdiet mi necante...
 \end{document}
 ```
 
-![TableOfContentsEx1.png](https://cdn.overleaf.com/learn-scripts/images/6/6d/TableOfContentsEx1.png)
+![TableOfContentsEx1.png](https://sharelatex-wiki-cdn-671420.c.cdn77.org/learn-scripts/images/6/6d/TableOfContentsEx1.png)
 
 节，小节和章将自动被包含在目录中。要手动添加条目（例如，当您想要一个未编号的部分时），请使用示例中的命令 `\addcontentsline`。
 
@@ -686,4 +686,4 @@ sollicitudin.  Praesent imperdiet mi necante...
 您可以通过从上方的左侧菜单中点击 PDF 下载你完成的 PDF。
 还有一个更快的选择就是单击 PDF 查看器上的 `Download PDF`（下载 PDF）按钮，如下所示。
 
-![Downloadpdf.PNG](https://cdn.overleaf.com/learn-scripts/images/6/6c/Downloadpdf.PNG)
+![Downloadpdf.PNG](https://sharelatex-wiki-cdn-671420.c.cdn77.org/learn-scripts/images/6/6c/Downloadpdf.PNG)
