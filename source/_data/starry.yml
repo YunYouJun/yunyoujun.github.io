@@ -4,7 +4,7 @@ favicon: /favicon.ico
 avatar:
   url: /images/avatar.jpg
   # If true, the avatar would be dispalyed in circle.
-  rounded: false
+  rounded: true
   # The value of opacity should be choose from 0 to 1 to set the opacity of the avatar.
   opacity: 1
 
@@ -124,6 +124,7 @@ symbols_count_time:
 
 algolia_search:
   enable: true
+  src: /js/search/algolia-search.js
   hits:
     per_page: 10 # the number of search results per page
 
