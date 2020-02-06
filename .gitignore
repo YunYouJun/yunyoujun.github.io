@@ -1,9 +1,15 @@
+# custom
 .DS_Store
 Thumbs.db
-db.json
-*.log
+temp/
+
+# dev
 node_modules/
+*.log
+
+# dist
 public/
+db.json
 .deploy*/
 travis_rsa
 travis_rsa.pub
