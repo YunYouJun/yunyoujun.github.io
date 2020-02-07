@@ -8,7 +8,7 @@ before_install:
 
 install:
   - npm install
-  - git clone https://github.com/YunYouJun/hexo-theme-starry.git themes/starry
+  - git clone https://github.com/YunYouJun/hexo-theme-yun.git themes/yun
 
 script:
   - npm run algolia

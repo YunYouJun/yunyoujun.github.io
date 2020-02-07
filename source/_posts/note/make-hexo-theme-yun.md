@@ -1,5 +1,5 @@
 ---
-title: hexo-theme-starry
+title: hexo-theme-yun
 date: 2019-04-27 12:00:00
 updated: 2019-04-27 12:00:00
 tags:
@@ -9,7 +9,7 @@ categories:
   - 云游的小笔记
 ---
 
-Hexo-Theme-Starry 制作进行中~
+Hexo-Theme-Yun 制作进行中~
 
 ## 前言
 
@@ -23,6 +23,10 @@ Hexo-Theme-Starry 制作进行中~
 而如今，诸事已毕，终于腾出空来。
 便决定开发一款专属于自己的主题。
 暂且命名为 [hexo-theme-starry](https://github.com/YunYouJun/hexo-theme-starry)。
+
+现更名为 [hexo-theme-yun](https://github.com/YunYouJun/hexo-theme-yun)。
+由于自己的拖延症，发现被此后的一位朋友写了重名的主题提交到 Hexo 了。
+（= =，亏我当初还特意搜了下没有重名才起叫这个的。）
 
 然而，其实还并没有写多少，所以只是占位与预告。
 

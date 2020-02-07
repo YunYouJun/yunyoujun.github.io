@@ -39,7 +39,7 @@ git remote set-url --add origin https://e.coding.net/YunYouJun/yunyoujun.coding.
 ### Install Theme
 
 ```sh
-git clone https://github.com/YunYouJun/hexo-theme-starry themes/starry
+git clone https://github.com/YunYouJun/hexo-theme-yun themes/yun
 ```
 
 ## Commit Lint
