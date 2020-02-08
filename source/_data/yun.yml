@@ -2,7 +2,7 @@ favicon: /favicon.ico
 
 # Sidebar Avatar
 avatar:
-  url: /images/avatar.jpg
+  url: /images/chen.jpg
   # If true, the avatar would be dispalyed in circle.
   rounded: true
   # The value of opacity should be choose from 0 to 1 to set the opacity of the avatar.
@@ -134,7 +134,6 @@ algolia_search:
 google_adsense:
   enable: true
   client: ca-pub-2245427233262012
-  enable_page_level_ads: true
 
 # Analysis
 # ---------------
