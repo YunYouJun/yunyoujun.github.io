@@ -23,9 +23,9 @@ categories:
 
 自己还画了乱七八糟的插画，色彩一塌糊涂。（ 2018-01-19 ）
 
-![hamster-universe](https://cdn.jsdelivr.net/gh/YunYouJun/cdn/img/draw/hamster-universe.jpg)
-
 <!-- more -->
+
+![hamster-universe](https://cdn.jsdelivr.net/gh/YunYouJun/cdn/img/draw/hamster-universe.jpg)
 
 ## 正文
 
