@@ -9,7 +9,5 @@ tags:
 categories:
   - 云游的小笔记
 type: yuque
-link: https://www.yuque.com/yunyoujun/notes/blender
+url: https://www.yuque.com/yunyoujun/notes/blender
 ---
-
-<https://www.yuque.com/yunyoujun/notes/blender>
