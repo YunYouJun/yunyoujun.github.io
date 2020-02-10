@@ -11,7 +11,7 @@ updated: 2017-01-23 21:04:48
 
 # Intro
 
-一个基于html5 canvas绘制的网页背景效果,=w=很绚丽啊。mark一下。
+一个基于 html5 canvas 绘制的网页背景效果,=w=很绚丽啊。mark 一下。
 
 ## Github
 
@@ -27,7 +27,10 @@ updated: 2017-01-23 21:04:48
 将下面的代码插入到`<body>`和`</body>`标签之间
 
 ```js
-<script type="text/javascript" src="//cdn.bootcss.com/canvas-nest.js/1.0.1/canvas-nest.min.js"></script>
+<script
+  type="text/javascript"
+  src="//cdn.bootcss.com/canvas-nest.js/1.0.1/canvas-nest.min.js"
+></script>
 ```
 
 ### 自定义样式
@@ -40,7 +43,14 @@ updated: 2017-01-23 21:04:48
 ### Example
 
 ```js
-<script type="text/javascript" color="0,0,255" opacity='0.7' zIndex="-2" count="99" src="//cdn.bootcss.com/canvas-nest.js/1.0.1/canvas-nest.min.js"></script>
+<script
+  type="text/javascript"
+  color="0,0,255"
+  opacity="0.7"
+  zIndex="-2"
+  count="99"
+  src="//cdn.bootcss.com/canvas-nest.js/1.0.1/canvas-nest.min.js"
+></script>
 ```
 
 > 效果就如本页面所示！
