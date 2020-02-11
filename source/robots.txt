@@ -1,0 +1,3 @@
+User-agent: *
+Disallow: 
+Sitemap: https://www.yunyoujun.cn/sitemap.xml
