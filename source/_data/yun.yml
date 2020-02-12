@@ -42,10 +42,10 @@ reward_settings:
 reward:
   wechatpay:
     path: /img/donate/wechatpay-qrcode.jpg
-    color: '#2DC100'
+    color: "#2DC100"
   alipay:
     path: /img/donate/alipay-qrcode.jpg
-    color: '#00A3EE'
+    color: "#00A3EE"
 
 # AddThis Share, See: https://www.addthis.com
 # Go to https://www.addthis.com/dashboard to customize your tools.
@@ -60,7 +60,7 @@ gitalk:
   clientSecret: # Github Application Client Secret
   repo: yunyoujun.github.io # GitHub repo
   owner: YunYouJun # GitHub repo owner
-  admin: ['YunYouJun'] # GitHub repo owner and collaborators, only these guys can initialize github issues
+  admin: ["YunYouJun"] # GitHub repo owner and collaborators, only these guys can initialize github issues
 
 # Valine
 # You can get your appid and appkey from https://leancloud.cn
@@ -90,20 +90,20 @@ footer:
     # If you want to animate the icon, set it to true.
     animated: true
     # Change the color of icon, using Hex Code.
-    color: '#0078E7'
+    color: "#0078E7"
 
   powered:
     # Hexo link (Powered by Hexo).
     enable: true
     # Version info of Hexo after Hexo link (vX.X.X).
     version: true
-  
+
   # Beian icp information for Chinese users. In China, every legal website should have a beian icp in website footer.
   # http://www.beian.miit.gov.cn
   beian:
     enable: true
     icp: 苏ICP备17038157号
-  
+
   # Any custom text can be defined here.
   # custom_text: Hosted by <a href="https://pages.coding.me" class="theme-link" rel="noopener" target="_blank">Coding Pages</a>
 
@@ -152,24 +152,24 @@ post_edit:
   enable: true
   url: https://github.com/YunYouJun/yunyoujun.github.io/tree/hexo/source/
 
-words:
-  -
-    content: 我们一日日度过的所谓日常,实际上可能是接连不断的奇迹。
-    source: 《日常》
+say:
+  enable: true
+  remote: true
+  api: https://cdn.jsdelivr.net/gh/ElpsyCN/say@gh-pages/sentences.json
+
+sentences:
+  - content: 我们一日日度过的所谓日常,实际上可能是接连不断的奇迹。
+    from: 《日常》
     url: https://baike.baidu.com/item/日常/5844361
-  -
-    content: 是啊，我所爱的，即非群星，也非银河。
-    source: 云游君
+  - content: 是啊，我所爱的，即非群星，也非银河。
+    from: 云游君
     url: https://yunyoujun.cn
-  -
-    content: 隐约雷鸣 阴霾天空 但盼风雨来 能留你在此
-    source: 《万叶集》雷神短歌
+  - content: 隐约雷鸣 阴霾天空 但盼风雨来 能留你在此
+    from: 《万叶集》雷神短歌
     url: https://book.douban.com/subject/1066538/
-  -
-    content: 人类的悲欢并不相通，我只觉得他们吵闹。
-    source: 《小杂感》鲁迅
+  - content: 人类的悲欢并不相通，我只觉得他们吵闹。
+    from: 《小杂感》鲁迅
     url: https://baike.baidu.com/item/小杂感
-  -
-    content: 遍身罗绮者，不是养蚕人。
-    source: 《蚕妇》张俞
+  - content: 遍身罗绮者，不是养蚕人。
+    from: 《蚕妇》张俞
     url: https://baike.baidu.com/item/蚕妇/40814
