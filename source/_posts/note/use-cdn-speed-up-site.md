@@ -1,7 +1,7 @@
 ---
 title: 使用 CDN 加速你的 GitHub Pages 网站
 date: 2020-02-05 20:28:57
-updated: 2020-02-05 20:28:57
+updated: 2020-02-16 20:28:57
 tags:
   - CDN
   - 笔记
@@ -37,7 +37,7 @@ categories:
 
 ## 步骤
 
-首先开通[腾讯云 - 内容分发网络]((https://cloud.tencent.com/product/cdn))。
+首先开通[腾讯云 - 内容分发网络](<(https://cloud.tencent.com/product/cdn)>)。
 
 ### 添加自己的域名
 
@@ -84,3 +84,52 @@ categories:
 
 测试发现首页基本可以秒开，速度确实不错。
 至于流量万一不够用怎么办，emm，大概等这里真有这么大访问量的时候，就不至于还要在这样各处薅羊毛了吧。
+
+## FAQ
+
+### CNAME 与 MX 记录冲突导致邮件丢失
+
+值得注意的是，设置 CDN 的方式是使用 CNAME 重定向到 CDN 域名。
+如果你同时将裸域名（yunyoujun.cn）作为博客域名和域名邮箱（比如我的邮箱：me@yunyoujun.cn），那么你可能会遇到 CNAME 与 MX 记录冲突问题。
+
+如果你的运营商没有这么提示你，那也最好不要这么做，因为这会导致域名邮箱发生邮件丢失。
+
+在过去解析尚未规范时，部分运营商是允许同时在裸域名上设置 CNAME 和 MX 记录的。
+但如今按照 RFC 标准协议，CNAME 优先级最高，所以在解析请求过程中，会优先返回 CNAME 解析记录结果。
+这样设置的结果就是导致无法解析到用户设置的 MX 记录（设置权重也没有用），影响邮箱的正常收发。
+
+现在，大部分运营商会提示 CNAME 与 MX 记录发生冲突，来避免这种情况。
+
+> 更多信息请参阅 [RFC1034](https://www.rfc-editor.org/rfc/rfc1034.txt?spm=a2c4g.11186623.2.13.59ef4054LkHX23&file=rfc1034.txt) 和 [RFC2181](https://www.rfc-editor.org/rfc/rfc2181.txt?spm=a2c4g.11186623.2.14.59ef4054LkHX23&file=rfc2181.txt)。
+> [记录冲突的规则](https://help.aliyun.com/knowledge_detail/39787.html#h2-u8BB0u5F55u51B2u7A81u7684u89C4u52193)
+
+我此前之所以使用 GitHub Pages 托管，却仍然能够使用域名邮箱，是因为我使用了 GitHub 提供的 A 记录解析。
+
+```txt
+185.199.108.153
+185.199.109.153
+185.199.110.153
+185.199.111.153
+```
+
+> [Managing a custom domain for your GitHub Pages site](https://help.github.com/en/github/working-with-github-pages/managing-a-custom-domain-for-your-github-pages-site)
+
+而如今加了 CDN 又回到了这一两难的局面。
+
+最后想着长痛不如短痛，下定决定将博客主域名更换为 `www.yunyoujun.cn`。
+
+裸域名仍旧使用 A 记录和 MX 记录。
+设置 A 记录的作用是用户访问 `yunyoujun.cn` 时（GitHub Pages 的 CNAME 文件提前设置为 `www.yunyoujun.cn`），那么 GitHub Pages 会自动从 `yunyoujun.cn` 跳转为 `www.yunyoujun.cn`。
+
+此外，谷歌浏览器会自动隐藏 www 域名前缀，所以一定程度上减少观感的影响。
+
+以及我发现一些企业的网站都采取的裸域名跳转 www 域名的方式。
+
+譬如：
+
+- 语雀：<yuque.com>,
+- JetBrains（著名的 IDE 软件开发商）：<jetbrains.com>（我在几年前的视频里发现他们留的还是裸域名的网址，而现在则是跳转 www 链接。）
+
+当然如果你对域名邮箱没有需求，且域名非常短又很酷，使用裸域名也并非不可。
+
+> PS. 怎么感觉最近说话都有点翻译腔了。
