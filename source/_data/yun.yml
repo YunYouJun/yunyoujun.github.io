@@ -104,7 +104,7 @@ footer:
     icp: 苏ICP备17038157号
 
   # Any custom text can be defined here.
-  # custom_text: Hosted by <a href="https://pages.coding.me" class="theme-link" rel="noopener" target="_blank">Coding Pages</a>
+  # custom_text: Hosted by <a href="https://pages.coding.me" rel="noopener" target="_blank">Coding Pages</a>
 
 # Post meta display settings
 post_meta:
