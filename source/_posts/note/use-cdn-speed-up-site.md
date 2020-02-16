@@ -51,7 +51,7 @@ categories:
 
 这里是 GitHub Pages 提供的 IP 地址，可以添加多行。
 
-> https://help.github.com/en/github/working-with-github-pages/about-custom-domains-and-github-pages
+> [About custom domains and GitHub Pages](https://help.github.com/en/github/working-with-github-pages/about-custom-domains-and-github-pages)
 
 ---
 
@@ -132,4 +132,17 @@ categories:
 
 当然如果你对域名邮箱没有需求，且域名非常短又很酷，使用裸域名也并非不可。
 
-> PS. 怎么感觉最近说话都有点翻译腔了。
+---
+
+此外还有一种解决方案就是 [CNAME Flattening](https://support.cloudflare.com/hc/en-us/articles/200169056-CNAME-Flattening-RFC-compliant-support-for-CNAME-at-the-root) 了解一下。
+
+有些服务商可以直接将 CNAME 解析为对应的 A 记录（IP 地址），这时在裸域名上设置 CNAME 就相当于设置 A 记录。
+
+以往腾讯云允许 CNAME 与 MX 并存，再然后提示冲突不允许，到了现在又可以同时设置了。但最好是一次性可以解析到 A 记录的 CNAME。
+
+我尝试在 www 域名上加了 CNAME 开启了 CDN，裸域名 CNAME 到 www，就会影响邮箱。
+这时的路径就相当于：`@ -> www(CNAME) -> cdn(CNAME) -> A`。可能无法使用 CNAME Flattening 。
+
+而直接 CNAME 到 GitHub Pages 时，邮箱网址都可以正常工作。`@ -> GitHub Pages(CNAME) -> A`
+
+> PS. 怎么感觉自己最近说话都有点翻译腔了。
