@@ -21,12 +21,12 @@ categories:
 
 > 内容分发网络（Content Delivery Network，CDN）通过将站点内容发布至遍布全国的海量加速节点，使其用户可就近获取所需内容，避免网络拥堵、地域、运营商等因素带来的访问延迟问题，有效提升下载速度、降低响应时间，提供流畅的用户体验。
 
-曾将我使用的策略是在国内托管 [Coding Pages](https://coding.net/)，以及为了让百度能抓取到博客内容，还做了一番配置。
+曾经我使用的策略是在国内托管 [Coding Pages](https://coding.net/)，以及为了让百度能抓取到博客内容，还做了一番配置。
 
 > [让百度收录你的 GitHub Pages 博客](https://yunyoujun.cn/note/baidu-seo-about-github-pages/)
 
 但是 Coding 的服务并不稳定，且经常变动一些策略。
-现在更是下线整合到静态部署中，且似乎因为 API 的问题实名认证总是不能通过，所以暂时都无法使用。
+现在更是下线整合到静态部署中，且似乎因为 API 的问题实名认证总是不能通过，暂时都无法使用。
 
 所以便干脆使用 CDN 来进行加速。并且也可以轻松被百度抓取了。
 
@@ -134,9 +134,9 @@ categories:
 
 ---
 
-此外还有一种解决方案就是 [CNAME Flattening](https://support.cloudflare.com/hc/en-us/articles/200169056-CNAME-Flattening-RFC-compliant-support-for-CNAME-at-the-root) 了解一下。
+此外还有一种解决方案就是 [CNAME Flattening](https://support.cloudflare.com/hc/en-us/articles/200169056-CNAME-Flattening-RFC-compliant-support-for-CNAME-at-the-root)。
 
-有些服务商可以直接将 CNAME 解析为对应的 A 记录（IP 地址），这时在裸域名上设置 CNAME 就相当于设置 A 记录。
+有些服务商（如 [Cloudflare](https://www.cloudflare.com/)、[CloudXNS](https://www.cloudxns.net/)）可以直接将 CNAME 解析为对应的 A 记录（IP 地址），这时在裸域名上设置 CNAME 就相当于设置 A 记录。
 
 以往腾讯云允许 CNAME 与 MX 并存，再然后提示冲突不允许，到了现在又可以同时设置了。但最好是一次性可以解析到 A 记录的 CNAME。
 

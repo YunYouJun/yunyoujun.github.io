@@ -1,7 +1,7 @@
 ---
-title: {{ title }}
-date: {{ date }}
-updated: {{ date }}
+title: { { title } }
+date: { { date } }
+updated: { { date } }
 tags:
 categories:
 ---
@@ -11,3 +11,5 @@ categories:
 ---
 
 To Be Continued.
+
+<!-- Q.E.D. -->
