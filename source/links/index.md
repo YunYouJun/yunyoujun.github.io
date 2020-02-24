@@ -9,5 +9,32 @@ links:
   - url: https://yumesama.cn
     img: https://cdn.jsdelivr.net/gh/ZHANGYANG980313/cdn@1.5.1/img/custom/avatar.jpg
     name: YumeSama
+    blog: ゆめ Yume
     desc: ゆめ Yume
 ---
+
+## 友链说明
+
+可以在下方申请友链～
+
+### 格式
+
+注释可以删掉～
+
+```yml
+url: https://yunyoujun.cn # 博客链接
+# 头像图片链接（HTTPS，推荐 `.webp` 体积更小，加载速度更快）
+img: https://cdn.jsdelivr.net/gh/YunYouJun/yunyoujun.github.io/images/avatar.webp
+name: 云游君 # 阁下怎么称呼？
+blog: 云游君的小站 # 您的站点名称
+desc: All at sea. # 一句话描述（描述一下 自己 或者 站点 或者 喜欢的话？）
+email: me@yunyoujun.cn # 联系方式（没联系方式，我咋回复啊）
+```
+
+### 友链原则
+
+- 申请的友链将经过筛选，请在收到我的回复邮件后于贵站添加本站链接。
+- 原则上最好为使用 HTTPS 协议站点。
+- 已添加友链不会轻易删除。如您已移除本站链接，本站也将移除友链。
+- 链接无法打开或存在政治问题、网页植入挖矿脚本、极低质量内容时，将不会添加。
+- 如网站链接、描述、头像等信息更换，请通过邮件、评论或其他方式联系我。
