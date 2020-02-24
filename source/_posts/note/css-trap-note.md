@@ -51,8 +51,8 @@ Demo:
 
 **解决方案**：添加 `transform-style: preserve-3d;`，使之变成 3d 显示方式。再通过 `transform: translateZ(-1px);` 来控制层级顺序。
 
-- [张鑫旭博文：深入理解css中的层叠上下文和层叠顺序](https://link.jianshu.com/?t=http://www.zhangxinxu.com/wordpress/2016/01/understand-css-stacking-context-order-z-index/)
-- [Segmentfault回答：Transform 引起的 z-index "失效"](https://link.jianshu.com/?t=https://segmentfault.com/q/1010000002480824)
+- [张鑫旭博文：深入理解 css 中的层叠上下文和层叠顺序](https://link.jianshu.com/?t=http://www.zhangxinxu.com/wordpress/2016/01/understand-css-stacking-context-order-z-index/)
+- [Segmentfault 回答：Transform 引起的 z-index "失效"](https://link.jianshu.com/?t=https://segmentfault.com/q/1010000002480824)
 
 ### img 与父级元素下边框存在空隙
 
@@ -69,7 +69,7 @@ Demo:
 
 **解决方案**：默认的 `verticacl-align` 属性为 `baseline`，我们只需要**为 `img` **添加 `verticacl-align: bottom` （`middle | top | bottom` 都可以）。
 
-> [CSS深入理解vertical-align和line-height的基友关系](https://www.zhangxinxu.com/wordpress/2015/08/css-deep-understand-vertical-align-and-line-height/)
+> [CSS 深入理解 vertical-align 和 line-height 的基友关系](https://www.zhangxinxu.com/wordpress/2015/08/css-deep-understand-vertical-align-and-line-height/)
 
 ---
 
