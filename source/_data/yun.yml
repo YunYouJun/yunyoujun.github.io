@@ -71,7 +71,7 @@ valine:
   appKey: 9loqwF3UDklPDHaP9IN2uwN8 # your leancloud application appkey
   notify: false # mail notifier, See: https://github.com/xCss/Valine/wiki
   verify: false # Verification code
-  placeholder: Just go go # comment box placeholder
+  placeholder: So lonely here # comment box placeholder
   avatar: # gravatar style
   meta: nick,mail,link # custom comment header
   pageSize: 10 # pagination size
