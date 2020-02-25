@@ -10,17 +10,19 @@ links:
     img: https://cdn.jsdelivr.net/gh/ZHANGYANG980313/cdn@1.5.1/img/custom/avatar.jpg
     name: YumeSama
     blog: ゆめ Yume
-    desc: ゆめ Yume
+    desc:
   - url: http://47.95.121.139/
     img: http://47.95.121.139/wp-content/uploads/2020/02/logo.png
     name: 阿肾哥哥
-    blog: 梨花镇的阿肾哥哥
+    blog: 梨花町の腎兄さん
     desc:
 ---
 
 ## 友链说明
 
-可以在下方申请友链～
+可以在下方评论区申请友链～
+
+或直接进入 [我的小伙伴们 ｜ GitHub Issue](https://github.com/YunYouJun/yunyoujun.github.io/issues/57) 申请～
 
 ### 格式
 
