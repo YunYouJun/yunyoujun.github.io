@@ -10,12 +10,17 @@ links:
     img: https://cdn.jsdelivr.net/gh/ZHANGYANG980313/cdn@1.5.1/img/custom/avatar.jpg
     name: YumeSama
     blog: ゆめ Yume
-    desc:
+    desc: 「技美大佬」
   - url: http://47.95.121.139/
     img: http://47.95.121.139/wp-content/uploads/2020/02/logo.png
     name: 阿肾哥哥
     blog: 梨花町の腎兄さん
-    desc:
+    desc: 生活,闲聊,学习,分享
+  - url: https://5ime.cn/
+    img: https://blog-1252493876.file.myqcloud.com/avatar.jpg
+    name: I Am I
+    blog: Hi, I Am I
+    desc: Hello,world. l'm coming.
 ---
 
 ## 友链说明
