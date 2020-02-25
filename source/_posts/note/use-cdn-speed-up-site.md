@@ -146,3 +146,50 @@ categories:
 而直接 CNAME 到 GitHub Pages 时，邮箱网址都可以正常工作。`@ -> GitHub Pages(CNAME) -> A`
 
 > PS. 怎么感觉自己最近说话都有点翻译腔了。
+
+### CDN 刷新
+
+有了 CDN，这也意味着你的页面可能会因此延迟更新（对于用户来说）。
+
+因此，CDN 往往提供了刷新预热功能。譬如指定 URL 或者目录进行更新。
+
+其实延迟的一会儿也不算是什么事，遇到着急的链接手动去控制台刷新即可。
+但说实话，每次登陆到网站上操作着实有些浪费时间。
+那么不如考虑一下命令行工具。
+
+> 需要 Python & pip
+
+- [腾讯云命令行工具 TCCLI](https://cloud.tencent.com/document/product/440/39027)
+- [安装 TCCLI](https://cloud.tencent.com/document/product/440/34011)：介绍如何安装 TCCLI。
+- [配置 TCCLI](https://cloud.tencent.com/document/product/440/34012)：介绍在开始使用 TCCLI 之前，需要完成 TCCLI 的初始化配置。
+- [使用 TCCLI](https://cloud.tencent.com/document/product/440/34013)：介绍如何使用 TCCLI 创建云服务器及相关使用说明。
+- [使用高级功能](https://cloud.tencent.com/document/product/440/34015)：介绍 TCCLI 的高级功能，例如多版本接口访问、返回结果过滤等。
+
+Example:
+
+```sh
+# 注意这里的路径是 Array
+tccli cdn PurgePathCache --Paths '["https://www.yunyoujun.cn/links/"]' --FlushType flush
+```
+
+#### PurgePathCache
+
+PurgePathCache 用于批量提交目录刷新，根据域名的加速区域进行对应区域的刷新。
+默认情况下境内、境外加速区域每日目录刷新额度为各 100 条，每次最多可提交 20 条。
+
+**--Paths**
+目录列表，需要包含协议头部 `http://` 或 `https://`
+
+**--FlushType**
+刷新类型
+
+- flush：刷新产生更新的资源
+- delete：刷新全部资源
+
+#### PurgeUrlsCache
+
+PurgeUrlsCache 用于批量提交 URL 进行刷新，根据 URL 中域名的当前加速区域进行对应区域的刷新。
+默认情况下境内、境外加速区域每日 URL 刷新额度各为 10000 条，每次最多可提交 1000 条。
+
+**--Urls**
+URL 列表，需要包含协议头部 `http://` 或 `https://`
