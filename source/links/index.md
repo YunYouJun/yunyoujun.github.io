@@ -11,6 +11,11 @@ links:
     name: YumeSama
     blog: ゆめ Yume
     desc: ゆめ Yume
+  - url: http://47.95.121.139/
+    img: http://47.95.121.139/wp-content/uploads/2020/02/logo.png
+    name: 阿肾哥哥
+    blog: 梨花镇的阿肾哥哥
+    desc:
 ---
 
 ## 友链说明
