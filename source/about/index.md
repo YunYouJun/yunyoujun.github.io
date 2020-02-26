@@ -18,12 +18,12 @@ style="border-radius:100px;padding: 4px;line-height: 1.5;background-color: #fff;
 
 > 学生党一只。成长 ing。
 
-- 爱好：[ACGN](https://baike.baidu.com/item/ACGN)、画画、科幻、开源、Web（以及有趣的东西）
-- 喜欢：家
+- 爱好：[ACGN](https://baike.baidu.com/item/ACGN)、瞎折腾、科幻、绘画、开源、Web（以及一切有趣的东西）
+- 喜欢：西瓜、家
 - 讨厌：肥肉（啊，我是指吃的那种）
-- 运动：乒乓球🏓 (因为本死宅也不会啥别的运动了吧……)
-- 目标：前端工程师 || 全栈工程师 || 独立游戏制作人 (目♂前)
-- 梦想：漫画家 && 动画人 && 作家（不切实际的）
+- 运动：乒乓球 🏓 (因为本死宅也不会啥别的运动了吧……)
+- 目标：前端工程师 || 全栈工程师 || 游戏开发者
+- 梦想：插画师 && 漫画家 && 作家 && 动画人 && 独立游戏制作人 && 全职开源作者（不切实际的）
 
 ![工作就输了](https://cdn.jsdelivr.net/gh/YunYouJun/cdn/img/meme/no-work.jpg)
 

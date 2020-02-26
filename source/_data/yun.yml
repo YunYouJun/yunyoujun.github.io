@@ -38,7 +38,7 @@ reward_settings:
   # If true, reward would be displayed in every article by default.
   # You can show or hide reward in a specific article throuth `reward: true | false` in Front Matter.
   enable: true
-  # comment: Donate comment here
+  comment: 我很可爱，请给我钱
 reward:
   wechatpay:
     path: /img/donate/wechatpay-qrcode.jpg
