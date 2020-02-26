@@ -9,6 +9,7 @@ categories:
 date: 2017-08-21 16:46:13
 updated: 2020-02-03 16:46:13
 ---
+
 记录 Git 的一些常用指令与问题解决方案。
 
 <!-- more -->
@@ -16,15 +17,15 @@ updated: 2020-02-03 16:46:13
 ## ref
 
 - [git-tips](https://github.com/git-tips/tips)
-- [Git的奇技淫巧](https://github.com/521xueweihan/git-tips)
+- [Git 的奇技淫巧](https://github.com/521xueweihan/git-tips)
 
 ## 常用指令
 
 ### 拉取代码
 
 - 从远程仓库获取线上代码: `git clone git@github.com:用户名/项目名.git`
-- 关联远程仓库: `git remote add origin git@github.com:xxx/xxx.git` (git clone后已自动关联)
-- git拉取代码更新项目: `git pull origin master`
+- 关联远程仓库: `git remote add origin git@github.com:xxx/xxx.git` (git clone 后已自动关联)
+- git 拉取代码更新项目: `git pull origin master`
 
 ---
 
@@ -59,7 +60,7 @@ git remote add coding git@git.coding.net:xxx/xxx.git
 
 ### 代码回滚
 
-在Git中，用HEAD表示当前版本，，上一个版本就是HEAD^，上上一个版本就是HEAD^^，当然往上100个版本写100个^比较容易数不过来，所以写成HEAD~100。
+在 Git 中，用 HEAD 表示当前版本，，上一个版本就是 HEAD^，上上一个版本就是 HEAD^^，当然往上 100 个版本写 100 个^比较容易数不过来，所以写成 HEAD~100。
 
 `--hard` 会包括当前源码回到上次状态。
 保留当前更改，只回退 commit 信息可使用 `--soft`。
@@ -88,9 +89,10 @@ git remote add coding git@git.coding.net:xxx/xxx.git
 ### 清除缓存
 
 - `git rm --cached [文件路径]`
+
   - `-r` 递归
   - `-f` 强制
-  
+
 Example: `git rm -r --cached .`
 
 ## Q&A
@@ -98,7 +100,7 @@ Example: `git rm -r --cached .`
 ### 合并代码冲突
 
 - 如果系统中有一些配置文件在服务器上做了配置修改,然后后续开发又新添加一些配置项的时候,
-在发布这个配置文件的时候,会发生代码冲突:
+  在发布这个配置文件的时候,会发生代码冲突:
 
 ```sh
 error: Your local changes to the following files would be overwritten by merge:
@@ -125,7 +127,7 @@ git pull
 
 ### 提交至 GitHub 时出现 invalid-email-address
 
-- 查看git设置：`cat $HOME/.gitconfig`
+- 查看 git 设置：`cat $HOME/.gitconfig`
 - 正常情况应显示 [user]name 与 email 的信息。
 - 若无，通过如下代码修改 git 配置。
 
@@ -142,7 +144,7 @@ git config --global user.email "Git账户邮箱"
 ### 合并两个不同的项目，出现错误
 
 - `fatal: refusing to merge unrelated histories`
-- 因为他们是两个不同的项目，要把两个不同的项目合并，git需要添加一句代码，在`git pull`后添加`--allow-unrelated-histories`
+- 因为他们是两个不同的项目，要把两个不同的项目合并，git 需要添加一句代码，在`git pull`后添加`--allow-unrelated-histories`
 - 假如我们的源是 `origin` ，分支是 `master`: `git pull origin master ----allow-unrelated-histories`
 
 > 参见：[http://blog.csdn.net/lindexi_gd/article/details/52554159](http://blog.csdn.net/lindexi_gd/article/details/52554159)
@@ -151,7 +153,7 @@ git config --global user.email "Git账户邮箱"
 
 上传项目的时候有些需要忽略的文件夹并未加入 `.gitignore` 文件中，导致上传了一些并不想上传的文件。
 
-我们想要在github上面删除，但又不想在本地删除。
+我们想要在 github 上面删除，但又不想在本地删除。
 
 Example:
 
@@ -213,6 +215,25 @@ git push <remote> <branch>
 # Example: git push origin add-something
 ```
 
+#### 修改方法三
+
+找到想要修改的 commit 的父 commit id
+
+- `git rebase -i <父 commit id>`
+
+```sh
+pick 578ba7a hexo backup
+...
+```
+
+`pick` 修改为 `reword`, `:wq` 退出。
+
+此时可以修改更改 `reword` 的 commit message，`wq` 退出。
+
+剩余的 `git rebase --skip`
+
+> [How to modify existing, unpushed commit messages?](https://stackoverflow.com/questions/179123/how-to-modify-existing-unpushed-commit-messages)
+
 ### 增加子模块
 
 ```sh
@@ -247,7 +268,7 @@ git push -u origin master
 
 上面命令将本地的 `master` 分支推送到 `origin` 主机，同时指定 `origin` 为默认主机，后面就可以不加任何参数使用 `git push` 了。
 
-不带任何参数的 `git push` ，默认只推送当前分支，这叫做 `simple` 方式。此外，还有一种 `matching` 方式，会推送所有有对应的远程分支的本地分支。Git 2.0版本之前，默认采用 `matching` 方法，现在改为默认采用 `simple` 方式。如果要修改这个设置，可以采用 `git config` 命令。
+不带任何参数的 `git push` ，默认只推送当前分支，这叫做 `simple` 方式。此外，还有一种 `matching` 方式，会推送所有有对应的远程分支的本地分支。Git 2.0 版本之前，默认采用 `matching` 方法，现在改为默认采用 `simple` 方式。如果要修改这个设置，可以采用 `git config` 命令。
 
 ```sh
 $ git config --global push.default matching
@@ -255,7 +276,7 @@ $ git config --global push.default matching
 $ git config --global push.default simple
 ```
 
-还有一种情况，就是不管是否存在对应的远程分支，将本地的所有分支都推送到远程主机，这时需要使用–all选项。
+还有一种情况，就是不管是否存在对应的远程分支，将本地的所有分支都推送到远程主机，这时需要使用–all 选项。
 
 ```sh
 git push --all origin
@@ -265,11 +286,17 @@ git push --all origin
 
 > 参见: [http://www.yiibai.com/git/git_push.html](http://www.yiibai.com/git/git_push.html)
 
+#### 推送给多个远程仓库
+
+```sh
+git remote set-url --add origin https://xxx
+```
+
 ### git add
 
-- `git add -u`  提交被修改(modified)和被删除(deleted)文件，不包括新文件(new)
-- `git add .`  提交新文件(new)和被修改(modified)文件，不包括被删除(deleted)文件
-- `git add -A`  提交所有变化（`git add --all` 的缩写）
+- `git add -u` 提交被修改(modified)和被删除(deleted)文件，不包括新文件(new)
+- `git add .` 提交新文件(new)和被修改(modified)文件，不包括被删除(deleted)文件
+- `git add -A` 提交所有变化（`git add --all` 的缩写）
 
 ### git reset
 
