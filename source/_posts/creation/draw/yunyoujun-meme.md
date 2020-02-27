@@ -14,7 +14,9 @@ updated: 2017-07-10 10:41:37
 
 <!-- more -->
 
-其实多数是仿照网上一些表情包的特色~~社会主义~~改造。（B娘、蛆娘什么的）
+![LOGO](https://cdn.jsdelivr.net/gh/YunYouJun/cdn/img/logo/yun-logo.gif)
+
+其实多数是仿照网上一些表情包的特色~~社会主义~~改造。（B 娘、蛆娘什么的）
 
 嗯，有时间就画着玩儿。（~~大概~~）
 
