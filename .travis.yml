@@ -15,10 +15,10 @@ script:
   - npm run predeploy
 
 deploy:
-  edge: true
   provider: pages
-  token: $GH_TOKEN
-  target_branch: master
+  skip_cleanup: true
   local_dir: public
+  github_token: $GH_TOKEN
+  target_branch: master
   on:
     branch: hexo

@@ -49,7 +49,7 @@ updated: 2017-02-02 12:40:32
 ### 备份自己的 Hexo 源文件
 
 - 在本地的 GitHub Pages 的项目(xxx.github.io)中,通过 `git bash` 建立新的分支 hexo
-(可以现在 GitHub 上新建再 clone 自自己的文件夹)
+  (可以现在 GitHub 上新建再 clone 自自己的文件夹)
 
 ```bash
 git checkout -b hexo
@@ -131,13 +131,15 @@ Hexo 主题 Next 6.0 版本将用到的第三方都提取成了模块。
 [Next](http://theme-next.iissnan.com/) 主题集成了 LeanCloud 统计。
 
 - 进入官网，注册账号，创建应用（开发版为免费使用）
-- 进入创建的应用中，选择左侧导航栏中的“存储”，随后点击“创建Class”，将 Class 名称填为 Counter，并选择**无限制**选项。
-- 进入 Next 主题配置文件 `_config.yml` ，配置 `leancloud_visitors` 属性 `enable` 为 `true`，并配置对应的 `App ID` 与 `App Key` 。 (在 `LeanCloud` 左侧导航栏的设置界面，单击“应用Key”可以看到应用的App ID和App Key。)
+- 进入创建的应用中，选择左侧导航栏中的“存储”，随后点击“创建 Class”，将 Class 名称填为 Counter，并选择**无限制**选项。
+- 进入 Next 主题配置文件 `_config.yml` ，配置 `leancloud_visitors` 属性 `enable` 为 `true`，并配置对应的 `App ID` 与 `App Key` 。 (在 `LeanCloud` 左侧导航栏的设置界面，单击“应用 Key”可以看到应用的 App ID 和 App Key。)
 
 ---
 
 ## 小技巧
-### 配置 theme/next 
+
+### 配置 theme/next
+
 可以在 `source` 文件夹(含有 `_post` 的文件夹)下新建 `_data` 文件夹，并在其中新建 `next.yml`。其后将需要特定的配置从 `theme/next/_config.yml` 中复制过来即可。
 
 如果需要覆盖 `_config.yml` 默认配置， 修改 `next.yml` 中 `override: true`。
@@ -151,6 +153,7 @@ Hexo 主题 Next 6.0 版本将用到的第三方都提取成了模块。
 title: xxx
 toc: true
 ---
+
 ...
 ```
 
@@ -164,6 +167,6 @@ toc:
 
 ## Example
 
-在 [GitHub Pages](http://yunyoujun.github.io) 和 [Coding Pages](http://yunyoujun.coding.me) 上都进行了部署。
+在 [GitHub Pages](https://yunyoujun.github.io) 和 [Coding Pages](https://yunyoujun.coding.me) 上都进行了部署。
 
 `_config.yml` 可参考 [GitHub Address](https://github.com/YunYouJun/yunyoujun.github.io)

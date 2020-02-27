@@ -132,3 +132,15 @@ markdown:
     permalink: true
     permalinkClass: header-anchor
     permalinkSymbol: "#"
+
+asset_pipeline:
+  revisioning:
+    enable: false
+  clean_css:
+    enable: true
+  uglify_js:
+    enable: true
+  imagemin:
+    enable: false
+  html_minifier:
+    enable: true
