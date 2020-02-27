@@ -1,8 +1,12 @@
 favicon: /favicon.ico
 
+colors:
+  # primary: "#0078E7"
+  primary: "#0078E7"
+
 # Sidebar Avatar
 avatar:
-  url: /images/chen-200.webp
+  url: /images/avatar.webp
   # If true, the avatar would be dispalyed in circle.
   rounded: true
   # The value of opacity should be choose from 0 to 1 to set the opacity of the avatar.
@@ -172,3 +176,9 @@ sentences:
   - content: 遍身罗绮者，不是养蚕人。
     from: 《蚕妇》张俞
     url: https://baike.baidu.com/item/蚕妇/40814
+
+bg_image:
+  enable: true
+  url: https://cdn.jsdelivr.net/gh/YunYouJun/cdn/img/bg/stars-timing-0.jpg
+  # url: https://ww3.sinaimg.cn/mw1024/6a84045bgw1f9ps94twg8j21kw0sgdgx.jpg
+  # url: http://img.huoying666.com/forum/201701/03/125427jsbn2v6mmlb627l7.jpg

@@ -24,6 +24,7 @@
   },
   "devDependencies": {
     "eslint-config-hexo": "^4.1.0",
+    "hexo-asset-pipeline": "^1.8.0",
     "hexo-browsersync": "^0.3.0",
     "hexo-server": "^1.0.0"
   },
