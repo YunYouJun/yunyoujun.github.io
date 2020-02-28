@@ -130,7 +130,7 @@ algolia_search:
   enable: true
   src: /js/search/algolia-search.js
   hits:
-    per_page: 10 # the number of search results per page
+    per_page: 8 # the number of search results per page
 
 # Ads
 # ---------------
