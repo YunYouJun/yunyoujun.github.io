@@ -42,6 +42,27 @@ git remote set-url --add origin https://e.coding.net/YunYouJun/yunyoujun.coding.
 git clone https://github.com/YunYouJun/hexo-theme-yun themes/yun
 ```
 
+> More info about [hexo-theme-yun](https://yun.yunyoujun.cn)
+
+## CDN
+
+[![JSDELIVR](https://www.jsdelivr.com/img/logo-horizontal.svg)](https://www.jsdelivr.com/)
+
+### 腾讯云
+
+#### 刷新目录
+
+```sh
+# 注意这里的参数是 Array
+tccli cdn PurgePathCache --Paths '["https://www.yunyoujun.cn/links/"]' --FlushType flush
+```
+
+#### 刷新路径
+
+```sh
+tccli cdn PurgeUrlsCache --Urls '["https://www.yunyoujun.cn/links/"]'
+```
+
 ## Commit Lint
 
 [gitmoji](https://gitmoji.carloscuesta.me/)

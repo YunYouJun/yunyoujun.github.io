@@ -168,7 +168,7 @@ categories:
 Example:
 
 ```sh
-# 注意这里的路径是 Array
+# 注意这里的参数是 Array
 tccli cdn PurgePathCache --Paths '["https://www.yunyoujun.cn/links/"]' --FlushType flush
 ```
 

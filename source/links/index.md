@@ -12,7 +12,7 @@ links:
     blog: ゆめ Yume
     desc: 「技美大佬」
   - url: http://47.95.121.139/
-    img: https://47.95.121.139/wp-content/uploads/2020/02/logo.png
+    img: http://47.95.121.139/wp-content/uploads/2020/02/logo.png
     name: 阿肾哥哥
     blog: 梨花町の腎兄さん
     desc: 生活,闲聊,学习,分享
