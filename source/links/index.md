@@ -7,17 +7,17 @@ description: 云游和他的小伙伴们
 comments: true
 links:
   - url: https://yumesama.cn
-    img: https://cdn.jsdelivr.net/gh/ZHANGYANG980313/cdn@1.5.1/img/custom/avatar.jpg
+    avatar: https://cdn.jsdelivr.net/gh/ZHANGYANG980313/cdn@1.5.1/img/custom/avatar.jpg
     name: YumeSama
     blog: ゆめ Yume
     desc: 「技美大佬」
   - url: http://47.95.121.139/
-    img: http://47.95.121.139/wp-content/uploads/2020/02/logo.png
+    avatar: http://47.95.121.139/wp-content/uploads/2020/02/logo.png
     name: 阿肾哥哥
     blog: 梨花町の腎兄さん
     desc: 生活,闲聊,学习,分享
   - url: https://5ime.cn/
-    img: https://blog-1252493876.file.myqcloud.com/avatar.jpg
+    avatar: https://blog-1252493876.file.myqcloud.com/avatar.jpg
     name: I Am I
     blog: Hi, I Am I
     desc: Hello,world. l'm coming.
@@ -36,7 +36,7 @@ links:
 ```yml
 url: https://yunyoujun.cn # 博客链接
 # 头像图片链接（HTTPS，推荐 `.webp` 体积更小，加载速度更快）
-img: https://cdn.jsdelivr.net/gh/YunYouJun/yunyoujun.github.io/images/avatar.webp
+avatar: https://cdn.jsdelivr.net/gh/YunYouJun/yunyoujun.github.io/images/avatar.webp
 name: 云游君 # 阁下怎么称呼？
 blog: 云游君的小站 # 您的站点名称
 desc: All at sea. # 一句话描述（描述一下 自己 或者 站点 或者 喜欢的话？）

@@ -157,7 +157,6 @@ post_edit:
 
 say:
   enable: true
-  remote: true
   api: https://cdn.jsdelivr.net/gh/ElpsyCN/say@gh-pages/sentences.json
 
 sentences:
