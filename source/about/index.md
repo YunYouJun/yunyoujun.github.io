@@ -19,7 +19,7 @@ style="border-radius:100px;padding: 4px;line-height: 1.5;background-color: #fff;
 > 学生党一只。成长 ing。
 
 - 爱好：[ACGN](https://baike.baidu.com/item/ACGN)、瞎折腾、科幻、绘画、开源、Web（以及一切有趣的东西）
-- 喜欢：西瓜、家
+- 喜欢：西瓜、家、制片人
 - 讨厌：肥肉（啊，我是指吃的那种）
 - 运动：乒乓球 🏓 (因为本死宅也不会啥别的运动了吧……)
 - 目标：前端工程师 || 全栈工程师 || 游戏开发者

@@ -4,8 +4,7 @@ date: 2019-01-07 11:17:35
 updated: 2019-01-07 11:17:35
 ---
 
-- 似乎被发现了什么羞耻的事情
-- 序号只是为记录数量，而不是排序(~~大家都是我的天使！（恶心）~~)
+- 排名不分先后(~~大家都是我的天使！~~)
 - 单纯的个人喜好(~~纸片人老婆~~)
 
 1. X
@@ -14,11 +13,11 @@ updated: 2019-01-07 11:17:35
 4. [仓岛千百合](https://zh.moegirl.org/仓岛千百合)
 5. [筒隐月子](https://zh.moegirl.org/筒隐月子)
 6. [小豆梓](https://zh.moegirl.org/小豆梓)
-7. [明石(四叠半神话大系)][https://zh.moegirl.org/%E6%98%8E%E7%9F%B3(%E5%9B%9B%E5%8F%A0%E5%8D%8A%E7%A5%9E%E8%AF%9D%E5%A4%A7%E7%B3%BB)]
+7. [明石(四叠半神话大系)](<https://zh.moegirl.org/明石(四叠半神话大系)>)
 8. [松前绪花](https://zh.moegirl.org/松前绪花)
 9. [惠惠](https://zh.moegirl.org/惠惠)
-10. [阿库娅][阿库娅]
-11. [小米](https://zh.moegirl.org/小米)
+10. [阿库娅](<https://zh.moegirl.org/阿库娅(为美好的世界献上祝福)>)
+11. [米米(为美好的世界献上祝福)](<https://zh.moegirl.org/米米(为美好的世界献上祝福)>)
 12. [满舰饰真子](https://zh.moegirl.org/满舰饰真子)
 13. [北白川玉子](https://zh.moegirl.org/北白川玉子)
 14. [北白川馅子](https://zh.moegirl.org/北白川馅子)
@@ -30,18 +29,18 @@ updated: 2019-01-07 11:17:35
 20. [楪祈](https://zh.moegirl.org/楪祈)
 21. [校条祭](https://zh.moegirl.org/校条祭)
 22. [萌田薰子](https://zh.moegirl.org/萌田薰子)
-23. [人类小姐][人类小姐]
+23. [人类小姐](<https://zh.moegirl.org/主人公(人类衰退之后)>)
 24. [古河渚](https://zh.moegirl.org/古河渚)
 25. [由比滨结衣](https://zh.moegirl.org/由比滨结衣)
 26. [古贺朋绘](https://zh.moegirl.org/古贺朋绘)
-27. [白][白]
+27. [白](<https://zh.moegirl.org/白(No_Game_No_Life_游戏人生)>)
 28. [史蒂芬妮·多拉](https://zh.moegirl.org/史蒂芬妮·多拉)
 29. [吉普莉尔](https://zh.moegirl.org/吉普莉尔)
 30. [凉宫春日](https://zh.moegirl.org/凉宫春日)
 31. [朝比奈实玖瑠](https://zh.moegirl.org/朝比奈实玖瑠)
 32. [虚妹](https://zh.moegirl.org/虚妹)
 33. [初春饰利](https://zh.moegirl.org/初春饰利)
-34. [雷姆][雷姆]
+34. [雷姆](<https://zh.moegirl.org/雷姆(Re:从零开始的异世界生活)>)
 35. [惣流·明日香·兰格雷](https://zh.moegirl.org/惣流·明日香·兰格雷)
 36. [宫内莲华](https://zh.moegirl.org/宫内莲华)
 37. [丹生谷森夏](https://zh.moegirl.org/丹生谷森夏)
@@ -77,19 +76,11 @@ updated: 2019-01-07 11:17:35
 67. [五更琉璃](https://zh.moegirl.org/五更琉璃)
 68. [雏鹤爱](https://zh.moegirl.org/雏鹤爱)
 69. [源静香](https://zh.moegirl.org/源静香)
-70. [晓][晓]
+70. [晓](<https://zh.moegirl.org/晓(记录的地平线)>)
 71. [千石抚子](https://zh.moegirl.org/%E5%8D%83%E7%9F%B3%E6%8A%9A%E5%AD%90)
 72. [阿良良木火怜](https://zh.moegirl.org/%E9%98%BF%E8%89%AF%E8%89%AF%E6%9C%A8%E7%81%AB%E6%80%9C)
+73. [赫斯缇雅](https://zh.moegirl.org/%E8%B5%AB%E6%96%AF%E7%BC%87%E9%9B%85)
 
 ---
 
 To Be Continued.
-
-<!-- Beacause markdown link bracket problem -->
-
-[明石]: https://zh.moegirl.org/明石(四叠半神话大系)
-[阿库娅]: https://zh.moegirl.org/阿库娅(为美好的世界献上祝福)
-[人类小姐]: https://zh.moegirl.org/主人公(人类衰退之后)
-[雷姆]: https://zh.moegirl.org/雷姆(Re:从零开始的异世界生活)
-[白]: https://zh.moegirl.org/白(No_Game_No_Life_游戏人生)
-[晓]: https://zh.moegirl.org/晓(记录的地平线)
