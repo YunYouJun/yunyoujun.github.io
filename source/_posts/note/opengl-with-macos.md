@@ -33,7 +33,7 @@ More info in [从零开始的 WebGL](https://yunyoujun.cn/note/webgl-from-zero).
 - [CLion: A cross-platform IDE for C and C++](https://www.jetbrains.com/clion/)
 - [glad](https://glad.dav1d.de/)
 
-```sh
+```bash
 brew install glfw
 ```
 
@@ -44,8 +44,8 @@ brew install glfw
 
 CLion 新建 C++ 相关默认项目，修改默认项目中的 `CMakeLists.txt` 即可。
 
-```txt
-// CMakeLists.txt
+```makefile
+# CMakeLists.txt
 cmake_minimum_required(VERSION 3.14)
 set(PROJECT_NAME "testOpenGL")
 project(${PROJECT_NAME})

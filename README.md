@@ -60,7 +60,7 @@ tccli cdn PurgePathCache --Paths '["https://www.yunyoujun.cn/links/"]' --FlushTy
 #### 刷新路径
 
 ```sh
-tccli cdn PurgeUrlsCache --Urls '["https://www.yunyoujun.cn/links/"]'
+tccli cdn PurgeUrlsCache --Urls '["https://www.yunyoujun.cn/links/index.html"]'
 ```
 
 ## Commit Lint

@@ -13,9 +13,9 @@ categories:
 
 去年（已经是三年前了！）年末便听得新一代打包工具 Parcel.js 的风风火火，今日（两年前的某一天）也终于得以静下心来试一试。
 
-![five-year](https://cos.yunyoujun.cn/meme/five-year.gif)
-
 <!-- more -->
+
+![five-year](https://cdn.jsdelivr.net/gh/YunYouJun/cdn/img/meme/five-year.gif)
 
 ## [Parcel](https://parceljs.org)
 

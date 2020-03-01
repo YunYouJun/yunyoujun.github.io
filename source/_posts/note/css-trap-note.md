@@ -67,7 +67,7 @@ Demo:
 可以看到在底部，背景的红色透了出来。
 其主要原因是文字默认的行高所产生的问题。（参见 demo）
 
-**解决方案**：默认的 `verticacl-align` 属性为 `baseline`，我们只需要为 `img` 添加 `verticacl-align: bottom` （`middle | top | bottom` 都可以）。
+**解决方案**：默认的 `vertical-align` 属性为 `baseline`，我们只需要为 `img` 添加 `vertical-align: bottom` （`middle | top | bottom` 都可以）。
 
 > [CSS 深入理解 vertical-align 和 line-height 的基友关系](https://www.zhangxinxu.com/wordpress/2015/08/css-deep-understand-vertical-align-and-line-height/)
 
