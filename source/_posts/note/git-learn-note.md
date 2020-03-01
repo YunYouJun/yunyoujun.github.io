@@ -131,7 +131,7 @@ git pull
 - 正常情况应显示 [user]name 与 email 的信息。
 - 若无，通过如下代码修改 git 配置。
 
-```sh
+```git
 git config --global user.name "用户名"
 git config --global user.email "Git账户邮箱"
 ```
@@ -157,7 +157,7 @@ git config --global user.email "Git账户邮箱"
 
 Example:
 
-```sh
+```git
 git rm -r --cached .idea  #--cached不会把本地的 .idea 删除
 git commit -m 'delete .idea dir'
 git push -u origin master
@@ -182,7 +182,7 @@ git rebase -i HEAD~1   #当前版本的倒数第一次状态
 
 - 显示结果如下，修改 `pick` 为 `edit` ，并按 `esc` 输入 `:wq` 保存退出
 
-```sh
+```git
 pick 578ba7a hexo backup
 
 # Rebase eeb9c17..578ba7a onto eeb9c17 (1 command)
@@ -199,8 +199,8 @@ pick 578ba7a hexo backup
 
 #### 修改方法二
 
-```sh
-# 修改需要修改的地方（只是修改 commit message 就不用做)
+```git
+# 修改需要修改的地方（只是修改 commit message 就不用做）
 git add . #这一步如果只是修改 commit message 不用输入
 git commit --amend
 # 输入修改后的 commit message，保存
@@ -210,7 +210,7 @@ git commit --amend
 
 - 推送
 
-```sh
+```git
 git push <remote> <branch>
 # Example: git push origin add-something
 ```
@@ -221,7 +221,7 @@ git push <remote> <branch>
 
 - `git rebase -i <父 commit id>`
 
-```sh
+```git
 pick 578ba7a hexo backup
 ...
 ```
@@ -236,7 +236,7 @@ pick 578ba7a hexo backup
 
 ### 增加子模块
 
-```sh
+```git
 git submodule add https://github.com/XXX/XXX
 ```
 
@@ -270,7 +270,7 @@ git push -u origin master
 
 不带任何参数的 `git push` ，默认只推送当前分支，这叫做 `simple` 方式。此外，还有一种 `matching` 方式，会推送所有有对应的远程分支的本地分支。Git 2.0 版本之前，默认采用 `matching` 方法，现在改为默认采用 `simple` 方式。如果要修改这个设置，可以采用 `git config` 命令。
 
-```sh
+```git
 $ git config --global push.default matching
 # or
 $ git config --global push.default simple
