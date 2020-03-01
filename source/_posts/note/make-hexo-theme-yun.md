@@ -40,7 +40,8 @@ Hexo-Theme-Yun 制作进行中~
 ### 优化
 
 fancybox 的确用的不多，但又依赖于 jQuery。
-决定使用 [medium-zoom](https://medium-zoom.francoischalifour.com/) 替代，并全部使用 Vanilla JavaScript，以移除 jQuery。
+~~决定使用 [medium-zoom](https://medium-zoom.francoischalifour.com/) 替代~~，并全部使用 Vanilla JavaScript，以移除 jQuery。
+medium-zoom 干脆也别用了，大家都会右键的*(:з」∠)*
 jQuery 的确用起来很爽，但这位老前辈已经将它的理念逐渐融入现代浏览器的标砖 API 中（譬如 `querySelector`、`classList.add|remove|contains`），所以使用原生 JS 来写往往更有优势。
 
 也能加深对原生 JavaScript 的理解。
