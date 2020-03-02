@@ -11,15 +11,14 @@ updated: 2018-01-30 15:10:32
 >
 > All at sea.
 
-<div style="text-align:center;">
-<img src="https://s.gravatar.com/avatar/18898984c2aeb0dae7530a738f150cba" alt="portrait" title="ID : 云游君"
-style="border-radius:100px;padding: 4px;line-height: 1.5;background-color: #fff;border: 1px solid #ddd;">
+<div class="site-author-avatar" style="text-align:center;">
+<img src="https://www.yunyoujun.cn/images/avatar.webp" alt="portrait" title="ID : 云游君">
 </div>
 
 > 学生党一只。成长 ing。
 
 - 爱好：[ACGN](https://baike.baidu.com/item/ACGN)、瞎折腾、科幻、绘画、开源、Web（以及一切有趣的东西）
-- 喜欢：西瓜、家、制片人
+- 喜欢：西瓜、家、纸片人
 - 讨厌：肥肉（啊，我是指吃的那种）
 - 运动：乒乓球 🏓 (因为本死宅也不会啥别的运动了吧……)
 - 目标：前端工程师 || 全栈工程师 || 游戏开发者
@@ -41,3 +40,7 @@ style="border-radius:100px;padding: 4px;line-height: 1.5;background-color: #fff;
 - 网易云音乐: [机智的云游君](http://music.163.com/#/user/home?id=247102977)
 
 <!-- - Bangumi: [云游君](http://bangumi.tv/user/yunyoujun) -->
+
+## Donate
+
+喂，看到下面发光的按钮了吗！

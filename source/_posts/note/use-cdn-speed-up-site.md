@@ -47,7 +47,7 @@ categories:
 
 管理 > 基本配置
 
-![config-source-site](https://cos.yunyoujun.cn/blog/config-source-site.png)
+![config-source-site.png](https://i.loli.net/2020/03/02/BfyolAHcKxhw27i.png)
 
 这里是 GitHub Pages 提供的 IP 地址，可以添加多行。
 

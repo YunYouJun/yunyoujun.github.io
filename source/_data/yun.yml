@@ -43,13 +43,7 @@ reward_settings:
   # You can show or hide reward in a specific article throuth `reward: true | false` in Front Matter.
   enable: true
   comment: 我很可爱，请给我钱
-reward:
-  wechatpay:
-    path: /img/donate/wechatpay-qrcode.jpg
-    color: "#2DC100"
-  alipay:
-    path: /img/donate/alipay-qrcode.jpg
-    color: "#00A3EE"
+  url: "/about/#Donate"
 
 # AddThis Share, See: https://www.addthis.com
 # Go to https://www.addthis.com/dashboard to customize your tools.
@@ -175,3 +169,7 @@ sentences:
   - content: 遍身罗绮者，不是养蚕人。
     from: 《蚕妇》张俞
     url: https://baike.baidu.com/item/蚕妇/40814
+
+cdn:
+  pre: https://cdn.jsdelivr.net/gh/YunYouJun/cdn
+  # pre: https://cdn.yunyoujun.cn
