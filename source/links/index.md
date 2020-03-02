@@ -21,6 +21,11 @@ links:
     name: I Am I
     blog: Hi, I Am I
     desc: Hello,world. l'm coming.
+  - url: http://www.iimt.me/
+    avatar: https://i2.hdslb.com/bfs/face/c9afd3e1ba04741fa2d99fcd142952d932c79dc2.jpg_64x64.jpg
+    name: iimT
+    blog: iimT 的独立博客
+    desc: 一个喜欢电音的技术宅。
 ---
 
 ## 友链说明
