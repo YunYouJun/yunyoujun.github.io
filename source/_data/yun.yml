@@ -173,3 +173,6 @@ sentences:
 cdn:
   pre: https://cdn.jsdelivr.net/gh/YunYouJun/cdn
   # pre: https://cdn.yunyoujun.cn
+
+girls:
+  enable: true
