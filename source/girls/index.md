@@ -264,15 +264,15 @@ girls:
     avatar: https://img.moegirl.org/common/thumb/8/86/Aj353_19.jpg/250px-Aj353_19.jpg
     from: 命运石之门
   - name: 阿米娅
-    avatar: https://wx1.sinaimg.cn/mw1024/be297bc5gy1gblwf9dxjfj20jg0jg7fx.jpg
+    avatar: https://i.loli.net/2020/03/03/RkHJbFAw3o6IVSm.jpg
     from: 明日方舟
     url: https://zh.moegirl.org/明日方舟:阿米娅
   - name: 卡缇
-    avatar: https://wx4.sinaimg.cn/mw1024/be297bc5ly1gazty7q9tnj20jg0jgnbd.jpg
+    avatar: https://i.loli.net/2020/03/03/nSfhYq74AygE1TL.jpg
     from: 明日方舟
     url: https://zh.moegirl.org/明日方舟:阿米娅
   - name: 陈
-    avatar: https://wx1.sinaimg.cn/mw1024/be297bc5ly1g903l3bhdlj20jg0jg499.jpg
+    avatar: https://i.loli.net/2020/03/03/eqsMZWBaKY5kzJw.jpg
     from: 明日方舟
     url: https://zh.moegirl.org/明日方舟:陈
   - name: 希达
