@@ -307,4 +307,34 @@ girls:
   - name: 立华奏
     avatar: https://img.moegirl.org/common/b/b1/Bs2_kn011101.png
     from: Angel Beats!
+  - name: 洛天依
+    avatar: https://img.moegirl.org/common/thumb/3/38/Carton-new0.png/250px-Carton-new0.png
+    from: VOCALOID
+  - name: 星野梦美
+    avatar: https://img.moegirl.org/common/thumb/d/d6/Planetarian_Snow_Globe.jpg/1280px-Planetarian_Snow_Globe.jpg
+    from: 星之梦
+  - name: 藤原千花
+    avatar: https://img.moegirl.org/common/thumb/f/f8/Chikabiu.jpeg/250px-Chikabiu.jpeg
+    from: 辉夜大小姐想让我告白～天才们的恋爱头脑战～
+  - name: 四宫辉夜
+    avatar: https://img.moegirl.org/common/thumb/4/46/Shinomiya_Kaguya.jpg/250px-Shinomiya_Kaguya.jpg
+    from: 辉夜大小姐想让我告白～天才们的恋爱头脑战～
+  - name: 宫本丽
+    avatar: https://img.moegirl.org/common/thumb/a/a2/Miyamoto_rei.png/250px-Miyamoto_rei.png
+    from: 学园默示录
+  - name: 杏子
+    avatar: https://img.moegirl.org/common/thumb/c/c8/Hinamatsuri_Anzu.jpg/250px-Hinamatsuri_Anzu.jpg
+    from: 黑社会的超能力女儿
+    url: https://zh.moegirl.org/杏子(黑社会的超能力女儿)
+  - name: 织部凛凛子
+    avatar: https://img.moegirl.org/common/e/e2/Oribe_Ririko.png
+    from: 樱花任务
+  - name: 水野茜
+    avatar: https://img.moegirl.org/common/thumb/6/66/%E6%B0%B4%E9%87%8E%E8%8C%9C.png/250px-%E6%B0%B4%E9%87%8E%E8%8C%9C.png
+    from: 月色真美
+  - name: 小珊
+    avatar: https://img.moegirl.org/common/thumb/1/12/%E5%B0%8F%E7%8F%8A.gif/250px-%E5%B0%8F%E7%8F%8A.gif
+    from: 荒川爆笑团
 ---
+
+![爷就是二次元](https://cdn.jsdelivr.net/gh/YunYouJun/cdn/img/meme/i-am-er-ci-yuan.jpg)
