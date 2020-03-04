@@ -3,7 +3,7 @@ layout: links
 title: 我的小伙伴们
 date: 2019-06-21 13:06:06
 keywords: 链接
-description: 云游和他的小伙伴们
+description: 云游的小伙伴们
 comments: true
 links:
   - url: https://yumesama.cn
@@ -22,7 +22,7 @@ links:
     blog: Hi, I Am I
     desc: Hello,world. l'm coming.
   - url: http://www.iimt.me/
-    avatar: https://i2.hdslb.com/bfs/face/c9afd3e1ba04741fa2d99fcd142952d932c79dc2.jpg_64x64.jpg
+    avatar: http://www.iimt.me/favicon.ico
     name: iimT
     blog: iimT 的独立博客
     desc: 一个喜欢电音的技术宅。
