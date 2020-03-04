@@ -17,9 +17,7 @@ updated: 2017-02-02 12:40:32
 
 ## Intro
 
-[Hexo](https://hexo.io/)
-
-快速、简洁且高效的博客框架
+[Hexo](https://hexo.io/)：快速、简洁且高效的博客框架
 
 <!-- more -->
 
@@ -36,11 +34,8 @@ updated: 2017-02-02 12:40:32
 
 ## 推荐主题
 
-### [NexT](https://theme-next.org/)
-
-> GitHub: <https://github.com/theme-next/hexo-theme-next>
-
-### [yilia](https://github.com/litten/hexo-theme-yilia)
+- [hexo-theme-yun](https://github.com/YunYouJun/hexo-theme-yun)：没错，是私货
+- [hexo-theme-next](https://github.com/theme-next/hexo-theme-next)：应该是最出名的 Hexo 主题
 
 ---
 
@@ -70,14 +65,12 @@ git push origin hexo
 - 在 Hexo 根目录下新建批处理文件 `update.sh`,并编辑如下内容。
 
 ```bash
-hexo clean
-hexo d -g
+hexo clean # 清除缓存
+hexo d -g # 重新部署 Hexo
 git add -A
 git commit -m 'update hexo backup'
-git push origin hexo
+git push origin hexo # 备份 Hexo 源文件
 ```
-
-    (作用分别是清除缓存重新部署 Hexo ，和备份 Hexo 源文件。)
 
 - 在 Hexo 根目录下，通过如下命令执行。
 
@@ -116,12 +109,6 @@ export HEXO_ALGOLIA_INDEXING_KEY=xxx // xxx 为 apiKey
 hexo clean
 hexo algolia // 生成index
 ```
-
-#### Next-Algolia
-
-Hexo 主题 Next 6.0 版本将用到的第三方都提取成了模块。
-
-> 使用方法参见： [theme-next-algolia-instant-search](https://github.com/theme-next/theme-next-algolia-instant-search)
 
 ### 为 Next 主题添加阅读次数统计
 

@@ -335,6 +335,15 @@ girls:
   - name: 小珊
     avatar: https://img.moegirl.org/common/thumb/1/12/%E5%B0%8F%E7%8F%8A.gif/250px-%E5%B0%8F%E7%8F%8A.gif
     from: 荒川爆笑团
+  - name: 馆花纱月
+    avatar: https://i.loli.net/2020/03/04/blDCGLQW6voXYK7.jpg
+    from: 渡君的XX即将崩坏
+    url: https://baike.baidu.com/item/馆花纱月/16799700
 ---
 
 ![爷就是二次元](https://cdn.jsdelivr.net/gh/YunYouJun/cdn/img/meme/i-am-er-ci-yuan.jpg)
+
+## 原则
+
+- 可爱
+- 拥有某种我喜爱的特质

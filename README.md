@@ -46,9 +46,15 @@ git clone https://github.com/YunYouJun/hexo-theme-yun themes/yun
 
 ## CDN
 
+### JSDELIVR
+
 [![JSDELIVR](https://www.jsdelivr.com/img/logo-horizontal.svg)](https://www.jsdelivr.com/)
 
+- Prefix: <https://cdn.jsdelivr.net/gh/YunYouJun/cdn/>
+
 ### 腾讯云
+
+[![Tencent Cloud](https://imgcache.qq.com/open_proj/proj_qcloud_v2/gateway/portal/css/img/nav/logo-bg-color.svg)](https://cloud.tencent.com/)
 
 #### 刷新目录
 
