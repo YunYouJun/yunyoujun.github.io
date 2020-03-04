@@ -120,6 +120,9 @@ symbols_count_time:
   awl: 2
   wpm: 250
 
+engine_search:
+  enable: true
+
 algolia_search:
   enable: true
   src: /js/search/algolia-search.js
