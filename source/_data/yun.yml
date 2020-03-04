@@ -121,7 +121,7 @@ symbols_count_time:
   wpm: 250
 
 engine_search:
-  enable: true
+  enable: false
 
 algolia_search:
   enable: true
@@ -145,7 +145,7 @@ google_analytics:
 links:
   enable: true
   icon: icon-open-arm-line
-  title: 云游和他的小伙伴们
+  title: 我的小伙伴们
   url: /links
 
 post_edit:

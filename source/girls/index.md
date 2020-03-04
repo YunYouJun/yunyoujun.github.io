@@ -116,7 +116,7 @@ girls:
     from: 魔法禁书目录
   - name: 雷姆
     avatar: https://img.moegirl.org/common/thumb/c/c4/RMT.JPG/200px-RMT.JPG
-    from: 魔法禁书目录
+    from: Re：从零开始的异世界生活
     url: https://zh.moegirl.org/雷姆(Re:从零开始的异世界生活)
   - name: 惣流·明日香·兰格雷
     avatar: https://img.moegirl.org/common/thumb/7/7c/Asuka_Langley_Soryu.jpg/250px-Asuka_Langley_Soryu.jpg
