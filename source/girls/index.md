@@ -339,8 +339,13 @@ girls:
     avatar: https://i.loli.net/2020/03/04/blDCGLQW6voXYK7.jpg
     from: 渡君的XX即将崩坏
     url: https://baike.baidu.com/item/馆花纱月/16799700
+  - name: 阿萨兹勒·艾梅莉
+    avatar: https://i.loli.net/2020/03/05/CxJaYB6IbMSflL5.png
+    from: 入间同学入魔了！
+    url: https://baike.baidu.com/item//阿萨兹勒·艾梅莉/23282535
 ---
 
+![爷就是二次元](https://cdn.jsdelivr.net/gh/YunYouJun/cdn/img/meme/love-er-ci-yuan-is-sick.jpg)
 ![爷就是二次元](https://cdn.jsdelivr.net/gh/YunYouJun/cdn/img/meme/i-am-er-ci-yuan.jpg)
 
 ## 原则
