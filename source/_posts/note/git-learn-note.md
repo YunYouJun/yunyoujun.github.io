@@ -232,7 +232,7 @@ pick 578ba7a hexo backup
 
 剩余的 `git rebase --skip`
 
-> [How to modify existing, unpushed commit messages?](https://stackoverflow.com/questions/179123/how-to-modify-existing-unpushed-commit-messages)
+> [How to modify existing, unpushed commit messages?](https://stackoverflow.com/questions/179123/how-to-modify-existing-unpushed-commit-messages) > [Removing sensitive data from a repository | GitHub](https://help.github.com/en/github/authenticating-to-github/removing-sensitive-data-from-a-repository)
 
 ### 增加子模块
 

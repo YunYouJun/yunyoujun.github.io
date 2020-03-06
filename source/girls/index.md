@@ -343,9 +343,14 @@ girls:
     avatar: https://i.loli.net/2020/03/05/CxJaYB6IbMSflL5.png
     from: 入间同学入魔了！
     url: https://baike.baidu.com/item//阿萨兹勒·艾梅莉/23282535
+  - name: 奏言叶
+    avatar: https://i.loli.net/2020/03/06/CbeflcOEkJ68jVD.jpg
+    from: 理科生坠入情网，故尝试证明。
+    url: https://baike.baidu.com/item/奏言叶/23761630
+    reason: 仿佛生活中存在的可爱后辈
 ---
 
-![爷就是二次元](https://cdn.jsdelivr.net/gh/YunYouJun/cdn/img/meme/love-er-ci-yuan-is-sick.jpg)
+![喜欢二次元这件事很恶心这一点我还是知道的](https://cdn.jsdelivr.net/gh/YunYouJun/cdn/img/meme/love-er-ci-yuan-is-sick.jpg)
 ![爷就是二次元](https://cdn.jsdelivr.net/gh/YunYouJun/cdn/img/meme/i-am-er-ci-yuan.jpg)
 
 ## 原则
