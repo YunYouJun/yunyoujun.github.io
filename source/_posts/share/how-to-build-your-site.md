@@ -175,11 +175,8 @@ hexo init 你的名字.github.io
 cd 你的名字.github.io
 # 默认安装所有 `package.json` 文件中提到的包
 npm install
-```
-
-```sh
-hexo server
 # 你也可以缩写成 hexo s
+hexo server
 ```
 
 `server` 代表开启本地的 Hexo 服务器，这时你就可以打开浏览器，在地址栏中输入 `localhost:4000` 就可以看到本地的网页了。
