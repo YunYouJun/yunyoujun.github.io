@@ -1,7 +1,7 @@
 ---
 name: Comment - 评论
 about: Article comments - 文章评论
-title: "「云游君的小站」- 这里填写你评论的文章的名称"
+title: 这里填写你评论的文章的名称 · 云游君的小站
 labels: comment
 assignees: ''
 
