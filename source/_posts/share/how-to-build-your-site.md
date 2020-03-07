@@ -206,7 +206,7 @@ Hexo 默认提供的是 [hexo-theme-landscape](https://github.com/hexojs/hexo-th
 
 ##### 下载 Hexo 主题
 
-进入终端（确保路径处于你的 Hexo 文件夹目录下），输入以下命令。
+进入终端（确保路径处于你此前使用 Hexo 初始化好的文件夹目录下，后简称为 `Hexo 目录`），输入以下命令。
 
 > 实际上你也可以直接在 VS Code 中使用终端。
 
@@ -226,7 +226,20 @@ git clone https://github.com/YunYouJun/hexo-theme-yun themes/yun
 
 它是 Hexo 的配置文件，关于各配置选项的意义你可以查看 [配置 | Hexo](https://hexo.io/zh-cn/docs/configuration)。
 
-找到 `theme` 这个字段，将其后的 `landscape` 修改为 `yun`。
+在 `_config.yml` 中找到 `theme` 这个字段，将其后的 `landscape` 修改为 `yun`。
+
+```yml
+theme: yun
+```
+
+> pug 是一种模板引擎，可以渲染为 HTML 字符串。类似的还有 ejs，swig 等，语法和设计理念有所不同。
+> stylus 是一种 CSS 预处理器，可以渲染为 CSS。类似的还有 scss，less，同样只是语法和设计理念有所差异。
+
+由于我的主题使用了 pug 和 stylus，而 Hexo 自带的一般是 ejs 与 stylus，所以你可能还需要输入以下命令安装渲染器。
+
+```sh
+npm install hexo-render-pug hexo-renderer-stylus
+```
 
 这时再像此前那般使用 `hexo server` 重新启动服务器，你就可以看到一个不一样的主题风格的页面了。
 
@@ -254,11 +267,81 @@ avatar:
   opacity: 1
 ```
 
-这只是一个配置项的简单示例，更多配置你可以参考我的[主题文档](https://yun.yunyoujun.cn)，并更具自己的需要进行配置。
+更换主题色彩，比如换成黑色，黑色的十六进制颜色代码是 `#000000`。
+
+```yml
+colors:
+  primary: "#000000"
+```
+
+这时你的主题色调就会变为黑色。
+
+这只是一个配置项的简单示例，更多配置你可以参考我的[主题文档](https://yun.yunyoujun.cn) 或直接在 `theme/yun/_config.yml` 中查看，并根据自己的需要进行配置。
+
+### 生成静态文件
+
+至今我们的工作都是在本地进行，想必你也很想放到线上与小伙伴们分享。
+这便轮到了 GitHub Pages 的出场，不过 GitHub Pages 只支持纯静态文件。
+
+所以我们需要使用以下命令先来生成站点的静态文件。
+
+```sh
+# 如果进行多次生成，为了避免受错误缓存影响，最好使用 hexo clean 先清除一遍。
+hexo generate
+# 缩写为 hexo g
+```
+
+此时你的文件夹目录下会出现 `public` 这个文件夹，里面存放的就是你站点的静态文件。
+
+在将其部署到 GitHub Pages 上之前，我们最好先建立一个分支。
+
+> 什么是分支？
+> Git 提供了版本管理功能，其中还有一个分支功能，你现在可以简单地将其理解为平行世界。
+
+`你的名字.github.io` 部署后，GitHub Pages 将默认使用你的 master 分支作为静态文件部署。
+所以我们最好新建一个 hexo 分支（命名无所谓）用来存储 Hexo 地源代码，master 分支则用来存储部署后的静态文件。
+
+```sh
+git branch -b hexo
+```
+
+这时便成功建立了一个 hexo 分支。（此后的工作都将在 hexo 分支下进行）
+
+你可以通过 `git branch -v` 来查看当前有哪些分支，使用 `git branch 分支名` 来切换到哦对应的分支。
+
+> [Git 学习笔记](https://www.yunyoujun.cn/note/git-learn-note/)
 
 ### 部署
 
-至今我们的工作都是在本地进行，想必也很想放到线上与小伙伴们分享。
+为了更方便的部署到 GitHub Pages，Hexo 提供了 `hexo-deployer-git` 插件。
+
+老规矩，安装。
+
+```sh
+npm install hexo-deployer-git
+```
+
+在 `_config.yml` 中配置。
+
+```yml
+deploy:
+  type: git
+  repo: 你此前新建的仓库的链接 # 比如：https://github.com/YunYouJun/yunyoujun.github.io
+  branch: master # 默认使用 master 分支
+  message: Update Hexo Static Content # 你可以自定义此次部署更新的说明
+```
+
+部署！
+
+```sh
+hexo deploy
+```
+
+等待完成后，打开网址 `https://你的名字.github.io` 就能看到你的线上网站了。
+
+> 使用 https，http 可能无法正常打开。HTTPS 是多了安全加密的 HTTP，Chrome 浏览器已经默认会显示 `http` 链接为不安全。
+> 为了安全，建议开启强制 https 跳转。`项目地址页面 -> Settings -> Options -> GitHub Pages -> Enforce HTTPS`。（翻到下面）
+> 此时，http 网址会自动重定向到 https
 
 ## FAQ
 
