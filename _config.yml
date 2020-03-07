@@ -120,11 +120,13 @@ deploy:
   extend_dirs:
 
 # plugins
+# https://github.com/theme-next/hexo-symbols-count-time
 symbols_count_time:
   symbols: true
   time: true
   total_symbols: true
   total_time: true
+  exclude_codeblock: true
 
 # https://github.com/hexojs/hexo-generator-feed
 feed:
@@ -180,3 +182,7 @@ asset_pipeline:
     enable: false
   html_minifier:
     enable: false
+
+# https://github.com/hexojs/hexo-server
+server:
+  compress: true

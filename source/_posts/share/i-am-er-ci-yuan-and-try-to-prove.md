@@ -76,7 +76,7 @@ categories:
 > 我此前也尝试写了一篇「[恋爱证明记](https://www.yunyoujun.cn/creation/novel/proof-of-love/)」，但回看起来不得不称作很烂的作品。
 
 用理科的知识证明恋爱，充斥着大概率会被看作没意义的理科生的浪漫。不知怎么，还联想到「毕导」、「手工耿」等知名网红。
-有趣而无用，把无趣的东西变为有趣。写有趣的论文，做有趣的实验，本身也是一件有趣的事情。
+有趣而无用，把无趣的东西变为有趣。写有趣的论文，做有趣的实验与课题，本身也是一件有趣的事情。
 
 此外，我一直很想创作一部自己的小说、漫画、动画或是游戏。却始终没有把握做好。但自己的阅历仍旧稍显不足。
 
@@ -94,7 +94,7 @@ categories:
 
 但是...
 
-![爷就是二次元](https://cdn.jsdelivr.net/gh/YunYouJun/cdn/img/meme/i-am-er-ci-yuan.jpg)。
+![爷就是二次元](https://cdn.jsdelivr.net/gh/YunYouJun/cdn/img/meme/i-am-er-ci-yuan.jpg)
 
 只要相信哆啦 A 梦还可能从我书桌抽屉中跳出，我的青春（童年）就不会结束不是吗？
 

@@ -50,16 +50,7 @@ reward_settings:
 # add_this_id: ra-5cc836b673a8e0ef
 
 # Comments
-# gitalk
-# See: https://github.com/gitalk/gitalk
-gitalk:
-  enable: true
-  clientID: # Github Application Client ID
-  clientSecret: # Github Application Client Secret
-  repo: yunyoujun.github.io # GitHub repo
-  owner: YunYouJun # GitHub repo owner
-  admin: ["YunYouJun"] # GitHub repo owner and collaborators, only these guys can initialize github issues
-
+# -------
 # Valine
 # You can get your appid and appkey from https://leancloud.cn
 # More info available at https://valine.js.org
