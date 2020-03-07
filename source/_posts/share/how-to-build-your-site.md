@@ -85,6 +85,8 @@ Linux 用户右上角关闭本标签页。
 
 下载 [Git](https://git-scm.com/) 并安装（如果国内速度太慢，可以试试[这里](https://pc.qq.com/detail/13/detail_22693.html)）
 
+macOS 用户可以下载官网的安装包进行安装，也可以直接安装 App Store 的 Xcode（附带会安装 Git，但是比较大）。
+
 > 类似的工具还有：SVN。但始终更推荐 Git，因为它功能更为强大且它的背后还有更强大的生态：GitHub。
 
 #### 注册 GitHub
@@ -137,6 +139,8 @@ Linux 用户右上角关闭本标签页。
 
 ```sh
 npm install hexo-cli -g
+# 如果安装失败，可能是没有权限，可以尝试头部加上 sudo 重新执行
+# sudo npm install hexo-cli -g
 ```
 
 > `npm` 是随 Node.js 一起被安装的包管理工具，你可以理解成 Node.js 自带的应用商店。
@@ -182,6 +186,79 @@ hexo server
 `server` 代表开启本地的 Hexo 服务器，这时你就可以打开浏览器，在地址栏中输入 `localhost:4000` 就可以看到本地的网页了。
 
 按 `Ctrl + C` 终端服务器的运行。
+
+至此，基础的模版页面便已经搭建好了。
+
+#### 使用 Hexo 主题
+
+Hexo 默认提供的是 [hexo-theme-landscape](https://github.com/hexojs/hexo-theme-landscape) 主题。
+默认主题样式简单，功能较少。所以大多数人并不会使用默认主题。
+
+这里将示范如何使用我自己开发的主题 [hexo-theme-yun](https://github.com/YunYouJun/hexo-theme-yun)。
+你可以前往 [云游君的小站](https://www.yunyoujun.cn) 查看示例效果。
+
+当然，你也可以在 [Themes | Hexo](https://hexo.io/themes/) 发现更多有趣美丽的主题。使用方法大致相同。
+当你具备一定开发能力时，你可以开发属于自己的主题，或者为 hexo-theme-yun 提交 [PR](https://github.com/YunYouJun/hexo-theme-yun/pulls) 添加你想要的功能。
+
+- [hexo-theme-yun - GitHub](https://github.com/YunYouJun/hexo-theme-yun)
+- [hexo-theme-yun 使用文档](https://yun.yunyoujun.cn)：更详细的配置进阶指南。
+- [示例效果](https://www.yunyoujun.cn)
+
+##### 下载 Hexo 主题
+
+进入终端（确保路径处于你的 Hexo 文件夹目录下），输入以下命令。
+
+> 实际上你也可以直接在 VS Code 中使用终端。
+
+```sh
+git clone https://github.com/YunYouJun/hexo-theme-yun themes/yun
+```
+
+> 这里便使用到了我们此前安装的 Git，`git clone` 即代表克隆（也就是复制的作用）我的主题（托管于 GitHub，链接便是主题所在的地址），`themes/yun` 则代表放在你 Hexo 文件夹下的 `themes/yun` 文件夹里（没有该文件夹会自动新建）。
+
+##### 编辑 Hexo 配置
+
+> 右键文件夹使用 VS Code 打开，或者进入 VS Code 打开你存储网站的文件夹。此后操作都将默认你已处于该工作目录下。
+
+在你此前通过 Hexo 初始化生成的文件目录下，会存在一个 `_config.yml` 文件。
+
+> `yml` 是 [YAML](https://baike.baidu.com/item/YAML/1067697) 文件的后缀名，YAML 是 "YAML Ain't a Markup Language"（YAML 不是一种标记语言） 的缩写，但它实际上还是一种标记语言。你可以将其理解为存储数据的一种文本格式，这也是其诞生的目的。 如果你听说过 JSON，那你就更能明白它是干什么的了。
+
+它是 Hexo 的配置文件，关于各配置选项的意义你可以查看 [配置 | Hexo](https://hexo.io/zh-cn/docs/configuration)。
+
+找到 `theme` 这个字段，将其后的 `landscape` 修改为 `yun`。
+
+这时再像此前那般使用 `hexo server` 重新启动服务器，你就可以看到一个不一样的主题风格的页面了。
+
+##### 自定义主题配置
+
+当启动时，会使用主题的默认配置。但这不一定是你想要的。
+所以你可以对主题进行一些自定义。
+
+主题的配置文件放在 `themes/yun/_config.yml` 文件中。
+且慢，你最好不要直接修改主题的默认配置。倘若日后主题升级更新了怎么办吗，难道还要重新配置一遍吗？
+
+最好的解决方案就是新建 `source/_data/yun.yml`。（若 `source/_data` 目录不存在，请新建）
+
+本主题将自定义配置与默认配置进行合并，因此你只需要在 `yun.yml` 文件中自定义你需要的配置即可，其余仍将自动采用默认配置。
+
+譬如我们需要更换头像。在 `yun.yml` 中填写。
+
+> 你可以在 `source` 文件夹下新建 `images` 文件夹，用来存储你的图片。
+> 也可以使用 [SM.MS](https://sm.ms/) 上传你的图片文件，获取在线链接。
+
+```yml
+avatar:
+  url: /images/avatar.webp # 你的头像图片地址
+  rounded: true
+  opacity: 1
+```
+
+这只是一个配置项的简单示例，更多配置你可以参考我的[主题文档](https://yun.yunyoujun.cn)，并更具自己的需要进行配置。
+
+### 部署
+
+至今我们的工作都是在本地进行，想必也很想放到线上与小伙伴们分享。
 
 ## FAQ
 
