@@ -26,6 +26,7 @@ links:
     name: iimT
     blog: iimT 的独立博客
     desc: 一个喜欢电音的技术宅。
+placeholder: 还没想好说些什么
 ---
 
 ## 友链说明
