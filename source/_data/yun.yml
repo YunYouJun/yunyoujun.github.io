@@ -133,12 +133,6 @@ google_analytics:
   enable: true
   id: UA-121354150-1
 
-links:
-  enable: true
-  icon: icon-open-arm-line
-  title: 我的小伙伴们
-  url: /links
-
 post_edit:
   enable: true
   url: https://github.com/YunYouJun/yunyoujun.github.io/tree/hexo/source/
