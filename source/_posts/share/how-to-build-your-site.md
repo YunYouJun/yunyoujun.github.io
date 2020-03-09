@@ -194,7 +194,7 @@ hexo server
 Hexo 默认提供的是 [hexo-theme-landscape](https://github.com/hexojs/hexo-theme-landscape) 主题。
 默认主题样式简单，功能较少。所以大多数人并不会使用默认主题。
 
-这里将示范如何使用我自己开发的主题 [hexo-theme-yun](https://github.com/YunYouJun/hexo-theme-yun)。
+这里将示范如何使用我自己开发的主题 [hexo-theme-yun](https://github.com/YunYouJun/hexo-theme-yun)（\_(:з」∠)\_ 顺带求 Star）。
 你可以前往 [云游君的小站](https://www.yunyoujun.cn) 查看示例效果。
 
 当然，你也可以在 [Themes | Hexo](https://hexo.io/themes/) 发现更多有趣美丽的主题。使用方法大致相同。
@@ -262,7 +262,7 @@ npm install hexo-render-pug hexo-renderer-stylus
 
 ```yml
 avatar:
-  url: /images/avatar.webp # 你的头像图片地址
+  url: /images/avatar.jpg # 你的头像图片地址
   rounded: true
   opacity: 1
 ```
@@ -293,6 +293,14 @@ hexo generate
 
 此时你的文件夹目录下会出现 `public` 这个文件夹，里面存放的就是你站点的静态文件。
 
+### 与远程仓库建立关联
+
+接下来我们将本地的仓库与此前在 GitHub 上建立的仓库建立关联。
+
+```sh
+git init # 初始化 Git 仓库，只需要执行一次即可
+```
+
 在将其部署到 GitHub Pages 上之前，我们最好先建立一个分支。
 
 > 什么是分支？
@@ -302,7 +310,7 @@ hexo generate
 所以我们最好新建一个 hexo 分支（命名无所谓）用来存储 Hexo 地源代码，master 分支则用来存储部署后的静态文件。
 
 ```sh
-git branch -b hexo
+git checkout -b hexo
 ```
 
 这时便成功建立了一个 hexo 分支。（此后的工作都将在 hexo 分支下进行）
@@ -331,7 +339,10 @@ deploy:
   message: Update Hexo Static Content # 你可以自定义此次部署更新的说明
 ```
 
-部署！
+保存，部署！
+
+> 第一次可能需要你输入用户名与密码。
+> 密码输入的时候不会出现 \*\*\*，不要害怕，已经输入进去了。
 
 ```sh
 hexo deploy

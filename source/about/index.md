@@ -12,7 +12,7 @@ updated: 2018-01-30 15:10:32
 > All at sea.
 
 <div class="site-author-avatar" style="text-align:center;">
-<img src="https://www.yunyoujun.cn/images/avatar.webp" alt="portrait" title="ID : 云游君">
+<img src="https://www.yunyoujun.cn/images/avatar.jpg" alt="portrait" title="ID : 云游君">
 </div>
 
 > 学生党一只。成长 ing。
@@ -46,7 +46,7 @@ updated: 2018-01-30 15:10:32
 其实并没有什么用，不过加了跳转网站的菜单。（订阅勉强可以当作证明收藏过本站的标记？）
 也许日后有空会搬一点文章过去？（咕咕咕）
 
-![微信公众号-扫码-搜索-联合传播](https://cdn.jsdelivr.net/gh/YunYouJun/cdn/img/about/white-qrcode-and-search.webp)
+![微信公众号-扫码-搜索-联合传播](https://cdn.jsdelivr.net/gh/YunYouJun/cdn/img/about/white-qrcode-and-search.jpg)
 
 ## Donate
 

@@ -4,13 +4,8 @@ colors:
   # primary: "#0078E7"
   primary: "#0078E7"
 
-# Sidebar Avatar
 avatar:
-  url: /images/avatar.webp
-  # If true, the avatar would be dispalyed in circle.
-  rounded: true
-  # The value of opacity should be choose from 0 to 1 to set the opacity of the avatar.
-  opacity: 1
+  url: /images/avatar.jpg
 
 # main menu navigation
 menu:
