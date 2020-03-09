@@ -41,8 +41,8 @@ placeholder: 还没想好说些什么
 
 ```yml
 url: https://yunyoujun.cn # 博客链接
-# 头像图片链接（HTTPS，推荐 `.webp` 体积更小，加载速度更快）
-avatar: https://cdn.jsdelivr.net/gh/YunYouJun/yunyoujun.github.io/images/avatar.webp
+# 头像图片链接，最好使用 HTTPS
+avatar: https://cdn.jsdelivr.net/gh/YunYouJun/yunyoujun.github.io/images/avatar.jpg
 name: 云游君 # 阁下怎么称呼？
 blog: 云游君的小站 # 您的站点名称
 desc: All at sea. # 一句话描述（描述一下 自己 或者 站点 或者 喜欢的话？）
