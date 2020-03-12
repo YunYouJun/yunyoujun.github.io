@@ -8,6 +8,7 @@ tags:
 categories:
   - 云游的小笔记
 ---
+
 ## 闲话
 
 腾讯云的学生机其实续费了几年，也没怎么使用它。
@@ -53,14 +54,14 @@ yum -y install java-latest-openjdk
 
 如有兴趣，可参考百科安装不同服务器版本。
 
-你可以在 [这里](https://www.minecraft.net/zh-hans/download/server/) 下载官方 JAVA 版的最新版本服务器。
+你可以在 [这里](https://www.minecraft.net/zh-hans/download/server/) 下载官方 JAVA 版的最新版本服务器。（替换下方下载链接）
 
 ```sh
 mkdir /opt/minecraft
 cd /opt/minecraft
 # 若没有 wget，需先安装
 # yum -y wget
-wget https://launcher.mojang.com/v1/objects/3dc3d84a581f14691199cf6831b71ed1296a9fdf/server.jar
+wget https://launcher.mojang.com/v1/objects/bb2b6b1aefcd70dfd1892149ac3a215f6c636b07/server.jar
 # 1.14.4
 ```
 
