@@ -450,9 +450,7 @@ hexo new post xxxx
 
 譬如直接在 Hexo 目录下的 `source` 文件夹下直接新建 HTML 进行编写。
 
-> 这可能有点麻烦，因为还要考虑 SEO，和之前的样式统一，没有有效复用已有的布局不是很方便。如果本来目的就只是独立页面，当然没问题。
-
-你可以通过以下命令来新建页面。（当然还是 Markdown，不过也是可以在 Markdown 里写 HTML 的，也会被渲染出来。）
+也可以通过以下命令来新建页面。（当然还是 Markdown，不过也是可以在 Markdown 里写 HTML 的，也会被渲染出来。）
 
 ```md
 hexo new page xxx
