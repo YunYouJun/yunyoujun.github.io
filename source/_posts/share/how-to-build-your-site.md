@@ -354,6 +354,63 @@ hexo deploy
 > 为了安全，建议开启强制 https 跳转。`项目地址页面 -> Settings -> Options -> GitHub Pages -> Enforce HTTPS`。（翻到下面）
 > 此时，http 网址会自动重定向到 https
 
+### 备份与自动部署
+
+我们当前只是将生成的静态文件部署到了云端。
+
+为了以防万一，我们应该将网站的源代码文件也推送到 GitHub 仓库备份。
+
+```sh
+# 与远程 Git 仓库建立连接，只此一次即可
+git remote add origin https://github.com/你的用户名/你的名字.github.io
+```
+
+接下来准备提交，这几句命令将是你以后每次备份所需要输入。
+
+```sh
+# 添加到缓存区
+git add -A
+#
+git commit -m "这次做了什么更改，简单描述下即可"
+# 推送至远程仓库
+git push
+# 第一次提交，你可能需设置一下默认提交分支
+# git push --set-upstream origin hexo
+```
+
+每次推送都要输入这三条命令，你可能觉得有些麻烦。
+那么你可以编写 bash 脚本。
+
+譬如，在根目录下新建 `update.sh`。
+
+```sh
+# 如果没有消息后缀，默认提交信息为 `:pencil: update content`
+info=$1
+if ["$info" = ""];
+then info=":pencil: update content"
+fi
+git add -A
+git commit -m "$info"
+git push origin hexo
+```
+
+此后更新的话，只需要在终端执行 `sh update.sh` 即可。
+
+更新麻烦，每次部署也很麻烦，可以使用持续集成进行自动部署。
+
+> 什么是持续集成？
+> 持续集成是一种软件开发实践。对软件进行自动化构建，以此来发现错误。
+> Travis CI 就是一个线上持续集成服务的提供商。它可以拉取你每次推送到 GitHub 上的代码，然后根据你的要求对其进行构建。
+> 我们可以趁机让它自动生成网站静态文件，然后自动帮我们部署。
+
+至于如何使用持续集成来部署 Hexo，官方文档已经介绍的很详细，所以我就不再画蛇添足了。
+
+> [将 Hexo 部署到 GitHub Pages](https://hexo.io/zh-cn/docs/github-pages)
+
+至此，你的站点便基本搭建完成，此后继续对主题进行自定义吧。
+
+> [Yun 主题文档](https://yun.yunyoujun.cn)
+
 ## FAQ
 
 ### 视频？
