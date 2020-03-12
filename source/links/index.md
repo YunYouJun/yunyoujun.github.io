@@ -11,11 +11,11 @@ links:
     name: YumeSama
     blog: ゆめ Yume
     desc: 「技美大佬」
-  - url: http://47.95.121.139/
-    avatar: http://47.95.121.139/wp-content/uploads/2020/02/logo.png
+  - url: https://pbas.club/
+    avatar: https://pbas.club/wp-content/uploads/2020/03/logo.png
     name: 阿肾哥哥
     blog: 梨花町の腎兄さん
-    desc: 生活,闲聊,学习,分享
+    desc: 说不尽的心酸只好当笑谈，忘不尽的往事只好随风吹散。
   - url: https://5ime.cn/
     avatar: https://blog-1252493876.file.myqcloud.com/avatar.jpg
     name: I Am I
@@ -26,6 +26,11 @@ links:
     name: iimT
     blog: iimT 的独立博客
     desc: 一个喜欢电音的技术宅。
+  - url: https://www.antmoe.com/
+    avatar: https://cdn.jsdelivr.net/gh/sviptzk/HexoStaticFile@latest/avatar.jpg
+    name: 小康
+    blog: 小康博客
+    desc: 一个收藏回忆与分享技术的地方！
 placeholder: 还没想好说些什么
 ---
 
@@ -45,7 +50,7 @@ url: https://yunyoujun.cn # 博客链接
 avatar: https://cdn.jsdelivr.net/gh/YunYouJun/yunyoujun.github.io/images/avatar.jpg
 name: 云游君 # 阁下怎么称呼？
 blog: 云游君的小站 # 您的站点名称
-desc: All at sea. # 一句话描述（描述一下 自己 或者 站点 或者 喜欢的话？）
+desc: All at sea. # 一句话描述（描述一下 自己 或者 站点 或者 喜欢的话？Orz 最好不要太长。）
 email: me@yunyoujun.cn # 联系方式（没联系方式，我咋回复啊）
 # 介意邮箱隐私，可以填写在 Valine 评论里～
 ```
