@@ -1,7 +1,7 @@
 ---
 title: 教你如何从零开始搭建一个属于自己的网站
 date: 2020-03-05 01:31:08
-updated: 2020-03-05 01:31:08
+updated: 2020-03-13 01:31:08
 tags:
   - 教程
   - Hexo
@@ -57,7 +57,7 @@ hide: true
 
 [下载｜ Node.js](https://nodejs.org/zh-cn/)
 
-建议下载**长期支持版**而非**当前发布版**（因为是最新版，所以容易出现一些奇妙的 bug）。
+建议下载**长期支持版**而非**当前发布版**（因为如果是最新版，容易出现一些奇妙的 bug）。
 
 全部默认下一步进行安装。
 
@@ -411,6 +411,57 @@ git push origin hexo
 
 > [Yun 主题文档](https://yun.yunyoujun.cn)
 
+### 开始写作
+
+#### 文章
+
+输入以下命令即可新建 `xxxx.md` 文件。
+
+```sh
+hexo new post xxxx
+```
+
+> `md` 是 `Markdown` 的后缀名，是一种简洁方便的文本标记语言。你只需要记住简单的几种语法，就可以快速进行编写。
+> 为什么使用 Markdown？
+> 首先 Hexo 本身就是将 Markdown 转化为静态的 Html 文件，来方便用户编写文章。
+> Markdown 就好似介于 Word 与 TXT 文本之间。Word 体积大、大部分功能实际上根本用不到，且最后的文档常常带有许多冗余信息。
+> 而 TXT 却无法实现加粗、标题、下划线、水平分割线等常用的功能。
+> （这里所说的 TXT 只是一种纯文本格式的代称，实际上 Markdown 也是纯文本文件，不过通过语法和 Markdown 编译器，我们就可以看到一些简单的样式。）
+
+譬如本文就是通过 Markdown 编写。
+
+```md
+# 一级标题
+
+## 二级标题
+
+**加粗文字**
+```
+
+> 更多语法（虽然说是更多，但是其实也没多少）：[Markdown 基本语法](https://github.com/younghz/Markdown)
+
+这是我写的一个 Markdown 样式：[star-markdown-css](https://www.yunyoujun.cn/star-markdown-css/)
+
+上面是渲染过后的效果，你可以与其 Markdown 的[纯文本原文](https://raw.githubusercontent.com/YunYouJun/star-markdown-css/master/demo/md/demo.md) 进行对比。
+
+#### 页面
+
+你可以新建一些自己的自定义页面。
+
+譬如直接在 Hexo 目录下的 `source` 文件夹下直接新建 HTML 进行编写。
+
+> 这可能有点麻烦，因为还要考虑 SEO，和之前的样式统一，没有有效复用已有的布局不是很方便。如果本来目的就只是独立页面，当然没问题。
+
+你可以通过以下命令来新建页面。（当然还是 Markdown，不过也是可以在 Markdown 里写 HTML 的，也会被渲染出来。）
+
+```md
+hexo new page xxx
+```
+
+说到这里，就不得不提一提本主题的特色功能了。
+
+生成你的老婆列表页面。按一定格式书写即可。见[文档](https://yun.yunyoujun.cn/guide/page.html#girls)。
+
 ## FAQ
 
 ### 视频？
@@ -421,12 +472,33 @@ git push origin hexo
 
 ### 如何绑定你的自定义域名？
 
-<!-- 在 `Hexo` 分支下新建 `CNAME` 文件（没有后缀名）。
+首先，你得有个自己的域名。并使用 CNAME 解析到 `你的名字.github.io`。（当然 A 记录直接解析到 GitHub Pages IP 地址也可以。）
 
-内容填写你的域名即可。 -->
+> [Managing a custom domain for your GitHub Pages site](https://help.github.com/en/github/working-with-github-pages/managing-a-custom-domain-for-your-github-pages-site#configuring-an-apex-domain)
+
+在 `Hexo` 工作目录下 `source` 文件夹下新建 `CNAME` 文件（没有后缀名）。
+
+> source 目录下的文件除了特殊的 markdown 会被解析为 html，其余都会原样复制到生成的静态文件夹中。
+
+内容填写你的域名即可。
+
+> https://help.github.com/en/github/working-with-github-pages/about-custom-domains-and-github-pages
+
+## 结语
+
+个人网站同样可以用来做许多事情，你可以将其用来记录生活、回忆、创作、学习笔记、开发经验等（包括作为一个试验平台）。
+可以与熟悉的人分享，也可以作为另一个世界另一个自己的展示。
+
+多年后，回看起自己当初写下的内容，未尝不是件有趣的事情。
+
+善始者众，善终者寡。
+
+> 臣闻善作者，不必善成；善始者，不必善终。「史记·乐毅列传」
+
+希望大家能有毅力坚持下去，不忘初心。
+
+> 永远相信美好的事情即将发生
 
 ---
 
-To Be Continued.
-
-<!-- Q.E.D. -->
+Q.E.D.
