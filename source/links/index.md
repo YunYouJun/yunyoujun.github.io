@@ -55,7 +55,7 @@ placeholder: 还没想好说些什么
 ### 格式
 
 ```yml
-url: https://yunyoujun.cn
+url: https://www.yunyoujun.cn
 avatar: https://cdn.jsdelivr.net/gh/YunYouJun/yunyoujun.github.io/images/avatar.jpg
 name: 云游君
 blog: 云游君的小站

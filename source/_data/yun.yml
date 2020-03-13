@@ -1,129 +1,43 @@
 favicon: /favicon.ico
 
-colors:
-  # primary: "#0078E7"
-  primary: "#0078E7"
-
 avatar:
   url: /images/avatar.jpg
 
-# main menu navigation
-menu:
-  home:
-    path: /
-    icon: icon-home-4-line
-  archives:
-    path: /archives
-    icon: icon-archive-line
-  tags:
-    path: /tags
-    icon: icon-price-tag-3-line
-  categories:
-    path: /categories
-    icon: icon-folder-2-line
-  about:
-    path: /about
-    icon: icon-information-line
-
-# Article
-# ---------------
-# Code Highlight theme
-# Available values: normal | night | night eighties | night blue | night bright
-# https://github.com/chriskempson/tomorrow-theme
-highlight_theme: normal
-
-# Reward (Donate)
 reward_settings:
-  # If true, reward would be displayed in every article by default.
-  # You can show or hide reward in a specific article throuth `reward: true | false` in Front Matter.
   enable: true
   comment: 我很可爱，请给我钱
   url: "/about/#Donate"
 
-# AddThis Share, See: https://www.addthis.com
-# Go to https://www.addthis.com/dashboard to customize your tools.
-# add_this_id: ra-5cc836b673a8e0ef
-
-# Comments
-# -------
-# Valine
-# You can get your appid and appkey from https://leancloud.cn
-# More info available at https://valine.js.org
 valine:
   enable: true
   appId: 4x0IwQ1sy95mOGQDTO8MYCeA-gzGzoHsz # your leancloud application appid
   appKey: 9loqwF3UDklPDHaP9IN2uwN8 # your leancloud application appkey
   notify: true # mail notifier, See: https://github.com/xCss/Valine/wiki
   verify: true # Verification code
-  placeholder: So lonely here # comment box placeholder
+  placeholder: 大佬求指教&nbsp_(:з」∠)_ # comment box placeholder
   avatar: # gravatar style
   meta: nick,mail,link # custom comment header
   pageSize: 10 # pagination size
   visitor: true
 
-# Footer Settings
-# ---------------
 footer:
   since: 2016
-
-  # Icon between year and copyright info.
-  icon:
-    # `heart` is recommended with animation in red (#ff0000).
-    name: icon-cloud-line
-    # If you want to animate the icon, set it to true.
-    animated: true
-    # Change the color of icon, using Hex Code.
-    color: "#0078E7"
-
-  powered:
-    # Hexo link (Powered by Hexo).
-    enable: true
-    # Version info of Hexo after Hexo link (vX.X.X).
-    version: true
-
-  # Beian icp information for Chinese users. In China, every legal website should have a beian icp in website footer.
-  # http://www.beian.miit.gov.cn
   beian:
     enable: true
     icp: 苏ICP备17038157号
-
-  # Any custom text can be defined here.
-  # custom_text: Hosted by <a href="https://pages.coding.me" rel="noopener" target="_blank">Coding Pages</a>
-
-# Post meta display settings
-post_meta:
-  # item_text: false
-  created_at: true
-  updated_at: true
-  categories: true
-  tags: true
-
-# Post wordcount display settings
-# Dependencies: https://github.com/theme-next/hexo-symbols-count-time
-symbols_count_time:
-  item_text_post: true
-  item_text_total: true
-  awl: 2
-  wpm: 250
+  # ...
 
 engine_search:
   enable: false
 
 algolia_search:
   enable: true
-  src: /js/search/algolia-search.js
-  hits:
-    per_page: 8 # the number of search results per page
+  # ...
 
-# Ads
-# ---------------
-# Google Adsense
 google_adsense:
   enable: true
   client: ca-pub-2245427233262012
 
-# Analysis
-# ---------------
 google_analytics:
   enable: true
   id: UA-121354150-1
@@ -131,31 +45,6 @@ google_analytics:
 post_edit:
   enable: true
   url: https://github.com/YunYouJun/yunyoujun.github.io/tree/hexo/source/
-
-say:
-  enable: true
-  api: https://cdn.jsdelivr.net/gh/ElpsyCN/say@gh-pages/sentences.json
-
-sentences:
-  - content: 我们一日日度过的所谓日常,实际上可能是接连不断的奇迹。
-    from: 《日常》
-    url: https://baike.baidu.com/item/日常/5844361
-  - content: 是啊，我所爱的，即非群星，也非银河。
-    from: 云游君
-    url: https://yunyoujun.cn
-  - content: 隐约雷鸣 阴霾天空 但盼风雨来 能留你在此
-    from: 《万叶集》雷神短歌
-    url: https://book.douban.com/subject/1066538/
-  - content: 人类的悲欢并不相通，我只觉得他们吵闹。
-    from: 《小杂感》鲁迅
-    url: https://baike.baidu.com/item/小杂感
-  - content: 遍身罗绮者，不是养蚕人。
-    from: 《蚕妇》张俞
-    url: https://baike.baidu.com/item/蚕妇/40814
-
-cdn:
-  pre: https://cdn.jsdelivr.net/gh/YunYouJun/cdn
-  # pre: https://cdn.yunyoujun.cn
 
 girls:
   enable: true

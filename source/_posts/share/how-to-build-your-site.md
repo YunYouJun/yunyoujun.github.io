@@ -469,7 +469,11 @@ hexo new page xxx
 
 ### 如何绑定你的自定义域名？
 
-首先，你得有个自己的域名。并使用 CNAME 解析到 `你的名字.github.io`。（当然 A 记录直接解析到 GitHub Pages IP 地址也可以。）
+首先，你得有个自己的域名。
+
+> 避免广告嫌疑，你可以自行前往相关域名提供商购买。
+
+并使用 CNAME 解析到 `你的名字.github.io`。（当然 A 记录直接解析到 GitHub Pages IP 地址也可以。）
 
 > [Managing a custom domain for your GitHub Pages site](https://help.github.com/en/github/working-with-github-pages/managing-a-custom-domain-for-your-github-pages-site#configuring-an-apex-domain)
 
@@ -479,7 +483,12 @@ hexo new page xxx
 
 内容填写你的域名即可。
 
-> https://help.github.com/en/github/working-with-github-pages/about-custom-domains-and-github-pages
+> [About custom domains and GitHub Pages](https://help.github.com/en/github/working-with-github-pages/about-custom-domains-and-github-pages)
+
+### 更多可能有帮助的内容
+
+- [让百度收录你的 GitHub Pages 博客 - 云游君的小站](https://www.yunyoujun.cn/note/baidu-seo-about-github-pages/)
+- [使用 CDN 加速你的 GitHub Pages 网站 - 云游君的小站](https://www.yunyoujun.cn/note/use-cdn-speed-up-site/)
 
 ## 结语
 
