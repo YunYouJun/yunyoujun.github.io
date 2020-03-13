@@ -37,7 +37,8 @@ yum -y list java*
 ```sh
 # 安装 java
 yum -y install java-latest-openjdk
-# apt-get
+# ubuntu
+# apt install default-jdk
 ```
 
 ### Install Minecraft Server

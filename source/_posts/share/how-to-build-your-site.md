@@ -442,7 +442,7 @@ hexo new post xxxx
 
 这是我写的一个 Markdown 样式：[star-markdown-css](https://www.yunyoujun.cn/star-markdown-css/)
 
-上面是渲染过后的效果，你可以与其 Markdown 的[纯文本原文](https://raw.githubusercontent.com/YunYouJun/star-markdown-css/master/demo/md/demo.md) 进行对比。
+上面是渲染过后的效果，你可以与其 Markdown 的[纯文本原文](https://raw.githubusercontent.com/YunYouJun/star-markdown-css/master/demo/md/demo.md)进行对比。
 
 #### 页面
 
@@ -496,6 +496,12 @@ hexo new page xxx
 希望大家能有毅力坚持下去，不忘初心。
 
 > 永远相信美好的事情即将发生
+
+如果还有其他小问题，可以到 QQ 群（389401003）里反馈。
+
+> 如果是更通用的问题，最好在评论中进行反馈，这样别的同学也能看到，不需要重复提问。
+
+![hexo-qrcode](https://cdn.jsdelivr.net/gh/YunYouJun/cdn/img/about/hexo-qrcode.jpg)
 
 ---
 
