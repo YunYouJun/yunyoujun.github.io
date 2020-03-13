@@ -31,6 +31,18 @@ links:
     name: 小康
     blog: 小康博客
     desc: 一个收藏回忆与分享技术的地方！
+  - url: https://www.oyohyee.com
+    avatar: https://www.oyohyee.com/static/img/logo.svg
+    name: OhYee
+    blog: OhYee博客
+    desc: 🤪乱七八糟啥都写，善用搜索
+    email: oyohyee@oyohyee.com
+  - url: https://sernikki.github.io/
+    avatar: https://i.loli.net/2020/03/13/xzKUC1NEj5OicfA.jpg
+    name: NIKKI
+    blog: 神崎日照の小窝
+    desc: 有瑕人无玉
+    email: badremilia@foxmail.com
 placeholder: 还没想好说些什么
 ---
 
@@ -42,18 +54,21 @@ placeholder: 还没想好说些什么
 
 ### 格式
 
-注释可以删掉～
-
 ```yml
-url: https://yunyoujun.cn # 博客链接
-# 头像图片链接，最好使用 HTTPS
+url: https://yunyoujun.cn
 avatar: https://cdn.jsdelivr.net/gh/YunYouJun/yunyoujun.github.io/images/avatar.jpg
-name: 云游君 # 阁下怎么称呼？
-blog: 云游君的小站 # 您的站点名称
-desc: All at sea. # 一句话描述（描述一下 自己 或者 站点 或者 喜欢的话？Orz 最好不要太长。）
-email: me@yunyoujun.cn # 联系方式（没联系方式，我咋回复啊）
-# 介意邮箱隐私，可以填写在 Valine 评论里～
+name: 云游君
+blog: 云游君的小站
+desc: All at sea.
+email: me@yunyoujun.cn
 ```
+
+- `url`: 博客链接
+- `avatar`: 头像图片链接，最好使用 HTTPS
+- `name`: 阁下怎么称呼？
+- `blog`: 您的站点名称
+- `desc`: 一句话描述（描述一下 自己 或者 站点 或者 喜欢的话？Orz 最好不要太长。）
+- `email`: 联系方式（没联系方式，我咋回复啊）介意邮箱隐私，可以填写在 Valine 评论里～
 
 ### 原则
 
