@@ -55,7 +55,7 @@ future: true
 # disable highlight to use prism
 highlight:
   enable: false
-  line_number: true
+  line_number: false
   auto_detect: false
   tab_replace: ""
   wrap: true

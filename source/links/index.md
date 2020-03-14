@@ -16,6 +16,7 @@ links:
     name: 阿肾哥哥
     blog: 梨花町の腎兄さん
     desc: 说不尽的心酸只好当笑谈，忘不尽的往事只好随风吹散。
+    email: emaillmr@163.com
   - url: https://5ime.cn/
     avatar: https://blog-1252493876.file.myqcloud.com/avatar.jpg
     name: I Am I
@@ -31,6 +32,7 @@ links:
     name: 小康
     blog: 小康博客
     desc: 一个收藏回忆与分享技术的地方！
+    email: sviptzk@163.com
   - url: https://www.oyohyee.com
     avatar: https://www.oyohyee.com/static/img/logo.svg
     name: OhYee
@@ -43,6 +45,17 @@ links:
     blog: 神崎日照の小窝
     desc: 有瑕人无玉
     email: badremilia@foxmail.com
+  - url: https://blog.badapple.pro
+    avatar: https://i.loli.net/2020/03/14/QafliZmLx79F2Th.jpg
+    name: 东方幻梦
+    blog: 东方幻梦
+    desc: 只是当时已惘然
+    email: i@flandrescarlet.cn
+  - url: https://chanshiyu.com
+    avatar: https://cdn.jsdelivr.net/gh/chanshiyucx/yoi/blog/avatar.jpg
+    name: 蝉时雨
+    blog: 蝉时雨
+    desc: 蝉鸣如雨，花宵道中
 placeholder: 还没想好说些什么
 ---
 
@@ -72,7 +85,7 @@ email: me@yunyoujun.cn
 
 ### 原则
 
-- 申请的友链将经过筛选，请在收到我的回复邮件后于贵站添加本站链接。
+- 申请的友链将经过筛选（其实基本是来者不拒\_(:з」∠)\_，但做人要矜持嘛），请在收到我的回复邮件后于贵站添加本站链接。
 - 原则上最好为使用 HTTPS 协议站点。
 - 已添加友链不会轻易删除。如您已移除本站链接，本站也将移除友链。
 - 链接无法打开或网站存在政治问题、植入挖矿脚本、极低质量内容时，将不会添加。

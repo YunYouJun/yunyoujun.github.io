@@ -129,7 +129,7 @@ macOS 用户可以下载官网的安装包进行安装，也可以直接安装 A
 > Hexo 是一个快速、简洁而强大的博客框架，基于 Node.js，同样托管于 GitHub 之上。生态中拥有众多插件主题。你可以基于它快速生成一些静态页面。
 > 你可以使用别人的各种主题与插件，也可以自己定制开发想要的功能。
 > **为什么不是...?**
-> 其他常用的博客框架还有 [WordPress](https://wordpress.org/)，[typecho](http://typecho.org/)等，但这些往往都需要购置自己的服务器，而无法静态化地部署到 GitHub Pages 上。（当然，相应的功能和灵活性也大大提升。）
+> 其他常用的博客框架还有 [WordPress](https://wordpress.org/)，[Typecho](http://typecho.org/)等，但这些往往都需要购置自己的服务器，而无法静态化地部署到 GitHub Pages 上。（当然，相应的功能和灵活性也大大提升。）
 > 静态网站生成器还有 [Vuepress](https://vuepress.vuejs.org/)，[Gatsby](https://www.gatsbyjs.org/)等。但这些多是为了写文档而量身定制的，你也可以使用它们，但是相较 Hexo 的博客定位，它们关于博客的插件和主题以及解决办法会少得多。
 > [Hugo](https://gohugo.io/) 提供的功能与 Hexo 几乎相同，不过它是基于 GO 语言。日后你想对自己的网站进行自定义，即便是 Hugo，你编写前端的交互仍旧需要使用 JavaScrip，所以选择基于 JavaScript 的 Hexo 可以降低学习成本。（你若对 GO 有兴趣，仍然可以尝试使用 Hugo，但本教程将不会针对 Hugo 进行展开。）
 > 所以对于新手来说，使用 Hexo 作为起始点，不失为一个好选择。（当然如果你有钱租服务器，就可以考虑考虑 WordPress）
@@ -275,7 +275,7 @@ colors:
 
 这时你的主题色调就会变为黑色。
 
-这只是一个配置项的简单示例，更多配置你可以参考我的[主题文档](https://yun.yunyoujun.cn) 或直接在 `theme/yun/_config.yml` 中查看，并根据自己的需要进行配置。
+这只是一个配置项的简单示例，更多配置你可以参考我的[主题文档](https://yun.yunyoujun.cn)或直接在 `theme/yun/_config.yml` 中查看，并根据自己的需要进行配置。
 
 ### 生成静态文件
 
@@ -314,7 +314,7 @@ git checkout -b hexo
 
 这时便成功建立了一个 hexo 分支。（此后的工作都将在 hexo 分支下进行）
 
-你可以通过 `git branch -v` 来查看当前有哪些分支，使用 `git branch 分支名` 来切换到哦对应的分支。
+你可以通过 `git branch -v` 来查看当前有哪些分支，使用 `git branch 分支名` 来切换到对应的分支。
 
 > [Git 学习笔记](https://www.yunyoujun.cn/note/git-learn-note/)
 
@@ -369,7 +369,6 @@ git remote add origin https://github.com/你的用户名/你的名字.github.io
 ```sh
 # 添加到缓存区
 git add -A
-#
 git commit -m "这次做了什么更改，简单描述下即可"
 # 推送至远程仓库
 git push
@@ -414,10 +413,10 @@ git push origin hexo
 
 #### 文章
 
-输入以下命令即可新建 `xxxx.md` 文件。
+输入以下命令即可新建 `xxx.md` 文件。
 
 ```sh
-hexo new post xxxx
+hexo new post xxx
 ```
 
 > `md` 是 `Markdown` 的后缀名，是一种简洁方便的文本标记语言。你只需要记住简单的几种语法，就可以快速进行编写。
@@ -489,6 +488,11 @@ hexo new page xxx
 
 - [让百度收录你的 GitHub Pages 博客 - 云游君的小站](https://www.yunyoujun.cn/note/baidu-seo-about-github-pages/)
 - [使用 CDN 加速你的 GitHub Pages 网站 - 云游君的小站](https://www.yunyoujun.cn/note/use-cdn-speed-up-site/)
+
+### 其他平台
+
+- [教你如何从零开始搭建一个属于自己的网站 - 云游君的文章 - 知乎](https://zhuanlan.zhihu.com/p/113209647)
+
 
 ## 结语
 
