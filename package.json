@@ -21,7 +21,7 @@
     "hexo-render-pug": "^2.1.4",
     "hexo-renderer-marked": "^2.0.0",
     "hexo-renderer-stylus": "^1.1.0",
-    "hexo-symbols-count-time": "^0.7.0"
+    "hexo-symbols-count-time": "^0.7.1"
   },
   "devDependencies": {
     "eslint-config-hexo": "^4.1.0",
