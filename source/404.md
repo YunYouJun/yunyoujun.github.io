@@ -1,0 +1,6 @@
+---
+layout: 404
+title: 四大皆空
+permalink: /404.html
+reward: false
+---
