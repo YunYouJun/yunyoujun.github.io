@@ -56,6 +56,11 @@ links:
     name: 蝉时雨
     blog: 蝉时雨
     desc: 蝉鸣如雨，花宵道中
+  - url: https://qwq.best/
+    avatar: https://cdn.jsdelivr.net/gh/AyagawaSeirin/Assets/img/logo.jpg
+    name: 綾川星凛
+    blog: 皮皮凛の小窝
+    desc: 永远相信美好的事情即将发生~
 placeholder: 还没想好说些什么
 ---
 
@@ -73,6 +78,7 @@ avatar: https://cdn.jsdelivr.net/gh/YunYouJun/yunyoujun.github.io/images/avatar.
 name: 云游君
 blog: 云游君的小站
 desc: All at sea.
+# 希望能成为有趣的人。
 email: me@yunyoujun.cn
 ```
 
@@ -85,7 +91,7 @@ email: me@yunyoujun.cn
 
 ### 原则
 
-- 申请的友链将经过筛选（其实基本是来者不拒\_(:з」∠)\_，但做人要矜持嘛），请在收到我的回复邮件后于贵站添加本站链接。
+- 申请的友链将经过筛选（其实现在基本是来者不拒\_(:з」∠)\_，但做人要矜持嘛），请在收到我的回复邮件后于贵站添加本站链接。
 - 原则上最好为使用 HTTPS 协议站点。
 - 已添加友链不会轻易删除。如您已移除本站链接，本站也将移除友链。
 - 链接无法打开或网站存在政治问题、植入挖矿脚本、极低质量内容时，将不会添加。
