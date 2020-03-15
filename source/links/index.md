@@ -80,6 +80,12 @@ links:
     blog: Hehejun's Blog
     desc: 世界に忘れられた
     email: cnemcx@163.com
+  - url: https://flag.moe/
+    avatar: https://flag.moe/avatar.bab2b7d4.jpg
+    name: 哞菇
+    blog: 哞菇 / Nekotora - fLaG.Moe
+    desc: 蘑菇森林的尽头，新世界的起点
+    email: i@flag.moe
 placeholder: 还没想好说些什么
 ---
 
