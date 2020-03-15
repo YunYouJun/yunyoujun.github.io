@@ -74,6 +74,12 @@ links:
     blog: 約束の明日へ
     desc: また君を思い出すよ
     email: me@okaeri.org
+  - url: https://hehejun.cn/
+    avatar: https://hehejun.cn/wp-content/uploads/2020/02/QQ%E5%9B%BE%E7%89%8720200224115223.jpg
+    name: 呵呵君
+    blog: Hehejun's Blog
+    desc: 世界に忘れられた
+    email: cnemcx@163.com
 placeholder: 还没想好说些什么
 ---
 
