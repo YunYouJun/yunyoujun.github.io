@@ -250,7 +250,7 @@ npm install hexo-render-pug hexo-renderer-stylus
 主题的配置文件放在 `themes/yun/_config.yml` 文件中。
 且慢，你最好不要直接修改主题的默认配置。倘若日后主题升级更新了怎么办吗，难道还要重新配置一遍吗？
 
-最好的解决方案就是新建 `source/_data/yun.yml`。（若 `source/_data` 目录不存在，请新建）
+最好的解决方案就是在博客根目录下（不是主题目录）新建 `source/_data/yun.yml`。（若 `source/_data` 目录不存在，请新建）
 
 本主题将自定义配置与默认配置进行合并，因此你只需要在 `yun.yml` 文件中自定义你需要的配置即可，其余仍将自动采用默认配置。
 
@@ -492,7 +492,6 @@ hexo new page xxx
 ### 其他平台
 
 - [教你如何从零开始搭建一个属于自己的网站 - 云游君的文章 - 知乎](https://zhuanlan.zhihu.com/p/113209647)
-
 
 ## 结语
 

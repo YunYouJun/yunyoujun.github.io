@@ -70,7 +70,7 @@ categories:
 
 此后我又去追了漫画，男女主终于证明双方是恋人，却又开始好感度的定义，还发明了「奏爱」这一爱情单位（继续被迫害的小奏）。
 
-![zou-love.jpg](https://i.loli.net/2020/03/14/HxcNqXVe7Q5h9yY.png)
+![zou-love.jpg](https://i.loli.net/2020/03/15/awmdyhvxbgIGFA1.jpg)
 
 只是，智力超群的男女主真的会连简单人际感情也搞不明白吗？也许他们早已明白，只是这样做真的很有趣。
 

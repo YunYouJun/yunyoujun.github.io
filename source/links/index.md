@@ -68,6 +68,12 @@ links:
     blog: Royce 的小窝
     desc: OI 小白
     email: 1098870059@qq.com
+  - url: https://asuhe.jp/
+    avatar: https://asuhe.jp/wp-content/uploads/2020/03/fri-2-scaled.jpg
+    name: 染川瞳
+    blog: 約束の明日へ
+    desc: また君を思い出すよ
+    email: me@okaeri.org
 placeholder: 还没想好说些什么
 ---
 
