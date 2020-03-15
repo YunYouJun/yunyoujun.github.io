@@ -23,7 +23,7 @@ links:
     blog: Hi, I Am I
     desc: Hello,world. l'm coming.
   - url: http://www.iimt.me/
-    avatar: http://www.iimt.me/favicon.ico
+    avatar: https://i.loli.net/2020/03/15/uhU3SZ8RtjE6DOL.jpg
     name: iimT
     blog: iimT 的独立博客
     desc: 一个喜欢电音的技术宅。
@@ -56,11 +56,18 @@ links:
     name: 蝉时雨
     blog: 蝉时雨
     desc: 蝉鸣如雨，花宵道中
+    email: me@chanshiyu.com
   - url: https://qwq.best/
     avatar: https://cdn.jsdelivr.net/gh/AyagawaSeirin/Assets/img/logo.jpg
     name: 綾川星凛
     blog: 皮皮凛の小窝
     desc: 永远相信美好的事情即将发生~
+  - url: https://royce2003.top
+    avatar: https://cdn.jsdelivr.net/gh/Royce2019/img/img/avatar.jpg
+    name: Royce
+    blog: Royce 的小窝
+    desc: OI 小白
+    email: 1098870059@qq.com
 placeholder: 还没想好说些什么
 ---
 
