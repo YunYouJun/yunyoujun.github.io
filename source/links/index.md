@@ -24,6 +24,7 @@ links:
     name: I Am I
     blog: Hi, I Am I
     desc: Hello,world. l'm coming.
+    color: "#90A6BC"
   - url: http://www.iimt.me/
     avatar: https://i.loli.net/2020/03/15/uhU3SZ8RtjE6DOL.jpg
     name: iimT
@@ -88,12 +89,21 @@ links:
     blog: Hehejun's Blog
     desc: 世界に忘れられた
     email: cnemcx@163.com
+    color: "#90c9f5"
   - url: https://flag.moe/
     avatar: https://flag.moe/avatar.bab2b7d4.jpg
     name: 哞菇
     blog: 哞菇神社
     desc: 蘑菇森林的尽头，新世界的起点
     email: i@flag.moe
+    color: "#013CB2"
+  - url: https://blog.skk.moe/
+    avatar: https://cdn.jsdelivr.net/npm/skx@0.0.1/avatar/128x128.png
+    name: Sukka
+    blog: Sukka's Blog
+    desc: 童话只美在真实却从不续写
+    email: github@skk.moe
+    color: "#C08B57"
 placeholder: 还没想好说些什么
 ---
 
