@@ -2,6 +2,7 @@
 .DS_Store
 Thumbs.db
 temp/
+yarn.lock
 
 # dev
 node_modules/

@@ -43,7 +43,7 @@ links:
     desc: 🤪乱七八糟啥都写，善用搜索
     email: oyohyee@oyohyee.com
     color: "#4186C2"
-  - url: https://sernikki.github.io/
+  - url: https://blog.sernikki.cn/
     avatar: https://i.loli.net/2020/03/13/xzKUC1NEj5OicfA.jpg
     name: NIKKI
     blog: 神崎日照の小窝
