@@ -129,8 +129,8 @@ macOS 用户可以下载官网的安装包进行安装，也可以直接安装 A
 > Hexo 是一个快速、简洁而强大的博客框架，基于 Node.js，同样托管于 GitHub 之上。生态中拥有众多插件主题。你可以基于它快速生成一些静态页面。
 > 你可以使用别人的各种主题与插件，也可以自己定制开发想要的功能。
 > **为什么不是...?**
-> 其他常用的博客框架还有 [WordPress](https://wordpress.org/)，[Typecho](http://typecho.org/)等，但这些往往都需要购置自己的服务器，而无法静态化地部署到 GitHub Pages 上。（当然，相应的功能和灵活性也大大提升。）
-> 静态网站生成器还有 [Vuepress](https://vuepress.vuejs.org/)，[Gatsby](https://www.gatsbyjs.org/)等。但这些多是为了写文档而量身定制的，你也可以使用它们，但是相较 Hexo 的博客定位，它们关于博客的插件和主题以及解决办法会少得多。
+> 其他常用的博客框架还有 [WordPress](https://wordpress.org/)，[Typecho](http://typecho.org/) 等，但这些往往都需要购置自己的服务器，而无法静态化地部署到 GitHub Pages 上。（当然，相应的功能和灵活性也大大提升。）
+> 静态网站生成器还有 [Vuepress](https://vuepress.vuejs.org/)，[Gatsby](https://www.gatsbyjs.org/) 等。但这些多是为了写文档而量身定制的，你也可以使用它们，但是相较 Hexo 的博客定位，它们关于博客的插件和主题以及解决办法会少得多。
 > [Hugo](https://gohugo.io/) 提供的功能与 Hexo 几乎相同，不过它是基于 GO 语言。日后你想对自己的网站进行自定义，即便是 Hugo，你编写前端的交互仍旧需要使用 JavaScrip，所以选择基于 JavaScript 的 Hexo 可以降低学习成本。（你若对 GO 有兴趣，仍然可以尝试使用 Hugo，但本教程将不会针对 Hugo 进行展开。）
 > 所以对于新手来说，使用 Hexo 作为起始点，不失为一个好选择。（当然如果你有钱租服务器，就可以考虑考虑 WordPress）
 
@@ -478,11 +478,15 @@ hexo new page xxx
 
 在 `Hexo` 工作目录下 `source` 文件夹下新建 `CNAME` 文件（没有后缀名）。
 
+> CNAME 即相当于告诉 GitHub 允许将 xxx.github.io 为你的域名提供服务。
 > source 目录下的文件除了特殊的 markdown 会被解析为 html，其余都会原样复制到生成的静态文件夹中。
+> 所以你需要在 source 文件夹下建有 CNAME，它会在生成静态文件时，将 CNAME 拷贝到静态文件夹并部署到 master 分支。
+> 如果只是在 GitHub 上设置（`项目地址页面 -> Settings -> Options -> GitHub Pages -> Custom domain`），它会自动添加到 master 分支上，但随后不包含 CNAME 的部署会将其覆盖。
 
 内容填写你的域名即可。
 
 > [About custom domains and GitHub Pages](https://help.github.com/en/github/working-with-github-pages/about-custom-domains-and-github-pages)
+
 
 ### 更多可能有帮助的内容
 

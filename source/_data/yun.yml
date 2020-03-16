@@ -12,7 +12,8 @@ valine:
   enable: true
   appId: 4x0IwQ1sy95mOGQDTO8MYCeA-gzGzoHsz # your leancloud application appid
   appKey: 9loqwF3UDklPDHaP9IN2uwN8 # your leancloud application appkey
-  # use valine-admin, see https://valine.yunyoujun.cn
+  # https://github.com/DesertsP/Valine-Admin
+  # https://valine.yunyoujun.cn
   notify: false # mail notifier, See: https://github.com/xCss/Valine/wiki
   verify: false # Verification code
   placeholder: 大佬求指教&nbsp_(:з」∠)_ # comment box placeholder

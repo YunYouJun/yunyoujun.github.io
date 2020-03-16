@@ -10,6 +10,7 @@ updated: 2018-01-30 15:10:32
 > ## Me
 >
 > All at sea.
+> 希望能成为一个有趣的人。
 
 <div class="site-author-avatar" style="text-align:center;">
   <img src="https://www.yunyoujun.cn/images/avatar.jpg" alt="portrait" title="ID : 云游君">
