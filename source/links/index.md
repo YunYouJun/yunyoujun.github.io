@@ -104,6 +104,13 @@ links:
     desc: 童话只美在真实却从不续写
     email: github@skk.moe
     color: "#C08B57"
+  - url: https://2890.ltd
+    avatar: https://cdn233.2890.ltd/20200111/1/5e18a37b39308CLSUFFlogosmallest.png
+    name: Given / 秋庭 飒
+    blog: OkYes! 技术博客
+    desc: 念念不忘，必有回响
+    color: "#66ccff"
+    email: given@2890.ltd
 placeholder: 还没想好说些什么
 ---
 
