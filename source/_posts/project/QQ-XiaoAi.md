@@ -4,7 +4,7 @@ date: 2018-01-01 18:46:48
 updated: 2018-01-01 18:46:48
 tags:
   - 学习
-  - python
+  - Python
   - 小玩意儿
 categories:
   - 云游的小项目
@@ -19,7 +19,7 @@ categories:
 
 这种东西，凭自己的能力和惰性肯定是要先找找有没有现成的轮子可以使用啦。
 
-便直接上 `github` 搜了搜关键词 qq ，按 star 数量排下来，和 qq 相关，又是符合自己期待的回复相关的便是一个 python 写的 qqbot 。 
+便直接上 `github` 搜了搜关键词 qq ，按 star 数量排下来，和 qq 相关，又是符合自己期待的回复相关的便是一个 python 写的 qqbot 。
 
 > 项目源地址： <https://github.com/pandolia/qqbot>
 
@@ -29,7 +29,7 @@ categories:
 
 ## 一些废话
 
-（中途嫌弃文档麻烦，又试了试所谓的酷Q之类的软件，但可定制性不强，还有收费权限之类的）
+（中途嫌弃文档麻烦，又试了试所谓的酷 Q 之类的软件，但可定制性不强，还有收费权限之类的）
 最好还是决定好好来看看 qqbot 的使用文档。（~~没错，我就是想白嫖~~）
 
 虽然没学过 python （等我有空，我会来学的，请等着我啊！），不过看起来使用也很方便。语法的差异，便边百度边学了。（虽然踩了些小坑，但结果上来说还是满意的。）
@@ -38,7 +38,7 @@ categories:
 
 ### 需要先安装 python (起先是自己在 Windows 上先试验看看的)，官网下载地址 <https://www.python.org/download>
 
-Windows 64位的话下载 `Windows x86-64 executable installer` 版本即可，其他系统也各自对应。
+Windows 64 位的话下载 `Windows x86-64 executable installer` 版本即可，其他系统也各自对应。
 
 ### 安装 qqbot
 
@@ -93,7 +93,7 @@ if '小爱' in content and not bot.isMe(contact, member):
 
 > 可参见：<https://github.com/YunYouJun/xiao-ai/tree/qqbot>
 
-- python 中语法使用 in 判断是否包含这个词，缩进进行嵌套，还有 if 后的冒号，也要切记。
+- Python 中语法使用 in 判断是否包含这个词，缩进进行嵌套，还有 if 后的冒号，也要切记。
 - isMe() 判断是否为自己所发的消息 （之前自己就作死写了个自己触发自己的循环，结果在群里触发 bug 刷屏了）
 
 将以上代码另存为 `sample.py` （名字可以随便取，注意保存为 utf8 编码的文件）。放到 `~/.qqbot-tmp/plugins/` 目录下（ ~ 代表用户主目录， windows 下为 `C:\Users\xxx\.qqbot-tmp\plugins\`, xxx 代表用户名 ），或系统中可以 `import` 到的目录下（如 `python` 的安装目录下的 `Lib/site-packages` 目录）。
@@ -214,7 +214,7 @@ nohup python start_webhook.py & // nohup 与 & 连用使得脚本在后台执行
 
 自己对 python 语法并不熟悉，只能日后有时间再深入进行学习。买的小米多功能网关以及种种也都到货了，现在终于可以在床上叫小爱帮忙关灯了。
 
-小米的AI音箱，我想着要是有个开放的云平台就好了，让大家可以自己编程生成更多有趣的技能，也能接入小爱的智能平台。结果一搜，真的有，不过看了看，很多还不完善，有的还显示敬请期待。不过，既然有这份心思，让我对小爱的好感又升一层了。
+小米的 AI 音箱，我想着要是有个开放的云平台就好了，让大家可以自己编程生成更多有趣的技能，也能接入小爱的智能平台。结果一搜，真的有，不过看了看，很多还不完善，有的还显示敬请期待。不过，既然有这份心思，让我对小爱的好感又升一层了。
 
 > 水滴平台-小米开放平台 <https://shuidi.mi.com/>
 

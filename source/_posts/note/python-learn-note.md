@@ -3,12 +3,13 @@ title: Python 学习笔记
 date: 2018-01-23 09:50:57
 updated: 2018-09-01 13:15:57
 tags:
-  - python
+  - Python
   - 学习
   - 笔记
 categories:
   - 云游的小笔记
 ---
+
 # Intro
 
 记录一些关于 Python 学习过程中的规范、问题与技巧。
@@ -19,9 +20,9 @@ categories:
 
 ## 教程
 
-- [Python教程 - 廖雪峰的官方网站](https://www.liaoxuefeng.com/wiki/0014316089557264a6b348958f449949df42a6d3a2e542c000) （内容详细）
+- [Python 教程 - 廖雪峰的官方网站](https://www.liaoxuefeng.com/wiki/0014316089557264a6b348958f449949df42a6d3a2e542c000) （内容详细）
 - [《简明 Python 教程》](https://bop.mol.uno/) （排版舒适）
-- [Crossin的编程教室](http://crossincode.com/home/) （适合初学）
+- [Crossin 的编程教室](http://crossincode.com/home/) （适合初学）
 
 ## Code
 
@@ -164,10 +165,10 @@ import urllib.request
 
 Python3:
 
-- _thread
+- \_thread
 - threading(推荐使用)
 
-Python2 `thread` 模块已被废弃。用户可以使用 threading 模块代替。所以，在 Python3 中不能再使用"thread" 模块。为了兼容性，Python3 将 thread 重命名为 "_thread"。
+Python2 `thread` 模块已被废弃。用户可以使用 threading 模块代替。所以，在 Python3 中不能再使用"thread" 模块。为了兼容性，Python3 将 thread 重命名为 "\_thread"。
 
 [Python3 多线程 | 菜鸟教程](http://www.runoob.com/python3/python3-multithreading.html)
 
@@ -193,7 +194,7 @@ Python2 `thread` 模块已被废弃。用户可以使用 threading 模块代替�
 
 # TIMELINE
 
-- [x] 2018-01-23 ~ 2018-02-20 Crossin 的编程教室 - Python入门
+- [x] 2018-01-23 ~ 2018-02-20 Crossin 的编程教室 - Python 入门
 - [ ] 2018-09-01 Python 教程 - 廖雪峰的官方网站
 - [x] 2018-09-01 ~ 2018-12-28 简明 Python 教程
 

@@ -1,7 +1,7 @@
 ---
 title: 开发常用命令笔记
 tags:
-  - php
+  - PHP
   - 学习
   - 笔记
 categories:
@@ -61,13 +61,13 @@ hexo algolia
 ### Java MVN
 
 - 编译 Java :
-`mvn compile (默认放在 src/main/java 目录下)`
+  `mvn compile (默认放在 src/main/java 目录下)`
 
 - 执行 java 类 :
-`mvn exec:java -Dexec.mainClass="bean.User"`
+  `mvn exec:java -Dexec.mainClass="bean.User"`
 
 - 运行服务器 :
-`mvn tomcat7:run`
+  `mvn tomcat7:run`
 
 ---
 
