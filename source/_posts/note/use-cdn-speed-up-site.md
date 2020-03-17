@@ -127,8 +127,8 @@ categories:
 
 譬如：
 
-- 语雀：<yuque.com>,
-- JetBrains（著名的 IDE 软件开发商）：<jetbrains.com>（我在几年前的视频里发现他们留的还是裸域名的网址，而现在则是跳转 www 链接。）
+- 语雀：<https://yuque.com>,
+- JetBrains（著名的 IDE 软件开发商）：<https://jetbrains.com>（我在几年前的视频里发现他们留的还是裸域名的网址，而现在则是跳转 www 链接。）
 
 当然如果你对域名邮箱没有需求，且域名非常短又很酷，使用裸域名也并非不可。
 
@@ -169,7 +169,10 @@ Example:
 
 ```sh
 # 注意这里的参数是 Array
+# 刷新目录
 tccli cdn PurgePathCache --Paths '["https://www.yunyoujun.cn/links/"]' --FlushType flush
+# 刷新链接
+tccli cdn PurgeUrlsCache --Urls '["https://www.yunyoujun.cn/links/index.html"]'
 ```
 
 #### PurgePathCache
