@@ -1,26 +1,30 @@
 ---
-title: hexo-theme-yun
+title: hexo-theme-yun 制作笔记
 date: 2019-04-27 12:00:00
-updated: 2019-04-27 12:00:00
+updated: 2020-03-17 12:00:00
 tags:
   - 项目
   - 笔记
+  - 分享
+  - GitHub
 categories:
   - 云游的小笔记
 ---
 
-Hexo-Theme-Yun 制作进行中~
+Hexo-Theme-Yun 绝赞开发中~
 
 ## 前言
 
-还在用 `WordPress` 的时候，总是喜新厌旧，经常换主题。
-而迁移到 `Hexo` 之后，光是 `hexo-theme-next` 的配置项，便让我花了好一番功夫。
-导致觉得自己不一直用下去，感到十分对不起一个一个配置过来的自己。
+还在用 `WordPress` 的时候，总是喜新厌旧，经常换主题。且装了一堆插件，速度慢还容易崩。
+而迁移到 `Hexo` 之后（小水管服务器太慢，拿去挂 MC 了。~~根本原因是没钱~~），光是 `hexo-theme-next` 的配置项，便让我花了好一番功夫。
+导致觉得自己不一直用下去，感到十分对不起仔细一个一个配置过来的自己。
 
 当然，还是改不了喜新厌旧的毛病。加之 next 主题过于广泛，显得自己泯然众人。心中颇有愤懑。（~~虽然本就如此~~）
 
 而如今，诸事已毕，终于腾出空来。
 便决定开发一款专属于自己的主题。
+
+<!-- more -->
 
 暂且命名为 [hexo-theme-starry](https://github.com/YunYouJun/hexo-theme-starry)。
 现更名为 [hexo-theme-yun](https://github.com/YunYouJun/hexo-theme-yun)。
@@ -29,7 +33,9 @@ Hexo-Theme-Yun 制作进行中~
 
 嗯，预告！（~~谁说没人看的博客就不能有预告了！？~~）
 
-<!-- more -->
+- GitHub: <https://github.com/YunYouJun/hexo-theme-yun>
+- Docs: <https://yun.yunyoujun.cn>
+- Example: <https://www.yunyoujun.cn>
 
 ### 名字的由来
 
@@ -37,24 +43,53 @@ Hexo-Theme-Yun 制作进行中~
 
 ## Progress
 
-### 优化
+### v0.0.1 (2019-05-19) 试验
+
+Bug 多多
+
+### v0.1.0 (2020-03-06) 优化
+
+移除 jQuery 依赖
+
+更快、更高、更强！？？？
 
 fancybox 的确用的不多，但又依赖于 jQuery。
 ~~决定使用 [medium-zoom](https://medium-zoom.francoischalifour.com/) 替代~~，并全部使用 Vanilla JavaScript，以移除 jQuery。
-medium-zoom 干脆也别用了，大家都会右键的*(:з」∠)*
-jQuery 的确用起来很爽，但这位老前辈已经将它的理念逐渐融入现代浏览器的标砖 API 中（譬如 `querySelector`、`classList.add|remove|contains`），所以使用原生 JS 来写往往更有优势。
+medium-zoom 干脆也别用了，大家都会右键的\_(:з」∠)\_
+jQuery 的确用起来很爽，但这位老前辈已经将它的理念逐渐融入现代浏览器的标准 API 中（譬如 `querySelector`、`classList.add|remove|contains`），所以使用原生 JS 来写往往更有优势。
 
 也能加深对原生 JavaScript 的理解。
 
-## Thanks
+谷歌 [PageSpeed Insights](https://developers.google.com/speed/pagespeed/insights/)
 
-### Ref
+![pagespeed-insights-score.png](https://i.loli.net/2020/03/12/cUIuDPJfo379ZOk.png)
 
-- [Hexo 主题开发经验杂谈](https://molunerfinn.com/make-a-hexo-theme/)
-- [hexo-theme-next](https://github.com/theme-next/hexo-theme-next)
-- [hexo-theme-melody](https://github.com/Molunerfinn/hexo-theme-melody)
+谷歌浏览器 Audits - Lighthouse 检测分数
 
-### Inspiration
+![Audits - Lighthouse](https://i.loli.net/2020/03/08/DhfLu5yngb7NZE2.png)
 
-- [【洛天依原创】异样的风暴中心【杉田朗】](https://www.bilibili.com/video/av4018008)
-- [【洛天依原创】星宿计时【杉田朗】](https://www.bilibili.com/video/av7036967)
+尽可能使用 CDN，提高访问速度。也算是符合了 云 ☁️ 的名字。
+
+虽然很想用 WebP，奈何万恶的 Safari 与 iOS 不支持，故又都切回了 JPG。
+
+最后似乎变成了面向 [Audits] 优化。
+
+---
+
+顺道给大家看看主题特色功能？[老婆展示页](https://www.yunyoujun.cn/girls/)？
+
+### v0.2.0 (2020-03-17) 修补
+
+拖拖拉拉，直到最近才算较为完善，查漏补缺，开始小宣传。
+
+为了宣传主题，写了篇小教程 [教你如何从零开始搭建一个属于自己的网站](https://www.yunyoujun.cn/share/how-to-build-your-site/)。
+
+---
+
+持续迭代 ing...
+
+---
+
+To Be Continued.
+
+<!-- Q.E.D. -->
