@@ -1,7 +1,7 @@
 ---
 title: 教你如何从零开始搭建一个属于自己的网站
 date: 2020-03-05 01:31:08
-updated: 2020-03-13 01:31:08
+updated: 2020-03-17 01:31:08
 tags:
   - 教程
   - Hexo
@@ -129,7 +129,7 @@ macOS 用户可以下载官网的安装包进行安装，也可以直接安装 A
 > Hexo 是一个快速、简洁而强大的博客框架，基于 Node.js，同样托管于 GitHub 之上。生态中拥有众多插件主题。你可以基于它快速生成一些静态页面。
 > 你可以使用别人的各种主题与插件，也可以自己定制开发想要的功能。
 > **为什么不是...?**
-> 其他常用的博客框架还有 [WordPress](https://wordpress.org/)，[Typecho](http://typecho.org/) 等，但这些往往都需要购置自己的服务器，而无法静态化地部署到 GitHub Pages 上。（当然，相应的功能和灵活性也大大提升。）
+> 其他常用的博客框架还有 [WordPress](https://wordpress.org/)，[Typecho](http://typecho.org/) 等，但这些往往都需要购置自己的服务器，而无法静态化地部署到 GitHub Pages 上。（当然，相应的功能和灵活性也大大提升。）静态话站点还有一个优势就是访问速度往往更快。
 > 静态网站生成器还有 [Vuepress](https://vuepress.vuejs.org/)，[Gatsby](https://www.gatsbyjs.org/) 等。但这些多是为了写文档而量身定制的，你也可以使用它们，但是相较 Hexo 的博客定位，它们关于博客的插件和主题以及解决办法会少得多。
 > [Hugo](https://gohugo.io/) 提供的功能与 Hexo 几乎相同，不过它是基于 GO 语言。日后你想对自己的网站进行自定义，即便是 Hugo，你编写前端的交互仍旧需要使用 JavaScrip，所以选择基于 JavaScript 的 Hexo 可以降低学习成本。（你若对 GO 有兴趣，仍然可以尝试使用 Hugo，但本教程将不会针对 Hugo 进行展开。）
 > 所以对于新手来说，使用 Hexo 作为起始点，不失为一个好选择。（当然如果你有钱租服务器，就可以考虑考虑 WordPress）
@@ -195,6 +195,14 @@ Hexo 默认提供的是 [hexo-theme-landscape](https://github.com/hexojs/hexo-th
 
 这里将示范如何使用我自己开发的主题 [hexo-theme-yun](https://github.com/YunYouJun/hexo-theme-yun)（\_(:з」∠)\_ 顺带求 Star）。
 你可以前往 [云游君的小站](https://www.yunyoujun.cn) 查看示例效果。
+
+Hexo-Theme-Yun 的速度检测
+
+![pagespeed-insights-score.png](https://i.loli.net/2020/03/12/cUIuDPJfo379ZOk.png)
+谷歌 [PageSpeed Insights](https://developers.google.com/speed/pagespeed/insights/)
+
+![Audits - Lighthouse](https://i.loli.net/2020/03/08/DhfLu5yngb7NZE2.png)
+谷歌浏览器 Audits - Lighthouse 检测分数
 
 当然，你也可以在 [Themes | Hexo](https://hexo.io/themes/) 发现更多有趣美丽的主题。使用方法大致相同。
 当你具备一定开发能力时，你可以开发属于自己的主题，或者为 hexo-theme-yun 提交 [PR](https://github.com/YunYouJun/hexo-theme-yun/pulls) 添加你想要的功能。
@@ -486,7 +494,6 @@ hexo new page xxx
 内容填写你的域名即可。
 
 > [About custom domains and GitHub Pages](https://help.github.com/en/github/working-with-github-pages/about-custom-domains-and-github-pages)
-
 
 ### 更多可能有帮助的内容
 
