@@ -79,3 +79,49 @@ tags:
 
 categories:
   云游的小视频: "#FB7299"
+
+social:
+  RSS:
+    link: atom.xml # config.feed.path
+    icon: icon-rss-line
+    color: orange
+  QQ:
+    link: https://wpa.qq.com/msgrd?v=3&uin=910426929&site=qq&menu=yes
+    icon: icon-qq-line
+    color: "#12B7F5"
+  GitHub:
+    link: https://github.com/YunYouJun
+    icon: icon-github-line
+    color: "#181717"
+  E-Mail:
+    link: mailto:me@yunyoujun.cn
+    icon: icon-mail-line
+    color: "#8E71C1"
+  微博:
+    link: https://weibo.com/jizhideyunyoujun
+    icon: icon-weibo-line
+    color: "#E6162D"
+  豆瓣:
+    link: https://www.douban.com/people/yunyoujun/
+    icon: icon-douban-line
+    color: "#007722"
+  网易云音乐:
+    link: https://music.163.com/#/user/home?id=247102977
+    icon: icon-netease-cloud-music-line
+    color: "#C10D0C"
+  知乎:
+    link: https://www.zhihu.com/people/yunyoujun/
+    icon: icon-zhihu-line
+    color: "#0084FF"
+  哔哩哔哩动画:
+    link: https://space.bilibili.com/1579790
+    icon: icon-bilibili-line
+    color: "#FF8EB3"
+  POPI:
+    link: https://www.popiask.cn/elpsycn
+    icon: icon-questionnaire-line
+    color: "#525252"
+  微信公众号:
+    link: https://cdn.jsdelivr.net/gh/YunYouJun/cdn/img/about/white-qrcode-and-search.jpg
+    icon: icon-wechat-2-line
+    color: "#1AAD19"
