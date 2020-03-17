@@ -30,12 +30,14 @@ links:
     name: iimT
     blog: iimT 的独立博客
     desc: 一个喜欢电音的技术宅。
+    color: "#473F67"
   - url: https://www.antmoe.com/
     avatar: https://cdn.jsdelivr.net/gh/sviptzk/HexoStaticFile@latest/avatar.jpg
     name: 小康
     blog: 小康博客
     desc: 一个收藏回忆与分享技术的地方！
     email: sviptzk@163.com
+    color: "#881B12"
   - url: https://www.oyohyee.com
     avatar: https://www.oyohyee.com/static/img/logo.svg
     name: OhYee
@@ -49,7 +51,7 @@ links:
     blog: 神崎日照の小窝
     desc: 有瑕人无玉
     email: badremilia@foxmail.com
-    color: deepskyblue
+    color: "#00F5FF"
   - url: https://blog.badapple.pro
     avatar: https://i.loli.net/2020/03/14/QafliZmLx79F2Th.jpg
     name: 东方幻梦
@@ -76,6 +78,7 @@ links:
     blog: Royce 的小窝
     desc: OI 小白
     email: 1098870059@qq.com
+    color: "#857d79"
   - url: https://asuhe.jp/
     avatar: https://asuhe.jp/wp-content/uploads/2020/02/QQ图片20200128131100.jpg
     name: 染川瞳
@@ -111,6 +114,12 @@ links:
     desc: 念念不忘，必有回响
     color: "#66ccff"
     email: given@2890.ltd
+  - url: https://ddindex.github.io/
+    avatar: https://ddindex.github.io/images/avatar.jpg
+    name: 多多酱
+    blog: 多酱的部落格
+    desc: 双手抓楼上的大胸
+    color: "#8e71c1"
 placeholder: 还没想好说些什么
 ---
 
