@@ -78,7 +78,7 @@ links:
     blog: Royce 的小窝
     desc: OI 小白
     email: 1098870059@qq.com
-    color: "#857d79"
+    color: "#FF779A"
   - url: https://asuhe.jp/
     avatar: https://asuhe.jp/wp-content/uploads/2020/02/QQ图片20200128131100.jpg
     name: 染川瞳
@@ -120,6 +120,13 @@ links:
     blog: 多酱的部落格
     desc: 双手抓楼上的大胸
     color: "#8e71c1"
+  - url: https://andychen.tk/
+    avatar: https://andychen.tk/images/avatar.jpg
+    name: Andy Chen
+    blog: Hydropower Hub
+    desc: また，一緒に輝きたい．
+    color: "#00A9EF"
+    email: andychen2005121@gmail.com
 placeholder: 还没想好说些什么
 ---
 
@@ -152,7 +159,7 @@ color: "#0078e7"
 
 ### 原则
 
-- 申请的友链将经过筛选（其实现在基本是来者不拒\_(:з」∠)\_，但做人要矜持嘛），可以在收到我的回复邮件后再于贵站添加本站链接。
+- 申请的友链将经过筛选，可以在收到我的回复邮件后再于贵站添加本站链接。（可能到友链刚好占满一页的时候不再添加。）
 - 原则上最好为使用 HTTPS 协议站点。
 - 已添加友链不会轻易删除。如您已移除本站链接，本站也将移除友链。
 - 链接无法打开或网站存在政治问题、植入挖矿脚本、极低质量内容时，将不会添加。
