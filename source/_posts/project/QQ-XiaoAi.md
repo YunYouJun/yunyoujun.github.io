@@ -197,7 +197,7 @@ def application(environ, start_response):
     os.system('qq plug custom')
     print('XiaoAi pull finish')
     return [b'Hello, XiaoAi!'] // b 代表 bytes ,将 unicode 转为 bytes
-    //此处返回值，用户告诉 GitHub 的 Webhooks 已接收到信息，并进行了处理
+    // 此处返回值，用户告诉 GitHub 的 Webhooks 已接收到信息，并进行了处理
 ```
 
 - `# coding=utf-8` 这个一定要放在定义行，指定编码格式
