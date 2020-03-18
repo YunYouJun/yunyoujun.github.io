@@ -127,6 +127,25 @@ links:
     desc: また，一緒に輝きたい．
     color: "#00A9EF"
     email: andychen2005121@gmail.com
+  - url: https://www.mokeyjay.com
+    avatar: https://www.mokeyjay.com/headimg.png
+    name: mokeyjay
+    blog: 超能小紫
+    desc: Web全沾 // 专业学渣 // 贰刺猿 // 永远还不完信用卡
+    color: purple
+  - url: https://chralpha.com
+    avatar: https://cdn.jsdelivr.net/npm/chrdnx@1.0.10/img/head-found.png
+    name: ChrAlpha
+    blog: ChrAlpha 的幻想乡
+    desc: 愿明天又是更好的一天
+    email: hi-blog@chralpha.com
+    color: "#FFB90F"
+  - url: https://www.angelic47.com/
+    avatar: https://secure.gravatar.com/avatar/af12f24d493e12b714cb70f3c7b3662e?s=500&r=X&d=
+    name: Angelic47
+    blog: Angelic47's Home
+    desc: 弱小，无助，又可怜！～
+    color: "#4fbff9"
 placeholder: 还没想好说些什么
 ---
 
@@ -143,8 +162,7 @@ url: https://www.yunyoujun.cn
 avatar: https://cdn.jsdelivr.net/gh/YunYouJun/yunyoujun.github.io/images/avatar.jpg
 name: 云游君
 blog: 云游君的小站
-desc: All at sea.
-# 希望能成为有趣的人。
+desc: 希望能成为一个有趣的人。# All at sea.
 email: me@yunyoujun.cn
 color: "#0078e7"
 ```
@@ -159,7 +177,7 @@ color: "#0078e7"
 
 ### 原则
 
-- 申请的友链将经过筛选，可以在收到我的回复邮件后再于贵站添加本站链接。（可能到友链刚好占满一页的时候不再添加。）
+- 申请的友链将经过筛选（请按格式填好哦～），可以在收到我的回复邮件后再于贵站添加本站链接。
 - 原则上最好为使用 HTTPS 协议站点。
 - 已添加友链不会轻易删除。如您已移除本站链接，本站也将移除友链。
 - 链接无法打开或网站存在政治问题、植入挖矿脚本、极低质量内容时，将不会添加。
