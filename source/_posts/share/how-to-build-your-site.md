@@ -129,9 +129,9 @@ macOS 用户可以下载官网的安装包进行安装，也可以直接安装 A
 > Hexo 是一个快速、简洁而强大的博客框架，基于 Node.js，同样托管于 GitHub 之上。生态中拥有众多插件主题。你可以基于它快速生成一些静态页面。
 > 你可以使用别人的各种主题与插件，也可以自己定制开发想要的功能。
 > **为什么不是...?**
-> 其他常用的博客框架还有 [WordPress](https://wordpress.org/)，[Typecho](http://typecho.org/)，[Ghost](https://ghost.org/) 等，但这些往往都需要购置自己的服务器，而无法静态化地部署到 GitHub Pages 上。（当然，相应的功能和灵活性也大大提升。）静态话站点还有一个优势就是访问速度往往更快。
+> 其他常用的博客框架还有 [WordPress](https://wordpress.org/)，[Typecho](http://typecho.org/)，[Ghost](https://ghost.org/) 等，但这些往往都需要购置自己的服务器，而无法静态化地部署到 GitHub Pages 上。（当然，相应的功能和灵活性也大大提升。）静态化站点还有一个优势就是访问速度往往更快。
 > 静态网站生成器还有 [Vuepress](https://vuepress.vuejs.org/)，[Gatsby](https://www.gatsbyjs.org/) 等。但这些多是为了写文档而量身定制的，你也可以使用它们，但是相较 Hexo 的博客定位，它们关于博客的插件和主题以及解决办法会少得多。
-> [Hugo](https://gohugo.io/) 提供的功能与 Hexo 几乎相同，（生成大量文件时，甚至比 Hexo 更快）不过它是基于 GO 语言。日后你想对自己的网站进行自定义，即便是 Hugo，你编写前端的交互仍旧需要使用 JavaScrip，所以选择基于 JavaScript 的 Hexo 可以降低学习成本。（你若对 GO 有兴趣，仍然可以尝试使用 Hugo，但本教程将不会针对 Hugo 进行展开。）
+> [Hugo](https://gohugo.io/) 提供的功能与 Hexo 几乎相同，（生成大量文件时，甚至比 Hexo 更快）不过它是基于 GO 语言。日后你想对自己的网站进行自定义，即便是 Hugo，你编写前端的交互仍旧需要使用 JavaScript，所以选择基于 JavaScript 的 Hexo 可以降低学习成本。（你若对 GO 有兴趣，仍然可以尝试使用 Hugo，但本教程将不会针对 Hugo 进行展开。）
 > 所以对于新手来说，使用 Hexo 作为起始点，不失为一个好选择。（当然如果你有钱租服务器，就可以考虑考虑 WordPress）
 
 在终端中输入以下命令：
@@ -203,11 +203,9 @@ Hexo 默认提供的是 [hexo-theme-landscape](https://github.com/hexojs/hexo-th
 
 Hexo-Theme-Yun 的速度检测
 
-![pagespeed-insights-score.png](https://i.loli.net/2020/03/12/cUIuDPJfo379ZOk.png)
-谷歌 [PageSpeed Insights](https://developers.google.com/speed/pagespeed/insights/)
+![pagespeed-insights-score.png](https://i.loli.net/2020/03/12/cUIuDPJfo379ZOk.png)_谷歌 [PageSpeed Insights](https://developers.google.com/speed/pagespeed/insights/)_
 
-![Audits - Lighthouse](https://i.loli.net/2020/03/08/DhfLu5yngb7NZE2.png)
-谷歌浏览器 Audits - Lighthouse 检测分数
+![Audits - Lighthouse](https://i.loli.net/2020/03/08/DhfLu5yngb7NZE2.png)_谷歌浏览器 Audits - Lighthouse 检测分数_
 
 当然，你也可以在 [Themes | Hexo](https://hexo.io/themes/) 发现更多有趣美丽的主题。使用方法大致相同。
 当你具备一定开发能力时，你可以开发属于自己的主题，或者为 hexo-theme-yun 提交 [PR](https://github.com/YunYouJun/hexo-theme-yun/pulls) 添加你想要的功能。
@@ -413,10 +411,17 @@ git push origin hexo
 > 持续集成是一种软件开发实践。对软件进行自动化构建，以此来发现错误。
 > Travis CI 就是一个线上持续集成服务的提供商。它可以拉取你每次推送到 GitHub 上的代码，然后根据你的要求对其进行构建。
 > 我们可以趁机让它自动生成网站静态文件，然后自动帮我们部署。
+> 除此之外，你还可以使用 [GitHub Actions](https://help.github.com/en/actions/getting-started-with-github-actions/about-github-actions) ，[Netlify](https://www.netlify.com/) 等服务。
+> GitHub Actions 相比 Travis 等，自身便拥有仓库的 Token，不再需要额外设置，可以直接使用 `secrets.GITHUB_TOKEN`。
+> 推荐一个专门用来部署 gh-pages 的 Actions [actions-gh-pages](https://github.com/peaceiris/actions-gh-pages)
 
-至于如何使用持续集成来部署 Hexo，官方文档已经介绍的很详细，所以我就不再画蛇添足了。
+关于更多更具体的自动化部署方案和操作步骤，你可以参考我的小伙伴 ChrAlpha 的 [初探无后端静态博客自动化部署方案](https://blog.ichr.me/post/automated-deployment-of-serverless-static-blog/)。
 
-> [将 Hexo 部署到 GitHub Pages](https://hexo.io/zh-cn/docs/github-pages)
+他在文章中详细介绍了 Netlify 、GitHub Actions 和 Travis CI 的部署方法。
+
+你也可以参考 Hexo 的官方文档 [将 Hexo 部署到 GitHub Pages](https://hexo.io/zh-cn/docs/github-pages)
+
+我就不在此画蛇添足。
 
 至此，你的站点便基本搭建完成，此后继续对主题进行自定义吧。
 
@@ -507,10 +512,10 @@ hexo new page xxx
 
 ### 其他平台
 
-毕竟自己的站点可能还是不会有什么人看，所以发到其他平台了（还是没有）。不过在这里阅读体验应该是最好的。
+毕竟自己的站点可能还是不会有什么人看，所以发到其他平台了（然而还是没有人）。不过在这里阅读体验应该是最好的。
 
 - [教你如何从零开始搭建一个属于自己的网站 - 云游君的文章 - 知乎](https://zhuanlan.zhihu.com/p/113209647)
-- [教你如何从零开始搭建一个属于自己的网站 - bilibili 专栏](https://www.bilibili.com/read/cv5108842)（不支持外链、代码高亮、Markdown）
+- [教你如何从零开始搭建一个属于自己的网站 - bilibili 专栏](https://www.bilibili.com/read/cv5108842)（不支持外链、代码高亮、Markdown，太难了）
 
 ## 结语
 

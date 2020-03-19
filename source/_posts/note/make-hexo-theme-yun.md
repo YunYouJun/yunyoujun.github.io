@@ -60,13 +60,9 @@ jQuery 的确用起来很爽，但这位老前辈已经将它的理念逐渐融�
 
 也能加深对原生 JavaScript 的理解。
 
-谷歌 [PageSpeed Insights](https://developers.google.com/speed/pagespeed/insights/)
+![pagespeed-insights-score.png](https://i.loli.net/2020/03/12/cUIuDPJfo379ZOk.png)_谷歌 [PageSpeed Insights](https://developers.google.com/speed/pagespeed/insights/)_
 
-![pagespeed-insights-score.png](https://i.loli.net/2020/03/12/cUIuDPJfo379ZOk.png)
-
-谷歌浏览器 Audits - Lighthouse 检测分数
-
-![Audits - Lighthouse](https://i.loli.net/2020/03/08/DhfLu5yngb7NZE2.png)
+![Audits - Lighthouse](https://i.loli.net/2020/03/08/DhfLu5yngb7NZE2.png)_谷歌浏览器 Audits - Lighthouse 检测分数_
 
 尽可能使用 CDN，提高访问速度。也算是符合了 云 ☁️ 的名字。
 
