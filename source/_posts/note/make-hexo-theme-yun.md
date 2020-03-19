@@ -84,6 +84,8 @@ jQuery 的确用起来很爽，但这位老前辈已经将它的理念逐渐融�
 
 为了宣传主题，写了篇小教程 [教你如何从零开始搭建一个属于自己的网站](https://www.yunyoujun.cn/share/how-to-build-your-site/)。
 
+但愿不是买椟还珠。
+
 ---
 
 持续迭代 ing...
