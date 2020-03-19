@@ -79,3 +79,9 @@ pages:
     url: /girls/
     icon: icon-women-line
     color: hotpink
+
+dns_prefetch:
+  - https://cos.yunyoujun.cn
+
+cdn:
+  pre: https://cdn.jsdelivr.net/gh/YunYouJun/yunyoujun.github.io

@@ -24,6 +24,7 @@
     "hexo-symbols-count-time": "^0.7.1"
   },
   "devDependencies": {
+    "eslint": "^6.8.0",
     "eslint-config-hexo": "^4.1.0",
     "hexo-asset-pipeline": "^1.8.0",
     "hexo-browsersync": "^0.3.0",
@@ -32,6 +33,7 @@
   "scripts": {
     "algolia": "hexo clean && hexo algolia",
     "dev": "export NODE_ENV=dev && hexo s",
+    "docs:dev": "cd themes/yun && yarn docs:dev",
     "predeploy": "hexo clean && hexo g",
     "deploy": "hexo d",
     "backup": "sh backup.sh"
