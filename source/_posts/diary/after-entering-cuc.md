@@ -102,8 +102,6 @@ categories:
 
 ![4505 1号床](../../images/posts/after-entering-cuc/4505-my-bed.jpg)
 
-<iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width=330 height=86 src="//music.163.com/outchain/player?type=2&id=34999023&auto=0&height=80"></iframe>
-
 在此前我一直因为高考报错志愿而懊悔，为母校不是 211 懊悔，为有机会可以报更好的大学却没有报而懊悔，为别人听得我报出母校名字后而一脸茫然而懊悔。
 当然现在要说已经完全没有这种懊恼了，也是不可能的。
 但现今的母校体验下来，校园要小的多，风景与设施条件反倒还不如过去的母校。
