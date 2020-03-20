@@ -146,10 +146,19 @@ links:
     blog: Angelic47's Home
     desc: 弱小，无助，又可怜！～
     color: "#4fbff9"
+  - url: https://imiku.me
+    avatar: https://imiku.me/avatar.jpg
+    name: 冰凌胧月（Ice-Hazymoon）
+    blog: 冰凌胧月的小窝
+    desc: 聆听最初的声音，向往无尽的未来
+    color: "#39c5bb"
+    email: imiku.me@gmail.com
 placeholder: 还没想好说些什么
 ---
 
 ## 友链说明
+
+排名不分先后，仅为添加的时间顺序。
 
 可以在下方评论区申请友链～
 
