@@ -5,7 +5,7 @@ type: "about"
 updated: 2018-01-30 15:10:32
 ---
 
-<iframe frameborder="no" border="0" marginwidth="0" marginheight="0" height="300" src="//music.163.com/outchain/player?type=0&id=308168565&auto=0"></iframe>
+{% meting "308168565" "netease" "playlist" "theme:#C20C0C"%}
 
 > ## Me
 >
@@ -44,7 +44,7 @@ updated: 2018-01-30 15:10:32
 
 ### 其他
 
-- 明日方舟：云游君#5367
+- 明日方舟（官服）：云游君#5367
 
 ## 微信公众号
 

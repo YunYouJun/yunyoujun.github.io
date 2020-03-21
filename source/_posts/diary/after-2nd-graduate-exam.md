@@ -10,7 +10,7 @@ categories:
   - 云游的小日记
 ---
 
-<iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width=330 height=86 src="//music.163.com/outchain/player?type=2&id=668479&auto=0&height=66"></iframe>
+{% meting "668479" "netease" "song" "theme:#C20C0C"%}
 
 > 永远相信美好的事情即将发生
 

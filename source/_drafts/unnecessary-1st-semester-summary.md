@@ -14,7 +14,7 @@ hide: true
 
 <!-- more -->
 
-<iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width=330 height=86 src="//music.163.com/outchain/player?type=2&id=22736710&auto=1&height=66"></iframe>
+{% meting "22736710" "netease" "song" "theme:#C20C0C"%}
 
 本学期达成的成就：
 
@@ -51,7 +51,7 @@ hide: true
 当别人大学期间便发表了数篇论文，而我却还在负责打杂与不知如何下笔。
 当我宅在家里数月足不出户，别人早已周游世界。
 
-我已经再无借口，只能托辞于时代与阶级的差异。
+我已经再无借口，只能托辞于时代与阶级的差异，认识到自己虚长他人数岁的无用。
 
 我又想起很久以前看的麦兜电影，麦兜用稚嫩的声音说道：
 
