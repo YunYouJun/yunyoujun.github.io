@@ -1,14 +1,14 @@
 ---
 title: i-and-game
 tags:
- - 随笔
+  - 随笔
 categories:
- - 云游的小随笔
+  - 云游的小随笔
 ---
 
-<iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width=330 height=86 src="//music.163.com/outchain/player?type=2&id=520459951&auto=0&height=66"></iframe>
+{% meting "520459951" "netease" "song" "theme:#C20C0C"%}
 
-# 
+## draft
 
 我只希望，在未来的某一天，我可以指着某部电影或游戏结束的幕后制作人员，对别人说道：“看，这是我。”
 
@@ -22,8 +22,8 @@ categories:
 
 站着把钱赚了
 
-https://mp.weixin.qq.com/s/zQw3GBd0CSLkAiDpMXPD9A
+<https://mp.weixin.qq.com/s/zQw3GBd0CSLkAiDpMXPD9A>
 
-1994年我考上了北京广播学院电视导演专业，和今天的学生一样，在校生没有不骂自己学校的。正所谓“儿子都是自己的好，媳妇还是人家的好”。总觉得自己生不逢时，羡慕嫉妒恨死了北京电影学院导演专业的学生。
+1994 年我考上了北京广播学院电视导演专业，和今天的学生一样，在校生没有不骂自己学校的。正所谓“儿子都是自己的好，媳妇还是人家的好”。总觉得自己生不逢时，羡慕嫉妒恨死了北京电影学院导演专业的学生。
 
 在大悲大欢之前，日常琐事早已显得无足轻重。
