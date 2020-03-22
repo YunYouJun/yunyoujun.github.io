@@ -153,6 +153,13 @@ links:
     desc: 聆听最初的声音，向往无尽的未来
     color: "#39c5bb"
     email: imiku.me@gmail.com
+  - url: https://diygod.me/
+    avatar: https://cdn.jsdelivr.net/gh/DIYgod/diygod.me@gh-pages/images/DIYgod.jpg
+    name: DIYgod
+    blog: Hi, DIYgod
+    desc: 写代码是热爱，写到世界充满爱！
+    color: "#f29c38"
+    email: i@diygod.me
 placeholder: 还没想好说些什么
 ---
 
