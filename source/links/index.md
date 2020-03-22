@@ -11,6 +11,8 @@ random: true
 
 ## 友链说明
 
+每次刷新为随机顺序展示～
+
 [![YunYouJun Friends](https://github.com/YunYouJun/friends/workflows/YunYouJun%20Friends/badge.svg)](https://friends.yunyoujun.cn)
 
 现已不支持在评论区中直接申请友链，请前往[这里](https://github.com/YunYouJun/friends)～

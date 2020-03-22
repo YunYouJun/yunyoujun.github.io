@@ -3,6 +3,7 @@
 Thumbs.db
 temp/
 yarn.lock
+package-lock.json
 
 # dev
 node_modules/
