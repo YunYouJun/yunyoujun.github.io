@@ -170,20 +170,13 @@ marked:
     exclude: []
     nofollow: false
 
-# https://github.com/hexojs/hexo-asset-pipeline
-# https://github.com/hexojs/hexo-clean-css
-# https://github.com/hexojs/hexo-uglify
-asset_pipeline:
-  revisioning:
-    enable: false
-  clean_css:
-    enable: true
-  uglify_js:
-    enable: true
-  imagemin:
-    enable: false
-  html_minifier:
-    enable: false
+markdown_it_plus:
+  plugins:
+    - plugin:
+      name: "@neilsustc/markdown-it-katex"
+      enable: true
+      options:
+        strict: false
 
 # https://github.com/hexojs/hexo-server
 server:
@@ -195,3 +188,31 @@ aplayer:
   style_cdn: https://cdn.jsdelivr.net/npm/aplayer@latest/dist/APlayer.min.css
   meting: true
   meting_cdn: https://cdn.jsdelivr.net/npm/meting@1/dist/Meting.min.js
+
+# https://github.com/chenzhutian/hexo-all-minifier
+all_minifier: true
+html_minifier:
+  enable: false
+  ignore_error: false
+  silent: false
+  exclude:
+css_minifier:
+  enable: true
+  exclude:
+    - "*.min.css"
+js_minifier:
+  enable: true
+  mangle: true
+  silent: false
+  # output:
+  # compress:
+  exclude:
+    - "*.min.js"
+image_minifier:
+  enable: false
+  interlaced: false
+  multipass: false
+  optimizationLevel: 2
+  pngquant: false
+  progressive: false
+  silent: false
