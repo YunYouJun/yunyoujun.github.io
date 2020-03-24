@@ -1,7 +1,7 @@
 ---
 title: hexo-theme-yun 制作笔记
 date: 2019-04-27 12:00:00
-updated: 2020-03-17 12:00:00
+updated: 2020-03-24 12:00:00
 tags:
   - 项目
   - 笔记
@@ -89,6 +89,10 @@ jQuery 的确用起来很爽，但这位老前辈已经将它的理念逐渐融�
 ### v0.3.0 (2020-03-23)
 
 移除 embeddedVideoTransformer ，[hexo-tag-aplayer](https://github.com/MoePlayer/hexo-tag-aplayer) 太香了。
+
+### 2020-03-24
+
+改使用 [SATA 协议(The Star And Thank Author License (SATA))](https://github.com/zTrix/sata-license)，笑。
 
 ---
 
