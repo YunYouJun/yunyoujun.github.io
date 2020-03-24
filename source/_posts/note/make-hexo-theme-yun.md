@@ -1,7 +1,7 @@
 ---
 title: hexo-theme-yun 制作笔记
 date: 2019-04-27 12:00:00
-updated: 2020-03-24 12:00:00
+updated: 2020-03-24 20:00:00
 tags:
   - 项目
   - 笔记
@@ -39,7 +39,31 @@ Hexo-Theme-Yun 绝赞开发中~
 
 ### 名字的由来
 
-起初打算叫做 `Starry`，在咕咕咕的期间发现已经有人做了这个名字的主题，遂改名为 `Yun`。
+起初打算叫做 `Starry`，向往星空的美丽，在咕咕咕的期间发现已经有人做了这个名字的主题，遂改名为 `Yun`。
+
+因为确实没有重名了，也是自己常用 ID 的一部分，遮住星空的也自然是云了。
+
+## 设计风格
+
+起初咱也打算遵循 [Google Material Design](https://material.io/) 风格来设计（很喜欢），顺便也借用了栅格、卡片和按钮等组件。所以最初能够快速成型。
+
+但是自己的想法偶尔还是会和设计规范冲突，而且作为自己的主题，肯定希望它更独一无二一点。此后便渐渐移除原先引入的 Materail CDN，改用自己的审美来实现。
+同时也能减少引入文件的大小。
+
+微软的 [Fluent UI](https://www.microsoft.com/design/fluent/) 我也很喜欢，线条、扁平的设计风格。
+
+还有当初看了 [【洛天依原创】异样的风暴中心【杉田朗】](https://www.bilibili.com/video/av4018008)、[【洛天依原创】星宿计时【杉田朗】](https://www.bilibili.com/video/av7036967) 的 PV（歌也很好听！），
+里面的动效、线条设计也觉得很是喜欢。（顺带去问了 PV 作者 [Eight-脑感电波-](https://weibo.com/aaapplemilk) 能否参考，得到肯定答复后，……，我就咕咕咕了。）
+
+> 10 Years Later ...
+
+于是乎，自己的四不像主题诞生了。（还是太菜了。）
+
+文章的 Markdown 样式，其实是大致使用的我此前写的一个 [star-markdown-css](https://github.com/YunYouJun/star-markdown-css)。（这也是此前的主题名也打算叫做 `Starry` 的原因之一。）
+
+[star-markdown-css](https://yunyoujun.github.io/star-markdown-css/) 是我编写的 Markdown 样式（也就是转译后常见 HTML 标签样式），大致构想是编写多种有趣好看的文本主题样式，同时也可以作为 CDN 由用户自行引入，自由切换。
+
+为了可以自由设置主题色，还是进行了些许修改直接写在了 `stylus` 里。（日后也许还是会分离？自选文本样式主题？咕咕咕！）
 
 ## Progress
 
@@ -49,7 +73,7 @@ Hexo-Theme-Yun 绝赞开发中~
 
 ### v0.0.1 (2019-05-19) 试验
 
-自己充当自己的小白鼠，Bug 多多
+自己充当自己的小白鼠，Bug 多多。
 
 ### v0.1.0 (2020-03-06) 优化
 
