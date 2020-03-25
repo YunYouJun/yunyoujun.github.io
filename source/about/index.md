@@ -19,8 +19,9 @@ updated: 2018-01-30 15:10:32
 </div>
 
 > 学生党一只。成长 ing。
+> 在下年满十八，遵纪守法，爱国爱家，不碰烟酒，善养鸡鸭，多素少荤，爱吃西瓜。
 
-- 爱好：[ACGN](https://baike.baidu.com/item/ACGN)、瞎折腾、科幻、绘画、开源、Web（以及一切有趣的东西）
+- 爱好：[ACGN](https://baike.baidu.com/item/ACGN)、科幻、绘画、开源、Web（以及一切有趣的东西）
 - 喜欢：西瓜、睡觉、纸片人、哆啦 A 梦
 - 讨厌：肥肉（啊，我是指吃的那种）
 - 运动：乒乓球 🏓 (因为本死宅也不会啥别的运动了吧……)
@@ -34,6 +35,8 @@ updated: 2018-01-30 15:10:32
 ---
 
 ## Contact
+
+大部分社交方式都已放在了侧边栏中，你可以选择你喜欢的方式联系我或找我玩。
 
 - Email：<me@yunyoujun.cn> （大概只用得到自己仍然有钱续费域名的时候吧！~~（笑）~~）
 - GitHub: [YunYouJun](https://github.com/YunYouJun)

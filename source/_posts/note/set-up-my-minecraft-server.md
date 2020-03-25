@@ -1,7 +1,7 @@
 ---
 title: 搭建自己的 Minecraft 服务器
 date: 2019-02-21 15:27:40
-updated: 2019-02-21 15:27:40
+updated: 2019-03-01 15:27:40
 tags:
   - Minecraft
   - 笔记
@@ -188,6 +188,8 @@ vi /etc/crontab
 
 ## Command
 
+记录 Minecraft 中常用的指令
+
 ### Server
 
 服务端执行
@@ -204,14 +206,113 @@ vi /etc/crontab
 /gamerule keepInventory true
 ```
 
-## Referene
+### gamemode
+
+更改游戏模式
+
+```sh
+# Example
+# 改变红色组别所有玩家的游戏模式为创造模式
+/gamemode creative @a[team=Red]
+```
+
+| Params | Description    |
+| ------ | -------------- |
+| @p     | 距离最近的玩家 |
+| @r     | 随机玩家       |
+| @a     | 所有玩家       |
+| @e     | 所有实体       |
+
+| Params | Description  |
+| ------ | ------------ |
+| m      | 游戏模式     |
+| team   | 队伍         |
+| r      | 小于半径区域 |
+| rm     | 大于半径区域 |
+| type   | 实体种类     |
+
+- `[r=R]` 只选择以指令的执行处为中心，半径小于 R 的区块里的目标。
+- `[rm=RM]` 只选择以指令的执行处为中心，半径大于 RM 的区块里的目标。
+
+### scoreboard
+
+```sh
+/scoreboard teams add <队伍名称> [显示名称]
+```
+
+```sh
+/scoreboard teams remove <队伍名称>
+```
+
+```sh
+# 加入队伍
+/scoreboard teams join <队伍名称> [玩家]
+```
+
+```sh
+# 设置
+/scoreboard teams option <队伍名称> <选项> <值>
+```
+
+Example:
+
+```sh
+/scoreboard teams option <队伍名称> color red
+/scoreboard teams option <队伍名称> friendlyfire false
+/scoreboard teams option <队伍名称> nametagVisbility hideForOtherTeams
+```
+
+| Params                 | Description            | Options                                       | Default |
+| ---------------------- | ---------------------- | --------------------------------------------- | ------- |
+| friendlyfire           | 队友伤害               | true/false                                    | true    |
+| nametagVisbility       | 名称标签可见形式       | never/hideForOtherTeams/hideForOwnTeam/always | always  |
+| deathMessageVisibility | 死亡时如何显示死亡讯息 | never/hideForOtherTeams/hideForOwnTeam/always | always  |
+
+可选颜色
+
+- black(黑色)
+- dark_blue(深蓝色)
+- dark_green(深绿色)
+- dark_aqua (深水蓝色)
+- dark_red(深红色)
+- dark_purple(深紫色)
+- gold(金色)
+- gray(灰色)
+- dark_gray(深灰色)
+- blue(蓝色)
+- green(绿色)
+- aqua(水蓝色)
+- red(红色)
+- light_purple(亮紫色)
+- yellow(黄色)
+- white(白色)
+- reset(恢复到预设的颜色)
+
+## 插件
+
+一些有趣的插件
+
+### [Dragon Mounts 2 | 龙骑士]
+
+孵化末影龙
+
+[官网下载地址](https://minecraft.curseforge.com/projects/dm2/files)
+
+依赖 [llibrary](https://minecraft.curseforge.com/projects/llibrary)
+
+## Reference
 
 - [如何搭建“我的世界”服务器](https://linux.cn/article-9480-1.html)
+- [指令(游戏[Minecraft]中的运算机制)](https://baike.baidu.com/item/指令/18765029)
 
 ## 后话
 
 因为服务器全天在线，所以时间也会相应流逝，颇有些加速世界的无限制中立空间的感觉。
 
+## More
+
+- [Minecraft 生存日记](https://www.yunyoujun.cn/diary/minecraft-survival-diary/)
+
 ---
 
-To be contined.
+Q.E.D.
