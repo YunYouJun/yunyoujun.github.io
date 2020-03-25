@@ -114,11 +114,11 @@ jQuery 的确用起来很爽，但这位老前辈已经将它的理念逐渐融�
 
 ### v0.3.0 (2020-03-23)
 
-移除 embeddedVideoTransformer ，[hexo-tag-aplayer](https://github.com/MoePlayer/hexo-tag-aplayer) 太香了。
+移除 `embeddedVideoTransformer`，[hexo-tag-aplayer](https://github.com/MoePlayer/hexo-tag-aplayer) 太香了。
 
 ### 2020-03-24
 
-改使用 [SATA 协议(The Star And Thank Author License (SATA))](https://github.com/zTrix/sata-license)，笑。
+改使用 [SATA 协议( The Star And Thank Author License (SATA) )](https://github.com/zTrix/sata-license)，笑。
 
 简而言之，就是在 MIT 协议上，加个 Star 的要求。
 
