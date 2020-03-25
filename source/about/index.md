@@ -12,8 +12,10 @@ updated: 2018-01-30 15:10:32
 > All at sea.
 > 希望能成为一个有趣的人。
 
-<div class="site-author-avatar" style="text-align:center;">
-  <img src="https://www.yunyoujun.cn/images/avatar.jpg" alt="portrait" title="ID : 云游君">
+<div class="text-center">
+  <div class="site-author-avatar">
+    <img src="https://www.yunyoujun.cn/images/avatar.jpg" alt="portrait" title="ID : 云游君">
+  </div>
 </div>
 
 > 学生党一只。成长 ing。
