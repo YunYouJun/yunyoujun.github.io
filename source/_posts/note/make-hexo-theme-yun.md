@@ -47,7 +47,7 @@ Hexo-Theme-Yun 绝赞开发中~
 
 起初咱也打算遵循 [Google Material Design](https://material.io/) 风格来设计（很喜欢），顺便也借用了栅格、卡片和按钮等组件。所以最初能够快速成型。
 
-但是自己的想法偶尔还是会和设计规范冲突，而且作为自己的主题，肯定希望它更独一无二一点。此后便渐渐移除原先引入的 Materail CDN，改用自己的审美来实现。
+但是自己的想法偶尔还是会和设计规范冲突，而且作为自己的主题，肯定希望它更独一无二一点。此后便渐渐移除原先引入的 Material CDN，改用自己的审美来实现。
 同时也能减少引入文件的大小。
 
 微软的 [Fluent UI](https://www.microsoft.com/design/fluent/) 我也很喜欢，线条、扁平的设计风格。
@@ -61,9 +61,11 @@ Hexo-Theme-Yun 绝赞开发中~
 
 文章的 Markdown 样式，其实是大致使用的我此前写的一个 [star-markdown-css](https://github.com/YunYouJun/star-markdown-css)。（这也是此前的主题名也打算叫做 `Starry` 的原因之一。）
 
-[star-markdown-css](https://yunyoujun.github.io/star-markdown-css/) 是我编写的 Markdown 样式（也就是转译后常见 HTML 标签样式），大致构想是编写多种有趣好看的文本主题样式，同时也可以作为 CDN 由用户自行引入，自由切换。
+> 细细的字体很好看！
 
-为了可以自由设置主题色，还是进行了些许修改直接写在了 `stylus` 里。（日后也许还是会分离？自选文本样式主题？咕咕咕！）
+[star-markdown-css](https://yunyoujun.github.io/star-markdown-css/) 是我编写的 Markdown 样式（也就是转译后常见的 HTML 标签样式），大致构想是编写多种有趣好看的文本主题样式，同时也可以作为 CDN 由用户自行引入，自由切换。
+
+但为了搭配主题（譬如根据主题色改变水平线的颜色等），还是进行了些许修改，并直接写在了 `stylus` 里。（日后也许还是会分离？自选文本样式主题？咕咕咕！）
 
 ## Progress
 
@@ -117,6 +119,12 @@ jQuery 的确用起来很爽，但这位老前辈已经将它的理念逐渐融�
 ### 2020-03-24
 
 改使用 [SATA 协议(The Star And Thank Author License (SATA))](https://github.com/zTrix/sata-license)，笑。
+
+简而言之，就是在 MIT 协议上，加个 Star 的要求。
+
+[![GitHub stars](https://img.shields.io/github/stars/YunYouJun/hexo-theme-yun?style=social)](https://github.com/YunYouJun/hexo-theme-yun)
+
+快快快，都给我去 Star，不准白嫖。
 
 ---
 
