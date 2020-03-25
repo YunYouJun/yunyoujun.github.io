@@ -41,7 +41,7 @@ categories:
 
 ### 添加自己的域名
 
-![add-domain-for-cdn](https://cos.yunyoujun.cn/blog/add-domain-for-cdn.png)
+![add-domain-for-cdn.png](https://i.loli.net/2020/03/25/gRyuXZCW5GHvKqx.png)
 
 ### 设置源站
 
@@ -61,7 +61,7 @@ categories:
 
 证书管理 > 编辑 > 协议跟随 (如果没开启 HTTPS，默认的 HTTP 也可以。)
 
-![set-back-source-protocol](https://cos.yunyoujun.cn/blog/set-back-source-protocol.png)
+![set-back-source-protocol.jpg](https://i.loli.net/2020/03/25/5BlPUpMfO3DxXCH.jpg)
 
 ### 设置 CNAME
 
@@ -70,7 +70,7 @@ categories:
 根据需要将 CDN 提供的 CNAME 线路类型设置为 `境内`。
 `境外` 则仍默认解析回 GitHub Pages。
 
-![set-different-cname-for-domain](https://cos.yunyoujun.cn/blog/set-different-cname-for-domain.png)
+![set-different-cname-for-domain.png](https://i.loli.net/2020/03/25/Pw3257VtjLFqGNQ.png)
 
 ### 配置缓存
 
