@@ -196,3 +196,9 @@ PurgeUrlsCache 用于批量提交 URL 进行刷新，根据 URL 中域名的当�
 
 **--Urls**
 URL 列表，需要包含协议头部 `http://` 或 `https://`
+
+## 后后话
+
+2020-03-26 因为不知腾讯云 CDN 为何挂了，转为使用 [Cloudflare](https://www.cloudflare.com/) 了，自动 Flattening。
+
+既然已经更改为 `www` 主域名，也还是继续使用裸域名跳转 `www` 的策略吧。
