@@ -27,7 +27,7 @@ footer:
   beian:
     enable: true
     icp: 苏ICP备17038157号
-  custom_text: <a style="display:block;line-height:0;" href="https://travellings.now.sh/" target="blank" title="开往-友链接力"><img src="https://travellings.now.sh/assets/logo.gif" alt="开往-友链接力" width="120"></a>
+  custom_text: <a style="display:inline-block;line-height:0;" href="https://travellings.now.sh/" target="blank" title="开往-友链接力"><svg class="icon" aria-hidden="true"><use xlink:href="#icon-send-plane-2-line"></use></svg>&nbsp;Travelling</a>
   # ...
 
 engine_search:
@@ -83,6 +83,5 @@ pages:
 
 dns_prefetch:
   - https://cos.yunyoujun.cn
-
-cdn:
-  pre: https://cdn.jsdelivr.net/gh/YunYouJun/yunyoujun.github.io@latest
+# cdn:
+#   pre: https://cdn.jsdelivr.net/gh/YunYouJun/yunyoujun.github.io@latest
