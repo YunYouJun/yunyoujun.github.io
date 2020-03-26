@@ -21,13 +21,17 @@ updated: 2018-01-30 15:10:32
 
 ## Time
 
-### 2020.03.25 添加 [travellings](https://github.com/volfclub/travellings) 跳转
+### 2020-03-26 使用 [Cloudflare](https://www.cloudflare.com/) 解析
+
+一觉起来，腾讯云的 CDN 不知为何挂了。索性迁移到 Cloudflare。
+
+### 2020-03-25 添加 [travellings](https://github.com/volfclub/travellings) 跳转
 
 点击侧边栏的黑色小飞机或底部的 GIF，将随机跳转一个加入 [Travellings](https://travellings.now.sh/) 的个人网站。
 
 随机的邂逅，很有诗意。
 
-### 2020.02.25-2020.03.25 友链数 Up
+### 2020-02-25 ~ 2020-03-25 友链数 Up
 
 其实此前真的完全没有考虑过友链这个东西，完全是自顾自地自娱自乐。
 
@@ -35,19 +39,19 @@ updated: 2018-01-30 15:10:32
 
 加之，宣传了下本站的主题，访问量也增加了许多，导致自己都有些不好意思再发以前那样自爆羞耻的文章了。
 
-### 2020.02.09 重定向至 www.yunyoujun.cn
+### 2020-02-09 重定向至 www.yunyoujun.cn
 
 由于此前启用了 CDN，CNAME 与 MX 记录发生冲突，导致域名邮箱收不到邮件。
 陷入裸域名和域名邮箱二选一的境地（其实早就有过，但是当时还是没有下决心），当然还有撤掉 CDN 的选择。
 但想着长痛不如短痛，还是狠下心来启用 www.yunyoujun.cn 。
 
-渣渣百度竟然没有将 `yunyoujun.cn` 的收录重定向到 `www`，从零开始的 SEO。（反正百度无所谓）
+渣渣百度竟然没有将 `yunyoujun.cn` 的收录重定向到 `www`，从零开始的 SEO。（~~反正百度无所谓~~）
 
-### 2020.02.05 使用腾讯云 CDN 加速
+### 2020-02-05 使用腾讯云 CDN 加速
 
 [使用 CDN 加速你的 GitHub Pages 网站](https://yunyoujun.cn/note/use-cdn-speed-up-site/)
 
-### 2019.05.19 hexo-theme-yun
+### 2019-05-19 hexo-theme-yun
 
 使用自己的主题 [hexo-theme-yun@0.0.1](https://github.com/YunYouJun/hexo-theme-yun)，估计也将持续到它还存在的那一天。
 
