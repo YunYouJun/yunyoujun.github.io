@@ -53,7 +53,7 @@ updated: 2018-01-30 15:10:32
 - [POPI 匿名提问箱](https://www.popiask.cn/elpsycn)：文明友好的问题有问必答，当然我可能会较迟才能发现有新的提问
 - 微信公众号：[云游君](https://cdn.jsdelivr.net/gh/YunYouJun/cdn/img/about/white-qrcode-and-search.jpg) （并不喜欢用微信，所以其实没什么用，不过加了网站跳转链接的菜单，订阅勉强可以当作证明收藏过本站的标记？也许日后有空会搬一点文章过去？（咕咕咕））
 - Twitter: [云游君](https://twitter.com/YunYouJun)（只是用来看看大佬们，0 粉丝）
-- RSS：<https://www.yunyoujun.cn//atom.xml> （可以使用 RSS 订阅本站，譬如 [feedly](https://feedly.com/)，是否真的能有人还存疑）
+- RSS：<https://www.yunyoujun.cn/atom.xml> （可以使用 RSS 订阅本站，譬如 [feedly](https://feedly.com/)，是否真的能有人还存疑）
 
 <!-- - Bangumi: [云游君](http://bangumi.tv/user/yunyoujun) -->
 
