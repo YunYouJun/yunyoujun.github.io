@@ -11,25 +11,31 @@ updated: 2018-01-30 15:10:32
 
 本博客所有文章默认为原创，除特别声明外，均采用 [CC BY-NC-SA](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh) 许可协议。转载注明出处即可。
 
-(~~不过好像也不会有~~)
-
-十分欢迎无意中点进来的同学，给我留言和建议！
-
-~~虽然此刻很想发一个表情!~~
+十分欢迎无意中点进来的同学，给我留言和建议！~~虽然此刻很想发一个表情!~~
 
 ![不存在的.jpg](https://cdn.jsdelivr.net/gh/YunYouJun/cdn/img/meme/no-exist.jpg)
 
+本页主要用来记录站点的历史。
+
 ## Time
+
+### 2020-03-27 云游君.网址
+
+因为首年免费，去注册了个 [云游君.网址](http://云游君.网址) 域名。（当然肯定不会续费了。）
 
 ### 2020-03-26 使用 [Cloudflare](https://www.cloudflare.com/) 解析
 
 一觉起来，腾讯云的 CDN 不知为何挂了。索性迁移到 Cloudflare。
 
-### 2020-03-25 添加 [travellings](https://github.com/volfclub/travellings) 跳转
+> 不是腾讯云的问题，是 GitHub Pages 的 HTTPS 证书被劫持了。[Github pages 的 HTTPS 是不是出问题了？](https://www.v2ex.com/t/656367)
 
-点击侧边栏的黑色小飞机或底部的 GIF，将随机跳转一个加入 [Travellings](https://travellings.now.sh/) 的个人网站。
+### 2020-03-25 加入 [travellings](https://github.com/volfclub/travellings) & [bloghub](https://github.com/shidenggui/bloghub)
+
+点击侧边栏的黑色小飞机或底部的链接，将随机跳转一个加入 [Travellings](https://travellings.now.sh/) 的个人网站。
 
 随机的邂逅，很有诗意。
+
+[BlogHub](https://github.com/shidenggui/bloghub) 是一个开源的，中文独立博客导航站。
 
 ### 2020-02-25 ~ 2020-03-25 友链数 Up
 
