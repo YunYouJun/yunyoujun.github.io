@@ -5,9 +5,12 @@ type: about
 updated: 2018-01-30 15:10:32
 ---
 
+{% meting "497572729" "netease" "song" "theme:#C20C0C"%}
+
 ## Blog
 
 > 这里应该算是个博客。所以大概会记录一些学习、生活上的回忆与业余创作 ~~瞎搞~~ ，偶尔也会分享自己觉得有趣的东西。 =w=
+> 还算念旧，所以黑历史的文章基本没有删。
 
 本博客所有文章默认为原创，除特别声明外，均采用 [CC BY-NC-SA](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh) 许可协议。转载注明出处即可。
 
@@ -27,7 +30,7 @@ updated: 2018-01-30 15:10:32
 
 一觉起来，腾讯云的 CDN 不知为何挂了。索性迁移到 Cloudflare。
 
-> 不是腾讯云的问题，是 GitHub Pages 的 HTTPS 证书被劫持了。[Github pages 的 HTTPS 是不是出问题了？](https://www.v2ex.com/t/656367)
+> 后发现不是腾讯云的问题，是 GitHub Pages 的 HTTPS 证书被劫持了。[Github pages 的 HTTPS 是不是出问题了？](https://www.v2ex.com/t/656367)
 
 ### 2020-03-25 加入 [travellings](https://github.com/volfclub/travellings) & [bloghub](https://github.com/shidenggui/bloghub)
 
@@ -102,7 +105,9 @@ Coding 的服务不知为何挂了几个小时，虽然之后又恢复了。
 
 金山创始人[求伯君](https://baike.baidu.com/item/求伯君)（说起来，第一次得知这位大名时，我还以为是网名。）也是西山居的创始人。
 
-西山居也正因其小时候居住之所名为西山村而得名。我的家乡也有一 `浦` 字，是港口城市的边陲小镇。
+西山居也正因其小时候居住之所名为西山村而得名。
+
+而我的家乡有一 `浦` 字，是港口城市的边陲小镇。
 
 > 冬日有雪、夏有烟花，依山傍水。动漫中常见的意象与执念，一应俱全。
 
