@@ -27,7 +27,7 @@ footer:
   beian:
     enable: true
     icp: 苏ICP备17038157号
-  custom_text: <a style="display:inline-block;line-height:0;" href="https://travellings.now.sh/" target="blank" title="开往-友链接力"><svg class="icon" aria-hidden="true"><use xlink:href="#icon-send-plane-2-line"></use></svg>&nbsp;Travelling</a>
+  custom_text: <a style="display:inline-block;line-height:0;" href="https://travellings.now.sh/" target="blank" title="开往-友链接力"><img src="https://cdn.jsdelivr.net/gh/volfclub/travellings/assets/logo.svg" width="100" alt="Travelling"/></a>
   # ...
 
 engine_search:
