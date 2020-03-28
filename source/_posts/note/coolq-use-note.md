@@ -18,7 +18,7 @@ categories:
 
 - [qqbot](https://github.com/pandolia/qqbot)
 
-因此，所剩的尚跨可靠的选择似乎只有 [酷Q](https://cqp.cc/) 还说得过去。
+因此，所剩的尚跨可靠的选择似乎只有 [酷 Q](https://cqp.cc/) 还说得过去。
 
 本文便用于记录配置过程中的坑。
 
@@ -29,9 +29,9 @@ categories:
 想要长久在线，自然是要挂在服务器上的。
 那么 Linux 便是跨不过去的坎。
 
-想让 酷Q 在 Linux 上运行则推荐使用 [docker](https://www.docker.com/) 。
+想让 酷 Q 在 Linux 上运行则推荐使用 [docker](https://www.docker.com/) 。
 
-[[发布]酷Q on Docker 2.0](https://cqp.cc/t/34558)
+[[发布]酷 Q on Docker 2.0](https://cqp.cc/t/34558)
 
 ### Install Docker
 
@@ -42,7 +42,7 @@ Linux 不同主流发行版本在官方文档中都有详细的安装过程。
 但 Deepin (即深度) 基于 Debian 进行了定制，本以为按照 Debian 进行安装就可以，但没能成功。
 无法找到 Deepin 的安装版本。
 
-[深度系统如何安装docker？](https://bbs.deepin.org/forum.php?mod=viewthread&tid=139514&page=1&authorid=76809)
+[深度系统如何安装 docker？](https://bbs.deepin.org/forum.php?mod=viewthread&tid=139514&page=1&authorid=76809)
 
 尝试了文中的做法也没有成功。
 问题出在 `sudo add-apt-repository` 。
@@ -60,21 +60,21 @@ DISTRIB_CODENAME=wheezy
 
 等安装好后，为防止以后系统更新等 Bug，又改回了 `Deepin/stable`。
 
-### 安装 酷Q
+### 安装 酷 Q
 
-#### 下载 酷Q Docker 镜像
+#### 下载 酷 Q Docker 镜像
 
 ```sh
 docker pull coolq/wine-coolq
 ```
 
-在任意目录创建一个空文件夹，用于持久化存放 酷Q 数据：
+在任意目录创建一个空文件夹，用于持久化存放 酷 Q 数据：
 
 ```sh
 mkdir /root/coolq-data # 任意路径均可
 ```
 
-运行 酷Q 镜像
+运行 酷 Q 镜像
 
 ```sh
 docker run --name=coolq --rm -p 8080:9000 -v /root/coolq-data:/home/user/coolq -e VNC_PASSWD=12345678 -e COOLQ_ACCOUNT=123456 coolq/wine-coolq
@@ -97,12 +97,12 @@ docker run --name=coolq -d -p 8080:9000 -v /root/coolq-data:/home/yunyou/coolq -
 docker run --name=coolq -d -p 8080:9000 -v /root/coolq-data:/home/user/coolq -e VNC_PASSWD=12345678 -e COOLQ_ACCOUNT=123456 coolq/wine-coolq
 ```
 
-Argument | Example
---- | ---
-远程监听端口 | 8080
-数据存放位置 | /root/coolq-data
-远程访问密码 | 12345678
-机器人帐号 | 123456
+| Argument     | Example          |
+| ------------ | ---------------- |
+| 远程监听端口 | 8080             |
+| 数据存放位置 | /root/coolq-data |
+| 远程访问密码 | 12345678         |
+| 机器人帐号   | 123456           |
 
 查看日志
 
@@ -148,7 +148,7 @@ docker exec -ti 容器ID/容器名  /bin/bash
 
 因为自己 C++ 并不怎么熟悉，所以打算使用 api 插件，来使用 Node.js/Python 来开发。
 
-随后发现了 [NoneBot](https://none.rclab.tk) 这样封装好的框架，使用 Python 。
+随后发现了 [NoneBot](https://github.com/richardchien/nonebot) 这样封装好的框架，使用 Python 。
 
 参见文档进行安装。
 
@@ -158,17 +158,17 @@ docker exec -ti 容器ID/容器名  /bin/bash
 pip install nonebot
 ```
 
-使用参见 [NoneBot 文档](https://none.rclab.tk)
+使用参见 [NoneBot 文档](https://nonebot.cqp.moe/)
 
 ### GitHub Webhook
 
-[](https://yunyoujun.cn/project/QQ-XiaoAi/#WebHooks-自动部署)
+[WebHooks-自动部署](https://yunyoujun.cn/project/QQ-XiaoAi/#WebHooks-自动部署)
 
 ## FAQ
 
 ### 端口号未开启
 
-<!-- T^T 这个问题找了我好久 -->
+T^T 这个问题找了我好久
 
 ```sh
 iptables -I INPUT 4 -p tcp -m state --state NEW -m tcp --dport 8080 -j ACCEPT

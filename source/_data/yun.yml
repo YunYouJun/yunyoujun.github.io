@@ -15,7 +15,7 @@ valine:
   # https://github.com/DesertsP/Valine-Admin
   # https://valine.yunyoujun.cn
   notify: false # mail notifier, See: https://github.com/xCss/Valine/wiki
-  verify: false # Verification code
+  verify: true # Verification code
   placeholder: 大佬求指教&nbsp_(:з」∠)_ （填写邮箱可以收到回复通知～）
   avatar: # gravatar style
   meta: nick,mail,link # custom comment header
