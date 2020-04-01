@@ -1,5 +1,8 @@
 favicon: /favicon.ico
 
+colors:
+  primary: green
+
 avatar:
   url: /images/avatar.jpg
 
