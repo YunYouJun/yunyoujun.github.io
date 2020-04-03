@@ -7,7 +7,6 @@ tags:
 categories:
   - 云游的小笔记
 ---
-# Nginx
 
 <!-- more -->
 
@@ -56,7 +55,7 @@ server {
 
 ## 参考
 
-> [next.js、nuxt.js等服务端渲染框架构建的项目部署到服务器，并用PM2守护程序](https://segmentfault.com/a/1190000012774650)
+> [next.js、nuxt.js 等服务端渲染框架构建的项目部署到服务器，并用 PM2 守护程序](https://segmentfault.com/a/1190000012774650)
 
 ---
 
