@@ -201,4 +201,6 @@ URL 列表，需要包含协议头部 `http://` 或 `https://`
 
 2020-03-26 因为不知腾讯云 CDN 为何挂了，转为使用 [Cloudflare](https://www.cloudflare.com/) 了，自动 Flattening。
 
+> 后发现不是腾讯云的问题，是 GitHub Pages 的 HTTPS 证书被劫持了。[Github pages 的 HTTPS 是不是出问题了？](https://www.v2ex.com/t/656367)
+
 既然已经更改为 `www` 主域名，也还是继续使用裸域名跳转 `www` 的策略吧。
