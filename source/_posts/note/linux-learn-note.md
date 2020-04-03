@@ -110,6 +110,13 @@ git config --global credential.helper store
 
 Linux 安装 `Node.js` 的最方便的工具
 
+如果速度太慢，可以更换为国内镜像：
+
+```sh
+vim ~/.zshrc
+export NVM_NODEJS_ORG_MIRROR=http://npm.taobao.org/mirrors/node
+```
+
 #### 安装 nvm
 
 > https://github.com/nvm-sh/nvm#installation-and-update
@@ -166,9 +173,9 @@ sudo apt install libssl-dev libncurses5-dev libsqlite3-dev libreadline-dev libtk
 # 随后重新编译安装
 ```
 
-### Command
+## Command
 
-#### apt apt-get
+### apt apt-get
 
 `apt` = `apt-get` + `apt-cache` + `apt-config`
 
@@ -184,6 +191,11 @@ sudo apt remove xxx
 
 - 为文件目录树全部赋予权限：`chmod 775 -R filename`
 - 迭代删除文件夹中所有内容：`rm -rf &lt;filename or dirname&gt;`
+
+### 挂载数据盘
+
+- 查看已有磁盘：`fdisk -l`
+- 挂载磁盘：`mount /dev/vdb1 /home/data`
 
 ## FAQ
 

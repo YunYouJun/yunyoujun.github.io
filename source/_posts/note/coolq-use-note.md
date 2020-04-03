@@ -1,7 +1,7 @@
 ---
 title: 酷 Q 使用笔记
 date: 2019-05-15 19:45:31
-updated: 2019-05-15 19:45:31
+# updated: 2020-04-03 19:45:31
 tags:
   - 学习
   - 笔记
@@ -31,13 +31,23 @@ categories:
 
 想让 酷 Q 在 Linux 上运行则推荐使用 [docker](https://www.docker.com/) 。
 
-[[发布]酷 Q on Docker 2.0](https://cqp.cc/t/34558)
+[[发布]酷 Q on Docker](https://cqp.cc/t/34558)
+
+> 当前版本为 3.1
 
 ### Install Docker
 
 Linux 不同主流发行版本在官方文档中都有详细的安装过程。
 
 > [Get Docker CE](https://docs.docker.com/install/linux/docker-ce/debian/)
+
+CentOS:
+
+```sh
+yum install docker
+# 启动 Docker
+systemctl start docker
+```
 
 但 Deepin (即深度) 基于 Debian 进行了定制，本以为按照 Debian 进行安装就可以，但没能成功。
 无法找到 Deepin 的安装版本。
