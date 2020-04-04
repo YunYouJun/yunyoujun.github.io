@@ -105,6 +105,7 @@ girls:
   - name: 凉宫春日
     avatar: https://img.moegirl.org/common/thumb/f/fd/Haruhi_Suzumiya_.jpg/240px-Haruhi_Suzumiya_.jpg
     from: 凉宫春日系列
+    reason: 特立独行
   - name: 朝比奈实玖瑠
     avatar: https://img.moegirl.org/common/thumb/3/39/1096%E5%A5%B3%E4%BB%86%E8%A3%85.jpg/300px-1096%E5%A5%B3%E4%BB%86%E8%A3%85.jpg
     from: 凉宫春日系列

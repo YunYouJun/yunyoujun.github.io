@@ -85,9 +85,3 @@ dns_prefetch:
   - https://cos.yunyoujun.cn
 # cdn:
 #   pre: https://cdn.jsdelivr.net/gh/YunYouJun/yunyoujun.github.io@latest
-
-# special
-mourn:
-  enable: true
-  days:
-    - "4-4"
