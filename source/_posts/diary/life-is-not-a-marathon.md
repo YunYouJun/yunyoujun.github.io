@@ -58,7 +58,7 @@ categories:
 
 提到非主流，大家难免会想到十年前那妆容发型夸张、用着火星文、说着不明觉厉却又看似伤感之言的 80/90 后形象。
 
-![567-baber-shop.jpg](https://i.loli.net/2020/04/04/TCLnUYgSQJRVkzu.jpg)**「五六七之最强发型师」动画截图**
+![567-baber-shop.jpg](https://i.loli.net/2020/04/04/TCLnUYgSQJRVkzu.jpg)_「五六七之最强发型师」动画截图_
 
 但我觉得这更像是一种人生态度。
 
