@@ -26,13 +26,15 @@ jobs:
           restore-keys: |
             ${{ runner.os }}-yarn-
 
-      - run: export TZ='Asia/Shanghai'
-      - run: env
-      - run: yarn install
-      - run: git clone -b dev https://github.com/YunYouJun/hexo-theme-yun.git themes/yun
-      - run: export HEXO_ALGOLIA_INDEXING_KEY="${{ secrets.HEXO_ALGOLIA_INDEXING_KEY }}"
-      - run: yarn algolia
-      - run: yarn build
+      - name: Install & Build
+        env:
+          TZ: Asia/Shanghai
+          HEXO_ALGOLIA_INDEXING_KEY: ${{ secrets.HEXO_ALGOLIA_INDEXING_KEY }}
+        run: |
+          yarn install
+          git clone -b dev https://github.com/YunYouJun/hexo-theme-yun.git themes/yun
+          yarn algolia
+          yarn build
 
       - name: Deploy
         uses: peaceiris/actions-gh-pages@v3

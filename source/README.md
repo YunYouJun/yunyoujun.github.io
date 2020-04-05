@@ -1,6 +1,6 @@
 # My Static Blog
 
-[![GitHub Pages](https://github.com/YunYouJun/yunyoujun.github.io/workflows/gh-pages/badge.svg)](https://github.com/YunYouJun/yunyoujun.github.io/actions)
+[![GitHub Pages](https://github.com/YunYouJun/yunyoujun.github.io/workflows/GitHub%20Pages/badge.svg)](https://github.com/YunYouJun/yunyoujun.github.io/actions)
 
 Welcome to My Blog!
 
