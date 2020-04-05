@@ -21,4 +21,4 @@ Record some design assets collection.
 
 #### [Megrim](https://fonts.google.com/specimen/Megrim)
 
-![google-fonts-megrim](../../images/posts/design-assets-collection/fonts/google-fonts-megrim.png)
+![google-fonts-megrim](https://cos.yunyoujun.cn/blog/posts/google-fonts-megrim.png)
