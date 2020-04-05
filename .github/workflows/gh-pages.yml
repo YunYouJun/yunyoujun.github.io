@@ -28,7 +28,6 @@ jobs:
 
       - name: Install & Build
         env:
-          TZ: Asia/Shanghai
           HEXO_ALGOLIA_INDEXING_KEY: ${{ secrets.HEXO_ALGOLIA_INDEXING_KEY }}
         run: |
           git clone -b dev https://github.com/YunYouJun/hexo-theme-yun.git themes/yun
