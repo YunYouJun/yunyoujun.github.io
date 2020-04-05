@@ -62,7 +62,7 @@ ipconfig
 
 主机名为方才查看到的 `IPv4` 地址 `192.168.31.87` (因人而异) ，端口为方才默认的 `8888`
 
-![config-phone](/images/posts/use-fiddle-export-your-diary-1.png)
+![config-phone](https://cos.yunyoujun.cn/blog/use-fiddle-export-your-diary-1.png)
 
 可手机直接访问 IPv4:端口号(例如：`192.168.31.87:8888`) ，如有返回页面则说明设置成功。
 
@@ -86,25 +86,25 @@ CONNECT http://ohshenghuo.com:443
 其中与登录表单相关的部分代码
 
 ```js
-$.post('/api/login/', form.serialize(), function(e){
-  if(e && e.token){
-      OhUtil.login(e.token);
+$.post("/api/login/", form.serialize(), function (e) {
+  if (e && e.token) {
+    OhUtil.login(e.token);
   } else {
-      $('#login-form .msg_error').text("邮箱或密码输入错误").show();
-      $('#login-form .submit').removeClass('inactive').attr('value', '登录');
+    $("#login-form .msg_error").text("邮箱或密码输入错误").show();
+    $("#login-form .submit").removeClass("inactive").attr("value", "登录");
   }
-})
+});
 ```
 
 由此可见登录 api 为 `api/login`
 
 表单内容进行 [`serialize`](https://api.jquery.com/serialize/#serialize) (jQuery 方法，序列化)
 
-|KEY|VALUE|
-|-|-|
-|csrfmiddlewaretoken|-|
-|email|-|
-|password|-|
+| KEY                 | VALUE |
+| ------------------- | ----- |
+| csrfmiddlewaretoken | -     |
+| email               | -     |
+| password            | -     |
 
 ```text
 csrfmiddlewaretoken=ZcJkWtMdfyjBNKxp3ms0i8REkTJcSKw4&email=xxx&password=xxx
@@ -113,7 +113,11 @@ csrfmiddlewaretoken=ZcJkWtMdfyjBNKxp3ms0i8REkTJcSKw4&email=xxx&password=xxx
 表单还含有 csrfmiddlewaretoken （可以在 html 页面中的登录表单看到,如下），用来防止跨站请求伪造。（也就是防止我们使用 Postman，但是我们可以手动加入表单）
 
 ```html
-<input type="hidden" name="csrfmiddlewaretoken" value="ZcJkWtMdfyjBNKxp3ms0i8REkTJcSKw4">
+<input
+  type="hidden"
+  name="csrfmiddlewaretoken"
+  value="ZcJkWtMdfyjBNKxp3ms0i8REkTJcSKw4"
+/>
 ```
 
 `Network` 面板可查看到请求头内容和表单数据等。（csrfmiddlewaretoken 也可在此处的 Form data 中看到）
@@ -199,10 +203,10 @@ Response
 }
 ```
 
-|Attribute|Description|Type|Default|
-|-|-|-|-|
-|diaries|包含当月各天日记的 ID|Object|-|
-|yyyy-MM-dd|当月日记 ID|Number|-|
+| Attribute  | Description           | Type   | Default |
+| ---------- | --------------------- | ------ | ------- |
+| diaries    | 包含当月各天日记的 ID | Object | -       |
+| yyyy-MM-dd | 当月日记 ID           | Number | -       |
 
 ...
 
