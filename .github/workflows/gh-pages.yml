@@ -29,7 +29,7 @@ jobs:
       - run: export TZ='Asia/Shanghai'
       - run: yarn install
       - run: git clone -b dev https://github.com/YunYouJun/hexo-theme-yun.git themes/yun
-      - run: export HEXO_ALGOLIA_INDEXING_KEY=${{ secrets.HEXO_ALGOLIA_INDEXING_KEY }}
+      - run: export HEXO_ALGOLIA_INDEXING_KEY="${{ secrets.HEXO_ALGOLIA_INDEXING_KEY }}"
       - run: yarn algolia
       - run: yarn build
 
