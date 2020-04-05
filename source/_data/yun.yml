@@ -6,7 +6,6 @@ avatar:
 reward_settings:
   enable: true
   comment: 我很可爱，请给我钱
-  url: "/about/#Donate"
 
 valine:
   enable: true
@@ -85,3 +84,21 @@ dns_prefetch:
   - https://cos.yunyoujun.cn
 # cdn:
 #   pre: https://cdn.jsdelivr.net/gh/YunYouJun/yunyoujun.github.io@latest
+
+menu:
+  home:
+    path: /
+    icon: icon-home-4-line
+  archives:
+    path: /archives
+    icon: icon-archive-line
+  tags:
+    path: /tags
+    icon: icon-price-tag-3-line
+  categories:
+    path: /categories
+    icon: icon-folder-2-line
+  custom:
+    title: 留言板
+    path: /about/#comment
+    icon: icon-clipboard-line
