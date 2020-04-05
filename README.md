@@ -1,6 +1,6 @@
 # Hexo 站点源文件
 
-[![Build Status](https://www.travis-ci.com/YunYouJun/yunyoujun.github.io.svg?branch=hexo)](https://www.travis-ci.com/YunYouJun/yunyoujun.github.io)
+[![GitHub Pages](https://github.com/YunYouJun/yunyoujun.github.io/workflows/gh-pages/badge.svg)](https://github.com/YunYouJun/yunyoujun.github.io/actions)
 
 ## Use
 
@@ -120,8 +120,6 @@ git commit -m 'xxx'
 ```sh
 chore(xxx): xxx
 ```
-
-
 
 ## FAQ
 
