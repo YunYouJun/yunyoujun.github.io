@@ -62,6 +62,8 @@ updated: 2018-01-30 15:10:32
 
 - 明日方舟（官服）：云游君#5367
 
+#### 下方评论区或者 [GitHub Issues](https://github.com/YunYouJun/yunyoujun.github.io/issues/36) 就当作留言板了～（有啥想说的，欢迎留言）
+
 ## Donate
 
 喂，看到下面发光的按钮了吗！
