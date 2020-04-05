@@ -62,7 +62,7 @@ ipconfig
 
 主机名为方才查看到的 `IPv4` 地址 `192.168.31.87` (因人而异) ，端口为方才默认的 `8888`
 
-![config-phone](https://cos.yunyoujun.cn/blog/use-fiddle-export-your-diary-1.png)
+![config-phone](https://cos.yunyoujun.cn/blog/posts/use-fiddle-export-your-diary-1.png)
 
 可手机直接访问 IPv4:端口号(例如：`192.168.31.87:8888`) ，如有返回页面则说明设置成功。
 
