@@ -58,6 +58,12 @@ git clone https://github.com/YunYouJun/hexo-theme-yun themes/yun
 
 [![Tencent Cloud](https://imgcache.qq.com/open_proj/proj_qcloud_v2/gateway/portal/css/img/nav/logo-bg-color.svg)](https://cloud.tencent.com/)
 
+### 又拍云
+
+<a href="https://console.upyun.com/register/?invite=SyeQw09Bz" title="又拍云" target="_blank">
+  <img src="https://cdn.jsdelivr.net/gh/YunYouJun/cdn/img/logo/upyun-logo.png" width="100">
+</a>
+
 #### 刷新目录
 
 ```sh

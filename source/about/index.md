@@ -49,7 +49,7 @@ updated: 2018-01-30 15:10:32
 - 网易云音乐: [机智的云游君](http://music.163.com/#/user/home?id=247102977)（主用的音乐播放器，多为日语歌、少量欧美，华语更少但的确是有的，V 家更爱翻唱，当遇到自认为好听的就会收藏）
 - QQ: 910426929（常年在线，但有问题更推荐进群 389401003 询问）
 - Telegram: [YunYouJun 云游君](https://t.me/YunYouJun)（可能回复得比较慢）
-- Telegram Channel: [El Psy Congroo](https://t.me/elpsycn)（才整的频道，也许会用来记录吐槽日常，朋友圈太多现实世界朋友，导致都不好意思发空间）
+- Telegram Channel: [El Psy Congroo](https://t.me/elpsycn)（才整的频道，也许会用来记录吐槽日常，朋友圈太多现实世界朋友，导致都不好意思发空间）现在大致 = 博客 + 豆瓣 + 网易云音乐 + Twitter 更新聚合
 - Telegram Group: [自娱自乐](https://t.me/yunyoujun_group)（所以我为什么要整全套？？？）
 - [POPI 匿名提问箱](https://www.popiask.cn/elpsycn)：文明友好的问题有问必答，当然我可能会较迟才能发现有新的提问
 - 微信公众号：[云游君](https://cdn.jsdelivr.net/gh/YunYouJun/cdn/img/about/white-qrcode-and-search.jpg) （并不喜欢用微信，所以其实没什么用，不过加了网站跳转链接的菜单，订阅勉强可以当作证明收藏过本站的标记？也许日后有空会搬一点文章过去？（咕咕咕））
