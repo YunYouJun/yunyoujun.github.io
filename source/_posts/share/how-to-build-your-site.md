@@ -131,7 +131,7 @@ macOS 用户可以下载官网的安装包进行安装，也可以直接安装 A
 > **为什么不是...?**
 > 其他常用的博客框架还有 [WordPress](https://wordpress.org/)，[Typecho](http://typecho.org/)，[Ghost](https://ghost.org/) 等，但这些往往都需要购置自己的服务器，而无法静态化地部署到 GitHub Pages 上。（当然，相应的功能和灵活性也大大提升。）静态化站点还有一个优势就是访问速度往往更快。
 > 静态网站生成器还有 [Vuepress](https://vuepress.vuejs.org/)，[Gatsby](https://www.gatsbyjs.org/) 等。但这些多是为了写文档而量身定制的，你也可以使用它们，但是相较 Hexo 的博客定位，它们关于博客的插件和主题以及解决办法会少得多。
-> [Hugo](https://gohugo.io/) 提供的功能与 Hexo 几乎相同，（生成大量文件时，甚至比 Hexo 更快）不过它是基于 GO 语言。日后你想对自己的网站进行自定义，即便是 Hugo，你编写前端的交互仍旧需要使用 JavaScript，所以选择基于 JavaScript 的 Hexo 可以降低学习成本。（你若对 GO 有兴趣，仍然可以尝试使用 Hugo，但本教程将不会针对 Hugo 进行展开。）
+> Hexo 提供的功能与 [Hugo](https://gohugo.io/) 几乎都有，（生成大量文件时，甚至比 Hexo 更快）不过它是基于 GO 语言。日后你想对自己的网站进行自定义，即便是 Hugo，你编写前端的交互仍旧需要使用 JavaScript，所以选择基于 JavaScript 的 Hexo 可以降低学习成本。（你若对 GO 有兴趣，仍然可以尝试使用 Hugo，但本教程将不会针对 Hugo 进行展开。）
 > 所以对于新手来说，使用 Hexo 作为起始点，不失为一个好选择。（当然如果你有钱租服务器，就可以考虑考虑 WordPress）
 
 在终端中输入以下命令：
@@ -268,7 +268,7 @@ npm install hexo-render-pug hexo-renderer-stylus
 譬如我们需要更换头像。在 `yun.yml` 中填写。
 
 > 你可以在 `source` 文件夹下新建 `images` 文件夹，用来存储你的图片。
-> 也可以使用 [SM.MS](https://sm.ms/) 上传你的图片文件，获取在线链接。
+> 也可以使用 [SM.MS](https://sm.ms/) 等图床工具上传你的图片文件，获取在线链接。
 
 ```yml
 avatar:
