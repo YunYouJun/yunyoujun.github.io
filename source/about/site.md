@@ -22,6 +22,12 @@ updated: 2018-01-30 15:10:32
 
 ## Time
 
+### 2020-04-06 GitHub Actions
+
+[![GitHub Pages](https://github.com/YunYouJun/yunyoujun.github.io/workflows/GitHub%20Pages/badge.svg)](https://github.com/YunYouJun/yunyoujun.github.io/actions)
+
+从使用了许久的 [Travis CI](https://travis-ci.com/github/YunYouJun/yunyoujun.github.io) 转为使用 [GitHub Actions](https://github.com/YunYouJun/yunyoujun.github.io/actions)。
+
 ### 2020-03-27 云游君.网址
 
 因为首年免费，去注册了个 [云游君.网址](http://云游君.网址) 域名。（当然肯定不会续费了。）
