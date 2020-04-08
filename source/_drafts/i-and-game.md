@@ -6,7 +6,7 @@ categories:
   - 云游的小随笔
 ---
 
-{% meting "520459951" "netease" "song" "theme:#C20C0C"%}
+{% meting "520459951" "netease" "song" "theme:#C20C0C" %}
 
 ## draft
 
