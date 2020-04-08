@@ -102,3 +102,6 @@ menu:
     title: 留言板
     path: /about/#comment
     icon: icon-clipboard-line
+
+cursor:
+  enable: true
