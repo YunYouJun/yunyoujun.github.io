@@ -7,6 +7,7 @@ tags:
   - 时光
 categories:
   - 云游的小日记
+aplayer: true
 ---
 
 {% meting "26270008" "netease" "song" "theme:#C20C0C"%}
