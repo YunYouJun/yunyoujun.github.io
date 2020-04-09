@@ -488,7 +488,11 @@ hexo new page xxx
 
 首先，你得有个自己的域名。
 
-> 避免广告嫌疑，你可以自行前往相关域名提供商购买。
+> ~~避免广告嫌疑，你可以自行前往相关域名提供商购买。~~
+> 原本我的确是这么写的。
+> 不过咱的确一直嫖的是[腾讯云](https://cloud.tencent.com/act/cps/redirect?redirect=1040&cps_key=598123cb511ac35c74d38b5a49392812&from=console)，而它又有一个[推广链接](https://cloud.tencent.com/act/cps/redirect?redirect=1040&cps_key=598123cb511ac35c74d38b5a49392812&from=console)。
+> 而你通过我这个[链接](https://cloud.tencent.com/act/cps/redirect?redirect=1040&cps_key=598123cb511ac35c74d38b5a49392812&from=console)访问腾讯云注册购买产品，也不会多花钱。所以就不妨[点一下](https://cloud.tencent.com/act/cps/redirect?redirect=1040&cps_key=598123cb511ac35c74d38b5a49392812&from=console)？
+> 「你看，很简单吧，谁都不会受伤的世界完成了。」——比企谷八幡
 
 并使用 CNAME 解析到 `你的名字.github.io`。（当然 A 记录直接解析到 GitHub Pages IP 地址也可以。）
 
