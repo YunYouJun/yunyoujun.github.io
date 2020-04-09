@@ -18,6 +18,7 @@ valine:
   meta: nick,mail,link # custom comment header
   pageSize: 10 # pagination size
   visitor: true
+  visitor_index: false
 
 footer:
   since: 2016
@@ -103,3 +104,5 @@ menu:
 
 cursor:
   enable: true
+
+baidu_push: true
