@@ -10,7 +10,7 @@ katex: true
 
 - <https://katex.org/docs/autorender.html>
 
-注意，在 Markdown 文件中直接书写时，你需要多一个 `\` 来转译 `(` 或 `[`。
+注意，在 Markdown 文件中直接书写时，你需要多一个 `\` 来转译 `\`。
 
 使用 `\\[ E = mc^2 \\]` 而不是 `\[ E = mc^2 \]`。
 
