@@ -516,6 +516,7 @@ hexo new page xxx
 
 - [教你如何从零开始搭建一个属于自己的网站 - 云游君的文章 - 知乎](https://zhuanlan.zhihu.com/p/113209647)
 - [教你如何从零开始搭建一个属于自己的网站 - bilibili 专栏](https://www.bilibili.com/read/cv5108842)（不支持外链、代码高亮、Markdown，太难了）
+- [教你如何从零开始搭建一个属于自己的网站 - 腾讯云](https://cloud.tencent.com/developer/article/1609701)（该说不愧是腾讯吗？SEO 绝了。最晚（晚了几个星期）发的，次日搜全名就变百度第一条了。）
 
 ## 结语
 
