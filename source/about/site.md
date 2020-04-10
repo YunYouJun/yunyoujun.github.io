@@ -20,6 +20,8 @@ updated: 2018-01-30 15:10:32
 
 本页主要用来记录站点的历史。
 
+😜 你也可以给我一个 [Star](https://github.com/YunYouJun/yunyoujun.github.io)，作为来过的证明。
+
 ## Time
 
 ### 2020-04-06 GitHub Actions
