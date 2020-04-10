@@ -55,6 +55,7 @@ updated: 2018-01-30 15:10:32
 - 微信公众号：[云游君](https://cdn.jsdelivr.net/gh/YunYouJun/cdn/img/about/white-qrcode-and-search.jpg) （并不喜欢用微信，所以其实没什么用，不过加了网站跳转链接的菜单，订阅勉强可以当作证明收藏过本站的标记？也许日后有空会搬一点文章过去？（咕咕咕））
 - Twitter: [云游君](https://twitter.com/YunYouJun)（刚开始营业，每日一个 CSS 练习）
 - RSS：<https://www.yunyoujun.cn/atom.xml> （可以使用 RSS 订阅本站，譬如 [feedly](https://feedly.com/)，是否真的能有人还存疑）
+- 😜 或者给我一个 [Star](https://github.com/YunYouJun/yunyoujun.github.io)，作为来过的证明。
 
 <!-- - Bangumi: [云游君](http://bangumi.tv/user/yunyoujun) -->
 
