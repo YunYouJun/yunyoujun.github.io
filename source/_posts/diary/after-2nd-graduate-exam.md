@@ -8,6 +8,7 @@ tags:
   - 中传
 categories:
   - 云游的小日记
+aplayer: true
 ---
 
 {% meting "668479" "netease" "song" "theme:#C20C0C"%}

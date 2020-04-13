@@ -6,6 +6,7 @@ tags:
 categories:
 type: bilibili
 url: https://baike.baidu.com/item/%E6%84%9A%E4%BA%BA%E8%8A%82/114199
+aplayer: true
 ---
 
 {% meting "26830207" "netease" "song" "theme:#C20C0C"%}

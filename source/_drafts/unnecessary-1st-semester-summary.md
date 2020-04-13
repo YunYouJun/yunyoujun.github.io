@@ -8,6 +8,7 @@ tags:
 categories:
   - 云游的小日记
 hide: true
+aplayer: true
 ---
 
 所谓的学期总结成功拖延到了下学期的开学。
