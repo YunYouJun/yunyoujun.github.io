@@ -4,6 +4,7 @@ tags:
   - 随笔
 categories:
   - 云游的小随笔
+aplayer: true
 ---
 
 {% meting "520459951" "netease" "song" "theme:#C20C0C" %}
