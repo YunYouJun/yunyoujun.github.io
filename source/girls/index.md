@@ -349,6 +349,10 @@ girls:
     from: 理科生坠入情网，故尝试证明。
     url: https://baike.baidu.com/item/奏言叶/23761630
     reason: 仿佛生活中存在的可爱后辈
+  - name: 莉丝妲黛
+    avatar: https://img.moegirl.org/common/thumb/7/74/Zenshin-ris.png/250px-Zenshin-ris.png
+    from: 这个勇者明明超强却过分慎重
+    reason: 够沙雕，我喜欢。阿库娅二号。
 ---
 
 ![喜欢二次元这件事很恶心这一点我还是知道的](https://cdn.jsdelivr.net/gh/YunYouJun/cdn/img/meme/love-er-ci-yuan-is-sick.jpg)
