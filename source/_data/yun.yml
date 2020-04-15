@@ -105,4 +105,4 @@ menu:
 cursor:
   enable: true
 
-baidu_push: false
+baidu_push: true
