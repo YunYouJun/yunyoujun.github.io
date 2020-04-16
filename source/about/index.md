@@ -15,11 +15,11 @@ aplayer: true
 
 <div class="text-center">
   <div class="site-author-avatar">
-    <img src="https://www.yunyoujun.cn/images/avatar.jpg" alt="portrait" title="ID : 云游君">
+    <img src="https://www.yunyoujun.cn/images/avatar.jpg" alt="portrait" title="ID : 云游君" width="96">
   </div>
 </div>
 
-> 学生党一只。成长 ing。
+> ~~24 岁，是学生。~~ 成长 ing。
 > 在下年满十八，遵纪守法，爱国爱家，不碰烟酒，善养鸡鸭，多素少荤，爱吃西瓜。
 
 - 爱好：[ACGN](https://baike.baidu.com/item/ACGN)、科幻、绘画、开源、Web（以及一切有趣的东西）

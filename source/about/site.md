@@ -25,6 +25,15 @@ aplayer: true
 
 ## Time
 
+### 2020-04-16 CDN 被刷
+
+今日 12 点，正准备午休。突然收到 CDN 流量预警，发现被人刷 CDN 了。赶紧调低了带宽封顶，然后自动触发预警关闭了。（流量包 8.31GB/10GB)
+
+> 腾讯云是后付费。还好没睡着。
+
+本来还以为绝对够用来着。自我忖度还算文明友好，按理说应当也没招惹什么仇家。
+在考虑要不要还是直接用 Cloudflare。
+
 ### 2020-04-06 GitHub Actions
 
 [![GitHub Pages](https://github.com/YunYouJun/yunyoujun.github.io/workflows/GitHub%20Pages/badge.svg)](https://github.com/YunYouJun/yunyoujun.github.io/actions)
@@ -37,7 +46,7 @@ aplayer: true
 
 ### 2020-03-26 使用 [Cloudflare](https://www.cloudflare.com/) 解析
 
-一觉起来，腾讯云的 CDN 不知为何挂了。索性迁移到 Cloudflare。
+一觉起来，腾讯云的 CDN 不知为何挂了。索性迁移到 Cloudflare。（没过几天，又回去嫖腾讯云 CDN 了。）
 
 > 后发现不是腾讯云的问题，是 GitHub Pages 的 HTTPS 证书被劫持了。[Github pages 的 HTTPS 是不是出问题了？](https://www.v2ex.com/t/656367)
 
