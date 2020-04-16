@@ -150,7 +150,7 @@ girls:
     url: https://baike.baidu.com/item/花语叶
   - name: 高仓阳毬
     avatar: https://gss2.bdstatic.com/9fo3dSag_xI4khGkpoWK1HF6hhy/baike/s%3D220/sign=7d5a4403a0ec08fa220014a569ef3d4d/3bf33a87e950352a4c05c5b45343fbf2b2118b22.jpg
-    from: 凸变英雄 LEAF
+    from: 回转企鹅罐
     url: https://baike.baidu.com/item/高仓阳毬
   - name: 伊卡洛斯
     avatar: https://img.moegirl.org/common/thumb/f/f6/Ikaros.jpg/250px-Ikaros.jpg

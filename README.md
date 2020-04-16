@@ -2,6 +2,8 @@
 
 [![GitHub Pages](https://github.com/YunYouJun/yunyoujun.github.io/workflows/GitHub%20Pages/badge.svg)](https://github.com/YunYouJun/yunyoujun.github.io/actions)
 
+Hexo 主题：[Yun](https://github.com/YunYouJun/hexo-theme-yun/)
+
 ## Use
 
 ### 日常发布
