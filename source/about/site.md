@@ -34,6 +34,8 @@ aplayer: true
 本来还以为绝对够用来着。自我忖度还算文明友好，按理说应当也没招惹什么仇家。
 在考虑要不要还是直接用 Cloudflare。
 
+现在切换成了又拍云，并调了比较低的带宽预警。（但竟然没有超额自动关停的功能。有点 3G 时代运营商的感觉了。）
+
 ### 2020-04-06 GitHub Actions
 
 [![GitHub Pages](https://github.com/YunYouJun/yunyoujun.github.io/workflows/GitHub%20Pages/badge.svg)](https://github.com/YunYouJun/yunyoujun.github.io/actions)

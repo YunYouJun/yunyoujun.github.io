@@ -47,6 +47,9 @@ post_edit:
   enable: true
   url: https://github.com/YunYouJun/yunyoujun.github.io/tree/hexo/source/
 
+albums:
+  enable: true
+
 girls:
   enable: true
 
