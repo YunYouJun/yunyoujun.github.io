@@ -3,6 +3,7 @@ layout: girls
 title: Lovely Girls
 date: 2019-01-07 11:17:35
 updated: 2019-01-07 11:17:35
+icon: icon-women-line
 banner: <span title="大家都是我的天使！">排名不分先后</span>
 # - name:
 #   avatar:
