@@ -2,7 +2,7 @@
 title: 奇迹
 date: 2020-04-18 16:27:24
 updated: 2020-04-18 16:27:24
-layout: album
+layout: gallery
 photos:
   - caption: 我
     src: https://picsum.photos/800/600?random=1

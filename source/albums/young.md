@@ -2,7 +2,7 @@
 title: 青春
 date: 2020-04-18 16:27:24
 updated: 2020-04-18 16:27:24
-layout: album
+layout: gallery
 photos:
   - caption: 我
     src: https://interactive-examples.mdn.mozilla.net/media/examples/elephant-660-480.jpg
@@ -26,3 +26,7 @@ photos:
     src: https://picsum.photos/seed/run/800/900
     desc: 隐约雷鸣 阴霾天空 但盼风雨来 能留你在此
 ---
+
+# 一些话
+
+我想起那天夕阳下的奔跑，那是我逝去的青春。
