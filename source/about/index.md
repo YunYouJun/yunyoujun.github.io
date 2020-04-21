@@ -70,4 +70,4 @@ aplayer: true
 
 喂，看到下面发光的按钮了吗！
 
-- [主题 Yun 赞助名单](https://yun.yunyoujun.cn/guide/sponsor.html)
+- [主题 Yun 赞助名单](https://yun.yunyoujun.cn/sponsor.html)
