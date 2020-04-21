@@ -1,7 +1,7 @@
 ---
 title: 教你如何从零开始搭建一个属于自己的网站
 date: 2020-03-05 01:31:08
-updated: 2020-03-17 01:31:08
+updated: 2020-03-20 01:31:08
 tags:
   - 教程
   - Hexo
@@ -66,6 +66,19 @@ Linux 用户右上角关闭本标签页。
 后续如提到输入命令，均默认指打开终端进行输入。
 
 输入 `node --version`，如果得到的版本号与你方才安装的一致，那么 Node.js 就已经成功安装。
+
+> Node.js 安装成功时也默认安装了 `npm`，在此后将会用到。
+> `npm` 是随 Node.js 一起被安装的包管理工具，你可以理解成 Node.js 自带的应用商店。
+
+对了，国内使用 npm 可能很慢。
+
+你可以考虑切换为 `taobao` 镜像源。
+
+```sh
+npm config set registry https://registry.npm.taobao.org
+```
+
+> [npm & yarn 常用包与命令](https://www.yuque.com/yunyoujun/notes/npm-and-yarn#nrm)
 
 ### Git 与 GitHub
 
@@ -142,7 +155,6 @@ npm install hexo-cli -g
 # sudo npm install hexo-cli -g
 ```
 
-> `npm` 是随 Node.js 一起被安装的包管理工具，你可以理解成 Node.js 自带的应用商店。
 > `install` 自然是安装。
 > `hexo-cli` 则是 `hexo` 的终端工具，可以帮助你生成一些模版文件，之后再用到。
 > `-g` 代表的是全局安装。也就是在任何地方都可以使用，否则会只能在安装的目录下使用。
