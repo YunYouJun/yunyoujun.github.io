@@ -63,7 +63,7 @@ git clone https://github.com/YunYouJun/hexo-theme-yun themes/yun
 ### 又拍云
 
 <a href="https://console.upyun.com/register/?invite=SyeQw09Bz" title="又拍云" target="_blank">
-  <img src="https://cdn.jsdelivr.net/gh/YunYouJun/cdn/img/logo/upyun-logo.png" width="100">
+  <img src="https://cdn.jsdelivr.net/gh/YunYouJun/cdn/img/logo/upyun-logo.png" width="100" alt="upyun">
 </a>
 
 #### 刷新目录

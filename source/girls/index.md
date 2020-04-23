@@ -189,8 +189,9 @@ girls:
     avatar: https://img.moegirl.org/common/thumb/c/c9/Maidragon_wallpaper_kanna2.jpg/250px-Maidragon_wallpaper_kanna2.jpg
     from: 小林家的龙女仆
   - name: 邪神酱
-    avatar: https://img.moegirl.org/common/thumb/2/20/Jashin-chan_Dropkick_Anime_Teaser.png/250px-Jashin-chan_Dropkick_Anime_Teaser.png
+    avatar: https://i.loli.net/2020/04/22/Ghoy6mLTtOVx5Yu.jpg
     from: 邪神与厨二病少女
+    reason: 夹心酱超可爱！
   - name: 枝垂萤
     avatar: https://img.moegirl.org/common/thumb/1/1d/Dagashikashi.jpg/250px-Dagashikashi.jpg
     from: 粗点心战争
