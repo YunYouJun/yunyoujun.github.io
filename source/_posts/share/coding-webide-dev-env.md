@@ -9,17 +9,18 @@ categories:
 date: 2017-10-11 16:21:12
 updated: 2017-10-11 16:21:12
 ---
-# Intro
 
-之前就有听说过 WebIDE , 不过一直没有去用。毕竟本地的开发也有许多便利，平时写写前端、php之类的环境也挺方便配置，空间也不大。
+## Intro
+
+之前就有听说过 WebIDE , 不过一直没有去用。毕竟本地的开发也有许多便利，平时写写前端、php 之类的环境也挺方便配置，空间也不大。
 
 <!-- more -->
 
 > 啊，现在好像被腾讯收购了的样子，改名叫腾讯开发者平台了，域名也变了。<https://dev.tencent.com/>
 
-接下来就要说到，某个恰巧差了0.5学分的人的选课问题了。冲着名字选了 `Web开发技术` 后，发现老师讲的是JavaEE，而且书本上的知识十分老旧。 = =，实验的内容也是意外的简陋。总之，自己不是很感兴趣吧。
+接下来就要说到，某个恰巧差了 0.5 学分的人的选课问题了。冲着名字选了 `Web开发技术` 后，发现老师讲的是 JavaEE，而且书本上的知识十分老旧。 = =，实验的内容也是意外的简陋。总之，自己不是很感兴趣吧。
 
-至于实验室的机器环境更是落后，老版的 `MyEclipse` 加上 `Windows XP` 系统，让人更是提不起兴 ♂ 趣。自己也懒得在自己空间有限的机子上装JavaEE的环境和开发工具了。
+至于实验室的机器环境更是落后，老版的 `MyEclipse` 加上 `Windows XP` 系统，让人更是提不起兴 ♂ 趣。自己也懒得在自己空间有限的机子上装 JavaEE 的环境和开发工具了。
 
 这时就想到了 [Coding.net](http://coding.net) , 大概因为是国产，比其他同类型 WebIDE 网站要快很多！而且是中文界面嘛~
 
@@ -38,7 +39,7 @@ updated: 2017-10-11 16:21:12
 (个人免费版)
 
 - 多种环境可选
-- 官方提供的Java基础环境是 `Java & Maven environment` 。
+- 官方提供的 Java 基础环境是 `Java & Maven environment` 。
 - JDK : java version "1.8.0_111"
 - 命令行类似 `Git Bash` 风格, 提供 git 环境
 - 系统 : Linux Ubuntu 16.04.1 LTS
@@ -97,7 +98,7 @@ cd 你的项目文件夹
 mvn tomcat7:run
 ```
 
-5. 点击 Coding WebIDE 界面右边界处的生成链接(默认是8080端口)，访问生成的链接即可看到 JavaWeb 的页面了。
+5. 点击 Coding WebIDE 界面右边界处的生成链接(默认是 8080 端口)，访问生成的链接即可看到 JavaWeb 的页面了。
 
 > 参考教程： [http://www.yiibai.com/maven/create-a-web-application-project-with-maven.html](http://www.yiibai.com/maven/create-a-web-application-project-with-maven.html)
 
