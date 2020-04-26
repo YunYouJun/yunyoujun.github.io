@@ -8,10 +8,12 @@ Hexo 主题：[Yun](https://github.com/YunYouJun/hexo-theme-yun/)
 
 ### 日常发布
 
+发布时，同时推送至 GitHub 与 Coding 的 hexo 分支备份，使用 CI （GitHub Actions） 生成静态页面推送至 GitHub
+
 ```sh
 npm run backup
-# 同时推送至 GitHub 与 Coding 的 hexo 分支
-# 线上 Travis 会自动进行构建生成静态页面推送至 GitHub
+# or
+# yarn backup
 # or
 sh backup.sh
 # sh backup.sh 'change info'
@@ -38,7 +40,8 @@ git remote set-url --add origin https://e.coding.net/YunYouJun/yunyoujun.coding.
 
 ## Build
 
-[yunyoujun.github.io - Travis CI](https://www.travis-ci.com/YunYouJun/yunyoujun.github.io)
+- [~~yunyoujun.github.io - Travis CI~~](https://www.travis-ci.com/YunYouJun/yunyoujun.github.io)
+- [GitHub Actions](https://github.com/YunYouJun/yunyoujun.github.io/actions): 现已改为使用 GitHub Actions
 
 ### Install Theme
 
@@ -60,12 +63,6 @@ git clone https://github.com/YunYouJun/hexo-theme-yun themes/yun
 
 [![Tencent Cloud](https://imgcache.qq.com/open_proj/proj_qcloud_v2/gateway/portal/css/img/nav/logo-bg-color.svg)](https://cloud.tencent.com/)
 
-### 又拍云
-
-<a href="https://console.upyun.com/register/?invite=SyeQw09Bz" title="又拍云" target="_blank">
-  <img src="https://cdn.jsdelivr.net/gh/YunYouJun/cdn/img/logo/upyun-logo.png" width="100" alt="upyun">
-</a>
-
 #### 刷新目录
 
 ```sh
@@ -78,6 +75,12 @@ tccli cdn PurgePathCache --Paths '["https://www.yunyoujun.cn/links/"]' --FlushTy
 ```sh
 tccli cdn PurgeUrlsCache --Urls '["https://www.yunyoujun.cn/links/index.html"]'
 ```
+
+### 又拍云
+
+<a href="https://console.upyun.com/register/?invite=SyeQw09Bz" title="又拍云" target="_blank">
+  <img src="https://cdn.jsdelivr.net/gh/YunYouJun/cdn/img/logo/upyun-logo.png" width="100" alt="upyun">
+</a>
 
 ## Commit Lint
 
