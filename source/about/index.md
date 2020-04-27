@@ -83,3 +83,13 @@ aplayer: true
 喂，看到下面发光的按钮了吗！
 
 - [主题 Yun 赞助名单](https://yun.yunyoujun.cn/sponsor.html)
+
+<details>
+<summary>打赏名单</summary>
+
+| 老板                         | 金额(CNY) | 日期       | 寄语   |
+| ---------------------------- | --------- | ---------- | ------ |
+| [染川 曈](https://asuhe.jp/) | 2.33      | 2020-04-26 | 冰阔落 |
+| [染川 曈](https://asuhe.jp/) | 2.33      | 2020-04-27 | 冰阔落 |
+
+</details>
