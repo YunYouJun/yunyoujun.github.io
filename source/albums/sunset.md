@@ -3,6 +3,7 @@ title: 夕阳西下
 date: 2020-04-18 16:27:24
 updated: 2020-04-18 16:27:24
 layout: gallery
+password: test
 photos:
   - caption: 我
     src: https://interactive-examples.mdn.mozilla.net/media/examples/elephant-660-480.jpg
