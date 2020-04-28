@@ -27,3 +27,5 @@ photos:
     src: https://picsum.photos/seed/run/800/900
     desc: 隐约雷鸣 阴霾天空 但盼风雨来 能留你在此
 ---
+
+测试密码是 test
