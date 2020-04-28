@@ -5,6 +5,11 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
+        with:
+          submodules: true
+
+      - run: yarn install
+      - run: yarn build
 
       - name: Deploy to Netlify
         uses: nwtgck/actions-netlify@v1.0

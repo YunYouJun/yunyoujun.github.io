@@ -8,20 +8,20 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
+        with:
+          submodules: true
 
       - name: Setup Node
         uses: actions/setup-node@v1
         with:
           node-version: "12.x"
 
-      - name: Install & Build
+      - run: yarn install
+      - name: algolia
         env:
           HEXO_ALGOLIA_INDEXING_KEY: ${{ secrets.HEXO_ALGOLIA_INDEXING_KEY }}
-        run: |
-          git clone -b dev https://github.com/YunYouJun/hexo-theme-yun.git themes/yun
-          yarn install
-          yarn algolia
-          yarn build
+        run: yarn algolia
+      - run: yarn build
 
       - name: Deploy
         uses: peaceiris/actions-gh-pages@v3

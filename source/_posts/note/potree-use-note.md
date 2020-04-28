@@ -32,7 +32,7 @@ python -m http.server    #python3中启动一个简单的http服务器
 
 macOS
 
-![关爱智障.jpg](http://m.qpic.cn/psc?/V11qBdwm0lufP3/dnjxTVPfVsTHn6B76MCWBfFVxV2q0diTZODDxgdCI.ScB1pEGYMXHFwlZmd9rNrOklnh4*2IeVcGVL8nnDvh.mXkJvvhT*M65mIszkl1Soc!/b&bo=vACxALwAsQACKQ0!&rf=viewer_4)
+![关爱智障.jpg](https://m.qpic.cn/psc?/V11qBdwm0lufP3/dnjxTVPfVsTHn6B76MCWBfFVxV2q0diTZODDxgdCI.ScB1pEGYMXHFwlZmd9rNrOklnh4*2IeVcGVL8nnDvh.mXkJvvhT*M65mIszkl1Soc!/b&bo=vACxALwAsQACKQ0!&rf=viewer_4)
 
 ---
 
