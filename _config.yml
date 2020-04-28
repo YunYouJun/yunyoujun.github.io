@@ -150,7 +150,7 @@ sitemap:
 # https://github.com/oncletom/hexo-algolia
 algolia:
   applicationID: "CJXXAGRCYN"
-  apiKey: "55c104ea148641be5ec329b8bc83de99"
+  apiKey: "ae1966d2aeab22bf9335679f45d2cd9a"
   indexName: "my-hexo-blog"
   chunkSize: 5000
 
