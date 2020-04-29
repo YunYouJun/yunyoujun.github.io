@@ -57,7 +57,7 @@ aplayer: true
 - GitHub: [YunYouJun](https://github.com/YunYouJun)（菜鸡乱开坑，求 Star 投食）
 - 微博：[机智的云游君](https://weibo.com/jizhideyunyoujun)（辣鸡微博，总自动乱关注，但愿早日被替代）
 - 哔哩哔哩: [机智的云游君](https://space.bilibili.com/1579790)（许久前做过几个视频，但太凄惨没有动力继续下去，后试水专栏亦如此，主要用来看番剧）
-- 豆瓣: [云游君](https://www.douban.com/people/yunyoujun/)（用过 [Bangumi](http://bangumi.tv/user/yunyoujun)，但苦于速度太慢不稳定，转为豆瓣，标记看过的书影音）
+- 豆瓣: [云游君](https://www.douban.com/people/yunyoujun/)（用过 [Bangumi](https://bangumi.tv/user/yunyoujun)，但苦于速度太慢不稳定，转为豆瓣，标记看过的书影音）
 - 知乎：[云游君](https://www.zhihu.com/people/yunyoujun/)（只看不答，文明守法，因为自己实在没有有趣的经历可以装 B）
 - 网易云音乐: [机智的云游君](http://music.163.com/#/user/home?id=247102977)（主用的音乐播放器，多为日语歌、少量欧美，华语更少但的确是有的，V 家更爱翻唱，当遇到自认为好听的就会收藏）
 - QQ: 910426929（常年在线，但有问题更推荐进群 [389401003](https://shang.qq.com/wpa/qunwpa?idkey=3bd19a05aaccb2b60c396295c8617b3a9e667821a495e8cd7e1698ff95ab61c6) 询问）

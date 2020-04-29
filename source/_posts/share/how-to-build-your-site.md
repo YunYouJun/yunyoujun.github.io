@@ -137,14 +137,14 @@ macOS 用户可以下载官网的安装包进行安装，也可以直接安装 A
 
 [Hexo](https://hexo.io)
 
-- GitHub: <http://github.com/hexojs/hexo>
+- GitHub: <https://github.com/hexojs/hexo>
 - [官方文档](https://hexo.io/zh-cn/docs/index.html)（直接参考文档也是一个不错的选择）
 
 > **为嘛使用 Hexo ？**
 > Hexo 是一个快速、简洁而强大的博客框架，基于 Node.js，同样托管于 GitHub 之上。生态中拥有众多插件主题。你可以基于它快速生成一些静态页面。
 > 你可以使用别人的各种主题与插件，也可以自己定制开发想要的功能。
 > **为什么不是...?**
-> 其他常用的博客框架还有 [WordPress](https://wordpress.org/)，[Typecho](http://typecho.org/)，[Ghost](https://ghost.org/) 等，但这些往往都需要购置自己的服务器，而无法静态化地部署到 GitHub Pages 上。（当然，相应的功能和灵活性也大大提升。）静态化站点还有一个优势就是访问速度往往更快。
+> 其他常用的博客框架还有 [WordPress](https://wordpress.org/)，[Typecho](https://typecho.org/)，[Ghost](https://ghost.org/) 等，但这些往往都需要购置自己的服务器，而无法静态化地部署到 GitHub Pages 上。（当然，相应的功能和灵活性也大大提升。）静态化站点还有一个优势就是访问速度往往更快。
 > 静态网站生成器还有 [Vuepress](https://vuepress.vuejs.org/)，[Gatsby](https://www.gatsbyjs.org/) 等。但这些多是为了写文档而量身定制的，你也可以使用它们，但是相较 Hexo 的博客定位，它们关于博客的插件和主题以及解决办法会少得多。
 > Hexo 提供的功能与 [Hugo](https://gohugo.io/) 几乎都有，（生成大量文件时，甚至比 Hexo 更快）不过它是基于 GO 语言。日后你想对自己的网站进行自定义，即便是 Hugo，你编写前端的交互仍旧需要使用 JavaScript，所以选择基于 JavaScript 的 Hexo 可以降低学习成本。（你若对 GO 有兴趣，仍然可以尝试使用 Hugo，但本教程将不会针对 Hugo 进行展开。）
 > 所以对于新手来说，使用 Hexo 作为起始点，不失为一个好选择。（当然如果你有钱租服务器，就可以考虑考虑 WordPress）
