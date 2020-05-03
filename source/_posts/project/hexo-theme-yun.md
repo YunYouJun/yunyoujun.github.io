@@ -15,7 +15,7 @@ url: https://github.com/YunYouJun/hexo-theme-yun
 
 ## Hexo 主题 Yun
 
-![GitHub stars](https://img.shields.io/github/stars/YunYouJun/hexo-theme-yun?style=social)
+<!-- ![GitHub stars](https://img.shields.io/github/stars/YunYouJun/hexo-theme-yun?style=social) -->
 
 - GitHub: <https://github.com/YunYouJun/hexo-theme-yun>
 - Docs: <https://yun.yunyoujun.cn>
