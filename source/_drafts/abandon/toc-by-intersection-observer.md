@@ -63,7 +63,6 @@ function findHeadPosition(top) {
     } else {
       break;
     }
-    console.log(el);
   }
 
   let curActiveLink = document.querySelector(".toc-link.active");
