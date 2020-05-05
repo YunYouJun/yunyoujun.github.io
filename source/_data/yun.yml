@@ -106,3 +106,6 @@ cursor:
   enable: true
 
 baidu_push: true
+
+pjax:
+  enable: true
