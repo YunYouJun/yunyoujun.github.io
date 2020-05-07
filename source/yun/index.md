@@ -51,3 +51,11 @@ $$ E = mc^2 $$
 ```latex
 \( E = mc^2 \)
 ```
+
+---
+
+\\[ \vec a=\frac{d\vec v}{dt}=\frac{d(\frac{dr}{dt}\vec e_{i}+r\frac{d\theta}{dt}\vec e_{j})}{dt}=\frac{d^2r}{dt^2}\vec e_{i}+\frac{dr}{dt}\frac{d\vec e_{i}}{dt}+\frac{dr}{dt}\frac{d\theta}{dt}\vec e_{j}+r\frac{d^2\theta}{dt^2}\vec e_{j}+r\frac{d\theta}{dt}\frac{d\vec e_{j}}{dt} \\]
+
+```latex
+\\[ \vec a=\frac{d\vec v}{dt}=\frac{d(\frac{dr}{dt}\vec e_{i}+r\frac{d\theta}{dt}\vec e_{j})}{dt}=\frac{d^2r}{dt^2}\vec e_{i}+\frac{dr}{dt}\frac{d\vec e_{i}}{dt}+\frac{dr}{dt}\frac{d\theta}{dt}\vec e_{j}+r\frac{d^2\theta}{dt^2}\vec e_{j}+r\frac{d\theta}{dt}\frac{d\vec e_{j}}{dt} \\]
+```
