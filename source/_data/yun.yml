@@ -15,7 +15,6 @@ valine:
   visitor: true
   recordIP: true
   enableQQ: true
-  visitor_index: false
 
 footer:
   since: 2016
