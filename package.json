@@ -36,6 +36,7 @@
     "algolia": "hexo clean && hexo algolia",
     "build": "hexo g",
     "dev": "export NODE_ENV=dev && hexo s",
+    "test": "export NODE_ENV=test && hexo s",
     "docs:dev": "cd themes/yun && yarn docs:dev",
     "predeploy": "hexo clean && hexo g",
     "deploy": "hexo d",

@@ -1,0 +1,10 @@
+bg_image:
+  url: https://i.picsum.photos/id/866/1200/800.jpg
+
+pjax:
+  enable: true
+
+aplayer:
+  global: true
+  widget:
+    enable: true
