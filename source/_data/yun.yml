@@ -105,3 +105,6 @@ cursor:
   enable: true
 
 baidu_push: true
+
+wordcloud:
+  enable: true

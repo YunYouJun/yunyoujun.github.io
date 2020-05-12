@@ -8,3 +8,6 @@ aplayer:
   global: true
   widget:
     enable: true
+
+wordcloud:
+  enable: true
