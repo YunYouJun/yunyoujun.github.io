@@ -84,18 +84,6 @@ dns_prefetch:
 #   pre: https://cdn.jsdelivr.net/gh/YunYouJun/yunyoujun.github.io@latest
 
 menu:
-  home:
-    path: /
-    icon: icon-home-4-line
-  archives:
-    path: /archives
-    icon: icon-archive-line
-  tags:
-    path: /tags
-    icon: icon-price-tag-3-line
-  categories:
-    path: /categories
-    icon: icon-folder-2-line
   custom:
     title: 留言板
     path: /about/#comment
