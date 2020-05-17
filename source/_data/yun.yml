@@ -102,6 +102,3 @@ baidu_push: true
 
 wordcloud:
   enable: true
-
-busuanzi:
-  enable: true
