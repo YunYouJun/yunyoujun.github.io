@@ -25,6 +25,14 @@ aplayer: true
 
 ## Time
 
+### 2020-05-02 加入 [中文独立博客列表](https://github.com/timqian/chinese-independent-blogs)
+
+- [Update blogs-original.csv: add yunyoujun.cn](https://github.com/timqian/chinese-independent-blogs/pull/363)
+
+### 2020-04-17 又拍云 CDN
+
+加入 [又拍云联盟](https://www.upyun.com/league)，拿到了代金券。开始使用又拍云 CDN。
+
 ### 2020-04-16 CDN 被刷
 
 今日 12 点，正准备午休。突然收到 CDN 流量预警，发现被人刷 CDN 了。赶紧调低了带宽封顶，然后自动触发预警关闭了。（流量包 8.31GB/10GB)
@@ -41,10 +49,6 @@ aplayer: true
 [![GitHub Pages](https://github.com/YunYouJun/yunyoujun.github.io/workflows/GitHub%20Pages/badge.svg)](https://github.com/YunYouJun/yunyoujun.github.io/actions)
 
 从使用了许久的 [Travis CI](https://travis-ci.com/github/YunYouJun/yunyoujun.github.io) 转为使用 [GitHub Actions](https://github.com/YunYouJun/yunyoujun.github.io/actions)。
-
-### 2020-03-27 云游君.网址
-
-因为首年免费，去注册了个 [云游君.网址](http://云游君.网址) 域名。（当然肯定不会续费了。）
 
 ### 2020-03-26 使用 [Cloudflare](https://www.cloudflare.com/) 解析
 

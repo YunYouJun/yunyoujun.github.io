@@ -1,13 +1,37 @@
+google_adsense:
+  enable: false
+
+google_analytics:
+  enable: false
+
 bg_image:
   url: https://i.picsum.photos/id/866/1200/800.jpg
 
 pjax:
   enable: true
 
-aplayer:
-  global: true
-  widget:
-    enable: true
+# aplayer:
+#   global: true
+#   meting: false
+#   widget:
+#     enable: true
+#     meting: false
 
 wordcloud:
   enable: true
+
+valine:
+  enable: true
+
+disqus:
+  enable: false
+  shortname: yunyoujun
+
+disqusjs:
+  enable: false
+  shortname: yunyoujun
+  apikey: ouoGQCaamOKdJgyZU5DKcpFnRIg3SNzvk0nwygPtlcTRJuE68c8igvrZGW4wAJoN
+
+livere:
+  enable: false
+  uid: MTAyMC81MDE0Mi8yNjYzMg==
