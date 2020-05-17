@@ -12,7 +12,7 @@ comment:
     - 若没有本文 Issue，您可以使用 Comment 模版新建。
 
 valine:
-  enable: false
+  enable: true
   appId: 4x0IwQ1sy95mOGQDTO8MYCeA-gzGzoHsz # your leancloud application appid
   appKey: 9loqwF3UDklPDHaP9IN2uwN8 # your leancloud application appkey
   # https://github.com/DesertsP/Valine-Admin
