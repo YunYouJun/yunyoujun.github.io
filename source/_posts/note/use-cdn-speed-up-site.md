@@ -199,8 +199,22 @@ URL 列表，需要包含协议头部 `http://` 或 `https://`
 
 ## 后后话
 
-2020-03-26 因为不知腾讯云 CDN 为何挂了，转为使用 [Cloudflare](https://www.cloudflare.com/) 了，自动 Flattening。
+### 2020-03-26
+
+因为不知腾讯云 CDN 为何挂了，转为使用 [Cloudflare](https://www.cloudflare.com/) 了，自动 Flattening。
 
 > 后发现不是腾讯云的问题，是 GitHub Pages 的 HTTPS 证书被劫持了。[Github pages 的 HTTPS 是不是出问题了？](https://www.v2ex.com/t/656367)
 
 既然已经更改为 `www` 主域名，也还是继续使用裸域名跳转 `www` 的策略吧。
+
+### 2020-04-17
+
+开始使用又拍云 CDN，申请了 [又拍云联盟](https://www.upyun.com/league)，拿到了代金券。
+
+后来到了五月，发现百度索引竟然所剩无几。原本还以为国内 CDN 会被收录的。
+
+测试发现百度 [抓取诊断](https://ziyuan.baidu.com/crawltools/index?site=https://www.yunyoujun.cn/) 抓取失败时错误信息为 `拒绝访问`。
+
+难不成时又拍云的一些 CDN 点也禁止百度抓取了？
+
+我不断对抓取的 IP 进行报错，百度抓取诊断就会换一个 IP 抓，于是乎排除掉一些拒绝访问的 IP，有些 IP 倒是可以抓取成功了。
