@@ -67,7 +67,7 @@ Gitalk 相比 Gitment 则持续维护了很久。所以首先肯定与感谢作�
 
 你可以到[此处](https://gitalk.github.io/)尝试登陆。
 
-> 这似乎是因为 GitHub 无法继续划分权限的问题，
+> 这似乎是因为 GitHub 无法继续划分权限的问题。
 
 也就是说使用 Gitalk 评论的用户必须完全相信博主的 OAuth 不会作恶，同时因为 GitHub OAuth 不支持 CORS ([OAuth web flow endpoints don't support CORS](https://github.com/isaacs/github/issues/330))，`access_token` 还必须经过 `https://cors-anywhere.herokuapp.com/https://github.com/login/oauth/access_token` 这一代理才能获取。
 
@@ -75,7 +75,7 @@ Gitalk 相比 Gitment 则持续维护了很久。所以首先肯定与感谢作�
 
 所以我着实有些不放心，也从用户的角度没有自信能完全取得游客的信任。（有些用户使用 GitHub OAuth 时可能没有注意到这里，所以也算提个醒。）
 
-我最理想的情况是 gitalk 在不传入 `clientSecret` 等参数，只提供必要的 `repo` 时，可以渲染文章对应标题的 Issue 评论内容。（类似与 Sukka 的 [DisqusJS](https://github.com/SukkaW/DisqusJS)）
+我最理想的情况是 gitalk 在不传入 `clientSecret` 等参数，只提供必要的 `repo` 时，可以渲染文章对应标题的 Issue 评论内容。（类似于 Sukka 的 [DisqusJS](https://github.com/SukkaW/DisqusJS)）
 
 > 感觉理论上是可以实现的，毕竟本来 Issue 就都是公开的。GitHub 也有完备的 [API](https://developer.github.com/v3/)。
 
@@ -120,12 +120,12 @@ Gitalk 相比 Gitment 则持续维护了很久。所以首先肯定与感谢作�
 
 ## 对比
 
-| 第三方评论系统 | 开源         | 速度 | 是否被墙 | 可否实现 PJAX |
-| :------------- | :----------- | :--- | :------- | :------------ |
-| Disqus         | 否           | 慢   | 是       | 可以          |
-| Gitalk         | 是           | 中等 | 否       | 不可以        |
-| LiveRe         | 否           | 较慢 | 否       | 不可以        |
-| Valine         | 薛定谔的开源 | 快   | 否       | 可以          |
+| 第三方评论系统 | 开源         | 速度 | 是否被墙 | 可否实现 PJAX                                         |
+| :------------- | :----------- | :--- | :------- | :---------------------------------------------------- |
+| Disqus         | 否           | 慢   | 是       | 可以                                                  |
+| Gitalk         | 是           | 中等 | 否       | [不可以](https://github.com/gitalk/gitalk/issues/205) |
+| LiveRe         | 否           | 较慢 | 否       | 不可以                                                |
+| Valine         | 薛定谔的开源 | 快   | 否       | 可以                                                  |
 
 以下是同一个页面加载不同评论系统时 `Dev Tools -> Network` 的信息。（None 为不加载评论系统）
 
