@@ -1,10 +1,12 @@
 # Hexo 站点源文件
 
 [![GitHub Pages](https://github.com/YunYouJun/yunyoujun.github.io/workflows/GitHub%20Pages/badge.svg)](https://github.com/YunYouJun/yunyoujun.github.io/actions)
-
 [![Netlify Status](https://api.netlify.com/api/v1/badges/4acb3c9b-fbcd-488e-be70-18942eb2669f/deploy-status)](https://app.netlify.com/sites/yunyoujun/deploys)
 
 Hexo 主题：[Yun](https://github.com/YunYouJun/hexo-theme-yun/)
+
+- 主站：<https://www.yunyoujun.cn>
+- 备用：<https://yunyoujun.netlify.app>
 
 ## Use
 
