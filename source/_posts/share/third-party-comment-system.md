@@ -24,7 +24,7 @@ categories:
 
 <!-- more -->
 
-![反复横跳.jpg](https://m.qpic.cn/psc?/V11qBdwm0lufP3/X7Nyc96QcijfM21*qh5ymUmjs5IWu0Jwe8RFScsd1.4zqhf8FyR59JX5gTTBT7ddVAzUAY9kScj.S6ZLCCLtog!!/b&bo=9AHqAgAAAAARBy0!&rf=viewer_4)
+![反复横跳.jpg](https://cos.yunyoujun.cn/blog/posts/jump-repeatedly.jpg)
 
 ---
 
