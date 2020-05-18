@@ -35,3 +35,7 @@ disqusjs:
 livere:
   enable: false
   uid: MTAyMC81MDE0Mi8yNjYzMg==
+
+sidebar:
+  tagcloud:
+    enable: true
