@@ -84,6 +84,9 @@ aplayer: true
 
 [使用 CDN 加速你的 GitHub Pages 网站](https://yunyoujun.cn/note/use-cdn-speed-up-site/)
 
+<details>
+<summary>2019 年</summary>
+
 ### 2019-05-19 hexo-theme-yun
 
 使用自己的主题 [hexo-theme-yun@0.0.1](https://github.com/YunYouJun/hexo-theme-yun)，估计也将持续到它还存在的那一天。
@@ -94,6 +97,11 @@ aplayer: true
 在想办法回复百度的 SEO 。虽然也没必要。
 
 名字也返璞归真。
+
+</details>
+
+<details>
+<summary>2018 年</summary>
 
 ### 2018-11-20 更名
 
@@ -108,6 +116,11 @@ aplayer: true
 ### 2018-01-28 HTTPS
 
 网站开启强制 HTTPS 访问, 使用 亚信 SSL 免费证书, 腾讯云存储服务
+
+</details>
+
+<details>
+<summary>2017 年</summary>
 
 ### 2017-11-20 Return to Github Pages
 
@@ -154,6 +167,11 @@ Elpsy Congroo! (不过还没想好干什么用)
 域名更换：<https://yunyoujun.cn>
 (缘由是 online 太长了，又不好备案什么的吧)
 
+</details>
+
+<details>
+<summary>2016 年</summary>
+
 ### 2016-12-31 建站
 
 名称：**失去的时光**
@@ -164,3 +182,5 @@ Elpsy Congroo! (不过还没想好干什么用)
 一时兴起，故建站一试~ （By Wordpress）成功赶在了年末。
 因为做东西总是三分钟热度，更新一次会间隔很久的样子。（~~不过反正也不会有人看到的吧。~~）
 这里就像是承载着被遗忘了的时光一样.（~~点题了是不是！~~）
+
+</details>

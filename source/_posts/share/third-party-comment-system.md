@@ -69,7 +69,7 @@ Gitalk 相比 Gitment 则持续维护了很久。所以首先肯定与感谢作�
 
 你可以到[此处](https://gitalk.github.io/)尝试登陆。
 
-> 这似乎是因为 GitHub 无法继续划分权限的问题。
+> 这似乎是因为 GitHub 无法继续划分权限。
 
 也就是说使用 Gitalk 评论的用户必须完全相信博主的 OAuth 不会作恶，同时因为 GitHub OAuth 不支持 CORS ([OAuth web flow endpoints don't support CORS](https://github.com/isaacs/github/issues/330))，`access_token` 还必须经过 `https://cors-anywhere.herokuapp.com/https://github.com/login/oauth/access_token` 这一代理才能获取。
 
@@ -122,12 +122,12 @@ Gitalk 相比 Gitment 则持续维护了很久。所以首先肯定与感谢作�
 
 ## 对比
 
-| 第三方评论系统 | 开源         | 速度 | 是否被墙 | 可否实现 PJAX                                         |
-| :------------- | :----------- | :--- | :------- | :---------------------------------------------------- |
-| Disqus         | 否           | 慢   | 是       | 可以                                                  |
-| Gitalk         | 是           | 中等 | 否       | [不可以](https://github.com/gitalk/gitalk/issues/205) |
-| LiveRe         | 否           | 较慢 | 否       | 不可以                                                |
-| Valine         | 薛定谔的开源 | 快   | 否       | 可以                                                  |
+| 第三方评论系统 | 开源         | 速度 | 是否被墙 | 可否实现 PJAX                                         | 数据可靠性                               |
+| :------------- | :----------- | :--- | :------- | :---------------------------------------------------- | ---------------------------------------- |
+| Disqus         | 否           | 慢   | 是       | 可以                                                  | 市场占有率高，可靠                       |
+| Gitalk         | 是           | 中等 | 否       | [不可以](https://github.com/gitalk/gitalk/issues/205) | GitHub 还在一天，就永远不用担心          |
+| LiveRe         | 否           | 较慢 | 否       | 不可以                                                | 存疑                                     |
+| Valine         | 薛定谔的开源 | 快   | 否       | 可以                                                  | 取决于 LeanCloud（看你是不是付费用户了） |
 
 以下是同一个页面加载不同评论系统时 `Dev Tools -> Network` 的信息。（None 为不加载评论系统）
 
@@ -140,7 +140,7 @@ Gitalk 相比 Gitment 则持续维护了很久。所以首先肯定与感谢作�
 | LiveRe | 60      | 1.1 MB      | 3.2 MB    | 13.06 s | 1.14 s           | 1.98 s |
 | Valine | 43      | 408 kB      | 1.1 MB    | 5.66 s  | 1.29 s           | 1.83 s |
 
-简而言之，Disqus 最重最慢，Valine 最轻最快。
+简而言之，Disqus 最重最慢，Valine 最轻最快。与之对应的自然是功能强弱。
 
 ## 总结
 
