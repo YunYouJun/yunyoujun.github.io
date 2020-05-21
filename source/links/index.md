@@ -14,13 +14,7 @@ tip: 友链加载中～如失败请刷新重试～
 <summary>神隐</summary>
 
 ```yml
-- url: https://andychen.tk/
-  avatar: https://andychen.tk/images/avatar.jpg
-  name: Andy Chen
-  blog: Hydropower Hub
-  desc: また，一緒に輝きたい．
-  color: "#00A9EF"
-  email: andychen2005121@gmail.com
+
 ```
 
 </details>
