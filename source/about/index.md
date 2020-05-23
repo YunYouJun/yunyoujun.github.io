@@ -66,7 +66,7 @@ aplayer: true
 - 微信公众号：[云游君](https://cdn.jsdelivr.net/gh/YunYouJun/cdn/img/about/white-qrcode-and-search.jpg) （并不喜欢用微信，所以其实没什么用，不过加了网站跳转链接的菜单，订阅勉强可以当作证明收藏过本站的标记？也许日后有空会搬一点文章过去？（咕咕咕））
 - Twitter: [云游君](https://twitter.com/YunYouJun)（刚开始营业，每日一个 CSS 练习）（对不起，我还是咕了。）
 - RSS：<https://www.yunyoujun.cn/atom.xml> （可以使用 RSS 订阅本站，譬如 [feedly](https://feedly.com/)，是否真的能有人还存疑）
-- 😜 或者给我一个 [Star](https://github.com/YunYouJun/yunyoujun.github.io)，作为来过的证明。
+- 😜 如果你觉得本站点还算有趣或有用，可以给我一个 [Star](https://github.com/YunYouJun/yunyoujun.github.io) 以示鼓励。
 
 <!-- - Bangumi: [云游君](http://bangumi.tv/user/yunyoujun) -->
 <!-- - Telegram: [YunYouJun 云游君](https://t.me/YunYouJun)（可能回复得比较慢） -->
@@ -80,17 +80,10 @@ aplayer: true
 
 ## Donate
 
+[![YunYouJun's Sponsors](https://github.com/YunYouJun/sponsors/workflows/Sponsors/badge.svg)](https://sponsors.yunyoujun.cn)
+
+谢谢你们！
+
+- [赞助名单](https://sponsors.yunyoujun.cn/list)
+
 喂，看到下面发光的按钮了吗！
-
-- [主题 Yun 赞助名单](https://yun.yunyoujun.cn/sponsor.html)
-
-<details>
-<summary>打赏名单</summary>
-
-| 老板                         | 金额(CNY) | 日期       | 寄语   |
-| :--------------------------- | :-------- | :--------- | :----- |
-| [染川 曈](https://asuhe.jp/) | 2.33      | 2020-04-26 | 冰阔落 |
-| [染川 曈](https://asuhe.jp/) | 2.33      | 2020-04-27 | 冰阔落 |
-| [染川 曈](https://asuhe.jp/) | 2.33      | 2020-05-03 | 冰阔落 |
-
-</details>
