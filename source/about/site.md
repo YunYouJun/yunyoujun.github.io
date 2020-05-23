@@ -21,9 +21,12 @@ aplayer: true
 
 本页主要用来记录站点的历史。
 
-😜 你也可以给我一个 [Star](https://github.com/YunYouJun/yunyoujun.github.io)，作为来过的证明。
+😜 如果你觉得本站点还算有趣或有用，可以给我一个 [Star](https://github.com/YunYouJun/yunyoujun.github.io) 以示鼓励。
 
 ## Time
+
+<details open>
+<summary>2020 年</summary>
 
 ### 2020-05-02 加入 [中文独立博客列表](https://github.com/timqian/chinese-independent-blogs)
 
@@ -83,6 +86,8 @@ aplayer: true
 ### 2020-02-05 使用腾讯云 CDN 加速
 
 [使用 CDN 加速你的 GitHub Pages 网站](https://yunyoujun.cn/note/use-cdn-speed-up-site/)
+
+</details>
 
 <details>
 <summary>2019 年</summary>
