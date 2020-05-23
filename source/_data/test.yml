@@ -10,12 +10,13 @@ bg_image:
 pjax:
   enable: true
 
-# aplayer:
-#   global: true
-#   meting: false
-#   widget:
-#     enable: true
-#     meting: false
+aplayer:
+  global: true
+  meting: true
+  widget:
+    enable: true
+    meting:
+      enable: false
 
 wordcloud:
   enable: true
