@@ -85,7 +85,7 @@ npm config set registry https://registry.npm.taobao.org
 #### 安装 Git
 
 > Visual Studio Code，简称 VS Code。
-> 目前最为强大的编辑器，轻量且快速。（~~宇宙第一编辑器~~）
+> 目前最为强大易用的编辑器，轻量且快速。（~~宇宙第一编辑器~~）
 > 注意：它并不是我们常常听到的 VS，VS 常常指的是 Visual Studio，是一个功能强大的 IDE（集成开发环境），体积也相比 VS Code 都要大上一个量级。
 
 在此之前，我建议你先安装 [VS Code](https://code.visualstudio.com/)。因为安装 Git Bash 时，可以设置 VS Code 作为默认编辑器。
@@ -274,7 +274,7 @@ npm install hexo-render-pug hexo-renderer-stylus
 所以你可以对主题进行一些自定义。
 
 主题的配置文件放在 `themes/yun/_config.yml` 文件中。
-且慢，你最好不要直接修改主题的默认配置。倘若日后主题升级更新了怎么办，难道还要重新配置一遍吗？
+且慢，你**最好不要直接修改主题的默认配置**。倘若日后主题升级更新了怎么办，难道还要重新配置一遍吗？
 
 最好的解决方案就是在博客根目录下（不是主题目录）新建 `source/_data/yun.yml`。（若 `source/_data` 目录不存在，请新建）
 
@@ -301,7 +301,7 @@ colors:
 
 这时你的主题色调就会变为黑色。
 
-这只是一个配置项的简单示例，更多配置你可以参考我的[主题文档](https://yun.yunyoujun.cn)或直接在 `theme/yun/_config.yml` 中查看，并根据自己的需要进行配置。
+这只是一个配置项的简单示例，更多配置你可以参考 [Yun 主题文档](https://yun.yunyoujun.cn) 或直接在 `theme/yun/_config.yml` 中查看，并根据自己的需要进行配置。
 
 ### 生成静态文件
 
@@ -438,6 +438,14 @@ git push origin hexo
 
 我就不在此画蛇添足。
 
+---
+
+当然还有个更简便的方法，直接参考我的 [gh-pages.yml](https://github.com/YunYouJun/yunyoujun.github.io/blob/hexo/.github/workflows/gh-pages.yml)。
+
+去掉夹在 `yarn install` 与 `yarn build` 之间的 `algolia` 部分，直接粘贴到你的 `.github/workflows/` 文件夹（自己新建）下 `xxx.yml` 文件里即可。
+
+推送后便可直接自动部署。
+
 至此，你的站点便基本搭建完成，此后继续对主题进行自定义吧。
 
 > [Yun 主题文档](https://yun.yunyoujun.cn)
@@ -490,6 +498,8 @@ hexo new page xxx
 说到这里，就不得不提一提本主题的特色功能了。
 
 生成你的老婆列表页面。按一定格式书写即可。见[文档](https://yun.yunyoujun.cn/guide/page.html#girls)。
+
+> 预览：[Lovely Girls](https://www.yunyoujun.cn/girls/)
 
 ## FAQ
 

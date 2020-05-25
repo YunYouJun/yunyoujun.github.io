@@ -90,6 +90,8 @@ Gitalk 相比 Gitment 则持续维护了很久。所以首先肯定与感谢作�
 
 当 Gitalk 关闭后，[Valine](https://github.com/xCss/Valine) 一直是我在使用的方案。
 
+> 关于邮件提醒等功能则可以使用 [Valine-Admin](https://github.com/DesertsP/Valine-Admin)
+
 但是最近 Valine 不知何故在 [README](https://github.com/xCss/Valine/blob/master/README.md) 里写上了 `由于某些原因，src目录将从v1.4.0后暂停更新.`。
 
 也就是说 Valine 相当于开始闭源。

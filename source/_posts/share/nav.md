@@ -69,6 +69,9 @@ categories:
 - [腾讯文档](https://docs.qq.com/)
 - [语雀](https://www.yuque.com/)
 
+> 下面的是邀请链接可以为我加流量 Orz
+> [点击链接快来和我一起加入语雀文档，体验全新知识创作，让你的协作更高效！](https://www.yuque.com/login?platform=wechat&inviteToken=f44225123bcab02038f11cc0a7ab720c6d41f5952d55ea25f6596890ceff74fb)
+
 #### Connect
 
 - [WinSCP]
