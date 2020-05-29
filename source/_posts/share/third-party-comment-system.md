@@ -38,6 +38,7 @@ categories:
 但对于国内来说，却有一个致命缺点，需要科学上网。
 
 > 还可以使用 [DisqusJS](https://github.com/SukkaW/DisqusJS)，为无法连通 Disqus 的访客通过 Disqus API 在前端页面渲染一个评论列表。但真正想要评论，仍须科学上网。
+> [disqus-php-api](https://github.com/fooleap/disqus-php-api) 则可以代理 Disqus，我尝试使用了一下，填写作者的 API 时，竟然直接创建到[作者的讨论](https://disqus.com/home/forum/fooleap/)里了……也就是说还是需要自建，又稍微脱离了使用第三方评论的初心。
 
 我原本已经痛定思痛准备更换 Disqus 了，却发现其加载的请求与资源相当多（即便我已经关闭了 Disqus 的追踪和返利链接），最终还是退缩起来。
 

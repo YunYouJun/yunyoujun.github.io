@@ -102,3 +102,7 @@ baidu_push: true
 
 wordcloud:
   enable: true
+
+google_tagmanager:
+  enable: true
+  id: GTM-M9KWR9L

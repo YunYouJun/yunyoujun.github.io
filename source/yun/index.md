@@ -60,8 +60,14 @@ $$ E = mc^2 $$
 \[ \vec a=\frac{d\vec v}{dt}=\frac{d(\frac{dr}{dt}\vec e_{i}+r\frac{d\theta}{dt}\vec e_{j})}{dt}=\frac{d^2r}{dt^2}\vec e_{i}+\frac{dr}{dt}\frac{d\vec e_{i}}{dt}+\frac{dr}{dt}\frac{d\theta}{dt}\vec e_{j}+r\frac{d^2\theta}{dt^2}\vec e_{j}+r\frac{d\theta}{dt}\frac{d\vec e_{j}}{dt} \]
 ```
 
+\\[ m_t=g_t \\]
+
+$$ V_t=1 $$
+
+```latex
 $$ m_t=g_t $$
 $$ V_t=1 $$
+```
 
 <div>
 $$ \eta_t=lr*{\frac {m_t}{\sqrt V_t}}=lr*g_t $$
@@ -70,3 +76,10 @@ $$ w_{t+1}=w_t-\eta_t=w_t-lr*{\frac {m_t}{\sqrt V_t}}=w_t-lr*g_t $$
 <font size=5 color=red>**$$ {\Rightarrow \boxed{w_{t+1}=w_t-lr*{\frac {\partial loss}{\partial w_t}}}} $$**</font>
 
 </div>
+
+```latex
+$$ \eta_t=lr*{\frac {m_t}{\sqrt V_t}}=lr*g_t $$
+$$ w_{t+1}=w_t-\eta_t=w_t-lr*{\frac {m_t}{\sqrt V_t}}=w_t-lr*g_t $$
+
+<font size=5 color=red>**$$ {\Rightarrow \boxed{w_{t+1}=w_t-lr*{\frac {\partial loss}{\partial w_t}}}} $$**</font>
+```
