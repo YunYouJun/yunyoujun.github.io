@@ -355,6 +355,10 @@ girls:
     avatar: https://img.moegirl.org/common/thumb/7/74/Zenshin-ris.png/250px-Zenshin-ris.png
     from: 这个勇者明明超强却过分慎重
     reason: 够沙雕，我喜欢。阿库娅二号。
+  - name: 平泽唯
+    avatar: https://img.moegirl.org/common/thumb/7/75/%E5%B9%B3%E6%B3%BD%E5%94%AF.jpg/250px-%E5%B9%B3%E6%B3%BD%E5%94%AF.jpg
+    from: 轻音少女
+    reason: 诶，好几位的声优都是丰崎爱生
 ---
 
 ![喜欢二次元这件事很恶心这一点我还是知道的](https://cdn.jsdelivr.net/gh/YunYouJun/cdn/img/meme/love-er-ci-yuan-is-sick.jpg)
