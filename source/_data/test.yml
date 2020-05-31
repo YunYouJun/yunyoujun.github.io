@@ -1,3 +1,6 @@
+colors:
+  primary: "#92b4f2"
+
 google_adsense:
   enable: false
 
@@ -6,21 +9,24 @@ google_analytics:
 
 bg_image:
   enable: true
-  url: https://i.picsum.photos/id/866/1200/800.jpg
+  #   url: https://cdn.jsdelivr.net/gh/YunYouJun/cdn/img/bg/strange-storm-center.jpg
+  dark: https://i.loli.net/2020/05/31/7GgqKXxIFJSLEpU.jpg
+  # dark: https://i.loli.net/2020/05/31/OxlvJGLbPD85hua.jpg
+  # ![strange-storm-center-blur-30px.jpg](https://i.loli.net/2020/05/31/HfhZPO2NSDBemai.jpg)
 
-pjax:
-  enable: true
+# pjax:
+#   enable: true
 
-aplayer:
-  global: true
-  meting: true
-  widget:
-    enable: true
-    meting:
-      enable: false
+# aplayer:
+#   global: true
+#   meting: true
+#   widget:
+#     enable: true
+#     meting:
+#       enable: false
 
-wordcloud:
-  enable: true
+# wordcloud:
+#   enable: true
 
 valine:
   enable: true
@@ -38,9 +44,18 @@ livere:
   enable: false
   uid: MTAyMC81MDE0Mi8yNjYzMg==
 
-sidebar:
-  tagcloud:
-    enable: true
+# sidebar:
+#   tagcloud:
+#     enable: true
 
 trianglify:
   enable: false
+
+# UI
+banner:
+  enable: true
+  cloud:
+    enable: false
+
+albums:
+  enable: true

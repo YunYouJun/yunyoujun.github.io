@@ -26,3 +26,5 @@ tip: 友链加载中～如失败请刷新重试～
 [![YunYouJun Friends](https://github.com/YunYouJun/friends/workflows/YunYouJun%20Friends/badge.svg)](https://friends.yunyoujun.cn)
 
 现已不支持在评论区中直接申请友链，请前往[这里](https://github.com/YunYouJun/friends)～
+
+最好能有 RSS 功能，我会将您的站点放到 [feedly](https://feedly.com/) 订阅，并定期访问哒。
