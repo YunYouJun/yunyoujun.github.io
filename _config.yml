@@ -65,7 +65,7 @@ highlight:
 # https://github.com/ele828/hexo-prism-plugin
 prism_plugin:
   mode: preprocess # realtime/preprocess
-  theme: default
+  theme: tomorrow
   line_number: false # default false
   # custom_css: "path/to/your/custom.css" # optional
 
