@@ -195,11 +195,11 @@ pjax 适配一些插件和第三方功能时（而且有些根本就不支持重
 
 > 咳，读书人的事情怎么能叫抄呢？叫参考！
 
-于是，我参考了下，并略微简化了些许代码，收工。[sidebar.js - v0.8.0](https://github.com/YunYouJun/hexo-theme-yun/blob/v0.8.0/source/js/sidebar.js)
+于是，我参考了下，并简化了些许代码，火速收工。[sidebar.js - v0.8.0](https://github.com/YunYouJun/hexo-theme-yun/blob/v0.8.0/source/js/sidebar.js)
 
 ### 2020-06-01 亮暗模式
 
-丑的不行的暗色模式开发中……
+基础的暗色模式开发完成，我可以不用，但不能没有系列。
 
 参考的小伙伴的文章：
 
