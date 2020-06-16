@@ -253,7 +253,7 @@ git clone https://github.com/YunYouJun/hexo-theme-yun themes/yun
 
 在 `_config.yml` 中找到 `theme` 这个字段，将其后的 `landscape` 修改为 `yun`。
 
-```yml
+```yaml
 theme: yun
 ```
 
@@ -285,7 +285,7 @@ npm install hexo-render-pug hexo-renderer-stylus
 > 你可以在 `source` 文件夹下新建 `images` 文件夹，用来存储你的图片。
 > 也可以使用 [SM.MS](https://sm.ms/) 等图床工具上传你的图片文件，获取在线链接。
 
-```yml
+```yaml
 avatar:
   url: /images/avatar.jpg # 你的头像图片地址
   rounded: true
@@ -294,7 +294,7 @@ avatar:
 
 更换主题色彩，比如换成黑色，黑色的十六进制颜色代码是 `#000000`。
 
-```yml
+```yaml
 colors:
   primary: "#000000"
 ```
@@ -356,7 +356,7 @@ npm install hexo-deployer-git
 
 在 `_config.yml` 中配置。
 
-```yml
+```yaml
 deploy:
   type: git
   repo: 你此前新建的仓库的链接 # 比如：https://github.com/YunYouJun/yunyoujun.github.io

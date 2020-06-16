@@ -13,7 +13,7 @@ tip: 友链加载中～如失败请刷新重试～
 <details>
 <summary>神隐</summary>
 
-```yml
+```yaml
 
 ```
 

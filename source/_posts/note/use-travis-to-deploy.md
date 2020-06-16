@@ -75,7 +75,7 @@ Coding 还需要加 用户名 前缀 `https://xxx:${CODING_TOKEN}@${CD_REF}`
 git push --force "https://yunyoujun:${CODING_TOKEN}@${CD_REF}" master:master
 ```
 
-```yml
+```yaml
 env:
   global:
     - GH_REF: github.com/YunYouJun/yunyoujun.github.io.git

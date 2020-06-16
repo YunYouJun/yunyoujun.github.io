@@ -16,7 +16,7 @@ categories:
 
 <!-- more -->
 
-<iframe src="//player.bilibili.com/player.html?aid=19870985&bvid=BV1yW411773S&cid=32408262&page=1" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true"> </iframe>
+<iframe height="520" src="//player.bilibili.com/player.html?aid=19870985&bvid=BV1yW411773S&cid=32408262&page=1" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true"> </iframe>
 
 ## 前言
 
