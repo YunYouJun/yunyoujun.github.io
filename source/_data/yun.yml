@@ -91,8 +91,6 @@ pages:
     icon: icon-women-line
     color: hotpink
 
-dns_prefetch:
-  - https://cos.yunyoujun.cn
 # cdn:
 #   pre: https://cdn.jsdelivr.net/gh/YunYouJun/yunyoujun.github.io@latest
 
@@ -106,9 +104,6 @@ cursor:
   enable: true
 
 baidu_push: true
-
-wordcloud:
-  enable: true
 
 google_tagmanager:
   enable: true
