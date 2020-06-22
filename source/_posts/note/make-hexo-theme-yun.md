@@ -13,6 +13,12 @@ categories:
 
 Hexo-Theme-Yun 绝赞开发中~
 
+<!-- ![GitHub stars](https://img.shields.io/github/stars/YunYouJun/hexo-theme-yun?style=social) -->
+
+- GitHub: <https://github.com/YunYouJun/hexo-theme-yun>
+- Docs: <https://yun.yunyoujun.cn>
+- Example: <https://www.yunyoujun.cn>
+
 ## 前言
 
 还在用 `WordPress` 的时候，总是喜新厌旧，经常换主题。且装了一堆插件，速度慢还容易崩。
@@ -32,10 +38,6 @@ Hexo-Theme-Yun 绝赞开发中~
 然而，其实还并没有写多少，所以只是占位与预告。
 
 嗯，预告！（~~谁说没人看的博客就不能有预告了！？~~）
-
-- GitHub: <https://github.com/YunYouJun/hexo-theme-yun>
-- Docs: <https://yun.yunyoujun.cn>
-- Example: <https://www.yunyoujun.cn>
 
 ### 名字的由来
 

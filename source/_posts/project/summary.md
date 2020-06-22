@@ -19,6 +19,16 @@ hide: true
 
 ### Serious
 
+### hexo-theme-yun
+
+☁️ A fast & light & lovely theme for Hexo.
+
+![GitHub stars](https://img.shields.io/github/stars/YunYouJun/hexo-theme-yun?style=social)
+
+- GitHub: <https://github.com/YunYouJun/hexo-theme-yun>
+- Docs: <https://yun.yunyoujun.cn>
+- Example: <https://www.yunyoujun.cn>
+
 #### AIS.js
 
 Tags: `Vue` / `npm` / `Element` / `JavaScript`
