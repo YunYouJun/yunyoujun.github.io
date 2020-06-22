@@ -115,3 +115,6 @@ google_tagmanager:
 
 search:
   dark_bg_image: https://cdn.jsdelivr.net/gh/YunYouJun/cdn/img/bg/mountain-blur-30px.jpg
+
+creative_commons:
+  clipboard: true
