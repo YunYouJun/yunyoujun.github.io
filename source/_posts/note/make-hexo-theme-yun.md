@@ -73,7 +73,7 @@ Hexo-Theme-Yun 绝赞开发中~
 
 发布历史及功能增删直接看 [releases](https://github.com/YunYouJun/hexo-theme-yun/releases) 就可以了，在这里记录 CHANGELOG 似乎也没啥意义。
 
-所以可能只是单纯写写开发过程中想法的记录。
+所以可能只是单纯写写开发过程中遇到的一些问题和想法。
 
 ### v0.0.1 (2019-05-19) 试验
 
