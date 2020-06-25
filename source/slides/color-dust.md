@@ -16,7 +16,7 @@ slide:
 
 ## Color Dust
 
-![color.svg](https://raw.githubusercontent.com/YunYouJun/color-dust/master/static/color.svg)
+![color.svg](https://www.yunyoujun.cn/color-dust/color.svg)
 
 <small>
 色尘，佛教语。“六尘”之一。
@@ -40,7 +40,7 @@ slide:
 ## 图片即数据
 
 > 像素 =>
-> <span style="color:red">R</span> > <span style="color:green">G</span> > <span style="color:blue">B</span>
+> <span style="color:red">R</span> <span style="color:green">G</span> <span style="color:blue">B</span>
 
 ### <i class="ri-file-upload-line"></i>
 
