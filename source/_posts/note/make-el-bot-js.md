@@ -35,6 +35,11 @@ EBJ (el-bot-js) 展示了整个 mirai-ts 的使用流程，并内置了一些如
 
 > Telegram 国情便决定其不可能成为国内所有人常用的社交工具，而微信的残疾让我也没有太大兴趣。
 
+- 譬如基于此的我的机器人小云，就会自动抓取我的博客的 RSS 源，并转发到我的群中。（毕竟自己主动分享还有些羞耻。）
+- 譬如你发现了一张有趣的图或者文字，想要分享给多个群，一个个转发实在太麻烦，直接发给小云，她便可以帮你转发多个群。
+- 譬如问一句小云`在吗`，她会回道`主人我在`，而别人问则只会回答 `爪巴` 来彰显尊贵身份。
+- 譬如：……
+
 此前我也曾经尝试使用诸如 [qqbot](https://github.com/pandolia/qqbot)、酷 Q 的 [nonebot](https://github.com/nonebot/nonebot) 搭建过 QQ 机器人。
 
 还有过两篇黑历史一样的文章，[小爱是云游最好的女朋友（大雾）](https://www.yunyoujun.cn/project/QQ-XiaoAi/) 和 [酷 Q 使用笔记](https://www.yunyoujun.cn/note/coolq-use-note/)。
@@ -95,7 +100,7 @@ ADD-SP 答略懂略懂。
 
 此前写东西基本是自己一人埋头干，说实话没什么合作经验。实验室的活倒是多人合作，但老师给了我很大的权限，除了一些特殊的要求外，前端架构上基本是我的一言堂（也一人干）。
 
-后来看到 python-mirai 作者开了个 ISSUE，说将会重构，变动很多，同时因学业问题，7 月末前不会进行任何形式的开发。
+后来看到 python-mirai 作者开了个 ISSUE，说将会重构，变动很多，同时因学业问题，7 月末前不会进行任何形式的开发。（本以为是个高考大佬，结果是个初中生巨佬。）
 
 加之自己也诸事繁多，便约好索性等到新版本发布再写好了。
 
@@ -119,7 +124,7 @@ el-bot-go 的开发如火如荼，很快发布了可用版本。而我（go 只�
 
 于是正式开坑 [el-bot-js](https://github.com/ElpsyCN/el-bot-js)，作为 el-bot 的 js（~~女子小学生~~）版本，适合于认为 JavaScript 是世界上最好的语言的用户。
 
-动态加载插件是其一大优势，以及附带了些启动 mirai-console、webhook 等实用脚本。
+动态加载插件是其一大优势，以及附带了些启动 mirai-console（自动登录）、webhook 等实用脚本。
 
 ### 2020-06-21 TypeScript Yes! node-mirai No!
 
@@ -133,13 +138,17 @@ el-bot-go 的开发如火如荼，很快发布了可用版本。而我（go 只�
 > 封装 SDK 中消息格式有很多，使用 TypeScript 规范代码要更为合适一些。
 > 类型检查、动态语言，我全都要。
 
-截至今日，el-bot-js 已经完全去除 node-mirai 的依赖，转为使用 mirai-ts。
+el-bot-js 也使用 TypeScript 进行了一番重构，并完全去除了 node-mirai 的依赖，转为使用 mirai-ts。
 
 ### 2020-06-27 长大的 mirai-ts
 
-mirai-ts 终于可以独当一面（完全封装实现 mirai-api-http）后，从 el-bot-js 的 packages 目录下，分离出来发布了 npm 包 [mirai-ts](http://npmjs.com/package/mirai-ts/)。
+刚好赶在了端午假期结束前。mirai-ts 终于可以独当一面（完全封装实现 mirai-api-http）后，从 el-bot-js 的 packages 目录下，分离出来发布了 npm 包 [mirai-ts](http://npmjs.com/package/mirai-ts/)。
 
-🤣 也算是回馈社区了，只要 mirai 还在，我就会尽可能坚持维护下去的，毕竟相当于我自己也在用自己封的库。
+> 🤣 也算是回馈社区了，只要 mirai 还在，mirai-ts 我就会尽可能坚持维护下去的，毕竟相当于我自己也在用自己封的库。
+
+简而言之，[el-bot-py](https://github.com/ElpsyCN/el-bot-py) 也就是最早的 el-bot 应该是打算彻底咕了，毕竟本质要做的事一样，基于的协议一样，SDK 自己也特意重封了，没有必要再重复劳作。
+
+我和 ADD-SP 则将分别维护 js 和 go 版本的 el-bot，按照各自不同的架构实现下去。
 
 ## 末尾
 
