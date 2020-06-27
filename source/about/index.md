@@ -60,7 +60,6 @@ aplayer: true
 - 豆瓣: [云游君](https://www.douban.com/people/yunyoujun/)（用过 [Bangumi](https://bangumi.tv/user/yunyoujun)，但苦于速度太慢不稳定，转为豆瓣，标记看过的书影音）
 - 知乎：[云游君](https://www.zhihu.com/people/yunyoujun/)（只看不答，文明守法，因为自己实在没有有趣的经历可以装 B）
 - 网易云音乐: [机智的云游君](http://music.163.com/#/user/home?id=247102977)（主用的音乐播放器，多为日语歌、少量欧美，华语更少但的确是有的，V 家更爱翻唱，当遇到自认为好听的就会收藏）
-- QQ: 910426929（常年在线，但有问题更推荐进群 [389401003](https://shang.qq.com/wpa/qunwpa?idkey=3bd19a05aaccb2b60c396295c8617b3a9e667821a495e8cd7e1698ff95ab61c6) 询问）
 - Telegram Channel: [El Psy Congroo](https://t.me/elpsycn)（才整的频道，也许会用来记录吐槽日常，朋友圈太多现实世界朋友，导致都不好意思发空间）现在大致 = 博客 + 豆瓣 + 网易云音乐 + Twitter 更新聚合
 - [POPI 匿名提问箱](https://www.popiask.cn/elpsycn)：文明友好的问题有问必答，当然我可能会较迟才能发现有新的提问
 - 微信公众号：[云游君](https://cdn.jsdelivr.net/gh/YunYouJun/cdn/img/about/white-qrcode-and-search.jpg) （并不喜欢用微信，所以其实没什么用，不过加了网站跳转链接的菜单，订阅勉强可以当作证明收藏过本站的标记？也许日后有空会搬一点文章过去？（咕咕咕））
@@ -75,6 +74,7 @@ aplayer: true
 ### 其他
 
 - 明日方舟（官服）：云游君#5367
+- 闲聊兼主题 QQ 群：[389401003](https://shang.qq.com/wpa/qunwpa?idkey=3bd19a05aaccb2b60c396295c8617b3a9e667821a495e8cd7e1698ff95ab61c6)
 
 #### 下方评论区或者 [GitHub Issues](https://github.com/YunYouJun/yunyoujun.github.io/issues/36) 就当作留言板了～（有啥想说的，欢迎留言）
 
