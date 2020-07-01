@@ -3,7 +3,7 @@ mode: auto
 avatar:
   url: /images/avatar.jpg
 
-reward_settings:
+reward:
   enable: true
   comment: 我很可爱，请给我钱
 
