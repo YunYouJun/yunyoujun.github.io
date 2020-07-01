@@ -359,6 +359,10 @@ girls:
     avatar: https://img.moegirl.org/common/thumb/7/75/%E5%B9%B3%E6%B3%BD%E5%94%AF.jpg/250px-%E5%B9%B3%E6%B3%BD%E5%94%AF.jpg
     from: 轻音少女
     reason: 诶，好几位的声优都是丰崎爱生
+  - name: 佩可莉姆
+    avatar: https://img.moegirl.org/common/thumb/c/c2/Pecorine.png/312px-Pecorine.png
+    from: 公主连结Re:Dive
+    reason: ヤバイですね
 ---
 
 ![喜欢二次元这件事很恶心这一点我还是知道的](https://cdn.jsdelivr.net/gh/YunYouJun/cdn/img/meme/love-er-ci-yuan-is-sick.jpg)
