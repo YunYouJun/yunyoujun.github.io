@@ -7,8 +7,7 @@ tags:
   - 笔记
   - 分享
   - GitHub
-categories:
-  - 云游的小笔记
+categories: 云游的小笔记
 ---
 
 [mirai-ts](https://github.com/YunYouJun/mirai-ts) 是 [mirai-api-http](https://github.com/mamoe/mirai-api-http) 的 TypeScript/JavaScript SDK。
@@ -139,7 +138,7 @@ el-bot-go 的开发如火如荼，很快发布了可用版本。而我（go 只�
 ### 2020-06-21 TypeScript Yes! node-mirai No!
 
 写着写着，node-mirai 的很多设计不合口味，语义不明，文档也不完善，且提了几个 ISSUE 也始终没有收到回应。以及缺少一些更易用的辅助函数，控制台的输出消息不明确，axios 没有做统一配置和响应拦截，一些语法习惯也有所冲突。
-……我是不是抱怨太多了。
+……我是不是抱怨太多了。~~虽然我自己也好不到哪里去。~~
 
 加之之前整了 el-bot-web，便索性自力更生，直接根据 mirai-api-http 封装 SDK。后续机器人的上游问题，也不用再操心。
 
