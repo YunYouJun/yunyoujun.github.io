@@ -1,5 +1,5 @@
 ---
-title: el-bot-js & mirai-ts 制作笔记
+title: el-bot & mirai-ts 制作笔记
 date: 2020-06-22 02:16:53
 updated: 2020-06-22 02:16:53
 tags:
@@ -11,14 +11,14 @@ categories: 云游的小笔记
 ---
 
 [mirai-ts](https://github.com/YunYouJun/mirai-ts) 是 [mirai-api-http](https://github.com/mamoe/mirai-api-http) 的 TypeScript/JavaScript SDK。
-[el-bot-js](https://github.com/ElpsyCN/el-bot-js) 是一个基于 [mirai-ts](https://github.com/YunYouJun/mirai-ts) 使用 TypeScript/JavaScript 编写，可配置、可自定义插件的 QQ 机器人。
+[el-bot](https://github.com/ElpsyCN/el-bot) 是一个基于 [mirai-ts](https://github.com/YunYouJun/mirai-ts) 使用 TypeScript/JavaScript 编写，可配置、可自定义插件的 QQ 机器人。
 
 - GitHub: [mirai-ts](https://github.com/YunYouJun/mirai-ts)
-- GitHub: [el-bot-js](https://github.com/ElpsyCN/el-bot-js)
+- GitHub: [el-bot](https://github.com/ElpsyCN/el-bot)
 - Docs: [mirai-ts API 文档](https://yunyoujun.cn/mirai-ts/)
-- Docs: [el-bot-js 文档](https://docs.bot.elpsy.cn/js/)
+- Docs: [el-bot 文档](https://docs.bot.elpsy.cn/)
 
-EBJ (el-bot-js) 展示了整个 mirai-ts 的使用流程，并内置了一些如自动应答、转发、命令行、RSS 等常用功能（默认插件），开箱即用。
+el-bot 展示了整个 mirai-ts 的使用流程，并内置了一些如自动应答、转发、命令行、RSS 等常用功能（默认插件），开箱即用。
 你只需要一些自定义的配置，而不再需要编写繁琐的脚本内容。
 但这并不是束缚，在插件系统中你仍然可以调用机器人所有的上下文，并通过编写插件的形式快速实现你想要的功能。
 
@@ -131,7 +131,7 @@ el-bot-go 的开发如火如荼，很快发布了可用版本。而我（go 只�
 
 > 嘛，感觉除了深度学习之类的 Python 库最多，其他基本 Python 能干的事，Node.js 都能干，JavaScript 的优势则在于前端/浏览器。
 
-于是正式开坑 [el-bot-js](https://github.com/ElpsyCN/el-bot-js)，作为 el-bot 的 js（~~女子小学生~~）版本，适合于认为 JavaScript 是世界上最好的语言的用户。
+于是正式开坑 [el-bot-js](https://github.com/ElpsyCN/el-bot)，作为 el-bot 的 js（~~女子小学生~~）版本，适合于认为 JavaScript 是世界上最好的语言的用户。
 
 动态加载插件是其一大优势，以及附带了些启动 mirai-console（自动登录）、webhook 等实用脚本。
 
@@ -142,7 +142,7 @@ el-bot-go 的开发如火如荼，很快发布了可用版本。而我（go 只�
 
 加之之前整了 el-bot-web，便索性自力更生，直接根据 mirai-api-http 封装 SDK。后续机器人的上游问题，也不用再操心。
 
-为了与 node-mirai 相区别，并提供更好的代码提示，我决定使用 TypeScript 编写，并命名为 [mirai-ts](https://github.com/ElpsyCN/el-bot-js/tree/dev/packages/mirai-ts)。
+为了与 node-mirai 相区别，并提供更好的代码提示，我决定使用 TypeScript 编写，并命名为 [mirai-ts](https://github.com/YunYouJun/mirai-ts)。
 
 > 封装 SDK 中消息格式有很多，使用 TypeScript 规范代码要更为合适一些。
 > 类型检查、动态语言，我全都要。
@@ -159,10 +159,14 @@ el-bot-js 也使用 TypeScript 进行了一番重构，并完全去除了 node-m
 
 我和 ADD-SP 则将分别维护 js 和 go 版本的 el-bot，按照各自不同的架构实现下去。
 
-## 末尾
+> 顺带一提，中途因为屁股起了包（没有想到更优雅的措辞），没办法坐着写代码。实验室汇报干活的时候，又觉得直说怪怪的，便改说身体不舒服，所以这周活儿干的有点少。（作为借口是重点。）
+> 老师则说快多注意休息。我说好的，于是开完会趴在椅子上继续写起 el-bot-js。
 
-顺带一提，中途因为屁股起了包，没办法坐着写代码。实验室汇报干活的时候，又觉得直说怪怪的，便改说身体不舒服，所以这周活儿干的有点少。（作为借口是重点。）
-老师则说快多注意休息。我说好的，于是开完会趴在椅子上继续写起 el-bot-js。
+### 2020-07-07 Bye, EBG
+
+ADD-SP 决定放弃 el-bot-go 的维护，后续参与 el-bot-js 的维护。
+
+因为 [ElpsyCN](https://github.com/ElpsyCN) 日后大概也只会有此一个版本的机器人，于是决定将 el-bot-js 重命名为 [el-bot](https://github.com/ElpsyCN/el-bot/)。
 
 ---
 
