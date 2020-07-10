@@ -363,6 +363,11 @@ girls:
     avatar: https://img.moegirl.org/common/thumb/c/c2/Pecorine.png/312px-Pecorine.png
     from: 公主连结Re:Dive
     reason: ヤバイですね
+  - name: 莫妮卡
+    avatar: https://img.moegirl.org/common/thumb/f/fd/MONIKA03.png/280px-MONIKA03.png
+    url: https://zh.moegirl.org/zh-hans/莫妮卡(心跳文学部)
+    from: 心跳文学部
+    reason: 你一定要幸福啊.jpg
 ---
 
 ![喜欢二次元这件事很恶心这一点我还是知道的](https://cdn.jsdelivr.net/gh/YunYouJun/cdn/img/meme/love-er-ci-yuan-is-sick.jpg)
