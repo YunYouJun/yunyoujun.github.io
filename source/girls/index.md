@@ -355,10 +355,9 @@ girls:
     avatar: https://img.moegirl.org/common/thumb/7/74/Zenshin-ris.png/250px-Zenshin-ris.png
     from: 这个勇者明明超强却过分慎重
     reason: 够沙雕，我喜欢。阿库娅二号。
-  - name: 平泽唯
-    avatar: https://img.moegirl.org/common/thumb/7/75/%E5%B9%B3%E6%B3%BD%E5%94%AF.jpg/250px-%E5%B9%B3%E6%B3%BD%E5%94%AF.jpg
+  - name: 琴吹䌷
+    avatar: https://img.moegirl.org/common/thumb/9/9f/TSUMUGI11.png/280px-TSUMUGI11.png
     from: 轻音少女
-    reason: 诶，好几位的声优都是丰崎爱生
   - name: 佩可莉姆
     avatar: https://img.moegirl.org/common/thumb/c/c2/Pecorine.png/312px-Pecorine.png
     from: 公主连结Re:Dive
