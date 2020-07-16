@@ -108,14 +108,14 @@ baidu_push: true
 google_tagmanager:
   enable: true
   id: GTM-M9KWR9L
-
 # bg_image:
 # dark: https://cdn.jsdelivr.net/gh/YunYouJun/cdn/img/bg/mountain.jpg
 # dark: https://cdn.jsdelivr.net/gh/YunYouJun/cdn/img/bg/galaxy.jpg
 
-search:
-  dark_bg_image: https://cdn.jsdelivr.net/gh/YunYouJun/cdn/img/bg/mountain-blur-30px.jpg
 # ---
 # social:
 # qq
 # https://wpa.qq.com/msgrd?v=3&uin=910426929&site=qq&menu=yes
+
+wordcount:
+  enable: true
