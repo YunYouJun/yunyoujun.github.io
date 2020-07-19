@@ -10,7 +10,11 @@ categories:
   - 云游的小笔记
 ---
 
-<!-- 2020-04-03 19:45:31 -->
+> 2020-07-19
+> 因为 CoolQ 的繁琐和诸多限制，我已经弃用。所以该篇文章内容不会再更新。
+> 如果你有兴趣，可以尝试使用 [mirai](https://github.com/mamoe/mirai) (一个跨平台且轻量的 QQ 机器人库)。
+> 此外，我使用 JS/TS 编写了一个基于 mirai 的机器人框架 [el-bot](https://github.com/ElpsyCN/el-bot)，使其更易于使用与扩展，正处于持续开发维护中。
+> More Info: [el-bot & mirai-ts 制作笔记](https://www.yunyoujun.cn/note/make-el-bot/)
 
 ## Intro
 
@@ -190,7 +194,3 @@ service iptables save #保存iptables规则
 ## Example
 
 GitHub: [xiao-ai](https://github.com/YunYouJun/xiao-ai)
-
----
-
-TO BE CONTINUED.
