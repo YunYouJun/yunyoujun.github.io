@@ -63,7 +63,7 @@ Hexo-Theme-Yun 绝赞开发中~
 
 文章的 Markdown 样式，其实是大致使用的我此前写的一个 [star-markdown-css](https://github.com/YunYouJun/star-markdown-css)。（这也是此前的主题名也打算叫做 `Starry` 的原因之一。）
 
-> 细细的字体很好看！
+> ~~细细的字体很好看！~~ > [[Bug Report] 低分辨率屏幕下 300 字重的显示效果](https://github.com/YunYouJun/hexo-theme-yun/issues/45) 后来因为有反馈说 300 字重在低分辨率下的显示效果不是很好，所以决定默认使用 400 字重了。
 
 [star-markdown-css](https://yunyoujun.github.io/star-markdown-css/) 是我编写的 Markdown 样式（也就是转译后常见的 HTML 标签样式），大致构想是编写多种有趣好看的文本主题样式，同时也可以作为 CDN 由用户自行引入，自由切换。
 

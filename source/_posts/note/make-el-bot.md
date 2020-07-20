@@ -10,8 +10,6 @@ tags:
 categories: 云游的小笔记
 ---
 
-2<sub>10</sub>
-
 [mirai-ts](https://github.com/YunYouJun/mirai-ts) 是 [mirai-api-http](https://github.com/mamoe/mirai-api-http) 的 TypeScript/JavaScript SDK。
 [el-bot](https://github.com/ElpsyCN/el-bot) 是一个基于 [mirai-ts](https://github.com/YunYouJun/mirai-ts) 使用 TypeScript/JavaScript 编写，可配置、可自定义插件的 QQ 机器人。
 
