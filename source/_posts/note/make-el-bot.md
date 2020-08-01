@@ -1,7 +1,7 @@
 ---
 title: el-bot & mirai-ts 制作笔记
 date: 2020-06-22 02:16:53
-updated: 2020-07-07 02:16:53
+updated: 2020-08-02 02:16:53
 tags:
   - 项目
   - 笔记
@@ -167,6 +167,30 @@ el-bot-js 也使用 TypeScript 进行了一番重构，并完全去除了 node-m
 ADD-SP 决定放弃 el-bot-go 的维护，后续参与 el-bot-js 的维护。
 
 因为 [ElpsyCN](https://github.com/ElpsyCN) 日后大概也只会有此一个版本的机器人，于是决定将 el-bot-js 重命名为 [el-bot](https://github.com/ElpsyCN/el-bot/)。
+
+### 2020-07-26 v0.3 npm 包
+
+此前我设想的 el-bot 是一个机器人模版，目标是简单的 clone 即可使用，其余一切需求通过 `.env` 设置环境变量或在 `config/cusom` 中配置和编写自定义插件解决。
+
+因为使用 TypeScript 编写，所以每次使用时还需自行编译。（不得不说，这一定程度上受到了此前写 Hexo 主题的习惯影响。）
+
+仔细想来何不直接编译后作为 npm 包发布呢？（~~当然是因为之前还有 mirai 的结构~~）
+
+> 途中受到了 [koishi](https://github.com/koishijs/koishi)（不过是基于 Coolq 的） 的许多启发。但并没有决定使用 monorepo 的形式。
+
+于是现在 [el-bot](https://github.com/ElpsyCN/el-bot) 定位更改为开发框架，新建了 [el-bot-template](https://github.com/ElpsyCN/el-bot-template) 作为可用的快速启动模版。
+
+官方插件 [el-bot-plugins](https://github.com/ElpsyCN/el-bot-plugins) 也都发布于 `@el-bot` 的命名空间下。
+
+提高了启动速度，自定义的程度也更高了。
+
+### 2020-08-02 晨风被捕，mirai 跑路？
+
+半夜，通宵中。忽闻晨风机器人作者被捕，随后 [酷Q](https://cqp.cc/) 亦关闭论坛，其余机器人也似乎多是跑路，mirai 群内讨论后开启禁言，仅剩开发者群在讨论事宜。
+
+本想 mirai 及其相关项目皆为开源，且未作盈利用途，当并无大碍，但却无人可以断言。QQ 相比 Telegram、Discord 等本就没有提供 API 机制，还如此作为，难免有些失望。
+
+el-bot 与 mirai-ts 将暂时停止开发维护，观望 mirai 最终去向再作决定。（~~好像还变向给自己腾出了时间~~）
 
 ---
 
