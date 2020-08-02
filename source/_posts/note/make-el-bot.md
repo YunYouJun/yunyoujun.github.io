@@ -10,6 +10,16 @@ tags:
 categories: 云游的小笔记
 ---
 
+2020-08-02
+
+mirai 已清空仓库，故 el-bot 与 mirai-ts 也将停止维护。
+虽然想过终有一天会结束，但没想到来得这么快。
+
+---
+
+> 没有未来的未来不是我想要的未来。
+> —— 神原秋人 「境界的彼方」
+
 [mirai-ts](https://github.com/YunYouJun/mirai-ts) 是 [mirai-api-http](https://github.com/mamoe/mirai-api-http) 的 TypeScript/JavaScript SDK。
 [el-bot](https://github.com/ElpsyCN/el-bot) 是一个基于 [mirai-ts](https://github.com/YunYouJun/mirai-ts) 使用 TypeScript/JavaScript 编写，可配置、可自定义插件的 QQ 机器人。
 
@@ -194,11 +204,19 @@ el-bot 与 mirai-ts 将暂时停止开发维护，观望 mirai 最终去向再�
 
 ---
 
+mirai 已经清库跑路，el-bot 与 mirai-ts 也将停止开发。
+
+---
+
+虽然想过终有一天会结束，但没想到来得这么快。
+
+<!--
 [![QQ Group](https://img.shields.io/badge/qq%20group-707408530-12B7F5)](https://shang.qq.com/wpa/qunwpa?idkey=5b0eef3e3256ce23981f3b0aa2457175c66ca9194efd266fd0e9a7dbe43ed653)
 
 最最后附上交流群号 707408530，征集小白鼠。（我自己目前使用基本没有问题。）
 
 > QQ 机器人的交流群要是不是 QQ 群就实在太奇怪了。
+-->
 
 ---
 
