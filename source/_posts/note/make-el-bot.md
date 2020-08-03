@@ -1,7 +1,7 @@
 ---
 title: el-bot & mirai-ts 制作笔记
 date: 2020-06-22 02:16:53
-updated: 2020-08-02 02:16:53
+updated: 2020-08-02 20:16:53
 tags:
   - 项目
   - 笔记
