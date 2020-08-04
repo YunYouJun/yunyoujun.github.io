@@ -119,3 +119,8 @@ google_tagmanager:
 
 wordcount:
   enable: true
+
+say:
+  api: https://elpsy.vercel.app/api/words/young
+  hitokoto:
+    enable: false
