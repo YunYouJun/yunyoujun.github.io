@@ -1,7 +1,7 @@
 ---
-title: 导出《你的日记》
+title: 导出「你的日记」与导入「一本日记」
 date: 2019-01-31 16:38:03
-updated: 2019-01-31 16:38:03
+updated: 2020-08-05 16:38:03
 tags:
   - 笔记
 categories:
@@ -10,9 +10,19 @@ categories:
 
 ## 前言
 
-待补充...
+> 因为「你的日记」开发不是很活跃，且经常出现无法连接等 BUG，而本身也未提供导出功能，所以我写了该[工具](https://github.com/YunYouJun/export-nideriji/archive/master.zip)用于迁移至其他日记软件。  
+> 此外因为我之后选择的是「一本日记」，所以也可以转换为「一本日记」的数据格式用于导入。  
+> 我自己也已经成功迁移，所以该项目不会再维护，但如果你也有此需要，希望能对你有所帮助。
 
-...
+GitHub: [export-nideriji](https://github.com/YunYouJun/export-nideriji)
+
+具体使用方法见项目地址 README。
+
+原本我是想记录下整个导出思路的具体过程，然后跑去写脚本，打算写好再把文章补完，自己用完就咕咕咕了。
+
+所以这里大概只是一半的内容，阁下需要的话直接使用即可，文章应该也就此不会再更新了，
+
+差不多 2019 年 2 月便干了这事，今天终于决定彻底卸载。
 
 <!-- more -->
 
@@ -210,6 +220,4 @@ Response
 
 ...
 
----
-
-To Be Continued.
+过程咕咕咕了，你可以直接用我写好的脚本工具 [export-nideriji](https://github.com/YunYouJun/export-nideriji)。
