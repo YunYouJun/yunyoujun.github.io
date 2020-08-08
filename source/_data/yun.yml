@@ -9,9 +9,14 @@ reward:
 
 comment:
   tips:
-    - 因为 Valine 我保不准哪天就会因为种种原因抛弃它了。
-    - 所以如果是重要的评论，建议跳转 GitHub Issues 发表。
-    - 若没有本文 Issue，您可以使用 Comment 模版新建。
+    - 尝试使用 utterances （基于 GitHub Issues）评论系统。
+    - 您可以点击下方按钮切换对应评论系统，
+    - <script>function showUtterances(){ document.getElementsByClassName("utterances")[1].style.display='block'; document.querySelector('#valine-container').style.display='none'; }function showValine(){ document.querySelector('#valine-container').style.display='block'; document.getElementsByClassName("utterances")[1].style.display='none'; }</script>
+    - <a class="hty-button hty-button--raised" onclick="showValine()">Valine</a><a class="hty-button hty-button--raised" onclick="showUtterances()">utterances</a>
+    - <style>.utterances{display:none;}</style>
+
+github_issues:
+  enable: false
 
 valine:
   enable: true
@@ -124,3 +129,10 @@ say:
   api: https://elpsy.vercel.app/api/words/young
   hitokoto:
     enable: false
+
+utterances:
+  enable: true
+  repo: YunYouJun/yunyoujun.github.io
+  issue-term: pathname
+  label: comment
+  theme: preferred-color-scheme

@@ -1,7 +1,7 @@
 ---
 title: 第三方评论系统之我见
 date: 2020-05-17 13:30:40
-updated: 2020-05-17 13:30:40
+updated: 2020-08-08 13:30:40
 tags:
   - 评测
   - Disqus
@@ -84,8 +84,9 @@ Gitalk 相比 Gitment 则持续维护了很久。所以首先肯定与感谢作�
 
 然后当用户想要评论时，点击链接跳转到对应 Issue 进行回复即可。这样登陆验证等全交给 GitHub 来做就可以了。
 
-> 我尝试提了个 ISSUE: [[Feature Request] Only render issues content without clientSecret](https://github.com/gitalk/gitalk/issues/383)
-> 如果能得到回复和实现就再好不过。（不行的话，就日后有空尝试自己能不能写出来，嗯，有空，咕咕咕。）
+> 我尝试提了个 ISSUE: [[Feature Request] Only render issues content without clientSecret](https://github.com/gitalk/gitalk/issues/383)  
+> ~~如果能得到回复和实现就再好不过。（不行的话，就日后有空尝试自己能不能写出来，嗯，有空，咕咕咕。）~~  
+> [utterances](https://utteranc.es/) 似乎很不错，可以作为 Gitalk 的替代品。
 
 ### [Valine](https://valine.js.org/)
 
@@ -123,6 +124,18 @@ Gitalk 相比 Gitment 则持续维护了很久。所以首先肯定与感谢作�
 
 但光就其功能上来说，还是值得一用的。
 
+---
+
+### [utterances](https://utteranc.es/)
+
+一个轻量的基于 GitHub Issues 的评论挂件。
+
+评论区里朋友的推荐。使用 [utterances-bot](https://github.com/utterances-bot) 在没有 Issue 时，自动帮我们发起 Issue，使用 GitHub App 进行权限认证，请求了更少的用户权限。
+
+使用方便，只需要插入脚本即可，且只需要授权一次，在其他使用该插件的评论中可以直接评论。
+
+> [Beaudar - 表达](https://beaudar.lipk.org/) 执手对影成双 做的 Utterances 的中文版本。
+
 ## 对比
 
 | 第三方评论系统 | 开源         | 速度 | 是否被墙 | 可否实现 PJAX                                         | 数据可靠性                               |
@@ -159,7 +172,9 @@ GitHub 倒是既慷慨又实用，所以要是能渲染 Issue 评论预览，想
 > 但是因为要多跳几个链接，无法直接显示在评论区中预览，所以基本没有人用。
 > 不过我认为相比 Valine 的数据（保不准哪天我就因为各种原因不得不抛弃它了），显然 GitHub 要更为可靠些。所以重要的留言可以考虑留在 Issue 里哦～
 
-GitHub 最近则在内测 [Discussions](https://github.com/zeit/now/discussions/) 感觉也是一个不错的交流方式，值得期待。
+GitHub 最近则在内测 [Discussions](https://github.com/zeit/now/discussions/) 感觉也是一个不错的交流方式（其实是论坛），权限方面或许会更加友好，值得期待。
+
+[utterances](https://utteranc.es/) 同样基于 GitHub Issues，可以抵消权限方面的担忧。
 
 ---
 

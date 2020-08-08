@@ -135,13 +135,3 @@ git commit -m 'xxx'
 ```sh
 chore(xxx): xxx
 ```
-
-## FAQ
-
-### Travis Bad decrypt (Because of Windows)
-
-Remove ssh_rsa env
-
-## Change Log
-
-- 2019-01-22 return to github pages
