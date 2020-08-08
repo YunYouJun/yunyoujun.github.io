@@ -74,7 +74,7 @@ index_generator:
   path: ""
   per_page: 7
   order_by: -updated
-  # - mean descend
+  pagination_dir: page
 
 # Category & Tag
 default_category: uncategorized
@@ -212,16 +212,3 @@ image_minifier:
   pngquant: false
   progressive: false
   silent: false
-
-# https://github.com/hexojs/hexo-math
-math:
-  engine: "mathjax" # or 'katex'
-  mathjax:
-    src: custom_mathjax_source
-    config:
-      # MathJax config
-  katex:
-    css: custom_css_source
-    js: custom_js_source # not used
-    config:
-      # KaTeX config
