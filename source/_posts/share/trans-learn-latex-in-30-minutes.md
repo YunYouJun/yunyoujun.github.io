@@ -31,7 +31,7 @@ LaTeX （发音为 LAY-tek or LAH-tek） 是个用于创建专业外观文档的
 ## 为什么学习 LaTeX ？
 
 LaTeX 在世界范围内用于科学文档，书籍以及许多其他形式的出版。
-它不仅可以创建精美的排版文档，而且还允许用户非常快速地处理排版更为复杂的部分，例如输入数学公式、创建目录、饮用和创建书目以及在所有章节中保持一致的布局。
+它不仅可以创建精美的排版文档，而且还允许用户非常快速地处理排版更为复杂的部分，例如输入数学公式、创建目录、引用和创建书目以及在所有章节中保持一致的布局。
 由于可用的开源软件包数量众多（稍后会详细介绍），所以 LaTeX 的可能性是无穷的。
 这些软件包允许用户使用 LaTeX 做更多的事情，比如添加脚注、绘制图表格、创建表格等。
 
@@ -51,7 +51,7 @@ LaTeX 在世界范围内用于科学文档，书籍以及许多其他形式的�
 \documentclass{article}
 
 \begin{document}
-First document. This is a simple example, with no 
+First document. This is a simple example, with no
 extra parameters or packages included.
 \end{document}
 ```
@@ -146,7 +146,7 @@ extra parameters or packages included.
 
 添加这些行后，您的 `preamble` 应该看起来像这样
 
-``` latex
+```latex
 \documentclass[12pt, letterpaper, twoside]{article}
 \usepackage[utf8]{inputenc}
 
@@ -196,7 +196,7 @@ We have now added a title, author and date to our first \LaTeX{} document!
 现在，我们来看一些简单的文本格式命令。
 
 - **粗体**：LaTeX 中的粗体文本使用 `\textbf{...}` 命令编写。
-- *斜体*：LaTeX 中的斜体文本使用 `\textit{...}` 命令编写。
+- _斜体_：LaTeX 中的斜体文本使用 `\textit{...}` 命令编写。
 - <u>下划线</u>：LaTeX 中带下划线的文本使用 `\underline{...}` 命令编写。
 
 下面展示了其中每个实例的示例：
@@ -245,7 +245,7 @@ were made by accident.}
 \graphicspath{ {images/} }
 
 \begin{document}
-The universe is immense and it seems to be homogeneous, 
+The universe is immense and it seems to be homogeneous,
 in a large scale, everywhere we look at.
 
 \includegraphics{universe}
@@ -263,10 +263,10 @@ LaTeX 不能单独管理图像，因此您需要使用一个包。包可用于�
 该软件包提供了新命令 `\includegraphics{...}` 和 `\graphicspath{...}`。
 要使用 `graphicx` 包，请在你的 `preamble` 中包含以下行：`\usepackage{graphicx}`。
 
-命令 `\graphicspath{ {images/} }告诉 LaTeX，图像被保存在当前目录下名为 *images* 的文件夹中。
+命令 `\graphicspath{ {images/} }告诉 LaTeX，图像被保存在当前目录下名为 _images_ 的文件夹中。
 
 `\includegraphics{universe}` 是将图像实际包含在文档中的命令。
-这里的 *universe*（宇宙）是包含图像的文件不带扩展名时的名称，所以 *universe.PNG* 就变成了 *universe*。
+这里的 _universe_（宇宙）是包含图像的文件不带扩展名时的名称，所以 _universe.PNG_ 就变成了 _universe_。
 图像的文件名不应包含空格或多个点。
 
 > 注意：文件扩展名是被允许包括进来的，但是最好忽略它。如果省略文件扩展名，它将提示 LaTeX 搜索所有支持的格式。在上传图像文件时，通常也建议使用小写字母作为文件扩展名。有关更多详细信息，请参见[生成高分辨率和低分辨率图像](https://cn.overleaf.com/learn/latex/Learn_LaTeX_in_30_minutes#Generating_high-res_and_low-res_images)的部分。
@@ -353,7 +353,7 @@ LaTeX 允许两种用于数学表达式的书写模式：`inline`（内联）模
 让我们看一个 `inline` 模式的例子：
 
 ```latex
-In physics, the mass-energy equivalence is stated 
+In physics, the mass-energy equivalence is stated
 by the equation $E=mc^2$, discovered in 1905 by Albert Einstein.
 ```
 
@@ -368,7 +368,7 @@ The mass-energy equivalence is described by the famous equation
 
 \[ E=mc^2 \]
 
-discovered in 1905 by Albert Einstein. 
+discovered in 1905 by Albert Einstein.
 In natural units ($c = 1$), the formula expresses the identity
 
 \begin{equation}
@@ -381,7 +381,7 @@ E=m
 要在 `display` 模式下打印方程式，请使用以下定界符之一：`\[ ... \]`，`\begin{displaymath} ... \end{displaymath}` 或 `\begin{equation} ... \end{equation}`。
 [不鼓励](https://texfaq.org/FAQ-dolldoll)使用 `$$ ... $$`，因为它会产生不一致的间距，并且和某些数学程序包一起使用时可能表现得不是很好。
 
-> 重要说明：equation* 环境是由外部软件包提供的，请参阅 [amsmath](https://cn.overleaf.com/learn/Aligning_equations) 的文章。
+> 重要说明：equation\* 环境是由外部软件包提供的，请参阅 [amsmath](https://cn.overleaf.com/learn/Aligning_equations) 的文章。
 
 [Open an example in Overleaf](https://www.sharelatex.com/project/new/template?zipUrl=/project/52ec4e44b43917a25a000e96/download/zip&templateName=Math%20Expressions&compiler=pdflatex)
 
@@ -434,7 +434,7 @@ Mathematical operators are prefixed with a backslash as $\sin(\beta)$, $\cos(\al
 \begin{document}
 
 \begin{abstract}
-This is a simple paragraph at the beginning of the 
+This is a simple paragraph at the beginning of the
 document. A brief introduction about the main subject.
 \end{abstract}
 \end{document}
@@ -450,7 +450,7 @@ document. A brief introduction about the main subject.
 \begin{document}
 
 \begin{abstract}
-This is a simple paragraph at the beginning of the 
+This is a simple paragraph at the beginning of the
 document. A brief introduction about the main subject.
 \end{abstract}
 
@@ -485,22 +485,22 @@ This line will start a second Paragraph.
 
 This is the first section.
 
-Lorem  ipsum  dolor  sit  amet,  consectetuer  adipiscing  
-elit.   Etiam  lobortisfacilisis sem.  Nullam nec mi et 
-neque pharetra sollicitudin.  Praesent imperdietmi nec ante. 
+Lorem  ipsum  dolor  sit  amet,  consectetuer  adipiscing
+elit.   Etiam  lobortisfacilisis sem.  Nullam nec mi et
+neque pharetra sollicitudin.  Praesent imperdietmi nec ante.
 Donec ullamcorper, felis non sodales...
 
 \section{Second Section}
 
-Lorem ipsum dolor sit amet, consectetuer adipiscing elit.  
-Etiam lobortis facilisissem.  Nullam nec mi et neque pharetra 
+Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
+Etiam lobortis facilisissem.  Nullam nec mi et neque pharetra
 sollicitudin.  Praesent imperdiet mi necante...
 
 \subsection{First Subsection}
 Praesent imperdietmi nec ante. Donec ullamcorper, felis non sodales...
 
 \section*{Unnumbered Section}
-Lorem ipsum dolor sit amet, consectetuer adipiscing elit.  
+Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
 Etiam lobortis facilisissem
 ```
 
@@ -509,17 +509,16 @@ Etiam lobortis facilisissem
 [Open an example in Overleaf](https://www.sharelatex.com/project/new/template?zipUrl=/project/58a30e7b13712fef4e9df182/download/zip&templateName=Learn%20LaTeX%20in%2020%20minutes:%20Part%209&compiler=pdflatex)
 
 命令 `\section{}` 标记新节的开始，在大括号内设置标题。
-段编号是自动生成的，可以通过在段命令中包含 * 作为 `\section*{} 来禁用。
-我们也可以有 `\subsection{}s，甚至还有 `\subsubsection{}s。下面列出了基本的深度级别：
+段编号是自动生成的，可以通过在段命令中包含 \* 作为 `\section*{}`来禁用。 我们也可以有多个`\subsection{}`，也可以有多个`\subsubsection{}`。下面列出了基本的深度级别：
 
-| -1 | \part{part} |
-| --- | --- |
-| 0 | \chapter{chapter} |
-| 1 | \section{section} |
-| 2 | \subsection{subsection} |
-| 3 | \subsubsection{subsubsection} |
-| 4 | \paragraph{paragraph} |
-| 5 | \subparagraph{subparagraph} |
+| -1  | \part{part}                   |
+| --- | ----------------------------- |
+| 0   | \chapter{chapter}             |
+| 1   | \section{section}             |
+| 2   | \subsection{subsection}       |
+| 3   | \subsubsection{subsubsection} |
+| 4   | \paragraph{paragraph}         |
+| 5   | \subparagraph{subparagraph}   |
 
 请注意，`\part` 和 `\chapter` 仅在 `report`（报告）和 `book`（书籍）文档类中可用。
 
@@ -535,7 +534,7 @@ Etiam lobortis facilisissem
 \begin{center}
 \begin{tabular}{ c c c }
  cell1 & cell2 & cell3 \\
- cell4 & cell5 & cell6 \\  
+ cell4 & cell5 & cell6 \\
  cell7 & cell8 & cell9
 \end{tabular}
 \end{center}
@@ -654,22 +653,22 @@ Table \ref{table:data} is an example of referenced \LaTeX{} elements.
 
 This is the first section.
 
-Lorem  ipsum  dolor  sit  amet,  consectetuer  adipiscing  
-elit.   Etiam  lobortisfacilisis sem.  Nullam nec mi et 
-neque pharetra sollicitudin.  Praesent imperdietmi nec ante. 
+Lorem  ipsum  dolor  sit  amet,  consectetuer  adipiscing
+elit.   Etiam  lobortisfacilisis sem.  Nullam nec mi et
+neque pharetra sollicitudin.  Praesent imperdietmi nec ante.
 Donec ullamcorper, felis non sodales...
 
 \addcontentsline{toc}{section}{Unnumbered Section}
 \section*{Unnumbered Section}
 
-Lorem ipsum dolor sit amet, consectetuer adipiscing elit.  
-Etiam lobortis facilisissem.  Nullam nec mi et neque pharetra 
+Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
+Etiam lobortis facilisissem.  Nullam nec mi et neque pharetra
 sollicitudin.  Praesent imperdiet mi necante...
 
 \section{Second Section}
 
-Lorem ipsum dolor sit amet, consectetuer adipiscing elit.  
-Etiam lobortis facilisissem.  Nullam nec mi et neque pharetra 
+Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
+Etiam lobortis facilisissem.  Nullam nec mi et neque pharetra
 sollicitudin.  Praesent imperdiet mi necante...
 
 \end{document}
