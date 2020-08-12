@@ -11,7 +11,7 @@ comment:
   tips:
     - 尝试使用 utterances （基于 GitHub Issues）评论系统。
     - 您可以点击下方按钮切换对应评论系统，
-    - <script>function showUtterances(){ document.getElementsByClassName("utterances")[1].style.display='block'; document.querySelector('#valine-container').style.display='none'; }function showValine(){ document.querySelector('#valine-container').style.display='block'; document.getElementsByClassName("utterances")[1].style.display='none'; }</script>
+    - <script>function showUtterances(){ document.querySelector(".utterances").style.display='block'; document.querySelector('#valine-container').style.display='none'; }function showValine(){ document.querySelector('#valine-container').style.display='block'; document.querySelector(".utterances").style.display='none'; }</script>
     - <a class="hty-button hty-button--raised" onclick="showValine()">Valine</a><a class="hty-button hty-button--raised" onclick="showUtterances()">utterances</a>
     - <style>.utterances{display:none;}</style>
 
