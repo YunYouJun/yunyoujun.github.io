@@ -5,7 +5,7 @@
 
 Hexo 主题：[Yun](https://github.com/YunYouJun/hexo-theme-yun/)
 
-- 主站：<https://www.yunyoujun.cn>
+- 主站：[yunyoujun.cn](https://www.yunyoujun.cn) | [yunyoujun.github.io](https://yunyoujun.github.io)
 - 备用：<https://yunyoujun.netlify.app>
 
 ## Use
