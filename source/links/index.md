@@ -7,7 +7,6 @@ description: 云游的小伙伴们
 comments: true
 links: https://friends.yunyoujun.cn/links.json
 random: true
-tip: 友链加载中～如失败请刷新重试～
 ---
 
 <details>
