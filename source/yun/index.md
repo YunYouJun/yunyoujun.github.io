@@ -3,9 +3,7 @@ title: Yun Test
 date: 2020-03-23 02:02:15
 updated: 2020-03-23 02:02:15
 type:
-# katex: true
-math: true
-# mathjax: true
+katex: true
 ---
 
 ## [KaTeX](https://katex.org/)

@@ -1,7 +1,7 @@
 ---
 title: el-bot & mirai-ts 制作笔记
 date: 2020-06-22 02:16:53
-updated: 2020-08-02 20:16:53
+updated: 2020-08-20 20:16:53
 tags:
   - 项目
   - 笔记
@@ -9,16 +9,6 @@ tags:
   - GitHub
 categories: 云游的小笔记
 ---
-
-> 2020-08-02  
-> mirai 已清空仓库，故 el-bot 与 mirai-ts 也将停止维护。
-> 虽然想过终有一天会结束，但没想到来得这么快。
-> 这一切都是机关的阴谋。
-
----
-
-> 没有未来的未来不是我想要的未来。
-> —— 神原秋人 「境界的彼方」
 
 [mirai-ts](https://github.com/YunYouJun/mirai-ts) 是 [mirai-api-http](https://github.com/mamoe/mirai-api-http) 的 TypeScript/JavaScript SDK。
 [el-bot](https://github.com/ElpsyCN/el-bot) 是一个基于 [mirai-ts](https://github.com/YunYouJun/mirai-ts) 使用 TypeScript/JavaScript 编写，可配置、可自定义插件的 QQ 机器人。
@@ -65,6 +55,12 @@ el-bot 展示了整个 mirai-ts 的使用流程，并内置了一些如自动应
 虽然尚未发布 1.0 版本，但看起来不错，更应了我心心念念的开源之思，便再度回想起当初弃坑多次的 QQ 机器人，暗道，爷的青春又回来了。（~~到底有几个青春啊~~）
 
 > 文章的建立日期是 2020-04-25，所以大约是这个时候
+
+[![QQ Group](https://img.shields.io/badge/qq%20group-707408530-12B7F5)](https://shang.qq.com/wpa/qunwpa?idkey=5b0eef3e3256ce23981f3b0aa2457175c66ca9194efd266fd0e9a7dbe43ed653)
+
+附上交流群号 707408530，征集小白鼠。（我自己目前使用基本没有问题。）
+
+> QQ 机器人的交流群要是不是 QQ 群就实在太奇怪了。
 
 ## 起步
 
@@ -202,21 +198,23 @@ ADD-SP 决定放弃 el-bot-go 的维护，后续参与 el-bot-js 的维护。
 
 el-bot 与 mirai-ts 将暂时停止开发维护，观望 mirai 最终去向再作决定。（~~好像还变向给自己腾出了时间~~）
 
----
+> 2020-08-02  
+> mirai 已清空仓库，故 el-bot 与 mirai-ts 也将停止维护。
+> 虽然想过终有一天会结束，但没想到来得这么快。
+> 这一切都是机关的阴谋。
 
 mirai 已经清库跑路，el-bot 与 mirai-ts 也将停止开发。
 
----
-
 虽然想过终有一天会结束，但没想到来得这么快。
 
-<!--
-[![QQ Group](https://img.shields.io/badge/qq%20group-707408530-12B7F5)](https://shang.qq.com/wpa/qunwpa?idkey=5b0eef3e3256ce23981f3b0aa2457175c66ca9194efd266fd0e9a7dbe43ed653)
+---
 
-最最后附上交流群号 707408530，征集小白鼠。（我自己目前使用基本没有问题。）
+> 没有未来的未来不是我想要的未来。
+> —— 神原秋人 「境界的彼方」
 
-> QQ 机器人的交流群要是不是 QQ 群就实在太奇怪了。
--->
+### 2020-08-16 mirai 复活！
+
+mirai: 「想不到吧，爷又活了。」
 
 ---
 
