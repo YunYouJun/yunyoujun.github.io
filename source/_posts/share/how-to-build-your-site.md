@@ -1,7 +1,7 @@
 ---
 title: 教你如何从零开始搭建一个属于自己的网站
 date: 2020-03-05 01:31:08
-updated: 2020-05-14 16:31:00
+updated: 2020-07-14 16:31:00
 tags:
   - 教程
   - Hexo
@@ -79,6 +79,16 @@ npm config set registry https://registry.npm.taobao.org
 ```
 
 > [npm & yarn 常用包与命令](https://www.yuque.com/yunyoujun/notes/npm-and-yarn#nrm)
+
+---
+
+> [yarn](https://www.yarnpkg.com/zh-Hans/) 是 Facebook 出品的另一个包管理工具，同样可以管理 npm 中的包，安装已缓存的包时速度更快，你也可以使用它来替代 npm。
+
+[官网](https://classic.yarnpkg.com/zh-Hans/docs/install#mac-stable)下载或通过命令行安装。
+
+```sh
+npm install -g yarn
+```
 
 ### Git 与 GitHub
 
@@ -264,6 +274,7 @@ theme: yun
 
 ```sh
 npm install hexo-render-pug hexo-renderer-stylus
+# 如果出问题，可以换 yarn 安装试试。
 ```
 
 这时再像此前那般使用 `hexo server` 重新启动服务器，你就可以看到一个不一样的主题风格的页面了。
