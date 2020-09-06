@@ -22,6 +22,7 @@ timezone: Asia/Shanghai
 ## If your site is put in a subdirectory, set url as 'https://yoursite.com/child' and root as '/child/'
 url: https://www.yunyoujun.cn
 root: /
+# posts/:name/
 permalink: :title/ # :category/:title
 permalink_defaults:
   lang: en
