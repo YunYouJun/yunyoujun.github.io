@@ -2,6 +2,10 @@ mode: auto
 
 avatar:
   url: /images/avatar.jpg
+  status:
+    enable: true
+    emoji: 😭
+    message: 不想上学
 
 reward:
   enable: true
