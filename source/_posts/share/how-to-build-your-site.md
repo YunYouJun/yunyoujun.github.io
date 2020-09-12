@@ -494,6 +494,28 @@ hexo new post xxx
 
 上面是渲染过后的效果，你可以与其 Markdown 的[纯文本原文](https://raw.githubusercontent.com/YunYouJun/star-markdown-css/master/demo/md/demo.md)进行对比。
 
+##### 添加标签/分类
+
+例如本文 Markdown 的头部。
+
+> [Front-matter](https://hexo.io/zh-cn/docs/front-matter.html)
+
+```md
+---
+title: 教你如何从零开始搭建一个属于自己的网站
+date: 2020-03-05 01:31:08
+updated: 2020-07-14 16:31:00
+tags:
+  - 教程
+  - Hexo
+  - 分享
+categories:
+  - 云游的小安利
+---
+
+你的文章内容
+```
+
 #### 页面
 
 你可以新建一些自己的自定义页面。
@@ -606,6 +628,7 @@ hexo new page xxx
 如果还有其他小问题，可以到 [QQ 群](https://shang.qq.com/wpa/qunwpa?idkey=3bd19a05aaccb2b60c396295c8617b3a9e667821a495e8cd7e1698ff95ab61c6)（389401003）里反馈。
 
 > 如果是更通用的问题，最好在评论中进行反馈，这样别的同学也能看到，不需要重复提问。
+> 主题相关问题请到 [Issues ｜ hexo-theme-yun](https://github.com/YunYouJun/hexo-theme-yun/issues) 反馈。
 
 ![hexo-qrcode](https://cdn.jsdelivr.net/gh/YunYouJun/cdn/img/about/hexo-qrcode.jpg)
 
