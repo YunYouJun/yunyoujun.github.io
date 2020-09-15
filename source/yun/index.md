@@ -42,9 +42,7 @@ $$ E = mc^2 $$
 </div>
 
 ```html
-<div>
-  \[ E = mc^2 \]
-</div>
+<div>\[ E = mc^2 \]</div>
 ```
 
 ---
@@ -103,4 +101,14 @@ $$ w_{t+1}=w_t-\eta_t=w_t-lr*{\frac {m_t}{\sqrt V_t}}=w_t-lr*g_t $$
 $$ {\Rightarrow \boxed{w_{t+1}=w_t-lr*{\frac {\partial loss}{\partial w_t}}}} $$
 
 </font>
+```
+
+<div>
+$$ \begin{bmatrix} a & b \\ c & d \end{bmatrix} $$
+</div>
+
+```latex
+<div>
+$$ \begin{bmatrix} a & b \\ c & d \end{bmatrix} $$
+</div>
 ```
