@@ -156,15 +156,20 @@ marked:
   breaks: true
   smartLists: true
   smartypants: true
+  quotes: "“”‘’"
   modifyAnchors: 0
   autolink: true
+  mangle: true
   sanitizeUrl: false
   headerIds: true
+  lazyload: false
   prependRoot: false
+  postAsset: false
   external_link:
     enable: false
     exclude: []
     nofollow: false
+  disableNunjucks: false
 
 markdown_it_plus:
   plugins:

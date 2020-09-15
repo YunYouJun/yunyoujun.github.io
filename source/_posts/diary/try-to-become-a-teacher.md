@@ -181,9 +181,11 @@ Wappalyzer 告诉我它似乎使用了 jQuery，还是 v1.11.1 的远古版本�
 
 大概是像素较低的原因，存储后访达预览竟然自动有了马赛克的效果。
 
-![自动预览马赛克？](https://i.loli.net/2020/09/12/yNRn3geqaFhEBbu.png)
+![150-200-blur.jpg](https://i.loli.net/2020/09/15/t6E7LNFeUro4dWv.jpg)_我是谁？_
 
-二次元的事就不拿三次元人物类比了，大家可以脑补一下鲁鲁修。
+二次元的事就不拿三次元人物类比了，大家可以自由脑补一下。
+
+![150-200 copy.jpg](https://i.loli.net/2020/09/15/ke2rb6fJQZUPyBM.jpg)_鲁鲁修_
 
 ---
 
