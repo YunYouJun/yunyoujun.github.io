@@ -62,3 +62,9 @@ albums:
 
 minivaline:
   enable: false
+
+local_search:
+  enable: true
+
+algolia_search:
+  enable: false
