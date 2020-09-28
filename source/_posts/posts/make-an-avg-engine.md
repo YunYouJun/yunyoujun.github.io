@@ -1,11 +1,12 @@
 ---
 title: ADV 游戏引擎计划
-date: 2020-08-09 19:33:17
-updated: 2020-08-09 19:33:17
+date: 2020-09-28 19:33:17
+updated: 2020-09-28 19:33:17
 tags:
   - 前端
   - Vue
   - ADV
+  - AVG
 categories:
   - 云游的小项目
 ---
@@ -48,7 +49,7 @@ ADV/AVG 的游戏引擎已经有很多，但都各有千秋。
 - [NScripter](http://www.nscripter.com/): C++，非商业免费，Windows 平台，代表作「寒蝉鸣泣之时」，上一个稳定版本发布于 2015 年。
 - [AVG32、RealLive、SiglusEngine](https://zh.wikipedia.org/wiki/Visual_Art%27s)：[Visual Art's](http://visual-arts.jp/) 公司开发，Key 社游戏「CLANNAD」等均用此开发，但很明显这种商业级咱接触不到。
 - [BKEngine](https://bke.bakery.moe/): C++，面包工坊，非商业免费、跨平台，但是制作工具不跨平台（只有 Windows）。
-- [AVG.js](https://avgjs.org/)：JavaScript，开源，基于 Pixi.js 与 React，Web 端运行。但是作者 [Icemic](https://github.com/Icemic) 是个大 🐦，所以已经几年没有更新了。
+- [AVG.js](https://avgjs.org/)：JavaScript，开源，基于 Pixi.js 与 React，Web 端运行。但是作者 [Icemic](https://github.com/Icemic) 是个大 🐦，所以已经几年没有更新了。（不过作者也在 BKEngine 的面包工坊。）
 - [Librian](https://github.com/RimoChan/Librian): Python，开源，跨平台，Galgame | Visual Novel 引擎，[作者](https://github.com/RimoChan) 还有在做 [Vtuber](https://space.bilibili.com/546884063/)，可惜是个变态。
 - [橙光制作工具](https://www.66rpg.com/redirect/doDownload)：免费易操作，只有 Windows 平台，但是因为 [如何看待橙光游戏签约合同中版权永久属于橙光，而作者仅保留署名权？](https://www.zhihu.com/question/50741861)，好感直线下降。
 
@@ -56,17 +57,33 @@ ADV/AVG 的游戏引擎已经有很多，但都各有千秋。
 
 那么已经有这么多的引擎，为什么还要执意造轮子呢？
 
-因为自己日常开发使用 Mac，所以可以排除掉大半，去掉过于古老的。再排除掉鸽子和变态（~~开玩笑，当然不是这个主要原因，难道是次要的？？？~~）。
+因为自己日常开发使用 Mac，所以可以排除掉大半，去掉过于古老的，去掉客户端开发的，再排除掉鸽子和变态（~~开玩笑，当然这个不是主要原因，难道是次要的？？？~~）。
 
-我想要制作一个更偏向于前端、轻量可扩展的，尽可能使用 HTML/CSS 替代 Canvas 绘制。
+我想要制作一个更偏向于前端、轻量可扩展的 AVG 游戏引擎（框架？），尽可能使用 HTML/CSS 本身属性效果替代 Canvas 绘制。
 
-其次，即便功能相似，只要语言不同，就不算重复造轮子，有了 Spring Boot，也有 Express/Koa/Nest.js、Laravel、Django。
+其次，即便功能相似，只要语言不同，对于不同语言的偏好者便有其存在的意义，就不算重复造轮子，有了 Spring Boot，同样也有 Express/Koa/Nest.js、Laravel、Django 的诞生。
+
+（~~至于跑在浏览器，又有什么比得过 JavaScript 的天然优势呢？~~）
 
 ### 怎么做？
 
-TypeScript + Vue3.0
+目前预定的技术栈是 TypeScript + Vue@3.0。
 
-## 调研
+规范开发，上 TypeScript 已经无须异议。
+
+而 Vue3 正式版总算姗姗来迟，且本身便使用了 TypeScript 重写，对 TS 的支持也有了提升。（次要原因则是练习一下 Vue3 啦。~~👴 学不动了~~）
+
+> 为什么不用 React？AVG.js 便是基于 React，翻新这件事应该原 🐦 本人来做，而我用 React 重写类似功能一来未必胜过原作，二来也未必有必要。此外个人 Vue 相比 React 要熟悉一些。
+
+#### 词法解析
+
+但是在此之前，我们应当有一个剧本文本解析器，用于解析按照一定格式编写的剧本。
+
+目前打算参照 [liber-language](https://github.com/librian-center/liber-language)，采用 JS 实现，并在浏览器端展示实时解析的效果。
+
+至于剩下的……，等我先写完当前的再说吧！
+
+...
 
 ---
 
