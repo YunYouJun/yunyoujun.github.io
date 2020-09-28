@@ -41,7 +41,7 @@ el-bot 展示了整个 mirai-ts 的使用流程，并内置了一些如自动应
 
 此前我也曾经尝试使用诸如 [qqbot](https://github.com/pandolia/qqbot)、酷 Q 的 [nonebot](https://github.com/nonebot/nonebot) 搭建过 QQ 机器人。
 
-还有过两篇黑历史一样的文章，[小爱是云游最好的女朋友（大雾）](https://www.yunyoujun.cn/project/QQ-XiaoAi/) 和 [酷 Q 使用笔记](https://www.yunyoujun.cn/note/coolq-use-note/)。
+还有过两篇黑历史一样的文章，[小爱是云游最好的女朋友（大雾）](https://www.yunyoujun.cn/posts/qq-xiao-ai/) 和 [酷 Q 使用笔记](https://www.yunyoujun.cn/note/coolq-use-note/)。
 
 > 真的猛士，敢于直面惨淡的博客，敢于正视羞耻的历史。
 

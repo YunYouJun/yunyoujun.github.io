@@ -18,9 +18,20 @@ comment:
   candidates:
     - valine
     - utterances
+    # - disqus
 
 github_issues:
   enable: false
+
+# disqus:
+#   enable: true
+
+# utterances:
+#   enable: true
+#   repo: YunYouJun/yunyoujun.github.io
+#   issue-term: pathname
+#   label: comment
+#   theme: preferred-color-scheme
 
 valine:
   enable: true
@@ -186,10 +197,3 @@ say:
   api: https://el-bot-api.vercel.app/api/words/young
   hitokoto:
     enable: false
-
-utterances:
-  enable: true
-  repo: YunYouJun/yunyoujun.github.io
-  issue-term: pathname
-  label: comment
-  theme: preferred-color-scheme

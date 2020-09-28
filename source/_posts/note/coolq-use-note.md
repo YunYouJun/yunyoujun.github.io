@@ -178,7 +178,7 @@ pip install nonebot
 
 ### GitHub Webhook
 
-[WebHooks-自动部署](https://yunyoujun.cn/project/QQ-XiaoAi/#WebHooks-自动部署)
+[WebHooks-自动部署](https://yunyoujun.cn/posts/qq-xiao-ai/#WebHooks-自动部署)
 
 ## FAQ
 
