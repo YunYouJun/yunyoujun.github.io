@@ -22,8 +22,10 @@ comment:
 github_issues:
   enable: true
 
-disqus:
+disqusjs:
   enable: true
+  shortname: yunyoujun
+  apikey: ouoGQCaamOKdJgyZU5DKcpFnRIg3SNzvk0nwygPtlcTRJuE68c8igvrZGW4wAJoN
 
 valine:
   enable: true
