@@ -1,0 +1,18 @@
+cdn:
+  pre: https://cdn.jsdelivr.net/gh/YunYouJun/yunyoujun.github.io@latest
+
+utterances:
+  enable: true
+  repo: YunYouJun/yunyoujun.github.io
+  issue-term: pathname
+  label: comment
+  theme: preferred-color-scheme
+
+bg_image:
+#   dark: https://cdn.jsdelivr.net/gh/YunYouJun/cdn/img/bg/mountain.jpg
+#   dark: https://cdn.jsdelivr.net/gh/YunYouJun/cdn/img/bg/galaxy.jpg
+
+# ---
+# social:
+# qq
+# https://wpa.qq.com/msgrd?v=3&uin=910426929&site=qq&menu=yes
