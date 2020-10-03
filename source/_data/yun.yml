@@ -13,25 +13,17 @@ reward:
 
 comment:
   tips:
-    - 尝试使用 utterances （基于 GitHub Issues）评论系统。
-    - 您可以点击下方按钮切换对应评论系统，
+    - 尝试使用 Disqus 评论系统。
+    - 您可以点击下方按钮切换对应评论系统。
   candidates:
     - valine
-    - utterances
-    # - disqus
+    - disqusjs
 
 github_issues:
-  enable: false
+  enable: true
 
-# disqus:
-#   enable: true
-
-# utterances:
-#   enable: true
-#   repo: YunYouJun/yunyoujun.github.io
-#   issue-term: pathname
-#   label: comment
-#   theme: preferred-color-scheme
+disqus:
+  enable: true
 
 valine:
   enable: true
@@ -117,13 +109,13 @@ algolia_search:
   enable: true
   # ...
 
-google_adsense:
-  enable: true
-  client: ca-pub-2245427233262012
-
 google_analytics:
   enable: true
   id: UA-121354150-1
+
+google_adsense:
+  enable: true
+  client: ca-pub-2245427233262012
 
 post_edit:
   enable: true
@@ -164,9 +156,6 @@ pages:
     icon: icon-women-line
     color: hotpink
 
-# cdn:
-#   pre: https://cdn.jsdelivr.net/gh/YunYouJun/yunyoujun.github.io@latest
-
 menu:
   custom:
     title: 留言板
@@ -181,14 +170,6 @@ baidu_push: true
 google_tagmanager:
   enable: true
   id: GTM-M9KWR9L
-# bg_image:
-# dark: https://cdn.jsdelivr.net/gh/YunYouJun/cdn/img/bg/mountain.jpg
-# dark: https://cdn.jsdelivr.net/gh/YunYouJun/cdn/img/bg/galaxy.jpg
-
-# ---
-# social:
-# qq
-# https://wpa.qq.com/msgrd?v=3&uin=910426929&site=qq&menu=yes
 
 wordcount:
   enable: true
