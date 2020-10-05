@@ -48,7 +48,7 @@ ADV/AVG 的游戏引擎已经有很多，但都各有千秋。
 **以下是个人的调研（搜索）简要评估，仅为个人观点，欢迎指正。**
 
 - [吉里吉里](https://zh.wikipedia.org/wiki/%E5%90%89%E9%87%8C%E5%90%89%E9%87%8C): C++，老牌 AVG 游戏引擎，著名的 Fate/stay night 便是用其制作。但是上一个稳定版本已经是十年前，很久没有更新了。
-- [Ren'Py](http://www.renpy.org/): Python，代表作「心跳文学部」(~~我老婆的 [Tittwer](https://twitter.com/lilmonix3)~~)，开源万岁，并且直到现在更新也很活跃，如果喜欢 Python，是个不错的选择。
+- [Ren'Py](http://www.renpy.org/): Python，代表作「心跳文学部」(~~我老婆的 [Tittwer](https://twitter.com/lilmonix3)~~)，开源万岁，并且直到现在更新也很活跃，如果喜欢 Python，是个不错的选择。不过需要预编译，剧本与程序未分离。（定位于浏览器端的话，JS 更有优势。）
 - [NScripter](http://www.nscripter.com/): C++，非商业免费，Windows 平台，代表作「寒蝉鸣泣之时」，上一个稳定版本发布于 2015 年。
 - [AVG32、RealLive、SiglusEngine](https://zh.wikipedia.org/wiki/Visual_Art%27s)：[Visual Art's](http://visual-arts.jp/) 公司开发，Key 社游戏「CLANNAD」等均用此开发，但很明显这种商业级咱接触不到。
 - [BKEngine](https://bke.bakery.moe/): C++，面包工坊，非商业免费、跨平台，但是制作工具不跨平台（只有 Windows）。
@@ -69,6 +69,10 @@ ADV/AVG 的游戏引擎已经有很多，但都各有千秋。
 （~~至于跑在浏览器，又有什么比得过 JavaScript 的天然优势呢？~~）
 
 > 近年来，也有云游戏的概念诞生，但此多基于视频流。对于 AVG/ADV 类型游戏来说，显然是不划算的，我们完全可以将压力不大的运算放到用户浏览器，将需要额外加载的图片/音频等资源放至云端的 CDN，只预加载临近的资源。既降低了带宽压力也不用担心操作的延迟。
+
+浏览器自带的控制台、可选中的元素、可扩展的前端 UI 与背靠 Node.js npm 庞大生态的程序也很适合做 [Meta Game - 元游戏](https://en.wikipedia.org/wiki/Metagaming)。
+
+> [metagame 是什么？ - 知乎](https://www.zhihu.com/question/23820876)
 
 #### 技术之外的原因
 
