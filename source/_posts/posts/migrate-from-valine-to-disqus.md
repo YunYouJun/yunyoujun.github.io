@@ -1,7 +1,7 @@
 ---
 title: 如何从 Valine 迁移至 Disqus
 date: 2020-10-03 15:09:13
-updated: 2020-10-03 15:09:13
+updated: 2020-10-06 15:09:13
 tags:
   - Disqus
   - Valine
@@ -85,11 +85,11 @@ Disqus 的格式本质是一个 XML 文件，我们只要将原先的 JSON 数�
 
 前往 <https://你的名字.disqus.com/admin/discussions/import/platform/wordpress/> 或 <https://import.disqus.com/> 进行导入。
 
-> 对了，Disqus 官方提示可能需要 24 h 才能剩下。（我也不知道为什么要这么久……）
+> 对了，Disqus 官方提示最长可能需要 24 h 才能完成。（我也不知道为什么要这么久，目前还挺快的……）
 
 ![让我先整整你](https://i.loli.net/2020/10/03/p8QgJs4TtEhOzX3.jpg)
 
-One day later...
+![2000 YEARS LATER](https://i.loli.net/2020/10/06/14Ih5AyknRNxajl.png)
 
 ---
 
