@@ -74,6 +74,14 @@ public function boot()
 }
 ```
 
+### 停止维护时间戳
+
+```php
+class Xxx extends Model {
+  public $timestamps= false;
+}
+```
+
 ## 模版插件
 
 ### Laravel-admin
