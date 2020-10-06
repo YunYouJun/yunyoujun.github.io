@@ -218,3 +218,8 @@ image_minifier:
   pngquant: false
   progressive: false
   silent: false
+
+# hexo-tag-common
+# https://github.com/YunYouJun/hexo-tag-common
+tag_common:
+  cdn: false
