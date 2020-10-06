@@ -222,4 +222,4 @@ image_minifier:
 # hexo-tag-common
 # https://github.com/YunYouJun/hexo-tag-common
 tag_common:
-  cdn: false
+  cdn: true
