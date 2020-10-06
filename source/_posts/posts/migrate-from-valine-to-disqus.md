@@ -78,6 +78,9 @@ Disqus 的格式本质是一个 XML 文件，我们只要将原先的 JSON 数�
 
 > 用 [Node.js](https://nodejs.org/) 写的，有用 Valine 的人，应该基本都有 Node.js 环境吧！
 
+不过头像只有你配置过 [SSO](https://help.disqus.com/en/articles/1717160-integrating-single-sign-on) 才能使用，Disqus 格式中也没有其他包括头像的字段。所以 Valine 本来根据邮箱调用的 Gravatar 头像会丢失。
+暂时没有想到什么好的解决办法。（不过可以去 Admin -> Setting -> General 处设置一下默认头像，换成其他好看点的。）
+
 ### 导入 Disqus
 
 前往 <https://你的名字.disqus.com/admin/discussions/import/platform/wordpress/> 或 <https://import.disqus.com/> 进行导入。
