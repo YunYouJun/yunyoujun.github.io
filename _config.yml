@@ -229,4 +229,5 @@ tag_common:
 # https://github.com/YunYouJun/hexo-widget-tree
 widget_tree:
   cdn: false
-  hide: true
+  hide: false
+  layout: tree
