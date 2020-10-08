@@ -3,7 +3,6 @@ title: Yun Test With hexo-tag-common
 date: 2020-10-06 20:02:15
 updated: 2020-10-06 20:02:15
 type:
-katex: true
 ---
 
 ## [hexo-tag-common](https://github.com/YunYouJun/hexo-tag-common)
