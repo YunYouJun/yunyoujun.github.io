@@ -109,7 +109,8 @@ pagination_dir: page
 # Extensions
 # Plugins: https://hexo.io/plugins/
 # Themes: https://hexo.io/themes/
-# https://yun.yunyoujun.cn
+# Docs: https://yun.yunyoujun.cn
+# https://github.com/YunYouJun/hexo-theme-yun
 theme: yun
 
 # Deployment
@@ -223,3 +224,9 @@ image_minifier:
 # https://github.com/YunYouJun/hexo-tag-common
 tag_common:
   cdn: false
+
+# hexo-widget-tree
+# https://github.com/YunYouJun/hexo-widget-tree
+widget_tree:
+  cdn: false
+  hide: true

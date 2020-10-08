@@ -252,6 +252,13 @@ pjax 适配一些插件和第三方功能时（而且有些根本就不支持重
 
 因为功能基本齐备，2.0 可能将主要在样式上做文章。
 
+### 2020-10-07 Hexo Plugins
+
+因为有人提了 Feature Request，但是又不想在主题上添加，显得过于臃肿，所以另外整了两个插件。（即便使用其他主题，也可使用。）
+
+- [hexo-tag-common](https://github.com/YunYouJun/hexo-tag-common): [#74](https://github.com/YunYouJun/hexo-theme-yun/issues/74) 实现一些扩展的 Hexo 标签语法
+- [hexo-widget-tree](https://github.com/YunYouJun/hexo-widget-tree): [#75](https://github.com/YunYouJun/hexo-theme-yun/issues/75) 实现挂件树状菜单 Deving...
+
 ---
 
 To Be Continued.
