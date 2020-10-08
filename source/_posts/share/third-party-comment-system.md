@@ -49,6 +49,8 @@ categories:
 
 其实如果不是因为被墙，我还是很想直接用 Disqus 的，但是我还是有评论就很高兴的人，所以不想因此而有过高门槛。
 
+> 对了，后来我写了一个 valine 转 disqus 评论的小工具。见 [如何从 Valine 迁移至 Disqus](https://www.yunyoujun.cn/posts/migrate-from-valine-to-disqus/)。
+
 ### [Gitalk](https://gitalk.github.io/)
 
 在 [Gitalk](https://github.com/gitalk/gitalk) 诞生之前，还有一款 [Gitment](https://github.com/imsun/gitment/)。

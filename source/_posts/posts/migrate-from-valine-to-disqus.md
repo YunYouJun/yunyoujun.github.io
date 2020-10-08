@@ -81,7 +81,7 @@ Disqus 的格式本质是一个 XML 文件，我们只要将原先的 JSON 数�
 
 ### 导入 Disqus
 
-前往 <https://你的名字.disqus.com/admin/discussions/import/platform/wordpress/> 或 <https://import.disqus.com/> 进行导入。
+前往 <https://你的名字.disqus.com/admin/discussions/import/platform/wordpress/> 或 <https://import.disqus.com/>（这个可以看到导入的进度和状况） 进行导入。
 
 > 对了，Disqus 官方提示最长可能需要 24 h 才能完成。（我也不知道为什么要这么久，目前还挺快的……）
 
