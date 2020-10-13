@@ -36,7 +36,9 @@ categories:
 
 ## 过程
 
-### 需要先安装 python (起先是自己在 Windows 上先试验看看的)，官网下载地址 <https://www.python.org/download>
+### 安装 python
+
+[官网下载地址](https://www.python.org/download)
 
 Windows 64 位的话下载 `Windows x86-64 executable installer` 版本即可，其他系统也各自对应。
 

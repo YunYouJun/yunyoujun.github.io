@@ -231,3 +231,6 @@ widget_tree:
   cdn: false
   hide: false
   layout: tree
+  toc:
+    enable: true
+    list_number: false
