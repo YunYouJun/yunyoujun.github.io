@@ -34,6 +34,7 @@ valine:
   # https://github.com/DesertsP/Valine-Admin
   # https://valine.yunyoujun.cn
   placeholder: 大佬求指教&nbsp_(:з」∠)_ （填写邮箱可以收到回复通知～）
+  serverURLs: https://lncld.yunyoujun.cn
   visitor: true
   recordIP: true
   enableQQ: true
