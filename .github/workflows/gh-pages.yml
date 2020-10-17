@@ -16,7 +16,7 @@ jobs:
         with:
           node-version: "12.x"
 
-      - run: yarn install
+      - run: yarn
       - name: algolia
         env:
           HEXO_ALGOLIA_INDEXING_KEY: ${{ secrets.HEXO_ALGOLIA_INDEXING_KEY }}
