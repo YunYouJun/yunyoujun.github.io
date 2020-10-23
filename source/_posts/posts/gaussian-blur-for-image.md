@@ -21,7 +21,7 @@ categories:
 
 而 CSS3 提供了滤镜 [filter](https://developer.mozilla.org/zh-CN/docs/Web/CSS/filter)/[backdrop-filter](https://developer.mozilla.org/zh-CN/docs/Web/CSS/backdrop-filter)，其中的模糊功能同样也是高斯模糊。（Canvas 中的 [filter](https://developer.mozilla.org/zh-CN/docs/Web/API/CanvasRenderingContext2D/filter) 亦是如此。）
 
-只是当我们为图片背景添加 CSS 滤镜时，便会出现出现不和谐的白边。
+只是当我们为图片背景添加 CSS 滤镜时，便会出现不和谐的白边。
 
 虽然有一些奇技淫巧（比如放大图片再截去模糊的边）去解决，但皆治标不治本，我们不妨借此机会探究一下高斯模糊，并尝试自己实现它。
 
@@ -113,7 +113,7 @@ $$ {\displaystyle f(x)={\frac {1}{\sigma {\sqrt {2\pi }}}}e^{-{\frac {\left(x-\m
 因为我们使用中心点作为原点，那么均值 μ 便取 0。（取 1 的时候便是标准正态分布。）
 但看了好多文章（发现很多最后都是抄自阮一峰的那篇……），都是直接假定 σ 为某一个数值，却没有说明原因。
 
-而 OpenCV 源码中则当没有设置 σ 不合法时，按照 $\sigma =0.3*((ksize-1)*0.5 - 1) + 0.8$ 计算得出。而这个 ksize 正是中心点像素及周边像素的矩阵的尺寸，即 2\*模糊半径+1。（OpenCV 文档中也说明其应当是一个奇数，印证了这一观点。）
+而 OpenCV 源码中则当没有设置 σ 或 σ 不合法时，按照 $σ=0.3\*((ksize-1)\*0.5-1)+0.8$ 计算得出。而这个 ksize 正是中心点像素及周边像素的矩阵的尺寸，即 2\*模糊半径+1。（OpenCV 文档中也说明其应当是一个奇数，印证了这一观点。）
 
 > [getGaussianKernel()](https://docs.opencv.org/master/d4/d86/group__imgproc__filter.html#gac05a120c1ae92a6060dd0db190a61afa)
 
@@ -262,7 +262,7 @@ export function blur(
 
 ![30px](https://i.loli.net/2020/10/22/eLYokE6N9RXc3zK.png)
 
-emmm，可是速度很慢，30px 便花了足足 137007ms。
+emmm，可是速度很慢，1119\*559 模糊半径 30px 便花了足足 137007ms。（MacBook Pro 15-inch 2019）
 
 ### 优化？
 
