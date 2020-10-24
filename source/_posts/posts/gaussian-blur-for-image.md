@@ -255,6 +255,8 @@ export function blur(
 }
 ```
 
+遍历图片中的每个像素，并按照高斯权重矩阵进行计算。绘制出计算后的图像。
+
 好，收工。
 
 - 完整示例代码见 [gaussian-blur](https://github.com/YunYouJun/gaussian-blur)
@@ -270,13 +272,16 @@ emmm，可是速度很慢，1119\*559 模糊半径 30px 便花了足足 137007ms
 
 我们来寻找是否有更迅速的方案达成类似的效果。
 
+首先这个高斯矩阵是根据坐标来进行计算的，所以左上、左下、右上、右下的数值翻转后其实是完全一样的。
+所以这期间每个像素有很多重复计算可以缓存下来以优化。（但是因为太懒，我就不写来……）
+
 看到 [基于 Canvas 实现的高斯模糊](https://zhuanlan.zhihu.com/p/98356516) 提到可以将高斯模糊使用一维的高斯函数分别对 x 和 y 轴进行运算以优化速度，但仍旧还是有点慢的。
 
 此外还可以缩小图片、间隔指定数量的像素去计算等。
 
 而在 CodePen 上发现了一个 [canvas Blur](https://codepen.io/zhaojun/pen/zZmRQe) 几乎可以立即实现类似的效果。
 
-其代码也不复杂，我们可以继续稍微优化一下。
+其代码也不复杂，我们可以继续稍微优化一下。（其实就是改成先把矩阵算出来。）
 
 ```typescript
 // 复用计算高斯权重的函数
@@ -333,6 +338,10 @@ export class Blur {
 ![Gaussian Blur Demo](https://i.loli.net/2020/10/22/dmrGI7LoP196zfp.jpg)
 
 很神奇地也能实现类似效果，但模糊程度还是略有不同的。（可以看到 Canvas 的高斯模糊也是有白边的。）
+
+![Fast Gaussian Blur 100px](https://i.loli.net/2020/10/24/PwhE2HLs3qZDSVQ.png)_100px 1043ms_
+
+不过好像有点玻璃上有水滴流下来的那种感觉。
 
 ## 结论
 
