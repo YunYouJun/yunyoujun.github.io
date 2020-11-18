@@ -38,7 +38,7 @@ categories:
 - 静态博客
 - 无服务器
 - GitHub Pages
-- hexo-theme-yun（私货）
+- [hexo-theme-yun](https://github.com/YunYouJun/hexo-theme-yun)（私货）
 
 ## 步骤
 
