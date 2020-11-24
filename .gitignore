@@ -1,6 +1,7 @@
 # custom
 .DS_Store
 Thumbs.db
+tmp
 temp/
 yarn.lock
 package-lock.json
