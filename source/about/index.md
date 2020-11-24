@@ -74,8 +74,14 @@ reward: true
 
 ### 其他
 
-- 明日方舟（官服）：云游君#5367
 - 闲聊兼主题 QQ 群：[389401003](https://shang.qq.com/wpa/qunwpa?idkey=3bd19a05aaccb2b60c396295c8617b3a9e667821a495e8cd7e1698ff95ab61c6)
+
+<details>
+<summary></summary>
+
+- 明日方舟（官服）：云游君#5367
+
+</details>
 
 #### 下方评论区或者 [GitHub Issues](https://github.com/YunYouJun/yunyoujun.github.io/issues/36) 就当作留言板了～（有啥想说的，欢迎留言）
 

@@ -351,7 +351,7 @@ git checkout -b hexo
 
 这时便成功建立了一个 hexo 分支。（此后的工作都将在 hexo 分支下进行）
 
-你可以通过 `git branch -v` 来查看当前有哪些分支，使用 `git branch 分支名` 来切换到对应的分支。
+你可以通过 `git branch -v` 来查看当前有哪些分支，使用 `git checkout 分支名` 来切换到对应的分支。
 
 > [Git 学习笔记](https://www.yunyoujun.cn/note/git-learn-note/)
 
