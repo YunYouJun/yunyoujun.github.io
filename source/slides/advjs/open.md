@@ -418,11 +418,11 @@ Note: 其实之前 LM 同学已经演示过了 Web AR 的效果。
 
 ~~
 
-<i class="ri-user-2-line"></i> Vtuber
+<i class="ri-user-2-line"></i> [Vtuber](https://vtuber.yunyoujun.cn/)
 
 快速制作人物动画
 
-这里放一个人脸的 Demo?
+Note: Web 端 Vtuber 的可能
 
 ~~
 
