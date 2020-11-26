@@ -47,10 +47,10 @@ ADV/AVG 的游戏引擎已经有很多，但都各有千秋。
 
 **以下是个人的调研（搜索）简要评估，仅为个人观点，欢迎指正。**
 
-- [吉里吉里](https://zh.wikipedia.org/wiki/%E5%90%89%E9%87%8C%E5%90%89%E9%87%8C): C++，老牌 AVG 游戏引擎，著名的 Fate/stay night 便是用其制作。但是上一个稳定版本已经是十年前，很久没有更新了。
-- [Ren'Py](http://www.renpy.org/): Python，代表作「心跳文学部」(~~我老婆的 [Twitter](https://twitter.com/lilmonix3)~~)，开源万岁，并且直到现在更新也很活跃，如果喜欢 Python，是个不错的选择。不过需要预编译，剧本与程序未分离。（定位于浏览器端的话，JS 更有优势。）
-- [NScripter](http://www.nscripter.com/): C++，非商业免费，Windows 平台，代表作「寒蝉鸣泣之时」，上一个稳定版本发布于 2015 年。
-- [AVG32、RealLive、SiglusEngine](https://zh.wikipedia.org/wiki/Visual_Art%27s)：[Visual Art's](http://visual-arts.jp/) 公司开发，Key 社游戏「CLANNAD」等均用此开发，但很明显这种商业级咱接触不到。
+- [吉里吉里](https://zh.wikipedia.org/wiki/%E5%90%89%E9%87%8C%E5%90%89%E9%87%8C): C++，老牌 AVG 游戏引擎，著名的 [Fate/stay night](https://zh.wikipedia.org/zh/Fate/stay_night) 便是用其制作。但是上一个稳定版本已经是十年前，很久没有更新了。
+- [Ren'Py](http://www.renpy.org/): Python，代表作「[心跳文学部](https://zh.wikipedia.org/zh-hans/%E5%BF%83%E8%B7%B3%E6%96%87%E5%AD%B8%E9%83%A8%EF%BC%81)」(~~我老婆的 [Twitter](https://twitter.com/lilmonix3)~~)，开源万岁，并且直到现在更新也很活跃，如果喜欢 Python，是个不错的选择。不过需要预编译，剧本与程序未分离。（定位于浏览器端的话，JS 更有优势。）
+- [NScripter](http://www.nscripter.com/): C++，非商业免费，Windows 平台，代表作「[寒蝉鸣泣之时](https://zh.wikipedia.org/wiki/%E6%9A%AE%E8%9F%AC%E6%82%B2%E9%B3%B4%E6%99%82)」，上一个稳定版本发布于 2015 年。
+- [AVG32、RealLive、SiglusEngine](https://zh.wikipedia.org/wiki/Visual_Art%27s)：[Visual Art's](http://visual-arts.jp/) 公司开发，Key 社游戏「[CLANNAD](https://zh.wikipedia.org/zh/CLANNAD)」等均用此开发，但很明显这种商业级咱接触不到。
 - [BKEngine](https://bke.bakery.moe/): C++，面包工坊，非商业免费、跨平台，但是制作工具不跨平台（只有 Windows）。
 - [AVG.js](https://avgjs.org/)：JavaScript，开源，基于 Pixi.js 与 React，Web 端运行。但是作者 [Icemic](https://github.com/Icemic) 是个大 🐦，所以已经几年没有更新了。（不过作者也在 BKEngine 的面包工坊。）
 - [Librian](https://github.com/RimoChan/Librian): Python，开源，跨平台，Galgame | Visual Novel 引擎，[作者](https://github.com/RimoChan) 还有在做 [Vtuber](https://space.bilibili.com/546884063/)，可惜是个变态。

@@ -149,7 +149,7 @@ yarn create vite-app <project-name>
 
 > 官方提供的其实是一个 CSV 文件。D3 也支持读取 CSV 格式的数据，当然我们还是可以先将其转换为 JSON 格式，因为它更通用一些。
 > 为了方便起见，下载下来后，我们可以直接使用 [CSV to JSON](https://csvjson.com/csv2json) 等一些类似的网站进行转换。
-> 得到了 [alphabet.json](https://cbd-lab.github.io/vue-d3-demo/alphabet.json)
+> 最后可以得到 [alphabet.json](https://cbd-lab.github.io/vue-d3-demo/alphabet.json)。
 
 我们可以将其作为一个独立的静态文件，用请求的方式去加载它，而非将其打包在文件中。
 
