@@ -4,8 +4,8 @@ avatar:
   url: /images/avatar.jpg
   status:
     enable: true
-    emoji: 😭
-    message: 不想上学
+    emoji: 💘
+    message: Fall in love.
 
 reward:
   enable: true
