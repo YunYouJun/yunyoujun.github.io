@@ -27,9 +27,9 @@
     "hexo-wordcount": "^6.0.1"
   },
   "devDependencies": {
-    "eslint": "^7.14.0",
+    "eslint": "^7.15.0",
     "eslint-config-hexo": "^4.1.0",
-    "hexo-all-minifier": "0.5.3",
+    "hexo-all-minifier": "0.5.5",
     "hexo-browsersync": "^0.3.0",
     "hexo-server": "^2.0.0"
   },

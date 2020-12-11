@@ -15,6 +15,9 @@ keywords:
   - yunyoujun.cn
   - www.yunyoujun.cn
 author: 云游君
+# language:
+#   - zh-CN
+#   - en
 language: zh-CN
 timezone: Asia/Shanghai
 
@@ -201,6 +204,7 @@ html_minifier:
   exclude:
 css_minifier:
   enable: true
+  silent: false
   exclude:
     - "*.min.css"
 js_minifier:
@@ -218,6 +222,11 @@ image_minifier:
   optimizationLevel: 2
   pngquant: false
   progressive: false
+  silent: false
+js_concator:
+  enable: false
+  bundle_path: "/js/bundle.js"
+  front: false
   silent: false
 
 # hexo-tag-common
