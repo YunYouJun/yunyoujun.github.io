@@ -55,7 +55,7 @@ iframe {
 
 导师：温宇俊、李春芳
 
-<small><i class="ri-community-line"></i> 中国传媒大学</small>
+<small>2020.11.27 <i class="ri-community-line"></i> 中国传媒大学</small>
 
 Note: 老师们中午好。
 
@@ -79,11 +79,9 @@ Note: 老师们中午好。
 - 全球游戏市场收入将在 2020 年 ⬆ 1593 亿美元，⬆ 9.3%。
 - 未来，游戏如何成为新的社交媒体 <i class="ri-group-line"></i>，以及下一代游戏机会否带来新的商业模式等。
 
-Note: 全球游戏、电竞及移动市场的数据研究分析公司 Newzoo 发布
+Note: 由全球游戏、电竞及移动市场的数据研究分析公司 Newzoo 发布
 
-用户/经济/关注度上升
-
-简要总结如下
+简而言之，用户/经济/关注度均在上升
 
 ~~
 
@@ -107,6 +105,14 @@ COVID-19
 - 索尼 <img style="margin:0px;" width="40" src="https://simpleicons.org/icons/playstation.svg" alt="Play Station"> PlayStation Now
 
 Note: 云游戏也称为游戏点播，它可以让玩家在任何设备上游玩游戏，而无需拥有运行游戏所需的实体硬件或本地游戏文件。
+
+此外还有云游戏的模式诞生，有限的硬件资源。
+
+著名的几大厂商也在布局。
+
+~~
+
+回到主题
 
 ~~
 
@@ -132,15 +138,13 @@ Note: ADV 可以说是电子游戏中的最早的类型之一。此类型游戏�
 
 <!-- 1979年雅达利公司设计的《魔幻历险》是《巨洞冒险》的改良版，此游戏有添加图形，亦是世上第一个添加彩蛋的电子游戏。 -->
 
-Note: 克罗赛为了让女儿以及非电脑使用族群能够轻松玩游戏。设定玩家使用自然语言输入指令，而非标准化指令。
+Note:
+
+有趣的是，它的起源正与因特网与人工智能的起源微妙地纠缠在了一起。
+
+克罗赛为了让女儿以及非电脑使用族群能够轻松玩游戏。设定玩家使用自然语言输入指令，而非标准化指令。
 
 1976，史丹佛大学人工智能实验室程序员唐纳德·伍兹，扩充了此游戏。
-
-~~
-
-![70年代星舰迷航记的纯文字电脑游戏](https://i.loli.net/2020/11/25/c5b6LDtwUE8pe42.png)
-
-70 年代星舰迷航记的纯文字电脑游戏
 
 ~~
 
@@ -185,6 +189,14 @@ Note: 目前已有的引擎，以其各自的优势与定位占有一席之地�
 
 ~~
 
+明日方舟剧情系统
+
+![明日方舟剧情系统.png](https://i.loli.net/2020/11/26/T1JEjLmxa7Notq3.png)
+
+Note: 其他类型游戏，同样也有类似的剧情系统。
+
+~~
+
 #### <i class="ri-settings-line"></i> 各有千秋
 
 <small>
@@ -214,12 +226,6 @@ Note: 大多停更/编写使用繁琐/无法跨平台/技术陈旧
 - 剧本演出
 - 立绘生成
 - ...
-
-~~
-
-明日方舟剧情系统
-
-![明日方舟剧情系统.png](https://i.loli.net/2020/11/26/T1JEjLmxa7Notq3.png)
 
 ~~
 
@@ -291,7 +297,7 @@ Ready Player One
 
 <i class="ri-pushpin-2-line"></i> 可行性支持
 
-- 游戏性能不敏感
+- AVG 游戏性能不敏感
 - 不断提升的浏览器特性
 - 强大的 WebGL 绘制能力
 - 丰富的社区公共库资源
@@ -311,6 +317,12 @@ Ready Player One
 <i class="ri-live-line"></i> 文本实时解析/绘制
 
 Note: 云游戏并不仅仅是视频流的实现方案，而是一个按需加载的应用程序。AVG 类型游戏本就对性能不敏感，而游戏本体却往往非常巨大，
+
+视频流对于运营商成本过高。
+
+地区各节点布置服务器。只有大厂商能做。
+
+只传输必要的数据流，客户端按需加载，渲染。
 
 ~~
 
@@ -359,6 +371,16 @@ All in Text.
 
 ~~
 
+[A documental approach to adventure game development](https://www.sciencedirect.com/science/article/pii/S0167642307000524)
+
+Markup
+
+```html
+<adv-game></adv-game>
+```
+
+~~
+
 [markdown-it](https://github.com/markdown-it/markdown-it) VS [marked](https://github.com/markedjs/marked)
 
 <iframe width="1200" height="600" src="https://adv.js.org/parser/"></iframe>
@@ -398,6 +420,8 @@ AK-UI
 
 <iframe width="1200" height="600" src="https://ak-ui.yunyoujun.cn/components/ak-panel.html#ak-status-%E7%8A%B6%E6%80%81%E6%A0%8F"></iframe>
 
+Note: 陀螺仪
+
 ~~
 
 <i class="ri-user-line"></i> Live2D
@@ -415,6 +439,14 @@ AR.js + Web Live2D
 Note: 其实之前 LM 同学已经演示过了 Web AR 的效果。
 
 > [CubismWebARSample](https://github.com/Live2D/CubismWebARSample)
+
+~~
+
+文本情感分析？
+
+<i class="ri-file-text-line"></i>
+<i class="ri-arrow-right-line"></i>
+<i class="ri-emotion-line"></i>
 
 ~~
 
@@ -532,7 +564,11 @@ Vite
 
 <i class="ri-gamepad-line large-icon"></i>
 
-Note: 一个目前没有的，真正可以使用的，帮助每一个人快速实现自己想法的产品。
+Note:
+
+我们的专业便是计算机应用技术
+
+我希望能做出一个真正可以应用，一个目前没有的，但在未来真正可以使用的，帮助每一个人快速实现自己想法的产品。
 
 ~~
 
@@ -558,6 +594,24 @@ Note: 一个目前没有的，真正可以使用的，帮助每一个人快速�
 
 ~~
 
+<small>
+
+| 日期              | 日程                       |
+| ----------------- | -------------------------- |
+| 2020.12 ~ 2021.01 | 剧本语法 & 解析器          |
+| 2021.01 ~ 2021.03 | Live2D & Vtuber            |
+| 2021.03 ~ 2021.05 | AR UI Framework            |
+| 2021.05 ~ 2021.08 | 引擎开发/整合              |
+| 2021.08 ~ 2021.10 | 场景风格化/融合/等探索尝试 |
+| 2021.10 ~ 2021.12 | 论文撰写，迭代更新         |
+| 2022              | 修改及定稿                 |
+
+</small>
+
+Note: 但显然未必能完全做完。
+
+~~
+
 持续迭代
 
 ...
@@ -570,7 +624,7 @@ Note: 一个目前没有的，真正可以使用的，帮助每一个人快速�
 
 Thanks for listening my speech.
 
-<i class="ri-user-smile-line large-icon"></i>
+<i class="ri-emotion-happy-line large-icon"></i>
 
 Note:
 
