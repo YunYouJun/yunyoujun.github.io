@@ -4,8 +4,8 @@ avatar:
   url: /images/avatar.jpg
   status:
     enable: true
-    emoji: 💘
-    message: Fall in love.
+    emoji: 🌑
+    message: Looking for dawn.
 
 reward:
   enable: true
