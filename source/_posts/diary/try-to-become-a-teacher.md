@@ -324,7 +324,7 @@ Wappalyzer 告诉我它似乎使用了 jQuery，还是 v1.11.1 的远古版本�
 
 > [北京市 2020 年下半年中小学教师资格面试考试公告](http://jw.beijing.gov.cn/tzgg/202012/t20201204_2156838.html)
 
-次日，使用实验室的 Windows 电脑上残存的 IE 浏览器的兼容模式进行了面试报名。
+次日，使用实验室的 Windows 电脑上残存的 IE 浏览器的兼容模式进行了面试报名。（报名费是 215 元。）
 
 ![面试报名.png](https://i.loli.net/2020/12/11/AMhudFBfryTtH9I.png)
 
