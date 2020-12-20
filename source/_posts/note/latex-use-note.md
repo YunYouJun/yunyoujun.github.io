@@ -32,17 +32,24 @@ LaTeX 使用过程的一些笔记与资源
 
 - [Overleaf, Online LaTex Editor](https://www.overleaf.com)
 - [Learn LaTeX in 30 minutes - Overleaf](https://cn.overleaf.com/learn/latex/Learn_LaTeX_in_30_minutes)
-- [【译】30分钟学会 LaTeX](https://yunyoujun.cn/share/trans-learn-latex-in-30-minutes/)(XP，自己翻译的)
+- [【译】30 分钟学会 LaTeX](https://yunyoujun.cn/share/trans-learn-latex-in-30-minutes/)(XP，自己翻译的)
 - [CTeX-org/lshort-zh-cn - 一份（不太）简短的 LaTex 中文介绍](https://github.com/CTeX-org/lshort-zh-cn/releases)
+
+### 模版资源
+
+- [ElegantLaTeX](https://github.com/ElegantLaTeX): 优雅的 LaTeX 常用模版
+  - [ElegantPaper](https://github.com/ElegantLaTeX/ElegantPaper): 专为工作论文写作而设计（我们可以用它来写一下课程论文，比如中特课、自然辩证法、一些专业课的论文）
 
 ### Bibtex
 
-管理参考文献（最喜欢的功能了）
+管理参考文献（是咱最喜欢的功能了）
 
 - [Bibliography management in LaTeX](https://www.overleaf.com/learn/latex/Bibliography_management_in_LaTeX)
 - [Bibliography management with bibtex - Overleaf](https://www.overleaf.com/learn/latex/Bibliography_management_with_bibtex)
 
 ## 其他
+
+咕了
 
 ---
 
