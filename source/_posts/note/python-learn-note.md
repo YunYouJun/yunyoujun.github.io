@@ -10,13 +10,9 @@ categories:
   - 云游的小笔记
 ---
 
-# Intro
-
 记录一些关于 Python 学习过程中的规范、问题与技巧。
 
 <!-- more -->
-
-# About
 
 ## 教程
 
@@ -172,19 +168,19 @@ Python2 `thread` 模块已被废弃。用户可以使用 threading 模块代替�
 
 [Python3 多线程 | 菜鸟教程](http://www.runoob.com/python3/python3-multithreading.html)
 
-# Q&A
+## Q&A
 
-## 如何退出解释器提示符
+### 如何退出解释器提示符
 
-### Linux & OS X
+#### Linux & OS X
 
 按下 <kbd>ctrl</kbd> + <kbd>d</kbd> 组合键或输入 `exit()` 并敲下 <kbd>enter</kbd>
 
-### Windows
+#### Windows
 
 按下 <kbd>ctrl</kbd> + <kbd>z</kbd> 组合键并敲击 <kbd>enter</kbd>
 
-## 获取帮助
+### 获取帮助
 
 如果你需要获得 Python 中有关任何函数或语句的快速信息，你可以使用其内置的 `help` 功能。
 
@@ -192,7 +188,7 @@ Python2 `thread` 模块已被废弃。用户可以使用 threading 模块代替�
 
 > 按下 <kbd>q</kbd> 键可以退出帮助。
 
-# TIMELINE
+## TIMELINE
 
 - [x] 2018-01-23 ~ 2018-02-20 Crossin 的编程教室 - Python 入门
 - [ ] 2018-09-01 Python 教程 - 廖雪峰的官方网站

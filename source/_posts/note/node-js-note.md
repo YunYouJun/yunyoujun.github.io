@@ -10,8 +10,6 @@ date: 2017-09-19 15:24:02
 updated: 2017-09-19 15:24:02
 ---
 
-# Node.js
-
 ## Intro
 
 学习 Node.js 中的一些笔记与资源。
@@ -22,16 +20,16 @@ updated: 2017-09-19 15:24:02
 
 ### Node.js 部署
 
-- 使用git安装 `nvm` (Git install) : `git clone https://github.com/creationix/nvm.git .nvm` (使用 `cd ~/` ，在root目录下安装即可。)
+- 使用 git 安装 `nvm` (Git install) : `git clone https://github.com/creationix/nvm.git .nvm` (使用 `cd ~/` ，在 root 目录下安装即可。)
 - 安装稳定版本 `node.js` : `nvm install stable`
 
 参见：[https://github.com/creationix/nvm](https://github.com/creationix/nvm)
 
-### Node.js 在LNMP环境下部署
+### Node.js 在 LNMP 环境下部署
 
 - lnmp 创建虚拟主机
-- 进入 `/usr/local/nginx/conf/vhost` 文件夹下修改conf虚拟主机配置。
-- 将conf配置文件中 `location` 内容全部替换为如下内容：
+- 进入 `/usr/local/nginx/conf/vhost` 文件夹下修改 conf 虚拟主机配置。
+- 将 conf 配置文件中 `location` 内容全部替换为如下内容：
 
 ```conf
     location / {
