@@ -47,6 +47,12 @@ LaTeX 使用过程的一些笔记与资源
 - [Bibliography management in LaTeX](https://www.overleaf.com/learn/latex/Bibliography_management_in_LaTeX)
 - [Bibliography management with bibtex - Overleaf](https://www.overleaf.com/learn/latex/Bibliography_management_with_bibtex)
 
+## 环境
+
+### Mac
+
+- [在 Mac 上使用 LaTeX](https://www.yuque.com/docs/share/abba8b7e-0a9b-49a6-afcc-b89a35490f8e)
+
 ## 其他
 
 咕了
