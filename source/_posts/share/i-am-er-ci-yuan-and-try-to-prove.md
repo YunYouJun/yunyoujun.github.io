@@ -62,7 +62,7 @@ categories:
 试看第一集，猛然发现（彩玉大学理工学研究科学院 1 年级学生 - 冰室菖蒲）女主竟然在 Ubuntu 上用 LaTeX 敲着文档。
 想必作者也至少是个实打实的研究生。
 
-再想起前几个月自己刚翻译的 [【译】30 分钟学会 LaTeX](https://www.yunyoujun.cn/share/trans-learn-latex-in-30-minutes/) 和 [LaTeX 使用笔记](https://yunyoujun.cn/note/latex-use-note/)。
+再想起前几个月自己刚翻译的 [【译】30 分钟学会 LaTeX](https://www.yunyoujun.cn/share/trans-learn-latex-in-30-minutes/) 和 [LaTeX 使用笔记](https://www.yuque.com/yunyoujun/notes/latex-use-note/)。
 
 「很好，我还年轻。」并仍不住暗自笑道：「爷的青春又回来了！」
 
