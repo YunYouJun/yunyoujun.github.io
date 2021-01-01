@@ -75,13 +75,13 @@ or
 sudo apt install blueman
 ```
 
-> [deepin连接罗技蓝牙键盘K380](https://www.lolimay.cn/2018/11/07/deepin-keyboard-k380/)
+> [deepin 连接罗技蓝牙键盘 K380](https://www.lolimay.cn/2018/11/07/deepin-keyboard-k380/)
 
 #### 打印机
 
 [打印机 - deepin wiki](https://wiki.deepin.org/wiki/打印机)
 
-[Deepin上使用惠普打印机 - deepin wiki](https://wiki.deepin.org/wiki/Deepin上使用惠普打印机)
+[Deepin 上使用惠普打印机 - deepin wiki](https://wiki.deepin.org/wiki/Deepin上使用惠普打印机)
 
 首先按照官方教程，安装好相关厂商打印机的驱动。
 
