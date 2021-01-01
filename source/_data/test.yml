@@ -28,8 +28,12 @@ aplayer:
 # wordcloud:
 #   enable: true
 
+# comment
 valine:
-  enable: true
+  enable: false
+
+minivaline:
+  enable: false
 
 disqus:
   enable: false
@@ -43,6 +47,14 @@ disqusjs:
 livere:
   enable: false
   uid: MTAyMC81MDE0Mi8yNjYzMg==
+
+twikoo:
+  enable: true
+  envId: test-1c8fe2
+
+comment:
+  candidates:
+    - twikoo
 
 # sidebar:
 #   tagcloud:
@@ -59,9 +71,6 @@ banner:
 
 albums:
   enable: true
-
-minivaline:
-  enable: false
 
 local_search:
   enable: true

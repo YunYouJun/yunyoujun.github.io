@@ -8,8 +8,6 @@ categories:
   - 云游的小笔记
 ---
 
-# Travis-CI
-
 > Travis CI - Test and Deploy Your Code with Confidence
 
 [travis-ci.org](https://www.travis-ci.org/)
