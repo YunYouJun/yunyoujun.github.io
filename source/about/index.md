@@ -16,7 +16,7 @@ reward: true
 
 <div class="text-center">
   <div class="site-author-avatar">
-    <img src="https://www.yunyoujun.cn/images/avatar.jpg" alt="portrait" title="ID : 云游君" width="96">
+    <img src="https://www.yunyoujun.cn/images/avatar.jpg" alt="portrait" title="ID : 云游君">
   </div>
 </div>
 

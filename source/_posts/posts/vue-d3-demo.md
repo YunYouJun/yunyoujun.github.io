@@ -399,7 +399,7 @@ svg.append("g").call(yAxis);
 
 如果你需要的话，可以回去检查一下本次旅行的[纪念品](#纪念品)。
 
-> 感谢 [mesmerxx](https://mesmerxx.github.io/) 同学的校稿。
+> 感谢 [MleMoe](https://mle.moe) 同学的校稿。
 
 ## 终点
 
