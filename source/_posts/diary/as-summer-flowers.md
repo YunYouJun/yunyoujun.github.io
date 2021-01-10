@@ -9,11 +9,12 @@ categories:
   - 云游的小日记
 date: 2017-09-23 21:36:48
 updated: 2017-09-23 21:36:48
+aplayer: true
 ---
 
-[网易云音乐 《生如夏花》 - 朴树](https://music.163.com/#/song?id=139357)
+<!-- [网易云音乐 《生如夏花》 - 朴树](https://music.163.com/#/song?id=139357) -->
 
-（因为版权保护，没法生成外链了……）
+{% meting "5265370" "netease" "song" "theme:#C20C0C" %}
 
 <!-- more -->
 
