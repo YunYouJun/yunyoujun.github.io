@@ -47,6 +47,12 @@ google_analytics:
   enable: true
   id: UA-121354150-1
 
+leancloud_visitors:
+  enable: true
+  app_id: 4x0IwQ1sy95mOGQDTO8MYCeA-gzGzoHsz
+  app_key: 9loqwF3UDklPDHaP9IN2uwN8
+  server_url: https://lncld.yunyoujun.cn
+
 google_adsense:
   enable: true
   client: ca-pub-2245427233262012
