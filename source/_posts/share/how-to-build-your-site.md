@@ -625,12 +625,9 @@ hexo new page xxx
 
 > 永远相信美好的事情即将发生
 
-如果还有其他小问题，可以到 [QQ 群](https://shang.qq.com/wpa/qunwpa?idkey=3bd19a05aaccb2b60c396295c8617b3a9e667821a495e8cd7e1698ff95ab61c6)（389401003）里反馈。
+相关讨论与问题，可前往 [Discussions](https://github.com/YunYouJun/hexo-theme-yun/discussions/categories/q-a) 反馈。
 
-> 如果是更通用的问题，最好在评论中进行反馈，这样别的同学也能看到，不需要重复提问。
 > 主题相关问题请到 [Issues ｜ hexo-theme-yun](https://github.com/YunYouJun/hexo-theme-yun/issues) 反馈。
-
-![hexo-qrcode](https://cdn.jsdelivr.net/gh/YunYouJun/cdn/img/about/hexo-qrcode.jpg)
 
 ---
 

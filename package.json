@@ -1,7 +1,7 @@
 {
   "name": "yunyoujun.github.io",
   "description": "YunYouJun Blog",
-  "version": "1.1.0",
+  "version": "1.1.1",
   "private": true,
   "hexo": {
     "version": "5.3.0"
@@ -41,7 +41,7 @@
     "docs:dev": "cd themes/yun && yarn docs:dev",
     "predeploy": "hexo clean && hexo g",
     "deploy": "hexo d",
-    "backup": "sh backup.sh"
+    "backup": "sh scripts/backup.sh"
   },
   "author": "YunYouJun <me@yunyoujun.cn>",
   "homepage": "https://yunyoujun.cn",

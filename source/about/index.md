@@ -74,7 +74,7 @@ reward: true
 
 ### 其他
 
-- 闲聊兼主题 QQ 群：[389401003](https://shang.qq.com/wpa/qunwpa?idkey=3bd19a05aaccb2b60c396295c8617b3a9e667821a495e8cd7e1698ff95ab61c6)
+- 闲聊 QQ 群：[389401003](https://shang.qq.com/wpa/qunwpa?idkey=3bd19a05aaccb2b60c396295c8617b3a9e667821a495e8cd7e1698ff95ab61c6)
 
 <details>
 <summary></summary>

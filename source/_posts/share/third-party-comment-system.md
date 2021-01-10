@@ -107,6 +107,12 @@ Gitalk 相比 Gitment 则持续维护了很久。所以首先肯定与感谢作�
 
 所以对于是否继续使用 Valine 也有所动摇起来。
 
+> 2020-01-09
+
+被人用一言刷了评论，不过我不确定是仅仅针对我，还是针对了一些使用 Valine 的用户。结合之前的种种顾虑，最终决定长痛不如短痛，弃用 Valine。
+
+如果您有任何关于博客内容的相关讨论，欢迎前往 [Discussions](https://github.com/YunYouJun/yunyoujun.github.io/discussions) 与我交流。
+
 ### [畅言](http://changyan.kuaizhan.com/)
 
 国内搜狐旗下的评论系统。（算是国内还幸存的屈指可数的几家）（多说、网易云跟帖均已关闭。）
@@ -176,7 +182,7 @@ GitHub 倒是既慷慨又实用，所以要是能渲染 Issue 评论预览，想
 > 但是因为要多跳几个链接，无法直接显示在评论区中预览，所以基本没有人用。
 > 不过我认为相比 Valine 的数据（保不准哪天我就因为各种原因不得不抛弃它了），显然 GitHub 要更为可靠些。所以重要的留言可以考虑留在 Issue 里哦～
 
-GitHub 最近则在内测 [Discussions](https://github.com/zeit/now/discussions/) 感觉也是一个不错的交流方式（其实是论坛），权限方面或许会更加友好，值得期待。
+GitHub 最近则在内测 [Discussions](https://docs.github.com/cn/free-pro-team@latest/discussions/quickstart) 感觉也是一个不错的交流方式（其实是论坛），权限方面或许会更加友好，值得期待。
 
 [utterances](https://utteranc.es/) 同样基于 GitHub Issues，可以抵消权限方面的担忧。当使用了 GitHub API，对于国内来说访问还是很慢。
 
