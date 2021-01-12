@@ -23,7 +23,7 @@
     "hexo-renderer-stylus": "^2.0.1",
     "hexo-tag-aplayer": "^3.0.4",
     "hexo-tag-common": "^0.0.3",
-    "hexo-widget-tree": "^0.1.0",
+    "hexo-widget-tree": "^0.1.1",
     "hexo-wordcount": "^6.0.1"
   },
   "devDependencies": {
@@ -41,7 +41,7 @@
     "docs:dev": "cd themes/yun && yarn docs:dev",
     "predeploy": "hexo clean && hexo g",
     "deploy": "hexo d",
-    "backup": "sh scripts/backup.sh"
+    "backup": "sh bash/backup.sh"
   },
   "author": "YunYouJun <me@yunyoujun.cn>",
   "homepage": "https://yunyoujun.cn",
