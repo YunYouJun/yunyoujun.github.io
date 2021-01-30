@@ -13,16 +13,21 @@ reward:
 
 comment:
   tips:
-    - 因为种种原因，最终决定长痛不如短痛，弃用了 Valine。如果您有任何关于博客内容的相关讨论，欢迎前往 <a href="https://github.com/YunYouJun/yunyoujun.github.io/discussions" target="_blank">GitHub Discussions</a> 与我交流。
+    - 如果您有任何关于博客内容的相关讨论，欢迎前往 <a href="https://github.com/YunYouJun/yunyoujun.github.io/discussions" target="_blank">GitHub Discussions</a> 与我交流。
+
+waline:
+  enable: true
+  serverURL: https://waline.yunyoujun.cn
+  visitor: true
 
 github_issues:
-  enable: true
+  enable: false
 
 github_discussions:
-  enable: true
+  enable: false
 
 disqusjs:
-  enable: true
+  enable: false
   shortname: yunyoujun
   apikey: ouoGQCaamOKdJgyZU5DKcpFnRIg3SNzvk0nwygPtlcTRJuE68c8igvrZGW4wAJoN
 
@@ -47,11 +52,11 @@ google_analytics:
   enable: true
   id: UA-121354150-1
 
-leancloud_visitors:
-  enable: true
-  app_id: 4x0IwQ1sy95mOGQDTO8MYCeA-gzGzoHsz
-  app_key: 9loqwF3UDklPDHaP9IN2uwN8
-  server_url: https://lncld.yunyoujun.cn
+# leancloud_visitors:
+#   enable: true
+#   app_id: 4x0IwQ1sy95mOGQDTO8MYCeA-gzGzoHsz
+#   app_key: 9loqwF3UDklPDHaP9IN2uwN8
+#   server_url: https://lncld.yunyoujun.cn
 
 google_adsense:
   enable: true
