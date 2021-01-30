@@ -30,7 +30,7 @@ wordcloud:
 
 # comment
 valine:
-  enable: false
+  enable: true
 
 minivaline:
   enable: false

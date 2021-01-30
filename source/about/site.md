@@ -29,6 +29,12 @@ reward: true
 <details open>
 <summary>2021 年</summary>
 
+### 2021-01-26
+
+因为没怎么用，掷骰子决定不再续费 [yunle.fun] 域名了。
+
+打算买一个 moe 的域名。
+
 ### 2021-01-09
 
 因为 Valine 评论多次被爆破，弃用了 Valine，转为启用 Disqus。
