@@ -1,10 +1,11 @@
 ---
-title: About Me
+title: 关于我
 date: 2017-10-12 10:48:25
 type: "about"
 updated: 2018-01-30 15:10:32
 aplayer: true
 reward: true
+icon: icon-cloud-line
 ---
 
 {% meting "308168565" "netease" "playlist" "theme:#C20C0C"%}
@@ -79,7 +80,7 @@ reward: true
 <details>
 <summary></summary>
 
-- 明日方舟（官服）：云游君#5367
+- ~~明日方舟（官服）：云游君#5367~~ 长草了
 
 </details>
 

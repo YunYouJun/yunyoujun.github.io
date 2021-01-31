@@ -19,7 +19,7 @@ aplayer: true
 
 因为标题拟的很像轻小说，并且这件事本身其实并不是什么有趣的事（~~但我希望它能有趣些~~），所以我决定用我的死宅文风以轻小说的方式来记录一下。（~~欢迎吐槽，但别太伤人。~~）
 
-![别骂了别骂了再骂人要傻了](https://i.loli.net/2020/09/13/M4NiceB7uayghID.jpg)
+![别骂了别骂了再骂人要傻了](https://upyun.yunyoujun.cn/images/dont-scold-me.jpg)
 
 ## 内容简介
 
@@ -40,7 +40,7 @@ aplayer: true
 
 ## 作者简介
 
-![我不做程序员了](https://i.loli.net/2020/09/13/moPfSxvj3yZiEtq.jpg)
+![我不做程序员了](https://upyun.yunyoujun.cn/images/not-a-programmer-anymore.jpg)
 
 ~~等等，你这种毫无知名度可言的非专业作者根本不需要这个吧。~~
 

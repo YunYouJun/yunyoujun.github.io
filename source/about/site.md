@@ -1,10 +1,11 @@
 ---
-title: About Site
+title: 关于站点
 date: 2017-10-12 10:48:25
 type: about
 updated: 2018-01-30 15:10:32
 aplayer: true
 reward: true
+icon: icon-home-4-line
 ---
 
 {% meting "497572729" "netease" "song" "theme:#C20C0C"%}
@@ -24,10 +25,22 @@ reward: true
 
 😜 如果你觉得本站点还算有趣或有用，可以给我一个 [Star](https://github.com/YunYouJun/yunyoujun.github.io) 以示鼓励。
 
+本站使用的是咱自己开发的主题 [hexo-theme-yun](https://github.com/YunYouJun/hexo-theme-yun/)，如果你喜欢的话，也欢迎一试。
+
 ## Time
 
 <details open>
 <summary>2021 年</summary>
+
+### 2021-01-31
+
+[SM.MS](https://sm.ms) 国内节点似乎挂了，免费图床终究有点不放心。
+
+尝试了又拍云云存储 + [PicGo](https://github.com/Molunerfinn/PicGo) 的解决方案，打算重要的图片放到[这边](https://upyun.yunyoujun.cn)来。
+
+### 2021-01-30
+
+因为换成 Disqus 后，基本没有评论了（关爱空巢老云游）。所以试了试 [Waline](https://waline.js.org/)，感觉还不错。
 
 ### 2021-01-26
 

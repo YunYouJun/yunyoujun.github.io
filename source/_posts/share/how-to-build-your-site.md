@@ -294,7 +294,7 @@ npm install hexo-render-pug hexo-renderer-stylus
 譬如我们需要更换头像。在 `yun.yml` 中填写。
 
 > 你可以在 `source` 文件夹下新建 `images` 文件夹，用来存储你的图片。
-> 也可以使用 [SM.MS](https://sm.ms/) 等图床工具上传你的图片文件，获取在线链接。
+> 也可以使用 [SM.MS](https://sm.ms/) 等图床工具配合 [PicGo](https://github.com/Molunerfinn/PicGo) 上传你的图片文件，获取在线链接。
 
 ```yaml
 avatar:

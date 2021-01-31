@@ -12,15 +12,15 @@ updated: 2017-08-04 10:56:26
 
 <!-- more -->
 
-> # Plug-ins
+## Plug-ins
 
-## Akismet Anti-Spam
+### Akismet Anti-Spam
 
 由 [Automattic](http://automattic.com/wordpress-plugins/)
 
 > Description
 
-由千百万人使用，Akismet可能是保护您的站点免受垃圾评论的世界上最好的方式。 您的站点已完全配置并受到不断的保护。
+由千百万人使用，Akismet 可能是保护您的站点免受垃圾评论的世界上最好的方式。 您的站点已完全配置并受到不断的保护。
 
 > Reason
 
@@ -28,7 +28,7 @@ updated: 2017-08-04 10:56:26
 
 ---
 
-## BackUpWordPress
+### BackUpWordPress
 
 由 [Human Made Limited](http://hmn.md/)
 
@@ -38,23 +38,23 @@ Simple automated backups of your WordPress powered website. Find me under Tools 
 
 > Reason
 
-用来在服务器上自动备份wordpress的，开着以防万一吧。（~~大概~~）
+用来在服务器上自动备份 wordpress 的，开着以防万一吧。（~~大概~~）
 
 ---
 
-## Bootstrap 3 Shortcodes
+### Bootstrap 3 Shortcodes
 
-### Desciption
+#### Desciption
 
 The plugin adds a shortcodes for all Bootstrap 3 elements.
 
 > Reason
 
-可以在编辑器里，快速添加bootstrap的一些样式。
+可以在编辑器里，快速添加 bootstrap 的一些样式。
 
 ---
 
-## Disable Google Fonts
+### Disable Google Fonts
 
 由 [Milan Dinić](disablehttp://blog.milandinic.com/)
 
@@ -64,11 +64,11 @@ Disable enqueuing of Open Sans and other fonts used by WordPress from Google.
 
 > Reason
 
-此前装了Jetpack后，访问页面变得异常缓慢。查了查，发现是因为我国的特殊国情（~~防火长城~~）挡住了Jetpack访问的一些资源。其中有谷歌字体，于是就下了这个插件禁用。（~~只是部分原因~~）
+此前装了 Jetpack 后，访问页面变得异常缓慢。查了查，发现是因为我国的特殊国情（~~防火长城~~）挡住了 Jetpack 访问的一些资源。其中有谷歌字体，于是就下了这个插件禁用。（~~只是部分原因~~）
 
 ---
 
-## Jetpack 由 WordPress.com 出品
+### Jetpack 由 WordPress.com 出品
 
 由 [Automattic](https://jetpack.com/)
 
@@ -78,13 +78,13 @@ Disable enqueuing of Open Sans and other fonts used by WordPress from Google.
 
 > Reason
 
-Jetpack是个好东西，包含了大部分的所需功能，如果不是因为一些特殊国情，很多功能都可以用到。但实际上却不得不关闭其中一些功能。
+Jetpack 是个好东西，包含了大部分的所需功能，如果不是因为一些特殊国情，很多功能都可以用到。但实际上却不得不关闭其中一些功能。
 
 (由于加载速度实在过慢，已将其关闭)
 
 ---
 
-## Menu Icons
+### Menu Icons
 
 由 [Dzikri Aziz](http://kucrut.org/)
 
@@ -98,11 +98,11 @@ Spice up your navigation menus with pretty icons, easily.
 
 ---
 
-## Open Social
+### Open Social
 
 > Description
 
-可用腾讯QQ、新浪微博、百度、谷歌、微软LIVE、豆瓣、人人网、开心网、小米、脸书、推特、微信等登录和分享，无第三方平台、无接口文件冗余、带昵称网址头像等。
+可用腾讯 QQ、新浪微博、百度、谷歌、微软 LIVE、豆瓣、人人网、开心网、小米、脸书、推特、微信等登录和分享，无第三方平台、无接口文件冗余、带昵称网址头像等。
 
 > Reason:
 
@@ -110,7 +110,7 @@ Spice up your navigation menus with pretty icons, easily.
 
 ---
 
-## Slimstat Analytics
+### Slimstat Analytics
 
 由 [Jason Crouse](http://www.wp-slimstat.com/)
 
@@ -124,23 +124,23 @@ The leading web analytics plugin for WordPress.
 
 ---
 
-## WP Editor.md
+### WP Editor.md
 
 由 [淮城一只猫](https://iiong.com/)
 
 > Description
 
-或许这是一个WordPress中最好，最完美的Markdown编辑器。
+或许这是一个 WordPress 中最好，最完美的 Markdown 编辑器。
 
 > Reason
 
-很好用的一个wordpress里的markdown编辑器。
+很好用的一个 wordpress 里的 markdown 编辑器。
 
 ---
 
-> # Themes
+## Themes
 
-## Adams
+### Adams
 
 由[Tokin](https://biji.io/)
 
@@ -150,7 +150,7 @@ The leading web analytics plugin for WordPress.
 
 ---
 
-## Flat Bootstrap
+### Flat Bootstrap
 
 由[XtremelySocial](http://xtremelysocial.com/)
 

@@ -17,7 +17,7 @@ categories:
 
 这也是一种很好的艺术效果，苹果惯用的毛玻璃效果本质便是高斯模糊，而我们将图片模糊后作为网站背景，既减小了图片的体积，也能别有一番风味。（譬如咱站点的背景也是高斯模糊后的产物。）
 
-![Gaussian Blur | Photoshop](https://i.loli.net/2020/10/20/VG82MaCALyzoR96.jpg)
+![Gaussian Blur | Photoshop](https://upyun.yunyoujun.cn/images/photoshop-gaussian-blur.jpg)
 
 而 CSS3 提供了滤镜 [filter](https://developer.mozilla.org/zh-CN/docs/Web/CSS/filter)/[backdrop-filter](https://developer.mozilla.org/zh-CN/docs/Web/CSS/backdrop-filter)，其中的模糊功能同样也是高斯模糊。（Canvas 中的 [filter](https://developer.mozilla.org/zh-CN/docs/Web/API/CanvasRenderingContext2D/filter) 亦是如此。）
 

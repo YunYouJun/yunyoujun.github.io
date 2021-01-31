@@ -1,5 +1,5 @@
 ---
-title: LNMP一键安装包
+title: LNMP 一键安装包
 tags:
   - 分享
 categories:
