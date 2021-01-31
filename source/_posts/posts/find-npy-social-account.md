@@ -368,7 +368,7 @@ AssertionError: Image Not Found /Users/yunyou/github/lab/find-lm/tmp/images/game
 
 注册了个 [wandb](https://www.wandb.com/) 账号，查看训练过程。（虽然好像没什么用）
 
-![image.png](https://i.loli.net/2020/11/28/cHhvIYwMVrGpyef.png)
+![wandb-visualize](https://upyun.yunyoujun.cn/images/wandb-visualize.jpg)
 
 ##### Detect
 
@@ -473,21 +473,19 @@ beijingMembers.forEach((member) => {
 
 总共才七百来张，手动过一遍好像也不麻烦。
 
-![马保国.jpg](https://i.loli.net/2020/12/06/mUuE9ApZnFjbMtQ.jpg)
+![小伙子 你不讲武德 | 马保国](https://i.loli.net/2020/12/06/mUuE9ApZnFjbMtQ.jpg)
 
 打开 finder 画廊模式，啪，很快啊，就找到了。
 
 <!-- ![finder](https://i.loli.net/2020/12/02/DKXF2S6BfkNCQHs.png) -->
 
-![mosaic finder](https://i.loli.net/2020/12/02/mkNjQRiwJCb2qe9.png)
+![mosaic finder](https://upyun.yunyoujun.cn/images/mosaic-finder-placebo.jpg)
 
 加之名称是此前提过的一个乐队名字的中文含义，因此也较为确信。
 
 在点开个人主页时，则基本可以确定。因为早在半月前便留下了这样一条广播，我却因为走了许多弯路才抵达。
 
-<!-- 安慰剂 -->
-
-![mosaic 安慰剂的广播](https://i.loli.net/2020/12/02/Xl1IALRECbSu3te.png)
+![mosaic 安慰剂的广播](https://upyun.yunyoujun.cn/images/mosaic-placebo-broadcast.jpg)
 
 ~~不要回答！不要回答！不要回答！~~
 

@@ -19,7 +19,7 @@ categories:
 
 - [Inverse kinematics](https://en.wikipedia.org/wiki/Inverse_kinematics)
 - [Making Kine More Flexible](http://www.cs.cmu.edu/~15464-s13/lectures/lecture6/jlander_gamedev_nov98.pdf)
-- [角色动画研究 —— IK的三种结算方法](https://blog.csdn.net/noahzuo/article/details/53908141)
+- [角色动画研究 —— IK 的三种结算方法](https://blog.csdn.net/noahzuo/article/details/53908141)
 
 维基百科和一些论文、博客也讲得很清楚了。
 ~~（摔，那你水这篇文章干什么？）~~
@@ -29,7 +29,7 @@ categories:
 
 ## CCD
 
-- [角色动画研究 —— IK的三种结算方法](https://blog.csdn.net/noahzuo/article/details/53908141)
+- [角色动画研究 —— IK 的三种结算方法](https://blog.csdn.net/noahzuo/article/details/53908141)
 - [Cyclic Coordinate Descent in 2D](http://www.ryanjuckett.com/programming/cyclic-coordinate-descent-in-2d/)
 
 ### CCD - [p5.js](https://p5js.org/zh-Hans/)
@@ -58,7 +58,7 @@ Editor: <https://editor.p5js.org/YunYouJun/sketches/bS8jB3EsC>
 
 新年 🧨 版（小 bug 之后修）
 
-![image.png](https://i.loli.net/2020/01/16/aw4Z2vzNULps586.png)
+![cocos-creator-ik](https://upyun.yunyoujun.cn/images/cocos-creator-ik.jpg)
 
 GitHub: <https://github.com/YunYouJun/cocos-creator-ik/>
 

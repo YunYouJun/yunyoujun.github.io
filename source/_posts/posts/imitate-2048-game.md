@@ -10,7 +10,7 @@ date: 2017-03-04 23:33:23
 updated: 2017-03-04 23:33:23
 ---
 
-=。=学习用 js 写了仿 2048 的小游戏
+=。= 学习用 js 写了仿 2048 的小游戏
 
 > [文字组合小游戏](http://calligraphy.yunyoujun.cn/combination/)
 
