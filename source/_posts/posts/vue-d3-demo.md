@@ -412,7 +412,7 @@ svg.append("g").call(yAxis);
 > 而你也同样存在一个终点站吧
 > —— 李白「[春宵苦短，少女前进吧](https://movie.douban.com/subject/26935251/)」
 
-![LM将近了.png](https://i.loli.net/2020/11/21/VkqveQMHoWAgfuh.png)
+![LM将近了](https://upyun.yunyoujun.cn/images/dawn-is-near.jpg)
 
 我们为了抵达某个终点而开始自己的旅程，也希望它能成为你变成想要成为的人的途间一块不知名的垫脚石。
 
