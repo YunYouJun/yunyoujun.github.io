@@ -13,8 +13,8 @@ categories:
 
 ADV.JS 又一个遥遥无期的大坑。
 
-> GitHub: <https://github.com/YunYouJun/adv>
-> Demo: <https://adv.yunyoujun.cn>
+> GitHub: <https://github.com/YunYouJun/advjs>
+> Demo: <https://advjs.elpsy.cn>
 
 ## 前言
 
@@ -139,8 +139,8 @@ ADV/AVG 的游戏引擎已经有很多，但都各有千秋。
 
 至于剩下的……，等我先写完当前的再说吧！
 
-- GitHub: [@advjs/parser](https://github.com/advjs/parser)
-- Demo: [Demo for @advjs/parser](https://advjs.github.io/parser/)
+- GitHub: [@advjs/parser](https://github.com/yunyoujun/advjs/blob/main/packages/parser/)
+- Demo: [Demo for @advjs/parser](https://advjs.elpsy.cn/parser/)
 
 ...
 
@@ -150,7 +150,7 @@ ADV/AVG 的游戏引擎已经有很多，但都各有千秋。
 
 后续可能有（🐦）的其他内容，自定义配置文件（支持 JSON/YML ?）、多设备适配、支线选项控制、音乐系统（BGM 与配音）、摄像机系统（镜头）、立绘与 Live2D、front-matter 与更多兼容 Markdown 的剧本语法及自定义脚本、进度存储读取槽（本地 localStorage/ 网络 MongoDB）、场景路由、背景管理（融合 3D）、人物小传/关系、UI 主题、资源一键 CDN/预加载……
 
-其他 [Todo](https://github.com/YunYouJun/adv/projects/1)。
+其他 [Todo](https://github.com/YunYouJun/advjs/projects/1)。
 
 ---
 

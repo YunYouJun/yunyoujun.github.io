@@ -47,9 +47,9 @@ $$ {\displaystyle f(x)={\frac {1}{\sigma {\sqrt {2\pi }}}}e^{-{\frac {\left(x-\m
 
 同一张图片模糊前后，并使用 [Squoosh](https://squoosh.app/) 压缩。
 
-![模糊后](https://i.loli.net/2020/10/20/CNpjiLco1YI9xOw.jpg)_589\*600 blur:30px 模糊后 7.15KB_
+![模糊后](https://upyun.yunyoujun.cn/images/a-image-after-blur.jpg)_589\*600 blur:30px 模糊后 7.15KB_
 
-![模糊前](https://i.loli.net/2020/10/20/9nCPKsFtRLVUbdg.jpg)_589\*600 模糊前 29.71KB_
+![模糊前](https://upyun.yunyoujun.cn/images/a-image-before-blur.jpg)_589\*600 模糊前 29.71KB_
 
 此外，CSS 滤镜本身还是挺占性能的（Safari 好像优化的更好一些？），之前写[主题](https://github.com/YunYouJun/hexo-theme-yun)尝试加了一堆模糊效果，虽然挺好看的，但是发现风扇嗡嗡响，最终还是忍痛割爱。
 
@@ -59,13 +59,13 @@ $$ {\displaystyle f(x)={\frac {1}{\sigma {\sqrt {2\pi }}}}e^{-{\frac {\left(x-\m
 
 > 红色边框是原本图片所在的范围。
 
-![原图](https://i.loli.net/2020/10/20/2J1VMgzk9BcdvEC.jpg)_原图_
+![原图](https://upyun.yunyoujun.cn/images/blur-source-image.jpg)_原图_
 
-![Photoshop 高斯模糊](https://i.loli.net/2020/10/20/OjVBYkMtsy6e8FZ.jpg)_2419\*1209 Photoshop 高斯模糊 30px_
+![Photoshop 高斯模糊 30px](https://upyun.yunyoujun.cn/images/photoshop-gaussian-blur-30px.jpg)_2419\*1209 Photoshop 高斯模糊 30px_
 
-![CSS filter 白色背景](https://i.loli.net/2020/10/20/f37P4FGc9qkTNXz.png)_1119\*559 CSS filter 高斯模糊 30px 白色背景_
+![CSS filter 白色背景](https://upyun.yunyoujun.cn/images/css-filter-white-30px.jpg)_1119\*559 CSS filter 高斯模糊 30px 白色背景_
 
-![CSS filter 黑色背景](https://i.loli.net/2020/10/20/YldxTGsKj2va5mf.png)_1119\*559 CSS filter 高斯模糊 30px 黑色背景_
+![CSS filter 黑色背景](https://upyun.yunyoujun.cn/images/css-filter-black-30px.jpg)_1119\*559 CSS filter 高斯模糊 30px 黑色背景_
 
 我们可以发现 CSS filter 模糊后的边界，准确来说并不是白边。而是透明的，我们应当叫它透明边或者 Alpha 边更为合适。
 
@@ -262,7 +262,7 @@ export function blur(
 - 完整示例代码见 [gaussian-blur](https://github.com/YunYouJun/gaussian-blur)
 - 在线地址见：[Gaussian Blur Demo](https://www.yunyoujun.cn/gaussian-blur/)
 
-![30px](https://i.loli.net/2020/10/22/eLYokE6N9RXc3zK.png)
+![gaussian-blur-30px-137007ms](https://upyun.yunyoujun.cn/images/gaussian-blur-30px-137007ms.jpg)
 
 emmm，可是速度很慢，1119\*559 模糊半径 30px 便花了足足 137007ms。（MacBook Pro 15-inch 2019）
 
@@ -335,11 +335,11 @@ export class Blur {
 }
 ```
 
-![Gaussian Blur Demo](https://i.loli.net/2020/10/22/dmrGI7LoP196zfp.jpg)
+![Gaussian Blur Demo](https://upyun.yunyoujun.cn/images/gaussian-blur-demo.jpg)
 
 很神奇地也能实现类似效果，但模糊程度还是略有不同的。（可以看到 Canvas 的高斯模糊也是有白边的。）
 
-![Fast Gaussian Blur 100px](https://i.loli.net/2020/10/24/PwhE2HLs3qZDSVQ.png)_100px 1043ms_
+![Fast Gaussian Blur 100px](https://upyun.yunyoujun.cn/images/fast-gaussian-blur-100px-1043ms.png)_100px 1043ms_
 
 不过好像有点玻璃上有水滴流下来的那种感觉。
 
