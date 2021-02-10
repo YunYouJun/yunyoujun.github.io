@@ -175,14 +175,6 @@ marked:
     nofollow: false
   disableNunjucks: false
 
-markdown_it_plus:
-  plugins:
-    - plugin:
-      name: "@neilsustc/markdown-it-katex"
-      enable: true
-      options:
-        strict: false
-
 # https://github.com/hexojs/hexo-server
 server:
   compress: true
