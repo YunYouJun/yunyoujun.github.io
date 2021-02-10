@@ -8,5 +8,5 @@ updated: 2020-02-10 02:02:15
 
 ## Features
 
-- [Markdown](./markdown/): Markdown 样式扩展
-- [KaTeX](./katex/): 基于 KaTeX 的公式渲染
+- [Markdown](./markdown.html): Markdown 样式扩展
+- [KaTeX](./katex.html): 基于 KaTeX 的公式渲染

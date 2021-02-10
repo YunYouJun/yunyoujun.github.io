@@ -2,8 +2,8 @@
 title: Yun - KaTeX
 date: 2020-03-23 02:02:15
 updated: 2020-03-23 02:02:15
-type:
 katex: true
+toc: true
 ---
 
 ## [KaTeX](https://katex.org/)
