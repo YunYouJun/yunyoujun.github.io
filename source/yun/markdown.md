@@ -2,6 +2,7 @@
 title: Yun - Markdown
 date: 2020-02-10 02:02:15
 updated: 2020-02-10 02:02:15
+toc: true
 ---
 
 ## Blockquote
@@ -77,3 +78,19 @@ content
 
 当你用本地的其他 Markdown 编辑器/或在 GitHub 上预览时会很丑。
 而直接使用 HTML 标签，即便不支持该样式，`div` 也会被正常解析，变为默认的引用块，在预览中可正常显示。
+
+## Details 折叠
+
+<details>
+<summary>Summary</summary>
+
+Content
+
+</details>
+
+```html
+<details>
+<summary>Summary<summary>
+Content
+</details>
+```
