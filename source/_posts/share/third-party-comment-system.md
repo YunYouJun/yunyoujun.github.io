@@ -68,7 +68,7 @@ Gitalk 相比 Gitment 则持续维护了很久。所以首先肯定与感谢作�
 
 以及 Gitalk 调用 OAuth 时会申请获取对所有公开项目的读**写**权限，如下图所示。
 
-![gitalk-security.jpg](https://i.loli.net/2020/05/17/FOLHuTXn1JZYmrb.jpg)
+![Gitalk 安全性问题](https://upyun.yunyoujun.cn/images/gitalk-security.jpg)
 
 你可以到[此处](https://gitalk.github.io/)尝试登陆。
 
@@ -113,6 +113,36 @@ Gitalk 相比 Gitment 则持续维护了很久。所以首先肯定与感谢作�
 
 如果您有任何关于博客内容的相关讨论，欢迎前往 [Discussions](https://github.com/YunYouJun/yunyoujun.github.io/discussions) 与我交流。
 
+### [Waline](https://waline.js.org/)
+
+我切换为 Disqus 近一月后，收到的评论寥寥无几。因此我决定尝试一下 [Waline](https://github.com/lizheming/waline/)。
+
+> 2020-01-30
+> 对不起，请原谅我的虚荣。
+
+事实上，第一波评论被刷，受害者是广大 Valine 用户，而刷的内容正是宣传 Waline。
+
+> [关于被人恶意冒用身份发送垃圾评论的声明](https://imnerd.org/spam-statement.html)
+
+事情的真相我们不得而知。
+
+不过这也确实让我意识到，匿名无后端评论以及暴露 APP ID/KEY 的坏处。
+
+我之所以将我的[博客源文件包括所有配置](https://github.com/YunYouJun/yunyoujun.github.io)均开源，本意是方便同样想要搭建博客的朋友参考。
+并兀自猜想，只要大家都好好相处，是不会有人闲到来做这一类事情。
+
+> 我向来是不惮以最坏的恶意，来推测中国人的。——鲁迅「纪念刘和珍君」
+
+Waline 的数据结构继承自 Valine，因此数据是可以无缝迁移的。
+但是 Waline 最方便的方式是使用 Vercel 进行部署，Vercel 位于国外，而我的 LeanCloud 应用位于国内，这导致两者的连通性非常差，甚至时常超时，返回 502 错误。
+
+> [[BUG] 后台查询评论时常返回 502 | #150](https://github.com/lizheming/waline/issues/150)
+
+因此我将 LeanCloud 国内版数据转移至了[国际版](https://leancloud.app/)，目前一切顺利。
+
+> 对了，LeanCloud 官方导出的 JSON 数据，每项末尾都少了 `,`，还得自己用编辑器批量加上。
+> [LeanCloud 国内版迁移国际版](https://www.yuque.com/docs/share/f1b15bed-9464-4c61-a41d-238a175af5d4)
+
 ### [畅言](http://changyan.kuaizhan.com/)
 
 国内搜狐旗下的评论系统。（算是国内还幸存的屈指可数的几家）（多说、网易云跟帖均已关闭。）
@@ -148,12 +178,13 @@ Gitalk 相比 Gitment 则持续维护了很久。所以首先肯定与感谢作�
 
 ## 对比
 
-| 第三方评论系统 | 开源         | 速度 | 是否被墙 | 可否实现 PJAX                                         | 数据可靠性                               |
-| :------------- | :----------- | :--- | :------- | :---------------------------------------------------- | ---------------------------------------- |
-| Disqus         | 否           | 慢   | 是       | 可以                                                  | 市场占有率高，可靠                       |
-| Gitalk         | 是           | 中等 | 否       | [不可以](https://github.com/gitalk/gitalk/issues/205) | GitHub 还在一天，就永远不用担心          |
-| LiveRe         | 否           | 较慢 | 否       | 不可以                                                | 存疑                                     |
-| Valine         | 薛定谔的开源 | 快   | 否       | 可以                                                  | 取决于 LeanCloud（看你是不是付费用户了） |
+| 第三方评论系统 | 开源         | 速度 | 国内是否可直接访问 | 可否实现 PJAX                                     | 数据可靠性                               |
+| :------------- | :----------- | :--- | :----------------- | :------------------------------------------------ | ---------------------------------------- |
+| Disqus         | ❌           | 慢   | ❌                 | ✔️                                                | 市场占有率高，可靠                       |
+| Gitalk         | ✔️           | 中等 | ✔️                 | [❌](https://github.com/gitalk/gitalk/issues/205) | GitHub 还在一天，就永远不用担心          |
+| LiveRe         | ❌           | 较慢 | ✔️                 | ❌                                                | 存疑                                     |
+| Valine         | 薛定谔的开源 | 快   | ✔️                 | ✔️                                                | 取决于 LeanCloud（看你是不是付费用户了） |
+| Waline         | ✔️           | 快   | ✔️                 | ✔️                                                | 同上，等价于带后端的 Valine              |
 
 以下是同一个页面加载不同评论系统时 `Dev Tools -> Network` 的信息。（None 为不加载评论系统）
 

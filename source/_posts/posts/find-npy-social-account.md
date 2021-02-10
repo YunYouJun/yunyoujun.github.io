@@ -580,14 +580,14 @@ A 面的故事到此就结束了。
 
 我的错觉大抵也是因此而产生的。
 
-![男生是那种只要女生对自己稍微好一点](https://i.loli.net/2020/12/03/gtxiDpJsrBh7Roc.png)
+![男生是那种只要女生对自己稍微好一点](https://upyun.yunyoujun.cn/images/one-of-the-three-illusions-in-life.jpg)
 
 是的 我突然有些太飘了点
 
-![对处男稍微好一点他就会爱上你现象.png](https://i.loli.net/2020/12/12/2nxiw1ulWIXDShP.png)_阿松_
+![对处男稍微好一点他就会爱上你现象](https://upyun.yunyoujun.cn/images/be-nice-to-a-boy-he-will-love-you.jpg)_阿松_
 
-![2019-11-30.jpg](https://i.loli.net/2020/12/12/TrBYouS7WFgRIkf.jpg)
-![2020-11-30.jpg](https://i.loli.net/2020/12/12/wAl7fQI4Zctzqeg.jpg)
+![2019-11-30 | 一本日记](https://upyun.yunyoujun.cn/images/1diary-2019-11-30.jpg)
+![2020-11-30 | 一本日记](https://upyun.yunyoujun.cn/images/1diary-2020-11-30.jpg)
 
 不可知的某一天，看到 LM 同学的笑容，突然觉得很可爱，我开始希望更多地了解 LM 同学，想要与之建立联系。
 
