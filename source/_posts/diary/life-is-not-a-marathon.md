@@ -58,7 +58,7 @@ categories:
 
 提到非主流，大家难免会想到十年前那妆容发型夸张、用着火星文、说着不明觉厉却又看似伤感之言的 80/90 后形象。
 
-![567-baber-shop.jpg](https://i.loli.net/2020/04/04/TCLnUYgSQJRVkzu.jpg)_「五六七之最强发型师」动画截图_
+![五六七之最强发型师](https://upyun.yunyoujun.cn/images/567-baber-shop.jpg)_「五六七之最强发型师」动画截图_
 
 但我觉得这更像是一种人生态度。
 
@@ -89,6 +89,8 @@ categories:
 小说的主人公凉宫春日本就是个特立独行的人，动画本身也特立独行，重复放送的「漫无止境的八月」（情节几乎一致但分镜不同），乱序播放的 06 版等等。
 并将特立独行这一原则贯穿始终。
 
+![我对普通的人类没有兴趣](https://upyun.yunyoujun.cn/images/i-am-not-interested-in-ordinary-human.jpg)
+
 > 我是东中毕业的凉宫春日。我对普通的人类没有兴趣。假如你们当中有外星人、未来人、异世界人或者超能力者，尽管来找我。完毕！
 
 开学初，凉宫春日便在班上如此自我介绍道。
@@ -100,7 +102,7 @@ categories:
 
 但我终究是没有认识凉宫春日的阿虚。
 
-![the-art-of-animation.jpg](https://i.loli.net/2020/04/04/I6zdenatQL4B2AV.jpg)
+![这才是动画的艺术啊](https://upyun.yunyoujun.cn/images/the-art-of-animation.jpg)
 
 放寒假前的最后一天，各门考试终于结束，我得空通宵写「非主流动画」的论文，没想到身体还是没有撑住，而感了冒。(幸好那时还不用担心是肺炎)
 
@@ -110,7 +112,7 @@ categories:
 
 而今日也正是因为此篇文章收到了一则匿名回复，所以自己也回看了一番，莫名留下泪来，而终于克服拖延症来写下现在的这些话。
 
-![anonymous-comment.jpg](https://i.loli.net/2020/04/04/kApYEOsL6Vwi4By.jpg)
+![善意的匿名评论](https://upyun.yunyoujun.cn/images/anonymous-comment-with-kindness.jpg)
 
 > 险夷原不滞胸中，何异浮云过太空？夜静海涛三万里，月明飞锡下天风。
 
@@ -271,7 +273,7 @@ X 解释道：“迪迦奥特曼里的大古。”
 
 老家旁桃花正旺。
 
-![peach-blossom.jpg](https://i.loli.net/2020/04/04/a3CJYrjHWDdOZQp.jpg)
+![老家旁桃花正旺](https://upyun.yunyoujun.cn/images/peach-blossom.jpg)
 
 而我的最终梦想莫过于，搬回老家居住，攒点钱盖上自己的小房子，拉上宽带，养鸡养鸭，当上一辈子的死宅。
 
@@ -280,6 +282,8 @@ X 解释道：“迪迦奥特曼里的大古。”
 因为人生不是一场马拉松，我无法也不打算取得第一名。
 
 > 对了，我是小叮当幼儿园毕业的云游君。我对普通的人类没有兴趣。假如你们当中有自认为有趣、不会给别人造成困扰的前提下特立独行的人，尽管来找我。完毕！
+
+![不来的话就判你死刑](https://upyun.yunyoujun.cn/images/sentenced-to-death.jpg)
 
 ---
 

@@ -13,7 +13,7 @@ icon: icon-cloud-line
 > ## Me
 >
 > All at sea.
-> 希望能成为一个有趣的人。
+> 希望能成为一个有趣的人。希望能创造出可以成为他人回忆的事物。
 
 <div class="text-center">
   <div class="site-author-avatar">

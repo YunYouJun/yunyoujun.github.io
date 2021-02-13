@@ -137,3 +137,13 @@ git commit -m 'xxx'
 ```sh
 chore(xxx): xxx
 ```
+
+## FAQ
+
+### submodule
+
+[.gitmodules](.gitmodules)
+
+```sh
+git submodule add https://github.com/YunYouJun/hexo-theme-yun themes/yun
+```
