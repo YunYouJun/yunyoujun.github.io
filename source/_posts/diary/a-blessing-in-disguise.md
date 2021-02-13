@@ -67,7 +67,7 @@ LRQ 瘦下太多，变化太大，如果不是声音没变，甚至有些认不�
 
 ![哈啰单车](https://i.loli.net/2019/05/19/5ce12213581ed76296.jpg)
 
-原先校园里的一片荒地，被开辟为了 CS 基地。有不知何处来的团队戴着孩子在进行团建活动。
+原先校园里的一片荒地，被开辟为了 CS 基地。有不知何处来的团队带着孩子们在进行团建活动。
 
 ![CS 基地](https://i.loli.net/2019/05/19/5ce1224935ad432781.jpg)
 
@@ -234,6 +234,6 @@ LRQ 的外公、外婆们交流的方言，似乎算苏州与上海嘉定的混�
 回家恰已十日，却梦见重返上海，告别之时，LRQ 身着大红羽绒服，小 piao 则是紫色运动背心，SB 的黄色格子衫。
 只觉配色鲜亮，似曾相识，醒来一搜。
 
-![天线宝宝](https://gss1.bdstatic.com/9vo3dSag_xI4khGkpoWK1HF6hhy/baike/c0%3Dbaike80%2C5%2C5%2C80%2C26/sign=535c4da7f8d3572c72ef948eeb7a0842/fcfaaf51f3deb48fd5d9bb90fa1f3a292cf578cf.jpg)
+![天线宝宝](https://upyun.yunyoujun.cn/images/teletubbies.jpg)
 
 Q.E.D.
