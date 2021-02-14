@@ -114,7 +114,7 @@ Yun 也就是本博客正在使用的主题，虽然应该算是前年开坑的�
 
 #### xiao-yun 小云
 
-小云，性别女，喜欢的人是云游君！（对不起，我只能在这里寻找一下存在感了。）
+小云，性别女，最喜欢的人是云游君！（对不起，我只能在这里寻找一下存在感了。）
 
 ![我太菜了，对不起！](https://upyun.yunyoujun.cn/images/sorry-i-am-so-vegetable.jpg)
 
@@ -131,7 +131,7 @@ Yun 也就是本博客正在使用的主题，虽然应该算是前年开坑的�
 
 因为虚荣，其实在使用的是 [Waline](https://waline.js.org/) （一个带后端的 Valine） 的解决方案。
 
-静态博客评论系统的选择着实有虚度苦恼之处，评论的对比可以参见 [第三方评论系统之我见](https://www.yunyoujun.cn/share/third-party-comment-system/)。
+静态博客评论系统的选择着实有许多苦恼之处，评论的对比可以参见 [第三方评论系统之我见](https://www.yunyoujun.cn/share/third-party-comment-system/)。
 
 #### [gaussian-blur](https://github.com/YunYouJun/gaussian-blur)
 
@@ -159,13 +159,15 @@ Yun 也就是本博客正在使用的主题，虽然应该算是前年开坑的�
 
 #### [color-dust](https://github.com/YunYouJun/color-dust)
 
+[预览 🌰](https://yunyoujun.cn/color-dust/)
+
 Image theme color extraction. 色尘知有数，劫烬岂无年。
 
 色彩可视化，上传图片抽取色彩，以及显示色彩的相关信息可视化。
 
 #### [ak-ui](https://github.com/YunYouJun/ak-ui)
 
-[预览](https://ak-ui.yunyoujun.cn/)
+[预览 🌰](https://ak-ui.yunyoujun.cn/)
 
 明日方舟风格的 UI 框架，大部分使用 CSS 特性实现，练习产物。写了些，后来没啥时间，加之方舟也渐渐长草了，就没有继续完善了。（日后还会拾起来？）
 
@@ -182,6 +184,8 @@ Image theme color extraction. 色尘知有数，劫烬岂无年。
 #### [baidu-image-spider](https://github.com/YunYouJun/baidu-image-spider)
 
 百度图片爬虫小工具，可以通过终端快速爬取关键字的图片并下载到指定文件夹。
+
+比如 `bis -k 美少女`
 
 #### [utils](https://github.com/YunYouJun/utils)
 
@@ -359,7 +363,7 @@ Image theme color extraction. 色尘知有数，劫烬岂无年。
 | 猫耳女仆   | 小云             |
 | 可爱女主角 | 可爱 JK 美少女   |
 | 富婆       | 实验室的松树盆栽 |
-| 伙伴       | 床               |
+| 好伙伴     | 床               |
 | ...        | ...              |
 
 等等，是不是混入了奇怪的东西，可爱女主角真的存在吗？
@@ -697,6 +701,8 @@ Image theme color extraction. 色尘知有数，劫烬岂无年。
 我的脑海中也时常如此般冒出众多的我，开始争吵。
 
 但我却不知道自己何时能迈出那一步。
+
+![连 IE 都有勇气问你 是否要将它设成预设浏览器 你他妈的却跟我说你没勇气和喜欢的人告白](https://upyun.yunyoujun.cn/images/ie-is-braver-than-you.jpg)
 
 ### 家
 
