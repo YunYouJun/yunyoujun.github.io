@@ -29,9 +29,6 @@ wordcloud:
   enable: true
 
 # comment
-valine:
-  enable: true
-
 minivaline:
   enable: false
 
