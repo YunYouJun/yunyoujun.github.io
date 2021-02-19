@@ -22,7 +22,7 @@ aplayer: true
 
 在网络上游荡许久，时常会看到许多博主有趣丰富的年终总结，令人心生羡慕。
 
-![真是令人感到羡慕...](https://upyun.yunyoujun.cn/images/really-enviable.jpg)
+![不过如此](https://upyun.yunyoujun.cn/images/just-so-so.jpg)
 
 回想起自己过去似乎从来没有写过所谓的年终总结，加之很久没有更新（~~水~~），尽管没有什么特别有趣的事情，但不妨回顾一番。
 
