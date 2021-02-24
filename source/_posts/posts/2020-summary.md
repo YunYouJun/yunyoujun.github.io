@@ -10,7 +10,7 @@ categories:
 aplayer: true
 ---
 
-![做🐷呢 最重要的是开心](https://cdn.jsdelivr.net/gh/YunLeFun/assets//images/happy-is-important-for-a-pig.jpg)
+![如何养猪](https://upyun.yunyoujun.cn/images/how-to-raise-pigs.jpg)
 
 > [如何养猪 | wikiHow](https://zh.wikihow.com/%E5%85%BB%E7%8C%AA)
 
@@ -755,6 +755,8 @@ Image theme color extraction. 色尘知有数，劫烬岂无年。
 为了尽管未必能实现的目标尽力去做，遵循本心去做开心有趣但未必有收益的事情，期盼可能永远不会实现的愿望，也没有什么不好的。
 
 因为，做猪呢，最重要的是开心！
+
+![做🐷呢 最重要的是开心](https://cdn.jsdelivr.net/gh/YunLeFun/assets//images/happy-is-important-for-a-pig.jpg)
 
 > 啊，对了，虽然要做特立独行的猪，但我其实是属牛的来着。所以大年初一的胖次是红色的。（~~滚啊！谁要知道这个啊！~~）
 
