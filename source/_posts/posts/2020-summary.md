@@ -1,7 +1,7 @@
 ---
 title: 做猪呢，最重要的是开心
 date: 2021-02-12 21:42:43
-updated: 2021-02-14 21:42:43
+updated: 2021-03-02 21:42:43
 tags:
   - 年终总结
   - 养猪
@@ -759,5 +759,19 @@ Image theme color extraction. 色尘知有数，劫烬岂无年。
 ![做🐷呢 最重要的是开心](https://cdn.jsdelivr.net/gh/YunLeFun/assets//images/happy-is-important-for-a-pig.jpg)
 
 > 啊，对了，虽然要做特立独行的猪，但我其实是属牛的来着。所以大年初一的胖次是红色的。（~~滚啊！谁要知道这个啊！~~）
+
+## 猪的忧郁
+
+> 2021-03-02
+
+事实上，在我稍微得意忘形不久。
+
+情理之外意料之中，教师证的面试不合格。巧的是今日 GitHub Total Stars 刚好是 996，仿佛在暗示着些什么。
+
+明明没怎么说话却嗓子痛，情感上似乎在扮演小丑工具人的角色，论文写不出来，键盘还不小心进水了，诸事加在一起难免有些难过……
+
+![我真的有那么菜吗？](https://upyun.yunyoujun.cn/images/i-am-so-vegetable.jpg)
+
+---
 
 Q.E.D.
