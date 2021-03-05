@@ -35,13 +35,14 @@
   },
   "scripts": {
     "algolia": "hexo clean && hexo algolia",
+    "backup": "sh bash/backup.sh",
     "build": "hexo g",
+    "deploy": "hexo d",
     "dev": "export NODE_ENV=dev && hexo s",
-    "test": "export NODE_ENV=test && hexo s",
     "docs:dev": "cd themes/yun && yarn docs:dev",
     "predeploy": "hexo clean && hexo g",
-    "deploy": "hexo d",
-    "backup": "sh bash/backup.sh"
+    "post": "hexo new post",
+    "test": "export NODE_ENV=test && hexo s"
   },
   "author": "YunYouJun <me@yunyoujun.cn>",
   "homepage": "https://yunyoujun.cn",
