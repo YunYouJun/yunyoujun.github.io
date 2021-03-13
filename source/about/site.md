@@ -32,6 +32,10 @@ icon: icon-home-4-line
 <details open>
 <summary>2021 年</summary>
 
+### 2021-03-07 19:43:34
+
+加入[十年之约](https://www.foreverblog.cn/)。
+
 ### 2021-01-31
 
 [SM.MS](https://sm.ms) 国内节点似乎挂了，免费图床终究有点不放心。
