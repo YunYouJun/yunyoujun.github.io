@@ -49,15 +49,6 @@ nnrm 相比 nrm 的改进之处：
 - 彩色的输出结果
 - 每次修改后自动显示 registry 列表，并标记当前 registry
 
-### Default Registires
-
-- npm -------- <https://registry.npmjs.org/>
-- yarn ------- <https://registry.yarnpkg.com/>
-- taobao ----- <https://registry.npm.taobao.org/>
-- tencent ---- <https://mirrors.cloud.tencent.com/npm/>
-- npmMirror -- <https://skimdb.npmjs.com/registry/>
-- github ----- <https://npm.pkg.github.com/>
-
 ## 安装
 
 ```bash
@@ -84,6 +75,21 @@ Options:
   -h, --help     Display this message
   -v, --version  Display version number
 ```
+
+### 显示所有源
+
+```bash
+nnrm ls
+```
+
+#### Default Registires
+
+- npm -------- <https://registry.npmjs.org/>
+- yarn ------- <https://registry.yarnpkg.com/>
+- taobao ----- <https://registry.npm.taobao.org/>
+- tencent ---- <https://mirrors.cloud.tencent.com/npm/>
+- npmMirror -- <https://skimdb.npmjs.com/registry/>
+- github ----- <https://npm.pkg.github.com/>
 
 ### 切换源
 
