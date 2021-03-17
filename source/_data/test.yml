@@ -15,7 +15,7 @@ bg_image:
   # ![strange-storm-center-blur-30px.jpg](https://i.loli.net/2020/05/31/HfhZPO2NSDBemai.jpg)
 
 pjax:
-  enable: false
+  enable: true
 
 aplayer:
   global: true
@@ -31,6 +31,9 @@ wordcloud:
 # comment
 minivaline:
   enable: false
+
+waline:
+  enable: true
 
 disqus:
   enable: false
@@ -51,7 +54,7 @@ twikoo:
 
 comment:
   candidates:
-    - valine
+    - waline
 
 # sidebar:
 #   tagcloud:

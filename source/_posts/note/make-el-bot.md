@@ -214,6 +214,14 @@ mirai: 「想不到吧，爷又活了。」
 
 > 爷的青春又回来了。
 
+### 2021-03-08 mirai-ts 1.0 Ai
+
+![Shindo Ai](https://user-images.githubusercontent.com/25154432/110353530-1f9de280-8072-11eb-94b0-addcd8ca1ca4.png)
+
+> 新堂爱（新堂 愛（しんどう あい），Shindo Ai ——「境界的彼方」
+
+挑了个好日子，正式 release 了 [v1.0.0 Ai](https://github.com/YunYouJun/mirai-ts/releases)，已经基本完成所有功能和类型封装。
+
 ---
 
 To Be Continued.
