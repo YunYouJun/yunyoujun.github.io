@@ -27,9 +27,9 @@
     "hexo-wordcount": "^6.0.1"
   },
   "devDependencies": {
-    "eslint": "^7.22.0",
+    "eslint": "^7.24.0",
     "eslint-config-hexo": "^4.1.0",
-    "hexo-all-minifier": "0.5.5",
+    "hexo-all-minifier": "0.5.7",
     "hexo-browsersync": "^0.3.0",
     "hexo-server": "^2.0.0"
   },
@@ -37,8 +37,9 @@
     "algolia": "hexo clean && hexo algolia",
     "backup": "sh bash/backup.sh",
     "build": "hexo g",
+    "clean": "hexo clean",
     "deploy": "hexo d",
-    "dev": "export NODE_ENV=dev && hexo s",
+    "dev": "export NODE_ENV=development && hexo s",
     "docs:dev": "cd themes/yun && yarn docs:dev",
     "predeploy": "hexo clean && hexo g",
     "post": "hexo new post",
