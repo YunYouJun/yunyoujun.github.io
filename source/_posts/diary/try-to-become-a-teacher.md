@@ -409,6 +409,12 @@ Wappalyzer 告诉我它似乎使用了 jQuery，还是 v1.11.1 的远古版本�
 
 GitHub Total Stars 刚好是 996，仿佛在暗示加班 996。
 
+### Re 面试
+
+2021-04-17
+
+又报名了信息技术的面试，报名费是 215 元。
+
 ---
 
 To Be Continued.

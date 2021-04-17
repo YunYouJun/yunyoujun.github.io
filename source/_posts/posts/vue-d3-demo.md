@@ -119,6 +119,7 @@ yarn create vite-app <project-name>
 我们先来参观一下示例项目中的代码。
 
 > 值得一提的是 Vue3 我们也不再须是唯一的根元素了，而可以多个元素并列（如：`<h1></h1>`, `<button></button>`, `<p></p>`）。
+> 这被称做 [Fragments | 片段](https://v3.vuejs.org/guide/migration/fragments.html#fragments)。
 
 ```html
 // HelloWorld.vue
