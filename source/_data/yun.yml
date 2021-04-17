@@ -37,18 +37,20 @@ disqusjs:
 
 footer:
   since: 2016
+  icon:
+    url: https://sponsors.yunyoujun.cn
+    title: 云游君的赞助者们
   beian:
     enable: true
     icp: 苏ICP备17038157号
-  custom_text:
-  # ...
   support:
     enable: true
     title: 又拍云
     link: https://www.upyun.com/?utm_source=lianmeng&utm_medium=referral
     logo: https://cdn.jsdelivr.net/gh/YunYouJun/cdn/img/logo/upyun-logo.png
     prefix: 本网站由
-    suffix: 提供 CDN 加速/云存储服务
+    suffix: 提供 CDN 加速
+  custom_text:
 
 engine_search:
   enable: false
