@@ -90,7 +90,7 @@ Content
 
 ```html
 <details>
-<summary>Summary<summary>
-Content
+  <summary>Summary</summary>
+  Content
 </details>
 ```

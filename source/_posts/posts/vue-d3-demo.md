@@ -15,14 +15,13 @@ categories:
 
 ~~「简单」是不是用的太多了~~
 
-> 当然其实这起源于老师分配的录某慕课教程的任务。
-
 <!-- more -->
 
 ## 纪念品
 
-- GitHub: [CBD-Lab/vue-d3-demo](https://github.com/CBD-Lab/vue-d3-demo)
-- 示例页面: [vue-d3-demo](https://cbd-lab.github.io/vue-d3-demo/)
+- GitHub: [vue-d3-demo](https://github.com/YunYouJun/vue-d3-demo)
+- 示例页面: [vue-d3-demo](https://yunyoujun.github.io/vue-d3-demo/)
+- Slides(开发环境): [vue-d3-demo](https://www.yunyoujun.cn/slides/vue-d3-demo/)
 
 ## 行李清单
 
@@ -91,7 +90,7 @@ npm init vite-app <project-name>
 yarn create vite-app <project-name>
 ```
 
-- 初始化项目：`yarn create vite-app vue-d3-demo`
+- 初始化项目：`yarn create @vitejs/app vue-d3-demo`
 - 进入项目文件夹：`cd vue-d3-demo`（如果你使用了 [VS Code](https://code.visualstudio.com/)，你还可以通过 `code .` 的方式快速打开文件夹）
 - 安装依赖：`yarn`
 - 启动项目：`yarn dev`
@@ -152,7 +151,7 @@ yarn create vite-app <project-name>
 
 > 官方提供的其实是一个 CSV 文件。D3 也支持读取 CSV 格式的数据，当然我们还是可以先将其转换为 JSON 格式，因为它更通用一些。
 > 为了方便起见，下载下来后，我们可以直接使用 [CSV to JSON](https://csvjson.com/csv2json) 等一些类似的网站进行转换。
-> 最后可以得到 [alphabet.json](https://cbd-lab.github.io/vue-d3-demo/alphabet.json)。
+> 最后可以得到 [alphabet.json](https://yunyoujun.github.io/vue-d3-demo/alphabet.json)。
 
 我们可以将其作为一个独立的静态文件，用请求的方式去加载它，而非将其打包在文件中。
 
@@ -402,13 +401,20 @@ svg.append("g").call(yAxis);
 
 如果你需要的话，可以回去检查一下本次旅行的[纪念品](#纪念品)。
 
-> 感谢 [MleMoe](https://mle.moe) 同学的校稿。
+也让我们来回顾一下我们去了哪里吧？
+
+[v0.0.1 第一次的旅途](https://github.com/YunYouJun/vue-d3-demo/tree/v0.0.1)
+
+- 搭建了一个简单的 Vite 项目结构
+- 使用 Vue@3 构建了一个简单的页面
+- 使用 D3@6 绘制了一个简单的柱状图
+- 使用 axios 获取 JSON 数据
 
 ## 终点
 
 世间万物终有尽时，天下亦没有不散的宴席。
 
-一个简单的不知所云的小旅途（教程），到此就收工了。后续可能（也可能不）会附带上简单的（Node.js/Go/Python）后台 API 搭建。
+一个简单的不知所云的小旅途（教程），到此就收工了。~~后续可能（也可能不）会附带上简单的（Node.js/Go/Python）后台 API 搭建。~~
 
 > 还记得「窟嚓嚓」的故事吗？
 > 那辆白色的火车头是有目的地的……
@@ -419,8 +425,187 @@ svg.append("g").call(yAxis);
 
 我们为了抵达某个终点而开始自己的旅程，也希望它能成为你变成想要成为的人的途间一块不知名的垫脚石。
 
+> 黎明将近了，「少年/少女」前进吧！
+> 感谢 [LLM](https://blog.mle.moe) 同学的校稿。
+
 ---
 
-黎明将近了，「少年/少女」前进吧！
+## 新的旅程
 
-Q.E.D.
+在此前，我们简单的学习了 Vue + Vite + D3 的基本操作，并搭建了一个基础的页面。
+
+接下来我们来试图为其添加一个表单，并添加更多辅助开发的功能。（让它更有项目级别的感觉。）
+
+比如：
+
+- [Sass](https://sass-lang.com/): CSS 最为流行的预处理器，我们可以借助它来利用嵌套、变量等方式来更加便捷地书写 CSS。
+- [element-plus](https://element-plus.org/): Vue2 时期最流行的前端组件库 [element-ui](https://element.eleme.io/) 的 Vue3 版本，[Vuetify](https://vuetifyjs.com/zh-Hans/) 虽然也不错，但是目前还没有实现 Vue3 的升级兼容，因为我们的首选方案是 element-plus。
+- [Vuex](https://next.vuex.vuejs.org/): Vue 的全局状态管理工具，等我们用到的时候想必你会明白的。
+- [vue-router](https://next.router.vuejs.org/zh/introduction.html): Vue 的路由管理器，因为本质上作为单页面应用时， Vue 的路由是用 hash 模拟出来的。
+- [TypeScript](https://www.typescriptlang.org/): JavaScript 的超集，相比其多了优雅的类型，更利于开发大型项目、协作、排查 BUG。
+
+一下子似乎又多了许多新的内容，但是不用担心，我们是自顶向下式的，我们先使用这些可以提高开发效率的工具，对其产生兴趣，然后再去逐一进一步了解它们。
+
+我觉得提前了解到某些东西可以做到什么样的效果且更有效率，是有必要的。而非一直使用刀耕火种的方式，如先人般重新探索一遍。
+想必这也是旅行时，「地图」的作用吧！
+
+对了，因为我们使用的是 Vue3 版本，所以我们使用的 Vue 相关全家桶都得是 `next` 版本的。
+
+那让我们开始这次新的征程吧！
+
+在此之前，我们需要先准备一点行李，以备不时之需。
+
+### 新的行李清单
+
+#### vue-router
+
+> [Getting Started | Vue Router](https://next.router.vuejs.org/guide/)
+
+开发一个应用级别的网站，必然存在多个页面。
+那么我们应该使用更为优雅的方式来组织页面的 url。
+
+vue-router 本质是一个管理生成路由的工具，我们需要手动去导入 Vue 组件并为其分配路由。
+这其实蛮麻烦的，我们每新建一个页面，就要去书写对应的路由。
+
+![这河里吗？](https://upyun.yunyoujun.cn/images/in-this-river.jpg)
+
+理想的情况下，我们在 `pages` 文件夹下新建 Vue 组件，它能自动根据组件名，生成对应的路由，这才是最优雅的。
+
+也就是类似 Nuxt pages 自动生成的动态路由 [File System Routing](https://zh.nuxtjs.org/docs/2.x/features/file-system-routing)。
+
+> Nuxt.js automatically generates the vue-router configuration based on your file tree of Vue files inside the pages directory. When you create a .vue file in your pages directory you will have basic routing working with no extra configuration needed.
+
+对于 Vue 来说，Vite 也存在一个类似的插件 [vite-plugin-pages](https://github.com/hannoeru/vite-plugin-pages/)。
+
+对照 README 配置一遍就是了。
+
+```bash
+# vite-plugin-pages 仍然需要使用 vue-router 来创建路由
+yarn add vue-router@next
+yarn add -D vite-plugin-pages
+```
+
+配置 Vite 插件。
+
+```typescript
+// vite.config.ts
+import Vue from "@vitejs/plugin-vue";
+import Pages from "vite-plugin-pages";
+
+export default {
+  plugins: [Vue(), Pages()],
+};
+```
+
+`vite-plugin-pages` 只做了根据文件路径生成对应路由数据的事情，我们仍然需要 vue-router 来生成 hash 路由。
+
+```typescript
+// src/router/index.ts
+import { createRouter, createWebHashHistory } from "vue-router";
+import routes from "virtual:generated-pages";
+
+const router = createRouter({
+  history: createWebHashHistory(import.meta.env.BASE_URL),
+  routes,
+});
+
+export default router;
+```
+
+记得在 `main.ts` 中引入它。
+
+```typescript
+// src/main.ts
+...
+import router from "./router";
+...
+const app = createApp(App);
+app.use(router);
+app.mount("#app");
+
+```
+
+#### Vuex
+
+> [Getting Started | Vuex](https://next.vuex.vuejs.org/guide/)
+
+再整一个全局状态管理。也许我们会遇到需要存储管理全局的状态，~~也可能不需要~~。
+
+```bash
+yarn add vuex@next
+```
+
+```typescript
+// src/store/index.ts
+import { createStore, createLogger } from "vuex";
+// import form from "./modules/form";
+const debug = false;
+
+export default createStore({
+  state: {},
+  mutations: {},
+  actions: {},
+  modules: {
+    // form,
+  },
+  strict: debug,
+  plugins: debug ? [createLogger()] : [],
+});
+```
+
+在此内部，我们则可以使用 `src/store/modules/xxx.ts` 的方式管理模块数据。（之后用到再说吧！）
+
+#### sass
+
+引入 sass 的流程其实已经被 vite 简化了，我们只需要 `import xxx.scss` 即可。
+
+`scss` 是 `sassy css`，作为 sass 时兼容了 css 的写法。
+
+```bash
+yarn add sass
+```
+
+```typescript
+// src/main.ts
+...
+import "./index.scss"
+...
+```
+
+#### element-plus
+
+> [快速上手 | Element Plus](https://element-plus.org/#/zh-CN/component/quickstart)
+
+UI 组件库预置了许多常用的组件，我们可以快速使用它们来构建自己想要的功能原型。（当然我们仍然可以自定义它们。）
+
+```bash
+yarn add element-plus
+```
+
+再加上我们之前引入的东西，最后 `src/main.ts` 看起来应该是这个样子。
+
+```typescript
+// src/main.ts
+import { createApp } from "vue";
+import App from "./App.vue";
+// import scss
+import "./index.scss";
+import router from "./router";
+import store from "./store";
+import ElementPlus from "element-plus";
+import "element-plus/lib/theme-chalk/index.css";
+
+const app = createApp(App);
+app.use(ElementPlus).use(router).use(store);
+app.mount("#app");
+```
+
+好了，基础的行李们已经准备完毕了，让我们出发吧！
+
+### 表单
+
+让我们试着借助此前准备好的工具包，构建一个表单功能吧！
+
+---
+
+To Be Continued.
