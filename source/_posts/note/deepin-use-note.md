@@ -19,10 +19,10 @@ categories:
 ## 前言
 
 因为最近电脑中了恶意软件的圈套，清除又恨麻烦。
-想到兴许还有几月便可以换上新装备，而现今有没有对电脑的稳定需求，便索性安装成 Linux 尝尝鲜。
+想到兴许还有几月便可以换上新装备，而现今又没有对电脑的稳定需求，便索性安装成 Linux 尝尝鲜。
 早便听得 Deepin 的本土化和常用软件兼容性做得很好，便以其为主，记录一下还原当初 Windows 工作环境的过程。
 
-More info: [Linux 使用笔记](../linux-use-note/)
+More info: [Linux 使用笔记](../linux-learn-note/)
 
 ## Install
 
@@ -39,7 +39,7 @@ U 盘启动器制作工具：
 
 安装好后最好切换为阿里云的 CDN ，比官方的速度还要快些。
 
-不需要 `vim /etc/apt/sources.list` 修改
+> 不需要 `vim /etc/apt/sources.list` 修改
 
 `系统设置菜单 > 更新 > 更新设置 > 切换镜像源` 即可，若为显示 `切换镜像源`，需要先关闭 `智能镜像源`。
 
@@ -49,7 +49,7 @@ U 盘启动器制作工具：
 
 ##### bluetoothctl
 
-```sh
+```bash
 sudo service bluetooth start # 打开系统蓝牙
 bluetoothctl # 进入bluetoothctl
 power on
@@ -71,7 +71,7 @@ or
 
 一款功能强大的蓝牙管理器
 
-```sh
+```bash
 sudo apt install blueman
 ```
 
@@ -93,6 +93,10 @@ Linux 下似乎识别不了 `169.254.x.x` 网段，所以如果在此段的打�
 设置为 `DHCP`后，会自动切换到 `192.168.x.x`。
 此时再输入 `hp-setup` 设置无线打印机，最后 `ho-setup 192.168.x.x` 添加无线打印机。
 
+## 后话
+
+再之后的我便已经换上了 macOS，类 Unix 系统的开发环境对于开发者来说很是友好。当然这也是我更换装备的根本原因。
+
 ---
 
-To Be Continued.
+Q.E.D.
