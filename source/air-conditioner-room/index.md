@@ -9,9 +9,9 @@ reward: true
 
 ---
 
-<iframe height="700" frameborder="no" src="https://www.yunyoujun.cn/air-conditioner/"></iframe>
+<iframe height="720" frameborder="no" src="https://ac.yunyoujun.cn"></iframe>
 
 ---
 
-裸机：<https://www.yunyoujun.cn/air-conditioner/>
+裸机：<https://ac.yunyoujun.cn>
 空调售后：[air-conditioner](https://github.com/YunYouJun/air-conditioner)
