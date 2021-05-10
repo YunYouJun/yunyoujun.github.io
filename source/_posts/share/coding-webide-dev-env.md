@@ -67,36 +67,36 @@ updated: 2017-10-11 16:21:12
 
 1. 在终端输入以下命令，并确定项目名称，创建 Web 项目。
 
-```sh
-mvn archetype:generate -DgroupId=com.yiibai -DartifactId=项目名称 -DarchetypeArtifactId=maven-archetype-webapp -DinteractiveMode=false
-```
+   ```bash
+   mvn archetype:generate -DgroupId=com.yiibai -DartifactId=项目名称 -DarchetypeArtifactId=maven-archetype-webapp -DinteractiveMode=false
+   ```
 
 2. 此时项目文件夹下会生成 `pom.xml` 文件，打开，并找到如下 `<build>` 标签。
 
-```xml
-<build>
-<finalName>你的项目名称</finalName>
-</build>
-```
+   ```xml
+   <build>
+   <finalName>你的项目名称</finalName>
+   </build>
+   ```
 
 3. 在 `<build>` 中增加如下的 `<plugins>` 标签。(此处作用是添加 `maven tomcat7` 插件，默认配置的是 `tomcat6` 插件，不支持 `jdk1.8`)
 
-```xml
-<plugins>
-  <plugin>
-  <groupId>org.apache.tomcat.maven</groupId>
-  <artifactId>tomcat7-maven-plugin</artifactId>
-  <version>2.1</version>
-  </plugin>
-</plugins>
-```
+   ```xml
+   <plugins>
+     <plugin>
+     <groupId>org.apache.tomcat.maven</groupId>
+     <artifactId>tomcat7-maven-plugin</artifactId>
+     <version>2.1</version>
+     </plugin>
+   </plugins>
+   ```
 
 4. 进入项目文件夹，运行如下命令，开启 `tomcat7` 服务器。（注意要加 7 ）
 
-```sh
-cd 你的项目文件夹
-mvn tomcat7:run
-```
+   ```bash
+   cd 你的项目文件夹
+   mvn tomcat7:run
+   ```
 
 5. 点击 Coding WebIDE 界面右边界处的生成链接(默认是 8080 端口)，访问生成的链接即可看到 JavaWeb 的页面了。
 

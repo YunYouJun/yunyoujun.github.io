@@ -74,7 +74,7 @@ icon: icon-cloud-line
 
 ### 其他
 
-- 不务正业的闲聊 QQ 群：[389401003](https://shang.qq.com/wpa/qunwpa?idkey=3bd19a05aaccb2b60c396295c8617b3a9e667821a495e8cd7e1698ff95ab61c6) （欢迎来玩）
+- 不务正业的闲聊 QQ 群：[1050458482](https://qm.qq.com/cgi-bin/qm/qr?k=ho4lpRDqAGnN78DOwDe7DmnoG017npmx&jump_from=webapi) （欢迎来玩）
 
 <details>
 <summary>🐦</summary>
@@ -95,6 +95,6 @@ icon: icon-cloud-line
 
 谢谢你们！
 
-- [赞助名单](https://sponsors.yunyoujun.cn/list)
+- [赞助名单](https://sponsors.yunyoujun.cn)
 
 喂，看到下面发光的按钮了吗！
