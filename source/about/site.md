@@ -13,13 +13,18 @@ icon: icon-home-4-line
 ## Blog
 
 > 这里应该算是个博客。所以大概会记录一些学习、生活上的回忆与业余创作 ~~瞎搞~~ ，偶尔也会分享自己觉得有趣的东西。 =w=
-> 还算念旧，所以黑历史的文章基本没有删。
 
-本博客所有文章默认为原创，除特别声明外，均采用 [CC BY-NC-SA](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh) 许可协议。转载注明出处即可。
+<div class="danger">
+
+> 本博客所有文章（除特别声明外）默认为原创，均采用 [CC BY-NC-SA](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh) 许可协议。转载注明出处即可。
+
+</div>
 
 十分欢迎无意中点进来的同学，给我留言和建议！~~虽然此刻很想发一个表情!~~
 
 ![不存在的.jpg](https://cdn.jsdelivr.net/gh/YunYouJun/cdn/img/meme/no-exist.jpg)
+
+> 我也希望能在此留下一些值得回忆的、内心里柔软的东西。
 
 本页主要用来记录站点的历史。
 
@@ -29,7 +34,7 @@ icon: icon-home-4-line
 
 ## Time
 
-<details open>
+<details>
 <summary>2021 年</summary>
 
 ### 2021-03-07 19:43:34
@@ -44,7 +49,7 @@ icon: icon-home-4-line
 
 ### 2021-01-30
 
-因为换成 Disqus 后，基本没有评论了（关爱空巢老云游）。所以试了试 [Waline](https://waline.js.org/)，感觉还不错。
+因为换成 Disqus 后，基本没有评论了（关爱空巢老云）。所以试了试 [Waline](https://waline.js.org/)，感觉还不错。
 
 ### 2021-01-26
 

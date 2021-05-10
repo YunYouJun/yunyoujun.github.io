@@ -20,11 +20,7 @@ updated: 2017-10-15 17:38:06
 
 > 啰嗦完了……
 
-找到的便是
-
-# [Discourse](https://www.discourse.org/)
-
-使用 Ruby 编写
+找到的便是 [Discourse](https://www.discourse.org/)（使用 Ruby 编写）
 
 ## 优点
 
@@ -40,7 +36,7 @@ updated: 2017-10-15 17:38:06
 
 - [30 分钟内在云上部署 Discourse](https://meta.discoursecn.org/t/topic/26)
 - [在大陆地区的云上部署 Discourse](https://meta.discoursecn.org/t/topic/28)
-- [开源论坛之discourse搭建](http://itfish.net/article/52781.html)(与官方教程大同小异，教了几个查看 docker 的指令)
+- [开源论坛之 discourse 搭建](http://itfish.net/article/52781.html)(与官方教程大同小异，教了几个查看 docker 的指令)
 - [在同一台机器上运行 Discourse 和其他站点](https://meta.discoursecn.org/t/topic/684)
 - [在终端激活管理员帐号](https://meta.discourse.org/t/create-admin-account-from-console/17274)
 
@@ -52,4 +48,4 @@ updated: 2017-10-15 17:38:06
 ### 遇到的问题
 
 - 执行 `./launcher bootstrap app` 指令时，会使用到国外的资源，所以可能速度较慢，资源不稳定，容易失败。（不用 `vpn` 有一定几率成功。）重新执行相同指令即可。（反正我是这么成功的，鼠标激活命令行的光标，保持连接~~玄学~~）
-- 无法收到事先设定的邮箱发送的邮件，来激活管理员账号（可参考：[在终端激活管理员帐号](https://meta.discourse.org/t/create-admin-account-from-console/17274)）(我使用的是腾讯企业邮箱 smtp ，虽然帮助是用465端口，最后发现还是使用587默认端口方可行)
+- 无法收到事先设定的邮箱发送的邮件，来激活管理员账号（可参考：[在终端激活管理员帐号](https://meta.discourse.org/t/create-admin-account-from-console/17274)）(我使用的是腾讯企业邮箱 smtp ，虽然帮助是用 465 端口，最后发现还是使用 587 默认端口方可行)
