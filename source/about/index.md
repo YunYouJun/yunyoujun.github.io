@@ -74,7 +74,7 @@ icon: icon-cloud-line
 
 ### 其他
 
-- 不务正业的闲聊 QQ 群：[1050458482](https://qm.qq.com/cgi-bin/qm/qr?k=ho4lpRDqAGnN78DOwDe7DmnoG017npmx&jump_from=webapi) （欢迎来玩）
+- 不务正业的闲聊 QQ 群：[1050458482](https://qm.qq.com/cgi-bin/qm/qr?k=kZJzggTTCf4SpvEQ8lXWoi5ZjhAx0ILZ&jump_from=webapi) （欢迎来玩）
 
 <details>
 <summary>🐦</summary>
