@@ -95,6 +95,6 @@ icon: icon-cloud-line
 
 谢谢你们！
 
-- [赞助名单](https://sponsors.yunyoujun.cn/list)
+- [赞助名单](https://sponsors.yunyoujun.cn)
 
 喂，看到下面发光的按钮了吗！
