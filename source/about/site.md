@@ -34,8 +34,16 @@ icon: icon-home-4-line
 
 ## Time
 
-<details>
+<details open>
 <summary>2021 年</summary>
+
+### 2021-05-11
+
+[小空调](https://ac.yunyoujun.cn)带来的流量太可怕了，联系到了[又拍云](https://www.upyun.com/)赞助，感谢赞助的 1k 年代金券。
+
+偷摸摸放个广告。
+
+[![又拍云 CDN](https://upyun.yunyoujun.cn/images/upyun-cdn-adsense.jpg)](https://www.upyun.com/)
 
 ### 2021-03-07 19:43:34
 

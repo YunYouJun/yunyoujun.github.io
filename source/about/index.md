@@ -38,7 +38,7 @@ icon: icon-cloud-line
 <details>
 <summary>此生想要完成的事情</summary>
 
-- [ ] 维护一个超过 1k Star 的项目
+- [x] 维护一个超过 1k Star 的项目（我怎么也没想到会是 [它](https://github.com/YunYouJun/air-conditioner)）
 - [ ] 写一本值得出版的书
 - [ ] 做一款值得发售的游戏
 - [ ] 做一部有故事的动画短片
@@ -94,6 +94,10 @@ icon: icon-cloud-line
 [![YunYouJun's Sponsors](https://github.com/YunYouJun/sponsors/workflows/Sponsors/badge.svg)](https://sponsors.yunyoujun.cn)
 
 谢谢你们！
+
+感谢[又拍云](https://www.upyun.com/)为本网站提供的 CDN 支持。
+
+[![又拍云 CDN](https://upyun.yunyoujun.cn/images/upyun-cdn-adsense.jpg)](https://www.upyun.com/)
 
 - [赞助名单](https://sponsors.yunyoujun.cn)
 
