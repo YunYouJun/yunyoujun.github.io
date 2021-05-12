@@ -9,7 +9,7 @@ reward: true
 
 ---
 
-<iframe height="740" frameborder="no" src="https://ac.yunyoujun.cn"></iframe>
+<iframe style="width:100%;" height="760" frameborder="no" src="https://ac.yunyoujun.cn"></iframe>
 
 ---
 
