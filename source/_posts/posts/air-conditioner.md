@@ -21,13 +21,13 @@ categories:
 那么它能做什么呢？没错，**随时随地**打开空调。唯一的缺憾是，没有**风**。但我们也许可以「望空调止热」。
 
 - GitHub: [air-conditioner](https://github.com/YunYouJun/air-conditioner/)
-- 裸机: [云空调](https://www.yunyoujun.cn/air-conditioner/)
+- 裸机: [云空调](https://ac.yunyoujun.cn)
 - 样板房: [空调间](https://www.yunyoujun.cn/air-conditioner-room/)
 
 遵从最宽松的 MIT 协议，你可以自行 `clone` 本项目，并自定义地构建它。当然也可以通过 `iframe` 的方式直接嵌入你的网站。
 
 ```html
-<iframe height="700" src="https://www.yunyoujun.cn/air-conditioner/"></iframe>
+<iframe height="700" src="https://ac.yunyoujun.cn"></iframe>
 ```
 
 <!-- more -->
