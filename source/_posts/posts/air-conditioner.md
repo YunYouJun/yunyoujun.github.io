@@ -92,6 +92,8 @@ categories:
 
 于是乎，我开启了屏幕共享，给面试官看了下我的小空调……
 
+> 我的博客即将同步至腾讯云+社区，邀请大家一同入驻：<https://cloud.tencent.com/developer/support-plan?invite_code=12slkvy6hgurn>
+
 ---
 
 Q.E.D.
