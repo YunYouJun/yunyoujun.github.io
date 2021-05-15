@@ -97,7 +97,7 @@ icon: icon-cloud-line
 
 感谢[又拍云](https://www.upyun.com/)为本网站提供的 CDN 支持。
 
-[![又拍云 CDN](https://upyun.yunyoujun.cn/images/upyun-cdn-adsense.jpg)](https://www.upyun.com/)
+[![又拍云 CDN](https://upyun.yunyoujun.cn/images/upyun-cdn-adsense.jpg)](https://www.upyun.com/league)
 
 - [赞助名单](https://sponsors.yunyoujun.cn)
 

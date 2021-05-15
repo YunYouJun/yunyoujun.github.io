@@ -30,6 +30,12 @@ categories:
 <iframe height="700" src="https://ac.yunyoujun.cn"></iframe>
 ```
 
+> 对了，最近因为小空调又火了起来。浮现出了许多去除页脚、售卖源码和冒名顶替的情况。
+
+MIT 协议虽然允许你以任何方式使用，但仍然规定署名作者，且原作者不承担代码使用后的风险。
+
+当然，国内并无法律承认开源协议，所以这更像是君子协定。希望大家各自问心无愧。
+
 <!-- more -->
 
 ## 前言
@@ -95,5 +101,7 @@ categories:
 > 我的博客即将同步至腾讯云+社区，邀请大家一同入驻：<https://cloud.tencent.com/developer/support-plan?invite_code=12slkvy6hgurn>
 
 ---
+
+[云空调，便携小空调-后记 | 微信公众号](https://mp.weixin.qq.com/s/WRZgds9PlH5MBxlhJYOj8g)
 
 Q.E.D.
