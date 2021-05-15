@@ -29,6 +29,7 @@ katex: true
 
 - ~~星尘龙（游戏王） Stardust Dragon~~
 - ~~星尘斗士（JOJO） Stardust Crusaders~~
+- ~~「与星尘握手」 命运石之门~~
 
 字符（char）+ 尘埃（dust）= 字尘（char-dust）
 
