@@ -14,4 +14,5 @@ reward: true
 ---
 
 裸机：<https://ac.yunyoujun.cn>
-空调售后：[air-conditioner](https://github.com/YunYouJun/air-conditioner)
+空调售后：[air-conditioner | GitHub](https://github.com/YunYouJun/air-conditioner)
+前世今生：[云空调，便携小空调｜云游君的小站](https://www.yunyoujun.cn/posts/air-conditioner/)
