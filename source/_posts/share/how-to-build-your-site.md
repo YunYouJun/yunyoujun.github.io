@@ -467,7 +467,7 @@ git push origin hexo
 
 输入以下命令即可新建 `xxx.md` 文件。
 
-```sh
+```bash
 hexo new post xxx
 ```
 
@@ -524,7 +524,7 @@ categories:
 
 也可以通过以下命令来新建页面。（当然还是 Markdown，不过也是可以在 Markdown 里写 HTML 的，也会被渲染出来。）
 
-```md
+```bash
 hexo new page xxx
 ```
 
