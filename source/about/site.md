@@ -61,7 +61,7 @@ icon: icon-home-4-line
 
 ### 2021-01-26
 
-因为没怎么用，掷骰子决定不再续费 [yunle.fun] 域名了。
+因为没怎么用，掷骰子决定不再续费 [yunle.fun](https://yunle.fun) 域名了。
 
 打算买一个 moe 的域名。
 
