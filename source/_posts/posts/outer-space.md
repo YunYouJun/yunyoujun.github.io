@@ -27,3 +27,8 @@ updated: 2016-09-20 13:55:05
 我想，大概，我要死了。
 
 以一只怀揣梦想的鱼儿的身份。
+
+---
+
+> 2021-05-25
+> [太空 | 微信公众号](https://mp.weixin.qq.com/s/lErZQMzAkPkkQPJJRBd3OA)
