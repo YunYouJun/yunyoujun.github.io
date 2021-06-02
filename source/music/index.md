@@ -45,4 +45,10 @@ aplayer: true
 
 ---
 
+[バナナフィッシュの浜辺と黒い虹 with Aimer](https://music.163.com/#/song?id=29343309)
+
+{% meting "29343309" "netease" "song" "theme:#C20C0C" %}
+
+---
+
 To Be Continued.
