@@ -3,8 +3,14 @@
 Thumbs.db
 tmp
 temp/
+
+# editor
+.vscode
+
+# lock
 yarn.lock
 package-lock.json
+pnpm-lock.yaml
 
 # dev
 node_modules/
@@ -14,5 +20,3 @@ node_modules/
 public/
 db.json
 .deploy*/
-travis_rsa
-travis_rsa.pub

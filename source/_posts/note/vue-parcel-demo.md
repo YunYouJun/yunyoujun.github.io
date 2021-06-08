@@ -11,6 +11,18 @@ categories:
   - 云游的小笔记
 ---
 
+<div class="danger">
+
+> **2021-06-08**
+> 时至今日，该篇文章的内容已有所过时。
+> Parcel 的地位也似乎一直有些尴尬。
+> 零配置的确是一个亮点，但是到真正编写复杂庞大的项目，我们还真的需要零配置吗？
+> 而谈起配置，似乎又难与悠久历史生态的 Webpack 同台竞技。
+> 至于速度，则难以与新诞生的基于 ES 打包的 Vite 相匹敌。
+> 现今的我基本已经转向使用 [Vite](https://github.com/vitejs/vite)，而并未再尝试 Parcel 的使用。
+
+</div>
+
 去年（已经是三年前了！）年末便听得新一代打包工具 Parcel.js 的风风火火，今日（两年前的某一天）也终于得以静下心来试一试。
 
 <!-- more -->
@@ -34,7 +46,9 @@ Vue 官方提供的模板 [vuejs-template/webpack](https://github.com/vuejs-temp
 ### 自己的小 Demo
 
 - GitHub: [vue-parcel-demo](https://github.com/YunYouJun/vue-parcel-demo)
-- [我很可爱，请给我钱！](https://github.com/YunYouJun/give-me-money): Vue + Parcel 实现的小应用
+- [我很可爱，请给我钱！](https://github.com/YunYouJun/give-me-money): 一个沙雕小应用
+  - [Tag v1.0.0](https://github.com/YunYouJun/give-me-money/releases/tag/v1.0.0) 为 Parcel@1 + Vue@2 构建
+  - 新版本我决定使用 Vite + Vue@3 + TypeScript 重构
 
 ## 过程
 
