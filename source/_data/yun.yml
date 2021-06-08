@@ -63,7 +63,7 @@ algolia_search:
 
 google_analytics:
   enable: true
-  id: UA-121354150-1
+  id: G-1LL0D86CY9
 
 google_adsense:
   enable: true

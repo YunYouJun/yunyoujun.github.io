@@ -33,7 +33,7 @@ icon: icon-cloud-line
 
 ![工作就输了](https://cdn.jsdelivr.net/gh/YunYouJun/cdn/img/meme/no-work.jpg)
 
-以及种花种草，养狗养猫，孤独终老。
+~~以及种花种草，养狗养猫，孤独终老。~~
 
 <details>
 <summary>此生想要完成的事情</summary>
