@@ -212,4 +212,4 @@ updated: 2017-02-11 23:10:10
 
 ## 后记
 
-[续 - 仓生](/creation/novel/the-common-hamster/)
+[续 - 仓生](/posts/the-common-hamster/)
