@@ -7,6 +7,8 @@ Hexo 主题：[Yun](https://github.com/YunYouJun/hexo-theme-yun/)
 
 - 主站：[yunyoujun.cn](https://www.yunyoujun.cn) | [yunyoujun.github.io](https://yunyoujun.github.io)
 - 备用：<https://yunyoujun.netlify.app>
+- 笔记：<https://notes.yunyoujun.cn>
+- 赞助：<https://sponsors.yunyoujun.cn>
 
 ## Use
 
