@@ -38,6 +38,14 @@ categories:
 
 面试官是给我的评价太高了，要特殊审批。
 
+2021-06-17
+
+正式拿到邮件 Offer 了。
+
+![阿里实习校招](https://upyun.yunyoujun.cn/images/alipay-email-offer.jpg)
+
+BAT 通关成就达成 √
+
 ---
 
 To Be Continued.
