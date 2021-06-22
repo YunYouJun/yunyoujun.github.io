@@ -121,7 +121,7 @@ CF 酱， 👴 又回来了！
 
 ### 2020-03-25 加入 [travellings](https://github.com/volfclub/travellings) & [bloghub](https://github.com/shidenggui/bloghub)
 
-点击侧边栏的黑色小飞机或底部的链接，将随机跳转一个加入 [Travellings](https://travellings.now.sh/) 的个人网站。
+点击侧边栏的黑色小飞机或底部的链接，将随机跳转一个加入 [Travellings](https://travellings.link/) 的个人网站。
 
 随机的邂逅，很有诗意。
 
