@@ -37,7 +37,7 @@ categories:
 
 ## 步骤
 
-首先开通[腾讯云 - 内容分发网络](<(https://cloud.tencent.com/product/cdn)>)。
+首先开通[腾讯云 - 内容分发网络](https://cloud.tencent.com/product/cdn)。
 
 ### 添加自己的域名
 
