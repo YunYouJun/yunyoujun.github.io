@@ -462,7 +462,7 @@ Image theme color extraction. 色尘知有数，劫烬岂无年。
 ![2019-11-30 | 一本日记](https://upyun.yunyoujun.cn/images/1diary-2019-11-30.jpg)_2019-11-30_
 ![2020-11-30 | 一本日记](https://upyun.yunyoujun.cn/images/1diary-2020-11-30.jpg)_2020-11-30_
 
-### 猪的思春期
+<!-- ### 猪的思春期
 
 #### 错觉
 
@@ -703,6 +703,7 @@ Image theme color extraction. 色尘知有数，劫烬岂无年。
 但我却不知道自己何时能迈出那一步。
 
 ![连 IE 都有勇气问你 是否要将它设成预设浏览器 你他妈的却跟我说你没勇气和喜欢的人告白](https://upyun.yunyoujun.cn/images/ie-is-braver-than-you.jpg)
+ -->
 
 ### 家
 

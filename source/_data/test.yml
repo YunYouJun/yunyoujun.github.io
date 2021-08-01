@@ -33,7 +33,7 @@ minivaline:
   enable: false
 
 waline:
-  enable: true
+  enable: false
 
 disqus:
   enable: false
@@ -49,12 +49,15 @@ livere:
   uid: MTAyMC81MDE0Mi8yNjYzMg==
 
 twikoo:
-  enable: false
+  enable: true
   envId: test-1c8fe2
 
 comment:
   candidates:
-    - waline
+    # - waline
+    # - utterance
+    # - livere
+    - twikoo
 
 # sidebar:
 #   tagcloud:
