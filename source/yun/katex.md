@@ -112,3 +112,31 @@ $$ \begin{bmatrix} a & b \\ c & d \end{bmatrix} $$
 $$ \begin{bmatrix} a & b \\ c & d \end{bmatrix} $$
 </div>
 ```
+
+<div>
+$$
+\begin{equation}
+  \left\{
+    \begin{aligned}
+      x=a\cos\theta\\
+      y=b\sin\theta\\
+    \end{aligned}
+  \right.
+\end{equation}
+$$
+</div>
+
+```latex
+<div>
+$$
+\begin{equation}
+  \left\{
+    \begin{aligned}
+      x=a\cos\theta\\
+      y=b\sin\theta\\
+    end{aligned}
+  \right.
+\end{equation}
+$$
+</div>
+```

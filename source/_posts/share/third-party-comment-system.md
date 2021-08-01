@@ -1,7 +1,7 @@
 ---
 title: 第三方评论系统之我见
 date: 2020-05-17 13:30:40
-updated: 2020-08-08 13:30:40
+updated: 2021-07-08 13:30:40
 tags:
   - 评测
   - Disqus
@@ -16,7 +16,7 @@ categories:
 
 评论系统便是其代表之一。
 
-我尝试过数种第三方评论系统（Disqus/Gitalk/Valine/LiveRe(来必力)/畅言），并在其中反复横跳，丢失了不少可爱的评论，也很遗憾未能找到一款真正百无挑剔的评论系统。
+我尝试过数种第三方评论系统（Disqus/Gitalk/Valine/LiveRe(来必力)/畅言/utterance/giscus），并在其中反复横跳，丢失了不少可爱的评论，也很遗憾未能找到一款真正百无挑剔的评论系统。
 
 > 一个事物的发展往往是一个波浪式前进、循环往复式上升的过程。
 
@@ -176,6 +176,14 @@ Waline 的数据结构继承自 Valine，因此数据是可以无缝迁移的。
 
 > [Beaudar - 表达](https://beaudar.lipk.org/) 执手对影成双 做的 Utterances 的中文版本。
 
+### [Giscus](https://giscus.app/)
+
+在 GitHub 正式推出 [Discussions](https://docs.github.com/en/discussions) 后，[Giscus](https://github.com/laymonage/giscus) 应该说是果不其然地诞生了，它受到了 [utterances](https://utteranc.es/) 的启发，但相比有着更好的权限划分，以及 Discussions 本就是为了讨论而生，因此可以直接回复对应内容，且使用 reactions （各式各样的图标反馈）。
+
+且国内似乎尚未被墙，国内也可以正常加载评论。（但不确保以后，毕竟……你懂的）
+
+但我已经使用了 Waline 一段时间，考虑到评论数据，所以并不打算迁移。
+
 ## 对比
 
 | 第三方评论系统 | 开源         | 速度 | 国内是否可直接访问 | 可否实现 PJAX                                     | 数据可靠性                               |
@@ -213,9 +221,9 @@ GitHub 倒是既慷慨又实用，所以要是能渲染 Issue 评论预览，想
 > 但是因为要多跳几个链接，无法直接显示在评论区中预览，所以基本没有人用。
 > 不过我认为相比 Valine 的数据（保不准哪天我就因为各种原因不得不抛弃它了），显然 GitHub 要更为可靠些。所以重要的留言可以考虑留在 Issue 里哦～
 
-GitHub 最近则在内测 [Discussions](https://docs.github.com/cn/free-pro-team@latest/discussions/quickstart) 感觉也是一个不错的交流方式（其实是论坛），权限方面或许会更加友好，值得期待。
+~~GitHub 最近则在内测 [Discussions](https://docs.github.com/cn/free-pro-team@latest/discussions/quickstart) 感觉也是一个不错的交流方式（其实是论坛），权限方面或许会更加友好，值得期待。~~（Giscus 诞生啦～）
 
-[utterances](https://utteranc.es/) 同样基于 GitHub Issues，可以抵消权限方面的担忧。当使用了 GitHub API，对于国内来说访问还是很慢。
+[utterances](https://utteranc.es/) 同样基于 GitHub Issues，可以抵消权限方面的担忧。但使用了 GitHub API，对于国内来说访问还是很慢。
 
 ---
 

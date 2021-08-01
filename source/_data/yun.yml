@@ -12,6 +12,9 @@ reward:
   comment: 我很可爱，请给我钱
 
 comment:
+  candidates:
+    - waline
+    # - giscus
   tips:
     - 如果您有任何关于博客内容的相关讨论，欢迎前往 <a href="https://github.com/YunYouJun/yunyoujun.github.io/discussions" target="_blank">GitHub Discussions</a> 与我交流。
 
@@ -34,6 +37,17 @@ disqusjs:
   enable: false
   shortname: yunyoujun
   apikey: ouoGQCaamOKdJgyZU5DKcpFnRIg3SNzvk0nwygPtlcTRJuE68c8igvrZGW4wAJoN
+
+# https://github.com/laymonage/giscus
+giscus:
+  enable: false
+  repo: YunYouJun/yunyoujun.github.io
+  repo-id:
+  category-id:
+  mapping: pathname
+  reactions-enabled: 1
+  emit-metadata: 0
+  theme: light
 
 footer:
   since: 2016
