@@ -12,7 +12,7 @@ type: github
 url: https://github.com/YunYouJun/give-me-money
 ---
 
-## [一个沙雕钓鱼网站](https://yunyoujun.cn/give-me-money/)
+## [一个沙雕钓鱼网站](https://gmm.yunyoujun.cn/)
 
 该项目**仅作娱乐**，博君一笑，您**无须填写任何相关真实信息**。
 如果您不能理解笑点，不必强求。（网页声音预警，以防社会性死亡。）
