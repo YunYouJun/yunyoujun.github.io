@@ -145,7 +145,7 @@ CF 酱， 👴 又回来了！
 
 ### 2020-02-05 使用腾讯云 CDN 加速
 
-[使用 CDN 加速你的 GitHub Pages 网站](https://yunyoujun.cn/note/use-cdn-speed-up-site/)
+[使用 CDN 加速你的 GitHub Pages 网站](https://www.yunyoujun.cn/posts/use-cdn-speed-up-site/)
 
 </details>
 
