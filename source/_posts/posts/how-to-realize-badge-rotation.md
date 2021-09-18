@@ -85,7 +85,7 @@ katex: true
 
 > So easy? 此时还基本无需考虑动画的问题。因为手指移动是连续的，旋转就是连续的。
 
-```ts
+```typescript
 const deltaX = curPos.x - this.lastPos.x;
 model.eulerAngles.y += deltaX;
 ```
@@ -147,7 +147,7 @@ $$ v = \frac{\Delta x}{\Delta t} $$
 
 > Talk is cheap, show me your code.
 
-```ts
+```typescript
 // 创建动画实例，具体实现见后文
 const inertiaAnimation = createInertiaAnimation({...})
 
@@ -186,7 +186,7 @@ inertiaAnimation.run();
 
 > `u: 0.95`
 
-```ts
+```typescript
 /**
  * 每一步动画
  * @param {number} timestamp
@@ -223,7 +223,7 @@ function step(timestamp) {
 
 > 经过尝试后，我决定将水平重力影响系数设置为 0.008。`gravity: 0.008`
 
-```ts
+```typescript
 // 一些乱七八糟的取余处理（因为会大于 180 嘛）
 const remainder = getRotation() % 180;
 const positiveRemainder = remainder < 0 ? remainder + 180 : remainder;
@@ -251,7 +251,7 @@ if (positiveRemainder >= 90 && positiveRemainder < 180) {
 `_this.playAnimation` 是否允许播放动画（外部可修改，来决定是否允许播放动画）
 `_this.isPlaying` 记录状态，是否正在播放动画（仅用来记录内部是否正在播放的状态）
 
-```ts
+```typescript
 function step(timestamp) {
   // 继续播放动画的条件（需要避免和后续的陀螺仪/拖动等冲突）
   if (
@@ -284,7 +284,7 @@ function step(timestamp) {
 - 抽象出可配置的参数
 - 函数内部默认提供默认参数
 
-```ts
+```typescript
 export interface InertiaAnimationOptions {
   /**
    * 初速度
@@ -320,7 +320,7 @@ export interface InertiaAnimationOptions {
 - 函数式而非 Class（有一定争议，但 react 后来的 hooks 和 vue 的 createXXX 很明显都更加青睐函数）
   - `createInertiaAnimation`
 
-```ts
+```typescript
 /**
  * 创建旋转惯性动画
  *
@@ -351,7 +351,7 @@ export function createInertiaAnimation(
 - `setRotation`: 设置旋转角度 `transform: rotateY(${val}deg)`
 - `getRotation`: 获取旋转角度 `getComputedStyle`
 
-```ts
+```typescript
 // 创建动画实例
 const inertiaAnimation = createInertiaAnimation({
   speed: 0.2,
@@ -373,7 +373,7 @@ const inertiaAnimation = createInertiaAnimation({
 
 > 用户打开徽章时，进行缓动，让用户知道它是可拖动的。此外这可以和此后的惯性动画共用一个实例，仅需赋予一个开始的初速度，即可快速实现。（也体现了此前优化封装的好处）
 
-```ts
+```typescript
 const inertiaAnimation = createInertiaAnimation();
 ...
 game.run(options, () => {
@@ -390,7 +390,7 @@ game.run(options, () => {
 > 这时没有反馈是不大好的，且较小数值的移动距离和时间，容易出现边界计算的问题。
 > 当移动距离和时间小于一定数值时触发，并判断为左侧还是右侧。（同样公用一个动画实例，仅需赋予一个初速度，即可快速实现。）
 
-```ts
+```typescript
 // 轻拍
 const tapSpeed = 0.3;
 if (Math.abs(deltaX) < 5 && deltaTime < 200) {
@@ -412,7 +412,7 @@ if (Math.abs(deltaX) < 5 && deltaTime < 200) {
   - 通过相对计算，并进行缓动，过大变化时舍去
 - 网页 API `deviceorientation` iOS 兼容问题
 
-```ts
+```typescript
 window.addEventListener("deviceorientation", (event) => {
   ...
   // gamma: 从左到右
@@ -436,7 +436,7 @@ window.addEventListener("deviceorientation", (event) => {
 npm install @explosions/badge-rotation
 ```
 
-```ts
+```typescript
 import { createInertiaAnimation } from "@explosions/badge-rotation";
 const inertiaAnimation = createInertiaAnimation();
 ```
