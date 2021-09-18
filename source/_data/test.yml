@@ -39,6 +39,16 @@ disqus:
   enable: false
   shortname: yunyoujun
 
+# enable for test, https://github.com/YunYouJun/hexo-theme-yun/issues/160
+# Show number of visitors of each article.
+# You can visit https://www.leancloud.cn to get AppID and AppKey.
+leancloud_visitors:
+  enable: true
+  app_id: 4x0IwQ1sy95mOGQDTO8MYCeA-gzGzoHsz
+  app_key: 9loqwF3UDklPDHaP9IN2uwN8
+  # Required for apps from CN region
+  server_url: https://lncld.yunyoujun.cn
+
 disqusjs:
   enable: false
   shortname: yunyoujun
@@ -49,7 +59,7 @@ livere:
   uid: MTAyMC81MDE0Mi8yNjYzMg==
 
 twikoo:
-  enable: true
+  enable: false
   envId: test-1c8fe2
 
 comment:
