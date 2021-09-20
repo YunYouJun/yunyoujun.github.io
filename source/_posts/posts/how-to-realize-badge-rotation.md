@@ -49,9 +49,7 @@ katex: true
 
 </div>
 
-<div class="text-center">
-<video style="height: 60vh" src="https://upyun.yunyoujun.cn/videos/demo/ant-forest-animal-badge-rotation.mp4" alt="徽章旋转" controls></video>
-</div>
+<video src="https://upyun.yunyoujun.cn/videos/demo/ant-forest-animal-badge-rotation.mp4" alt="徽章旋转" controls></video>
 
 > 那么我实现了什么？
 
@@ -65,9 +63,9 @@ katex: true
 尽管这是一个简单的效果，但也同样有着一些细节和需要注意的问题。
 接下来将主要就我选取的实现方案和遇到的问题进行分享。
 
-顺便放一个简单的示例：
+顺便放一个简单的示例（可以直接拖动哦～）：
 
-<iframe style="height: 85vh" frameborder="no" src="https://explosion.yunyoujun.cn/badge-rotation"></iframe>
+<iframe style="height: 85vh" src="https://explosions.yunyoujun.cn/badge-rotation"></iframe>
 
 ## 我的实现方案
 

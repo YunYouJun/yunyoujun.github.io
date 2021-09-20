@@ -5,6 +5,8 @@ updated: 2020-02-10 02:02:15
 toc: true
 ---
 
+此处是 [hexo-theme-yun](https://github.com/YunYouJun/hexo-theme-yun) 对默认 Markdown 一些样式的扩展。
+
 ## Blockquote
 
 > Primary
@@ -30,6 +32,18 @@ toc: true
 <div class="info">
 
 > Info
+
+</div>
+
+<div class="base">
+
+> Base
+
+</div>
+
+<div class="yellow">
+
+> Yellow
 
 </div>
 
@@ -59,6 +73,18 @@ toc: true
 <div class="info">
 
 > Info
+
+</div>
+
+<div class="base">
+
+> Base
+
+</div>
+
+<div class="yellow">
+
+> Yellow
 
 </div>
 ```
