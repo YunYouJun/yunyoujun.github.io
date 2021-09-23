@@ -41,13 +41,13 @@ categories:
 
 ### 添加自己的域名
 
-![add-domain-for-cdn.png](https://i.loli.net/2020/03/25/gRyuXZCW5GHvKqx.png)
+![添加自己的域名](https://upyun.yunyoujun.cn/images/tencent-cloud-add-domain-for-cdn.jpg)
 
 ### 设置源站
 
 管理 > 基本配置
 
-![config-source-site.png](https://i.loli.net/2020/03/02/BfyolAHcKxhw27i.png)
+![设置源站](https://upyun.yunyoujun.cn/images/tencent-cloud-config-source-site.jpg)
 
 这里是 GitHub Pages 提供的 IP 地址，可以添加多行。
 
@@ -61,7 +61,7 @@ categories:
 
 证书管理 > 编辑 > 协议跟随 (如果没开启 HTTPS，默认的 HTTP 也可以。)
 
-![set-back-source-protocol.jpg](https://i.loli.net/2020/03/25/5BlPUpMfO3DxXCH.jpg)
+![回源协议](https://upyun.yunyoujun.cn/images/tencent-cloud-set-back-source-protocol.jpg)
 
 ### 设置 CNAME
 
@@ -70,7 +70,7 @@ categories:
 根据需要将 CDN 提供的 CNAME 线路类型设置为 `境内`。
 `境外` 则仍默认解析回 GitHub Pages。
 
-![set-different-cname-for-domain.png](https://i.loli.net/2020/03/25/Pw3257VtjLFqGNQ.png)
+![设置 CNAME](https://upyun.yunyoujun.cn/images/tencent-cloud-set-different-cname-for-domain.jpg)
 
 ### 配置缓存
 
@@ -228,3 +228,9 @@ URL 列表，需要包含协议头部 `http://` 或 `https://`
 此后我开启了又拍云的源站资源迁移，即可将源站静态资源无缝迁移到又拍云存储，当客户端下次访问相同的资源时，无需回用户自主源。
 
 随后过了几天，索引量果然回升了……
+
+### 2021-05-27
+
+后续得到了又拍云的赞助，写了一篇又拍云的软文？，不过我之前也确实一直在用又拍云，并列举了优劣，也算是真心实意地推荐。
+
+> [又拍云—年轻人的第一个 CDN | 云游君的小站](https://www.yunyoujun.cn/posts/why-i-use-upyun-cdn/)
