@@ -37,6 +37,12 @@ icon: icon-home-4-line
 <details open>
 <summary>2021 年</summary>
 
+### 2021-09-04
+
+在 [NameSilo](https://www.namesilo.com/) 买了 [advjs.org](https://advjs.org) 域名，打算好好做 [advjs](https://github.com/YunYouJun/advjs/)。
+
+> NameSilo 网上随便搜个 $1 优惠券后（¥63.67（$9.79）），首年要比 GoDaddy 便宜（¥72.17）。
+
 ### 2021-05-11
 
 [小空调](https://ac.yunyoujun.cn)带来的流量太可怕了，联系到了[又拍云](https://www.upyun.com/)赞助，感谢赞助的 1k 年代金券。
