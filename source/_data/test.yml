@@ -33,7 +33,7 @@ minivaline:
   enable: false
 
 waline:
-  enable: false
+  enable: true
 
 disqus:
   enable: false
@@ -59,12 +59,12 @@ livere:
   uid: MTAyMC81MDE0Mi8yNjYzMg==
 
 twikoo:
-  enable: false
+  enable: true
   envId: test-1c8fe2
 
 comment:
   candidates:
-    # - waline
+    - waline
     # - utterance
     # - livere
     - twikoo
@@ -90,3 +90,12 @@ local_search:
 
 algolia_search:
   enable: false
+
+busuanzi:
+  enable: true
+  site_uv: true
+  site_uv_icon: icon-user-line
+  site_pv: true
+  site_pv_icon: icon-eye-line
+  page_pv: true
+  page_pv_icon: icon-eye-line

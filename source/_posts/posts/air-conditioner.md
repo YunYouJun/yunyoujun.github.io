@@ -98,8 +98,6 @@ MIT 协议虽然允许你以任何方式使用，但仍然规定署名作者，�
 
 于是乎，我开启了屏幕共享，给面试官看了下我的小空调……
 
-> 我的博客即将同步至腾讯云+社区，邀请大家一同入驻：<https://cloud.tencent.com/developer/support-plan?invite_code=12slkvy6hgurn>
-
 ---
 
 [云空调，便携小空调-后记 | 微信公众号](https://mp.weixin.qq.com/s/WRZgds9PlH5MBxlhJYOj8g)

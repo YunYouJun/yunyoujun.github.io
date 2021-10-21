@@ -23,11 +23,12 @@
     "hexo-renderer-stylus": "^2.0.1",
     "hexo-tag-aplayer": "^3.0.4",
     "hexo-tag-common": "^0.0.3",
-    "hexo-widget-tree": "^0.1.1",
+    "hexo-widget-tree": "^0.2.1",
     "hexo-wordcount": "^6.0.1"
   },
   "devDependencies": {
-    "eslint": "^7.32.0",
+    "cross-env": "^7.0.3",
+    "eslint": "^8.0.1",
     "eslint-config-hexo": "^4.2.0",
     "hexo-all-minifier": "0.5.7",
     "hexo-browsersync": "^0.3.0",
@@ -39,11 +40,11 @@
     "build": "hexo g",
     "clean": "hexo clean",
     "deploy": "hexo d",
-    "dev": "export NODE_ENV=development && hexo s",
+    "dev": "cross-env NODE_ENV=development && hexo s",
     "docs:dev": "cd themes/yun && yarn docs:dev",
     "predeploy": "hexo clean && hexo g",
     "post": "hexo new post",
-    "test": "export NODE_ENV=test && hexo s"
+    "test": "cross-env NODE_ENV=test && hexo s"
   },
   "author": "YunYouJun <me@yunyoujun.cn>",
   "homepage": "https://yunyoujun.cn",

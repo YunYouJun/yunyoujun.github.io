@@ -583,6 +583,12 @@ hexo new page xxx
 > 也就是说你完全可以使用学生优惠（10 元左右）购买一个月的云服务器，用于关联，并在这个月内抓紧备案好，此后云服务器过期不会影响备案问题。
 > 学生优惠的话 [阿里云](https://www.aliyun.com/minisite/goods?userCode=ixykjqj2) 或者 [腾讯云](https://url.cn/PLQYbz6n) 都有。
 
+<div class="warning">
+
+> 现在已只能至少三个月起购。
+
+</div>
+
 备案前需要注意的几点就是：
 
 - 确定你的域名是否可以备案（一些少见/独特的域名后缀，国内是无法备案的，比如 `moe`）
