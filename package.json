@@ -28,7 +28,7 @@
   },
   "devDependencies": {
     "cross-env": "^7.0.3",
-    "eslint": "^8.0.1",
+    "eslint": "^8.2.0",
     "eslint-config-hexo": "^4.2.0",
     "hexo-all-minifier": "0.5.7",
     "hexo-browsersync": "^0.3.0",

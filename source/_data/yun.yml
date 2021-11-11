@@ -23,7 +23,6 @@ waline:
   serverURL: https://waline.yunyoujun.cn
   visitor: true
   comment: true
-  avatarCDN: https://cdn.v2ex.com/gravatar/
   placeholder: 填写邮箱，可以收到回复通知哦～
   requiredFields: ["nick"]
 
