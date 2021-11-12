@@ -1,10 +1,11 @@
 ---
 title: 从零开始写一个 Web Component - GitHub Corners
 date: 2021-09-25 18:27:37
-updated: 2021-09-25 18:27:37
+updated: 2021-11-11 18:27:37
 tags:
   - Web Components
   - lit
+  - GitHub
 categories:
   - 云游的小教程
 ---
@@ -37,7 +38,7 @@ Web Components 实际上和现在 React/Vue 等前端框架的组件概念十分
 
 - [skatejs](https://github.com/skatejs/skatejs): 最后一次 Release 是 2017，最后一次更新是 2019，不做考虑。
 - [slim.js](https://github.com/slimjs/slim.js): 看起来还在活跃，但知名度（Star）似乎并不高。
-- [omi](https://github.com/Tencent/omi/): 腾讯旗下，实际上暑假我也参与了腾讯的开源活动 [腾讯犀牛鸟开源人才培养计划](https://opensource.tencent.com/summer-of-code) 并顺利结业务，对其也贡献了些代码。作者[当耐特](https://github.com/dntzhang)是微信支付团队成员，也是此次参与项目活动的导师。
+- [omi](https://github.com/Tencent/omi/): 腾讯旗下，实际上暑假我也参与了腾讯的开源活动 [腾讯犀牛鸟开源人才培养计划](https://opensource.tencent.com/summer-of-code) 并顺利结业，对其也贡献了些代码。作者[当耐特](https://github.com/dntzhang)是微信支付团队成员，也是此次参与项目活动的导师。
 - [Polymer](https://github.com/polymer/polymer): Google 早期的 Web Components 框架，Since 2013。
 - [lit](https://github.com/lit/lit): 依旧是 Google 出品，但谷歌对于 Polymer 不是很满意，于是另起炉灶地造了 [lit-element](https://github.com/lit/lit-element)，最终合并到 lit，Since Google I/O 2018。
 
@@ -76,7 +77,7 @@ Web Components 的现况似乎还并不适合大型项目的开发，而 GitHub 
 
 这件事似乎已经有人做了，我们为什么还要重复造轮子？
 
-首先是用于练手学习，其次的话，这个仓库的 GitHub Corners 实际上是原生的 HTML 与 CSS 的结合体，也就是说我们使用它还需要粘贴它的代码，配置各种参数才能使用。（这很明显是很麻烦的）
+首先是用于练手学习，其次的话，这个仓库的 GitHub Corners 实际上是原生的 HTML 与 CSS 的结合体，也就是说我们使用它还需要粘贴它的代码，配置各种参数才能使用。（这明显是很麻烦的）
 
 所以我们的第二个目标是将其封装为一个 npm 包，用户只需要安装这个包，就可以简单地一行代码引入，而且可以通过配置参数实现其不同的效果。
 
