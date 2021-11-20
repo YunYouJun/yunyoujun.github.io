@@ -225,6 +225,10 @@ js_concator:
 # https://github.com/YunYouJun/hexo-tag-common
 tag_common:
   cdn: false
+  layout:
+    - post
+    - page
+    # - home
 
 # hexo-widget-tree
 # https://github.com/YunYouJun/hexo-widget-tree

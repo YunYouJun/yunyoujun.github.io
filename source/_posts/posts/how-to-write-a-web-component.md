@@ -118,7 +118,7 @@ lit 2.0 将 `lit-element` 合并进了 `lit`。
 
 > [src/index.ts | wc-github-corners](https://github.com/YunYouJun/wc-github-corners/blob/main/src/index.ts)
 
-我抽取了我认为的几个重要的属性。
+我抽取了几个我认为比较重要的属性。
 
 - `blank`: boolean，是否打开新的标签页
 - `color`: string，字体色彩，即 GitHub Logo 颜色
@@ -127,7 +127,7 @@ lit 2.0 将 `lit-element` 合并进了 `lit`。
 - `url`: string，链接，可以覆盖自动生成的 GitHub 仓库链接
 - `label`: string，标签，鼠标悬浮时的标题
 - `reverse`: boolean，反转，将 GitHub Logo 色彩与背景色进行交换
-- `position`: string,位置，位于左上角还是右上角
+- `position`: string，位置，位于左上角还是右上角
 
 > 更多可参见 [fields | wc-github-corners](https://github.com/YunYouJun/wc-github-corners#fields)。
 

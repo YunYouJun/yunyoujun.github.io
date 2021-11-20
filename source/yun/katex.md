@@ -12,6 +12,12 @@ toc: true
 
 ### 行内公式
 
+<div>
+
+$\mathcal{X}_{c^*}<1, \mathcal{X}_{q^*}<1$
+
+</div>
+
 $E = mc^2$
 
 $\frac{\partial}{\partial t}$

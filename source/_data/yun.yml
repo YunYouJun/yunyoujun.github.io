@@ -23,8 +23,13 @@ waline:
   serverURL: https://waline.yunyoujun.cn
   visitor: true
   comment: true
-  placeholder: 填写邮箱，可以收到回复通知哦～
-  requiredFields: ["nick"]
+  emoji:
+    - https://cdn.jsdelivr.net/gh/walinejs/emojis@latest/bilibili/
+    - https://cdn.jsdelivr.net/gh/walinejs/emojis@latest/weibo/
+    - https://cdn.jsdelivr.net/gh/walinejs/emojis@latest/qq/
+  locale:
+    placeholder: 填写邮箱，可以收到回复通知哦～
+  requiredMeta: ["nick"]
 
 github_issues:
   enable: false

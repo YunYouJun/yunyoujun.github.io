@@ -35,9 +35,9 @@ toc: true
 
 </div>
 
-<div class="base">
+<div class="gray">
 
-> Base
+> Gray
 
 </div>
 
@@ -76,9 +76,9 @@ toc: true
 
 </div>
 
-<div class="base">
+<div class="gray">
 
-> Base
+> Gray
 
 </div>
 
