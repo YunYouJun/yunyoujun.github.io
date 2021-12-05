@@ -12,11 +12,13 @@ toc: true
 
 ### 行内公式
 
-<div>
+> <span>$\{x | Ax = b\}$</span>
 
-$\mathcal{X}_{c^*}<1, \mathcal{X}_{q^*}<1$
+```md
+> <span>$\{x | Ax = b\}$</span>
+```
 
-</div>
+<span>$\mathcal{X}_{c^*}<1, \mathcal{X}_{q^*}<1$</span>
 
 $E = mc^2$
 

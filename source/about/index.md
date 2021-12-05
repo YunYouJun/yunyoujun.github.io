@@ -63,6 +63,7 @@ icon: icon-cloud-line
 - 知乎：[云游君](https://www.zhihu.com/people/yunyoujun/)（只看不答，文明守法，因为自己实在没有有趣的经历可以装 B）
 - 网易云音乐: [机智的云游君](http://music.163.com/#/user/home?id=247102977)（主用的音乐播放器，多为日语歌、少量欧美，华语更少但的确是有的，V 家更爱翻唱，当遇到自认为好听的就会收藏）
 - Telegram Channel: [El Psy Congroo](https://t.me/elpsycn)（才整的频道，也许会用来记录吐槽日常，朋友圈太多现实世界朋友，导致都不好意思发空间）现在大致 = 博客 + 豆瓣 + 网易云音乐 + Twitter 更新聚合
+- Telegram Group: [云之彼端约定的地方](https://t.me/yunyoujun_group)
 - 微信公众号：[云游君](https://cdn.jsdelivr.net/gh/YunYouJun/cdn/img/about/white-qrcode-and-search.jpg) （并不喜欢用微信，所以其实没什么用，不过加了网站跳转链接的菜单，订阅勉强可以当作证明收藏过本站的标记？也许日后有空会搬一点文章过去？（咕咕咕））
 - Twitter: [云游君](https://twitter.com/YunYouJun)（刚开始营业，每日一个 CSS 练习）（对不起，我还是咕了。）
 - RSS：<https://www.yunyoujun.cn/atom.xml> （可以使用 RSS 订阅本站，譬如 [feedly](https://feedly.com/)）
@@ -70,11 +71,10 @@ icon: icon-cloud-line
 
 <!-- - Bangumi: [云游君](http://bangumi.tv/user/yunyoujun) -->
 <!-- - Telegram: [YunYouJun 云游君](https://t.me/YunYouJun)（可能回复得比较慢） -->
-<!-- - Telegram Group: [自娱自乐](https://t.me/yunyoujun_group)（所以我为什么要整全套？？？） -->
 
 ### 其他
 
-- 不务正业的闲聊 QQ 群：[1050458482](https://qm.qq.com/cgi-bin/qm/qr?k=kZJzggTTCf4SpvEQ8lXWoi5ZjhAx0ILZ&jump_from=webapi) （欢迎来玩）
+- 不务正业的闲聊 QQ 群：[1050458482](https://jq.qq.com/?_wv=1027&k=5dePS6Gm) （欢迎来玩）
 
 <details>
 <summary>🐦</summary>

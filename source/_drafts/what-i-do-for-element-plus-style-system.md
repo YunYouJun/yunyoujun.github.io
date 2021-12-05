@@ -8,6 +8,10 @@ categories:
 
 <!-- more -->
 
+adjust element size
+
+https://github.com/element-plus/element-plus/pull/4491
+
 ---
 
 To Be Continued.
