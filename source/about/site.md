@@ -37,6 +37,17 @@ icon: icon-home-4-line
 <details open>
 <summary>2021 年</summary>
 
+### 2021-12-05
+
+设计了一个新 LOGO。（参考了小米 200w 设计）
+
+![YYJ.MOE](https://yyj.moe/logo.png)
+
+### 2021-12-04
+
+在 [NameSilo](https://www.namesilo.com/) 买了 [yyj.moe](https://yyj.moe) 域名。（$13.99 = =¥89.66）
+~~作为小云出道的官网。~~
+
 ### 2021-09-04
 
 在 [NameSilo](https://www.namesilo.com/) 买了 [advjs.org](https://advjs.org) 域名，打算好好做 [advjs](https://github.com/YunYouJun/advjs/)。

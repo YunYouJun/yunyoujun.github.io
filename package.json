@@ -16,7 +16,7 @@
     "hexo-generator-feed": "^3.0.0",
     "hexo-generator-index": "^2.0.0",
     "hexo-generator-search": "^2.4.3",
-    "hexo-generator-sitemap": "^2.1.0",
+    "hexo-generator-sitemap": "^2.2.0",
     "hexo-generator-tag": "^1.0.0",
     "hexo-render-pug": "^2.1.4",
     "hexo-renderer-marked": "^4.1.0",
@@ -28,7 +28,7 @@
   },
   "devDependencies": {
     "cross-env": "^7.0.3",
-    "eslint": "^8.2.0",
+    "eslint": "^8.4.0",
     "eslint-config-hexo": "^4.2.0",
     "hexo-all-minifier": "0.5.7",
     "hexo-browsersync": "^0.3.0",
