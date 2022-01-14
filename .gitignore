@@ -4,9 +4,6 @@ Thumbs.db
 tmp
 temp/
 
-# editor
-.vscode
-
 # lock
 yarn.lock
 package-lock.json
