@@ -37,11 +37,18 @@ icon: icon-home-4-line
 <details open>
 <summary>2021 年</summary>
 
+### 2021-01-17 小云交稿
+
+<img src="https://cdn.jsdelivr.net/gh/YunYouJun/yun/images/meme/yun-good-alpha-compressed.png" width="200" alt="小云 Good" />
+<img src="https://cdn.jsdelivr.net/gh/YunYouJun/yun/images/yun-alpha-compressed.png" width="200" alt="小云" />
+
+> 更新信息见 [☁️ 小云设定资源大公开！](https://github.com/YunYouJun/yun)。
+
 ### 2021-12-05
 
 设计了一个新 LOGO。（参考了小米 200w 设计）
 
-![YYJ.MOE](https://yyj.moe/logo.png)
+<img src="https://yyj.moe/logo.png" width="100" alt="yyj.moe" />
 
 ### 2021-12-04
 
