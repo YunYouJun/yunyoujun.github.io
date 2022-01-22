@@ -8,11 +8,16 @@ jobs:
         with:
           submodules: true
 
-      - run: yarn install
-      - run: yarn build
+      - name: Setup Node
+        uses: actions/setup-node@v2
+        with:
+          node-version: "16.x"
+
+      - run: npx pnpm i --store=node_modules/.pnpm-store
+      - run: npx pnpm run build
 
       - name: Deploy to Netlify
-        uses: nwtgck/actions-netlify@v1.1
+        uses: nwtgck/actions-netlify@v1.2.3
         with:
           publish-dir: "./public"
           production-branch: hexo
