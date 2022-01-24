@@ -18,3 +18,7 @@ node_modules/
 public/
 db.json
 .deploy*/
+
+# hexo
+# now we don't need themes, just by 'npm i hexo-theme-yun'
+themes/
