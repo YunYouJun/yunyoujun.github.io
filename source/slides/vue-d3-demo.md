@@ -31,7 +31,7 @@ iconify: true
 
 ~~
 
-<span class="iconify" data-icon="simple-icons:ri-flask-line"></span>
+<span class="iconify" data-icon="ri:flask-line"></span>
 
 更未来一点的方案
 

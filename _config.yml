@@ -199,14 +199,9 @@ css_minifier:
   silent: false
   exclude:
     - "*.min.css"
+# we have esbuild!
 js_minifier:
-  enable: true
-  mangle: true
-  silent: false
-  # output:
-  # compress:
-  exclude:
-    - "*.min.js"
+  enable: false
 image_minifier:
   enable: false
   interlaced: false
@@ -214,11 +209,6 @@ image_minifier:
   optimizationLevel: 2
   pngquant: false
   progressive: false
-  silent: false
-js_concator:
-  enable: false
-  bundle_path: "/js/bundle.js"
-  front: false
   silent: false
 
 # hexo-tag-common

@@ -1,3 +1,5 @@
-[submodule "hexo-theme-yun"]
-path = themes/yun
-url = https://github.com/YunYouJun/hexo-theme-yun
+# [submodule "hexo-theme-yun"]
+# path = themes/hexo-theme-yun
+# url = https://github.com/YunYouJun/hexo-theme-yun
+
+# do not use submodule, try npm i hexo-theme-yun

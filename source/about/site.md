@@ -2,17 +2,34 @@
 title: 关于站点
 date: 2017-10-12 10:48:25
 type: about
-updated: 2018-01-30 15:10:32
+updated: 2021-01-24 15:10:32
 aplayer: true
 reward: true
 icon: icon-home-4-line
 ---
 
-{% meting "497572729" "netease" "song" "theme:#C20C0C"%}
+<!-- 人生浪费指南 -->
+<!-- {% meting "497572729" "netease" "song" "theme:#C20C0C" %} -->
+
+<!-- God knows -->
+<!-- https://music.163.com/#/song?id=27876224 -->
+
+<!-- River Flows In You -->
+<!-- https://music.163.com/#/song?id=20110049 -->
+
+<!-- "autoplay" -->
+
+{% meting "20110049" "netease" "song" "theme:#C20C0C" %}
+
+<img class="shadow-none" src="https://cdn.jsdelivr.net/gh/YunYouJun/yun/images/yun-alpha-compressed.webp" alt="小云">_小云之家_
+
+> [小云是谁？](https://github.com/YunYouJun/yun)
+> 小云是诞生于此处的虚拟少女，也就是我的站点的看板娘！负责给大家介绍发生在这里的故事和内容。
+> 小云自站点诞生之时便存在于此，因此今年 6 岁啦！
 
 ## Blog
 
-> 这里应该算是个博客。所以大概会记录一些学习、生活上的回忆与业余创作 ~~瞎搞~~ ，偶尔也会分享自己觉得有趣的东西。 =w=
+> 这里是咱的博客。所以会记录一些学习、生活上的回忆与业余创作 ~~瞎搞~~ ，偶尔也会分享自己觉得有趣的东西。 =w=
 
 <div class="danger">
 
@@ -20,29 +37,45 @@ icon: icon-home-4-line
 
 </div>
 
-十分欢迎无意中点进来的同学，给我留言和建议！~~虽然此刻很想发一个表情!~~
+十分欢迎无意中点进来的同学，给我留言和建议！
 
-![不存在的.jpg](https://cdn.jsdelivr.net/gh/YunYouJun/cdn/img/meme/no-exist.jpg)
+<img class="shadow-none" src="https://cdn.jsdelivr.net/gh/YunYouJun/yun/images/meme/yun-good-alpha-compressed.png" width="200" alt="小云 Good" />
 
-> 我也希望能在此留下一些值得回忆的、内心里柔软的东西。
+> 我也希望能在此留下一些值得回忆的、有趣的、内心里柔软的东西。
 
 本页主要用来记录站点的历史。
 
-😜 如果你觉得本站点还算有趣或有用，可以给我一个 [Star](https://github.com/YunYouJun/yunyoujun.github.io) 以示鼓励。
+😜 如果你觉得本站点还算有趣或有用，可以给我一个 [Star](https://github.com/YunYouJun/yunyoujun.github.io) 以示鼓励，也可以考虑用 [feedly](https://feedly.com/i/subscription/feed%2Fhttps%3A%2F%2Fwww.yunyoujun.cn%2Fatom.xml) 订阅本站。
 
 本站使用的是咱自己开发的主题 [hexo-theme-yun](https://github.com/YunYouJun/hexo-theme-yun/)，如果你喜欢的话，也欢迎一试。
 
-## Time
+对了，我还有一个更加国际化的站点 [yyj.moe](https://www.yyj.moe/)，目前还在开发中，可能会是一个集合的导航页？（也是小云的另外一个家）
+
+## FAQ
+
+### 小云和云游君是一个人吗？
+
+emm，目前似乎是的。但如果你是可爱 JK 美少女，欢迎随时报名前来出演我人生的轻小说女主角。
+
+## 本站编年史
 
 <details open>
 <summary>2021 年</summary>
 
-### 2021-01-17 小云交稿
+### 2022-01-17 小云交稿
 
 <img src="https://cdn.jsdelivr.net/gh/YunYouJun/yun/images/meme/yun-good-alpha-compressed.png" width="200" alt="小云 Good" />
-<img src="https://cdn.jsdelivr.net/gh/YunYouJun/yun/images/yun-alpha-compressed.png" width="200" alt="小云" />
+<img src="https://cdn.jsdelivr.net/gh/YunYouJun/yun/images/yun-alpha-compressed.webp" width="200" alt="小云" />
 
-> 更新信息见 [☁️ 小云设定资源大公开！](https://github.com/YunYouJun/yun)。
+> 委托画师 [Ai_Floverse](https://twitter.com/Ai_Floverse) 画的小云。
+> 更多信息见 [☁️ 小云设定资源大公开！](https://github.com/YunYouJun/yun)。
+
+</details>
+
+---
+
+<details>
+<summary>2021 年</summary>
 
 ### 2021-12-05
 
