@@ -28,3 +28,7 @@ Try [unocss](https://github.com/antfu/unocss).
 <div absolute bottom-5 right-0 left-0 text-center op30 fw300>
   on-demand · instant · fully customizable
 </div>
+
+---
+
+- [The debug panel flashes when use with @unocss/runtime](https://github.com/antfu/unocss/issues/135): fixed

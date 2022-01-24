@@ -23,6 +23,7 @@
     "hexo-renderer-stylus": "^2.0.1",
     "hexo-tag-aplayer": "^3.0.4",
     "hexo-tag-common": "^0.0.5",
+    "hexo-theme-yun": "^1.8.3",
     "hexo-widget-tree": "^0.2.2",
     "hexo-wordcount": "^6.0.1"
   },
@@ -41,7 +42,8 @@
     "clean": "hexo clean",
     "deploy": "hexo d",
     "dev": "cross-env NODE_ENV=development && hexo s",
-    "docs:dev": "cd themes/yun && yarn docs:dev",
+    "docs:dev": "cd themes/hexo-theme-yun && yarn docs:dev",
+    "link": "cd themes/hexo-theme-yun && pnpm link --global && cd ../.. && pnpm link hexo-theme-yun --global",
     "predeploy": "hexo clean && hexo g",
     "post": "hexo new post",
     "test": "cross-env NODE_ENV=test && hexo s"
