@@ -1,3 +1,4 @@
 {
-  "i18n-ally.localesPaths": ["themes/yun/languages"]
+  "i18n-ally.localesPaths": ["themes/yun/languages"],
+  "typescript.tsdk": "node_modules/typescript/lib"
 }

@@ -1,7 +1,7 @@
 ---
 title: 教你如何从零开始搭建一个属于自己的网站
 date: 2020-03-05 01:31:08
-updated: 2020-07-14 16:31:00
+updated: 2021-07-14 16:31:00
 tags:
   - 教程
   - Hexo
@@ -246,10 +246,19 @@ Hexo-Theme-Yun 的速度检测
 > 实际上你也可以直接在 VS Code 中使用终端。
 
 ```sh
+npm i hexo-theme-yun
+```
+
+<details>
+<summary>旧版本方案（不推荐）</summary>
+
+```bash
 git clone https://github.com/YunYouJun/hexo-theme-yun themes/yun
 ```
 
 > 这里便使用到了我们此前安装的 Git，`git clone` 即代表克隆（也就是复制的作用）我的主题（托管于 GitHub，链接便是主题所在的地址），`themes/yun` 则代表放在你 Hexo 文件夹下的 `themes/yun` 文件夹里（没有该文件夹会自动新建）。
+
+</details>
 
 ##### 编辑 Hexo 配置
 
@@ -287,14 +296,18 @@ npm install hexo-render-pug hexo-renderer-stylus
 主题的配置文件放在 `themes/yun/_config.yml` 文件中。
 且慢，你**最好不要直接修改主题的默认配置**。倘若日后主题升级更新了怎么办，难道还要重新配置一遍吗？
 
-最好的解决方案就是在博客根目录下（不是主题目录）新建 `source/_data/yun.yml`。（若 `source/_data` 目录不存在，请新建）
+最好的解决方案就是在博客根目录下（不是主题目录）新建 `_config.yun.yml`。
+
+<div class="warning">
 
 > `source/_data/yun.yml` 自 v1.8.0 废弃。
 > [Configuration | Hexo](https://hexo.io/docs/configuration)
 
-本主题将自定义配置与默认配置进行合并，因此你只需要在 `yun.yml` 文件中自定义你需要的配置即可，其余仍将自动采用默认配置。
+</div>
 
-譬如我们需要更换头像。在 `yun.yml` 中填写。
+本主题将自定义配置与默认配置进行合并，因此你只需要在 `_config.yun.yml` 文件中自定义你需要的配置即可，其余仍将自动采用默认配置。
+
+譬如我们需要更换头像。在 `_config.yun.yml` 中填写。
 
 > 你可以在 `source` 文件夹下新建 `images` 文件夹，用来存储你的图片。
 > 也可以使用 [SM.MS](https://sm.ms/) 等图床工具配合 [PicGo](https://github.com/Molunerfinn/PicGo) 上传你的图片文件，获取在线链接。
