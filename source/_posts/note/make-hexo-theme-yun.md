@@ -259,6 +259,12 @@ pjax 适配一些插件和第三方功能时（而且有些根本就不支持重
 - [hexo-tag-common](https://github.com/YunYouJun/hexo-tag-common): [#74](https://github.com/YunYouJun/hexo-theme-yun/issues/74) 实现一些扩展的 Hexo 标签语法
 - [hexo-widget-tree](https://github.com/YunYouJun/hexo-widget-tree): [#75](https://github.com/YunYouJun/hexo-theme-yun/issues/75) 实现挂件树状菜单 Deving...
 
+### v1.8.x (Since 2022-01-24)
+
+- 更改为 npm 安装方式
+- 使用 TypeScript 重构脚本部分，并使用 ESBuild 构建，发布压缩后的最小 JS 文件
+- 使用 Scss 重构 Stylus 写的样式部分
+
 ---
 
 To Be Continued.

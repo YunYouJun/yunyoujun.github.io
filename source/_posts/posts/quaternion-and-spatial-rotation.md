@@ -11,7 +11,7 @@ type: yuque
 url: https://www.yuque.com/yunyoujun/blog/quaternion-and-spatial-rotation
 ---
 
-在使用 Babylon 写 [ADV.JS VRM 模型编辑器](https://vrm.advjs.org/)的人物骨骼旋转动画的时候，我发现几乎所有的骨骼旋转均使用四元数（Quaternion）实现。
+在使用 Babylon 写 [ADV.JS VRM 模型编辑器](https://vrm.advjs.org/) 的人物骨骼旋转动画的时候，我发现几乎所有的骨骼旋转均使用四元数（Quaternion）实现。
 
 于是我便打算好好了解一下相关的内容，但是网上搜到的不少帖子比如 Unity 欧拉角的旋转顺序都是互相矛盾的，导致自己也不知道相信哪个为好，决定还是自己实验下。
 

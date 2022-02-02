@@ -19,21 +19,22 @@
     "hexo-generator-sitemap": "^2.2.0",
     "hexo-generator-tag": "^1.0.0",
     "hexo-render-pug": "^2.1.4",
-    "hexo-renderer-marked": "^4.1.0",
+    "hexo-renderer-marked": "^5.0.0",
     "hexo-renderer-stylus": "^2.0.1",
     "hexo-tag-aplayer": "^3.0.4",
     "hexo-tag-common": "^0.0.5",
-    "hexo-theme-yun": "^1.8.4",
+    "hexo-theme-yun": "^1.8.7",
     "hexo-widget-tree": "^0.2.2",
     "hexo-wordcount": "^6.0.1"
   },
   "devDependencies": {
+    "@antfu/eslint-config": "^0.16.1",
     "cross-env": "^7.0.3",
-    "eslint": "^8.7.0",
-    "eslint-config-hexo": "^5.0.0",
+    "eslint": "^8.8.0",
     "hexo-all-minifier": "0.5.7",
     "hexo-browsersync": "^0.3.0",
-    "hexo-server": "^3.0.0"
+    "hexo-server": "^3.0.0",
+    "typescript": "^4.5.5"
   },
   "scripts": {
     "algolia": "hexo clean && hexo algolia",
@@ -44,6 +45,7 @@
     "dev": "cross-env NODE_ENV=development && hexo s",
     "docs:dev": "cd themes/hexo-theme-yun && yarn docs:dev",
     "link": "cd themes/hexo-theme-yun && pnpm link --global && cd ../.. && pnpm link hexo-theme-yun --global",
+    "lint": "eslint \"**/*.{vue,ts,js}\"",
     "predeploy": "hexo clean && hexo g",
     "post": "hexo new post",
     "test": "cross-env NODE_ENV=test && hexo s"
