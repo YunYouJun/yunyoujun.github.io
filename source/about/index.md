@@ -45,7 +45,7 @@ iconify: true
 当然我也有几个隐藏的有些不切实际的梦想，比如成为一名独立游戏开发者、漫画家、作家、动画人、全职开源作者。
 简而言之就是可以不用上班，自己在家做觉得有趣的事情的人！（想必大家也是）
 
-~~欢迎给我[打钱](https://sponsors.yunyoujun.cn)，祝我圆梦！~~
+~~欢迎给我[打钱](https://sponsors.yunyoujun.cn)，助我圆梦！~~
 
 <details>
 <summary>列表</summary>

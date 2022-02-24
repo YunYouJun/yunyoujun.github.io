@@ -224,3 +224,5 @@ social:
     link: https://travellings.link
     icon: icon-train-line
     color: black
+# pjax:
+#   enable: true

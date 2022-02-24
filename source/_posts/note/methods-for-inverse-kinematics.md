@@ -1,5 +1,5 @@
 ---
-title: 使用 CCD 或 FABRIK 实现逆向动力学
+title: 使用 CCDIK 或 FABRIK 实现逆向动力学
 date: 2020-01-14 22:16:27
 updated: 2020-01-14 22:16:27
 tags:
@@ -14,7 +14,12 @@ categories:
 
 动力学主要分为正向动力学（FK）和反向动力学（IK）。
 正向动力学实现起来十分简单，了解点基本原理，或者网上一搜，都能写出来。
-反向动力学中比较流行的方法则是 Cyclic Coordinate Descent（CCD）和 [Forward And Backward Reaching Inverse Kinematics](https://www.sciencedirect.com/science/article/pii/S1524070311000178) (FABRIK)。
+
+反向动力学中比较流行的方法则是：
+
+- CCDIK: 循环坐标下降逆向动力学（Cyclic Coordinate Descent IK）
+- FABRIK: 前后延伸逆向动力学（[Forward And Backward Reaching Inverse Kinematics](https://www.sciencedirect.com/science/article/pii/S1524070311000178)）
+
 还有几何分析与雅可比矩阵的方法，计算起来比较复杂，用的不是太多。
 
 - [Inverse kinematics](https://en.wikipedia.org/wiki/Inverse_kinematics)
@@ -25,9 +30,9 @@ categories:
 ~~（摔，那你水这篇文章干什么？）~~
 为了大家更方便地从代码层级来理解，这篇文章最主要的作用大概就是提供 Demo 了。
 
-下面主要分为 CCD 和 FABRIK（话说 IK 代表的就是逆向动力学，为啥 CCD 缩写不带 IK，而 FABRIK 缩写通常带 IK 呢？） 两种方法来说。
+下面主要分为 CCDIK 和 FABRIK 两种方法来说。
 
-## CCD
+## CCDIK
 
 - [角色动画研究 —— IK 的三种结算方法](https://blog.csdn.net/noahzuo/article/details/53908141)
 - [Cyclic Coordinate Descent in 2D](http://www.ryanjuckett.com/programming/cyclic-coordinate-descent-in-2d/)
@@ -61,6 +66,15 @@ Editor: <https://editor.p5js.org/YunYouJun/sketches/bS8jB3EsC>
 ![cocos-creator-ik](https://upyun.yunyoujun.cn/images/cocos-creator-ik.jpg)
 
 GitHub: <https://github.com/YunYouJun/cocos-creator-ik/>
+
+## 两者对比
+
+CCDIK 实现较为简单，FABRIK 则相比 CCDIK 效率更高，但与 FABRIK 不同，CCDIK 提供了定义角约束的功能，需要在解算中限制任意骨骼的旋转时较为实用。
+
+## 其他参考链接
+
+- [CCDIK | Unreal Engine](https://docs.unrealengine.com/4.27/zh-CN/AnimatingObjects/SkeletalMeshAnimation/NodeReference/SkeletalControls/CCDIK/)
+- [FABRIK | Unreal Engine](https://docs.unrealengine.com/4.27/zh-CN/AnimatingObjects/SkeletalMeshAnimation/NodeReference/Fabrik)
 
 ---
 
