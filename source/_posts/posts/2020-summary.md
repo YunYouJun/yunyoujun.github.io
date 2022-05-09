@@ -268,7 +268,12 @@ Image theme color extraction. 色尘知有数，劫烬岂无年。
 
 我对听歌没什么讲究，不过我接触到新的歌曲通常是看番时候的 OP/ED 主题曲，或是心动推荐，所以大部分还是死宅向的日文歌，我也很喜欢听歌时回忆起背后故事的感觉（动漫的 OP/ED 便是如此）。
 
-{% meting "22736708" "netease" "song" "theme:#C20C0C" %}
+<meting-js
+ id="22736708"
+ server="netease"
+ type="song"
+ theme="#C20C0C">
+</meting-js>
 
 [UPLIFT SPICE](https://music.163.com/#/artist?id=22191) 是目前很喜欢的一个乐队，风格和歌词都很酷，仿佛在讲述故事。
 

@@ -825,7 +825,12 @@ aplayer: true
 
 我把琦开的首领交给了烈，然后叫上在外的小乔与小杨睿，再像当初一样从头开始吧。
 
-{% meting "32317208" "netease" "song" "theme:#C20C0C"%}
+<meting-js
+ id="32317208"
+ server="netease"
+ type="song"
+ theme="#C20C0C">
+</meting-js>
 
 > 尽管我们手中空无一物，却能因此紧紧相牵。
 

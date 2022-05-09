@@ -4,7 +4,7 @@
   "version": "1.1.1",
   "private": true,
   "hexo": {
-    "version": "6.0.0"
+    "version": "6.1.0"
   },
   "dependencies": {
     "crypto-js": "^4.1.1",
@@ -23,18 +23,18 @@
     "hexo-renderer-stylus": "^2.0.1",
     "hexo-tag-aplayer": "^3.0.4",
     "hexo-tag-common": "^0.0.5",
-    "hexo-theme-yun": "^1.8.11",
+    "hexo-theme-yun": "^1.9.0",
     "hexo-widget-tree": "^0.2.2",
     "hexo-wordcount": "^6.0.1"
   },
   "devDependencies": {
-    "@antfu/eslint-config": "^0.19.4",
+    "@antfu/eslint-config": "^0.23.0",
     "cross-env": "^7.0.3",
-    "eslint": "^8.12.0",
+    "eslint": "^8.15.0",
     "hexo-all-minifier": "0.5.7",
     "hexo-browsersync": "^0.3.0",
     "hexo-server": "^3.0.0",
-    "typescript": "^4.6.3"
+    "typescript": "^4.6.4"
   },
   "scripts": {
     "algolia": "hexo clean && hexo algolia",
