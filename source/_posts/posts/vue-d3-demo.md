@@ -602,6 +602,43 @@ app.mount("#app");
 
 好了，基础的行李们已经准备完毕了，让我们出发吧！
 
+### 改造为 `setup` 语法
+
+此前我们虽然使用了 Vue3，但基本的语法仍旧是沿用 Vue2 的形式。
+
+但 Vue3 支持了名为 `setup` 的语法糖（它会对脚本进行预编译），我们可以少写许多代码。
+
+譬如原先的代码：
+
+```html
+<script>
+  export default {
+    data() {
+      return {
+        a: 1,
+      };
+    },
+    methods: {
+      printInfo() {
+        console.log(this.a);
+      },
+    },
+  };
+</script>
+```
+
+改造后的代码（是不是简洁了些？）：
+
+```html
+<script setup>
+  import { ref } from "vue";
+  const a = ref(1);
+  const printA = () => {
+    console.log(a.value);
+  };
+</script>
+```
+
 ### 表单
 
 让我们试着借助此前准备好的工具包，构建一个表单功能吧！
