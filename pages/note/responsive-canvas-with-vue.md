@@ -13,7 +13,7 @@ updated: 2018-03-27 11:44:33
 ---
 
 > 最近又在写一些没什么用的小玩意儿。
-> ref: https://github.com/YunYouJun/star-timer/blob/master/docs/.vuepress/components/StarMap.vue
+> ref: <https://github.com/YunYouJun/star-timer/blob/master/docs/.vuepress/components/StarMap.vue>
 
 在过程中尝试使用 Vue 来实现 Html5 中 `Canvas` 标签的自适应。
 
@@ -29,27 +29,27 @@ updated: 2018-03-27 11:44:33
 
 `window.onresize` 方法挂载在 `mounted` 方法上。（mounted 可参见 Vue [生命周期钩子](https://cn.vuejs.org/v2/api/#mounted)）
 
-```js
+```vue
 <script>
 export default {
   name: 'StarMap',
-  mounted () {
-    this.resizeCanvas();
-    this.drawStarMap();
-    window.addEventListener("resize", () => {
-      this.resizeCanvas();
+  mounted() {
+    this.resizeCanvas()
+    this.drawStarMap()
+    window.addEventListener('resize', () => {
+      this.resizeCanvas()
       // 等待 canvas 变换好，再延时绘制，不然可能会没有内容
-      setTimeout(function() {
-        this.drawStarMap();
-      }, 100);
-    });
+      setTimeout(function () {
+        this.drawStarMap()
+      }, 100)
+    })
   },
   methods: {
     resizeCanvas() {
-      this.canvas = document.getElementById("star-map");
-      let parentStyle = window.getComputedStyle(this.canvas.parentNode);
-      this.canvas.width = parseInt(parentStyle.width);
-      this.canvas.height = document.body.clientHeight - 400;
+      this.canvas = document.getElementById('star-map')
+      const parentStyle = window.getComputedStyle(this.canvas.parentNode)
+      this.canvas.width = parseInt(parentStyle.width)
+      this.canvas.height = document.body.clientHeight - 400
     },
   }
 }

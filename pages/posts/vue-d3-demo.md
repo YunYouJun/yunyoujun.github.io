@@ -258,13 +258,13 @@ F12 打开浏览器控制台，显然我们已经成功地拿到了这一 JSON �
 ```js
 // 初始化 SVG 元素
 const svg = d3
-  .select("#bar-chart-container")
-  .append("svg")
-  .attr("class", "bar-chart")
-  .attr("viewBox", `0 0 ${width} ${height}`)
-  .attr("width", width)
-  .attr("height", height)
-  .append("g");
+  .select('#bar-chart-container')
+  .append('svg')
+  .attr('class', 'bar-chart')
+  .attr('viewBox', `0 0 ${width} ${height}`)
+  .attr('width', width)
+  .attr('height', height)
+  .append('g')
 ```
 
 配置比例尺的缩放范围及间距。
@@ -277,14 +277,14 @@ const x = d3
   .scaleBand()
   .domain(d3.range(data.length))
   .range([margin.left, width - margin.right])
-  .padding(0.1);
+  .padding(0.1)
 
 // y 轴的缩放比例尺
 const y = d3
   .scaleLinear()
-  .domain([0, d3.max(data, (d) => d.value)])
+  .domain([0, d3.max(data, d => d.value)])
   .nice()
-  .range([height - margin.bottom, margin.top]);
+  .range([height - margin.bottom, margin.top])
 ```
 
 定义绘制 X/Y 坐标轴的函数：
@@ -295,55 +295,55 @@ const y = d3
 
 ```js
 // x 坐标轴
-const xAxis = (g) =>
-  g.attr("transform", `translate(0,${height - margin.bottom})`).call(
+const xAxis = g =>
+  g.attr('transform', `translate(0,${height - margin.bottom})`).call(
     d3
       .axisBottom(x)
-      .tickFormat((i) => data[i].name)
+      .tickFormat(i => data[i].name)
       .tickSizeOuter(0)
-  );
+  )
 
 // y 坐标轴
 // data.format: "%"
 // data.y: "↑ Frequency"
-const yAxis = (g) =>
+const yAxis = g =>
   g
-    .attr("transform", `translate(${margin.left},0)`)
+    .attr('transform', `translate(${margin.left},0)`)
     .call(d3.axisLeft(y).ticks(null, data.format))
     // 移除区域间的竖线
-    .call((g) => g.select(".domain").remove())
-    .call((g) =>
+    .call(g => g.select('.domain').remove())
+    .call(g =>
       g
-        .append("text")
-        .attr("x", -margin.left)
-        .attr("y", 10)
-        .attr("fill", "currentColor")
-        .attr("text-anchor", "start")
+        .append('text')
+        .attr('x', -margin.left)
+        .attr('y', 10)
+        .attr('fill', 'currentColor')
+        .attr('text-anchor', 'start')
         .text(data.y)
-    );
+    )
 ```
 
 根据数据绘制直方图并添加到 SVG 中：
 
 ```js
 svg
-  .append("g")
-  .attr("fill", this.color)
-  .selectAll("rect")
+  .append('g')
+  .attr('fill', this.color)
+  .selectAll('rect')
   .data(data)
-  .join("rect")
-  .attr("x", (d, i) => x(i))
-  .attr("y", (d) => y(d.value))
-  .attr("height", (d) => y(0) - y(d.value))
-  .attr("width", x.bandwidth());
+  .join('rect')
+  .attr('x', (d, i) => x(i))
+  .attr('y', d => y(d.value))
+  .attr('height', d => y(0) - y(d.value))
+  .attr('width', x.bandwidth())
 ```
 
 添加坐标轴到 SVG 中：
 
 ```js
 // 绘制到 SVG
-svg.append("g").call(xAxis);
-svg.append("g").call(yAxis);
+svg.append('g').call(xAxis)
+svg.append('g').call(yAxis)
 ```
 
 我们还可以对此前的数据（这是一个英文字母使用频率的统计）进行简单的格式化：

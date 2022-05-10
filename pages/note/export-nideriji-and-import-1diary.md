@@ -96,14 +96,15 @@ CONNECT http://ohshenghuo.com:443
 其中与登录表单相关的部分代码
 
 ```js
-$.post("/api/login/", form.serialize(), function (e) {
+$.post('/api/login/', form.serialize(), (e) => {
   if (e && e.token) {
-    OhUtil.login(e.token);
-  } else {
-    $("#login-form .msg_error").text("邮箱或密码输入错误").show();
-    $("#login-form .submit").removeClass("inactive").attr("value", "登录");
+    OhUtil.login(e.token)
   }
-});
+  else {
+    $('#login-form .msg_error').text('邮箱或密码输入错误').show()
+    $('#login-form .submit').removeClass('inactive').attr('value', '登录')
+  }
+})
 ```
 
 由此可见登录 api 为 `api/login`

@@ -61,8 +61,8 @@ $button: () !default;
 比方说，在 vite 中导入 scss 文件：
 
 ```ts
-import "a.scss";
-import "b.scss";
+import 'a.scss'
+import 'b.scss'
 ```
 
 这完全没问题。
@@ -192,19 +192,19 @@ scss 编译
 ```ts
 // vite.config.ts
 export default defineConfig({
-  ...
+  // ...
   css: {
     preprocessorOptions: {
       scss: {
-        additionalData: `@use "./styles/element/index.scss" as *;`,
+        additionalData: '@use "./styles/element/index.scss" as *;',
       },
     },
   },
-  ...
+  // ...
   plugins: [
     vue(),
   ],
-});
+})
 ```
 
 你以为这么简单就结束了？

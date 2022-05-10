@@ -17,14 +17,13 @@ jobs:
 
     steps:
       - uses: actions/checkout@v2
-        # with:
-        #   submodules: true
+
       - name: Install pnpm
         uses: pnpm/action-setup@v2
         with:
           version: 7
           run_install: true
-          
+
       - name: Use Node.js ${{ matrix.node-version }}
         uses: actions/setup-node@v3
         with:

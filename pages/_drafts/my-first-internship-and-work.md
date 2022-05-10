@@ -281,17 +281,18 @@ A: 北京，未来自由
    function Test() {
      try {
        const d = new Promise((resolve, reject) => {
-         resolve();
-       });
+         resolve()
+       })
        d.then(() => {
-         throw new Error("111");
-       });
-     } catch (err) {
-       console.log(err);
+         throw new Error('111')
+       })
+     }
+     catch (err) {
+       console.log(err)
      }
    }
-   Test();
-   Promise.try;
+   Test()
+   Promise.try
    ```
 
 10. es lib
@@ -321,8 +322,8 @@ A: 北京，未来自由
           },
         ],
       },
-    ];
-
+    ]
+    
     const result = [
       {
         name: 1,
@@ -333,7 +334,7 @@ A: 北京，未来自由
       {
         name: 3,
       },
-    ];
+    ]
     ```
 
 面试官看了我的博客，让我顺便说了说当时第一篇博客的 char-dust 实现。

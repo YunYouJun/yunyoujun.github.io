@@ -35,30 +35,45 @@ categories:
 全局搜索时，不去搜索某些文件夹。
 
 ```json
+{
+  // ...
   "search.exclude": {
     "**/node_modules": true,
     "**/bower_components": true,
     "**/dist": true,
     "**/.cache": true
-  },
+  }
+  // ...
+}
 ```
 
 ### 自动换行
 
 ```json
-  "editor.wordWrap": "on",  // 超出显示范围，自动换行（只是显示效果上，并没有真正换行）
+{
+  // ...
+  "editor.wordWrap": "on" // 超出显示范围，自动换行（只是显示效果上，并没有真正换行）
+  // ...
+}
 ```
 
 ### TAB 转空格
 
 ```json
-  "editor.tabSize": 2,  // tab 键替换为 2 空格
+{
+  // ...
+  "editor.tabSize": 2 // tab 键替换为 2 空格
+  // ...
+}
 ```
 
 ### 终端改为 Git Bash
 
 ```json
-  "terminal.integrated.shell.windows": "C:\\Program Files\\Git\\bin\\bash.exe",
+{
+  // ...
+  "terminal.integrated.shell.windows": "C:\\Program Files\\Git\\bin\\bash.exe"
+}
 ```
 
 ## 常用快捷键

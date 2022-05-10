@@ -86,11 +86,11 @@ The Most Reliable Platform for Building Search.
 
 在 hexo 的 `_config.yml` 文件中，添加 algolia 配置。（注释记得去掉）
 
-```yaml
+```yml
 algolia:
-  applicationID: 'xxx'
-  apiKey: 'xxx'
-  indexName: 'my-hexo-blog' // 填写在 aloglia 中设置的名称
+  applicationID: xxx
+  apiKey: xxx
+  indexName: my-hexo-blog # 填写在 aloglia 中设置的名称
   chunkSize: 5000
   fields:
     - excerpt
