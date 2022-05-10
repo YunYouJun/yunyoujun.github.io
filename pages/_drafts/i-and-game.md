@@ -7,7 +7,12 @@ categories:
 aplayer: true
 ---
 
-{% meting "520459951" "netease" "song" "theme:#C20C0C" %}
+<meting-js
+ id="520459951"
+ server="netease"
+ type="song"
+ theme="#C20C0C">
+</meting-js>
 
 ## draft
 

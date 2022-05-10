@@ -14,7 +14,12 @@ aplayer: true
 
 <!-- [网易云音乐 《生如夏花》 - 朴树](https://music.163.com/#/song?id=139357) -->
 
-{% meting "5265370" "netease" "song" "theme:#C20C0C" %}
+<meting-js
+ id="5265370"
+ server="netease"
+ type="song"
+ theme="#C20C0C">
+</meting-js>
 
 <!-- more -->
 

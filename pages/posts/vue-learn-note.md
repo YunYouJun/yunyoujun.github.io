@@ -18,7 +18,7 @@ categories:
 
 记录一些细节问题以及不易搜索到的解决方法。
 
-### [Parcel.js + Vue](https://yunyoujun.cn/note/vue-parcel-demo/)
+### [Parcel.js + Vue](https://yunyoujun.cn/posts/vue-parcel-demo/)
 
 ### [非父子组件的通信](https://cn.vuejs.org/v2/guide/components.html#%E9%9D%9E%E7%88%B6%E5%AD%90%E7%BB%84%E4%BB%B6%E7%9A%84%E9%80%9A%E4%BF%A1)
 

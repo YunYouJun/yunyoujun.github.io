@@ -311,7 +311,7 @@ Example:
 
 ## More
 
-- [Minecraft 生存日记](https://www.yunyoujun.cn/diary/minecraft-survival-diary/)
+- [Minecraft 生存日记](https://www.yunyoujun.cn/posts/minecraft-survival-diary/)
 
 ---
 

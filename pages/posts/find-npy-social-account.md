@@ -18,7 +18,7 @@ aplayer: true
 
 前些日子，其实就是咱考完教师证（10.31）的第二天，便要前往出差。
 
-> [关于我打算当老师并报考教师资格证这件事](https://www.yunyoujun.cn/diary/try-to-become-a-teacher/)
+> [关于我打算当老师并报考教师资格证这件事](https://www.yunyoujun.cn/posts/try-to-become-a-teacher/)
 
 晚间也成功地错过了万圣节。但想来这种现充的节日，也本就与我无缘。故也无从惋惜。
 

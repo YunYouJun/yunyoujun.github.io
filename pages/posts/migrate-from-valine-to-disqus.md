@@ -9,7 +9,7 @@ categories:
   - 云游的小笔记
 ---
 
-此前我在 [第三方评论系统之我见](https://www.yunyoujun.cn/share/third-party-comment-system/) 中简要对比了使用过的一些评论系统，但仍旧没有得出一个尽善尽美的方案。
+此前我在 [第三方评论系统之我见](https://www.yunyoujun.cn/posts/third-party-comment-system/) 中简要对比了使用过的一些评论系统，但仍旧没有得出一个尽善尽美的方案。
 
 我很长一段时间评论系统都是使用的 Valine，但因为后来博客第一次收到了一些[不友好的评论](https://twitter.com/YunYouJun/status/1310547458997415936)，以至于我有一瞬间地冲动想要从 Valine 彻底迁移到 Disqus。
 

@@ -22,7 +22,7 @@ categories:
 想到兴许还有几月便可以换上新装备，而现今又没有对电脑的稳定需求，便索性安装成 Linux 尝尝鲜。
 早便听得 Deepin 的本土化和常用软件兼容性做得很好，便以其为主，记录一下还原当初 Windows 工作环境的过程。
 
-More info: [Linux 使用笔记](../linux-learn-note/)
+More info: [Linux 使用笔记](https://www.yuque.com/docs/share/8c86b831-a531-46dc-bb34-cde87f20fb45)
 
 ## Install
 

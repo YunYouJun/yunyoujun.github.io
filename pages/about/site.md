@@ -9,7 +9,12 @@ icon: icon-home-4-line
 ---
 
 <!-- 人生浪费指南 -->
-<!-- {% meting "497572729" "netease" "song" "theme:#C20C0C" %} -->
+<!-- <meting-js
+ id="497572729"
+ server="netease"
+ type="song"
+ theme="#C20C0C">
+</meting-js> -->
 
 <!-- God knows -->
 <!-- https://music.163.com/#/song?id=27876224 -->
@@ -19,7 +24,12 @@ icon: icon-home-4-line
 
 <!-- "autoplay" -->
 
-{% meting "20110049" "netease" "song" "theme:#C20C0C" %}
+<meting-js
+ id="20110049"
+ server="netease"
+ type="song"
+ theme="#C20C0C">
+</meting-js>
 
 <img class="shadow-none" src="https://cdn.jsdelivr.net/gh/YunYouJun/yun/images/yun-alpha-compressed.webp" alt="小云">_小云之家_
 
@@ -258,7 +268,7 @@ Coding 的服务不知为何挂了几个小时，虽然之后又恢复了。
 
 ### 2017-12-11 迁移
 
-[博客迁移至 Hexo](https://yunyoujun.cn/note/hexo-build-note)
+[博客迁移至 Hexo](https://yunyoujun.cn/posts/hexo-build-note)
 
 开始白嫖生涯
 

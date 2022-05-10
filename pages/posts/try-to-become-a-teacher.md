@@ -13,7 +13,7 @@ aplayer: true
 
 > 「关于加个引号就能变成轻小说标题这件事」
 
-嘛，正如 [前文](https://www.yunyoujun.cn/essay/i-and-town-and-home/) 所言，我确实准备报考教师证。
+嘛，正如 [前文](https://www.yunyoujun.cn/posts/i-and-town-and-home/) 所言，我确实准备报考教师证。
 
 并立此文章为证，（~~那没考上岂不是贻笑大方~~），记录一些过程（~~破事水~~）。
 
@@ -138,7 +138,12 @@ aplayer: true
 
 > 这世界真的也许有太多的你不如意，可你的生活虽然坎坎坷坷仍在继续。
 
-{% meting "28700552" "netease" "song" "theme:#C20C0C" %}
+<meting-js
+ id="28700552"
+ server="netease"
+ type="song"
+ theme="#C20C0C">
+</meting-js>
 
 整理好情绪后，我打开看起来还过得去的「[中国教育考试网](http://ntce.neea.edu.cn/)」。
 Wappalyzer 告诉我它似乎使用了 jQuery，还是 v1.11.1 的远古版本。尽管并非尽善尽美，但总体来说过的去。

@@ -110,7 +110,7 @@ code xxx.xxx
 ## 相关
 
 - [Building your C++ application with Visual Studio Code](https://devblogs.microsoft.com/cppblog/building-your-c-application-with-visual-studio-code/)
-- [Python 配置](https://yunyoujun.cn/note/python-growth-path/#编辑器)
+- [Python 配置](https://www.yuque.com/docs/share/6c77dec1-bd23-4a7b-a220-b598d9fe84f0)
 
 ---
 

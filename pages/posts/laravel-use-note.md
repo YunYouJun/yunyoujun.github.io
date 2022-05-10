@@ -18,8 +18,8 @@ Laravel 框架使用过程中的一些笔记。
 
 ### 相关过程
 
-1. [LNMP 一键安装包](/note/lnmp-install/)
-2. [记 LNMP 一键安装后 Laravel 线上部署的坑](/note/a-trap-about-laravel-deploy/)
+1. [LNMP 一键安装包](https://www.yuque.com/docs/share/806b4c35-788a-4537-87d7-27c6e5b408d9)
+2. [记 LNMP 一键安装后 Laravel 线上部署的坑](https://www.yuque.com/docs/share/60072885-d8d1-4ec4-9553-ad8e37c5d866)
 
 ---
 

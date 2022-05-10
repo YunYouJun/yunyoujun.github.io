@@ -85,7 +85,7 @@ aplayer: true
 
 Yun 也就是本博客正在使用的主题，虽然应该算是前年开坑的项目，但是真正花功夫迭代开发维护是在去年。也因此遇到了很多小伙伴。
 
-> 主要概况则记录在了 [hexo-theme-yun 制作笔记](https://www.yunyoujun.cn/note/make-hexo-theme-yun/) 中。
+> 主要概况则记录在了 [hexo-theme-yun 制作笔记](https://www.yunyoujun.cn/posts/make-hexo-theme-yun/) 中。
 
 对了，还写了几个相关的小插件。
 
@@ -112,7 +112,7 @@ Yun 也就是本博客正在使用的主题，虽然应该算是前年开坑的�
 最初打算写个机器人模版，写着写着，然后一想干嘛不抽象成框架开源给大家呢，开发着开发着，对现有的 JS SDK 设计和功能不是很满意，以及提 ISSUE 基本没有响应。
 索性自行开发 SDK，也无需再等待上下游的反馈，同时 TS + VS Code 的代码提示也真的很好用。
 
-> 实质这中间也有许多波折故事，则大部分记录在了 [el-bot & mirai-ts 制作笔记](https://www.yunyoujun.cn/note/make-el-bot/) 中。
+> 实质这中间也有许多波折故事，则大部分记录在了 [el-bot & mirai-ts 制作笔记](https://www.yunyoujun.cn/posts/make-el-bot/) 中。
 
 #### xiao-yun 小云
 
@@ -133,7 +133,7 @@ Yun 也就是本博客正在使用的主题，虽然应该算是前年开坑的�
 
 因为虚荣，其实在使用的是 [Waline](https://waline.js.org/) （一个带后端的 Valine） 的解决方案。
 
-静态博客评论系统的选择着实有许多苦恼之处，评论的对比可以参见 [第三方评论系统之我见](https://www.yunyoujun.cn/share/third-party-comment-system/)。
+静态博客评论系统的选择着实有许多苦恼之处，评论的对比可以参见 [第三方评论系统之我见](https://www.yunyoujun.cn/posts/third-party-comment-system/)。
 
 #### [gaussian-blur](https://github.com/YunYouJun/gaussian-blur)
 
@@ -293,11 +293,11 @@ Image theme color extraction. 色尘知有数，劫烬岂无年。
 
 大部分的内容与上述项目息息相关。可以直接在 [2020 归档](https://www.yunyoujun.cn/archives/2020/) 中看到。
 
-#### [教你如何从零开始搭建一个属于自己的网站](https://www.yunyoujun.cn/share/how-to-build-your-site/)
+#### [教你如何从零开始搭建一个属于自己的网站](https://www.yunyoujun.cn/posts/how-to-build-your-site/)
 
 写的一个还算详尽的教程，至少是自己还是小白时希望能够看到的文章。
 
-#### [👴 就是二次元，故尝试证明。](https://www.yunyoujun.cn/share/i-am-er-ci-yuan-and-try-to-prove/)
+#### [👴 就是二次元，故尝试证明。](https://www.yunyoujun.cn/posts/i-am-er-ci-yuan-and-try-to-prove/)
 
 [「理科生坠入情网，故尝试证明。」](https://www.bilibili.com/bangumi/play/ep307476) 的简单影评与遐想，表达了作者对于二次元的喜爱和~~美好恋爱的向往~~。
 
@@ -305,19 +305,19 @@ Image theme color extraction. 色尘知有数，劫烬岂无年。
 
 以至于后来被老师称作了「二次元的粉丝」。
 
-#### [人生不是一场马拉松](https://www.yunyoujun.cn/diary/life-is-not-a-marathon/)
+#### [人生不是一场马拉松](https://www.yunyoujun.cn/posts/life-is-not-a-marathon/)
 
-[路漫漫其修远兮](https://www.yunyoujun.cn/diary/after-entering-cuc/)的后续，也就是接受平凡。
+[路漫漫其修远兮](https://www.yunyoujun.cn/posts/after-entering-cuc/)的后续，也就是接受平凡。
 
-#### [我与小镇与家](https://www.yunyoujun.cn/essay/i-and-town-and-home/)
+#### [我与小镇与家](https://www.yunyoujun.cn/posts/i-and-town-and-home/)
 
 回顾一点人生与思考未来。
 
-#### [关于我打算当老师并报考教师资格证这件事](https://www.yunyoujun.cn/diary/try-to-become-a-teacher/)
+#### [关于我打算当老师并报考教师资格证这件事](https://www.yunyoujun.cn/posts/try-to-become-a-teacher/)
 
 决定成为一名人民教师。
 
-#### [第三方评论系统之我见](https://www.yunyoujun.cn/share/third-party-comment-system/)
+#### [第三方评论系统之我见](https://www.yunyoujun.cn/posts/third-party-comment-system/)
 
 静态博客评论的确有很多难以取舍之处。
 
@@ -411,7 +411,7 @@ Image theme color extraction. 色尘知有数，劫烬岂无年。
 
 在家的这段日子，L 老师给我们分配了开发任务，而我确实真的很感激 L 老师的收留之恩，也卖力地干着活儿。
 
-> 说来惭愧，入校之初情况如[路漫漫其修远兮](https://www.yunyoujun.cn/diary/after-entering-cuc/)中所述，我大致如同武侠小说中没有人要的练武废物，无门可投。最后侥幸得 W 老师与 L 老师收留。
+> 说来惭愧，入校之初情况如[路漫漫其修远兮](https://www.yunyoujun.cn/posts/after-entering-cuc/)中所述，我大致如同武侠小说中没有人要的练武废物，无门可投。最后侥幸得 W 老师与 L 老师收留。
 
 也许稍微有些自夸，但我确实负责了项目的大半工作。
 我们拉了一个「前端摸鱼小组」，以便大家的对接工作。返校后，又有了一个「现充学习小组」。
@@ -539,7 +539,7 @@ Image theme color extraction. 色尘知有数，劫烬岂无年。
 
 我与她相遇的那一天，应当是个春寒料峭之日。
 
-> 也就是 [北线无战事](https://www.yunyoujun.cn/diary/after-2nd-postgraduate-re-exam/) 之时。
+> 也就是 [北线无战事](https://www.yunyoujun.cn/posts/after-2nd-postgraduate-re-exam/) 之时。
 
 那是入学时的复试，微不足道的我坐在等候处没有任何值得记住的存在感。
 而她退出面试考场时则似光芒万丈，耀眼无比。我决定将其定义为「黎明能量」。
@@ -734,7 +734,7 @@ Image theme color extraction. 色尘知有数，劫烬岂无年。
 
 ![对联](https://upyun.yunyoujun.cn/images/spring-couplets-at-old-home.jpg)
 
-[人生不是一场马拉松](https://www.yunyoujun.cn/diary/life-is-not-a-marathon/#终点) 里的桃花早已凋零。
+[人生不是一场马拉松](https://www.yunyoujun.cn/posts/life-is-not-a-marathon/#终点) 里的桃花早已凋零。
 
 不知道闲暇地看着家后池塘打水漂与任凭花开花落云卷云舒的日子什么时候能够实现。
 

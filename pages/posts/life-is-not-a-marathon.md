@@ -74,7 +74,7 @@ categories:
 
 哪怕中二病也是不错的人生经历。
 
-而我却最多只是在网上叫嚷着[爷就是二次元](https://www.yunyoujun.cn/share/i-am-er-ci-yuan-and-try-to-prove/)。
+而我却最多只是在网上叫嚷着[爷就是二次元](https://www.yunyoujun.cn/posts/i-am-er-ci-yuan-and-try-to-prove/)。
 
 ![爷就是二次元](https://cdn.jsdelivr.net/gh/YunYouJun/cdn/img/meme/i-am-er-ci-yuan.jpg)
 
@@ -108,7 +108,7 @@ categories:
 
 意外的是老师竟给了我满分，心中颇为欣喜。老师也截图了我论文中一段后话，发到群里，表示欢迎蹭听。
 
-后话大致是 [路漫漫其修远兮](https://www.yunyoujun.cn/diary/after-entering-cuc/) 的微缩简化版。
+后话大致是 [路漫漫其修远兮](https://www.yunyoujun.cn/posts/after-entering-cuc/) 的微缩简化版。
 
 而今日也正是因为此篇文章收到了一则匿名回复，所以自己也回看了一番，莫名留下泪来，而终于克服拖延症来写下现在的这些话。
 
@@ -150,7 +150,7 @@ categories:
 
 我已经明白自己不会成为所谓的社会栋梁，无法成为英雄，也不会成为日常岗位上不可或缺的人物。
 
-我只希望能找到自己喜欢的吹泡泡的工作，并成为一个足够有趣的人，同时还有闲暇能偶尔和朋友们[一起吃火锅](https://www.yunyoujun.cn/diary/eat-hot-pot-together/)。
+我只希望能找到自己喜欢的吹泡泡的工作，并成为一个足够有趣的人，同时还有闲暇能偶尔和朋友们[一起吃火锅](https://www.yunyoujun.cn/posts/eat-hot-pot-together/)。
 
 并仍旧能像小学喜欢哆啦 A 梦那样坚信自己喜欢着什么。
 

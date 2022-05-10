@@ -9,7 +9,12 @@ icon: icon-cloud-line
 iconify: true
 ---
 
-{% meting "308168565" "netease" "playlist" "theme:#C20C0C"%}
+<meting-js
+ id="308168565"
+ server="netease"
+ type="song"
+ theme="#C20C0C">
+</meting-js>
 
 > ## Me
 >

@@ -369,7 +369,7 @@ git checkout -b hexo
 
 你可以通过 `git branch -v` 来查看当前有哪些分支，使用 `git checkout 分支名` 来切换到对应的分支。
 
-> [Git 学习笔记](https://www.yunyoujun.cn/note/git-learn-note/)
+> [Git 学习笔记](https://www.yunyoujun.cn/posts/git-learn-note/)
 
 ### 部署
 
@@ -621,12 +621,12 @@ hexo new page xxx
 
 ### 更多可能有帮助的内容
 
-- [让百度收录你的 GitHub Pages 博客 - 云游君的小站](https://www.yunyoujun.cn/note/baidu-seo-about-github-pages/)
-- [使用 CDN 加速你的 GitHub Pages 网站 - 云游君的小站](https://www.yunyoujun.cn/note/use-cdn-speed-up-site/)
+- [让百度收录你的 GitHub Pages 博客 - 云游君的小站](https://www.yunyoujun.cn/posts/baidu-seo-about-github-pages/)
+- [使用 CDN 加速你的 GitHub Pages 网站 - 云游君的小站](https://www.yunyoujun.cn/posts/use-cdn-speed-up-site/)
 
 ### 其他平台
 
-毕竟自己的站点可能还是不会有什么人看，所以发到其他平台了（然而还是没有人）。不过在[这里](https://www.yunyoujun.cn/share/how-to-build-your-site/)阅读体验应该是最好的。
+毕竟自己的站点可能还是不会有什么人看，所以发到其他平台了（然而还是没有人）。不过在[这里](https://www.yunyoujun.cn/posts/how-to-build-your-site/)阅读体验应该是最好的。
 
 - [教你如何从零开始搭建一个属于自己的网站 - 云游君的文章 - 知乎](https://zhuanlan.zhihu.com/p/113209647)
 - [教你如何从零开始搭建一个属于自己的网站 - bilibili 专栏](https://www.bilibili.com/read/cv5108842)（不支持外链、代码高亮、Markdown，太难了）

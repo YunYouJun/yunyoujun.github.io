@@ -183,7 +183,7 @@ node_modules/
 
 如果使用 VS Code 编辑器，也可以对工作区进行配置，不对 `.cache` `dist` 等文件夹进行搜索。
 
-[搜索排除](https://yunyoujun.cn/note/vscode-config-note/#%E6%90%9C%E7%B4%A2%E6%8E%92%E9%99%A4)
+[搜索排除](https://yunyoujun.cn/posts/vscode-config-note/#%E6%90%9C%E7%B4%A2%E6%8E%92%E9%99%A4)
 
 ### [使用 SCSS](https://zh.parceljs.org/scss.html)
 
