@@ -84,7 +84,7 @@ Vite 本身已经提供了一个脚手架工具 [create-vite-app](https://github
 因为我通常习惯使用 [yarn](https://www.yarnpkg.com/zh-Hans/)。所以后面主要以 yarn 作为示例。
 （2020 年末的 npm 与 yarn 并没有显著差异。）
 
-```sh
+```bash
 npm init vite-app <project-name>
 # or
 yarn create vite-app <project-name>

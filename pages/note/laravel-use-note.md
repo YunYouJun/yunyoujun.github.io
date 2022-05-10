@@ -47,7 +47,7 @@ Laravel 框架使用过程中的一些笔记。
 
 参见 [Laravel 5.4 migrate 时报错: Specified key was too long error](https://segmentfault.com/a/1190000008416200)
 
-```sh
+```bash
 1071 Specified key was too long; max key length is 767 bytes
 ```
 

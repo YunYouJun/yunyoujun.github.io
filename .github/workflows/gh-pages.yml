@@ -1,33 +1,48 @@
 name: GitHub Pages
+
 on:
   push:
     branches:
-      - hexo
+      - valaxy
+
 jobs:
   deploy:
-    runs-on: ubuntu-latest
+    runs-on: ${{ matrix.os }}
+
+    strategy:
+      matrix:
+        node-version: [16.x]
+        os: [ubuntu-latest]
+      fail-fast: false
+
     steps:
       - uses: actions/checkout@v2
         # with:
         #   submodules: true
-
-      - name: Setup Node
-        uses: actions/setup-node@v2
+      - name: Install pnpm
+        uses: pnpm/action-setup@v2
         with:
-          node-version: "16.x"
+          version: 7
+          run_install: true
+          
+      - name: Use Node.js ${{ matrix.node-version }}
+        uses: actions/setup-node@v3
+        with:
+          node-version: ${{ matrix.node-version }}
+          registry-url: https://registry.npmjs.org/
+          cache: pnpm
 
-      - name: Install Dependencies
-        run: npx pnpm i --store=node_modules/.pnpm-store
-      - name: algolia
+      - name: 🔍 Genereate Algolia
         env:
           HEXO_ALGOLIA_INDEXING_KEY: ${{ secrets.HEXO_ALGOLIA_INDEXING_KEY }}
         run: npm run algolia
-      - run: npx pnpm run build
 
-      - name: Deploy
+      - name: 🌌 Build Valaxy Blog
+        run: npm run build
+
+      - name: 🪤 Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v3
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: ./public
-          publish_branch: master
+          publish_dir: ./dist
           force_orphan: true

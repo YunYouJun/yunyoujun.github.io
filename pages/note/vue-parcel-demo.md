@@ -58,7 +58,7 @@ Vue 官方提供的模板 [vuejs-template/webpack](https://github.com/vuejs-temp
 
 `vue init webpack vue-parcel-demo` 使用 vue 脚手架生成 webpack 模板
 
-```sh
+```bash
 ? Project name vue-parcel-demo
 ? Project description A Vue.js project
 ? Author YunYouJun <me@yunyoujun.cn>
@@ -78,7 +78,7 @@ Vue 官方提供的模板 [vuejs-template/webpack](https://github.com/vuejs-temp
 
 ### 安装依赖
 
-```sh
+```bash
 yarn add parcel-bundler vue vue-router --dev
 ```
 
@@ -96,7 +96,7 @@ Parcel 1.7.0 版本似乎已经支持 Vue 了。所以不需要再安装 `parcel
 
 在打包 Vue 的时候，发现它调用 yarn 安装了几个插件。当然我们也可以自己先安装上。
 
-```sh
+```bash
 yarn add -D vue-template-compiler @vue/component-compiler-utils vue-hot-reload-api
 # -D 与 --dev 一个意思，将依赖安装在 devDependencies
 ```
@@ -169,7 +169,7 @@ emmm, 纠结地搜到了这个答案。简体中文页面原来是用 `lang="zh-
 - `.cache` 是 `parcel` 构建时的缓存
 - `dist` 是打包后的文件
 
-```sh
+```bash
 # Custom
 .cache
 dist
@@ -229,7 +229,7 @@ import HelloWorld from '../components/HelloWorld'
 
 在使用 vue 脚手架 `vue init webpack vue-parcel-demo` 生成 vue-webpack 模板过程中，有如下提示：
 
-```sh
+```bash
 ? Vue build (Use arrow keys)
 > Runtime + Compiler: recommended for most users
   Runtime-only: about 6KB lighter min+gzip, but templates (or any Vue-specific HTML) are ONLY allowed in .vue files - render functions are required elsewhere

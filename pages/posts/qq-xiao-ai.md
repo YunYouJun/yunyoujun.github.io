@@ -46,7 +46,7 @@ Windows 64 位的话下载 `Windows x86-64 executable installer` 版本即可，
 
 参照 qqbot 文档 <https://github.com/pandolia/qqbot>
 
-```sh
+```bash
 pip install qqbot
 ```
 
@@ -55,7 +55,7 @@ pip install qqbot
 进入命令行窗口，`git bash` 或者 `cmd` 都可以。
 推荐 `cmd` , `git bash` 中文可能会乱码。
 
-```sh
+```bash
 qqbot -q xxxx // 这里填自己想要登陆的qq号（建议还是用小号安全些啦）
 ```
 
@@ -102,7 +102,7 @@ if '小爱' in content and not bot.isMe(contact, member):
 
 ### 加载自定义插件（即刚刚自己编写的逻辑）
 
-```sh
+```bash
 qq plug sample
 ```
 
@@ -116,7 +116,7 @@ qq plug sample
 
 安装 python （我使用的是 Linux Ubuntu 系统）
 
-```sh
+```bash
 sudo apt-get install python3.5
 ```
 
@@ -133,7 +133,7 @@ Linux 远程服务器的话，当然没法弹出二维码扫描了，这时需�
 进入 '~/.qqbot-tmp/v2.x.conf' 文件，进行修改。
 （使用 sftp 类型的软件或者 vim 皆可 ）
 
-```conf
+```json5
 # 用户 somebody 的配置
     "somebody" : {
       ···
@@ -153,7 +153,7 @@ Linux 远程服务器的话，当然没法弹出二维码扫描了，这时需�
 
 使用如下命令加载配置：
 
-```sh
+```bash
 qqbot -u somebody // 此处 somebody 为上述自行定义的配置，名称也可修改
 ```
 
@@ -206,7 +206,7 @@ def application(environ, start_response):
 
 最后在文件所在的目录，执行：
 
-```sh
+```bash
 nohup python start_webhook.py & // nohup 与 & 连用使得脚本在后台执行
 ```
 

@@ -167,7 +167,7 @@ categories:
 
 Example:
 
-```sh
+```bash
 # 注意这里的参数是 Array
 # 刷新目录
 tccli cdn PurgePathCache --Paths '["https://www.yunyoujun.cn/links/"]' --FlushType flush

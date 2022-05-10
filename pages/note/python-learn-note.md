@@ -35,7 +35,7 @@ categories:
 
 安装插件 `Python` （就叫 Python），输入如下命令，或直接在扩展里搜索。
 
-```sh
+```bash
 ext install python
 ```
 

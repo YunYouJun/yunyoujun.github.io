@@ -16,7 +16,7 @@ Hexo 主题：[Yun](https://github.com/YunYouJun/hexo-theme-yun/)
 
 发布时，同时推送至 GitHub 与 Coding 的 hexo 分支备份，使用 CI （GitHub Actions） 生成静态页面推送至 GitHub
 
-```sh
+```bash
 npm run backup
 # or
 # yarn backup
@@ -32,7 +32,7 @@ sh backup.sh
 - [GitHub](https://github.com/YunYouJun/yunyoujun.github.io)
 - [Coding](https://e.coding.net/YunYouJun/yunyoujun.coding.me)
 
-```sh
+```bash
 git clone https://github.com/YunYouJun/yunyoujun.github.io
 # coding
 git remote add coding https://e.coding.net/YunYouJun/yunyoujun.coding.me.git
@@ -40,7 +40,7 @@ git remote add coding https://e.coding.net/YunYouJun/yunyoujun.coding.me.git
 
 ### 同时推送
 
-```sh
+```bash
 git remote set-url --add origin https://e.coding.net/YunYouJun/yunyoujun.coding.me.git
 ```
 
@@ -51,7 +51,7 @@ git remote set-url --add origin https://e.coding.net/YunYouJun/yunyoujun.coding.
 
 ### Install Theme
 
-```sh
+```bash
 git clone https://github.com/YunYouJun/hexo-theme-yun themes/yun
 ```
 
@@ -71,14 +71,14 @@ git clone https://github.com/YunYouJun/hexo-theme-yun themes/yun
 
 #### 刷新目录
 
-```sh
+```bash
 # 注意这里的参数是 Array
 tccli cdn PurgePathCache --Paths '["https://www.yunyoujun.cn/links/"]' --FlushType flush
 ```
 
 #### 刷新路径
 
-```sh
+```bash
 tccli cdn PurgeUrlsCache --Urls '["https://www.yunyoujun.cn/links/index.html"]'
 ```
 
@@ -94,49 +94,49 @@ tccli cdn PurgeUrlsCache --Urls '["https://www.yunyoujun.cn/links/index.html"]'
 
 [gitmoji](https://gitmoji.carloscuesta.me/)
 
-```sh
+```bash
 git commit -m 'xxx'
 ```
 
 ### 更新博客内容
 
-```sh
+```bash
 📝 update
 ```
 
 ### Fixing typos
 
-```sh
+```bash
 ✏️ typo
 ```
 
 ### UI
 
-```sh
+```bash
 💄 xxx
 ```
 
 ### Improving structure / format of the code
 
-```sh
+```bash
 🎨 xxx
 ```
 
 ### Fixing CI Build
 
-```sh
+```bash
 💚 travis
 ```
 
 ### Changing configuration files
 
-```sh
+```bash
 🔧 config
 ```
 
 ### Other
 
-```sh
+```bash
 chore(xxx): xxx
 ```
 
@@ -146,6 +146,6 @@ chore(xxx): xxx
 
 [.gitmodules](.gitmodules)
 
-```sh
+```bash
 git submodule add https://github.com/YunYouJun/hexo-theme-yun themes/yun
 ```

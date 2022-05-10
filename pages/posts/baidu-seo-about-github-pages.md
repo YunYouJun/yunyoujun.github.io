@@ -32,7 +32,7 @@ Coding Pages 可以和 GitHub Pages 使用方式相差无几，不再多述。
 
 Example:
 
-```sh
+```bash
 # backup.sh
 info=$1
 git add -A
@@ -43,7 +43,7 @@ git push coding hexo
 
 Usage:
 
-```sh
+```bash
 ./backup.sh 'update blog'
 ```
 

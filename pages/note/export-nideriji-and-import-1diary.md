@@ -52,11 +52,11 @@ GitHub: [export-nideriji](https://github.com/YunYouJun/export-nideriji)
 
 进入 `Windows` 命令行， 输入命令，查看本机 IP 地址 (IPv4 地址)
 
-```sh
+```bash
 ipconfig
 ```
 
-```sh
+```bash
 无线局域网适配器 WLAN:
 
    连接特定的 DNS 后缀 . . . . . . . :
@@ -82,7 +82,7 @@ ipconfig
 
 观察排除点一些系统的请求，fiddle 界面中含有一条这样的链接。
 
-```sh
+```bash
 CONNECT http://ohshenghuo.com:443
 200 Connection Established ()
 ```
@@ -144,7 +144,7 @@ API Address: <https://ohshenghuo.com/api/>
 
 [你的日记 API DOC - Postman](https://documenter.getpostman.com/view/3326320/Rztmr8pE)
 
-```sh
+```bash
 GET
 ```
 

@@ -103,7 +103,7 @@ algolia:
     - title
 ```
 
-```sh
+```bash
 npm install hexo-algolia --save // 使用 npm 安装 hexo-algolia 插件
 export HEXO_ALGOLIA_INDEXING_KEY=xxx // xxx 为 apiKey
 hexo clean

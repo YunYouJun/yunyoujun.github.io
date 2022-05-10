@@ -258,7 +258,7 @@ async function getAllMembers(groupId) {
 
 于是，诞生了 [baidu-image-spider](https://github.com/YunYouJun/baidu-image-spider)。
 
-```sh
+```bash
 # 使用方式
 bis -k '游戏手柄' -tp 100
 ```

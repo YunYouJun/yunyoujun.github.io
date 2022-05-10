@@ -61,7 +61,7 @@ module.exports = {
 
 Install
 
-```sh
+```bash
 yarn add -D prerender-spa-plugin
 ```
 

@@ -4,4 +4,4 @@
 
 Welcome to My Blog!
 
-This is built by [Hexo](https://hexo.io/) with [Yun](https://github.com/YunYouJun/hexo-theme-yun).
+This is built by [Valaxy](https://github.com/YunYouJun/valaxy) with [Valaxy Theme Yun](https://github.com/YunYouJun/valaxy/blob/main/packages/valaxy-theme-yun/README.md).

@@ -23,7 +23,7 @@ GitHub: [Fuck-XueXiQiangGuo](https://github.com/fuck-xuexiqiangguo/Fuck-XueXiQia
 
 网站说明文档提供的是 `Ubuntu` 系列安装方法，与 `CentOS` 系列略有区别。
 
-```sh
+```bash
 # CentOS
 yum update
 yum upgrade
@@ -53,7 +53,7 @@ chmod +x ./Fuck学习强国
 
 ## Help
 
-```sh
+```bash
 ./Fuck学习强国 --help
 ```
 
@@ -61,12 +61,12 @@ chmod +x ./Fuck学习强国
 
 编写每天随机时间执行脚本。
 
-```sh
+```bash
 # vim /etc/crontab
 0 8 * * * root /home/yunyou/bash/start-xxqg.sh
 ```
 
-```sh
+```bash
 # vim /home/yunyou/bash/start-xxqg.sh
 # start-xxqg.sh
 python3 /home/yunyou/bash/close-xxqg.py

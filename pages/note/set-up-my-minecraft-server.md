@@ -29,12 +29,12 @@ categories:
 
 ### Install Java
 
-```sh
+```bash
 # 查看可获得的 java 版本
 yum -y list java*
 ```
 
-```sh
+```bash
 # 安装 java
 yum -y install java-latest-openjdk
 # ubuntu
@@ -57,7 +57,7 @@ yum -y install java-latest-openjdk
 
 你可以在 [这里](https://www.minecraft.net/zh-hans/download/server/) 下载官方 JAVA 版的最新版本服务器。（替换下方下载链接）
 
-```sh
+```bash
 mkdir /opt/minecraft
 cd /opt/minecraft
 # 若没有 wget，需先安装
@@ -66,7 +66,7 @@ wget https://launcher.mojang.com/v1/objects/bb2b6b1aefcd70dfd1892149ac3a215f6c63
 # 1.14.4
 ```
 
-```sh
+```bash
 # 编译安装
 java -Xms512M -Xmx1024M -jar server.jar nogui
 # 初次允许结束会返回一个错误，将会生成一个新的 eula.txt 文件
@@ -79,7 +79,7 @@ java -Xms512M -Xmx1024M -jar server.jar nogui
 
 需要同意文件里的协议，通过下面这条命令将 `eula=true` 添加到文件中：
 
-```sh
+```bash
 sed -i.orig 's/eula=false/eula=true/g' eula.txt
 # 再次运行
 java -Xms512M -Xmx1024M -jar server.jar nogui
@@ -87,20 +87,20 @@ java -Xms512M -Xmx1024M -jar server.jar nogui
 
 ### 编写自动化脚本
 
-```sh
+```bash
 nano /opt/minecraft/start-mc.sh
 ```
 
 键入以下内容
 
-```sh
+```bash
 #!/bin/bash
 cd /opt/minecraft/ && java -Xms2048M -Xmx3472M -jar server.jar nogui
 # 保存并退出
 # 按 ctrl+x y 回车
 ```
 
-```sh
+```bash
 # 给予执行权限
 chmod +x /opt/minecraft/start-mc.sh
 ```
@@ -109,7 +109,7 @@ chmod +x /opt/minecraft/start-mc.sh
 
 需要开启新的 screen 会话。
 
-```sh
+```bash
 # 若没有 screen，需先安装
 # yum -y screen
 screen -S mc
@@ -120,13 +120,13 @@ screen -S mc
 
 使 Linux 重启时，自动运行该脚本
 
-```sh
+```bash
 nano /etc/rc.local
 ```
 
 进入文件，加入以下内容
 
-```sh
+```bash
 screen -dm -S mc /opt/minecraft/start-mc.sh
 exit 0
 ```
@@ -143,7 +143,7 @@ exit 0
 
 - [腾讯云开发者平台](https://dev.tencent.com)
 
-```sh
+```bash
 # /opt/minecraft/mc-server-backup.sh
 cd /opt/minecraft/ && git add -A && git commit -m "mc-server-world-backup" && git push
 # 注意 linux 和 windows 换行符
@@ -155,13 +155,13 @@ cd /opt/minecraft/ && git add -A && git commit -m "mc-server-world-backup" && gi
 
 设置定时备份任务
 
-```sh
+```bash
 vi /etc/crontab
 ```
 
 键入以下内容
 
-```sh
+```bash
 30 2 * * * root /opt/minecraft/mc-server-backup.sh
 # 每天 2:30 执行备份任务
 ```
@@ -194,14 +194,14 @@ vi /etc/crontab
 
 服务端执行
 
-```sh
+```bash
 # 赋予管理权限
 /op 用户名
 ```
 
 ### Client
 
-```sh
+```bash
 # 死亡不掉落
 /gamerule keepInventory true
 ```
@@ -210,7 +210,7 @@ vi /etc/crontab
 
 更改游戏模式
 
-```sh
+```bash
 # Example
 # 改变红色组别所有玩家的游戏模式为创造模式
 /gamemode creative @a[team=Red]
@@ -236,27 +236,27 @@ vi /etc/crontab
 
 ### scoreboard
 
-```sh
+```bash
 /scoreboard teams add <队伍名称> [显示名称]
 ```
 
-```sh
+```bash
 /scoreboard teams remove <队伍名称>
 ```
 
-```sh
+```bash
 # 加入队伍
 /scoreboard teams join <队伍名称> [玩家]
 ```
 
-```sh
+```bash
 # 设置
 /scoreboard teams option <队伍名称> <选项> <值>
 ```
 
 Example:
 
-```sh
+```bash
 /scoreboard teams option <队伍名称> color red
 /scoreboard teams option <队伍名称> friendlyfire false
 /scoreboard teams option <队伍名称> nametagVisbility hideForOtherTeams

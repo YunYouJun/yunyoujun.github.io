@@ -74,7 +74,7 @@ Linux 用户右上角关闭本标签页。
 
 **你可以考虑切换为 `taobao` 镜像源。**
 
-```sh
+```bash
 npm config set registry https://registry.npm.taobao.org
 ```
 
@@ -86,7 +86,7 @@ npm config set registry https://registry.npm.taobao.org
 
 [官网](https://classic.yarnpkg.com/zh-Hans/docs/install#mac-stable)下载或通过命令行安装。
 
-```sh
+```bash
 npm install -g yarn
 ```
 
@@ -162,7 +162,7 @@ macOS 用户可以下载官网的安装包进行安装，也可以直接安装 A
 
 在终端中输入以下命令：
 
-```sh
+```bash
 npm install hexo-cli -g
 # 如果安装失败，可能是没有权限，可以尝试头部加上 sudo 重新执行
 # sudo npm install hexo-cli -g
@@ -181,7 +181,7 @@ npm install hexo-cli -g
 
 > 注意：这里是你自定义的目录，请不要复制粘贴
 
-```sh
+```bash
 # '#' 字符后的文字代表注释，不需要输入
 # Windows
 cd C:\Users\YunYou\Documents\GitHub\
@@ -191,14 +191,14 @@ cd C:\Users\YunYou\Documents\GitHub\
 
 接下来输入：
 
-```sh
+```bash
 hexo init 你的名字.github.io
 ```
 
 > `hexo` 正是因为我们之前安装了 `hexo-cli` 这一个包，所以我们可以在终端中使用 `hexo` 这一命令。
 > `init` 初始化博客的模版文件。后面跟的是你要新建的文件夹，最好和你此前新建的仓库名一致。
 
-```sh
+```bash
 # 进入你的博客文件夹
 cd 你的名字.github.io
 # 默认安装所有 `package.json` 文件中提到的包
@@ -245,7 +245,7 @@ Hexo-Theme-Yun 的速度检测
 
 > 实际上你也可以直接在 VS Code 中使用终端。
 
-```sh
+```bash
 npm i hexo-theme-yun
 ```
 
@@ -281,7 +281,7 @@ theme: yun
 
 由于我的主题使用了 pug 和 stylus，而 Hexo 自带的一般是 ejs 与 stylus，所以你可能还需要输入以下命令安装渲染器。
 
-```sh
+```bash
 npm install hexo-render-pug hexo-renderer-stylus
 # 如果出问题，可以换 yarn 安装试试。
 ```
@@ -337,7 +337,7 @@ colors:
 
 所以我们需要使用以下命令先来生成站点的静态文件。
 
-```sh
+```bash
 # 如果进行多次生成，为了避免受错误缓存影响，最好使用 hexo clean 先清除一遍。
 hexo generate
 # 缩写为 hexo g
@@ -349,7 +349,7 @@ hexo generate
 
 接下来我们将本地的仓库与此前在 GitHub 上建立的仓库建立关联。
 
-```sh
+```bash
 git init # 初始化 Git 仓库，只需要执行一次即可
 ```
 
@@ -361,7 +361,7 @@ git init # 初始化 Git 仓库，只需要执行一次即可
 `你的名字.github.io` 部署后，GitHub Pages 将默认使用你的 master 分支作为静态文件部署。
 所以我们最好新建一个 hexo 分支（命名无所谓）用来存储 Hexo 地源代码，master 分支则用来存储部署后的静态文件。
 
-```sh
+```bash
 git checkout -b hexo
 ```
 
@@ -377,7 +377,7 @@ git checkout -b hexo
 
 老规矩，安装。
 
-```sh
+```bash
 npm install hexo-deployer-git
 ```
 

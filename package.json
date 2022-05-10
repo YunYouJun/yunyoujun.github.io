@@ -1,67 +1,42 @@
 {
   "name": "yunyoujun.github.io",
   "description": "YunYouJun Blog",
-  "version": "1.1.1",
+  "version": "2.0.0",
   "private": true,
-  "hexo": {
-    "version": "6.1.0"
-  },
-  "dependencies": {
-    "crypto-js": "^4.1.1",
-    "hexo": "^6.1.0",
-    "hexo-algolia": "^1.3.2",
-    "hexo-deployer-git": "^3.0.0",
-    "hexo-generator-archive": "^1.0.0",
-    "hexo-generator-category": "^1.0.0",
-    "hexo-generator-feed": "^3.0.0",
-    "hexo-generator-index": "^2.0.0",
-    "hexo-generator-search": "^2.4.3",
-    "hexo-generator-sitemap": "^3.0.1",
-    "hexo-generator-tag": "^1.0.0",
-    "hexo-render-pug": "^2.1.4",
-    "hexo-renderer-marked": "^5.0.0",
-    "hexo-renderer-stylus": "^2.0.1",
-    "hexo-tag-aplayer": "^3.0.4",
-    "hexo-tag-common": "^0.0.5",
-    "hexo-theme-yun": "^1.9.0",
-    "hexo-widget-tree": "^0.2.2",
-    "hexo-wordcount": "^6.0.1"
-  },
   "devDependencies": {
     "@antfu/eslint-config": "^0.23.0",
     "cross-env": "^7.0.3",
     "eslint": "^8.15.0",
-    "hexo-all-minifier": "0.5.7",
-    "hexo-browsersync": "^0.3.0",
-    "hexo-server": "^3.0.0",
-    "typescript": "^4.6.4"
+    "typescript": "^4.6.4",
+    "valaxy": "^0.3.2",
+    "valaxy-theme-yun": "^0.3.2"
   },
   "scripts": {
-    "algolia": "hexo clean && hexo algolia",
+    "algolia": "echo todo",
     "backup": "sh bash/backup.sh",
-    "build": "hexo g",
-    "clean": "hexo clean",
-    "deploy": "hexo d",
-    "dev": "cross-env NODE_ENV=development && hexo s",
-    "docs:dev": "cd themes/hexo-theme-yun && yarn docs:dev",
-    "link": "cd themes/hexo-theme-yun && pnpm link --global && cd ../.. && pnpm link hexo-theme-yun --global",
-    "lint": "eslint \"**/*.{vue,ts,js}\"",
-    "predeploy": "hexo clean && hexo g",
-    "post": "hexo new post",
-    "test": "cross-env NODE_ENV=test && hexo s"
+    "build": "npm run build:ssg && npm run rss",
+    "build:spa": "valaxy build",
+    "build:ssg": "valaxy build --ssg",
+    "clean": "rm -rf dist",
+    "dev": "valaxy",
+    "rss": "valaxy rss",
+    "serve": "vite preview",
+    "lint": "eslint .",
+    "post": "valaxy new post"
   },
-  "author": "YunYouJun <me@yunyoujun.cn>",
+  "author": {
+    "email": "me@yunyoujun.cn",
+    "name": "YunYouJun",
+    "url": "https://www.yunyoujun.cn"
+  },
   "homepage": "https://yunyoujun.cn",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/YunYouJun/yunyoujun.github.io.git"
   },
   "bugs": {
-    "url": "https://github.com/YunYouJun/ak-ui/issues"
+    "url": "https://github.com/YunYouJun/yunyoujun.github.io/issues"
   },
-  "files": [
-    "source/_posts/*"
-  ],
   "keywords": [
     "yunyoujun.cn",
     "YunYouJun",
