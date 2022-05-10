@@ -12,10 +12,6 @@ random: true
 <details>
 <summary>神隐</summary>
 
-```yaml
-
-```
-
 </details>
 
 ## 友链说明

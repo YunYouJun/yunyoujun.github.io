@@ -80,13 +80,13 @@ Note: Let's look at the data source.
 ### <i class="ri-file-upload-line"></i>
 
 ```js
-new FileReader();
+new FileReader()
 ```
 
 ### <i class="ri-links-line"></i>
 
 ```js
-new XMLHttpRequest();
+new XMLHttpRequest()
 ```
 
 Note: Images are a form of data, and a single image often contains an enormous amount of data compared to text. Request a picture to be loaded by uploading a file or link.
@@ -112,14 +112,14 @@ Note: I've also prepared some random images that you can click to switch the eff
 ### Canvas Picture Pixels
 
 ```js
-...
-for (let row = 1; row < imageData.height - 1; ) {
-  for (let col = 1; col < imageData.width - 1; ) {
+// ...
+for (let row = 1; row < imageData.height - 1;) {
+  for (let col = 1; col < imageData.width - 1;) {
     r = imageData.data[row * imageData.width * 4 + col * 4]
     g = imageData.data[row * imageData.width * 4 + col * 4 + 1]
     b = imageData.data[row * imageData.width * 4 + col * 4 + 2]
     hsl = rgbToHsl(r, g, b)
-    ...
+    // ...
   }
 }
 ```
@@ -140,12 +140,12 @@ Ignore too bright/too dark
 
 ```js
 if (hsl[2] > 97 || (hsl[2] > 95 && hsl[1] < 30)) {
-  col += pixelStep;
-  continue; // too bright
+  col += pixelStep
+  continue // too bright
 }
 if (hsl[2] < 3 || (hsl[2] < 5 && hsl[1] < 30)) {
-  col += pixelStep;
-  continue; // too dark
+  col += pixelStep
+  continue // too dark
 }
 ```
 
@@ -171,12 +171,12 @@ Pick K initial seeds
 
 ```js
 for (j = 0; j < l; j++) {
-  const hDiff = Math.abs(initSeed[j].h - color.h);
-  const sDiff = Math.abs(initSeed[j].s - color.s);
-  const lDiff = Math.abs(initSeed[j].l - color.l);
-  if (hDiff + sDiff + lDiff < 45) {
-    break;
-  }
+  const hDiff = Math.abs(initSeed[j].h - color.h)
+  const sDiff = Math.abs(initSeed[j].s - color.s)
+  const lDiff = Math.abs(initSeed[j].l - color.l)
+  if (hDiff + sDiff + lDiff < 45)
+    break
+
 }
 ```
 
@@ -190,17 +190,17 @@ Note: I did not use the relevant class library here, which is conducive to more 
 
 ```js
 while (len--) {
-  const distance =
-    Math.abs(classes[len].h - color.h) +
-    Math.abs(classes[len].s - color.s) +
-    Math.abs(classes[len].l - color.l);
+  const distance
+    = Math.abs(classes[len].h - color.h)
+    + Math.abs(classes[len].s - color.s)
+    + Math.abs(classes[len].l - color.l)
   if (distance < min) {
-    min = distance;
-    minIndex = len;
+    min = distance
+    minIndex = len
   }
 }
 // 颜色所属的类别
-color.category = minIndex;
+color.category = minIndex
 ```
 
 Minimum distance to a certain seed
@@ -222,10 +222,10 @@ Note: Iterate through the pixels and divide them into the relevant categories of
 HEX as a key will be very slow (measured)
 
 ```js
-hKey = Math.floor(hsl[0] / 10) * 10000;
-sKey = Math.floor(hsl[1] / 5) * 100;
-lKey = Math.floor(hsl[2] / 5);
-key = hKey + sKey + lKey;
+hKey = Math.floor(hsl[0] / 10) * 10000
+sKey = Math.floor(hsl[1] / 5) * 100
+lKey = Math.floor(hsl[2] / 5)
+key = hKey + sKey + lKey
 ```
 
 Use HSL to calculate as an integer index
@@ -242,14 +242,14 @@ Serial copy data, each iteration can be assigned eight times.
 
 ```js
 while (count--) {
-  this.classifyColor(colors[--len], seeds);
-  this.classifyColor(colors[--len], seeds);
-  this.classifyColor(colors[--len], seeds);
-  this.classifyColor(colors[--len], seeds);
-  this.classifyColor(colors[--len], seeds);
-  this.classifyColor(colors[--len], seeds);
-  this.classifyColor(colors[--len], seeds);
-  this.classifyColor(colors[--len], seeds);
+  this.classifyColor(colors[--len], seeds)
+  this.classifyColor(colors[--len], seeds)
+  this.classifyColor(colors[--len], seeds)
+  this.classifyColor(colors[--len], seeds)
+  this.classifyColor(colors[--len], seeds)
+  this.classifyColor(colors[--len], seeds)
+  this.classifyColor(colors[--len], seeds)
+  this.classifyColor(colors[--len], seeds)
 }
 ```
 
@@ -288,12 +288,12 @@ Note: HEX (Hexadecimal color code), the top three main colors
 ```js
 const flag = hslCount.every((ele, index) => {
   return (
-    Math.abs(ele.h - seeds[index].h) < 0.5 &&
-    Math.abs(ele.s - seeds[index].s) < 0.5 &&
-    Math.abs(ele.l - seeds[index].l) < 0.5
-  );
-});
-...
+    Math.abs(ele.h - seeds[index].h) < 0.5
+    && Math.abs(ele.s - seeds[index].s) < 0.5
+    && Math.abs(ele.l - seeds[index].l) < 0.5
+  )
+})
+// ...
 ```
 
 Calculate the true cluster seed
@@ -337,18 +337,21 @@ Take the first three colors to generate a gradient bar
 </small>
 
 ```js
-background() {
-  if (this.colors.length > 1) {
-    let linearGradient = 'linear-gradient(to right'
-    this.colors.forEach((color) => {
-      linearGradient += ',' + color
-    })
-    linearGradient += ')'
-    return {
-      background: linearGradient,
+class Xxx {
+  background() {
+    if (this.colors.length > 1) {
+      let linearGradient = 'linear-gradient(to right'
+      this.colors.forEach((color) => {
+        linearGradient += `,${color}`
+      })
+      linearGradient += ')'
+      return {
+        background: linearGradient,
+      }
     }
-  } else {
-    ...
+    else {
+      // ...
+    }
   }
 }
 ```
@@ -366,7 +369,7 @@ this.averageColor = rgbToHex({
   r: Math.floor(rCount / fCount),
   g: Math.floor(gCount / fCount),
   b: Math.floor(bCount / fCount),
-});
+})
 ```
 
 ~~
@@ -545,8 +548,8 @@ Grayscale Calculation
 
 ```js
 function isDark(color) {
-  color = hexToRgb(color);
-  return color.r * 0.299 + color.g * 0.578 + color.b * 0.114 <= 192;
+  color = hexToRgb(color)
+  return color.r * 0.299 + color.g * 0.578 + color.b * 0.114 <= 192
 }
 ```
 
