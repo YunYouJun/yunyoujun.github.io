@@ -23,7 +23,7 @@ categories:
 
 曾经我使用的策略是在国内托管 [Coding Pages](https://coding.net/)，以及为了让百度能抓取到博客内容，还做了一番配置。
 
-> [让百度收录你的 GitHub Pages 博客](https://yunyoujun.cn/note/baidu-seo-about-github-pages/)
+> [让百度收录你的 GitHub Pages 博客](https://yunyoujun.cn/posts/baidu-seo-about-github-pages/)
 
 但是 Coding 的服务并不稳定，且经常变动一些策略。
 现在更是下线整合到静态部署中，且似乎因为 API 的问题实名认证总是不能通过，暂时都无法使用。

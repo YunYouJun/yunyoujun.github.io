@@ -11,7 +11,12 @@ categories:
 aplayer: true
 ---
 
-{% meting "668479" "netease" "song" "theme:#C20C0C"%}
+<meting-js
+ id="668479"
+ server="netease"
+ type="song"
+ theme="#C20C0C">
+</meting-js>
 
 > 永远相信美好的事情即将发生
 

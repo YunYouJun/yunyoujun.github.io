@@ -19,7 +19,7 @@ url: https://github.com/YunYouJun/give-me-money
 
 ---
 
-这是自己几年前 Parcel 刚出的时候，写[「Parcel.js + Vue 搭建笔记」](https://yunyoujun.cn/note/vue-parcel-demo/)，拿来练手的小玩意儿。
+这是自己几年前 Parcel 刚出的时候，写[「Parcel.js + Vue 搭建笔记」](https://yunyoujun.cn/posts/vue-parcel-demo/)，拿来练手的小玩意儿。
 所以代码很丑，也没做啥后端校验。 因为之前 API 次数被人恶意刷完了，所以重置了数据，现在加了邮箱验证才能提交。
 
 大家乐呵乐呵完事了，我本身也是白嫖的 [LeanCloud](https://www.leancloud.cn/) 的开发版，刷数据最多也就到 LeanCloud 的每日上限。

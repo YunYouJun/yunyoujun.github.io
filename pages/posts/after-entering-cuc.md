@@ -14,7 +14,12 @@ aplayer: true
 不知不觉已入学研究生生涯仅一个月，期间自然又有许多波折，但随着时间也似乎淡忘了许多。
 在此回顾，引以为鉴。
 
-{% meting "2324438" "netease" "song" "theme:#C20C0C"%}
+<meting-js
+ id="2324438"
+ server="netease"
+ type="song"
+ theme="#C20C0C">
+</meting-js>
 
 <!-- more -->
 

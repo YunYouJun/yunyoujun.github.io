@@ -72,4 +72,4 @@ Usage:
 
 ---
 
-其实还可以通过使用国内的 CDN 解决，具体可以参见 [使用 CDN 加速你的 GitHub Pages 网站](https://www.yunyoujun.cn/note/use-cdn-speed-up-site/)。
+其实还可以通过使用国内的 CDN 解决，具体可以参见 [使用 CDN 加速你的 GitHub Pages 网站](https://www.yunyoujun.cn/posts/use-cdn-speed-up-site/)。

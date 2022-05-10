@@ -9,7 +9,7 @@ categories:
   - 云游的小日记
 ---
 
-其实这得从很久前的 [搭建自己的 Minecraft 服务器](https://www.yunyoujun.cn/note/set-up-my-minecraft-server/) 说起。
+其实这得从很久前的 [搭建自己的 Minecraft 服务器](https://www.yunyoujun.cn/posts/set-up-my-minecraft-server/) 说起。
 
 <!-- more -->
 

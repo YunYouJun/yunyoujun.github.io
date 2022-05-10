@@ -11,7 +11,7 @@ categories:
   - 云游的小笔记
 ---
 
-More info in [从零开始的 WebGL](https://yunyoujun.cn/note/webgl-from-zero).
+More info in [从零开始的 WebGL](https://www.yuque.com/docs/share/a32e7cdc-bee8-44ab-9704-84ebb574e809).
 
 <!-- more -->
 

@@ -9,7 +9,12 @@ url: https://baike.baidu.com/item/%E6%84%9A%E4%BA%BA%E8%8A%82/114199
 aplayer: true
 ---
 
-{% meting "26830207" "netease" "song" "theme:#C20C0C"%}
+<meting-js
+ id="26830207"
+ server="netease"
+ type="song"
+ theme="#C20C0C">
+</meting-js>
 
 对不起，再见了各位，我要前往二次元了。
 
