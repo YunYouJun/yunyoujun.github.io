@@ -49,7 +49,7 @@ Linux 不同主流发行版本在官方文档中都有详细的安装过程。
 
 CentOS:
 
-```sh
+```bash
 yum install docker
 # 启动 Docker
 systemctl start docker
@@ -80,25 +80,25 @@ DISTRIB_CODENAME=wheezy
 
 #### 下载 酷 Q Docker 镜像
 
-```sh
+```bash
 docker pull coolq/wine-coolq
 ```
 
 在任意目录创建一个空文件夹，用于持久化存放 酷 Q 数据：
 
-```sh
+```bash
 mkdir /root/coolq-data # 任意路径均可
 ```
 
 运行 酷 Q 镜像
 
-```sh
+```bash
 docker run --name=coolq --rm -p 8080:9000 -v /root/coolq-data:/home/user/coolq -e VNC_PASSWD=12345678 -e COOLQ_ACCOUNT=123456 coolq/wine-coolq
 ```
 
 Example:
 
-```sh
+```bash
 docker run --name=coolq --rm -p 8080:9000 -v /root/coolq-data:/home/yunyou/coolq -e VNC_PASSWD=yunyou -e COOLQ_ACCOUNT=xiaoai coolq/wine-coolq
 docker run --name=coolq -d -p 8080:9000 -v /root/coolq-data:/home/yunyou/coolq -e VNC_PASSWD=yunyou -e COOLQ_ACCOUNT=xiaoai coolq/wine-coolq
 ```
@@ -109,7 +109,7 @@ docker run --name=coolq -d -p 8080:9000 -v /root/coolq-data:/home/yunyou/coolq -
 
 `--rm` 替换为 `-d`
 
-```sh
+```bash
 docker run --name=coolq -d -p 8080:9000 -v /root/coolq-data:/home/user/coolq -e VNC_PASSWD=12345678 -e COOLQ_ACCOUNT=123456 coolq/wine-coolq
 ```
 
@@ -122,20 +122,20 @@ docker run --name=coolq -d -p 8080:9000 -v /root/coolq-data:/home/user/coolq -e 
 
 查看日志
 
-```sh
+```bash
 docker logs coolq
 ```
 
 启动/停止服务
 
-```sh
+```bash
 docker start coolq
 docker stop coolq
 ```
 
 ### 安装 [CoolQ HTTP API 插件](https://cqhttp.cc/)
 
-```sh
+```bash
 docker pull richardchien/cqhttp:latest
 ```
 
@@ -143,7 +143,7 @@ docker pull richardchien/cqhttp:latest
 
 #### Run Coolq
 
-```sh
+```bash
 docker run -ti --rm --name cqhttp-test \
             -v $(pwd)/coolq:/home/user/coolq \  # 将宿主目录挂载到容器内用于持久化 酷Q 的程序文件
             -p 9000:9000 \  # noVNC 端口，用于从浏览器控制 酷Q
@@ -156,7 +156,7 @@ docker run -ti --rm --name cqhttp-test \
 
 进入容器内部，添加需改环境变量
 
-```sj
+```bash
 docker exec -ti 容器ID/容器名  /bin/bash
 ```
 
@@ -168,7 +168,7 @@ docker exec -ti 容器ID/容器名  /bin/bash
 
 参见文档进行安装。
 
-```sh
+```bash
 # pip 为 python 的包管理工具，请提前安装好 Python , pip 。
 # More Info: https://yunyoujun.cn/note/linux-learn-note/
 pip install nonebot
@@ -186,7 +186,7 @@ pip install nonebot
 
 T^T 这个问题找了我好久
 
-```sh
+```bash
 iptables -I INPUT 4 -p tcp -m state --state NEW -m tcp --dport 8080 -j ACCEPT
 service iptables save #保存iptables规则
 ```

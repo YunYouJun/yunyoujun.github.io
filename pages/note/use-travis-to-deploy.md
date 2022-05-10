@@ -26,7 +26,7 @@ categories:
 
 ---
 
-```sh
+```bash
 language: node_js
 node_js:
   - lts/*
@@ -53,7 +53,7 @@ after_success:
 
 使用 [Travis CI](https://github.com/travis-ci/travis.rb#readme) 的命令行工具加密 GitHub 的 Personal Access Token。
 
-```sh
+```bash
 travis encrypt -r YunYouJun/repo GH_TOKEN=XXX
 ```
 
@@ -61,7 +61,7 @@ travis encrypt -r YunYouJun/repo GH_TOKEN=XXX
 
 ### GitHub Pages
 
-```sh
+```bash
 git push --force "https://${GH_TOKEN}@${GH_REF}" master:master
 ```
 
@@ -69,7 +69,7 @@ git push --force "https://${GH_TOKEN}@${GH_REF}" master:master
 
 Coding 还需要加 用户名 前缀 `https://xxx:${CODING_TOKEN}@${CD_REF}`
 
-```sh
+```bash
 git push --force "https://yunyoujun:${CODING_TOKEN}@${CD_REF}" master:master
 ```
 

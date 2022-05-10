@@ -1,24 +1,24 @@
-# custom
-.DS_Store
-Thumbs.db
-tmp
+# vite-ssg
+.vite-ssg-dist
+.vite-ssg-temp
+
 temp/
+
+.DS_Store
+*.local
+dist
+dist-ssr
+.idea/
+
+components.d.ts
+
+Thumbs.db
 
 # lock
 yarn.lock
 package-lock.json
-pnpm-lock.yaml
 pnpm-global/
 
 # dev
 node_modules/
 *.log
-
-# dist
-public/
-db.json
-.deploy*/
-
-# hexo
-# now we don't need themes, just by 'npm i hexo-theme-yun'
-themes/

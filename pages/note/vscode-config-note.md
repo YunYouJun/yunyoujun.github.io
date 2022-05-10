@@ -73,7 +73,7 @@ categories:
 
 ### 命令行打开
 
-```sh
+```bash
 code xxx.xxx
 ```
 
