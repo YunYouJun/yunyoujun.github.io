@@ -206,7 +206,7 @@ GitHub 项目地址：[software-engineering-notes](https://github.com/YunYouJun/
 
 当当当，以及大家今年最关心的这个出炉。
 
-![2019 计算机应用技术 录取名单](../../images/posts/to-lovely-junior/admission-list.png)
+![2019 计算机应用技术 录取名单](https://upyun.yunyoujun.cn/images/admission-list.jpg)
 
 ### 中传 2019 年计算机招生情况
 

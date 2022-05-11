@@ -25,7 +25,7 @@ aplayer: true
 
 起初，初到宿舍，看到上下铺的床与各自长仅一米宽则远不到一米的桌子，便凉了半截。
 
-![狭小的宿舍](../../images/posts/after-entering-cuc/cramped-dormitory.jpg)
+![狭小的宿舍](https://upyun.yunyoujun.cn/images/cramped-dormitory.jpg)
 
 同时因为空间问题，寝室的摆放显得十分别扭与拥挤。
 譬如此刻的我正在床上自己买的的小桌子上敲下这些文字。（因为我的桌子正在过道旁，坐在那里几乎挡住了 2/3 的过道。）
@@ -44,7 +44,7 @@ aplayer: true
 但此后深入了解后，却发现与自己想象的大相径庭。
 心中十分纠结，感觉自己似乎特意复考的努力也并没有什么用。
 
-![开学典礼](../../images/posts/after-entering-cuc/cuc-opening-ceremony.jpg)
+![开学典礼](https://upyun.yunyoujun.cn/images/cuc-opening-ceremony.jpg)
 
 而听得室友 G 称，即便他所在的导师的确这个方向，但也并非真能做这个方向，仅仅是相关罢了。
 今年大改特改，游戏设计相关专业全部划分至动画学院。
@@ -89,8 +89,8 @@ aplayer: true
 
 朋友圈里一位计算机专硕的导师实验室（论选好导师的重要性）
 
-![电竞实验室-1](../../images/posts/after-entering-cuc/esports-lab-1.jpeg)
-![电竞实验室-2](../../images/posts/after-entering-cuc/esports-lab-2.jpeg)
+![电竞实验室-1](https://upyun.yunyoujun.cn/images/esports-lab-1.jpg)
+![电竞实验室-2](https://upyun.yunyoujun.cn/images/esports-lab-2.jpg)
 
 前日看了久闻其名的《寻梦环游记》，也在不断强调这抓住你的机会。
 同时因为设定，梦想与家庭似乎只能选择其一。
@@ -106,7 +106,7 @@ aplayer: true
 
 当然，现在也是。
 
-![4505 1号床](../../images/posts/after-entering-cuc/4505-my-bed.jpg)
+![4505 1号床](https://upyun.yunyoujun.cn/images/4505-my-bed.jpg)
 
 在此前我一直因为高考报错志愿而懊悔，为母校不是 211 懊悔，为有机会可以报更好的大学却没有报而懊悔，为别人听得我报出母校名字后而一脸茫然而懊悔。
 当然现在要说已经完全没有这种懊恼了，也是不可能的。
@@ -114,7 +114,7 @@ aplayer: true
 人与事并没有什么不同，课程内容也仍旧是大学体制的老一套，似乎更加缺少自由度。
 也许失去的才显得珍贵，当某日回宿舍时，见到一处帆布棚顶宛若母校体育馆的简陋微缩版，竟有一种他乡遇故知之感。
 
-![帆布棚顶](../../images/posts/after-entering-cuc/like-smu-gym.jpg)
+![帆布棚顶](https://upyun.yunyoujun.cn/images/like-smu-gym.jpg)
 
 我急忙拍下，发到过去的室友群中。
 却也突然感怀悲伤起来，也许今后，我也再也不会遇到像他们一样的室友了。
