@@ -1,10 +1,7 @@
 ---
-layout: girls
 title: Lovely Girls
 date: 2019-01-07 11:17:35
-updated: 2019-01-07 11:17:35
-icon: icon-women-line
-banner: <span title="我全都要！">大家都是我的天使！</span>
+updated: 2022-05-12 11:17:35
 # - name:
 #   avatar:
 #   from:
@@ -12,9 +9,16 @@ banner: <span title="我全都要！">大家都是我的天使！</span>
 #   reason:
 # https://github.com/YunYouJun/girls
 # girls: https://cdn.jsdelivr.net/gh/YunYouJun/wives@gh-pages/girls.json
+icon: i-ri-women-line
 girls: https://wives.vercel.app/girls.json
 random: true
 ---
+
+<div class="text-center" m="2" title="我全都要！">
+!大家都是我的天使!
+</div>
+
+<YunGirls :girls="frontmatter.girls" :random="frontmatter.random" />
 
 ![喜欢二次元这件事很恶心这一点我还是知道的](https://cdn.jsdelivr.net/gh/YunYouJun/cdn/img/meme/love-er-ci-yuan-is-sick.jpg)
 ![爷就是二次元](https://cdn.jsdelivr.net/gh/YunYouJun/cdn/img/meme/i-am-er-ci-yuan.jpg)
