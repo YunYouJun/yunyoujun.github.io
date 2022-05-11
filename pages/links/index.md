@@ -1,5 +1,4 @@
 ---
-layout: links
 title: 我的小伙伴们
 date: 2019-06-21 13:06:06
 keywords: 链接
@@ -8,6 +7,8 @@ comments: true
 links: https://www.yunyoujun.cn/friends/links.json
 random: true
 ---
+
+<YunLinks :links="frontmatter.links" :random="frontmatter.random" />
 
 <details>
 <summary>神隐</summary>

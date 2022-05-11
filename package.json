@@ -40,8 +40,8 @@
     "cross-env": "^7.0.3",
     "eslint": "^8.15.0",
     "typescript": "^4.6.4",
-    "valaxy": "^0.3.2",
-    "valaxy-theme-yun": "^0.3.2"
+    "valaxy": "^0.3.3",
+    "valaxy-theme-yun": "^0.3.3"
   },
   "homepage": "https://yunyoujun.cn",
   "bugs": {
