@@ -13,7 +13,8 @@ updated: 2017-01-23 21:04:48
 
 ## Github
 
-[canvas-nest.js](https://github.com/hustcc/canvas-nest.js)
+- [canvas-nest.js](https://github.com/hustcc/canvas-nest.js)
+- [预览效果](https://git.hust.cc/canvas-nest.js)
 
 <!-- more -->
 
@@ -52,6 +53,3 @@ updated: 2017-01-23 21:04:48
 ></script>
 ```
 
-> 效果就如本页面所示！
-
-<script type="text/javascript" color="0,0,255" pointColor="0,0,255" opacity='0.7' zIndex="2" count="66" src="https://cdn.jsdelivr.net/npm/canvas-nest.js/dist/canvas-nest.js"></script>

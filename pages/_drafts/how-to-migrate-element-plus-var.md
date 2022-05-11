@@ -96,7 +96,6 @@ scss 编译
 - 无法定义下游样式表中无法访问的私有成员或占位符选择器。
 
 > [@import | Sass](https://sass-lang.com/documentation/at-rules/import)
-
 > [@use and @import rules in SCSS](https://www.liquidlight.co.uk/blog/use-and-import-rules-in-scss/)
 
 `@forward`
@@ -232,7 +231,7 @@ $colors: () !default;
 );
 ```
 
-> https://github.com/sass/sass/blob/main/accepted/module-system.md#configuring-libraries
+> [Configuring Libraries | sass](https://github.com/sass/sass/blob/main/accepted/module-system.md#configuring-libraries)
 
 ## 构建工具 gulp
 

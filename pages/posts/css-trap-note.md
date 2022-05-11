@@ -8,14 +8,12 @@ tags:
   - CSS
 categories:
   - 云游的小笔记
+codepen: true
 ---
 
 CSS 的奇妙 Bug
 
 <!-- more -->
-
-<!-- for codepen -->
-<script async src="https://static.codepen.io/assets/embed/ei.js"></script>
 
 ## FAQ
 

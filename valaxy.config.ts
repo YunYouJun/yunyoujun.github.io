@@ -12,6 +12,7 @@ const config: UserConfig<ThemeUserConfig> = {
     name: '云游君',
   },
   description: 'Valaxy Theme Yun Preview.',
+  url: 'https://www.yunyoujun.cn',
   social: [
     {
       name: 'RSS',
