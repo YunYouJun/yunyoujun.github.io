@@ -38,6 +38,9 @@ jobs:
 
       - name: 🌌 Build Valaxy Blog
         run: npm run build
+        env:
+          NODE_OPTIONS: --max-old-space-size=6144
+            
 
       - name: 🪤 Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v3
