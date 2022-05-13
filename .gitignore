@@ -22,3 +22,6 @@ pnpm-global/
 # dev
 node_modules/
 *.log
+
+# hexo
+db.json
