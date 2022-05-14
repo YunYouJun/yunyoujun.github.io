@@ -5,16 +5,16 @@ specifiers:
   cross-env: ^7.0.3
   eslint: ^8.15.0
   typescript: ^4.6.4
-  valaxy: ^0.3.4
-  valaxy-theme-yun: ^0.3.4
+  valaxy: 0.3.9
+  valaxy-theme-yun: 0.3.9
 
 devDependencies:
   '@antfu/eslint-config': 0.23.1_hcfsmds2fshutdssjqluwm76uu
   cross-env: 7.0.3
   eslint: 8.15.0
   typescript: 4.6.4
-  valaxy: 0.3.4_typescript@4.6.4
-  valaxy-theme-yun: 0.3.4
+  valaxy: 0.3.9_typescript@4.6.4
+  valaxy-theme-yun: 0.3.9
 
 packages:
 
@@ -1281,7 +1281,7 @@ packages:
       ajv: 6.12.6
       debug: 4.3.4
       espree: 9.3.2
-      globals: 13.14.0
+      globals: 13.15.0
       ignore: 5.2.0
       import-fresh: 3.3.0
       js-yaml: 4.1.0
@@ -2284,7 +2284,7 @@ packages:
     engines: {node: ^6 || ^7 || ^8 || ^9 || ^10 || ^11 || ^12 || >=13.7}
     hasBin: true
     dependencies:
-      caniuse-lite: 1.0.30001340
+      caniuse-lite: 1.0.30001341
       electron-to-chromium: 1.4.137
       escalade: 3.1.1
       node-releases: 2.0.4
@@ -2330,8 +2330,8 @@ packages:
       upper-case: 1.1.3
     dev: true
 
-  /caniuse-lite/1.0.30001340:
-    resolution: {integrity: sha512-jUNz+a9blQTQVu4uFcn17uAD8IDizPzQkIKh3LCJfg9BkyIqExYYdyc/ZSlWUSKb8iYiXxKsxbv4zYSvkqjrxw==}
+  /caniuse-lite/1.0.30001341:
+    resolution: {integrity: sha512-2SodVrFFtvGENGCv0ChVJIDQ0KPaS1cg7/qtfMaICgeMolDdo/Z2OD32F0Aq9yl6F4YFwGPBS5AaPqNYiW4PoA==}
     dev: true
 
   /chalk/2.4.2:
@@ -2620,7 +2620,7 @@ packages:
       side-channel: 1.0.4
       which-boxed-primitive: 1.0.2
       which-collection: 1.0.1
-      which-typed-array: 1.1.7
+      which-typed-array: 1.1.8
     dev: true
 
   /deep-is/0.1.4:
@@ -3348,7 +3348,7 @@ packages:
       file-entry-cache: 6.0.1
       functional-red-black-tree: 1.0.1
       glob-parent: 6.0.2
-      globals: 13.14.0
+      globals: 13.15.0
       ignore: 5.2.0
       import-fresh: 3.3.0
       imurmurhash: 0.1.4
@@ -3543,8 +3543,10 @@ packages:
     resolution: {integrity: sha512-WIWGi2L3DyTUvUrwRKgGi9TwxQMUEqPOPQBVi71R96jZXJdFskXEmf54BoZaS1kknGODoIGASGEzBUYdyMCBJg==}
     dev: true
 
-  /foreach/2.0.6:
-    resolution: {integrity: sha512-k6GAGDyqLe9JaebCsFCoudPPWfihKu8pylYXRlqP1J7ms39iPoTtk2fviNglIeQEwdh0bQeKJ01ZPyuyQvKzwg==}
+  /for-each/0.3.3:
+    resolution: {integrity: sha512-jqYfLp7mo9vIyQf8ykW2v7A+2N4QjeCeI5+Dz9XraiO1ign81wjiH7Fb9vSOWvQfNtmSa4H2RoQTrrXivdUZmw==}
+    dependencies:
+      is-callable: 1.2.4
     dev: true
 
   /form-data/4.0.0:
@@ -3658,17 +3660,6 @@ packages:
       is-glob: 4.0.3
     dev: true
 
-  /glob/7.2.0:
-    resolution: {integrity: sha512-lmLf6gtyrPq8tTjSmrO94wBeQbFR3HbLHbuyD69wuyQkImp2hWqMGB47OX65FBkPffO641IP9jWa1z4ivqG26Q==}
-    dependencies:
-      fs.realpath: 1.0.0
-      inflight: 1.0.6
-      inherits: 2.0.4
-      minimatch: 3.1.2
-      once: 1.4.0
-      path-is-absolute: 1.0.1
-    dev: true
-
   /glob/7.2.2:
     resolution: {integrity: sha512-NzDgHDiJwKYByLrL5lONmQFpK/2G78SMMfo+E9CuGlX4IkvfKDsiQSNPwAYxEy+e6p7ZQ3uslSLlwlJcqezBmQ==}
     dependencies:
@@ -3685,8 +3676,8 @@ packages:
     engines: {node: '>=4'}
     dev: true
 
-  /globals/13.14.0:
-    resolution: {integrity: sha512-ERO68sOYwm5UuLvSJTY7w7NP2c8S4UcXs3X1GBX8cwOr+ShOcDBbCY5mH4zxz0jsYCdJ8ve8Mv9n2YGJMB1aeg==}
+  /globals/13.15.0:
+    resolution: {integrity: sha512-bpzcOlgDhMG070Av0Vy5Owklpv1I6+j96GhUI7Rh7IzDCKLzboflLrrfqMu8NquDbiR4EOQk7XzJwqVJxicxog==}
     engines: {node: '>=8'}
     dependencies:
       type-fest: 0.20.2
@@ -4074,14 +4065,14 @@ packages:
       has-symbols: 1.0.3
     dev: true
 
-  /is-typed-array/1.1.8:
-    resolution: {integrity: sha512-HqH41TNZq2fgtGT8WHVFVJhBVGuY3AnP3Q36K8JKXUxSxRgk/d+7NjmwG2vo2mYmXK8UYZKu0qH8bVP5gEisjA==}
+  /is-typed-array/1.1.9:
+    resolution: {integrity: sha512-kfrlnTTn8pZkfpJMUgYD7YZ3qzeJgWUn8XfVYBARc4wnmNOmLbmuuaAs3q5fvB0UJOn6yHAKaGTPM7d6ezoD/A==}
     engines: {node: '>= 0.4'}
     dependencies:
       available-typed-arrays: 1.0.5
       call-bind: 1.0.2
       es-abstract: 1.20.0
-      foreach: 2.0.6
+      for-each: 0.3.3
       has-tostringtag: 1.0.0
     dev: true
 
@@ -5124,7 +5115,7 @@ packages:
     resolution: {integrity: sha512-JZkJMZkAGFFPP2YqXZXPbMlMBgsxzE8ILs4lMIX/2o0L9UBw9O/Y3o6wFw/i9YLapcUJWwqbi3kdxIPdC62TIA==}
     hasBin: true
     dependencies:
-      glob: 7.2.0
+      glob: 7.2.2
     dev: true
 
   /rollup-plugin-terser/7.0.2_rollup@2.73.0:
@@ -5753,15 +5744,15 @@ packages:
     resolution: {integrity: sha512-l8lCEmLcLYZh4nbunNZvQCJc5pv7+RCwa8q/LdUx8u7lsWvPDKmpodJAJNwkAhJC//dFY48KuIEmjtd4RViDrA==}
     dev: true
 
-  /valaxy-theme-yun/0.3.4:
-    resolution: {integrity: sha512-SfGLAIT+WoY62AMAIHwX3RgXATxPbMaGDEEIfyDAaDK3XtpD5x38VausNNcKOyRTGgJfJCIeY6U1etSmic4UOQ==}
+  /valaxy-theme-yun/0.3.9:
+    resolution: {integrity: sha512-7qKEf3G8jjpJwsmi0YnHBH+ptbrjzuPt3RAn8eeBL0vloMEPn5oR7q+DK2oAMaEyRBXipPWCw6imImN3AhmLCA==}
     dependencies:
       '@iconify-json/ant-design': 1.1.1
       '@iconify-json/simple-icons': 1.1.11
     dev: true
 
-  /valaxy/0.3.4_typescript@4.6.4:
-    resolution: {integrity: sha512-Dw9C/Cc7cPi4iKVJdn7j82WoaGTIKCZjrejSrk0Jn1doNs5nQxJmzwQXp5ent3xT5ICD8X60ZbTg0HkOd1IIVg==}
+  /valaxy/0.3.9_typescript@4.6.4:
+    resolution: {integrity: sha512-itcOXaO9GfxVnvGtcYDQYIA+TxpBZ7X8vMra49DQyAB7g9yyJYxZXvxIFziLEIGpRY0lRLWAOXRnOvgfvMT9HQ==}
     engines: {node: '>=14.0.0'}
     hasBin: true
     dependencies:
@@ -5776,7 +5767,6 @@ packages:
       critters: 0.0.16
       dayjs: 1.11.2
       escape-html: 1.0.3
-      fast-deep-equal: 3.1.3
       feed: 4.2.2
       katex: 0.15.3
       kolorist: 1.5.1
@@ -5804,7 +5794,7 @@ packages:
       vite-plugin-pwa: 0.12.0_vite@2.9.9
       vite-plugin-vue-layouts: 0.6.0_das5d57oxgh3tienmqsf622skm
       vite-ssg: 0.19.2_r4zcbidcwrm73q735wfxdb2daa
-      vite-ssg-sitemap: 0.2.6
+      vite-ssg-sitemap: 0.2.7
       vue: 3.2.33
       vue-i18n: 9.1.10_vue@3.2.33
       vue-router: 4.0.15_vue@3.2.33
@@ -5884,7 +5874,7 @@ packages:
       local-pkg: 0.4.1
       picocolors: 1.0.0
       vite: 2.9.9_sass@1.51.0
-      yaml: 2.0.1
+      yaml: 2.1.0
     transitivePeerDependencies:
       - supports-color
     dev: true
@@ -5923,8 +5913,8 @@ packages:
       - supports-color
     dev: true
 
-  /vite-ssg-sitemap/0.2.6:
-    resolution: {integrity: sha512-rjb+aXzaw9gb9mqoWaU1mVhwGg3SZKMR8ULraGFSLK9vaeQv52/qHFNmBAZvUiBUmgMQ4RGP2fGomTC+SwknFg==}
+  /vite-ssg-sitemap/0.2.7:
+    resolution: {integrity: sha512-vzB2qey/PZGv8gd3nCkLiXxEemByZrTHjhkO7aFcjbxAKlW36RraBMZkizzRUo6uB06Uo7yM4UmzjE5h6dfvsg==}
     dev: true
 
   /vite-ssg/0.19.2_r4zcbidcwrm73q735wfxdb2daa:
@@ -6136,16 +6126,16 @@ packages:
       is-weakset: 2.0.2
     dev: true
 
-  /which-typed-array/1.1.7:
-    resolution: {integrity: sha512-vjxaB4nfDqwKI0ws7wZpxIlde1XrLX5uB0ZjpfshgmapJMD7jJWhZI+yToJTqaFByF0eNBcYxbjmCzoRP7CfEw==}
+  /which-typed-array/1.1.8:
+    resolution: {integrity: sha512-Jn4e5PItbcAHyLoRDwvPj1ypu27DJbtdYXUa5zsinrUx77Uvfb0cXwwnGMTn7cjUfhhqgVQnVJCwF+7cgU7tpw==}
     engines: {node: '>= 0.4'}
     dependencies:
       available-typed-arrays: 1.0.5
       call-bind: 1.0.2
       es-abstract: 1.20.0
-      foreach: 2.0.6
+      for-each: 0.3.3
       has-tostringtag: 1.0.0
-      is-typed-array: 1.1.8
+      is-typed-array: 1.1.9
     dev: true
 
   /which/2.0.2:
@@ -6380,8 +6370,8 @@ packages:
     engines: {node: '>= 6'}
     dev: true
 
-  /yaml/2.0.1:
-    resolution: {integrity: sha512-1NpAYQ3wjzIlMs0mgdBmYzLkFgWBIWrzYVDYfrixhoFNNgJ444/jT2kUT2sicRbJES3oQYRZugjB6Ro8SjKeFg==}
+  /yaml/2.1.0:
+    resolution: {integrity: sha512-OuAINfTsoJrY5H7CBWnKZhX6nZciXBydrMtTHr1dC4nP40X5jyTIVlogZHxSlVZM8zSgXRfgZGsaHF4+pV+JRw==}
     engines: {node: '>= 14'}
     dev: true
 
