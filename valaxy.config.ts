@@ -7,11 +7,11 @@ import type { ThemeUserConfig } from 'valaxy-theme-yun'
  */
 const config: UserConfig<ThemeUserConfig> = {
   lang: 'zh-CN',
-  title: 'Valaxy Theme Yun',
+  title: '云游君的小站',
   author: {
     name: '云游君',
   },
-  description: 'Valaxy Theme Yun Preview.',
+  description: '云游君的小站',
   url: 'https://www.yunyoujun.cn',
   social: [
     {
