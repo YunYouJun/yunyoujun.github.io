@@ -51,7 +51,7 @@ $$ 60 < x_5, S = 100 - 5 (x_5-60) $$
 
 五项指标各占 20% 计算总分，此时的氛围值应当是相当高的。（~~可是氛围值不是用来 Kiss 的吗？我都在干什么？？？~~）
 
-![遇到苦难，睡大觉](https://cdn.jsdelivr.net/gh/YunYouJun/cdn/img/meme/see-hard-then-sleep.jpg)
+![遇到苦难，睡大觉](https://cdn.yunyoujun.cn/img/meme/see-hard-then-sleep.jpg)
 
 睡觉是我的一大爱好，如果说要从旅游和睡觉中选一的话，我可能优先选择后者，经济实惠且便捷。高中时，常因不合时宜地入睡而被老师抓个正着并向家长吐槽，为何你家的孩子总是睡不醒？甚至因此在班上有了睡神的称谓。但我信奉「乏而眠，自然醒」之道，故与熬夜并不冲突。只是现今相比高中阶段有了更多可选的睡眠时间，却似乎再也找不回周末偶尔睡饱后的惬意了。
 
@@ -153,11 +153,11 @@ $$ 60 < x_5, S = 100 - 5 (x_5-60) $$
 
 尽管我很想说我对钱没有兴趣，打工就输了之类的话。
 
-![打工是不可能打工的](https://cdn.jsdelivr.net/gh/YunYouJun/cdn/img/meme/no-work.jpg)
+![打工是不可能打工的](https://cdn.yunyoujun.cn/img/meme/no-work.jpg)
 
 但是钱这个东西，真是太棒了。
 
-![钱这个东西真是太棒了](https://cdn.jsdelivr.net/gh/YunYouJun/cdn/img/meme/money-is-good.jpg)
+![钱这个东西真是太棒了](https://cdn.yunyoujun.cn/img/meme/money-is-good.jpg)
 
 我时常想象着如果我是富二代，如果我中了彩票，如果我有一大笔不用工作就能轻松活下去的钱，我可以自由地做哪些事情。
 

@@ -76,7 +76,7 @@ categories:
 
 而我却最多只是在网上叫嚷着[爷就是二次元](https://www.yunyoujun.cn/share/i-am-er-ci-yuan-and-try-to-prove/)。
 
-![爷就是二次元](https://cdn.jsdelivr.net/gh/YunYouJun/cdn/img/meme/i-am-er-ci-yuan.jpg)
+![爷就是二次元](https://cdn.yunyoujun.cn/img/meme/i-am-er-ci-yuan.jpg)
 
 也许我喜爱动画的原因也有一部分源于此。（汤浅政明监督的动画尤为甚。）
 

@@ -5,6 +5,8 @@ Thumbs.db
 tmp
 temp/
 
+components.d.ts
+
 # lock
 yarn.lock
 package-lock.json

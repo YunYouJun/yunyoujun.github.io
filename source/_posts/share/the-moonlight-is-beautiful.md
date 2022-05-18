@@ -37,7 +37,7 @@ updated: 2017-09-05 19:07:45
 
 虽然嘴上说着，‘禁言禁言啊!’，‘不吃，滚.jpg’ …… 这些话
 
-![不吃，滚.jpg](https://cdn.jsdelivr.net/gh/YunYouJun/cdn/img/meme/no-eat-gun.jpg)
+![不吃，滚.jpg](https://cdn.yunyoujun.cn/img/meme/no-eat-gun.jpg)
 
 但是，其实还是很羡慕的吧，也挺为他们开心的。（毕竟摆出一副单身狗的怨念出来，会让这群秀恩爱的家伙的幸福感提高的吧。）
 

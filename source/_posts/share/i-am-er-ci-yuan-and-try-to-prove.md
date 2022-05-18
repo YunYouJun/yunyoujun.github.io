@@ -91,11 +91,11 @@ categories:
 
 我坚信自己仍旧会充满幻想，哪怕这可能是十分幼稚的事情。
 
-![喜欢二次元这件事很恶心这一点我还是知道的](https://cdn.jsdelivr.net/gh/YunYouJun/cdn/img/meme/love-er-ci-yuan-is-sick.jpg)
+![喜欢二次元这件事很恶心这一点我还是知道的](https://cdn.yunyoujun.cn/img/meme/love-er-ci-yuan-is-sick.jpg)
 
 但是...
 
-![爷就是二次元](https://cdn.jsdelivr.net/gh/YunYouJun/cdn/img/meme/i-am-er-ci-yuan.jpg)
+![爷就是二次元](https://cdn.yunyoujun.cn/img/meme/i-am-er-ci-yuan.jpg)
 
 只要相信哆啦 A 梦还可能从我书桌抽屉中跳出，我的青春（童年）就不会结束不是吗？
 

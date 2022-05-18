@@ -12,15 +12,15 @@ reward:
   comment: 我很可爱，请给我钱
   methods:
     - name: 支付宝
-      path: https://cdn.jsdelivr.net/gh/YunYouJun/cdn/img/donate/alipay-qrcode.jpg
+      path: https://cdn.yunyoujun.cn/img/donate/alipay-qrcode.jpg
       color: "#00A3EE"
       icon: icon-alipay-line
     - name: QQ 支付
-      path: https://cdn.jsdelivr.net/gh/YunYouJun/cdn/img/donate/qqpay-qrcode.png
+      path: https://cdn.yunyoujun.cn/img/donate/qqpay-qrcode.png
       color: "#12B7F5"
       icon: icon-qq-line
     - name: 微信支付
-      path: https://cdn.jsdelivr.net/gh/YunYouJun/cdn/img/donate/wechatpay-qrcode.jpg
+      path: https://cdn.yunyoujun.cn/img/donate/wechatpay-qrcode.jpg
       color: "#2DC100"
       icon: icon-wechat-pay-line
 
@@ -37,9 +37,9 @@ waline:
   visitor: true
   comment: true
   emoji:
-    - https://cdn.jsdelivr.net/gh/walinejs/emojis@latest/bilibili/
-    - https://cdn.jsdelivr.net/gh/walinejs/emojis@latest/weibo/
-    - https://cdn.jsdelivr.net/gh/walinejs/emojis@latest/qq/
+    - https://fastly.jsdelivr.net/gh/walinejs/emojis@latest/bilibili/
+    - https://fastly.jsdelivr.net/gh/walinejs/emojis@latest/weibo/
+    - https://fastly.jsdelivr.net/gh/walinejs/emojis@latest/qq/
   locale:
     placeholder: 填写邮箱，可以收到回复通知哦～
   requiredMeta: ["nick"]
@@ -78,7 +78,7 @@ footer:
     enable: true
     title: 又拍云
     link: https://www.upyun.com
-    logo: https://cdn.jsdelivr.net/gh/YunYouJun/cdn/img/logo/upyun-logo.png
+    logo: https://cdn.yunyoujun.cn/img/logo/upyun-logo.png
     prefix: 本网站由
     suffix: 提供 CDN 加速
   custom_text:
@@ -200,7 +200,7 @@ social:
     icon: icon-bilibili-line
     color: "#FF8EB3"
   - name: 微信公众号
-    link: https://cdn.jsdelivr.net/gh/YunYouJun/cdn/img/about/white-qrcode-and-search.jpg
+    link: https://cdn.yunyoujun.cn/img/about/white-qrcode-and-search.jpg
     icon: icon-wechat-2-line
     color: "#1AAD19"
   - name: Twitter

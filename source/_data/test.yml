@@ -9,7 +9,6 @@ google_analytics:
 
 bg_image:
   enable: true
-  #   url: https://cdn.jsdelivr.net/gh/YunYouJun/cdn/img/bg/strange-storm-center.jpg
   # dark: https://i.loli.net/2020/05/31/7GgqKXxIFJSLEpU.jpg
   # dark: https://i.loli.net/2020/05/31/OxlvJGLbPD85hua.jpg
   # ![strange-storm-center-blur-30px.jpg](https://i.loli.net/2020/05/31/HfhZPO2NSDBemai.jpg)

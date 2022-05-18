@@ -125,7 +125,7 @@ aplayer: true
 
 但因为今天（9 月 11 日）有不少事，已经很晚了，所以明天在努力吧。
 
-![今天也没什么干劲，明天开始努力吧](https://cdn.jsdelivr.net/gh/YunYouJun/cdn/img/meme/try-harder-tomorrow.jpg)_假装是彩色插图_
+![今天也没什么干劲，明天开始努力吧](https://cdn.yunyoujun.cn/img/meme/try-harder-tomorrow.jpg)_假装是彩色插图_
 
 （完）
 
@@ -213,7 +213,7 @@ Wappalyzer 告诉我它似乎使用了 jQuery，还是 v1.11.1 的远古版本�
 
 好，今天也辛苦自己了。
 
-![今天也没什么干劲，明天开始努力吧](https://cdn.jsdelivr.net/gh/YunYouJun/cdn/img/meme/try-harder-tomorrow.jpg)_明天继续努力吧_
+![今天也没什么干劲，明天开始努力吧](https://cdn.yunyoujun.cn/img/meme/try-harder-tomorrow.jpg)_明天继续努力吧_
 
 因为上文引用了武林外传的歌词，所以也打开了网抑云顺便在听。话说，武林外传片尾曲「侠客行」中还有一句歌词。
 
@@ -381,7 +381,7 @@ Wappalyzer 告诉我它似乎使用了 jQuery，还是 v1.11.1 的远古版本�
 考完并立刻取上行李乘上回家的高铁溜之大吉。
 如果失败，也只能道一句下次努力吧！
 
-![拜托，你很弱诶！](https://cdn.jsdelivr.net/gh/YunYouJun/cdn/img/meme/you-are-weak.jpg)
+![拜托，你很弱诶！](https://cdn.yunyoujun.cn/img/meme/you-are-weak.jpg)
 
 ---
 
@@ -490,7 +490,7 @@ GitHub Total Stars 刚好是 996，仿佛在暗示加班 996。
 但除了记录下自己的经历，我也真切地希望能帮助、触动到看到这里的你。那么它就不是毫无意义的。
 想要了解拿到教师证的全流程也好、还是领悟动手去做一件事的决心也好，亦或是打发了无聊的时间。
 
-![打工是不可能打工的](https://cdn.jsdelivr.net/gh/YunYouJun/cdn/img/meme/no-work.jpg)
+![打工是不可能打工的](https://cdn.yunyoujun.cn/img/meme/no-work.jpg)
 
 尽管我在文章开头的前期提要，写道怎样怎样，但暑期此刻的我却仍在某互联网厂商实习打工。
 

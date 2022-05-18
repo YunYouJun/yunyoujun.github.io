@@ -63,7 +63,9 @@ git clone https://github.com/YunYouJun/hexo-theme-yun themes/yun
 
 [![JSDELIVR](https://www.jsdelivr.com/img/logo-horizontal.svg)](https://www.jsdelivr.com/)
 
-- Prefix: <https://cdn.jsdelivr.net/gh/YunYouJun/cdn/>
+- Prefix: <https://cdn.jsdelivr.net/gh/YunYouJun/cdn/> | <https://cdn.yunyoujun.cn>
+
+> 由于 `cdn.jsdelivr.net` 已被污染，建议使用 `https://fastly.jsdelivr.net`。
 
 ### 腾讯云
 
@@ -85,7 +87,7 @@ tccli cdn PurgeUrlsCache --Urls '["https://www.yunyoujun.cn/links/index.html"]'
 ### 又拍云
 
 <a href="https://console.upyun.com/register/?invite=SyeQw09Bz" title="又拍云" target="_blank">
-  <img src="https://cdn.jsdelivr.net/gh/YunYouJun/cdn/img/logo/upyun-logo.png" width="100" alt="upyun">
+  <img src="https://cdn.yunyoujun.cn/img/logo/upyun-logo.png" width="100" alt="upyun">
 </a>
 
 图床：又拍云云存储 + PicGo = <https://upyun.yunyoujun.cn>

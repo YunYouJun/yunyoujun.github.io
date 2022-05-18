@@ -105,7 +105,7 @@ LRQ 瘦下太多，变化太大，如果不是声音没变，甚至有些认不�
 
 小 piao 因为只休假了一天，次日还要加班，所以早上便早起匆匆离去了。
 
-![向优秀社畜低头](https://cdn.jsdelivr.net/gh/YunYouJun/cdn/img/meme/bow-to-good-society.jpg)
+![向优秀社畜低头](https://cdn.yunyoujun.cn/img/meme/bow-to-good-society.jpg)
 
 我们剩余三人则 OW 至将近一点的退房时间，竞技输多胜少，但可算在临退房前的最后一局反转获胜，画上了圆满句号。
 

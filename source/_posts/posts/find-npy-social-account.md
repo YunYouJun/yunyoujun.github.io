@@ -36,7 +36,7 @@ aplayer: true
 
 这是我一个朋友的故事。只是为了方便叙述，我决定使用第一人称。
 
-![你说的这个朋友到底是不是你自己？](https://cdn.jsdelivr.net/gh/YunYouJun/cdn/img/meme/your-friend-is-yourself.gif)
+![你说的这个朋友到底是不是你自己？](https://cdn.yunyoujun.cn/img/meme/your-friend-is-yourself.gif)
 
 对了，文中引用的中二语录大部分出自于「我的青春恋爱物语果然有问题」中人称「大老师」的比企谷八幡之口，尽管可能真假参半，但不必与我的朋友的形象建立映射。
 
@@ -55,7 +55,7 @@ LM: 我朋友的朋友
 
 与同行的小伙伴 LM 约定好早间地铁站汇合，但其同样有睡懒觉的习惯，且此后发现闹钟定成了下午……（仿佛看到某个过去的自己）
 
-![我们是兄弟，我怎么会🐦你呢](https://cdn.jsdelivr.net/gh/YunYouJun/cdn/img/meme/we-are-brothers.jpg)
+![我们是兄弟，我怎么会🐦你呢](https://cdn.yunyoujun.cn/img/meme/we-are-brothers.jpg)
 
 于是改签了后续的高铁，座位也就此错开。
 
@@ -152,7 +152,7 @@ LM: 我朋友的朋友
  * @param {*} uid 用户ID
  */
 function getAvatarUrlByUid(uid) {
-  return `https://img2.doubanio.com/icon/ul${uid}.jpg`;
+  return `https://img2.doubanio.com/icon/ul${uid}.jpg`
 }
 ```
 
@@ -164,9 +164,9 @@ function getAvatarUrlByUid(uid) {
  * @param {string} link 链接
  */
 function getUidByLink(link) {
-  const url = new URL(link);
-  const uid = url.pathname.split("/")[2];
-  return uid;
+  const url = new URL(link)
+  const uid = url.pathname.split('/')[2]
+  return uid
 }
 ```
 
@@ -181,11 +181,11 @@ function getUidByLink(link) {
  */
 async function getAvatarByLink(url) {
   const html = await axios.get(url).then((res) => {
-    return res.data;
-  });
-  const $ = cheerio.load(html);
-  const avatarUrl = $(".basic-info img").attr("src");
-  return avatarUrl;
+    return res.data
+  })
+  const $ = cheerio.load(html)
+  const avatarUrl = $('.basic-info img').attr('src')
+  return avatarUrl
 }
 ```
 
@@ -207,25 +207,25 @@ OK，万事俱备。整一个循环来获取用户信息，并下载头像吧！
  * @param {*} ms
  */
 function sleep(ms) {
-  return new Promise((resolve) => setTimeout(() => resolve(), ms));
+  return new Promise(resolve => setTimeout(() => resolve(), ms))
 }
 
 /**
  * 获取所有成员
  */
 async function getAllMembers(groupId) {
-  const totalPages = 330;
-  let memberList = [];
+  const totalPages = 330
+  let memberList = []
   for (let i = 0; i < totalPages; i++) {
     // 休息一下
-    await sleep(5000);
-    console.warn("休息五秒，防止太快，被关小黑屋！");
-    console.info(`爬取第 ${i + 1} 页...`);
+    await sleep(5000)
+    console.warn('休息五秒，防止太快，被关小黑屋！')
+    console.info(`爬取第 ${i + 1} 页...`)
 
-    const list = await getMemberListByPage(groupId, i);
-    memberList = memberList.concat(list);
+    const list = await getMemberListByPage(groupId, i)
+    memberList = memberList.concat(list)
   }
-  return memberList;
+  return memberList
 }
 ```
 
@@ -303,7 +303,7 @@ val: /Users/yunyou/github/lab/find-lm/tmp/images/gamepad/
 nc: 1
 
 # class names
-names: ["gamepad"]
+names: [gamepad]
 ```
 
 ##### Create Labels
@@ -320,20 +320,20 @@ coco/labels/train2017/000000109622.txt  # label
 ```
 
 ```js
-const path = require("path");
-const fs = require("fs");
-const yyj = require("@yunyoujun/utils");
+const path = require('path')
+const fs = require('fs')
+const yyj = require('@yunyoujun/utils')
 
-const imagesPath = "tmp/images/gamepad";
-yyj.fs.checkFolderExists("tmp/labels/gamepad");
-const files = fs.readdirSync(imagesPath);
+const imagesPath = 'tmp/images/gamepad'
+yyj.fs.checkFolderExists('tmp/labels/gamepad')
+const files = fs.readdirSync(imagesPath)
 
 files.forEach((file) => {
-  const filename = path.basename(file, ".jpg");
-  const uri = `tmp/labels/gamepad/${filename}.txt`;
-  const label = "0 0.5 0.5 0.98 0.98";
-  fs.writeFileSync(uri, label);
-});
+  const filename = path.basename(file, '.jpg')
+  const uri = `tmp/labels/gamepad/${filename}.txt`
+  const label = '0 0.5 0.5 0.98 0.98'
+  fs.writeFileSync(uri, label)
+})
 ```
 
 > [Train Custom Data](https://github.com/ultralytics/yolov5/wiki/Train-Custom-Data)
@@ -436,13 +436,13 @@ B 方案的确折腾了我很久的时间，失败后自然有些失望。但在
  * @param {*} city
  */
 function getMembersByCity(city) {
-  let results = [];
+  const results = []
   members.forEach((member) => {
-    if (city.includes(member.city)) {
-      results.push(member);
-    }
-  });
-  return results;
+    if (city.includes(member.city))
+      results.push(member)
+
+  })
+  return results
 }
 ```
 
@@ -455,22 +455,23 @@ function getMembersByCity(city) {
  * @param {*} dist
  */
 function copyFile(src, dist) {
-  fs.writeFileSync(dist, fs.readFileSync(src));
+  fs.writeFileSync(dist, fs.readFileSync(src))
 }
 
-const beijingMembers = getMembersByCity(["(北京)"]);
-checkFolderExists("tmp/images/city/beijing/");
+const beijingMembers = getMembersByCity(['(北京)'])
+checkFolderExists('tmp/images/city/beijing/')
 beijingMembers.forEach((member) => {
-  const filename = `${member.uid}-${member.name}.jpg`;
+  const filename = `${member.uid}-${member.name}.jpg`
   try {
     copyFile(
       `tmp/images/avatars/${filename}`,
       `tmp/images/city/beijing/${filename}`
-    );
-  } catch (err) {
-    console.log(err.message);
+    )
   }
-});
+  catch (err) {
+    console.log(err.message)
+  }
+})
 ```
 
 总共才七百来张，手动过一遍好像也不麻烦。

@@ -755,7 +755,7 @@ Image theme color extraction. 色尘知有数，劫烬岂无年。
 
 因为，做猪呢，最重要的是开心！
 
-![做🐷呢 最重要的是开心](https://cdn.jsdelivr.net/gh/YunLeFun/assets//images/happy-is-important-for-a-pig.jpg)
+![做🐷呢 最重要的是开心](https://fastly.jsdelivr.net/gh/YunLeFun/assets/images/happy-is-important-for-a-pig.jpg)
 
 > 啊，对了，虽然要做特立独行的猪，但我其实是属牛的来着。所以大年初一的胖次是红色的。（~~滚啊！谁要知道这个啊！~~）
 
