@@ -5,7 +5,7 @@ type: about
 updated: 2021-01-24 15:10:32
 aplayer: true
 reward: true
-icon: icon-home-4-line
+icon: ri:home-4-line
 ---
 
 <!-- 人生浪费指南 -->

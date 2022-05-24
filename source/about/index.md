@@ -5,7 +5,7 @@ type: "about"
 updated: 2021-01-24 15:10:32
 aplayer: true
 reward: true
-icon: icon-cloud-line
+icon: ri:cloud-line
 iconify: true
 ---
 
@@ -114,9 +114,12 @@ iconify: true
 ### 其他
 
 - <span class="iconify-inline" text="blue-500" data-icon="ri:qq-line"></span> 闲聊 QQ 群：
-  - [1050458482](https://jq.qq.com/?_wv=1027&k=5dePS6Gm)：小云粉丝群、闲聊群
-  - 389401003: 偏技术一点的技术交流群（其实也并没有）
-  - [小云之家｜ QQ 频道](https://qun.qq.com/qqweb/qunpro/share?_wv=3&_wwv=128&inviteCode=28OEdR&from=246610&biz=ka)
+  - ~~[1050458482](https://jq.qq.com/?_wv=1027&k=5dePS6Gm)：小云粉丝群、闲聊群（已满）~~
+  - ~~389401003: 偏技术一点的技术交流群（其实也并没有）（已满）~~
+  - [小云之家｜ QQ 频道](https://qun.qq.com/qqweb/qunpro/share?_wv=3&_wwv=128&inviteCode=28OEdR&from=246610&biz=ka) 因为群满了，加之感觉建群也很麻烦，所以打算之后直接试试频道。
+- <span class="iconify-inline" text="blue-600" data-icon="ri:discord-line"></span> Discord: <https://discord.gg/nd3mPkU5j8>
+
+<iframe src="https://discord.com/widget?id=752821465891733574&theme=dark" width="350" height="500" allowtransparency="true" frameborder="0" sandbox="allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts"></iframe>
 
 <details>
 <summary>🐦</summary>

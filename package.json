@@ -20,21 +20,21 @@
     "hexo-generator-tag": "^1.0.0",
     "hexo-render-pug": "^2.1.4",
     "hexo-renderer-marked": "^5.0.0",
-    "hexo-renderer-stylus": "^2.0.1",
+    "hexo-renderer-stylus": "^2.1.0",
     "hexo-tag-aplayer": "^3.0.4",
-    "hexo-tag-common": "^0.0.5",
-    "hexo-theme-yun": "1.9.3",
+    "hexo-tag-common": "^0.1.0",
+    "hexo-theme-yun": "1.10.0",
     "hexo-widget-tree": "^0.2.2",
     "hexo-wordcount": "^6.0.1"
   },
   "devDependencies": {
     "@antfu/eslint-config": "^0.23.0",
     "cross-env": "^7.0.3",
-    "eslint": "^8.9.0",
+    "eslint": "^8.16.0",
     "hexo-all-minifier": "0.5.7",
     "hexo-browsersync": "^0.3.0",
     "hexo-server": "^3.0.0",
-    "typescript": "^4.5.5"
+    "typescript": "^4.7.2"
   },
   "scripts": {
     "algolia": "hexo clean && hexo algolia",
