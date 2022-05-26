@@ -1,10 +1,46 @@
 {
   "name": "yunyoujun.github.io",
-  "description": "YunYouJun Blog",
   "version": "1.1.1",
   "private": true,
+  "description": "YunYouJun Blog",
   "hexo": {
     "version": "6.2.0"
+  },
+  "author": "YunYouJun <me@yunyoujun.cn>",
+  "license": "CC-BY-NC-SA-4.0",
+  "homepage": "https://yunyoujun.cn",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/YunYouJun/yunyoujun.github.io.git"
+  },
+  "bugs": {
+    "url": "https://github.com/YunYouJun/ak-ui/issues"
+  },
+  "keywords": [
+    "yunyoujun.cn",
+    "YunYouJun",
+    "云游君",
+    "Blog",
+    "博客",
+    "云游君的小站",
+    "www.yunyoujun.cn"
+  ],
+  "files": [
+    "source/_posts/*"
+  ],
+  "scripts": {
+    "algolia": "hexo clean && hexo algolia",
+    "backup": "sh bash/backup.sh",
+    "build": "hexo g",
+    "clean": "hexo clean",
+    "deploy": "hexo d",
+    "dev": "cross-env NODE_ENV=development && hexo s",
+    "docs:dev": "cd themes/hexo-theme-yun && yarn docs:dev",
+    "link": "cd themes/hexo-theme-yun && pnpm link --global && cd ../.. && pnpm link hexo-theme-yun --global",
+    "lint": "eslint .",
+    "predeploy": "hexo clean && hexo g",
+    "post": "hexo new post",
+    "test": "cross-env NODE_ENV=test && hexo s"
   },
   "dependencies": {
     "crypto-js": "^4.1.1",
@@ -23,53 +59,17 @@
     "hexo-renderer-stylus": "^2.1.0",
     "hexo-tag-aplayer": "^3.0.4",
     "hexo-tag-common": "^0.1.0",
-    "hexo-theme-yun": "1.10.0",
+    "hexo-theme-yun": "1.10.1",
     "hexo-widget-tree": "^0.2.2",
     "hexo-wordcount": "^6.0.1"
   },
   "devDependencies": {
-    "@antfu/eslint-config": "^0.23.0",
+    "@antfu/eslint-config": "^0.24.2",
     "cross-env": "^7.0.3",
     "eslint": "^8.16.0",
     "hexo-all-minifier": "0.5.7",
     "hexo-browsersync": "^0.3.0",
     "hexo-server": "^3.0.0",
     "typescript": "^4.7.2"
-  },
-  "scripts": {
-    "algolia": "hexo clean && hexo algolia",
-    "backup": "sh bash/backup.sh",
-    "build": "hexo g",
-    "clean": "hexo clean",
-    "deploy": "hexo d",
-    "dev": "cross-env NODE_ENV=development && hexo s",
-    "docs:dev": "cd themes/hexo-theme-yun && yarn docs:dev",
-    "link": "cd themes/hexo-theme-yun && pnpm link --global && cd ../.. && pnpm link hexo-theme-yun --global",
-    "lint": "eslint \"**/*.{vue,ts,js}\"",
-    "predeploy": "hexo clean && hexo g",
-    "post": "hexo new post",
-    "test": "cross-env NODE_ENV=test && hexo s"
-  },
-  "author": "YunYouJun <me@yunyoujun.cn>",
-  "homepage": "https://yunyoujun.cn",
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/YunYouJun/yunyoujun.github.io.git"
-  },
-  "bugs": {
-    "url": "https://github.com/YunYouJun/ak-ui/issues"
-  },
-  "files": [
-    "source/_posts/*"
-  ],
-  "keywords": [
-    "yunyoujun.cn",
-    "YunYouJun",
-    "云游君",
-    "Blog",
-    "博客",
-    "云游君的小站",
-    "www.yunyoujun.cn"
-  ],
-  "license": "CC-BY-NC-SA-4.0"
+  }
 }

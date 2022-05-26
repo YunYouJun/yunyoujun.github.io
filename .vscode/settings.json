@@ -1,4 +1,7 @@
 {
   "i18n-ally.localesPaths": ["themes/yun/languages"],
-  "typescript.tsdk": "node_modules/typescript/lib"
+  "typescript.tsdk": "node_modules/typescript/lib",
+  "yaml.schemas": {
+    "https://json.schemastore.org/yamllint.json": "file:///Users/yunyou/github/pages/yunyoujun.github.io/_config.yml"
+  }
 }

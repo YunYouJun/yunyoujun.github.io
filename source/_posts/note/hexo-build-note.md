@@ -88,9 +88,9 @@ The Most Reliable Platform for Building Search.
 
 ```yaml
 algolia:
-  applicationID: 'xxx'
-  apiKey: 'xxx'
-  indexName: 'my-hexo-blog' // 填写在 aloglia 中设置的名称
+  applicationID: xxx
+  apiKey: xxx
+  indexName: my-hexo-blog # 填写在 aloglia 中设置的名称
   chunkSize: 5000
   fields:
     - excerpt

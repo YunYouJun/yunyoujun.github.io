@@ -323,7 +323,7 @@ avatar:
 
 ```yaml
 colors:
-  primary: "#000000"
+  primary: '#000000'
 ```
 
 这时你的主题色调就会变为黑色。

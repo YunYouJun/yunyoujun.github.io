@@ -201,24 +201,26 @@ node_modules/
 
 原因是 `@` 是 webpack 默认配置中使用 alias (别名) 指代 src 文件夹的符号。
 
-```json
+```js
 // 位于 build/webpack.base.conf
-
-resolve: {
+module.exports = {
+  // ...
+  resolve: {
   // 路径别名
-  alias: {
-    '@': resolve('src'),
-    'vue$': 'vue/dist/vue.esm.js' // 这一个之后解释
-  }
-},
+    alias: {
+      '@': resolve('src'),
+      'vue$': 'vue/dist/vue.esm.js' // 这一个之后解释
+    }
+  },
+}
 ```
 
 进入 `src/router/index.js` , 将路径修改为相对路径
 
 ```js
-import HelloWorld from '@/components/HelloWorld'
----
 import HelloWorld from '../components/HelloWorld'
+// ---
+import HelloWorld from '@/components/HelloWorld'
 ```
 
 再次运行 `npm run dev`, 打开 <http://localhost:1234> 即可看到 Vue 的主页了。
@@ -243,7 +245,8 @@ import HelloWorld from '../components/HelloWorld'
 
 [vuejs-templates/webpack/template/src/main.js](https://github.com/vuejs-templates/webpack/blob/develop/template/src/main.js)
 
-```js
+```js-templates
+/* eslint-disable no-new */
 new Vue({
   el: '#app',
   {{#router}}
@@ -262,7 +265,7 @@ new Vue({
 如果选择 `Runtime + Compiler`, `main.js` 为
 
 ```js
-...
+// ...
 new Vue({
   el: '#app',
   router,
@@ -274,7 +277,7 @@ new Vue({
 如果选择 `Runtime-only`, `main.js` 则为
 
 ```js
-...
+// ...
 new Vue({
   el: '#app',
   router,
@@ -284,16 +287,17 @@ new Vue({
 
 Vue 模板中 webpack 的默认配置通过 alias 设置了 vue 的别名，引用了完整版的 vue 。
 
-```json
+```js
 // 位于 build/webpack.base.conf
-
-resolve: {
+module.exports = {
+  resolve: {
   // 路径别名
-  alias: {
-    '@': resolve('src'),
-    'vue$': 'vue/dist/vue.esm.js' // 即此处
-  }
-},
+    alias: {
+      '@': resolve('src'),
+      'vue$': 'vue/dist/vue.esm.js' // 即此处
+    }
+  },
+}
 ```
 
 最终打好的包里实际上是不需要编译器的，所以只用运行时版本即可。

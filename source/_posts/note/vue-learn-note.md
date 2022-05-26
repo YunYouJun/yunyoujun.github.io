@@ -41,10 +41,10 @@ module.exports = {
     // externals: ['v-tooltip']
     // 但是连字符可能识别有问题, 不能这么写
     externas: {
-      VTooltip: "v-tooltip",
+      VTooltip: 'v-tooltip',
     },
   },
-};
+}
 ```
 
 ### SPA 预渲染
@@ -69,21 +69,21 @@ Config
 
 ```js
 // vue.config.js
-const path = require("path");
-const PrerenderSPAPlugin = require("prerender-spa-plugin");
+const path = require('path')
+const PrerenderSPAPlugin = require('prerender-spa-plugin')
 
 module.exports = {
   configureWebpack: {
     plugins: [
       new PrerenderSPAPlugin({
         // Required - The path to the webpack-outputted app to prerender.
-        staticDir: path.join(__dirname, "dist"),
+        staticDir: path.join(__dirname, 'dist'),
         // Required - Routes to render.
-        routes: ["/", "/go", "/unit"],
+        routes: ['/', '/go', '/unit'],
       }),
     ],
   },
-};
+}
 ```
 
 ---

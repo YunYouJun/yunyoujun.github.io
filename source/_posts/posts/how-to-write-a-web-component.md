@@ -150,14 +150,14 @@ lit 2.0 将 `lit-element` 合并进了 `lit`。
 /**
  * A github corner.
  */
-@customElement("github-corners")
+@customElement('github-corners')
 export class GitHubCorners extends LitElement {
   // ...
   /**
    * target="_blank" for link
    */
   @property({ type: Boolean })
-  blank = false;
+    blank = false
   // ...
 }
 ```
@@ -187,22 +187,22 @@ lit 的 dom 和属性是响应式的，即你修改组件的属性，它渲染�
 因为我们尽量想要独立使用，所以需要配置一下 vite，以便在打包时不会将 lit 代码排除。
 
 ```ts
-import { defineConfig } from "vite";
+import { defineConfig } from 'vite'
 
 // https://vitejs.dev/config/
 export default defineConfig({
   build: {
     lib: {
-      entry: "src/index.ts",
-      formats: ["es"],
-      fileName: (format) => `index.${format}.js`,
+      entry: 'src/index.ts',
+      formats: ['es'],
+      fileName: format => `index.${format}.js`,
     },
     // Because we try to use it independently, we don’t exclude lit.
     // rollupOptions: {
     //   external: /^lit/,
     // },
   },
-});
+})
 ```
 
 #### 完善
