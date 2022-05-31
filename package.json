@@ -59,12 +59,12 @@
     "hexo-renderer-stylus": "^2.1.0",
     "hexo-tag-aplayer": "^3.0.4",
     "hexo-tag-common": "^0.1.0",
-    "hexo-theme-yun": "1.10.1",
+    "hexo-theme-yun": "1.10.3",
     "hexo-widget-tree": "^0.2.2",
     "hexo-wordcount": "^6.0.1"
   },
   "devDependencies": {
-    "@antfu/eslint-config": "^0.24.2",
+    "@antfu/eslint-config": "^0.25.0",
     "cross-env": "^7.0.3",
     "eslint": "^8.16.0",
     "hexo-all-minifier": "0.5.7",

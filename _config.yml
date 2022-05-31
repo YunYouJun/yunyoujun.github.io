@@ -212,6 +212,7 @@ image_minifier:
 # https://github.com/YunYouJun/hexo-tag-common
 tag_common:
   cdn: false
+  # cdn: https://fastly.jsdelivr.net/npm/
   layout:
     - post
     - page
