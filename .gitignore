@@ -10,7 +10,6 @@ components.d.ts
 # lock
 yarn.lock
 package-lock.json
-pnpm-lock.yaml
 pnpm-global/
 
 # dev
