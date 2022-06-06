@@ -2,6 +2,7 @@
   "name": "yunyoujun.github.io",
   "version": "1.1.1",
   "private": true,
+  "packageManager": "pnpm@7.1.7",
   "description": "YunYouJun Blog",
   "hexo": {
     "version": "6.2.0"
