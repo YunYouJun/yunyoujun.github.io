@@ -1,28 +1,35 @@
 name: GitHub Pages
+
 on:
   push:
     branches:
       - hexo
+
+  pull_request:
+    branches:
+      - hexo
+
 jobs:
   deploy:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v2
-      # with:
-      #   submodules: true
-
-      - name: Setup Node
-        uses: actions/setup-node@v2
+      - uses: actions/checkout@v3
+      - uses: pnpm/action-setup@v2
+      - uses: actions/setup-node@v3
         with:
           node-version: 16.x
+          cache: pnpm
 
-      - name: Install Dependencies
-        run: npx pnpm i --store=node_modules/.pnpm-store
+      - name: Install
+        run: pnpm install
+
       - name: algolia
         env:
           HEXO_ALGOLIA_INDEXING_KEY: ${{ secrets.HEXO_ALGOLIA_INDEXING_KEY }}
-        run: npm run algolia
-      - run: npx pnpm run build
+        run: npm run algolia --if-present
+
+      - name: Build
+        run: pnpm run build
 
       - name: Deploy
         uses: peaceiris/actions-gh-pages@v3
