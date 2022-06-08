@@ -180,7 +180,7 @@ categories:
 
 就像于茫茫人海中相遇，带着突如其来的诗意。
 
-![attacked-by-jizhi](https://cos.yunyoujun.cn/blog/clan/attacked-by-jizhi.jpg)
+![attacked-by-jizhi](https://upyun.yunyoujun.cn/images/attacked-by-jizhi.jpg)
 
 于是接下来的琦开连胜了三把，机智连输了三把。
 
@@ -369,7 +369,7 @@ xxx 已离开部落。
 
 只不过现在可能想不起那时候的心境罢了。
 
-![码到成功](https://cos.yunyoujun.cn/blog/clan/win-instant-success.jpg)
+![码到成功](https://upyun.yunyoujun.cn/images/win-instant-success.jpg)
 
 ……
 

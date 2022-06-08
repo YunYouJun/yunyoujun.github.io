@@ -59,8 +59,8 @@
     "hexo-renderer-marked": "^5.0.0",
     "hexo-renderer-stylus": "^2.1.0",
     "hexo-tag-aplayer": "^3.0.4",
-    "hexo-tag-common": "^0.1.0",
-    "hexo-theme-yun": "1.10.3",
+    "hexo-tag-common": "^0.2.0",
+    "hexo-theme-yun": "1.10.4",
     "hexo-widget-tree": "^0.2.2",
     "hexo-wordcount": "^6.0.1"
   },

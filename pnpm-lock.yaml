@@ -22,8 +22,8 @@ specifiers:
   hexo-renderer-stylus: ^2.1.0
   hexo-server: ^3.0.0
   hexo-tag-aplayer: ^3.0.4
-  hexo-tag-common: ^0.1.0
-  hexo-theme-yun: 1.10.3
+  hexo-tag-common: ^0.2.0
+  hexo-theme-yun: 1.10.4
   hexo-widget-tree: ^0.2.2
   hexo-wordcount: ^6.0.1
   typescript: ^4.7.3
@@ -44,8 +44,8 @@ dependencies:
   hexo-renderer-marked: 5.0.0
   hexo-renderer-stylus: 2.1.0
   hexo-tag-aplayer: 3.0.4
-  hexo-tag-common: 0.1.0
-  hexo-theme-yun: 1.10.3
+  hexo-tag-common: 0.2.0
+  hexo-theme-yun: 1.10.4
   hexo-widget-tree: 0.2.2
   hexo-wordcount: 6.0.1
 
@@ -3543,12 +3543,12 @@ packages:
       - supports-color
     dev: false
 
-  /hexo-tag-common/0.1.0:
-    resolution: {integrity: sha512-JycFTbWKA/h8TolSQjQ2ou0Vq87yTNCJJDmG9d+tcEX8Tm2Bt4LMVGIq6ZblJJqXzUYKRkYkUHC1nXTmsIFpYw==}
+  /hexo-tag-common/0.2.0:
+    resolution: {integrity: sha512-pRxAISNnekS5M6IQmMFCyEObJBrQ8O12ayY6SK6CY2Hyvm2eHbSZX8xEkmU3Zjq860fgbp+aw5birap4Cq7JDQ==}
     dev: false
 
-  /hexo-theme-yun/1.10.3:
-    resolution: {integrity: sha512-p+ft8yyEVE11YnYCveInbCdt66kB6S9107/oexPCEkHtJxHx2vin4aCQf29Xe3y1XWdkJOn6n1AXo5hYLzNVhw==}
+  /hexo-theme-yun/1.10.4:
+    resolution: {integrity: sha512-AEzgZ+MWVSD9YhGaMmlcEhWFIxbTdkHbUg8M5ThDzYptfRBLV6foShJsYXPdak+lOhyGZTJIoZ0pf2azzP64dg==}
     engines: {node: '>=14.0.0'}
     dev: false
 
