@@ -5,7 +5,7 @@ updated: 2020-04-18 16:27:24
 layout: gallery
 photos:
   - caption: 我
-    src: https://fastly.jsdelivr.net/gh/YunYouJun/yun/images/meme/yun-good-alpha-compressed.png
+    src: https://upyun.yunyoujun.cn/images/yun-good-alpha-compressed.png
     desc: 我想起那天夕阳下的奔跑
   - caption: 想起
     src: https://fastly.jsdelivr.net/gh/YunYouJun/yun/images/meme/yun-shy-alpha.png

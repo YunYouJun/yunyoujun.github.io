@@ -39,7 +39,7 @@ icon: ri:home-4-line
 
 十分欢迎无意中点进来的同学，给我留言和建议！
 
-<img class="shadow-none" src="https://fastly.jsdelivr.net/gh/YunYouJun/yun/images/meme/yun-good-alpha-compressed.png" width="200" alt="小云 Good" />
+<img class="shadow-none" src="https://upyun.yunyoujun.cn/images/yun-good-alpha-compressed.png" width="200" alt="小云 Good" />
 
 > 我也希望能在此留下一些值得回忆的、有趣的、内心里柔软的东西。
 
@@ -64,8 +64,8 @@ emm，目前似乎是的。但如果你是可爱 JK 美少女，欢迎随时报�
 
 ### 2022-01-17 小云交稿
 
-<img src="https://fastly.jsdelivr.net/gh/YunYouJun/yun/images/meme/yun-good-alpha-compressed.png" width="200" alt="小云 Good" />
-<img src="https://fastly.jsdelivr.net/gh/YunYouJun/yun/images/yun-alpha-compressed.webp" width="200" alt="小云" />
+<img src="https://upyun.yunyoujun.cn/images/yun-good-alpha-compressed.png" width="200" alt="小云 Good" />
+<img src="https://upyun.yunyoujun.cn/images/yun-alpha-compressed.png" width="200" alt="小云" />
 
 > 委托画师 [Ai_Floverse](https://twitter.com/Ai_Floverse) 画的小云。
 > 更多信息见 [☁️ 小云设定资源大公开！](https://github.com/YunYouJun/yun)。

@@ -67,10 +67,10 @@
   "devDependencies": {
     "@antfu/eslint-config": "^0.25.1",
     "cross-env": "^7.0.3",
-    "eslint": "^8.17.0",
+    "eslint": "^8.18.0",
     "hexo-all-minifier": "0.5.7",
     "hexo-browsersync": "^0.3.0",
     "hexo-server": "^3.0.0",
-    "typescript": "^4.7.3"
+    "typescript": "^4.7.4"
   }
 }

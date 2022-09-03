@@ -65,7 +65,7 @@ git clone https://github.com/YunYouJun/hexo-theme-yun themes/yun
 
 - Prefix: <https://cdn.jsdelivr.net/gh/YunYouJun/cdn/> | <https://cdn.yunyoujun.cn>
 
-> 由于 `cdn.jsdelivr.net` 已被污染，建议使用 `https://fastly.jsdelivr.net`。
+> 由于 `cdn.jsdelivr.net` 已被污染，建议使用 `https://fastly.jsdelivr.net`（也被污染，使用自建 CDN `https://upyun.yunyoujun.cn`）。
 
 ### 腾讯云
 

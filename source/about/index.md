@@ -29,7 +29,7 @@ iconify: true
 
 简单做一下自我介绍：
 
-<img src="https://fastly.jsdelivr.net/gh/YunYouJun/yun/images/yun-alpha-compressed.webp" width="200" alt="小云" />_[不是本人，是看板娘小云！](https://github.com/YunYouJun/yun)_
+<img src="https://upyun.yunyoujun.cn/images/yun-alpha-compressed.png" width="200" alt="小云" />_[不是本人，是看板娘小云！](https://github.com/YunYouJun/yun)_
 
 我目前是国内的一名在读研究生，主修计算机专业，也辅修过动画，但可惜学艺不精。
 业余热衷开源与前端方面，主要包括写各种奇奇怪怪的小网站（雾）和开源项目，也有尝试写一些科幻小说。（还是个死宅二次元）
@@ -139,7 +139,7 @@ iconify: true
 
 ## 💰 Donate
 
-<img src="https://fastly.jsdelivr.net/gh/YunYouJun/yun/images/meme/yun-good-alpha-compressed.png" width="200" alt="小云 Good" />
+<img src="https://upyun.yunyoujun.cn/images/yun-good-alpha-compressed.png" width="200" alt="小云 Good" />
 
 [![YunYouJun's Sponsors](https://github.com/YunYouJun/sponsors/workflows/Sponsors/badge.svg)](https://sponsors.yunyoujun.cn)
 
