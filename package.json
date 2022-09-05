@@ -60,17 +60,17 @@
     "hexo-renderer-stylus": "^2.1.0",
     "hexo-tag-aplayer": "^3.0.4",
     "hexo-tag-common": "^0.2.0",
-    "hexo-theme-yun": "1.10.4",
+    "hexo-theme-yun": "1.10.7",
     "hexo-widget-tree": "^0.2.2",
     "hexo-wordcount": "^6.0.1"
   },
   "devDependencies": {
-    "@antfu/eslint-config": "^0.25.1",
+    "@antfu/eslint-config": "^0.26.3",
     "cross-env": "^7.0.3",
-    "eslint": "^8.18.0",
+    "eslint": "^8.23.0",
     "hexo-all-minifier": "0.5.7",
     "hexo-browsersync": "^0.3.0",
     "hexo-server": "^3.0.0",
-    "typescript": "^4.7.4"
+    "typescript": "^4.8.2"
   }
 }
