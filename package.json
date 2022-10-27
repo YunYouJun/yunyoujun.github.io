@@ -3,6 +3,20 @@
   "version": "2.0.0",
   "private": true,
   "description": "YunYouJun Blog",
+  "author": {
+    "email": "me@yunyoujun.cn",
+    "name": "YunYouJun",
+    "url": "https://www.yunyoujun.cn"
+  },
+  "license": "CC-BY-NC-SA-4.0",
+  "homepage": "https://yunyoujun.cn",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/YunYouJun/yunyoujun.github.io.git"
+  },
+  "bugs": {
+    "url": "https://github.com/YunYouJun/yunyoujun.github.io/issues"
+  },
   "keywords": [
     "yunyoujun.cn",
     "YunYouJun",
@@ -12,16 +26,6 @@
     "云游君的小站",
     "www.yunyoujun.cn"
   ],
-  "license": "CC-BY-NC-SA-4.0",
-  "author": {
-    "email": "me@yunyoujun.cn",
-    "name": "YunYouJun",
-    "url": "https://www.yunyoujun.cn"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/YunYouJun/yunyoujun.github.io.git"
-  },
   "scripts": {
     "algolia": "echo todo",
     "backup": "sh bash/backup.sh",
@@ -41,10 +45,7 @@
     "eslint": "^8.26.0",
     "typescript": "^4.8.4",
     "valaxy": "0.11.1",
-    "valaxy-theme-yun": "0.11.1"
-  },
-  "homepage": "https://yunyoujun.cn",
-  "bugs": {
-    "url": "https://github.com/YunYouJun/yunyoujun.github.io/issues"
+    "valaxy-theme-yun": "0.11.1",
+    "vite-plugin-remote-assets": "^0.3.0"
   }
 }
