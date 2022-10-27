@@ -86,7 +86,7 @@ The Most Reliable Platform for Building Search.
 
 在 hexo 的 `_config.yml` 文件中，添加 algolia 配置。（注释记得去掉）
 
-```yml
+```yaml
 algolia:
   applicationID: xxx
   apiKey: xxx
