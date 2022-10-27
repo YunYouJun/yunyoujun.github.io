@@ -10,7 +10,7 @@ categories:
 
 `eWFybiBnbG9iYWwgYWRkIGxsbQ==`
 
-![奇怪的彩蛋](https://upyun.yunyoujun.cn/images/women-day-strange-egg.jpg)
+![奇怪的彩蛋](https://uss.yunyoujun.cn/images/women-day-strange-egg.jpg)
 
 > 既然知道总有一天会失去，既然任何关系都有结束的一天，那就该为了不要失去真正在乎的东西而努力。
 

@@ -68,7 +68,7 @@ Gitalk 相比 Gitment 则持续维护了很久。所以首先肯定与感谢作�
 
 以及 Gitalk 调用 OAuth 时会申请获取对所有公开项目的读**写**权限，如下图所示。
 
-![Gitalk 安全性问题](https://upyun.yunyoujun.cn/images/gitalk-security.jpg)
+![Gitalk 安全性问题](https://uss.yunyoujun.cn/images/gitalk-security.jpg)
 
 你可以到[此处](https://gitalk.github.io/)尝试登陆。
 

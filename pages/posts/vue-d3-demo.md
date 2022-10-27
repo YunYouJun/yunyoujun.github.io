@@ -421,7 +421,7 @@ svg.append('g').call(yAxis)
 > 而你也同样存在一个终点站吧
 > —— 李白「[春宵苦短，少女前进吧](https://movie.douban.com/subject/26935251/)」
 
-![LM将近了](https://upyun.yunyoujun.cn/images/dawn-is-near.jpg)
+![LM将近了](https://uss.yunyoujun.cn/images/dawn-is-near.jpg)
 
 我们为了抵达某个终点而开始自己的旅程，也希望它能成为你变成想要成为的人的途间一块不知名的垫脚石。
 
@@ -467,7 +467,7 @@ svg.append('g').call(yAxis)
 vue-router 本质是一个管理生成路由的工具，我们需要手动去导入 Vue 组件并为其分配路由。
 这其实蛮麻烦的，我们每新建一个页面，就要去书写对应的路由。
 
-![这河里吗？](https://upyun.yunyoujun.cn/images/in-this-river.jpg)
+![这河里吗？](https://uss.yunyoujun.cn/images/in-this-river.jpg)
 
 理想的情况下，我们在 `pages` 文件夹下新建 Vue 组件，它能自动根据组件名，生成对应的路由，这才是最优雅的。
 

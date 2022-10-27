@@ -28,7 +28,7 @@ Web Components 实际上和现在 React/Vue 等前端框架的组件概念十分
 
 <!-- more -->
 
-[![满口大道理，写十行代码九个报错，一个警告](https://upyun.yunyoujun.cn/images/full-of-reason-but-code-is-error.jpg)](https://upyun.yunyoujun.cn/images/full-of-reason-but-code-is-error.jpg)
+[![满口大道理，写十行代码九个报错，一个警告](https://uss.yunyoujun.cn/images/full-of-reason-but-code-is-error.jpg)](https://uss.yunyoujun.cn/images/full-of-reason-but-code-is-error.jpg)
 
 ## 血脉传承
 
@@ -71,7 +71,7 @@ Web Components 的现况似乎还并不适合大型项目的开发，而 GitHub 
 
 预览: [wc-github-corners](https://www.yunyoujun.cn/wc-github-corners/)
 
-![GitHub Corners Preview](https://upyun.yunyoujun.cn/images/github-corners-preview.jpg)
+![GitHub Corners Preview](https://uss.yunyoujun.cn/images/github-corners-preview.jpg)
 
 #### 为什么?
 
@@ -93,7 +93,7 @@ Web Components 的现况似乎还并不适合大型项目的开发，而 GitHub 
 
 #### 怎么做？
 
-![废话少说，上号](https://upyun.yunyoujun.cn/images/stop-talking-and-open-vscode.jpg)_废话少说，上号_
+![废话少说，上号](https://uss.yunyoujun.cn/images/stop-talking-and-open-vscode.jpg)_废话少说，上号_
 
 正如前文所述，在 Google 的血脉压制下，我们决定使用 lit 框架。
 

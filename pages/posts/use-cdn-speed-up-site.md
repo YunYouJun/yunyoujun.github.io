@@ -41,13 +41,13 @@ categories:
 
 ### 添加自己的域名
 
-![添加自己的域名](https://upyun.yunyoujun.cn/images/tencent-cloud-add-domain-for-cdn.jpg)
+![添加自己的域名](https://uss.yunyoujun.cn/images/tencent-cloud-add-domain-for-cdn.jpg)
 
 ### 设置源站
 
 管理 > 基本配置
 
-![设置源站](https://upyun.yunyoujun.cn/images/tencent-cloud-config-source-site.jpg)
+![设置源站](https://uss.yunyoujun.cn/images/tencent-cloud-config-source-site.jpg)
 
 这里是 GitHub Pages 提供的 IP 地址，可以添加多行。
 
@@ -61,7 +61,7 @@ categories:
 
 证书管理 > 编辑 > 协议跟随 (如果没开启 HTTPS，默认的 HTTP 也可以。)
 
-![回源协议](https://upyun.yunyoujun.cn/images/tencent-cloud-set-back-source-protocol.jpg)
+![回源协议](https://uss.yunyoujun.cn/images/tencent-cloud-set-back-source-protocol.jpg)
 
 ### 设置 CNAME
 
@@ -70,7 +70,7 @@ categories:
 根据需要将 CDN 提供的 CNAME 线路类型设置为 `境内`。
 `境外` 则仍默认解析回 GitHub Pages。
 
-![设置 CNAME](https://upyun.yunyoujun.cn/images/tencent-cloud-set-different-cname-for-domain.jpg)
+![设置 CNAME](https://uss.yunyoujun.cn/images/tencent-cloud-set-different-cname-for-domain.jpg)
 
 ### 配置缓存
 

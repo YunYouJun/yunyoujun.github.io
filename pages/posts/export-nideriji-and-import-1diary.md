@@ -153,13 +153,13 @@ GET
 
 ##### Get Diary By Id
 
-```url
+```bash
 GET diary/:diaryId
 ```
 
 Example
 
-```url
+```bash
 diary/8808906/
 ```
 
@@ -190,13 +190,13 @@ Response
 
 ##### Get Diary By Month
 
-```url
+```bash
 GET diary/simple_by_month/:year/:month/
 ```
 
 Example
 
-```url
+```bash
 diary/simple_by_month/2019/1/
 ```
 

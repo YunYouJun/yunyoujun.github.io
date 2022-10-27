@@ -29,8 +29,8 @@ random: true
 - 可爱
 - 拥有某种我喜爱的特质
 
-![我对普通的人类没有兴趣](https://upyun.yunyoujun.cn/images/i-am-not-interested-in-ordinary-human.jpg)
+![我对普通的人类没有兴趣](https://uss.yunyoujun.cn/images/i-am-not-interested-in-ordinary-human.jpg)
 
 > ~~我对普通的三次元女孩子没有兴趣。假如你们当中有纸片人、死宅、喜欢动漫或者一切有趣之事的女孩子，尽管来找我。完毕！~~
 
-![不来的话就判你死刑](https://upyun.yunyoujun.cn/images/sentenced-to-death.jpg)
+![不来的话就判你死刑](https://uss.yunyoujun.cn/images/sentenced-to-death.jpg)
