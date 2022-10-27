@@ -2,5 +2,6 @@ import { defineConfig } from 'vite'
 import RemoteAssets from 'vite-plugin-remote-assets'
 
 export default defineConfig({
-  plugins: [RemoteAssets()],
+  // todo wait upyun assets
+  // plugins: [RemoteAssets()],
 })

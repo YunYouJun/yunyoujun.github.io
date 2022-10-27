@@ -56,7 +56,7 @@ The plugin adds a shortcodes for all Bootstrap 3 elements.
 
 ### Disable Google Fonts
 
-由 [Milan Dinić](disablehttp://blog.milandinic.com/)
+由 [Milan Dinić](http://blog.milandinic.com/)
 
 > Description
 
