@@ -122,11 +122,11 @@ updated: 2017-07-18 21:01:30
 下午的实验室参观也大抵如此。不过倒是看到了一个名为“国家突发事件舆情应对研究中心”，针对网络媒体的信息抓取分析舆情的东西。
 看着很是高大上，甚至仿佛嗅到了~~阴谋的~~气息。
 
-<!-- ![](https://upyun.yunyoujun.cn/images/cuc-summer-camp-paper.jpg) -->
+<!-- ![](https://uss.yunyoujun.cn/images/cuc-summer-camp-paper.jpg) -->
 
-![social-public-opinion-1](https://upyun.yunyoujun.cn/images/social-public-opinion-1.jpg)
-![social-public-opinion-2](https://upyun.yunyoujun.cn/images/social-public-opinion-2.jpg)
-![social-public-opinion-3](https://upyun.yunyoujun.cn/images/social-public-opinion-3.jpg)
+![social-public-opinion-1](https://uss.yunyoujun.cn/images/social-public-opinion-1.jpg)
+![social-public-opinion-2](https://uss.yunyoujun.cn/images/social-public-opinion-2.jpg)
+![social-public-opinion-3](https://uss.yunyoujun.cn/images/social-public-opinion-3.jpg)
 
 总之，环境感觉都还不错，虽然和预估的有些偏差，但是还是很希望自己能够来这里读研下去的吧。
 16 日便是面试了，出乎意料地简单。（本以为还有笔试什么的，英语自我介绍也免了）

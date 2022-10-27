@@ -10,7 +10,7 @@ categories:
 aplayer: true
 ---
 
-![如何养猪](https://upyun.yunyoujun.cn/images/how-to-raise-pigs.jpg)
+![如何养猪](https://uss.yunyoujun.cn/images/how-to-raise-pigs.jpg)
 
 > [如何养猪 | wikiHow](https://zh.wikihow.com/%E5%85%BB%E7%8C%AA)
 
@@ -22,7 +22,7 @@ aplayer: true
 
 在网络上游荡许久，时常会看到许多博主有趣丰富的年终总结，令人心生羡慕。
 
-![不过如此](https://upyun.yunyoujun.cn/images/just-so-so.jpg)
+![不过如此](https://uss.yunyoujun.cn/images/just-so-so.jpg)
 
 回想起自己过去似乎从来没有写过所谓的年终总结，加之很久没有更新（~~水~~），尽管没有什么特别有趣的事情，但不妨回顾一番。
 
@@ -65,9 +65,9 @@ aplayer: true
 
 除了中途的出差、少数几日的实验室活动或其他琐事，导致了空白，其他的绿点都还坚持闪耀着。
 
-![2020-2021 GitHub Contributions](https://upyun.yunyoujun.cn/images/2021-github-contributions.jpg)_2020-02-09 —— 2020-02-13_
+![2020-2021 GitHub Contributions](https://uss.yunyoujun.cn/images/2021-github-contributions.jpg)_2020-02-09 —— 2020-02-13_
 
-![云游君's GitHub Stats](https://upyun.yunyoujun.cn/images/2021-github-stats.jpg)
+![云游君's GitHub Stats](https://uss.yunyoujun.cn/images/2021-github-stats.jpg)
 
 [![GitHub followers](https://img.shields.io/github/followers/YunYouJun?style=social)_204 Followers_](https://github.com/YunYouJun)
 
@@ -118,7 +118,7 @@ Yun 也就是本博客正在使用的主题，虽然应该算是前年开坑的�
 
 小云，性别女，最喜欢的人是云游君！（对不起，我只能在这里寻找一下存在感了。）
 
-![我太菜了，对不起！](https://upyun.yunyoujun.cn/images/sorry-i-am-so-vegetable.jpg)
+![我太菜了，对不起！](https://uss.yunyoujun.cn/images/sorry-i-am-so-vegetable.jpg)
 
 小云当然就是基于以上 el-bot 与 mirai-ts 开发的功能性机器人啦，或者说其实是因为想要让小云诞生，所以有了前两者。
 但我个人其实不是很喜欢在群里聊一长串天或是提供确实没什么意思的小游戏之类的机器人，语义理解/好感系统做的再完善，它也终究只是数值的展示。
@@ -207,7 +207,7 @@ Image theme color extraction. 色尘知有数，劫烬岂无年。
 
 说句大言不惭的话，我对钱没有兴趣。
 
-![我对钱没有兴趣](https://upyun.yunyoujun.cn/images/i-am-not-interested-in-money.jpg)
+![我对钱没有兴趣](https://uss.yunyoujun.cn/images/i-am-not-interested-in-money.jpg)
 
 但是我知道，它是必不可少的。想要在世间立足，保持尊严，便不可能将其绕开。世间比钱有趣的事情数不胜数，却往往需要它作为媒介。
 所以应该说我对攫取大额的金钱没有兴趣，我只希望在满足各类生活娱乐需求之外，能够有足够的时间做自己喜欢的事情。而不是成为资本的奴隶。
@@ -255,14 +255,14 @@ Image theme color extraction. 色尘知有数，劫烬岂无年。
 
 > 毕竟只要还有动画，生活就还有希望。
 
-![豆瓣 2020](https://upyun.yunyoujun.cn/images/douban-2020.jpg)
+![豆瓣 2020](https://uss.yunyoujun.cn/images/douban-2020.jpg)
 
 有数部电影是实验室的大家一起看的。
 
 #### [网易云音乐](https://music.163.com/#/user/home?id=247102977)
 
-![网易云音乐 2020 年度歌手](https://upyun.yunyoujun.cn/images/netease-cloud-music-2020-singer.jpg)
-![网易云音乐 2020 年度歌单](https://upyun.yunyoujun.cn/images/netease-cloud-music-2020-songs.jpg)
+![网易云音乐 2020 年度歌手](https://uss.yunyoujun.cn/images/netease-cloud-music-2020-singer.jpg)
+![网易云音乐 2020 年度歌单](https://uss.yunyoujun.cn/images/netease-cloud-music-2020-songs.jpg)
 
 因为为了节约流量，听歌的时候往往是没有联网的时候，所以可能未必准确。
 
@@ -344,15 +344,15 @@ Image theme color extraction. 色尘知有数，劫烬岂无年。
 
 除此之外也从邮件/评论/还是其他平台收到了很多小伙伴的鼓励和认可。
 
-![渊和](https://upyun.yunyoujun.cn/images/comment-from-yuanhe.jpg)
+![渊和](https://uss.yunyoujun.cn/images/comment-from-yuanhe.jpg)
 
-![bigbigbigbook](https://upyun.yunyoujun.cn/images/comment-from-bigbigbigbook.jpg)
+![bigbigbigbook](https://uss.yunyoujun.cn/images/comment-from-bigbigbigbook.jpg)
 
 真的非常非常感谢！
 
 我也相信，人与人是联系在一起的，这也是网络诞生的初心。
 
-![也无法避免和人产生联系](https://upyun.yunyoujun.cn/images/cannot-avoid-contact-with-people.jpg)
+![也无法避免和人产生联系](https://uss.yunyoujun.cn/images/cannot-avoid-contact-with-people.jpg)
 
 [最后祝大家新年快乐！](https://www.yunyoujun.cn/spring-festival/#/?name=%E5%A4%A7%E5%AE%B6)
 
@@ -379,7 +379,7 @@ Image theme color extraction. 色尘知有数，劫烬岂无年。
 
 所以这就结束了吗？并不，线上与线下如同两个平行世界，各自按照各自的规律行进着。
 
-![线上与线下](https://upyun.yunyoujun.cn/images/online-and-offline.gif)_线上与线下_
+![线上与线下](https://uss.yunyoujun.cn/images/online-and-offline.gif)_线上与线下_
 
 但是除了还算丰富多彩的线上生活，线下的现实也在悄然改变着。
 
@@ -420,13 +420,13 @@ Image theme color extraction. 色尘知有数，劫烬岂无年。
 返校后，由于师兄师姐已经毕业，空出了一个绝佳的~~摸鱼~~位置，得以从门口处逃离与老师面面相觑的工位。
 透明的我也如同逐渐实体化一般。
 
-![凡尔赛学习小组](https://upyun.yunyoujun.cn/images/versailles-study-group.jpg)
+![凡尔赛学习小组](https://uss.yunyoujun.cn/images/versailles-study-group.jpg)
 
 而我则更换了原先玉子的微信头像，以示自己的蜕变。（下一次换头像，就等下一个特殊的时刻到来吧。）
 
-![如何在新班级里快速确认哪个人是二次元](https://upyun.yunyoujun.cn/images/how-to-find-er-ci-yuan-in-new-class.jpg)
+![如何在新班级里快速确认哪个人是二次元](https://uss.yunyoujun.cn/images/how-to-find-er-ci-yuan-in-new-class.jpg)
 
-![幼年北白川玉子](https://upyun.yunyoujun.cn/images/kitashirakawa-tamako-as-a-child.jpg)_我的旧微信头像_
+![幼年北白川玉子](https://uss.yunyoujun.cn/images/kitashirakawa-tamako-as-a-child.jpg)_我的旧微信头像_
 
 此后还拉了 QQ 群，利用实验室空余的摄像头做了目标检测，并让我的机器人助手小云来播报老师位置的动态。
 利用空闲的 VR 设备，买了节奏光剑给大家玩，虽然自己想玩是一部分原因。
@@ -464,8 +464,8 @@ Image theme color extraction. 色尘知有数，劫烬岂无年。
 
 2019 年的 11 月 30 日 VS 2020 年 11 月 30 日
 
-![2019-11-30 | 一本日记](https://upyun.yunyoujun.cn/images/1diary-2019-11-30.jpg)_2019-11-30_
-![2020-11-30 | 一本日记](https://upyun.yunyoujun.cn/images/1diary-2020-11-30.jpg)_2020-11-30_
+![2019-11-30 | 一本日记](https://uss.yunyoujun.cn/images/1diary-2019-11-30.jpg)_2019-11-30_
+![2020-11-30 | 一本日记](https://uss.yunyoujun.cn/images/1diary-2020-11-30.jpg)_2020-11-30_
 
 <!-- ### 猪的思春期
 
@@ -482,21 +482,21 @@ Image theme color extraction. 色尘知有数，劫烬岂无年。
 我喜欢可爱而有趣的人与事物，而现实中的前者显然往往是与绝缘体的我无缘的。
 或者我也无法想象我到底如何能够与之产生联系。
 
-![因为过往的人生与女生无缘](https://upyun.yunyoujun.cn/images/the-past-life-without-girls.jpg)
+![因为过往的人生与女生无缘](https://uss.yunyoujun.cn/images/the-past-life-without-girls.jpg)
 
-![我只要一靠近女生 就会紧张 心跳加速](https://upyun.yunyoujun.cn/images/the-heart-beats-faster-with-girl.jpg)
+![我只要一靠近女生 就会紧张 心跳加速](https://uss.yunyoujun.cn/images/the-heart-beats-faster-with-girl.jpg)
 
-![又不是值得得意的事情](https://upyun.yunyoujun.cn/images/not-something-to-be-proud-of.jpg)
+![又不是值得得意的事情](https://uss.yunyoujun.cn/images/not-something-to-be-proud-of.jpg)
 
 研究生时期，重心则从寝室转到了实验室，我们实验室的男女比例则差不多是 1:2。
 
-![男生是那种只要女生对自己稍微好一点](https://upyun.yunyoujun.cn/images/one-of-the-three-illusions-in-life.jpg)
+![男生是那种只要女生对自己稍微好一点](https://uss.yunyoujun.cn/images/one-of-the-three-illusions-in-life.jpg)
 
 是的，我突然有些太飘了点。我想你差不多该猜到下面的内容会是什么了。我仿佛找到了希望能够成为自己人生轻小说女主角的人选。
 
 尽管我看着甜甜的恋爱番剧，嘴上说着真好啊真好，🍋，但我却从来没有试图付出行动过，并且其实很享受所谓孤独的状态，而片面地认为今后的我也将如此。
 
-![对处男稍微好一点他就会爱上你现象](https://upyun.yunyoujun.cn/images/be-nice-to-a-boy-he-will-love-you.jpg)_阿松_
+![对处男稍微好一点他就会爱上你现象](https://uss.yunyoujun.cn/images/be-nice-to-a-boy-he-will-love-you.jpg)_阿松_
 
 但是不可知的某一天，看到 LM 同学的笑容，突然觉得很可爱，我开始希望更多地了解 LM 同学，想要与之建立联系。
 
@@ -535,7 +535,7 @@ Image theme color extraction. 色尘知有数，劫烬岂无年。
 > **黎明**将近了
 > 春宵苦短 前进吧 少女！
 
-![LM将近了](https://upyun.yunyoujun.cn/images/dawn-is-near.jpg)
+![LM将近了](https://uss.yunyoujun.cn/images/dawn-is-near.jpg)
 
 我与她相遇的那一天，应当是个春寒料峭之日。
 
@@ -560,7 +560,7 @@ Image theme color extraction. 色尘知有数，劫烬岂无年。
 
 会因为奇怪的话语没有得到回复，而想自己是不是被讨厌了。
 
-![比你喜欢的人回复快](https://upyun.yunyoujun.cn/images/reply-faster-than-someone-you-love.jpg)
+![比你喜欢的人回复快](https://uss.yunyoujun.cn/images/reply-faster-than-someone-you-love.jpg)
 
 > 只要稍微打个招呼就会胡思乱想，要是互相发短信，心中还会起波澜，接到对方来电的那一整天，都会对着来电记录傻笑，可是我知道，那只是温柔，对我温柔的人对别人也同样温柔，这种事差点就忘记了，如果说真相是残酷的，谎言肯定是温柔的，所以温柔是谎言，一次又一次期待，一次又一次落空，不知从何时开始，便不再怀抱希望。
 > ——比企谷八幡「我的青春恋爱物语果然有问题」
@@ -569,19 +569,19 @@ Image theme color extraction. 色尘知有数，劫烬岂无年。
 
 而我则如同「春宵苦短，少女前进吧」中的主人公，试图实施「进她眼」作战。尽管偶尔吹响冲锋的号角，也均以失败告终。
 
-![升入大学院来将求职活动暂且延后](https://upyun.yunyoujun.cn/images/night-is-short-no-work.jpg)
+![升入大学院来将求职活动暂且延后](https://uss.yunyoujun.cn/images/night-is-short-no-work.jpg)
 
 > 升入大学院来将求职活动暂且延后
 > 不懂当机立断，也没什么才能
 > 没有存款 没有力气 也没有韧劲
 > 没有人望 也不是小猪般让人想贴脸蛋的可爱男孩
 
-![要什么没什么](https://upyun.yunyoujun.cn/images/nothing-to-ask-in-the-world.jpg)
+![要什么没什么](https://uss.yunyoujun.cn/images/nothing-to-ask-in-the-world.jpg)
 
 > 我在寻找自己不知被埋没在哪里的宝贵才能时
 > 想起好像 1 年级时把才能的储蓄罐藏在了抽屉里
 
-![从零做起 一点一滴](https://upyun.yunyoujun.cn/images/start-from-zero-bit-by-bit.jpg)_储蓄罐中的纸条_
+![从零做起 一点一滴](https://uss.yunyoujun.cn/images/start-from-zero-bit-by-bit.jpg)_储蓄罐中的纸条_
 
 > 与她相遇一年有余
 > 我等一味强化掩埋护城河的功能
@@ -600,7 +600,7 @@ Image theme color extraction. 色尘知有数，劫烬岂无年。
 > 这种懦弱的动机实在可耻
 > 像不倒翁一样脸红腮鼓地面壁思过吧
 
-![不要被世间风评所摆布](https://upyun.yunyoujun.cn/images/dont-be-manipulated-by-the-world.jpg)
+![不要被世间风评所摆布](https://uss.yunyoujun.cn/images/dont-be-manipulated-by-the-world.jpg)
 
 > 世间有种认为大学生就应该有恋人的邪恶偏见
 > 但受这种偏见驱使 埋头乱撞 宁滥勿缺
@@ -707,7 +707,7 @@ Image theme color extraction. 色尘知有数，劫烬岂无年。
 
 但我却不知道自己何时能迈出那一步。
 
-![连 IE 都有勇气问你 是否要将它设成预设浏览器 你他妈的却跟我说你没勇气和喜欢的人告白](https://upyun.yunyoujun.cn/images/ie-is-braver-than-you.jpg)
+![连 IE 都有勇气问你 是否要将它设成预设浏览器 你他妈的却跟我说你没勇气和喜欢的人告白](https://uss.yunyoujun.cn/images/ie-is-braver-than-you.jpg)
  -->
 
 ### 家
@@ -732,13 +732,13 @@ Image theme color extraction. 色尘知有数，劫烬岂无年。
 
 大年三十，回老家贴对联的也变成了只有我和我爸。（堂兄也去女方家送礼了。）
 
-![对联](https://upyun.yunyoujun.cn/images/spring-couplets-at-old-home.jpg)
+![对联](https://uss.yunyoujun.cn/images/spring-couplets-at-old-home.jpg)
 
 [人生不是一场马拉松](https://www.yunyoujun.cn/posts/life-is-not-a-marathon/#终点) 里的桃花早已凋零。
 
 不知道闲暇地看着家后池塘打水漂与任凭花开花落云卷云舒的日子什么时候能够实现。
 
-![家后的池塘](https://upyun.yunyoujun.cn/images/pond-and-fields-behind-home.jpg)
+![家后的池塘](https://uss.yunyoujun.cn/images/pond-and-fields-behind-home.jpg)
 
 而临近过年，也不再像过去一样一家围在电视前看春节晚会。
 
@@ -746,7 +746,7 @@ Image theme color extraction. 色尘知有数，劫烬岂无年。
 
 我和大学室友则一起玩了一年一度的和平精英，顺带放了烟花。
 
-![PUBG 烟花](https://upyun.yunyoujun.cn/images/pubg-mobile-with-friends.jpg)
+![PUBG 烟花](https://uss.yunyoujun.cn/images/pubg-mobile-with-friends.jpg)
 
 遗憾的是最高一次也只获得了第二名，而没有像去年一样顺利吃鸡。
 
@@ -774,7 +774,7 @@ Image theme color extraction. 色尘知有数，劫烬岂无年。
 
 明明没怎么说话却嗓子痛，总是感觉很疲惫，情感上似乎在扮演小丑工具人的角色，论文写不出来，键盘还不小心进水了，诸事加在一起难免有些难过……
 
-![我真的有那么菜吗？](https://upyun.yunyoujun.cn/images/i-am-so-vegetable.jpg)
+![我真的有那么菜吗？](https://uss.yunyoujun.cn/images/i-am-so-vegetable.jpg)
 
 ---
 

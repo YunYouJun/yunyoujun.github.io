@@ -120,7 +120,7 @@ CDN 是构建在现有网络基础之上的智能虚拟网络，依靠部署在�
 
 目前基本所有主流浏览器都支持了 WebP 格式，但是仍有冥顽不化者，没错，那就是苹果家的 Safari。（IE：我已经连主流都不配了吗？）
 
-![连 IE 都有勇气问你 是否要将它设成预设浏览器 你他妈的却跟我说你没勇气和喜欢的人告白](https://upyun.yunyoujun.cn/images/ie-is-braver-than-you.jpg)
+![连 IE 都有勇气问你 是否要将它设成预设浏览器 你他妈的却跟我说你没勇气和喜欢的人告白](https://uss.yunyoujun.cn/images/ie-is-braver-than-you.jpg)
 
 > 2020 年 macOS 11 Big Sur 和 iOS 14 上的 Safari 14 也已经支持 WebP 了。
 
@@ -179,13 +179,13 @@ CDN 是构建在现有网络基础之上的智能虚拟网络，依靠部署在�
 所以今年的 CDN 费用基本可以衣食无忧。
 这此前也是我一直烦恼的事情，以前赠送的额度基本绰绰有余，但随着站点的访问量越来越大，开始有些入不敷出了。也算解了我的燃眉之急。
 
-![又拍云 1000 元代金券](https://upyun.yunyoujun.cn/images/upyun-1000-voucher.jpg)
+![又拍云 1000 元代金券](https://uss.yunyoujun.cn/images/upyun-1000-voucher.jpg)
 
 而这也毫无疑问是本篇文章诞生的原因。
 
 在此插播一则广告～
 
-[![又拍云 CDN](https://upyun.yunyoujun.cn/images/upyun-cdn-adsense.jpg)](https://www.upyun.com/)
+[![又拍云 CDN](https://uss.yunyoujun.cn/images/upyun-cdn-adsense.jpg)](https://www.upyun.com/)
 
 然后这里是咱的 [又拍云返利链接](https://console.upyun.com/register/?invite=SyeQw09Bz)，从这里注册并消费我会吃到回扣！（当然其实又拍云联盟赠送的量对于个人来说就基本够用了。赠送的额度不够用的时候，说明有很多人在关注你啦，就去找又拍云合作吧！）
 
