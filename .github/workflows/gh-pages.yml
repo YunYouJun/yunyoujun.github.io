@@ -1,20 +1,27 @@
-name: GitHub Pages
+name: Deploy Valaxy site to GitHub Pages
 
 on:
+  # Runs on pushes targeting the default branch
   push:
-    branches:
-      - valaxy
+    branches: ["valaxy"]
+
+  # Allows you to run this workflow manually from the Actions tab
+  workflow_dispatch:
+
+# Sets permissions of the GITHUB_TOKEN to allow deployment to GitHub Pages
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+# Allow one concurrent deployment
+concurrency:
+  group: "pages"
+  cancel-in-progress: true
 
 jobs:
-  deploy:
-    runs-on: ${{ matrix.os }}
-
-    strategy:
-      matrix:
-        node-version: [16.x]
-        os: [ubuntu-latest]
-      fail-fast: false
-
+  build:
+    runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
 
@@ -24,10 +31,10 @@ jobs:
           version: 7
           run_install: true
 
-      - name: Use Node.js ${{ matrix.node-version }}
+      - name: Use Node.js 16
         uses: actions/setup-node@v3
         with:
-          node-version: ${{ matrix.node-version }}
+          node-version: 16
           registry-url: https://registry.npmjs.org/
           cache: pnpm
 
@@ -41,9 +48,21 @@ jobs:
         env:
           NODE_OPTIONS: --max-old-space-size=6144
 
-      - name: 🪤 Deploy to GitHub Pages
-        uses: peaceiris/actions-gh-pages@v3
+      - name: ⏫ Upload artifact
+        uses: actions/upload-pages-artifact@v1
         with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: ./dist
-          force_orphan: true
+          path: ./dist
+
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+
+    # Deploy to the github-pages environment
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+
+    steps:
+      - name: 🪤 Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v1
