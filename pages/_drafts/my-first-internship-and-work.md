@@ -65,7 +65,7 @@ end: false
 
 根据搜索及师兄们的建议，准备通常是看面经和刷题。
 
-![LeetCode 2021年3月-4月](https://uss.yunyoujun.cn/images/leetcode-2021-03.jpg)
+![LeetCode 2021年3月-4月](https://r2.yunyoujun.cn/images/leetcode-2021-03.jpg)
 
 我翻了翻去年的 LeetCode 记录，于 2021-03-23 正式开始准备刷题，并总共持续约半个月，结束实习战斗。
 
@@ -568,7 +568,7 @@ antfu
 
 正式拿到邮件 Offer 了。
 
-![阿里实习校招](https://uss.yunyoujun.cn/images/alipay-email-offer.jpg)
+![阿里实习校招](https://r2.yunyoujun.cn/images/alipay-email-offer.jpg)
 
 BAT 通关成就达成 √
 

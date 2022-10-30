@@ -27,7 +27,7 @@ categories:
 
 若能将 Valine 中的评论导出并很方便地将其导入 Disqus，那么在决定切换至 Disqus 之前，我都可以放心地使用 Valine。
 
-![给我也整一个！](https://uss.yunyoujun.cn/images/make-one-for-me-too.jpg)
+![给我也整一个！](https://r2.yunyoujun.cn/images/make-one-for-me-too.jpg)
 
 <!-- more -->
 

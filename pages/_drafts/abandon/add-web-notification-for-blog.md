@@ -21,7 +21,7 @@ categories:
 
 我一开始是想使用 [webpushr](https://www.webpushr.com/)，但是建立好 Site 后不知为何总是显示 404。
 
-![webpushr-404](https://uss.yunyoujun.cn/images/webpushr-404.jpg)
+![webpushr-404](https://r2.yunyoujun.cn/images/webpushr-404.jpg)
 
 于是转为使用了 [PushBots](https://app.pushbots.com/)。（而 GitHub 学生账号会送 6 个月的高级会员。）
 

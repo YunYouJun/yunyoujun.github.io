@@ -10,7 +10,7 @@ categories:
 katex: true
 ---
 
-![夹心酱](https://uss.yunyoujun.cn/images/char-dust-jashin.jpg)
+![夹心酱](https://r2.yunyoujun.cn/images/char-dust-jashin.jpg)
 
 如题，它的全部作用就是将图片变成字符画（又称 [ASCII 艺术](https://zh.wikipedia.org/wiki/ASCII%E8%89%BA%E6%9C%AF)）。
 
@@ -131,7 +131,7 @@ jimp.read(resolve(__dirname, "./cat-of-the-rebellion.jpg")).then((image) => {
 
 这其实是我三年前开的坑，🐦，咕咕咕，没错我就是鸽子，但我还是好好地填上了。
 
-![准备迎接夸奖](https://uss.yunyoujun.cn/images/ready-for-compliments.jpg)
+![准备迎接夸奖](https://r2.yunyoujun.cn/images/ready-for-compliments.jpg)
 
 所以重构的时候，直接将原先的 `vue2` + `@vue/cli` + `webpack` + `element-ui(2)` 换成了 `vue3` + `vite` + `element-plus(3)`。
 
@@ -167,7 +167,7 @@ jimp.read(resolve(__dirname, "./cat-of-the-rebellion.jpg")).then((image) => {
 
 让人不禁潸然泪下。
 
-![别骂了别骂了再骂人要傻了](https://uss.yunyoujun.cn/images/dont-scold-me.jpg)
+![别骂了别骂了再骂人要傻了](https://r2.yunyoujun.cn/images/dont-scold-me.jpg)
 
 ---
 
