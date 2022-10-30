@@ -17,7 +17,7 @@ categories:
 
 这也是一种很好的艺术效果，苹果惯用的毛玻璃效果本质便是高斯模糊，而我们将图片模糊后作为网站背景，既减小了图片的体积，也能别有一番风味。（譬如咱站点的背景也是高斯模糊后的产物。）
 
-![Gaussian Blur | Photoshop](https://uss.yunyoujun.cn/images/photoshop-gaussian-blur.jpg)
+![Gaussian Blur | Photoshop](https://r2.yunyoujun.cn/images/photoshop-gaussian-blur.jpg)
 
 而 CSS3 提供了滤镜 [filter](https://developer.mozilla.org/zh-CN/docs/Web/CSS/filter)/[backdrop-filter](https://developer.mozilla.org/zh-CN/docs/Web/CSS/backdrop-filter)，其中的模糊功能同样也是高斯模糊。（Canvas 中的 [filter](https://developer.mozilla.org/zh-CN/docs/Web/API/CanvasRenderingContext2D/filter) 亦是如此。）
 
@@ -47,9 +47,9 @@ $$ {\displaystyle f(x)={\frac {1}{\sigma {\sqrt {2\pi }}}}e^{-{\frac {\left(x-\m
 
 同一张图片模糊前后，并使用 [Squoosh](https://squoosh.app/) 压缩。
 
-![模糊后](https://uss.yunyoujun.cn/images/a-image-after-blur.jpg)_589\*600 blur:30px 模糊后 7.15KB_
+![模糊后](https://r2.yunyoujun.cn/images/a-image-after-blur.jpg)_589\*600 blur:30px 模糊后 7.15KB_
 
-![模糊前](https://uss.yunyoujun.cn/images/a-image-before-blur.jpg)_589\*600 模糊前 29.71KB_
+![模糊前](https://r2.yunyoujun.cn/images/a-image-before-blur.jpg)_589\*600 模糊前 29.71KB_
 
 此外，CSS 滤镜本身还是挺占性能的（Safari 好像优化的更好一些？），之前写[主题](https://github.com/YunYouJun/hexo-theme-yun)尝试加了一堆模糊效果，虽然挺好看的，但是发现风扇嗡嗡响，最终还是忍痛割爱。
 
@@ -59,13 +59,13 @@ $$ {\displaystyle f(x)={\frac {1}{\sigma {\sqrt {2\pi }}}}e^{-{\frac {\left(x-\m
 
 > 红色边框是原本图片所在的范围。
 
-![原图](https://uss.yunyoujun.cn/images/blur-source-image.jpg)_原图_
+![原图](https://r2.yunyoujun.cn/images/blur-source-image.jpg)_原图_
 
-![Photoshop 高斯模糊 30px](https://uss.yunyoujun.cn/images/photoshop-gaussian-blur-30px.jpg)_2419\*1209 Photoshop 高斯模糊 30px_
+![Photoshop 高斯模糊 30px](https://r2.yunyoujun.cn/images/photoshop-gaussian-blur-30px.jpg)_2419\*1209 Photoshop 高斯模糊 30px_
 
-![CSS filter 白色背景](https://uss.yunyoujun.cn/images/css-filter-white-30px.jpg)_1119\*559 CSS filter 高斯模糊 30px 白色背景_
+![CSS filter 白色背景](https://r2.yunyoujun.cn/images/css-filter-white-30px.jpg)_1119\*559 CSS filter 高斯模糊 30px 白色背景_
 
-![CSS filter 黑色背景](https://uss.yunyoujun.cn/images/css-filter-black-30px.jpg)_1119\*559 CSS filter 高斯模糊 30px 黑色背景_
+![CSS filter 黑色背景](https://r2.yunyoujun.cn/images/css-filter-black-30px.jpg)_1119\*559 CSS filter 高斯模糊 30px 黑色背景_
 
 我们可以发现 CSS filter 模糊后的边界，准确来说并不是白边。而是透明的，我们应当叫它透明边或者 Alpha 边更为合适。
 
@@ -262,7 +262,7 @@ export function blur(
 - 完整示例代码见 [gaussian-blur](https://github.com/YunYouJun/gaussian-blur)
 - 在线地址见：[Gaussian Blur Demo](https://www.yunyoujun.cn/gaussian-blur/)
 
-![gaussian-blur-30px-137007ms](https://uss.yunyoujun.cn/images/gaussian-blur-30px-137007ms.jpg)
+![gaussian-blur-30px-137007ms](https://r2.yunyoujun.cn/images/gaussian-blur-30px-137007ms.jpg)
 
 emmm，可是速度很慢，1119\*559 模糊半径 30px 便花了足足 137007ms。（MacBook Pro 15-inch 2019）
 
@@ -335,11 +335,11 @@ export class Blur {
 }
 ```
 
-![Gaussian Blur Demo](https://uss.yunyoujun.cn/images/gaussian-blur-demo.jpg)
+![Gaussian Blur Demo](https://r2.yunyoujun.cn/images/gaussian-blur-demo.jpg)
 
 很神奇地也能实现类似效果，但模糊程度还是略有不同的。（可以看到 Canvas 的高斯模糊也是有白边的。）
 
-![Fast Gaussian Blur 100px](https://uss.yunyoujun.cn/images/fast-gaussian-blur-100px-1043ms.png)_100px 1043ms_
+![Fast Gaussian Blur 100px](https://r2.yunyoujun.cn/images/fast-gaussian-blur-100px-1043ms.jpg)_100px 1043ms_
 
 不过好像有点玻璃上有水滴流下来的那种感觉。
 

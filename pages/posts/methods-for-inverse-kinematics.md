@@ -63,7 +63,7 @@ Editor: <https://editor.p5js.org/YunYouJun/sketches/bS8jB3EsC>
 
 新年 🧨 版（小 bug 之后修）
 
-![cocos-creator-ik](https://uss.yunyoujun.cn/images/cocos-creator-ik.jpg)
+![cocos-creator-ik](https://r2.yunyoujun.cn/images/cocos-creator-ik.jpg)
 
 GitHub: <https://github.com/YunYouJun/cocos-creator-ik/>
 
