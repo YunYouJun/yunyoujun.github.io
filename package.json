@@ -40,9 +40,9 @@
     "post": "valaxy new post"
   },
   "devDependencies": {
-    "@antfu/eslint-config": "^0.27.0",
+    "@antfu/eslint-config": "^0.30.1",
     "cross-env": "^7.0.3",
-    "eslint": "^8.26.0",
+    "eslint": "^8.27.0",
     "typescript": "^4.8.4",
     "valaxy": "0.11.1",
     "valaxy-theme-yun": "0.11.1",
