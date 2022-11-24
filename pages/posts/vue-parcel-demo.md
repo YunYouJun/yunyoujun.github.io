@@ -196,7 +196,7 @@ node_modules/
 
 出现如下报错：
 
-> Server running at <http://localhost:1234>
+> Server running at `http://localhost:1234`
 > × C:\Users\YunYou\Documents\GitHub\vue-parcel-demo\src\router\index.js:3:23: Cannot resolve dependency '@/components/HelloWorld'
 
 原因是 `@` 是 webpack 默认配置中使用 alias (别名) 指代 src 文件夹的符号。
@@ -224,7 +224,7 @@ import HelloWorld from '@/components/HelloWorld'
 // ---
 ```
 
-再次运行 `npm run dev`, 打开 <http://localhost:1234> 即可看到 Vue 的主页了。
+再次运行 `npm run dev`, 打开 `http://localhost:1234` 即可看到 Vue 的主页了。
 
 ## FAQ
 
