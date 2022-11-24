@@ -294,7 +294,7 @@ npm publish
 总之先展示一下最后成果。
 
 - GitHub: [wc-github-corners](https://github.com/YunYouJun/wc-github-corners)
-- Demo: <https://www.yunyoujun.cn/wc-github-corners/>
+- Demo: <https://yunyoujun.github.io/wc-github-corners/>
 - Demo 代码: [wc-github-corners/demo/index.html](https://github.com/YunYouJun/wc-github-corners/blob/main/demo/index.html)
 
 软件界用自己的东西叫做 dogfooding, (Eating your own dog food - [吃自己的狗粮](https://zh.wikipedia.org/wiki/%E5%90%83%E8%87%AA%E5%B7%B1%E7%9A%84%E7%8B%97%E7%B2%AE))
