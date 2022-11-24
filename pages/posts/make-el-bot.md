@@ -15,7 +15,7 @@ categories: 云游的小笔记
 
 - GitHub: [mirai-ts](https://github.com/YunYouJun/mirai-ts)
 - GitHub: [el-bot](https://github.com/ElpsyCN/el-bot)
-- Docs: [mirai-ts API 文档](https://yunyoujun.cn/mirai-ts/)
+- Docs: [mirai-ts API 文档](https://yunyoujun.github.io/mirai-ts/)
 - Docs: [el-bot 文档](https://docs.bot.elpsy.cn/)
 
 el-bot 展示了整个 mirai-ts 的使用流程，并内置了一些如自动应答、转发、命令行、RSS 等常用功能（默认插件），开箱即用。

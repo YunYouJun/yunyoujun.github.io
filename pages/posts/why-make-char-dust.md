@@ -15,7 +15,7 @@ katex: true
 如题，它的全部作用就是将图片变成字符画（又称 [ASCII 艺术](https://zh.wikipedia.org/wiki/ASCII%E8%89%BA%E6%9C%AF)）。
 
 - GitHub: <https://github.com/YunYouJun/char-dust/>
-- 示例站点: <https://www.yunyoujun.cn/char-dust/>
+- 示例站点: <https://yunyoujun.github.io/char-dust/>
 
 似乎有些老生常谈，那么为什么会有它的诞生呢？
 
