@@ -6,7 +6,7 @@ specifiers:
   eslint: ^8.28.0
   typescript: ^4.9.3
   valaxy: 0.11.4
-  valaxy-addon-waline: ^0.0.4
+  valaxy-addon-waline: ^0.0.5
   valaxy-theme-yun: 0.11.4
   vite-plugin-remote-assets: ^0.3.0
 
@@ -16,7 +16,7 @@ devDependencies:
   eslint: 8.28.0
   typescript: 4.9.3
   valaxy: 0.11.4_typescript@4.9.3
-  valaxy-addon-waline: 0.0.4
+  valaxy-addon-waline: 0.0.5
   valaxy-theme-yun: 0.11.4
   vite-plugin-remote-assets: 0.3.0
 
@@ -4496,6 +4496,14 @@ packages:
 
   /valaxy-addon-waline/0.0.4:
     resolution: {integrity: sha512-HHIEp8fI/k2Lj/sPmFZmkLHcT6pa0rE9xQlwz+AnV050UDzz8Vt4ktMOcTJeWLxBBcvgh08x6nCRQ5EhEqvthw==}
+    dependencies:
+      '@waline/client': 2.14.1
+    transitivePeerDependencies:
+      - '@vue/composition-api'
+    dev: true
+
+  /valaxy-addon-waline/0.0.5:
+    resolution: {integrity: sha512-0xtSNdFugTgHKFnsJjr0/qnvyfYx4GB74x0zEhEww03CRdYBg88UZWQaGf5N+68z4v4T1LdPjLFHT8kyzDBe+w==}
     dependencies:
       '@waline/client': 2.14.1
     transitivePeerDependencies:
