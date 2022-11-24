@@ -1,5 +1,6 @@
 import type { UserConfig } from 'valaxy'
 import type { ThemeUserConfig } from 'valaxy-theme-yun'
+import { addonWaline } from 'valaxy-addon-waline/node'
 
 /**
  * User Config
@@ -140,6 +141,16 @@ const config: UserConfig<ThemeUserConfig> = {
       'i-ri-home-line',
     ],
   },
+
+  comment: {
+    enable: true,
+  },
+
+  addons: [
+    addonWaline({
+      serverURL: 'https://waline.yunyoujun.cn',
+    }),
+  ],
 }
 
 /**
