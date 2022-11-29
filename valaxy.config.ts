@@ -1,6 +1,6 @@
 import type { UserConfig } from 'valaxy'
 import type { ThemeUserConfig } from 'valaxy-theme-yun'
-import { addonWaline } from 'valaxy-addon-waline/node'
+import { addonWaline } from 'valaxy-addon-waline'
 
 /**
  * User Config
