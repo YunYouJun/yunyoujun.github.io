@@ -3,10 +3,10 @@ name: Deploy Valaxy site to GitHub Pages
 on:
   # Runs on pushes targeting the default branch
   push:
-    branches: ["valaxy"]
+    branches: [valaxy]
 
   # Allows you to run this workflow manually from the Actions tab
-  workflow_dispatch:
+  # workflow_dispatch:
 
 # Sets permissions of the GITHUB_TOKEN to allow deployment to GitHub Pages
 permissions:
@@ -16,7 +16,7 @@ permissions:
 
 # Allow one concurrent deployment
 concurrency:
-  group: "pages"
+  group: pages
   cancel-in-progress: true
 
 jobs:
