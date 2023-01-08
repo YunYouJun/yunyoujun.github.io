@@ -40,12 +40,12 @@
     "post": "valaxy new post"
   },
   "devDependencies": {
-    "@antfu/eslint-config": "^0.33.1",
+    "@antfu/eslint-config": "^0.34.0",
     "cross-env": "^7.0.3",
-    "eslint": "^8.29.0",
-    "typescript": "^4.9.3",
-    "valaxy": "0.11.6",
-    "valaxy-theme-yun": "0.11.6",
+    "eslint": "^8.31.0",
+    "typescript": "^4.9.4",
+    "valaxy": "0.11.7",
+    "valaxy-theme-yun": "0.11.7",
     "vite-plugin-remote-assets": "^0.3.0"
   }
 }
