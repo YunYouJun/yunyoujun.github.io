@@ -117,7 +117,7 @@ $.post('/api/login/', form.serialize(), (e) => {
 | email               | -     |
 | password            | -     |
 
-```text
+```txt
 csrfmiddlewaretoken=ZcJkWtMdfyjBNKxp3ms0i8REkTJcSKw4&email=xxx&password=xxx
 ```
 
