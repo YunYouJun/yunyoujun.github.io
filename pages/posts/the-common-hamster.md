@@ -25,7 +25,7 @@ categories:
 
 <!-- more -->
 
-![hamster-universe](https://cdn.jsdelivr.net/gh/YunYouJun/cdn/img/draw/hamster-universe.jpg)
+![hamster-universe](https://cdn.yunyoujun.cn/img/draw/hamster-universe.jpg)
 
 ## 正文
 

@@ -27,7 +27,7 @@ categories:
 
 <!-- more -->
 
-![five-year](https://cdn.jsdelivr.net/gh/YunYouJun/cdn/img/meme/five-year.gif)
+![five-year](https://cdn.yunyoujun.cn/img/meme/five-year.gif)
 
 ## [Parcel](https://parceljs.org)
 

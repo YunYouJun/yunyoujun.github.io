@@ -41,7 +41,7 @@ aplayer: true
 
 这是我一个朋友的故事。只是为了方便叙述，我决定使用第一人称。
 
-![你说的这个朋友到底是不是你自己？](https://cdn.jsdelivr.net/gh/YunYouJun/cdn/img/meme/your-friend-is-yourself.gif)
+![你说的这个朋友到底是不是你自己？](https://cdn.yunyoujun.cn/img/meme/your-friend-is-yourself.gif)
 
 对了，文中引用的中二语录大部分出自于「我的青春恋爱物语果然有问题」中人称「大老师」的比企谷八幡之口，尽管可能真假参半，但不必与我的朋友的形象建立映射。
 
@@ -60,7 +60,7 @@ LM: 我朋友的朋友
 
 与同行的小伙伴 LM 约定好早间地铁站汇合，但其同样有睡懒觉的习惯，且此后发现闹钟定成了下午……（仿佛看到某个过去的自己）
 
-![我们是兄弟，我怎么会🐦你呢](https://cdn.jsdelivr.net/gh/YunYouJun/cdn/img/meme/we-are-brothers.jpg)
+![我们是兄弟，我怎么会🐦你呢](https://cdn.yunyoujun.cn/img/meme/we-are-brothers.jpg)
 
 于是改签了后续的高铁，座位也就此错开。
 

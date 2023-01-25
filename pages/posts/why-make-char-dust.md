@@ -127,7 +127,7 @@ jimp.read(resolve(__dirname, "./cat-of-the-rebellion.jpg")).then((image) => {
 
 ## 实现
 
-![five-year](https://cdn.jsdelivr.net/gh/YunYouJun/cdn/img/meme/five-year.gif)
+![five-year](https://cdn.yunyoujun.cn/img/meme/five-year.gif)
 
 这其实是我三年前开的坑，🐦，咕咕咕，没错我就是鸽子，但我还是好好地填上了。
 

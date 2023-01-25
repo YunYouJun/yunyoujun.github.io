@@ -232,7 +232,7 @@ pjax 适配一些插件和第三方功能时（而且有些根本就不支持重
 不得不承认，最开始开坑时我主要是想写一个自用的主题，一是不想过于同质化（毕竟 next 真的是太 🔥 太常见了），最好能有眼前一亮的感觉，二是顺便练习一下原生 JS（光写 Vue 以至于有时不知道脱离它能写些什么了），并可以自己进行一些定制。
 中间自己能用，便差不多就放了近一年没再管。（期间竟然有位外国友人问我如何使用，那时中文文档都没有，更别说英文的了，我也只好用蹩脚的英文简单解释解释。）
 
-![又不是不能用](https://cdn.jsdelivr.net/gh/YunYouJun/cdn/img/meme/not-unusable.jpg)
+![又不是不能用](https://cdn.yunyoujun.cn/img/meme/not-unusable.jpg)
 
 后来得空，想着不如完善一下，并尝试到 V 站发了次贴，收到了一些 Star，大受鼓舞。
 
@@ -248,7 +248,7 @@ pjax 适配一些插件和第三方功能时（而且有些根本就不支持重
 
 之后……？
 
-![我写的代码，怎么可能有 BUG？](https://cdn.jsdelivr.net/gh/YunYouJun/cdn/img/meme/no-bug.gif)
+![我写的代码，怎么可能有 BUG？](https://cdn.yunyoujun.cn/img/meme/no-bug.gif)
 
 因为功能基本齐备，2.0 可能将主要在样式上做文章。
 
