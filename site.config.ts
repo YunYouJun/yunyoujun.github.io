@@ -3,10 +3,14 @@ import { defineSiteConfig } from 'valaxy'
 export default defineSiteConfig({
   lang: 'zh-CN',
   title: '云游君的小站',
+  subtitle: 'All at sea.',
+  description: '希望能成为一个有趣的人',
   author: {
     name: '云游君',
+    status: {
+      emoji: '😣',
+    },
   },
-  description: '云游君的小站',
   url: 'https://www.yunyoujun.cn',
   social: [
     {
@@ -59,7 +63,7 @@ export default defineSiteConfig({
     },
     {
       name: '微信公众号',
-      link: 'https://cdn.jsdelivr.net/gh/YunYouJun/cdn/img/about/white-qrcode-and-search.jpg',
+      link: 'https://cdn.yunyoujun.cn/img/about/white-qrcode-and-search.jpg',
       icon: 'i-ri-wechat-2-line',
       color: '#1AAD19',
     },
@@ -83,15 +87,40 @@ export default defineSiteConfig({
     },
     {
       name: 'Travelling',
-      link: 'https://travellings.link',
+      link: 'https://www.travellings.cn/go.html',
       icon: 'i-ri-train-line',
       color: 'var(--va-c-text)',
     },
   ],
 
+  sponsor: {
+    enable: true,
+    title: '我很可爱，请给我钱！',
+    methods: [
+      {
+        name: '支付宝',
+        url: 'https://cdn.yunyoujun.cn/img/donate/alipay-qrcode.jpg',
+        color: '#00A3EE',
+        icon: 'i-ri-alipay-line',
+      },
+      {
+        name: 'QQ 支付',
+        url: 'https://cdn.yunyoujun.cn/img/donate/qqpay-qrcode.png',
+        color: '#12B7F5',
+        icon: 'i-ri-qq-line',
+      },
+      {
+        name: '微信支付',
+        url: 'https://cdn.yunyoujun.cn/img/donate/wechatpay-qrcode.jpg',
+        color: '#2DC100',
+        icon: 'i-ri-wechat-pay-line',
+      },
+    ],
+  },
+
   search: {
     enable: true,
-    type: 'algolia',
+    type: 'fuse',
   },
 
   comment: {

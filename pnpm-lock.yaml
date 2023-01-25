@@ -5,10 +5,10 @@ specifiers:
   cross-env: ^7.0.3
   eslint: ^8.32.0
   typescript: ^4.9.4
-  valaxy: 0.13.2
+  valaxy: 0.13.7
   valaxy-addon-algolia: ^0.0.2
   valaxy-addon-waline: ^0.0.9
-  valaxy-theme-yun: 0.13.2
+  valaxy-theme-yun: 0.13.7
   vite-plugin-remote-assets: ^0.3.0
 
 devDependencies:
@@ -16,10 +16,10 @@ devDependencies:
   cross-env: 7.0.3
   eslint: 8.32.0
   typescript: 4.9.4
-  valaxy: 0.13.2_typescript@4.9.4
+  valaxy: 0.13.7_typescript@4.9.4
   valaxy-addon-algolia: 0.0.2
-  valaxy-addon-waline: 0.0.9_valaxy@0.13.2
-  valaxy-theme-yun: 0.13.2_valaxy@0.13.2
+  valaxy-addon-waline: 0.0.9_valaxy@0.13.7
+  valaxy-theme-yun: 0.13.7_valaxy@0.13.7
   vite-plugin-remote-assets: 0.3.0
 
 packages:
@@ -4753,30 +4753,30 @@ packages:
       - react-dom
     dev: true
 
-  /valaxy-addon-waline/0.0.9_valaxy@0.13.2:
+  /valaxy-addon-waline/0.0.9_valaxy@0.13.7:
     resolution: {integrity: sha512-IG3S7IhsL1whR49NNRe+J3g7owxfCjFPLfWmwE2+1xH2O7JRcmdrOTgH3mEpVLbX7gqUx1nNBKx7njW1gUGawQ==}
     peerDependencies:
       valaxy: latest
     dependencies:
       '@waline/client': 2.14.7
-      valaxy: 0.13.2_typescript@4.9.4
+      valaxy: 0.13.7_typescript@4.9.4
     transitivePeerDependencies:
       - '@vue/composition-api'
     dev: true
 
-  /valaxy-theme-yun/0.13.2_valaxy@0.13.2:
-    resolution: {integrity: sha512-3LeAiJDiTVPXpa686HFtotwKGVPr5/Jqc5ccnrV0H8ZaHVCxgQwSSMVBDkv4WJsPAtikVgkQGW+sZ8WOAg6HtA==}
+  /valaxy-theme-yun/0.13.7_valaxy@0.13.7:
+    resolution: {integrity: sha512-29Mv4lPq9glb+juux6ozTADmZhkOGijc1qES2eMw9DWV0YIUIDCWJ5rsZ+zvl0Cw2KPKQFLS5gBt7s0dPWkPOQ==}
     dependencies:
       '@iconify-json/ant-design': 1.1.4
       '@iconify-json/simple-icons': 1.1.41
-      valaxy-addon-waline: 0.0.9_valaxy@0.13.2
+      valaxy-addon-waline: 0.0.9_valaxy@0.13.7
     transitivePeerDependencies:
       - '@vue/composition-api'
       - valaxy
     dev: true
 
-  /valaxy/0.13.2_typescript@4.9.4:
-    resolution: {integrity: sha512-2bZlkJjmqUmdH471hRSbECbJEgkwPa/cXCNK9Su7D/EUTHvwrgQdvro5K5WxG3VjLPP/3jfrAGHfCtLFWl1n9w==}
+  /valaxy/0.13.7_typescript@4.9.4:
+    resolution: {integrity: sha512-JuKVEKsiqwKx6iZqielk1WUEwIx+td9u0KmvRuf7/oC3odJKG0XXpEXmC2Fe58rWoM8Jpe8kyl7Os2rGqXxkRA==}
     engines: {node: ^14.18.0 || >=16.0.0}
     hasBin: true
     dependencies:

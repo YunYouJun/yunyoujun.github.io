@@ -18,7 +18,7 @@ categories:
 > 看，简单吧，谁也没有受伤的世界，达成了。
 
 <a href="https://console.upyun.com/register/?invite=SyeQw09Bz" title="又拍云" target="_blank">
-  <img src="https://cdn.jsdelivr.net/gh/YunYouJun/cdn/img/logo/upyun-logo.png" style="box-shadow: none;"  alt="upyun">
+  <img src="https://cdn.yunyoujun.cn/img/logo/upyun-logo.png" style="box-shadow: none;"  alt="upyun">
 </a>
 
 故[又拍云](https://www.upyun.com/)并非我的第一个 CDN，但它的确是我截至今日使用最久的 CDN。
