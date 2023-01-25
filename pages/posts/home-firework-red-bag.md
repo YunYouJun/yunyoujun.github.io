@@ -17,6 +17,8 @@ tags:
 时光如箭，你的过去在不停增多，你的未来在不断减少，未知的可能性只会越来越少，而无法改变的后悔在累积如山。  
 你明白了吗？
 
+<!-- more -->
+
 ![很不幸，时间的流逝永远不会停止](https://assets.yunyoujun.cn/images/you-know-time-never-stop.jpg)
 
 <div class="flex-center" text="center">

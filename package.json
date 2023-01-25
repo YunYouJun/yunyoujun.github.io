@@ -37,7 +37,7 @@
     "rss": "valaxy rss",
     "serve": "vite preview",
     "lint": "eslint .",
-    "post": "valaxy new post"
+    "post": "valaxy new"
   },
   "devDependencies": {
     "@antfu/eslint-config": "^0.34.1",
