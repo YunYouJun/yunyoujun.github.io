@@ -1,4 +1,4 @@
-import type { UserValaxyNodeConfig } from 'valaxy'
+import { defineValaxyConfig } from 'valaxy'
 import type { UserThemeConfig } from 'valaxy-theme-yun'
 import { addonWaline } from 'valaxy-addon-waline'
 import { addonAlgolia } from 'valaxy-addon-algolia'
@@ -7,7 +7,7 @@ import { addonAlgolia } from 'valaxy-addon-algolia'
  * User Config
  * do not use export const
  */
-const config: UserValaxyNodeConfig<UserThemeConfig> = {
+export default defineValaxyConfig<UserThemeConfig> ({
   theme: 'yun',
 
   themeConfig: {
@@ -25,6 +25,12 @@ const config: UserValaxyNodeConfig<UserThemeConfig> = {
         url: '/links/',
         icon: 'i-ri-genderless-line',
         color: 'dodgerblue',
+      },
+      {
+        name: '赞助者们',
+        url: 'https://sponsors.yunyoujun.cn',
+        icon: 'i-ri-heart-line',
+        color: 'red',
       },
       {
         name: '喜欢的女孩子',
@@ -57,16 +63,8 @@ const config: UserValaxyNodeConfig<UserThemeConfig> = {
     }),
     addonWaline({
       serverURL: 'https://waline.yunyoujun.cn',
+      pageview: true,
+      comment: true,
     }),
   ],
-}
-
-/**
- * add your icon to safelist
- * if your theme is not yun, so you can add it by yourself
- */
-config.themeConfig?.pages?.forEach((item) => {
-  config.unocss?.safelist?.push(item?.icon)
 })
-
-export default config

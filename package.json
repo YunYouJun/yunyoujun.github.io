@@ -37,17 +37,18 @@
     "rss": "valaxy rss",
     "serve": "vite preview",
     "lint": "eslint .",
-    "post": "valaxy new"
+    "new": "valaxy new"
   },
   "devDependencies": {
     "@antfu/eslint-config": "^0.34.1",
     "cross-env": "^7.0.3",
     "eslint": "^8.32.0",
     "typescript": "^4.9.4",
-    "valaxy": "0.13.7",
+    "valaxy": "0.13.10",
     "valaxy-addon-algolia": "^0.0.2",
     "valaxy-addon-waline": "^0.0.9",
-    "valaxy-theme-yun": "0.13.7",
-    "vite-plugin-remote-assets": "^0.3.0"
+    "valaxy-theme-yun": "0.13.10",
+    "vite-plugin-remote-assets": "^0.3.0",
+    "vue-gtag-next": "^1.14.0"
   }
 }

@@ -4,12 +4,7 @@ date: <%=date%>
 updated: <%=date%>
 tags:
 categories:
+end: false
 ---
 
 <!-- more -->
-
----
-
-To Be Continued.
-
-<!-- Q.E.D. -->
