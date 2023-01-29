@@ -12,6 +12,7 @@ export default defineSiteConfig({
     },
   },
   url: 'https://www.yunyoujun.cn',
+  mediumZoom: { enable: true },
   social: [
     {
       name: 'RSS',
