@@ -63,7 +63,7 @@ export default defineValaxyConfig<UserThemeConfig> ({
     }),
     addonWaline({
       serverURL: 'https://waline.yunyoujun.cn',
-      pageview: true,
+      // pageview: true,
       comment: true,
     }),
   ],

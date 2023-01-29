@@ -1,26 +1,26 @@
 lockfileVersion: 5.4
 
 specifiers:
-  '@antfu/eslint-config': ^0.35.0
+  '@antfu/eslint-config': ^0.35.1
   cross-env: ^7.0.3
   eslint: ^8.33.0
   typescript: ^4.9.4
-  valaxy: 0.14.2
+  valaxy: 0.14.3
   valaxy-addon-algolia: ^0.0.2
   valaxy-addon-waline: ^0.0.9
-  valaxy-theme-yun: 0.14.2
+  valaxy-theme-yun: 0.14.3
   vite-plugin-remote-assets: ^0.3.0
   vue-gtag-next: ^1.14.0
 
 devDependencies:
-  '@antfu/eslint-config': 0.35.0_zkdaqh7it7uc4cvz2haft7rc6u
+  '@antfu/eslint-config': 0.35.1_zkdaqh7it7uc4cvz2haft7rc6u
   cross-env: 7.0.3
   eslint: 8.33.0
   typescript: 4.9.4
-  valaxy: 0.14.2_typescript@4.9.4
+  valaxy: 0.14.3_typescript@4.9.4
   valaxy-addon-algolia: 0.0.2
-  valaxy-addon-waline: 0.0.9_valaxy@0.14.2
-  valaxy-theme-yun: 0.14.2_valaxy@0.14.2
+  valaxy-addon-waline: 0.0.9_valaxy@0.14.3
+  valaxy-theme-yun: 0.14.3_valaxy@0.14.3
   vite-plugin-remote-assets: 0.3.0
   vue-gtag-next: 1.14.0
 
@@ -144,13 +144,13 @@ packages:
       '@jridgewell/trace-mapping': 0.3.17
     dev: true
 
-  /@antfu/eslint-config-basic/0.35.0_rgsbjvszw2fpvql2lkaldg7z6q:
-    resolution: {integrity: sha512-X9Z3bc7KBzkTXhKVeA5a7IlwUkVoWQ3McrBC4OGnWih83fyi21RBsf7gIgKg80pt/bqFhMRlWvBwtx1jvsIkew==}
+  /@antfu/eslint-config-basic/0.35.1_rgsbjvszw2fpvql2lkaldg7z6q:
+    resolution: {integrity: sha512-2o35g3SFz9B/0TfXCuwcwK3+KVjDrVFsPtlOim/c+p8MNOCW/LwksEpDnNcDgfVfXdpEKGaqNKTCmL1aDbZP7w==}
     peerDependencies:
       eslint: '>=7.4.0'
     dependencies:
       eslint: 8.33.0
-      eslint-plugin-antfu: 0.35.0_zkdaqh7it7uc4cvz2haft7rc6u
+      eslint-plugin-antfu: 0.35.1_zkdaqh7it7uc4cvz2haft7rc6u
       eslint-plugin-eslint-comments: 3.2.0_eslint@8.33.0
       eslint-plugin-html: 7.1.0
       eslint-plugin-import: 2.27.5_kf2q37rsxgsj6p2nz45hjttose
@@ -173,13 +173,13 @@ packages:
       - typescript
     dev: true
 
-  /@antfu/eslint-config-ts/0.35.0_zkdaqh7it7uc4cvz2haft7rc6u:
-    resolution: {integrity: sha512-f2l/8KoeYZpfFLIs7dn7hDnEWcu2awTMuU9FWvNZZhrh+p4+K01n8vhwT2cMiEC6GsktQG6acWzUGH1otorNwg==}
+  /@antfu/eslint-config-ts/0.35.1_zkdaqh7it7uc4cvz2haft7rc6u:
+    resolution: {integrity: sha512-/0dW/88RDUc3BiT+tDOXhFDsSTKcInwSFbX2o6x1qaXoBukURyGejXhkmB39TQvr/voG21q6dZwnvNo+3Tw1Ig==}
     peerDependencies:
       eslint: '>=7.4.0'
       typescript: '>=3.9'
     dependencies:
-      '@antfu/eslint-config-basic': 0.35.0_rgsbjvszw2fpvql2lkaldg7z6q
+      '@antfu/eslint-config-basic': 0.35.1_rgsbjvszw2fpvql2lkaldg7z6q
       '@typescript-eslint/eslint-plugin': 5.49.0_rsaczafy73x3xqauzesvzbsgzy
       '@typescript-eslint/parser': 5.49.0_zkdaqh7it7uc4cvz2haft7rc6u
       eslint: 8.33.0
@@ -192,13 +192,13 @@ packages:
       - supports-color
     dev: true
 
-  /@antfu/eslint-config-vue/0.35.0_rgsbjvszw2fpvql2lkaldg7z6q:
-    resolution: {integrity: sha512-yfaJWFrEvva67JLguk47z6B7058M+OmUAfY4471IOXR4uYFDt3hS8PfuqmlqeMe/CSlFQOGS5qvIkw0uN2ScYw==}
+  /@antfu/eslint-config-vue/0.35.1_rgsbjvszw2fpvql2lkaldg7z6q:
+    resolution: {integrity: sha512-4wz92tHFG1RhAX6eS1d9or1socS34g4V2eXNxunHrHihyXoFOC1w0i0hznfLREGt0wqzZ+cxblD86n1c/fFHoA==}
     peerDependencies:
       eslint: '>=7.4.0'
     dependencies:
-      '@antfu/eslint-config-basic': 0.35.0_rgsbjvszw2fpvql2lkaldg7z6q
-      '@antfu/eslint-config-ts': 0.35.0_zkdaqh7it7uc4cvz2haft7rc6u
+      '@antfu/eslint-config-basic': 0.35.1_rgsbjvszw2fpvql2lkaldg7z6q
+      '@antfu/eslint-config-ts': 0.35.1_zkdaqh7it7uc4cvz2haft7rc6u
       eslint: 8.33.0
       eslint-plugin-vue: 9.9.0_eslint@8.33.0
       local-pkg: 0.4.3
@@ -212,12 +212,12 @@ packages:
       - typescript
     dev: true
 
-  /@antfu/eslint-config/0.35.0_zkdaqh7it7uc4cvz2haft7rc6u:
-    resolution: {integrity: sha512-EoZThXjM6pqvAUr+cJ5Qc2w0HRQu26+NbmwMQyOm050RajsKVyWwsRvUbXJOHb0UPWFDMe3K7V9xWdZDZ0K/Ug==}
+  /@antfu/eslint-config/0.35.1_zkdaqh7it7uc4cvz2haft7rc6u:
+    resolution: {integrity: sha512-9GHMyp4eofxHg6YqX0pYmHdV1QGFk479FyCi0utr4paETvZpQ+VYoz7oL1Kh0zb6coBfIZ0nFiwgyiQML/kSsw==}
     peerDependencies:
       eslint: '>=7.4.0'
     dependencies:
-      '@antfu/eslint-config-vue': 0.35.0_rgsbjvszw2fpvql2lkaldg7z6q
+      '@antfu/eslint-config-vue': 0.35.1_rgsbjvszw2fpvql2lkaldg7z6q
       '@typescript-eslint/eslint-plugin': 5.49.0_rsaczafy73x3xqauzesvzbsgzy
       '@typescript-eslint/parser': 5.49.0_zkdaqh7it7uc4cvz2haft7rc6u
       eslint: 8.33.0
@@ -2545,8 +2545,8 @@ packages:
       - supports-color
     dev: true
 
-  /eslint-plugin-antfu/0.35.0_zkdaqh7it7uc4cvz2haft7rc6u:
-    resolution: {integrity: sha512-C0wN0x8s/DRnrGsKDa6s23m69Trtm81rlqDmx9HFr5xo/GXs9Y+31Ksexf79/3XWG42valrhGoEDUozPRnv4Qw==}
+  /eslint-plugin-antfu/0.35.1_zkdaqh7it7uc4cvz2haft7rc6u:
+    resolution: {integrity: sha512-D3DQmxS3k2LATNu/JhdB0TTrfd4RojpSh3uCyWTsvvVskoBIMiyluoE4J+/ZZqxEVijIoQBPVDl/KpEpmlsAuQ==}
     dependencies:
       '@typescript-eslint/utils': 5.49.0_zkdaqh7it7uc4cvz2haft7rc6u
     transitivePeerDependencies:
@@ -5392,30 +5392,30 @@ packages:
       - react-dom
     dev: true
 
-  /valaxy-addon-waline/0.0.9_valaxy@0.14.2:
+  /valaxy-addon-waline/0.0.9_valaxy@0.14.3:
     resolution: {integrity: sha512-IG3S7IhsL1whR49NNRe+J3g7owxfCjFPLfWmwE2+1xH2O7JRcmdrOTgH3mEpVLbX7gqUx1nNBKx7njW1gUGawQ==}
     peerDependencies:
       valaxy: latest
     dependencies:
       '@waline/client': 2.14.7
-      valaxy: 0.14.2_typescript@4.9.4
+      valaxy: 0.14.3_typescript@4.9.4
     transitivePeerDependencies:
       - '@vue/composition-api'
     dev: true
 
-  /valaxy-theme-yun/0.14.2_valaxy@0.14.2:
-    resolution: {integrity: sha512-OnP9RAjcAvw6NWJY4F7nrWz5Qv2xWyc5+ptFu6q4Kknwr/Jc5ZGAo3lxXWvXN/GKHN2ICvvw0oAMyxBzSb6Hbg==}
+  /valaxy-theme-yun/0.14.3_valaxy@0.14.3:
+    resolution: {integrity: sha512-JVijTgPRW+BR2S3gOL94hIXOS81KY3+4ysqtXh6wmAxcICxfUGiSK/e+I8v7a3a926TF5Xv+nUcLkgnnhnKyOA==}
     dependencies:
       '@iconify-json/ant-design': 1.1.4
       '@iconify-json/simple-icons': 1.1.41
-      valaxy-addon-waline: 0.0.9_valaxy@0.14.2
+      valaxy-addon-waline: 0.0.9_valaxy@0.14.3
     transitivePeerDependencies:
       - '@vue/composition-api'
       - valaxy
     dev: true
 
-  /valaxy/0.14.2_typescript@4.9.4:
-    resolution: {integrity: sha512-s//U4TmQVEwv9Ug6DwMPcFvACIRvCpxstc5yMt7Gu0GGnY4LfJXBlY8sAGrwmujQLNKI5PrzUqPUsP5ZapPrhg==}
+  /valaxy/0.14.3_typescript@4.9.4:
+    resolution: {integrity: sha512-kUVMJtXxm54wAZLPDV9fHudasRfXau3rrc9WWyI/bu8YXE9AYcYXUrdavX862qsmsIL51aJpEGTptitJhr/7VA==}
     engines: {node: ^14.18.0 || >=16.0.0}
     hasBin: true
     dependencies:

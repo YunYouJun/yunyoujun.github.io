@@ -1,5 +1,10 @@
 {
-  "cSpell.words": ["valaxy", "valaxyjs", "yunle"],
+  "cSpell.words": [
+    "Netdun",
+    "valaxy",
+    "valaxyjs",
+    "yunle"
+  ],
   "i18n-ally.sourceLanguage": "en",
   "i18n-ally.keystyle": "nested",
   "i18n-ally.localesPaths": "locales",

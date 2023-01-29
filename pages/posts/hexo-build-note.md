@@ -10,6 +10,8 @@ date: 2017-10-13 12:40:32
 updated: 2017-02-02 12:40:32
 ---
 
+> 2022.12.15 抛弃 Hexo，转向了 [valaxy](https://github.com/YunYouJun/valaxy)。
+
 > Wordpress 你放心，我暂时是不会抛弃你的。
 > 2017.12.11 正式抛弃 2333
 
