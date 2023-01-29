@@ -57,7 +57,7 @@ icon: icon-home-4-line
 
 😜 如果你觉得本站点还算有趣或有用，可以给我一个 [Star](https://github.com/YunYouJun/yunyoujun.github.io) 以示鼓励，也可以考虑用 [feedly](https://feedly.com/i/subscription/feed%2Fhttps%3A%2F%2Fwww.yunyoujun.cn%2Fatom.xml) 订阅本站。
 
-本站使用的是咱自己开发的主题 [hexo-theme-yun](https://github.com/YunYouJun/hexo-theme-yun/)，如果你喜欢的话，也欢迎一试。
+本站使用的是咱自己开发的博客框架 [valaxy](https://github.com/YunYouJun/valaxy) 和主题 [valaxy-theme-yun](https://github.com/YunYouJun/valaxy/blob/main/packages/valaxy-theme-yun/)，如果你喜欢的话，也欢迎一试。
 
 对了，我还有一个更加国际化的站点 [yyj.moe](https://www.yyj.moe/)，目前还在开发中，可能会是一个集合的导航页？（也是小云的另外一个家）
 
@@ -69,8 +69,21 @@ emm，目前似乎是的。但如果你是可爱 JK 美少女，欢迎随时报�
 
 ## 本站编年史
 
+<details>
+<summary>2023 年</summary>
+
+### 2023-01-09
+
+[小云 Live2D](https://github.com/YunYouJun/yun/tree/main/live2d) 交付
+
+</details>
+
 <details open>
-<summary>2021 年</summary>
+<summary>2022 年</summary>
+
+### 2022-11-15 Valaxy
+
+放弃 Hexo 转为使用 [valaxy](https://github.com/YunYouJun/valaxy) 与 [valaxy-theme-yun](https://github.com/YunYouJun/valaxy/blob/main/packages/valaxy-theme-yun/)。
 
 ### 2022-01-17 小云交稿
 
