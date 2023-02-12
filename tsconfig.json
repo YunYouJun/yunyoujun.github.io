@@ -13,9 +13,12 @@
     "noUnusedLocals": true,
     "strictNullChecks": true,
     "forceConsistentCasingInFileNames": true,
+    "types": [
+      "vite/client",
+    ],
     "paths": {
       "~/*": ["./*"]
-    }
+    },
   },
   "exclude": ["dist", "node_modules"]
 }
