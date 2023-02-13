@@ -10,7 +10,7 @@ updated: 2022-05-12 11:17:35
 # https://github.com/YunYouJun/girls
 # girls: https://cdn.jsdelivr.net/gh/YunYouJun/wives@gh-pages/girls.json
 icon: i-ri-women-line
-girls: https://wives.vercel.app/girls.json
+girls: https://wives.yunyoujun.cn/girls.json
 random: true
 ---
 
