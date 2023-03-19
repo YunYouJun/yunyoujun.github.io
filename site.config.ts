@@ -127,4 +127,8 @@ export default defineSiteConfig({
   comment: {
     enable: true,
   },
+
+  statistics: {
+    enable: true
+  }
 })
