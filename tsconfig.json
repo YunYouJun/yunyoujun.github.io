@@ -14,11 +14,11 @@
     "strictNullChecks": true,
     "forceConsistentCasingInFileNames": true,
     "types": [
-      "vite/client",
+      "vite/client"
     ],
     "paths": {
       "~/*": ["./*"]
-    },
+    }
   },
   "exclude": ["dist", "node_modules"]
 }

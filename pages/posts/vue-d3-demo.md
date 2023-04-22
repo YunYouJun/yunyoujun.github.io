@@ -295,19 +295,20 @@ const y = d3
 
 ```js
 // x 坐标轴
-const xAxis = g =>
-  g.attr('transform', `translate(0,${height - margin.bottom})`).call(
+function xAxis(g) {
+  return g.attr('transform', `translate(0,${height - margin.bottom})`).call(
     d3
       .axisBottom(x)
       .tickFormat(i => data[i].name)
       .tickSizeOuter(0)
   )
+}
 
 // y 坐标轴
 // data.format: "%"
 // data.y: "↑ Frequency"
-const yAxis = g =>
-  g
+function yAxis(g) {
+  return g
     .attr('transform', `translate(${margin.left},0)`)
     .call(d3.axisLeft(y).ticks(null, data.format))
     // 移除区域间的竖线
@@ -321,6 +322,7 @@ const yAxis = g =>
         .attr('text-anchor', 'start')
         .text(data.y)
     )
+}
 ```
 
 根据数据绘制直方图并添加到 SVG 中：
@@ -328,6 +330,7 @@ const yAxis = g =>
 ```js
 svg
   .append('g')
+  // eslint-disable-next-line @typescript-eslint/no-invalid-this
   .attr('fill', this.color)
   .selectAll('rect')
   .data(data)
