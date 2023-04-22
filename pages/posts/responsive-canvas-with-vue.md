@@ -39,7 +39,7 @@ export default {
     window.addEventListener('resize', () => {
       this.resizeCanvas()
       // 等待 canvas 变换好，再延时绘制，不然可能会没有内容
-      setTimeout(function () {
+      setTimeout(() => {
         this.drawStarMap()
       }, 100)
     })

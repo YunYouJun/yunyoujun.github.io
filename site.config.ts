@@ -129,6 +129,6 @@ export default defineSiteConfig({
   },
 
   statistics: {
-    enable: true
-  }
+    enable: true,
+  },
 })

@@ -69,7 +69,7 @@ Config
 
 ```js
 // vue.config.js
-const path = require('path')
+const path = require('node:path')
 const PrerenderSPAPlugin = require('prerender-spa-plugin')
 
 module.exports = {
