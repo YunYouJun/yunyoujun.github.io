@@ -4,6 +4,6 @@ import YunFooter from 'valaxy-theme-yun/components/YunFooter.vue'
 
 <template>
   <YunFooter>
-    <NetdunLogo />
+    <CdnLogo />
   </YunFooter>
 </template>
