@@ -4,10 +4,12 @@ on:
   push:
     branches:
       - main
+      - valaxy
 
   pull_request:
     branches:
       - main
+      - valaxy
 
 jobs:
   lint:
