@@ -48,7 +48,7 @@ export default {
     resizeCanvas() {
       this.canvas = document.getElementById('star-map')
       const parentStyle = window.getComputedStyle(this.canvas.parentNode)
-      this.canvas.width = parseInt(parentStyle.width)
+      this.canvas.width = Number.parseInt(parentStyle.width)
       this.canvas.height = document.body.clientHeight - 400
     },
   }
