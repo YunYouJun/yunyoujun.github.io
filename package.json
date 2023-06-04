@@ -1,8 +1,8 @@
 {
   "name": "yunyoujun.github.io",
   "version": "2.0.0",
-  "packageManager": "pnpm@8.6.0",
   "private": true,
+  "packageManager": "pnpm@8.6.0",
   "description": "YunYouJun Blog",
   "author": {
     "email": "me@yunyoujun.cn",
