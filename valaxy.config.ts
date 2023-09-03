@@ -3,6 +3,7 @@ import type { UserThemeConfig } from 'valaxy-theme-yun'
 import { addonWaline } from 'valaxy-addon-waline'
 
 import { addonAlgolia } from 'valaxy-addon-algolia'
+import { addonComponents } from 'valaxy-addon-components'
 
 /**
  * User Config
@@ -62,6 +63,7 @@ export default defineValaxyConfig<UserThemeConfig> ({
       apiKey: 'ae1966d2aeab22bf9335679f45d2cd9a',
       indexName: 'my-hexo-blog',
     }),
+    addonComponents(),
     addonWaline({
       serverURL: 'https://waline.yunyoujun.cn',
       // pageview: true,
