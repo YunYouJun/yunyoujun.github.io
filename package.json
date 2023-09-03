@@ -43,13 +43,14 @@
     "typecheck": "vue-tsc --noEmit"
   },
   "devDependencies": {
-    "@antfu/eslint-config": "^0.40.2",
+    "@antfu/eslint-config": "^0.41.0",
     "@explosions/fireworks": "^0.0.2",
     "cross-env": "^7.0.3",
-    "eslint": "^8.47.0",
-    "typescript": "^5.1.6",
+    "eslint": "^8.48.0",
+    "typescript": "^5.2.2",
     "valaxy": "0.14.54",
     "valaxy-addon-algolia": "^0.0.3",
+    "valaxy-addon-components": "^0.0.2",
     "valaxy-addon-waline": "^0.1.0",
     "valaxy-theme-yun": "0.14.54",
     "vite-plugin-remote-assets": "^0.3.2",

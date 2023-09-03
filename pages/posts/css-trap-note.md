@@ -8,7 +8,6 @@ tags:
   - CSS
 categories:
   - 云游的小笔记
-codepen: true
 ---
 
 CSS 的奇妙 Bug
@@ -21,11 +20,7 @@ CSS 的奇妙 Bug
 
 DEMO: [Margin Collapse](https://codepen.io/YunYouJun/pen/WqXGpo)
 
-<p class="codepen" data-height="304" data-theme-id="0" data-default-tab="css,result" data-user="YunYouJun" data-slug-hash="WqXGpo" style="height: 304px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;" data-pen-title="Margin Collapse">
-  <span>See the Pen <a href="https://codepen.io/YunYouJun/pen/WqXGpo/">
-  Margin Collapse</a> by YunYouJun (<a href="https://codepen.io/YunYouJun">@YunYouJun</a>)
-  on <a href="https://codepen.io">CodePen</a>.</span>
-</p>
+<CodePen class="h-300px" name="Margin Collapse" id="WqXGpo" user="YunYouJun" tab="html,result" />
 
 #### 父子间
 
