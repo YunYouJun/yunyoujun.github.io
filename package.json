@@ -2,7 +2,7 @@
   "name": "yunyoujun.github.io",
   "version": "2.0.0",
   "private": true,
-  "packageManager": "pnpm@8.6.12",
+  "packageManager": "pnpm@8.7.4",
   "description": "YunYouJun Blog",
   "author": {
     "email": "me@yunyoujun.cn",
@@ -48,13 +48,13 @@
     "cross-env": "^7.0.3",
     "eslint": "^8.48.0",
     "typescript": "^5.2.2",
-    "valaxy": "0.14.54",
+    "valaxy": "0.14.58",
     "valaxy-addon-algolia": "^0.0.3",
     "valaxy-addon-components": "^0.0.2",
     "valaxy-addon-waline": "^0.1.0",
-    "valaxy-theme-yun": "0.14.54",
+    "valaxy-theme-yun": "0.14.58",
     "vite-plugin-remote-assets": "^0.3.2",
     "vue-gtag-next": "^1.14.0",
-    "vue-tsc": "^1.8.8"
+    "vue-tsc": "^1.8.10"
   }
 }
