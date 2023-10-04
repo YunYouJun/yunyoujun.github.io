@@ -445,7 +445,6 @@ function getMembersByCity(city) {
   members.forEach((member) => {
     if (city.includes(member.city))
       results.push(member)
-
   })
   return results
 }

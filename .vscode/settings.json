@@ -5,17 +5,37 @@
     "valaxyjs",
     "yunle"
   ],
+
+  // Enable the ESlint flat config support
+  "eslint.experimental.useFlatConfig": true,
+  // Disable the default formatter, use eslint instead
+  "prettier.enable": false,
+  "editor.formatOnSave": false,
+  // Auto fix
+  "editor.codeActionsOnSave": {
+    "source.fixAll.eslint": true,
+    "source.organizeImports": false
+  },
+  // Enable eslint for all supported languages
+  "eslint.validate": [
+    "javascript",
+    "javascriptreact",
+    "typescript",
+    "typescriptreact",
+    "vue",
+    "html",
+    "markdown",
+    "json",
+    "jsonc",
+    "yaml"
+  ],
+
   "i18n-ally.sourceLanguage": "en",
   "i18n-ally.keystyle": "nested",
   "i18n-ally.localesPaths": "locales",
   "i18n-ally.sortKeys": true,
-  "prettier.enable": true,
-  "editor.codeActionsOnSave": {
-    "source.fixAll.eslint": true
-  },
   "files.associations": {
     "*.css": "postcss"
   },
-  "editor.formatOnSave": false,
   "svg.preview.background": "editor"
 }
