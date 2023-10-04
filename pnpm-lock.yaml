@@ -21,20 +21,20 @@ devDependencies:
     specifier: ^5.2.2
     version: 5.2.2
   valaxy:
-    specifier: 0.15.2
-    version: 0.15.2(@types/markdown-it@13.0.1)(@unhead/vue@1.7.4)(postcss@8.4.29)(typescript@5.2.2)
+    specifier: 0.15.3
+    version: 0.15.3(@types/markdown-it@13.0.1)(@unhead/vue@1.7.4)(postcss@8.4.29)(typescript@5.2.2)
   valaxy-addon-algolia:
     specifier: ^0.0.3
-    version: 0.0.3(@algolia/client-search@4.20.0)(search-insights@2.8.2)(valaxy@0.15.2)
+    version: 0.0.3(@algolia/client-search@4.20.0)(search-insights@2.8.2)(valaxy@0.15.3)
   valaxy-addon-components:
     specifier: ^0.0.2
     version: 0.0.2
   valaxy-addon-waline:
     specifier: ^0.1.1
-    version: 0.1.1(valaxy@0.15.2)
+    version: 0.1.1(valaxy@0.15.3)
   valaxy-theme-yun:
-    specifier: 0.15.2
-    version: 0.15.2
+    specifier: 0.15.3-alpha.0
+    version: 0.15.3-alpha.0
   vite-plugin-remote-assets:
     specifier: ^0.3.2
     version: 0.3.2(vite@4.4.10)
@@ -5220,14 +5220,14 @@ packages:
     resolution: {integrity: sha512-EPD5q1uXyFxJpCrLnCc1nHnq3gOa6DZBocAIiI2TaSCA7VCJ1UJDMagCzIkXNsUYfD1daK//LTEQ8xiIbrHtcw==}
     dev: true
 
-  /valaxy-addon-algolia@0.0.3(@algolia/client-search@4.20.0)(search-insights@2.8.2)(valaxy@0.15.2):
+  /valaxy-addon-algolia@0.0.3(@algolia/client-search@4.20.0)(search-insights@2.8.2)(valaxy@0.15.3):
     resolution: {integrity: sha512-FGwJgtlVmYcFxu732bKKnTigWbiiuJGRwegifptHKFxAaYMZreadcaCcxjZUffQk2EHbaQp8T/WuRo0R5+mBzA==}
     peerDependencies:
       valaxy: latest
     dependencies:
       '@docsearch/css': 3.5.2
       '@docsearch/js': 3.5.2(@algolia/client-search@4.20.0)(search-insights@2.8.2)
-      valaxy: 0.15.2(@types/markdown-it@13.0.1)(@unhead/vue@1.7.4)(postcss@8.4.29)(typescript@5.2.2)
+      valaxy: 0.15.3(@types/markdown-it@13.0.1)(@unhead/vue@1.7.4)(postcss@8.4.29)(typescript@5.2.2)
     transitivePeerDependencies:
       - '@algolia/client-search'
       - '@types/react'
@@ -5240,19 +5240,19 @@ packages:
     resolution: {integrity: sha512-J6JeNTagohF9fNvYaYiOwVHQGuhoWamy1P01mEUfzreacaJ3CqzJU1G/uSFMTvm3CXvMo8OAQCwqa+OqBG0dkw==}
     dev: true
 
-  /valaxy-addon-waline@0.1.1(valaxy@0.15.2):
+  /valaxy-addon-waline@0.1.1(valaxy@0.15.3):
     resolution: {integrity: sha512-IvVefifccHJP8asOGEBLf88298Xu1A6atH8qYo3bb+gKvUJBAzch0EvrvvFnP/J2ICHOwQbitSTYBHOqDY481g==}
     peerDependencies:
       valaxy: latest
     dependencies:
       '@waline/client': 2.15.8
-      valaxy: 0.15.2(@types/markdown-it@13.0.1)(@unhead/vue@1.7.4)(postcss@8.4.29)(typescript@5.2.2)
+      valaxy: 0.15.3(@types/markdown-it@13.0.1)(@unhead/vue@1.7.4)(postcss@8.4.29)(typescript@5.2.2)
     transitivePeerDependencies:
       - '@vue/composition-api'
     dev: true
 
-  /valaxy-theme-yun@0.15.2:
-    resolution: {integrity: sha512-/19rj9XdptFiPJJ/LB06TlIWf9OoA0+Zp6Ea78UjN+NWNxGkb5Bh1D87OPWNdLyZZS5hLjYVnF8xr4NWoDtLtQ==}
+  /valaxy-theme-yun@0.15.3-alpha.0:
+    resolution: {integrity: sha512-KXNNFf6NiHm1y/AlbVBBaSw3dHnW0t044r/XTzTW2QJShaMtBUtaFxmk3ek86GOYFMk5qLZgISJMmCMPMTRt/w==}
     dependencies:
       '@explosions/fireworks': 0.0.2
       '@iconify-json/ant-design': 1.1.10
@@ -5260,8 +5260,8 @@ packages:
       animejs: 3.2.1
     dev: true
 
-  /valaxy@0.15.2(@types/markdown-it@13.0.1)(@unhead/vue@1.7.4)(postcss@8.4.29)(typescript@5.2.2):
-    resolution: {integrity: sha512-/wKcqtsYMMwR3aoZke8c1wpjFIUN8dFzDGwniUVvAq7O7bdjapQv+uFPHfibT31LB83YKyx8zu0Bb637SuRfAw==}
+  /valaxy@0.15.3(@types/markdown-it@13.0.1)(@unhead/vue@1.7.4)(postcss@8.4.29)(typescript@5.2.2):
+    resolution: {integrity: sha512-0fyCwD1xiS9dNu3ORzqqlS4CQahl6j7y9YIDcthUNAJrHGdrmQ7ItiGll8r+ahpXHtTByKMdg4CzurVMkJVWqg==}
     engines: {node: ^14.18.0 || >=16.0.0}
     hasBin: true
     dependencies:
