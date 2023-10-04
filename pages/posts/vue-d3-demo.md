@@ -330,7 +330,7 @@ function yAxis(g) {
 ```js
 svg
   .append('g')
-  // eslint-disable-next-line @typescript-eslint/no-invalid-this
+  // eslint-disable-next-line ts/no-invalid-this
   .attr('fill', this.color)
   .selectAll('rect')
   .data(data)
