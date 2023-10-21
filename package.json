@@ -3,7 +3,7 @@
   "type": "module",
   "version": "2.0.0",
   "private": true,
-  "packageManager": "pnpm@8.8.0",
+  "packageManager": "pnpm@8.9.2",
   "description": "YunYouJun Blog",
   "author": {
     "email": "me@yunyoujun.cn",
@@ -44,18 +44,18 @@
     "typecheck": "vue-tsc --noEmit"
   },
   "devDependencies": {
-    "@antfu/eslint-config": "^1.0.0-beta.18",
+    "@antfu/eslint-config": "^1.0.0-beta.27",
     "@explosions/fireworks": "^0.0.2",
     "cross-env": "^7.0.3",
-    "eslint": "^8.50.0",
+    "eslint": "^8.52.0",
     "typescript": "^5.2.2",
-    "valaxy": "0.15.3",
+    "valaxy": "0.15.8",
     "valaxy-addon-algolia": "^0.0.3",
     "valaxy-addon-components": "^0.0.2",
     "valaxy-addon-waline": "^0.1.1",
-    "valaxy-theme-yun": "0.15.3-alpha.0",
+    "valaxy-theme-yun": "0.15.8",
     "vite-plugin-remote-assets": "^0.3.2",
     "vue-gtag-next": "^1.14.0",
-    "vue-tsc": "^1.8.15"
+    "vue-tsc": "^1.8.19"
   }
 }
