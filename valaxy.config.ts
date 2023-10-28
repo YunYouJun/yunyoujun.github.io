@@ -12,6 +12,12 @@ import { addonComponents } from 'valaxy-addon-components'
 export default defineValaxyConfig<UserThemeConfig> ({
   theme: 'yun',
 
+  modules: {
+    rss: {
+      enable: true,
+    },
+  },
+
   themeConfig: {
     banner: {
       enable: true,
