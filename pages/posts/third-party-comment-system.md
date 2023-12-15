@@ -44,7 +44,7 @@ categories:
 
 以下是小伙伴们的一些可以参考的优化手段。
 
-> [使 Disqus 不再拖累性能和页面加载 | Sukka's Blog](https://blog.skk.moe/post/prevent-disqus-from-slowing-your-site/)  
+> [使 Disqus 不再拖累性能和页面加载 | Sukka's Blog](https://blog.skk.moe/post/prevent-disqus-from-slowing-your-site/)
 > [在特殊地区科学使用 Disqus 评论系统 | ChrAlpha 的幻想乡](https://blog.ichr.me/post/use-disqus-conveniently/)
 
 其实如果不是因为被墙，我还是很想直接用 Disqus 的，但是我还是有评论就很高兴的人，所以不想因此而有过高门槛。
@@ -86,8 +86,8 @@ Gitalk 相比 Gitment 则持续维护了很久。所以首先肯定与感谢作�
 
 然后当用户想要评论时，点击链接跳转到对应 Issue 进行回复即可。这样登陆验证等全交给 GitHub 来做就可以了。
 
-> 我尝试提了个 ISSUE: [[Feature Request] Only render issues content without clientSecret](https://github.com/gitalk/gitalk/issues/383)  
-> ~~如果能得到回复和实现就再好不过。（不行的话，就日后有空尝试自己能不能写出来，嗯，有空，咕咕咕。）~~  
+> 我尝试提了个 ISSUE: [[Feature Request] Only render issues content without clientSecret](https://github.com/gitalk/gitalk/issues/383)
+> ~~如果能得到回复和实现就再好不过。（不行的话，就日后有空尝试自己能不能写出来，嗯，有空，咕咕咕。）~~
 > [utterances](https://utteranc.es/) 似乎很不错，可以作为 Gitalk 的替代品。
 
 ### [Valine](https://valine.js.org/)

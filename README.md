@@ -1,9 +1,10 @@
-# Hexo 站点源文件
+# [云游君的小站](https://www.yunyoujun.cn)站点源文件
 
 [![GitHub Pages](https://github.com/YunYouJun/yunyoujun.github.io/workflows/GitHub%20Pages/badge.svg)](https://github.com/YunYouJun/yunyoujun.github.io/actions)
 [![Netlify Status](https://api.netlify.com/api/v1/badges/4acb3c9b-fbcd-488e-be70-18942eb2669f/deploy-status)](https://app.netlify.com/sites/yunyoujun/deploys)
 
-Hexo 主题：[Yun](https://github.com/YunYouJun/hexo-theme-yun/)
+- 已迁移至 [valaxy](https://github.com/YunYouJun/valaxy) + [valaxy-theme-yun](https://github.com/YunYouJun/valaxy/tree/main/packages/valaxy-theme-yun)
+- 旧版 Hexo 主题：[Yun](https://github.com/YunYouJun/hexo-theme-yun/)
 
 - 主站：[yunyoujun.cn](https://www.yunyoujun.cn) | [yunyoujun.github.io](https://yunyoujun.github.io)
 - 备用：<https://yunyoujun.netlify.app>
@@ -50,6 +51,9 @@ git remote set-url --add origin https://e.coding.net/YunYouJun/yunyoujun.coding.
 - [~~yunyoujun.github.io - Travis CI~~](https://www.travis-ci.com/YunYouJun/yunyoujun.github.io)
 - [GitHub Actions](https://github.com/YunYouJun/yunyoujun.github.io/actions): 现已改为使用 GitHub Actions
 
+<details>
+<summary>旧版 - Hexo 版本</summary><br />
+
 ### Install Theme
 
 ```bash
@@ -57,6 +61,8 @@ git clone https://github.com/YunYouJun/hexo-theme-yun themes/yun
 ```
 
 > More info about [hexo-theme-yun](https://yun.yunyoujun.cn)
+
+</details>
 
 ## CDN
 
@@ -139,14 +145,4 @@ git commit -m 'xxx'
 
 ```bash
 chore(xxx): xxx
-```
-
-## FAQ
-
-### submodule
-
-[.gitmodules](.gitmodules)
-
-```bash
-git submodule add https://github.com/YunYouJun/hexo-theme-yun themes/yun
 ```

@@ -330,7 +330,7 @@ function yAxis(g) {
 ```js
 svg
   .append('g')
-  // eslint-disable-next-line ts/no-invalid-this
+
   .attr('fill', this.color)
   .selectAll('rect')
   .data(data)
@@ -353,7 +353,7 @@ svg.append('g').call(yAxis)
 
 将 `letter` 与 `frequency` 分别映射到 `name` 与 `value` 字段，并降序排列。
 
-> [Array.prototype.map() | MDN](https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Global_Objects/Array/map)  
+> [Array.prototype.map() | MDN](https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Global_Objects/Array/map)
 > [Array.prototype.sort() | MDN](https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Global_Objects/Array/sort)
 
 ```html
