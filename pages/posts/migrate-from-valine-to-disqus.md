@@ -15,7 +15,7 @@ categories:
 
 但是 Valine 本身加载速度确实很快，用着也挺好，且文章的访问量统计也依赖于此。又实在没有办法下定决心切换至 Disqus。
 
-> 「任何可以用 JavaScript 编写的应用程序最终都将用 JavaScript 编写。」  
+> 「任何可以用 JavaScript 编写的应用程序最终都将用 JavaScript 编写。」
 > In 2007, Jeff Atwood made the quote that was popularly referred to as Atwood's Law: “Any application that can be written in JavaScript, will eventually be written in JavaScript.”
 
 看到许多小伙伴们最终都选择了 Disqus。

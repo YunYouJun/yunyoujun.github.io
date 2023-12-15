@@ -44,14 +44,14 @@ categories:
 
 ### 安装 Node.js
 
-> **什么是 Node.js ？**  
-> 这得从什么是 JS 说起，JS 也就是 JavaScript。（为什么有种从盘古开天辟地开始的感觉）没错，JavaScript 就是网页的盘古。JavaScript 是一种编程语言，我们所见到的网页中的交互和逻辑处理几乎都是由 JavaScript 完成。  
+> **什么是 Node.js ？**
+> 这得从什么是 JS 说起，JS 也就是 JavaScript。（为什么有种从盘古开天辟地开始的感觉）没错，JavaScript 就是网页的盘古。JavaScript 是一种编程语言，我们所见到的网页中的交互和逻辑处理几乎都是由 JavaScript 完成。
 > JavaScript 语法简单，易学易用。（当然也请不要小瞧它，虽然它入门门槛低，但上限同样也很高。包括但不限于实现网站前后端，手机桌面应用程序，机器学习，计算机图形学等。）
 > 在 Node.js 诞生前，JavaScript 都运行于浏览器端。也就是说，它是鱼，浏览器是装满了水的水缸。
-> 2008 年，Chrome V8 诞生。2009 年，Node.js 诞生。并成为 GitHub 早期最著名的开源项目。GitHub 可能大家已有所了解，后续再说。  
-> Node.js 便是一个基于 Chrome V8 引擎的 JavaScript 运行环境。（当年第一次看到这句话时，我也一脸懵逼。）按照我的理解，JavaScript 是鱼，Chrome V8 就是抽水机，Node.js 则把这台抽水机也装在你电脑上。于是你的电脑也有了 Node.js 这个和浏览器相似的水缸，也可以在里面运行 JavaScript 了！  
-> 当然 Node.js 和浏览器端还是因为自身定位和一些历史原因而有些许区别的，不再展开。  
-> [Node.js | 百度百科](https://baike.baidu.com/item/node.js/7567977)  
+> 2008 年，Chrome V8 诞生。2009 年，Node.js 诞生。并成为 GitHub 早期最著名的开源项目。GitHub 可能大家已有所了解，后续再说。
+> Node.js 便是一个基于 Chrome V8 引擎的 JavaScript 运行环境。（当年第一次看到这句话时，我也一脸懵逼。）按照我的理解，JavaScript 是鱼，Chrome V8 就是抽水机，Node.js 则把这台抽水机也装在你电脑上。于是你的电脑也有了 Node.js 这个和浏览器相似的水缸，也可以在里面运行 JavaScript 了！
+> 当然 Node.js 和浏览器端还是因为自身定位和一些历史原因而有些许区别的，不再展开。
+> [Node.js | 百度百科](https://baike.baidu.com/item/node.js/7567977)
 > [JavaScript | MDN](https://developer.mozilla.org/zh-CN/docs/Web/JavaScript)
 
 [下载｜ Node.js](https://nodejs.org/zh-cn/)
@@ -115,7 +115,7 @@ macOS 用户可以下载官网的安装包进行安装，也可以直接安装 A
 
 这一部分内容，你也可以放到本地调试并预览成功后并打算线上部署的时候，再回过头来看。
 
-> GitHub 一听便与 Git 有所渊源。`Git` 在英文中是懒人、饭桶之意。`Hub` 则是中心、集线器的意思。譬如 USB 集线器就是 USB Hub。所以 GitHub 就是饭桶中心（~~大雾~~）。  
+> GitHub 一听便与 Git 有所渊源。`Git` 在英文中是懒人、饭桶之意。`Hub` 则是中心、集线器的意思。譬如 USB 集线器就是 USB Hub。所以 GitHub 就是饭桶中心（~~大雾~~）。
 > GitHub 是全世界最大的开源项目与代码托管平台，也是众多开发者的交流场所。~~还是全球最大的同性交友网站~~。
 > 而代码托管本身用到的正是上文提到的 Git 技术。
 
@@ -174,7 +174,7 @@ npm install hexo-cli -g
 
 此时，请先通过 `cd` 进入你本地电脑打算存储网站代码的文件夹目录。（或者右键文件夹 Git Bash Here）
 
-> [cd | DOS 命令](https://baike.baidu.com/item/cd/3516393)  
+> [cd | DOS 命令](https://baike.baidu.com/item/cd/3516393)
 > [cd （LINUXSHELL 命令）](https://baike.baidu.com/item/cd/3516411)
 
 譬如：

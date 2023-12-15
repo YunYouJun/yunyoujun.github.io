@@ -10,8 +10,8 @@ categories:
 
 ## 前言
 
-> 因为「你的日记」开发不是很活跃，且经常出现无法连接等 BUG，而本身也未提供导出功能，所以我写了该[工具](https://github.com/YunYouJun/export-nideriji/archive/master.zip)用于迁移至其他日记软件。  
-> 此外因为我之后选择的是「一本日记」，所以也可以转换为「一本日记」的数据格式用于导入。  
+> 因为「你的日记」开发不是很活跃，且经常出现无法连接等 BUG，而本身也未提供导出功能，所以我写了该[工具](https://github.com/YunYouJun/export-nideriji/archive/master.zip)用于迁移至其他日记软件。
+> 此外因为我之后选择的是「一本日记」，所以也可以转换为「一本日记」的数据格式用于导入。
 > 我自己也已经成功迁移，所以该项目不会再维护，但如果你也有此需要，希望能对你有所帮助。
 
 GitHub: [export-nideriji](https://github.com/YunYouJun/export-nideriji)
