@@ -12,3 +12,5 @@
 declare interface window {
   __DEV__: boolean
 }
+
+declare module 'valaxy-addon-*'
