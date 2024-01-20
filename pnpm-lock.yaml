@@ -21,20 +21,20 @@ devDependencies:
     specifier: ^5.3.3
     version: 5.3.3
   valaxy:
-    specifier: 0.17.0
-    version: 0.17.0(@types/markdown-it@13.0.7)(@unhead/shared@1.8.10)(postcss@8.4.33)(typescript@5.3.3)(unhead@1.8.10)
+    specifier: ^0.17.2
+    version: 0.17.2(@types/markdown-it@13.0.7)(@unhead/shared@1.8.10)(postcss@8.4.33)(typescript@5.3.3)(unhead@1.8.10)
   valaxy-addon-algolia:
     specifier: ^0.0.3
-    version: 0.0.3(search-insights@2.13.0)(valaxy@0.17.0)
+    version: 0.0.3(@algolia/client-search@4.22.1)(search-insights@2.13.0)(valaxy@0.17.2)
   valaxy-addon-components:
     specifier: ^0.0.2
     version: 0.0.2
   valaxy-addon-waline:
     specifier: ^0.1.1
-    version: 0.1.1(typescript@5.3.3)(valaxy@0.17.0)
+    version: 0.1.1(typescript@5.3.3)(valaxy@0.17.2)
   valaxy-theme-yun:
-    specifier: 0.17.0
-    version: 0.17.0
+    specifier: ^0.17.2
+    version: 0.17.2
   vite-plugin-remote-assets:
     specifier: ^0.4.1
     version: 0.4.1(vite@5.0.12)
@@ -52,51 +52,47 @@ packages:
     engines: {node: '>=0.10.0'}
     dev: true
 
-  /@algolia/autocomplete-core@1.9.3(algoliasearch@4.22.1)(search-insights@2.13.0):
+  /@algolia/autocomplete-core@1.9.3(@algolia/client-search@4.22.1)(algoliasearch@4.22.1)(search-insights@2.13.0):
     resolution: {integrity: sha512-009HdfugtGCdC4JdXUbVJClA0q0zh24yyePn+KUGk3rP7j8FEe/m5Yo/z65gn6nP/cM39PxpzqKrL7A6fP6PPw==}
     dependencies:
-      '@algolia/autocomplete-plugin-algolia-insights': 1.9.3(algoliasearch@4.22.1)(search-insights@2.13.0)
-      '@algolia/autocomplete-shared': 1.9.3(algoliasearch@4.22.1)
+      '@algolia/autocomplete-plugin-algolia-insights': 1.9.3(@algolia/client-search@4.22.1)(algoliasearch@4.22.1)(search-insights@2.13.0)
+      '@algolia/autocomplete-shared': 1.9.3(@algolia/client-search@4.22.1)(algoliasearch@4.22.1)
     transitivePeerDependencies:
       - '@algolia/client-search'
       - algoliasearch
       - search-insights
     dev: true
 
-  /@algolia/autocomplete-plugin-algolia-insights@1.9.3(algoliasearch@4.22.1)(search-insights@2.13.0):
+  /@algolia/autocomplete-plugin-algolia-insights@1.9.3(@algolia/client-search@4.22.1)(algoliasearch@4.22.1)(search-insights@2.13.0):
     resolution: {integrity: sha512-a/yTUkcO/Vyy+JffmAnTWbr4/90cLzw+CC3bRbhnULr/EM0fGNvM13oQQ14f2moLMcVDyAx/leczLlAOovhSZg==}
     peerDependencies:
       search-insights: '>= 1 < 3'
     dependencies:
-      '@algolia/autocomplete-shared': 1.9.3(algoliasearch@4.22.1)
+      '@algolia/autocomplete-shared': 1.9.3(@algolia/client-search@4.22.1)(algoliasearch@4.22.1)
       search-insights: 2.13.0
     transitivePeerDependencies:
       - '@algolia/client-search'
       - algoliasearch
     dev: true
 
-  /@algolia/autocomplete-preset-algolia@1.9.3(algoliasearch@4.22.1):
+  /@algolia/autocomplete-preset-algolia@1.9.3(@algolia/client-search@4.22.1)(algoliasearch@4.22.1):
     resolution: {integrity: sha512-d4qlt6YmrLMYy95n5TB52wtNDr6EgAIPH81dvvvW8UmuWRgxEtY0NJiPwl/h95JtG2vmRM804M0DSwMCNZlzRA==}
     peerDependencies:
       '@algolia/client-search': '>= 4.9.1 < 6'
       algoliasearch: '>= 4.9.1 < 6'
-    peerDependenciesMeta:
-      '@algolia/client-search':
-        optional: true
     dependencies:
-      '@algolia/autocomplete-shared': 1.9.3(algoliasearch@4.22.1)
+      '@algolia/autocomplete-shared': 1.9.3(@algolia/client-search@4.22.1)(algoliasearch@4.22.1)
+      '@algolia/client-search': 4.22.1
       algoliasearch: 4.22.1
     dev: true
 
-  /@algolia/autocomplete-shared@1.9.3(algoliasearch@4.22.1):
+  /@algolia/autocomplete-shared@1.9.3(@algolia/client-search@4.22.1)(algoliasearch@4.22.1):
     resolution: {integrity: sha512-Wnm9E4Ye6Rl6sTTqjoymD+l8DjSTHsHboVRYrKgEt8Q7UHm9nYbqhN/i0fhUYA3OAEH7WA8x3jfpnmJm3rKvaQ==}
     peerDependencies:
       '@algolia/client-search': '>= 4.9.1 < 6'
       algoliasearch: '>= 4.9.1 < 6'
-    peerDependenciesMeta:
-      '@algolia/client-search':
-        optional: true
     dependencies:
+      '@algolia/client-search': 4.22.1
       algoliasearch: 4.22.1
     dev: true
 
@@ -667,10 +663,10 @@ packages:
     resolution: {integrity: sha512-SPiDHaWKQZpwR2siD0KQUwlStvIAnEyK6tAE2h2Wuoq8ue9skzhlyVQ1ddzOxX6khULnAALDiR/isSF3bnuciA==}
     dev: true
 
-  /@docsearch/js@3.5.2(search-insights@2.13.0):
+  /@docsearch/js@3.5.2(@algolia/client-search@4.22.1)(search-insights@2.13.0):
     resolution: {integrity: sha512-p1YFTCDflk8ieHgFJYfmyHBki1D61+U9idwrLh+GQQMrBSP3DLGKpy0XUJtPjAOPltcVbqsTjiPFfH7JImjUNg==}
     dependencies:
-      '@docsearch/react': 3.5.2(search-insights@2.13.0)
+      '@docsearch/react': 3.5.2(@algolia/client-search@4.22.1)(search-insights@2.13.0)
       preact: 10.19.3
     transitivePeerDependencies:
       - '@algolia/client-search'
@@ -680,7 +676,7 @@ packages:
       - search-insights
     dev: true
 
-  /@docsearch/react@3.5.2(search-insights@2.13.0):
+  /@docsearch/react@3.5.2(@algolia/client-search@4.22.1)(search-insights@2.13.0):
     resolution: {integrity: sha512-9Ahcrs5z2jq/DcAvYtvlqEBHImbm4YJI8M9y0x6Tqg598P40HTEkX7hsMcIuThI+hTFxRGZ9hll0Wygm2yEjng==}
     peerDependencies:
       '@types/react': '>= 16.8.0 < 19.0.0'
@@ -697,8 +693,8 @@ packages:
       search-insights:
         optional: true
     dependencies:
-      '@algolia/autocomplete-core': 1.9.3(algoliasearch@4.22.1)(search-insights@2.13.0)
-      '@algolia/autocomplete-preset-algolia': 1.9.3(algoliasearch@4.22.1)
+      '@algolia/autocomplete-core': 1.9.3(@algolia/client-search@4.22.1)(algoliasearch@4.22.1)(search-insights@2.13.0)
+      '@algolia/autocomplete-preset-algolia': 1.9.3(@algolia/client-search@4.22.1)(algoliasearch@4.22.1)
       '@docsearch/css': 3.5.2
       algoliasearch: 4.22.1
       search-insights: 2.13.0
@@ -5580,14 +5576,14 @@ packages:
     resolution: {integrity: sha512-EPD5q1uXyFxJpCrLnCc1nHnq3gOa6DZBocAIiI2TaSCA7VCJ1UJDMagCzIkXNsUYfD1daK//LTEQ8xiIbrHtcw==}
     dev: true
 
-  /valaxy-addon-algolia@0.0.3(search-insights@2.13.0)(valaxy@0.17.0):
+  /valaxy-addon-algolia@0.0.3(@algolia/client-search@4.22.1)(search-insights@2.13.0)(valaxy@0.17.2):
     resolution: {integrity: sha512-FGwJgtlVmYcFxu732bKKnTigWbiiuJGRwegifptHKFxAaYMZreadcaCcxjZUffQk2EHbaQp8T/WuRo0R5+mBzA==}
     peerDependencies:
       valaxy: latest
     dependencies:
       '@docsearch/css': 3.5.2
-      '@docsearch/js': 3.5.2(search-insights@2.13.0)
-      valaxy: 0.17.0(@types/markdown-it@13.0.7)(@unhead/shared@1.8.10)(postcss@8.4.33)(typescript@5.3.3)(unhead@1.8.10)
+      '@docsearch/js': 3.5.2(@algolia/client-search@4.22.1)(search-insights@2.13.0)
+      valaxy: 0.17.2(@types/markdown-it@13.0.7)(@unhead/shared@1.8.10)(postcss@8.4.33)(typescript@5.3.3)(unhead@1.8.10)
     transitivePeerDependencies:
       - '@algolia/client-search'
       - '@types/react'
@@ -5600,20 +5596,20 @@ packages:
     resolution: {integrity: sha512-J6JeNTagohF9fNvYaYiOwVHQGuhoWamy1P01mEUfzreacaJ3CqzJU1G/uSFMTvm3CXvMo8OAQCwqa+OqBG0dkw==}
     dev: true
 
-  /valaxy-addon-waline@0.1.1(typescript@5.3.3)(valaxy@0.17.0):
+  /valaxy-addon-waline@0.1.1(typescript@5.3.3)(valaxy@0.17.2):
     resolution: {integrity: sha512-IvVefifccHJP8asOGEBLf88298Xu1A6atH8qYo3bb+gKvUJBAzch0EvrvvFnP/J2ICHOwQbitSTYBHOqDY481g==}
     peerDependencies:
       valaxy: latest
     dependencies:
       '@waline/client': 2.15.8(typescript@5.3.3)
-      valaxy: 0.17.0(@types/markdown-it@13.0.7)(@unhead/shared@1.8.10)(postcss@8.4.33)(typescript@5.3.3)(unhead@1.8.10)
+      valaxy: 0.17.2(@types/markdown-it@13.0.7)(@unhead/shared@1.8.10)(postcss@8.4.33)(typescript@5.3.3)(unhead@1.8.10)
     transitivePeerDependencies:
       - '@vue/composition-api'
       - typescript
     dev: true
 
-  /valaxy-theme-yun@0.17.0:
-    resolution: {integrity: sha512-3gPsgN55iKQcnkPT6asQNRZK0IfyRHO/LFbTp9t8yuCnzEaFDw+oFcynRt//6MHmXQf5vtTZAZ1S8nC0r5YE8w==}
+  /valaxy-theme-yun@0.17.2:
+    resolution: {integrity: sha512-Uk3Xrr7KVgalabfzeViZ856yV5Xbj5D5jEV3B6w21Wrg8hm19wG0kCjQAG2MUoXya0kKSYqQdNP19vTfOLDJcA==}
     dependencies:
       '@explosions/fireworks': 0.0.2
       '@iconify-json/ant-design': 1.1.13
@@ -5621,8 +5617,8 @@ packages:
       animejs: 3.2.2
     dev: true
 
-  /valaxy@0.17.0(@types/markdown-it@13.0.7)(@unhead/shared@1.8.10)(postcss@8.4.33)(typescript@5.3.3)(unhead@1.8.10):
-    resolution: {integrity: sha512-RP1eP0jRG8eWBL7piuO7R8nujLtdLGpuEr/fn/xgzVZ5xxrZhHSy8rExi++lMTgJWnqoBOfVt/HXcNHx9KSJJQ==}
+  /valaxy@0.17.2(@types/markdown-it@13.0.7)(@unhead/shared@1.8.10)(postcss@8.4.33)(typescript@5.3.3)(unhead@1.8.10):
+    resolution: {integrity: sha512-UHVOj4MnKbLB7v4LctO2JP+sIo050r44vpmgZD8jjD2cMTNNeDmaWX2NDnHnU8ln5pHFef0wVvHvy0UtrnrfuA==}
     engines: {node: ^14.18.0 || >=16.0.0}
     hasBin: true
     dependencies:
