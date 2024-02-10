@@ -36,7 +36,7 @@ categories:
 
 ![云游君](https://r2.yunyoujun.cn/images/ai-sfc-yyj.webp)
 ![蔡徐坤](https://r2.yunyoujun.cn/images/ai-sfc-cxk.webp)
-![股市](https://r2.yunyoujun.cn/images/ai-sfc-gushi.webp)
+![股市](https://r2.yunyoujun.cn/images/ai-sfc-gushi.webp)_有趣的是，这张图在公众号发不出来_
 
 ## 背后的故事
 
