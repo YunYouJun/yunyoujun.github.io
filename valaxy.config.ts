@@ -37,4 +37,12 @@ export default defineValaxyConfig<UserThemeConfig> ({
       comment: true,
     }),
   ],
+
+  vue: {
+    template: {
+      compilerOptions: {
+        isCustomElement: (tag: string) => ['meting-js'].includes(tag),
+      },
+    },
+  },
 })

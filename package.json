@@ -49,11 +49,11 @@
     "cross-env": "^7.0.3",
     "eslint": "^8.56.0",
     "typescript": "^5.3.3",
-    "valaxy": "^0.18.0",
+    "valaxy": "^0.18.1",
     "valaxy-addon-algolia": "^0.0.3",
     "valaxy-addon-components": "^0.0.2",
     "valaxy-addon-waline": "^0.1.1",
-    "valaxy-theme-yun": "^0.18.0",
+    "valaxy-theme-yun": "^0.18.1",
     "vite-plugin-remote-assets": "^0.4.1",
     "vue-gtag-next": "^1.14.0",
     "vue-tsc": "^1.8.27"
