@@ -218,11 +218,9 @@ module.exports = {
 
 进入 `src/router/index.js` , 将路径修改为相对路径
 
-```js
-import HelloWorld from '../components/HelloWorld'
-import HelloWorld from '@/components/HelloWorld'
-
-// ---
+```diff
+- import HelloWorld from '@/components/HelloWorld'
++ import HelloWorld from '../components/HelloWorld'
 ```
 
 再次运行 `npm run dev`, 打开 `http://localhost:1234` 即可看到 Vue 的主页了。

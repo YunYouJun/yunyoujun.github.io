@@ -103,22 +103,22 @@ yarn add jimp @canvas/image-data
 ```
 
 ```typescript
-import jimp from "jimp";
-import ImageData from "@canvas/image-data";
-import { imageToText } from "char-dust";
-import { resolve } from "path";
+import { resolve } from 'node:path'
+import jimp from 'jimp'
+import ImageData from '@canvas/image-data'
+import { imageToText } from 'char-dust'
 
-jimp.read(resolve(__dirname, "./cat-of-the-rebellion.jpg")).then((image) => {
-  image.scale(5);
+jimp.read(resolve(__dirname, './cat-of-the-rebellion.jpg')).then((image) => {
+  image.scale(5)
   const imageData = new ImageData(
     Uint8ClampedArray.from(image.bitmap.data),
     image.bitmap.width,
     image.bitmap.height
-  );
+  )
 
-  const text = imageToText(imageData);
-  console.log(text);
-});
+  const text = imageToText(imageData)
+  console.log(text)
+})
 ```
 
 万事大吉。

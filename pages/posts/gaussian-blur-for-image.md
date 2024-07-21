@@ -141,7 +141,7 @@ TypeScript 代码：
 
 ```typescript
 // 用了里面的矩阵（虽然自己遍历也行）
-import * as math from "mathjs";
+import * as math from 'mathjs'
 /**
  * 计算高斯权重数值
  * @param x X坐标
@@ -149,12 +149,12 @@ import * as math from "mathjs";
  * @param sigma
  */
 function calculateGaussianWeight(x: number, y: number, sigma: number) {
-  const PI = Math.PI;
+  const PI = Math.PI
   // 方差
-  const variance = sigma * sigma;
-  const weight =
-    (1 / (2 * PI * variance)) * Math.exp(-(x * x + y * y) / (2 * variance));
-  return weight;
+  const variance = sigma * sigma
+  const weight
+    = (1 / (2 * PI * variance)) * Math.exp(-(x * x + y * y) / (2 * variance))
+  return weight
 }
 
 /**
@@ -164,21 +164,21 @@ function calculateGaussianWeight(x: number, y: number, sigma: number) {
  */
 export function generateGaussianMatrix(radius: number, sigma?: number) {
   if (!sigma) {
-    sigma = 0.3 * (radius - 1) + 0.8;
+    sigma = 0.3 * (radius - 1) + 0.8
   }
 
   // 矩阵尺寸
-  const mSize = radius * 2 + 1;
-  let gMatrix = math.matrix(math.ones(mSize, mSize));
+  const mSize = radius * 2 + 1
+  let gMatrix = math.matrix(math.ones(mSize, mSize))
 
   gMatrix.forEach((val, index) => {
-    const x = index[0] - radius;
-    const y = index[1] - radius;
-    gMatrix.set(index as any, calculateGaussianWeight(x, y, sigma));
-  });
+    const x = index[0] - radius
+    const y = index[1] - radius
+    gMatrix.set(index as any, calculateGaussianWeight(x, y, sigma))
+  })
 
-  gMatrix = normalization(gMatrix);
-  return gMatrix;
+  gMatrix = normalization(gMatrix)
+  return gMatrix
 }
 ```
 
@@ -190,8 +190,8 @@ export function generateGaussianMatrix(radius: number, sigma?: number) {
  * @param matrix
  */
 function normalization(matrix: math.Matrix) {
-  const sum = math.sum(matrix);
-  return math.divide(matrix, sum) as math.Matrix;
+  const sum = math.sum(matrix)
+  return math.divide(matrix, sum) as math.Matrix
 }
 ```
 
@@ -206,8 +206,8 @@ export function blur(
   height: number,
   options: BlurOptions
 ) {
-  const data = imageData.data;
-  const originData = new Uint8ClampedArray(imageData.data);
+  const data = imageData.data
+  const originData = new Uint8ClampedArray(imageData.data)
 
   /**
    * 获取像素
@@ -216,42 +216,43 @@ export function blur(
    */
   function getPixel(x: number, y: number) {
     if (x < 0 || x >= height || y < 0 || y >= width) {
-      return [0, 0, 0, 0];
-    } else {
-      const p = (x * width + y) * 4;
-      return originData.subarray(p, p + 4);
+      return [0, 0, 0, 0]
+    }
+    else {
+      const p = (x * width + y) * 4
+      return originData.subarray(p, p + 4)
     }
   }
 
   const gMatrix = generateGaussianMatrix(
     options.radius,
     options.sigma ? options.sigma : null
-  );
+  )
 
-  const radius = options.radius;
+  const radius = options.radius
 
-  let i = 0;
+  let i = 0
   for (let x = 0; x < height; x++) {
     for (let y = 0; y < width; y++) {
-      let r = 0;
-      let g = 0;
-      let b = 0;
-      let a = 0;
+      let r = 0
+      let g = 0
+      let b = 0
+      let a = 0
       gMatrix.forEach((val, index) => {
-        const dx = index[0] - radius;
-        const dy = index[1] - radius;
+        const dx = index[0] - radius
+        const dy = index[1] - radius
 
-        const pixel = getPixel(x + dx, y + dy);
-        r += val * pixel[0];
-        g += val * pixel[1];
-        b += val * pixel[2];
-        a += val * pixel[3];
-      });
-      data.set([r, g, b, a], i);
-      i += 4;
+        const pixel = getPixel(x + dx, y + dy)
+        r += val * pixel[0]
+        g += val * pixel[1]
+        b += val * pixel[2]
+        a += val * pixel[3]
+      })
+      data.set([r, g, b, a], i)
+      i += 4
     }
   }
-  return imageData;
+  return imageData
 }
 ```
 
@@ -285,52 +286,52 @@ emmm，可是速度很慢，1119\*559 模糊半径 30px 便花了足足 137007ms
 
 ```typescript
 // 复用计算高斯权重的函数
-import { calculateGaussianWeight } from "./index";
+import { calculateGaussianWeight } from './index'
 export class Blur {
-  radius: number;
-  canvas: HTMLCanvasElement;
-  ctx: CanvasRenderingContext2D;
+  radius: number
+  canvas: HTMLCanvasElement
+  ctx: CanvasRenderingContext2D
   constructor(options: BlurOptions) {
-    this.radius = options.radius || 3;
+    this.radius = options.radius || 3
   }
 
   initCanvas(canvas: HTMLCanvasElement) {
-    this.canvas = canvas;
-    this.ctx = canvas.getContext("2d");
+    this.canvas = canvas
+    this.ctx = canvas.getContext('2d')
   }
 
   gaussianBlur() {
-    const radius = this.radius;
-    const canvas = this.canvas;
-    const ctx = this.ctx;
+    const radius = this.radius
+    const canvas = this.canvas
+    const ctx = this.ctx
 
     // 矩阵尺寸
-    const mSize = radius * 2 + 1;
-    let gMatrix = math.matrix(math.ones(mSize, mSize));
+    const mSize = radius * 2 + 1
+    const gMatrix = math.matrix(math.ones(mSize, mSize))
 
-    let sum = 0;
-    let sigma = 0.3 * (radius - 1) + 0.8;
-    const step = radius < 3 ? 1 : 2;
+    let sum = 0
+    const sigma = 0.3 * (radius - 1) + 0.8
+    const step = radius < 3 ? 1 : 2
 
     // 跳着计算出高斯权重（所以总和不一样）
     for (let y = -radius; y <= radius; y += step) {
       for (let x = -radius; x <= radius; x += step) {
-        let weight = calculateGaussianWeight(x, y, sigma);
-        gMatrix.set([x + radius, y + radius], weight);
-        sum += weight;
+        const weight = calculateGaussianWeight(x, y, sigma)
+        gMatrix.set([x + radius, y + radius], weight)
+        sum += weight
       }
     }
 
     // 绘制不同透明度的原图，并偏移不同位置，叠加到原图上。
     for (let y = -radius; y <= radius; y += step) {
       for (let x = -radius; x <= radius; x += step) {
-        ctx.globalAlpha =
-          (gMatrix.get([x + radius, y + radius]) / sum) * radius;
-        ctx.drawImage(canvas, x, y);
+        ctx.globalAlpha
+          = (gMatrix.get([x + radius, y + radius]) / sum) * radius
+        ctx.drawImage(canvas, x, y)
       }
     }
 
-    ctx.globalAlpha = 1;
+    ctx.globalAlpha = 1
   }
 }
 ```
