@@ -28,7 +28,8 @@ updated: 2017-01-23 21:04:48
 <script
   type="text/javascript"
   src="https://cdn.jsdelivr.net/npm/canvas-nest.js/dist/canvas-nest.js"
-></script>
+>
+</script>
 ```
 
 ### 自定义样式

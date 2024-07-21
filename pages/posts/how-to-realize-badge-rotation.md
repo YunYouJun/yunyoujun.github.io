@@ -84,8 +84,8 @@ katex: true
 > So easy? 此时还基本无需考虑动画的问题。因为手指移动是连续的，旋转就是连续的。
 
 ```typescript
-const deltaX = curPos.x - this.lastPos.x;
-model.eulerAngles.y += deltaX;
+const deltaX = curPos.x - this.lastPos.x
+model.eulerAngles.y += deltaX
 ```
 
 > setInterval VS setTimeout VS requestAnimationFrame
@@ -147,26 +147,26 @@ $$ v = \frac{\Delta x}{\Delta t} $$
 
 ```typescript
 // 创建动画实例，具体实现见后文
-const inertiaAnimation = createInertiaAnimation({...})
+const inertiaAnimation = createInertiaAnimation({/* ... */})
 
 // 滑动距离
-const deltaX =
-  e.changedTouches[0].clientX - this.prePos.x;
+const deltaX
+  = e.changedTouches[0].clientX - this.prePos.x
 
-const touchEndTime = new Date().valueOf();
+const touchEndTime = new Date().valueOf()
 // 滑动时间
-const deltaTime = touchEndTime - touchStartTime;
+const deltaTime = touchEndTime - touchStartTime
 
 /**
  * 初始速度，每 ms 旋转速度（设顺时针为正数）
  * deltaX <= 0 为顺时针
  */
-let speed = - deltaX / deltaTime;
+const speed = -deltaX / deltaTime
 
 // 将速度赋予动画实例，播放动画
-inertiaAnimation.playAnimation = true;
-inertiaAnimation.speed = speed;
-inertiaAnimation.run();
+inertiaAnimation.playAnimation = true
+inertiaAnimation.speed = speed
+inertiaAnimation.run()
 ```
 
 ### 徽章旋转衰减
@@ -190,9 +190,9 @@ inertiaAnimation.run();
  * @param {number} timestamp
  */
 function step(timestamp) {
-  ...
-  speed *= u;
-  ...
+  // ...
+  speed *= u
+  // ...
 }
 ```
 
@@ -223,13 +223,14 @@ function step(timestamp) {
 
 ```typescript
 // 一些乱七八糟的取余处理（因为会大于 180 嘛）
-const remainder = getRotation() % 180;
-const positiveRemainder = remainder < 0 ? remainder + 180 : remainder;
+const remainder = getRotation() % 180
+const positiveRemainder = remainder < 0 ? remainder + 180 : remainder
 
 if (positiveRemainder >= 90 && positiveRemainder < 180) {
-  speed -= gravity;
-} else if (positiveRemainder > 0 && positiveRemainder < 90) {
-  speed += gravity;
+  speed -= gravity
+}
+else if (positiveRemainder > 0 && positiveRemainder < 90) {
+  speed += gravity
 }
 ```
 
@@ -253,23 +254,24 @@ if (positiveRemainder >= 90 && positiveRemainder < 180) {
 function step(timestamp) {
   // 继续播放动画的条件（需要避免和后续的陀螺仪/拖动等冲突）
   if (
-    _this.playAnimation &&
-    (Math.abs(speed) > toleratedSpeed ||
-      (positiveRemainder > toleratedAngel
-      && positiveRemainder < 180 - toleratedAngel))
+    _this.playAnimation
+    && (Math.abs(speed) > toleratedSpeed
+    || (positiveRemainder > toleratedAngel
+    && positiveRemainder < 180 - toleratedAngel))
   ) {
     // 记录是否正在播放动画
-    _this.isPlaying = true;
+    _this.isPlaying = true
 
-    ...
+    // ...
     // 根据时间和速度，计算每一帧徽章应该旋转的角度
-    const deltaRotation = speed * elapsed;
-    setRotation(deltaRotation);
-    ...
+    const deltaRotation = speed * elapsed
+    setRotation(deltaRotation)
+    // ...
     // 继续播放动画
-    window.requestAnimationFrame(step);
-  } else {
-    _this.isPlaying = false;
+    window.requestAnimationFrame(step)
+  }
+  else {
+    _this.isPlaying = false
   }
 }
 ```
@@ -287,31 +289,31 @@ export interface InertiaAnimationOptions {
   /**
    * 初速度
    */
-  speed?: number;
+  speed?: number
   /**
    * 水平重力影响系数
    */
-  gravity?: number;
+  gravity?: number
   /**
    * 衰减系数
    */
-  u?: number;
+  u?: number
   /**
    * 最后可忽略的速度
    */
-  toleratedSpeed?: 0.0005;
+  toleratedSpeed?: 0.0005
   /**
    * 最后可忽略的角度
    */
-  toleratedAngel?: 3;
+  toleratedAngel?: 3
   /**
    * 获取旋转角度
    */
-  getRotation?: () => number;
+  getRotation?: () => number
   /**
    * 设置旋转角度
    */
-  setRotation?: (deltaRotation: number) => void;
+  setRotation?: (deltaRotation: number) => void
 }
 ```
 
@@ -323,13 +325,12 @@ export interface InertiaAnimationOptions {
  * 创建旋转惯性动画
  *
  * @param {*} options
- * @param {Function} callback 回调函数 设置状态
  */
 export function createInertiaAnimation(
   options: InertiaAnimationOptions
 ) {
   return {
-    ...
+    // ...
   }
 }
 ```
@@ -354,12 +355,12 @@ export function createInertiaAnimation(
 const inertiaAnimation = createInertiaAnimation({
   speed: 0.2,
   getRotation() {
-    return rotateY.value;
+    return rotateY.value
   },
   setRotation(deltaRotation) {
-    rotateY.value -= deltaRotation;
+    rotateY.value -= deltaRotation
   },
-});
+})
 ```
 
 ### 最后一公里
@@ -372,13 +373,13 @@ const inertiaAnimation = createInertiaAnimation({
 > 用户打开徽章时，进行缓动，让用户知道它是可拖动的。此外这可以和此后的惯性动画共用一个实例，仅需赋予一个开始的初速度，即可快速实现。（也体现了此前优化封装的好处）
 
 ```typescript
-const inertiaAnimation = createInertiaAnimation();
-...
+const inertiaAnimation = createInertiaAnimation()
+// ...
 game.run(options, () => {
-  inertiaAnimation.playAnimation = true;
+  inertiaAnimation.playAnimation = true
   // 赋予一个微小的初速度，并播放动画
-  inertiaAnimation.speed = 0.2;
-  inertiaAnimation.run();
+  inertiaAnimation.speed = 0.2
+  inertiaAnimation.run()
 })
 ```
 
@@ -390,10 +391,10 @@ game.run(options, () => {
 
 ```typescript
 // 轻拍
-const tapSpeed = 0.3;
+const tapSpeed = 0.3
 if (Math.abs(deltaX) < 5 && deltaTime < 200) {
-  const pageWidth = document.documentElement.clientWidth;
-  speed = this.prePos.x > pageWidth / 2 ? -tapSpeed : tapSpeed;
+  const pageWidth = document.documentElement.clientWidth
+  speed = this.prePos.x > pageWidth / 2 ? -tapSpeed : tapSpeed
 }
 ```
 
@@ -411,12 +412,13 @@ if (Math.abs(deltaX) < 5 && deltaTime < 200) {
 - 网页 API `deviceorientation` iOS 兼容问题
 
 ```typescript
-window.addEventListener("deviceorientation", (event) => {
-  ...
+window.addEventListener('deviceorientation', (event) => {
+  // ...
   // gamma: 从左到右
-  let deltaGamma = event.gamma - this.lastGamma;
-  ...
-}, true);
+  // eslint-disable-next-line prefer-const
+  let deltaGamma = event.gamma - this.lastGamma
+  // ...
+}, true)
 ```
 
 > 查询 [DeviceOrientationEvent API | Can I use](https://caniuse.com/mdn-api_deviceorientationevent) 其实可以发现 iOS 网页的这个事件有兼容问题。
@@ -435,8 +437,8 @@ npm install @explosions/badge-rotation
 ```
 
 ```typescript
-import { createInertiaAnimation } from "@explosions/badge-rotation";
-const inertiaAnimation = createInertiaAnimation();
+import { createInertiaAnimation } from '@explosions/badge-rotation'
+const inertiaAnimation = createInertiaAnimation()
 ```
 
 以上便是我在实现过程中的一些方案、问题与思考，从零开始去尝试如何实现是一件很有趣的事情，但想必也一定存在更优雅的方案和优化，所以有任何建议也欢迎给我留言。谢谢！

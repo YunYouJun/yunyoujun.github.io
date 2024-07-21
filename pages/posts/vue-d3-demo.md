@@ -492,40 +492,39 @@ yarn add -D vite-plugin-pages
 
 ```typescript
 // vite.config.ts
-import Vue from "@vitejs/plugin-vue";
-import Pages from "vite-plugin-pages";
+import Vue from '@vitejs/plugin-vue'
+import Pages from 'vite-plugin-pages'
 
 export default {
   plugins: [Vue(), Pages()],
-};
+}
 ```
 
 `vite-plugin-pages` 只做了根据文件路径生成对应路由数据的事情，我们仍然需要 vue-router 来生成 hash 路由。
 
 ```typescript
 // src/router/index.ts
-import { createRouter, createWebHashHistory } from "vue-router";
-import routes from "virtual:generated-pages";
+import { createRouter, createWebHashHistory } from 'vue-router'
+import routes from 'virtual:generated-pages'
 
 const router = createRouter({
   history: createWebHashHistory(import.meta.env.BASE_URL),
   routes,
-});
+})
 
-export default router;
+export default router
 ```
 
 记得在 `main.ts` 中引入它。
 
 ```typescript
 // src/main.ts
-...
-import router from "./router";
-...
-const app = createApp(App);
-app.use(router);
-app.mount("#app");
-
+// ...
+import router from './router'
+// ...
+const app = createApp(App)
+app.use(router)
+app.mount('#app')
 ```
 
 #### Vuex
@@ -540,9 +539,9 @@ yarn add vuex@next
 
 ```typescript
 // src/store/index.ts
-import { createStore, createLogger } from "vuex";
+import { createLogger, createStore } from 'vuex'
 // import form from "./modules/form";
-const debug = false;
+const debug = false
 
 export default createStore({
   state: {},
@@ -553,7 +552,7 @@ export default createStore({
   },
   strict: debug,
   plugins: debug ? [createLogger()] : [],
-});
+})
 ```
 
 在此内部，我们则可以使用 `src/store/modules/xxx.ts` 的方式管理模块数据。（之后用到再说吧！）
@@ -570,9 +569,8 @@ yarn add sass
 
 ```typescript
 // src/main.ts
-...
-import "./index.scss"
-...
+import './index.scss'
+// ...
 ```
 
 #### element-plus
@@ -589,18 +587,18 @@ yarn add element-plus
 
 ```typescript
 // src/main.ts
-import { createApp } from "vue";
-import App from "./App.vue";
+import { createApp } from 'vue'
+import ElementPlus from 'element-plus'
+import App from './App.vue'
 // import scss
-import "./index.scss";
-import router from "./router";
-import store from "./store";
-import ElementPlus from "element-plus";
-import "element-plus/lib/theme-chalk/index.css";
+import './index.scss'
+import router from './router'
+import store from './store'
+import 'element-plus/lib/theme-chalk/index.css'
 
-const app = createApp(App);
-app.use(ElementPlus).use(router).use(store);
-app.mount("#app");
+const app = createApp(App)
+app.use(ElementPlus).use(router).use(store)
+app.mount('#app')
 ```
 
 好了，基础的行李们已经准备完毕了，让我们出发吧！

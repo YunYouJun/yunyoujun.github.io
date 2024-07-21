@@ -157,7 +157,7 @@ export class GitHubCorners extends LitElement {
    * target="_blank" for link
    */
   @property({ type: Boolean })
-    blank = false
+  blank = false
   // ...
 }
 ```
@@ -244,7 +244,7 @@ pnpm add @yunyoujun/utils
 ```
 
 ```typescript
-import { markdown } from "@yunyoujun/utils";
+import { markdown } from '@yunyoujun/utils'
 ```
 
 生成文档部分代码可见 [scripts/gen-docs.ts](https://github.com/YunYouJun/wc-github-corners/blob/main/scripts/gen-docs.ts)。
