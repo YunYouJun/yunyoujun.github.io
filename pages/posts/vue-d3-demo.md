@@ -27,7 +27,7 @@ categories:
 
 首先准备好我们旅行的行李清单。
 
-- [Node.js](https://nodejs.org/):  本教程开发的前置基础环境，尽管你可能已经早已安装好了它，但以防万一，还是再作提醒。
+- [Node.js](https://nodejs.org/): 本教程开发的前置基础环境，尽管你可能已经早已安装好了它，但以防万一，还是再作提醒。
 - [npm](https://www.npmjs.com/) or [yarn](https://www.yarnpkg.com/zh-Hans/): 包管理工具，npm 已随 Node.js 默认安装。yarn 可选，但我建议你不妨试一试。后续的内容也将以此为展开，当然你也可以执拗地使用 `npm run` 替代教程中的 `yarn`。
 - [D3](https://github.com/d3/d3): Data-Driven Documents 数据可视化最为流行的基础库，没有之一。
 - [Vue](https://github.com/vuejs/vue): The Progressive JavaScript Framework 目前最为流行的前端框架之一，不可否认的是它相比 React 的学习曲线要更为平缓。
