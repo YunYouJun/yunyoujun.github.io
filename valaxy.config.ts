@@ -15,6 +15,7 @@ export default defineValaxyConfig<UserThemeConfig> ({
   modules: {
     rss: {
       enable: true,
+      fullText: false,
     },
   },
 
