@@ -121,8 +121,9 @@ iconify: true
 
 - <span class="iconify-inline" text="blue-500" data-icon="ri:qq-line"></span> 闲聊 QQ 群：
   - [1050458482](https://jq.qq.com/?_wv=1027&k=5dePS6Gm)：小云粉丝群、闲聊群
-  - 389401003: 偏技术一点的技术交流群（其实也并没有）
-  - [小云之家｜ QQ 频道](https://qun.qq.com/qqweb/qunpro/share?_wv=3&_wwv=128&inviteCode=28OEdR&from=246610&biz=ka)
+  - 389401003: 下头飞升群
+  - 707408530: 技术交流群
+  - [云乐坊｜ QQ 频道](https://pd.qq.com/s/fpb1he0c)
 
 <details>
 <summary>🐦</summary>
