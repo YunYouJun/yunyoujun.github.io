@@ -256,8 +256,8 @@ function step(timestamp) {
   if (
     _this.playAnimation
     && (Math.abs(speed) > toleratedSpeed
-    || (positiveRemainder > toleratedAngel
-    && positiveRemainder < 180 - toleratedAngel))
+      || (positiveRemainder > toleratedAngel
+        && positiveRemainder < 180 - toleratedAngel))
   ) {
     // 记录是否正在播放动画
     _this.isPlaying = true

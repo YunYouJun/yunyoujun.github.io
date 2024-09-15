@@ -3,7 +3,7 @@
   "type": "module",
   "version": "2.0.0",
   "private": true,
-  "packageManager": "pnpm@9.9.0",
+  "packageManager": "pnpm@9.10.0",
   "description": "YunYouJun Blog",
   "author": {
     "email": "me@yunyoujun.cn",
@@ -41,21 +41,30 @@
     "serve": "vite preview",
     "lint": "eslint .",
     "new": "valaxy new",
-    "typecheck": "vue-tsc --noEmit"
+    "typecheck": "vue-tsc --noEmit",
+    "postinstall": "npx simple-git-hooks"
   },
   "devDependencies": {
-    "@antfu/eslint-config": "^2.27.3",
+    "@antfu/eslint-config": "^3.6.0",
     "@explosions/fireworks": "^0.0.2",
     "cross-env": "^7.0.3",
-    "eslint": "^9.9.1",
+    "eslint": "^9.10.0",
+    "lint-staged": "^15.2.10",
+    "simple-git-hooks": "^2.11.1",
     "typescript": "^5.5.4",
-    "valaxy": "^0.19.9",
+    "valaxy": "^0.19.10",
     "valaxy-addon-algolia": "^0.1.0",
-    "valaxy-addon-components": "^0.0.2",
+    "valaxy-addon-components": "^0.0.3",
     "valaxy-addon-waline": "^0.2.0",
-    "valaxy-theme-yun": "^0.19.9",
+    "valaxy-theme-yun": "^0.19.10",
     "vite-plugin-remote-assets": "^0.5.0",
     "vue-gtag-next": "^1.14.0",
     "vue-tsc": "^2.1.6"
+  },
+  "simple-git-hooks": {
+    "pre-commit": "pnpm lint-staged"
+  },
+  "lint-staged": {
+    "*": "eslint --fix"
   }
 }

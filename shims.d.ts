@@ -11,6 +11,7 @@
 
 declare interface window {
   __DEV__: boolean
+  $pageData: any
 }
 
 declare module 'valaxy-addon-*'
