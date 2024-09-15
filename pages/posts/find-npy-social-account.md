@@ -325,8 +325,8 @@ coco/labels/train2017/000000109622.txt  # label
 ```
 
 ```js
-const path = require('node:path')
 const fs = require('node:fs')
+const path = require('node:path')
 const yyj = require('@yunyoujun/utils')
 
 const imagesPath = 'tmp/images/gamepad'

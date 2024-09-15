@@ -104,9 +104,9 @@ yarn add jimp @canvas/image-data
 
 ```typescript
 import { resolve } from 'node:path'
-import jimp from 'jimp'
 import ImageData from '@canvas/image-data'
 import { imageToText } from 'char-dust'
+import jimp from 'jimp'
 
 jimp.read(resolve(__dirname, './cat-of-the-rebellion.jpg')).then((image) => {
   image.scale(5)

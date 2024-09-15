@@ -1,9 +1,9 @@
-import { defineValaxyConfig } from 'valaxy'
 import type { UserThemeConfig } from 'valaxy-theme-yun'
-import { addonWaline } from 'valaxy-addon-waline'
-
+import { defineValaxyConfig } from 'valaxy'
 import { addonAlgolia } from 'valaxy-addon-algolia'
+
 import { addonComponents } from 'valaxy-addon-components'
+import { addonWaline } from 'valaxy-addon-waline'
 
 /**
  * User Config

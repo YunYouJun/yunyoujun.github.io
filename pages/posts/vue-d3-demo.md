@@ -504,8 +504,8 @@ export default {
 
 ```typescript
 // src/router/index.ts
-import { createRouter, createWebHashHistory } from 'vue-router'
 import routes from 'virtual:generated-pages'
+import { createRouter, createWebHashHistory } from 'vue-router'
 
 const router = createRouter({
   history: createWebHashHistory(import.meta.env.BASE_URL),
@@ -587,13 +587,13 @@ yarn add element-plus
 
 ```typescript
 // src/main.ts
-import { createApp } from 'vue'
 import ElementPlus from 'element-plus'
+import { createApp } from 'vue'
 import App from './App.vue'
-// import scss
-import './index.scss'
 import router from './router'
 import store from './store'
+// import scss
+import './index.scss'
 import 'element-plus/lib/theme-chalk/index.css'
 
 const app = createApp(App)
