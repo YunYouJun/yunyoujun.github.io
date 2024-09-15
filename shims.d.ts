@@ -9,7 +9,7 @@
 //   }
 // }
 
-declare interface window {
+declare interface Window {
   __DEV__: boolean
   $pageData: any
 }
