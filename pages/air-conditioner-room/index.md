@@ -1,5 +1,6 @@
 ---
 title: 空调房
+icon: i-ri-home-gear-line
 date: 2020-12-06 02:02:15
 updated: 2020-12-06 17:46:15
 reward: true
@@ -12,6 +13,8 @@ reward: true
 <iframe style="width:100%;" height="780" frameborder="no" src="https://ac.yunyoujun.cn"></iframe>
 
 ---
+
+## 关于
 
 - 裸机：<https://ac.yunyoujun.cn>
 - 空调售后：[air-conditioner | GitHub](https://github.com/YunYouJun/air-conditioner)
