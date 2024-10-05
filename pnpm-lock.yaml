@@ -39,8 +39,8 @@ importers:
         specifier: ^0.2.0
         version: 0.2.0(typescript@5.6.2)(valaxy@0.20.0-beta.5(@babel/parser@7.25.7)(@nuxt/kit@3.13.2(rollup@4.24.0))(@types/markdown-it@14.1.2)(@types/node@22.7.4)(axios@1.7.7)(postcss@8.4.47)(rollup@4.24.0)(typescript@5.6.2))
       valaxy-theme-yun:
-        specifier: ^0.20.0-beta.8
-        version: 0.20.0-beta.8(rollup@4.24.0)(vue@3.5.11(typescript@5.6.2))
+        specifier: ^0.20.0-beta.9
+        version: 0.20.0-beta.9(rollup@4.24.0)(vue@3.5.11(typescript@5.6.2))
       vite-plugin-remote-assets:
         specifier: ^0.5.0
         version: 0.5.0(vite@5.4.8(@types/node@22.7.4)(sass@1.79.4))
@@ -4189,8 +4189,8 @@ packages:
     peerDependencies:
       valaxy: latest
 
-  valaxy-theme-yun@0.20.0-beta.8:
-    resolution: {integrity: sha512-DGPTN1NdUD1SGIf4PU+mO+99lgFu1PTa5hzUzrsS3MteJ0WuWnBOy/J60qGVfINiRq62osVqwSlVHHtJdkpJTA==}
+  valaxy-theme-yun@0.20.0-beta.9:
+    resolution: {integrity: sha512-8Z3FT7u/CaP6odpkKt+THCbudew1JhsN6C1fS80bd/W0cJ0v3w4/hlJDCIorXa313uouCrwrYfMwpNeqBWpnbg==}
 
   valaxy@0.20.0-beta.5:
     resolution: {integrity: sha512-Pi/omSVGDs1f2Gzm9/+hLGfK7s4e6eYbMbT810vlsuEGYTIactSQyGbXVTIw1FNMnNJRTzxAma4ka4HmyJFuzg==}
@@ -9296,7 +9296,7 @@ snapshots:
       - '@vue/composition-api'
       - typescript
 
-  valaxy-theme-yun@0.20.0-beta.8(rollup@4.24.0)(vue@3.5.11(typescript@5.6.2)):
+  valaxy-theme-yun@0.20.0-beta.9(rollup@4.24.0)(vue@3.5.11(typescript@5.6.2)):
     dependencies:
       '@ctrl/tinycolor': 4.1.0
       '@explosions/fireworks': 0.1.0
