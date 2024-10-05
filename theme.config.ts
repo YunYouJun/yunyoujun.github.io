@@ -11,22 +11,28 @@ export default defineThemeConfig({
 
   pages: [
     {
-      name: '我的小伙伴们',
+      name: '项目橱窗',
+      url: '/projects/',
+      icon: 'i-ri-code-s-slash-line',
+      // color: 'var',
+    },
+    {
+      name: '友情链接',
       url: '/links/',
       icon: 'i-ri-genderless-line',
       color: 'dodgerblue',
+    },
+    {
+      name: '老婆列表',
+      url: '/girls/',
+      icon: 'i-ri-women-line',
+      color: 'hotpink',
     },
     {
       name: '赞助者们',
       url: 'https://sponsors.yunyoujun.cn',
       icon: 'i-ri-heart-line',
       color: 'red',
-    },
-    {
-      name: '喜欢的女孩子',
-      url: '/girls/',
-      icon: 'i-ri-women-line',
-      color: 'hotpink',
     },
   ],
 

@@ -27,20 +27,20 @@ importers:
         specifier: 5.6.2
         version: 5.6.2
       valaxy:
-        specifier: ^0.20.0-beta.1
-        version: 0.20.0-beta.1(@babel/parser@7.25.7)(@nuxt/kit@3.13.2(rollup@4.24.0))(@types/markdown-it@14.1.2)(@types/node@22.7.4)(axios@1.7.7)(postcss@8.4.47)(rollup@4.24.0)(typescript@5.6.2)
+        specifier: ^0.20.0-beta.5
+        version: 0.20.0-beta.5(@babel/parser@7.25.7)(@nuxt/kit@3.13.2(rollup@4.24.0))(@types/markdown-it@14.1.2)(@types/node@22.7.4)(axios@1.7.7)(postcss@8.4.47)(rollup@4.24.0)(typescript@5.6.2)
       valaxy-addon-algolia:
         specifier: ^0.1.0
-        version: 0.1.0(@algolia/client-search@4.24.0)(search-insights@2.17.2)(valaxy@0.20.0-beta.1(@babel/parser@7.25.7)(@nuxt/kit@3.13.2(rollup@4.24.0))(@types/markdown-it@14.1.2)(@types/node@22.7.4)(axios@1.7.7)(postcss@8.4.47)(rollup@4.24.0)(typescript@5.6.2))
+        version: 0.1.0(@algolia/client-search@4.24.0)(search-insights@2.17.2)(valaxy@0.20.0-beta.5(@babel/parser@7.25.7)(@nuxt/kit@3.13.2(rollup@4.24.0))(@types/markdown-it@14.1.2)(@types/node@22.7.4)(axios@1.7.7)(postcss@8.4.47)(rollup@4.24.0)(typescript@5.6.2))
       valaxy-addon-components:
         specifier: ^0.0.4
         version: 0.0.4
       valaxy-addon-waline:
         specifier: ^0.2.0
-        version: 0.2.0(typescript@5.6.2)(valaxy@0.20.0-beta.1(@babel/parser@7.25.7)(@nuxt/kit@3.13.2(rollup@4.24.0))(@types/markdown-it@14.1.2)(@types/node@22.7.4)(axios@1.7.7)(postcss@8.4.47)(rollup@4.24.0)(typescript@5.6.2))
+        version: 0.2.0(typescript@5.6.2)(valaxy@0.20.0-beta.5(@babel/parser@7.25.7)(@nuxt/kit@3.13.2(rollup@4.24.0))(@types/markdown-it@14.1.2)(@types/node@22.7.4)(axios@1.7.7)(postcss@8.4.47)(rollup@4.24.0)(typescript@5.6.2))
       valaxy-theme-yun:
-        specifier: ^0.20.0-beta.3
-        version: 0.20.0-beta.3(rollup@4.24.0)(vue@3.5.11(typescript@5.6.2))
+        specifier: ^0.20.0-beta.8
+        version: 0.20.0-beta.8(rollup@4.24.0)(vue@3.5.11(typescript@5.6.2))
       vite-plugin-remote-assets:
         specifier: ^0.5.0
         version: 0.5.0(vite@5.4.8(@types/node@22.7.4)(sass@1.79.4))
@@ -714,8 +714,8 @@ packages:
     resolution: {integrity: sha512-vH9PiIMMwvhCx31Af3HiGzsVNULDbyVkHXwlemn/B0TFj/00ho3y55efXrUZTfQipxoHC5u4xq6zblww1zm1Ig==}
     engines: {node: ^18.18.0 || ^20.9.0 || >=21.1.0}
 
-  '@explosions/fireworks@0.0.3':
-    resolution: {integrity: sha512-D2L7BbxU2SDOnZg9c/fzD8VusMYKt9yq+PaPyqe22++0F/9MJIEeqjqo5tVqNSzQaWVk05lIC+mAIX20QpMfmg==}
+  '@explosions/fireworks@0.1.0':
+    resolution: {integrity: sha512-40qDR55zIxl2eTBZ1k4uTibl17t3bpf63uL3NjieD4bmrIpvJHyL4xZnDBrR98OicPVGxTUj4kAwe1P511ll4A==}
 
   '@floating-ui/core@1.6.8':
     resolution: {integrity: sha512-7XJ9cPU+yI2QeLS+FCSlqNFZJq8arvswefkZrYI1yQBbftw6FyrZOxYSh+9S7z7TpeWlRt9zJ5IhM1WIL334jA==}
@@ -1227,11 +1227,11 @@ packages:
     peerDependencies:
       vite: ^2.9.0 || ^3.0.0-0 || ^4.0.0 || ^5.0.0-0
 
-  '@valaxyjs/devtools@0.20.0-beta.1':
-    resolution: {integrity: sha512-tXvLSwzd3A2touH5XewJsLNVNn7aZ7bg3K+9IWjbuja7a58f6WxeCRPHbhfBSQmkZ9YixfvkhpWtmERPG4RXMA==}
+  '@valaxyjs/devtools@0.20.0-beta.5':
+    resolution: {integrity: sha512-C9vL7uUHVVL3npyMYOszT2BiD3cNzhe7djQqIAI4lUNGiDlSCM0jnheFDDvbDrrKyca6y7YTG+ohDE0i7/hPjw==}
 
-  '@valaxyjs/utils@0.20.0-beta.1':
-    resolution: {integrity: sha512-qe2NBYdW1/4MCu67qT9Jl2pH/TGjApFmVmakKuSmvgAgt62wN7A2ctF+WMw9XLP8MtjpZNadqYANq8oBoybgTg==}
+  '@valaxyjs/utils@0.20.0-beta.5':
+    resolution: {integrity: sha512-XM8QGM2bpKZ10xieqb4/O5K0OarjGMgmhwfzHlYlRFAinNb/8/LIM7vRAWKOnm0CA4dlTbf3E3bpFVM7p+J7TA==}
 
   '@vitejs/plugin-vue@5.1.4':
     resolution: {integrity: sha512-N2XSI2n3sQqp5w7Y/AN/L2XDjBIRGqXko+eDp42sydYSBeJuSm5a1sLf8zakmo8u7tA8NmBgoDLA1HeOESjp9A==}
@@ -4189,11 +4189,11 @@ packages:
     peerDependencies:
       valaxy: latest
 
-  valaxy-theme-yun@0.20.0-beta.3:
-    resolution: {integrity: sha512-941oCzLC8WCq7pHUzq5M/h8k5l9v5WuhfmOYNGJJWkjonwPXyB7jXO2jDYIKSI2lJcxpUiUf9ZOi0GLMQeqYSA==}
+  valaxy-theme-yun@0.20.0-beta.8:
+    resolution: {integrity: sha512-DGPTN1NdUD1SGIf4PU+mO+99lgFu1PTa5hzUzrsS3MteJ0WuWnBOy/J60qGVfINiRq62osVqwSlVHHtJdkpJTA==}
 
-  valaxy@0.20.0-beta.1:
-    resolution: {integrity: sha512-wOyasiTn644RC6RxaW3pfAnBEAljFx6sZkD2SEmIvGaV5R+NcUPS7sEECho0BrOroH1iYsLHCfgv3enC2WmDjw==}
+  valaxy@0.20.0-beta.5:
+    resolution: {integrity: sha512-Pi/omSVGDs1f2Gzm9/+hLGfK7s4e6eYbMbT810vlsuEGYTIactSQyGbXVTIw1FNMnNJRTzxAma4ka4HmyJFuzg==}
     engines: {node: ^14.18.0 || >=16.0.0}
     hasBin: true
 
@@ -5156,7 +5156,7 @@ snapshots:
     dependencies:
       levn: 0.4.1
 
-  '@explosions/fireworks@0.0.3': {}
+  '@explosions/fireworks@0.1.0': {}
 
   '@floating-ui/core@1.6.8':
     dependencies:
@@ -5829,7 +5829,7 @@ snapshots:
       - rollup
       - supports-color
 
-  '@valaxyjs/devtools@0.20.0-beta.1(debug@4.3.7)(rollup@4.24.0)':
+  '@valaxyjs/devtools@0.20.0-beta.5(debug@4.3.7)(rollup@4.24.0)':
     dependencies:
       '@rollup/pluginutils': 5.1.2(rollup@4.24.0)
       axios: 1.7.7(debug@4.3.7)
@@ -5843,7 +5843,7 @@ snapshots:
       - rollup
       - supports-color
 
-  '@valaxyjs/utils@0.20.0-beta.1': {}
+  '@valaxyjs/utils@0.20.0-beta.5': {}
 
   '@vitejs/plugin-vue@5.1.4(vite@5.4.8(@types/node@22.7.4)(sass@1.79.4))(vue@3.5.11(typescript@5.6.2))':
     dependencies:
@@ -9274,11 +9274,11 @@ snapshots:
 
   uuid@9.0.1: {}
 
-  valaxy-addon-algolia@0.1.0(@algolia/client-search@4.24.0)(search-insights@2.17.2)(valaxy@0.20.0-beta.1(@babel/parser@7.25.7)(@nuxt/kit@3.13.2(rollup@4.24.0))(@types/markdown-it@14.1.2)(@types/node@22.7.4)(axios@1.7.7)(postcss@8.4.47)(rollup@4.24.0)(typescript@5.6.2)):
+  valaxy-addon-algolia@0.1.0(@algolia/client-search@4.24.0)(search-insights@2.17.2)(valaxy@0.20.0-beta.5(@babel/parser@7.25.7)(@nuxt/kit@3.13.2(rollup@4.24.0))(@types/markdown-it@14.1.2)(@types/node@22.7.4)(axios@1.7.7)(postcss@8.4.47)(rollup@4.24.0)(typescript@5.6.2)):
     dependencies:
       '@docsearch/css': 3.6.2
       '@docsearch/js': 3.6.2(@algolia/client-search@4.24.0)(search-insights@2.17.2)
-      valaxy: 0.20.0-beta.1(@babel/parser@7.25.7)(@nuxt/kit@3.13.2(rollup@4.24.0))(@types/markdown-it@14.1.2)(@types/node@22.7.4)(axios@1.7.7)(postcss@8.4.47)(rollup@4.24.0)(typescript@5.6.2)
+      valaxy: 0.20.0-beta.5(@babel/parser@7.25.7)(@nuxt/kit@3.13.2(rollup@4.24.0))(@types/markdown-it@14.1.2)(@types/node@22.7.4)(axios@1.7.7)(postcss@8.4.47)(rollup@4.24.0)(typescript@5.6.2)
     transitivePeerDependencies:
       - '@algolia/client-search'
       - '@types/react'
@@ -9288,18 +9288,18 @@ snapshots:
 
   valaxy-addon-components@0.0.4: {}
 
-  valaxy-addon-waline@0.2.0(typescript@5.6.2)(valaxy@0.20.0-beta.1(@babel/parser@7.25.7)(@nuxt/kit@3.13.2(rollup@4.24.0))(@types/markdown-it@14.1.2)(@types/node@22.7.4)(axios@1.7.7)(postcss@8.4.47)(rollup@4.24.0)(typescript@5.6.2)):
+  valaxy-addon-waline@0.2.0(typescript@5.6.2)(valaxy@0.20.0-beta.5(@babel/parser@7.25.7)(@nuxt/kit@3.13.2(rollup@4.24.0))(@types/markdown-it@14.1.2)(@types/node@22.7.4)(axios@1.7.7)(postcss@8.4.47)(rollup@4.24.0)(typescript@5.6.2)):
     dependencies:
       '@waline/client': 3.3.2(typescript@5.6.2)
-      valaxy: 0.20.0-beta.1(@babel/parser@7.25.7)(@nuxt/kit@3.13.2(rollup@4.24.0))(@types/markdown-it@14.1.2)(@types/node@22.7.4)(axios@1.7.7)(postcss@8.4.47)(rollup@4.24.0)(typescript@5.6.2)
+      valaxy: 0.20.0-beta.5(@babel/parser@7.25.7)(@nuxt/kit@3.13.2(rollup@4.24.0))(@types/markdown-it@14.1.2)(@types/node@22.7.4)(axios@1.7.7)(postcss@8.4.47)(rollup@4.24.0)(typescript@5.6.2)
     transitivePeerDependencies:
       - '@vue/composition-api'
       - typescript
 
-  valaxy-theme-yun@0.20.0-beta.3(rollup@4.24.0)(vue@3.5.11(typescript@5.6.2)):
+  valaxy-theme-yun@0.20.0-beta.8(rollup@4.24.0)(vue@3.5.11(typescript@5.6.2)):
     dependencies:
       '@ctrl/tinycolor': 4.1.0
-      '@explosions/fireworks': 0.0.3
+      '@explosions/fireworks': 0.1.0
       '@iconify-json/ant-design': 1.2.1
       '@iconify-json/simple-icons': 1.2.5
       '@vueuse/motion': 2.2.5(rollup@4.24.0)(vue@3.5.11(typescript@5.6.2))
@@ -9315,7 +9315,7 @@ snapshots:
       - vue
       - webpack-sources
 
-  valaxy@0.20.0-beta.1(@babel/parser@7.25.7)(@nuxt/kit@3.13.2(rollup@4.24.0))(@types/markdown-it@14.1.2)(@types/node@22.7.4)(axios@1.7.7)(postcss@8.4.47)(rollup@4.24.0)(typescript@5.6.2):
+  valaxy@0.20.0-beta.5(@babel/parser@7.25.7)(@nuxt/kit@3.13.2(rollup@4.24.0))(@types/markdown-it@14.1.2)(@types/node@22.7.4)(axios@1.7.7)(postcss@8.4.47)(rollup@4.24.0)(typescript@5.6.2):
     dependencies:
       '@antfu/install-pkg': 0.4.1
       '@antfu/utils': 0.7.10
@@ -9327,8 +9327,8 @@ snapshots:
       '@unhead/addons': 1.11.7(rollup@4.24.0)
       '@unhead/schema-org': 1.11.7
       '@unhead/vue': 1.11.7(vue@3.5.11(typescript@5.6.2))
-      '@valaxyjs/devtools': 0.20.0-beta.1(debug@4.3.7)(rollup@4.24.0)
-      '@valaxyjs/utils': 0.20.0-beta.1
+      '@valaxyjs/devtools': 0.20.0-beta.5(debug@4.3.7)(rollup@4.24.0)
+      '@valaxyjs/utils': 0.20.0-beta.5
       '@vitejs/plugin-vue': 5.1.4(vite@5.4.8(@types/node@22.7.4)(sass@1.79.4))(vue@3.5.11(typescript@5.6.2))
       '@vue/devtools-api': 7.4.6
       '@vueuse/core': 11.1.0(vue@3.5.11(typescript@5.6.2))
