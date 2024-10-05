@@ -7,7 +7,7 @@ export default defineSiteConfig({
   description: '希望能成为一个有趣的人',
   author: {
     name: '云游君',
-    avatar: 'https://yunyoujun.cn/images/avatar.jpg',
+    avatar: '/images/avatar.jpg',
     status: {
       emoji: '😣',
     },
