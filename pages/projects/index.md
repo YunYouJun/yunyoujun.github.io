@@ -306,14 +306,14 @@ projects:
     collection:
       - name: element-plus
         emoji: ➕
-        desc: Element Vue 3 官方版本，应该算是 Vue 最流行的组件库之一，目前咱是团队核心成员，主要负责样式系统以及其他各类 BUG 修复，以及周边项目模板示例的开发。
+        desc: Vue 3 最流行的组件库之一，Core Team Member，主要负责样式系统、文档、BUG 修复，以及周边项目模板示例的开发。
         github: element-plus/element-plus
         docs: https://element-plus.org/
         color: '#409eff'
         textColor: white
       - name: 其他开源项目
         emoji: 🏠
-        desc: 当然目前我也为其他社区开源项目贡献过代码，也许你还可以在 omi、vitepress、vitesse 等 50 个项目中看到我的身影。
+        desc: 当然目前我也为其他社区开源项目贡献过代码，也许你还可以在 vitesse 等其他项目中看到我的身影。
         github: YunYouJun
         color: black
 
