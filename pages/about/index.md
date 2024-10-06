@@ -21,10 +21,8 @@ iconify: true
 > All at sea.
 > 希望能成为一个有趣的人。希望能创造出可以成为他人回忆的事物。
 
-<div class="text-center">
-  <div class="site-author-avatar">
-    <img src="/images/avatar.jpg" alt="portrait" title="ID : 云游君">
-  </div>
+<div class="flex-center pb-2">
+  <YunAuthorAvatar class="rounded-full! size-24! shadow-md" />
 </div>
 
 <!--  -->
