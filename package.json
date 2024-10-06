@@ -55,7 +55,7 @@
     "valaxy-addon-algolia": "^0.1.0",
     "valaxy-addon-components": "^0.0.4",
     "valaxy-addon-waline": "^0.2.0",
-    "valaxy-theme-yun": "^0.20.0-beta.10",
+    "valaxy-theme-yun": "^0.20.0-beta.11",
     "vite-plugin-remote-assets": "^0.5.0",
     "vue-gtag-next": "^1.14.0",
     "vue-tsc": "^2.1.6"
