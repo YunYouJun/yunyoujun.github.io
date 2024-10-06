@@ -14,9 +14,9 @@ girls: https://wives.yunyoujun.cn/girls.json
 random: true
 ---
 
-<div class="text-center" m="2" title="我全都要！">
+<!-- <div class="text-center" m="2" title="我全都要！">
 !大家都是我的天使!
-</div>
+</div> -->
 
 <YunGirls :girls="frontmatter.girls" :random="frontmatter.random" />
 
