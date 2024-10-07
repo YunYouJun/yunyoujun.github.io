@@ -1,7 +1,7 @@
 ---
 title: 使用 CDN 加速你的 GitHub Pages 网站
 date: 2020-02-05 20:28:57
-updated: 2020-02-16 20:28:57
+updated: 2024-10-06 20:28:57
 tags:
   - CDN
   - 笔记
@@ -90,7 +90,7 @@ categories:
 ### CNAME 与 MX 记录冲突导致邮件丢失
 
 值得注意的是，设置 CDN 的方式是使用 CNAME 重定向到 CDN 域名。
-如果你同时将裸域名（yunyoujun.cn）作为博客域名和域名邮箱（比如我的邮箱：me@yunyoujun.cn），那么你可能会遇到 CNAME 与 MX 记录冲突问题。
+如果你同时将裸域名（yunyoujun.cn）作为博客域名和域名邮箱（比如我的邮箱：`me@yunyoujun.cn`），那么你可能会遇到 CNAME 与 MX 记录冲突问题。
 
 如果你的运营商没有这么提示你，那也最好不要这么做，因为这会导致域名邮箱发生邮件丢失。
 
@@ -234,3 +234,15 @@ URL 列表，需要包含协议头部 `http://` 或 `https://`
 后续得到了又拍云的赞助，写了一篇又拍云的软文？，不过我之前也确实一直在用又拍云，并列举了优劣，也算是真心实意地推荐。
 
 > [又拍云—年轻人的第一个 CDN | 云游君的小站](https://www.yunyoujun.cn/posts/why-i-use-upyun-cdn/)
+
+### 2024-10-06
+
+由于内部有一些优惠券，我将 CDN 迁移至了腾讯云。
+
+[EdgeOne](https://cloud.tencent.com/document/product/1552/69826) 的功能也很丰富。
+
+不过存在一个坑。
+当通过 CNAME 接入 EdgeOne 时，无法 CNAME 裸域名。（DNS 规范，但 Cloudflare 支持自动 Flatten。）
+
+但使用 Cloudflare 自动 Flatten 时，EdgeOne 中设置的裸域名实质上并不会生效。
+因此，只为 `www.yunyoujun.cn` 开启 CDN。
