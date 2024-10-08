@@ -1,0 +1,41 @@
+name: TEO Purge
+
+on:
+  push:
+    branches:
+      - main
+      - valaxy
+
+  pull_request:
+    branches:
+      - main
+      - valaxy
+
+jobs:
+  teo:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - uses: pnpm/action-setup@v2
+      - uses: actions/setup-node@v4
+        with:
+          node-version: lts/*
+          cache: pnpm
+
+      - name: Install
+        run: pnpm install
+
+      - name: Install TCCLI
+        run: sudo pip install tccli
+
+      - name: Configure TCCLI
+        run: |
+          tccli configure set secretId ${{ secrets.TENCENT_CLOUD_SECRET_ID }}
+          tccli configure set secretKey ${{ secrets.TENCENT_CLOUD_SECRET_KEY }}
+          tccli configure set region ap-shanghai
+
+      - name: Wait Cloudflare Pages Deploy
+        run: echo 'Waiting for Cloudflare Pages Deploy'
+
+      - name: Purge TEO
+        run: tccli teo CreatePurgeTask --ZoneId zone-32usfya3lb5o --Type purge_host --Targets '["www.yunyoujun.cn"]'

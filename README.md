@@ -76,6 +76,19 @@ git clone https://github.com/YunYouJun/hexo-theme-yun themes/yun
 
 [![Tencent Cloud](https://imgcache.qq.com/open_proj/proj_qcloud_v2/gateway/portal/css/img/nav/logo-bg-color.svg)](https://cloud.tencent.com/)
 
+```bash
+# https://cloud.tencent.com/document/product/440/111345
+tccli auth login
+```
+
+#### EdgeOne 刷新缓存
+
+```bash
+# EdgeOne yunyoujun.cn
+# https://cloud.tencent.com/document/product/1552/70759
+tccli teo CreatePurgeTask --ZoneId zone-32usfya3lb5o --Type purge_host --Targets '["www.yunyoujun.cn"]'
+```
+
 #### 刷新目录
 
 ```bash
