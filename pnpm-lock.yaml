@@ -39,8 +39,8 @@ importers:
         specifier: ^0.2.0
         version: 0.2.0(typescript@5.6.2)(valaxy@0.20.0-beta.5(@babel/parser@7.25.7)(@nuxt/kit@3.13.2(rollup@4.24.0))(@types/markdown-it@14.1.2)(@types/node@22.7.4)(axios@1.7.7)(postcss@8.4.47)(rollup@4.24.0)(typescript@5.6.2))
       valaxy-theme-yun:
-        specifier: ^0.20.0-beta.13
-        version: 0.20.0-beta.13(rollup@4.24.0)(vue@3.5.11(typescript@5.6.2))
+        specifier: ^0.20.0-beta.14
+        version: 0.20.0-beta.14(rollup@4.24.0)(vue@3.5.11(typescript@5.6.2))
       vite-plugin-remote-assets:
         specifier: ^0.5.0
         version: 0.5.0(vite@5.4.8(@types/node@22.7.4)(sass@1.79.4))
@@ -748,14 +748,14 @@ packages:
     resolution: {integrity: sha512-JBxkERygn7Bv/GbN5Rv8Ul6LVknS+5Bp6RgDC/O8gEBU/yeH5Ui5C/OlWrTb6qct7LjjfT6Re2NxB0ln0yYybA==}
     engines: {node: '>=18.18'}
 
-  '@iconify-json/ant-design@1.2.1':
-    resolution: {integrity: sha512-hqqH+TQ1EUU4wC7iL98UF+bgaF6iymvNxopPcApPyTsxIgBujHLx99R8ZV5sF1F2ZZs2mTQtDlm3LwV6wMChhg==}
+  '@iconify-json/ant-design@1.2.2':
+    resolution: {integrity: sha512-/jE53ePZZSAQUGPgnRgm7y2l0N/Z814AzaEpdD3W1Magzx+Q1/VhW5eRdF6XewoOYlPoUCkDvdgMCSjs9XefEA==}
 
   '@iconify-json/ri@1.2.0':
     resolution: {integrity: sha512-br8It3uRHylNhEH72aU9VF6gIdL4BAi6JMdcxsCaVbAyWBJ0jd4RxfmsYnil6TmEfP5wxihiCKbtbQmIHZdqKg==}
 
-  '@iconify-json/simple-icons@1.2.6':
-    resolution: {integrity: sha512-E4asFcJ3JY/mtk6zeYCSQBBrmG4AncGo8vQ9ZO2oY8h/qA3TlGYSIoYzwRjmDKuFu30QwWJQMS43kka0JcPZUg==}
+  '@iconify-json/simple-icons@1.2.7':
+    resolution: {integrity: sha512-0Qx3jf2AjocJx/6VQOFU5KDINAWH/i+hxPBIePSVJhQVS/W3G1/MZYkOD5yFw/i9+lhBMAEdbfM3bmF6qjnSmg==}
 
   '@iconify/types@2.0.0':
     resolution: {integrity: sha512-+wluvCrRhXrhyOmRDJ3q8mux9JkKy5SJ/v8ol2tu4FVjyYvtEzkc/3pK15ET6RKg4b4w4BmTk1+gsCUhf21Ykg==}
@@ -3585,8 +3585,8 @@ packages:
   queue-microtask@1.2.3:
     resolution: {integrity: sha512-NuaNSa6flKT5JaSYQzJok04JzTL1CA6aGhv5rfLW3PgqA+M2ChpZQnAC8h8i4ZFkBS8X5RqkDBHA7r4hej3K9A==}
 
-  radix-vue@1.9.6:
-    resolution: {integrity: sha512-legrn9jHbEpbJS4QYrA0VmIafj1bmc4MSVzN55WZatGiXMJg3oFrQL5QxpiURJciS+OlATbKA2KAGkMuuLA0LA==}
+  radix-vue@1.9.7:
+    resolution: {integrity: sha512-1xleWzWNFPfAMmb81gu/4/MV8dXMvc7j2EIjutBpBcKwxdJfeIcQg4k9De18L2rL1/GZg5wA9KykeKTM4MjWow==}
     peerDependencies:
       vue: '>= 3.2.0'
 
@@ -4189,8 +4189,8 @@ packages:
     peerDependencies:
       valaxy: latest
 
-  valaxy-theme-yun@0.20.0-beta.13:
-    resolution: {integrity: sha512-9Cok4w2d2cvqeIC5r0XKIgETD0qKGezwx5UO8kKtAi2QvaQR/+iYN0dZPIeyOgvSJrGODuDXKNfa6c/q3CnUNg==}
+  valaxy-theme-yun@0.20.0-beta.14:
+    resolution: {integrity: sha512-xN51CEtK5UFZi/hHBSq+W3b4aMAOlQ99dkP0nKHjtVsSEZ5LqsIQgandF2+p/WiXOxgIINSPvU9D7iD6QLRbbA==}
 
   valaxy@0.20.0-beta.5:
     resolution: {integrity: sha512-Pi/omSVGDs1f2Gzm9/+hLGfK7s4e6eYbMbT810vlsuEGYTIactSQyGbXVTIw1FNMnNJRTzxAma4ka4HmyJFuzg==}
@@ -5193,7 +5193,7 @@ snapshots:
 
   '@humanwhocodes/retry@0.3.1': {}
 
-  '@iconify-json/ant-design@1.2.1':
+  '@iconify-json/ant-design@1.2.2':
     dependencies:
       '@iconify/types': 2.0.0
 
@@ -5201,7 +5201,7 @@ snapshots:
     dependencies:
       '@iconify/types': 2.0.0
 
-  '@iconify-json/simple-icons@1.2.6':
+  '@iconify-json/simple-icons@1.2.7':
     dependencies:
       '@iconify/types': 2.0.0
 
@@ -8604,7 +8604,7 @@ snapshots:
 
   queue-microtask@1.2.3: {}
 
-  radix-vue@1.9.6(vue@3.5.11(typescript@5.6.2)):
+  radix-vue@1.9.7(vue@3.5.11(typescript@5.6.2)):
     dependencies:
       '@floating-ui/dom': 1.6.11
       '@floating-ui/vue': 1.1.5(vue@3.5.11(typescript@5.6.2))
@@ -9296,17 +9296,17 @@ snapshots:
       - '@vue/composition-api'
       - typescript
 
-  valaxy-theme-yun@0.20.0-beta.13(rollup@4.24.0)(vue@3.5.11(typescript@5.6.2)):
+  valaxy-theme-yun@0.20.0-beta.14(rollup@4.24.0)(vue@3.5.11(typescript@5.6.2)):
     dependencies:
       '@ctrl/tinycolor': 4.1.0
       '@explosions/fireworks': 0.1.0
-      '@iconify-json/ant-design': 1.2.1
-      '@iconify-json/simple-icons': 1.2.6
+      '@iconify-json/ant-design': 1.2.2
+      '@iconify-json/simple-icons': 1.2.7
       '@vueuse/motion': 2.2.5(rollup@4.24.0)(vue@3.5.11(typescript@5.6.2))
       animejs: 3.2.2
       gsap: 3.12.5
       primevue: 4.1.0(vue@3.5.11(typescript@5.6.2))
-      radix-vue: 1.9.6(vue@3.5.11(typescript@5.6.2))
+      radix-vue: 1.9.7(vue@3.5.11(typescript@5.6.2))
     transitivePeerDependencies:
       - '@vue/composition-api'
       - magicast
