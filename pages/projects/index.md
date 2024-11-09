@@ -136,6 +136,12 @@ projects:
     title: 工具
     emoji: 🔧
     collection:
+      - name: git-geass
+        emoji: ⚙️
+        desc: 基于 git 提供更多交互式快捷操作。
+        color: '#f1e05a'
+        github: YunYouJun/git-geass
+        npm: git-geass
       - name: pixi-painter
         emoji: 🎨
         desc: 基于 Pixi.js 的绘图工具 + AI LCM
