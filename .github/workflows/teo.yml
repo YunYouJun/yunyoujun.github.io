@@ -37,5 +37,6 @@ jobs:
       - name: Wait Cloudflare Pages Deploy
         run: echo 'Waiting for Cloudflare Pages Deploy'
 
-      - name: Purge TEO
-        run: tccli teo CreatePurgeTask --ZoneId zone-32usfya3lb5o --Type purge_host --Targets '["www.yunyoujun.cn"]'
+      # TODO: 先不清除，允许旧流量缓存，缓存时间在 Tencent Cloud EdgeOne 规则中设置
+      # - name: Purge TEO
+      #   run: tccli teo CreatePurgeTask --ZoneId zone-32usfya3lb5o --Type purge_host --Targets '["www.yunyoujun.cn"]'
