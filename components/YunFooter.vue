@@ -4,6 +4,9 @@ import YunFooter from 'valaxy-theme-yun/components/YunFooter.vue'
 
 <template>
   <YunFooter>
-    <CdnLogo />
+    <!-- <CdnLogo /> -->
+    <a href="mailto:me@yunyoujun.cn" target="_blank">
+      广告位招租
+    </a>
   </YunFooter>
 </template>
