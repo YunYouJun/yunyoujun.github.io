@@ -7,6 +7,10 @@ settings:
 importers:
 
   .:
+    dependencies:
+      '@vueuse/sound':
+        specifier: ^2.0.1
+        version: 2.0.1(vue@3.5.12(typescript@5.6.2))
     devDependencies:
       '@antfu/eslint-config':
         specifier: ^3.8.0
@@ -1612,6 +1616,15 @@ packages:
   '@vueuse/shared@11.2.0':
     resolution: {integrity: sha512-VxFjie0EanOudYSgMErxXfq6fo8vhr5ICI+BuE3I9FnX7ePllEsVrRQ7O6Q1TLgApeLuPKcHQxAXpP+KnlrJsg==}
 
+  '@vueuse/sound@2.0.1':
+    resolution: {integrity: sha512-7Fbp9lQkuUnpTXS9vPbvT2FDYHuwJbvKPivOYETaVVSmcZKoczw6zcsebsARkH5Ged0f045YUOZnV/RuCzyLXQ==}
+    peerDependencies:
+      '@vue/composition-api': ^1.0.0-rc.1
+      vue: ^2.0.0 || >=3.0.0
+    peerDependenciesMeta:
+      '@vue/composition-api':
+        optional: true
+
   '@waline/api@1.0.0-alpha.8':
     resolution: {integrity: sha512-S6pgUUfv+gcXU3hiW3PNUwiUvPy7bXmmLB/bwdU3hN5YVT5Q7CxyVSLA3oJkrNO5lcisKK1GBPv0H2W1uB0eGA==}
     engines: {node: '>=18'}
@@ -2799,6 +2812,9 @@ packages:
 
   hosted-git-info@2.8.9:
     resolution: {integrity: sha512-mxIDAb9Lsm6DoOJ7xH+5+X4y1LU/4Hi50L9C5sIswK3JzULS4bwk1FvjdBgvYR4bzT4tuUQiC15FE2f5HbLvYw==}
+
+  howler@2.2.4:
+    resolution: {integrity: sha512-iARIBPgcQrwtEr+tALF+rapJ8qSc+Set2GJQl7xT1MQzWaVkFebdJhR3alVlSiUf5U7nAANKuj3aWpwerocD5w==}
 
   html-encoding-sniffer@4.0.0:
     resolution: {integrity: sha512-Y22oTqIU4uuPgEemfz7NDJz6OeKf12Lsu+QC+s3BVpda64lTiMYCyGwg5ki4vFxkMwQdeZDl2adZoqUgdFuTgQ==}
@@ -6394,6 +6410,12 @@ snapshots:
       - '@vue/composition-api'
       - vue
 
+  '@vueuse/sound@2.0.1(vue@3.5.12(typescript@5.6.2))':
+    dependencies:
+      howler: 2.2.4
+      vue: 3.5.12(typescript@5.6.2)
+      vue-demi: 0.14.10(vue@3.5.12(typescript@5.6.2))
+
   '@waline/api@1.0.0-alpha.8': {}
 
   '@waline/client@3.3.2(typescript@5.6.2)':
@@ -7731,6 +7753,8 @@ snapshots:
   hookable@5.5.3: {}
 
   hosted-git-info@2.8.9: {}
+
+  howler@2.2.4: {}
 
   html-encoding-sniffer@4.0.0:
     dependencies:
