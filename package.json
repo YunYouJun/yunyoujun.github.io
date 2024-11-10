@@ -44,6 +44,9 @@
     "typecheck": "vue-tsc --noEmit",
     "postinstall": "npx simple-git-hooks"
   },
+  "dependencies": {
+    "@vueuse/sound": "^2.0.1"
+  },
   "devDependencies": {
     "@antfu/eslint-config": "^3.8.0",
     "cross-env": "^7.0.3",
