@@ -42,4 +42,5 @@ jobs:
       # 只清楚入口 URL
       # https://cloud.tencent.com/document/product/1552/80703
       - name: Purge TEO
-        run: tccli teo CreatePurgeTask --ZoneId zone-32usfya3lb5o --Type purge_url --Targets '["https://www.yunyoujun.cn"]'
+        # 目录刷新 — 仅刷新目录下发生变更的资源
+        run: tccli teo CreatePurgeTask --ZoneId zone-32usfya3lb5o --Type purge_prefix --Targets '["https://www.yunyoujun.cn/"]'
