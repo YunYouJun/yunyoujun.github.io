@@ -67,6 +67,7 @@ declare module 'vue-router/auto-routes' {
     '/posts/as-summer-flowers': RouteRecordInfo<'/posts/as-summer-flowers', '/posts/as-summer-flowers', Record<never, never>, Record<never, never>>,
     '/posts/baidu-seo-about-github-pages': RouteRecordInfo<'/posts/baidu-seo-about-github-pages', '/posts/baidu-seo-about-github-pages', Record<never, never>, Record<never, never>>,
     '/posts/blender-learn-note': RouteRecordInfo<'/posts/blender-learn-note', '/posts/blender-learn-note', Record<never, never>, Record<never, never>>,
+    '/posts/choose-your-testing-framework': RouteRecordInfo<'/posts/choose-your-testing-framework', '/posts/choose-your-testing-framework', Record<never, never>, Record<never, never>>,
     '/posts/coc-dragon-boat-incident': RouteRecordInfo<'/posts/coc-dragon-boat-incident', '/posts/coc-dragon-boat-incident', Record<never, never>, Record<never, never>>,
     '/posts/coding-webide-dev-env': RouteRecordInfo<'/posts/coding-webide-dev-env', '/posts/coding-webide-dev-env', Record<never, never>, Record<never, never>>,
     '/posts/coolq-use-note': RouteRecordInfo<'/posts/coolq-use-note', '/posts/coolq-use-note', Record<never, never>, Record<never, never>>,
