@@ -1,4 +1,4 @@
-import type { RankSponsor } from '@yunyoujun/sponsors'
+import type { OtherSponsor, RankSponsor } from '@yunyoujun/sponsors'
 import { defineStore } from 'pinia'
 import { computed, reactive, ref } from 'vue'
 
@@ -49,19 +49,27 @@ export const minAccount = 6
 export const useSponsorStore = defineStore('sponsor', () => {
   const expenses = ref<Expense[]>([])
 
+  const isLoading = ref(false)
+
   /**
    * 详细列表里是之前手动添加的赞助数据
    */
   const sponsors = ref<RankSponsor[]>([])
+  const specialSponsors = ref<OtherSponsor[]>([])
 
   /**
    * 获取支出详细数据
    */
   async function fetchExpensesData() {
+    if (expenses.value.length !== 0)
+      return
+
+    isLoading.value = true
     const expensesData = await fetch('https://sponsors.yunyoujun.cn/data/expenses.json')
       .then(res => res.json())
 
     expenses.value = expensesData
+    isLoading.value = false
     return expensesData
   }
 
@@ -69,15 +77,39 @@ export const useSponsorStore = defineStore('sponsor', () => {
    * 获取手动添加的赞助数据
    */
   async function fetchManualSponsorsData() {
+    if (sponsors.value.length !== 0)
+      return
+
+    isLoading.value = true
     const manualSponsorsData = await fetch('https://sponsors.yunyoujun.cn/data/manual-sponsors.json').then(res => res.json())
     sponsors.value = manualSponsorsData.filter((i: RankSponsor) => i.total >= minAccount)
+    isLoading.value = false
+  }
+
+  /**
+   * 获取特别赞助信息
+   */
+  async function fetchSpecialSponsorsData() {
+    if (specialSponsors.value.length !== 0)
+      return
+
+    isLoading.value = true
+    const sponsorData = await fetch('https://sponsors.yunyoujun.cn/data/special-sponsors.json')
+      .then(res => res.json())
+    specialSponsors.value = sponsorData
+    isLoading.value = false
+    return sponsorData
   }
 
   return {
     expenses,
     sponsors,
+    specialSponsors,
+
+    isLoading,
 
     fetchExpensesData,
     fetchManualSponsorsData,
+    fetchSpecialSponsorsData,
   }
 })

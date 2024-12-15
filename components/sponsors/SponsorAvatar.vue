@@ -21,5 +21,8 @@ const imgUrl = computed(() => {
 </script>
 
 <template>
-  <img class="inline-flex shadow" m="r-2" w="5" h="5" rounded="full" :src="imgUrl" :onerror="`this.src='${anonymousImage}'`">
+  <img
+    class="inline-flex shadow m-0! mr-2! size-5"
+    rounded="full" :src="imgUrl" :onerror="`this.src='${anonymousImage}'`"
+  >
 </template>

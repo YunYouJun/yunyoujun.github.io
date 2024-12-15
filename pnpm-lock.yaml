@@ -19,8 +19,8 @@ importers:
         specifier: ^2.3.5
         version: 2.3.5
       '@yunyoujun/sponsors':
-        specifier: ^0.0.1
-        version: 0.0.1
+        specifier: ^0.0.2
+        version: 0.0.2
       cross-env:
         specifier: ^7.0.3
         version: 7.0.3
@@ -1659,8 +1659,8 @@ packages:
     resolution: {integrity: sha512-BnqW45kWzFowAaHzrpDQhOlRLXT6e9v1v45nzO6R1jyNoTu/BcbFyPdzY83NejAtGwTDjFnX5R5lBOBh95m7pQ==}
     engines: {node: '>=18'}
 
-  '@yunyoujun/sponsors@0.0.1':
-    resolution: {integrity: sha512-mn1zHgC2lZ+AvysUrCWTJN4IzdC7pkkpX4HQicFggh1z0RtxGHOtSz4vAeTRqUG36s2y/2jaHnvcPPedDhlHnQ==}
+  '@yunyoujun/sponsors@0.0.2':
+    resolution: {integrity: sha512-duRg/gYeSP1ek/Z5Pt0SHFfN/qNcnVCYM2r8Wnd67gY8dyeVJdD+BHBenROHi5GBv44zJOELcSU13UUHPwflfw==}
 
   acorn-jsx@5.3.2:
     resolution: {integrity: sha512-rq9s+JNhf0IChjtDXxllJ7g41oZk5SlXtp0LHwyA5cejwn7vKmKp4pPri6YEePv2PU65sAsegbXtIinmDFDXgQ==}
@@ -6558,7 +6558,7 @@ snapshots:
     transitivePeerDependencies:
       - typescript
 
-  '@yunyoujun/sponsors@0.0.1': {}
+  '@yunyoujun/sponsors@0.0.2': {}
 
   acorn-jsx@5.3.2(acorn@8.14.0):
     dependencies:

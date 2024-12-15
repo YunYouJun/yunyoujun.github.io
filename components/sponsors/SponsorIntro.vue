@@ -10,8 +10,6 @@ const { t } = useI18n()
 
 <template>
   <div class="post-card" m="auto" p="4">
-    <BaseHeader msg="Sponsors" />
-
     <div flex="~ wrap" class="m-2 items-center justify-center gap-4">
       <a
         class="flex items-center justify-center border-none!"

@@ -6,7 +6,7 @@ const props = defineProps<{
   /**
    * 尺寸
    */
-  size: 'small' | 'medium' | 'large'
+  size?: 'small' | 'medium' | 'large'
   /**
    * 金额
    */

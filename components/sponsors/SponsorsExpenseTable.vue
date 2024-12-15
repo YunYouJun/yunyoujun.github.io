@@ -1,9 +1,13 @@
 <script lang="ts" setup>
 import { formatDate } from 'valaxy'
 
+import { onMounted } from 'vue'
 import { useSponsorStore } from './store'
 
 const sponsorStore = useSponsorStore()
+onMounted(() => {
+  sponsorStore.fetchExpensesData()
+})
 </script>
 
 <template>

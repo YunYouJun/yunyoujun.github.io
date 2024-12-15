@@ -16,11 +16,7 @@ title: Sponsors
 
 > [列表数据所在仓库](https://github.com/YunYouJun/sponsors)
 
-::: details 账簿（此前手动添加的列表）
-
 <SponsorsAccount />
-
-:::
 
 收到的赞助我将主要用于域名、服务器、CDN、小云周边等相关内容。
 您可以在其中找到支出内容。

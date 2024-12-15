@@ -1,80 +1,19 @@
 <script lang="ts" setup>
-import type { Component } from 'vue'
-import { computed, onBeforeMount, shallowRef } from 'vue'
-import { useI18n } from 'vue-i18n'
+import { ref } from 'vue'
 
-import SponsorExpenseTable from './SponsorsExpenseTable.vue'
-import SponsorsList from './SponsorsList.vue'
-import SponsorsOther from './SponsorsOther.vue'
-
-import { store, sumExpense, sumIncome, useSponsorStore } from './store'
-
-const sponsorStore = useSponsorStore()
-const { t } = useI18n()
-const state = store.state
-
-interface TabItem {
-  name: string
-  component: Component
-}
-
-const tabs = computed<TabItem[]>(() => [{
-  name: t('tab.sponsor_list'),
-  component: SponsorsList,
-}, {
-  name: t('tab.other_sponsors'),
-  component: SponsorsOther,
-}, {
-  name: t('tab.expense'),
-  component: SponsorExpenseTable,
-}])
-
-const currentTab = shallowRef<TabItem>(tabs.value[0])
-
-onBeforeMount(() => {
-  sumIncome(sponsorStore.sponsors)
-  sumExpense(sponsorStore.expenses)
-})
+const show = ref(false)
 </script>
 
 <template>
-  <div class="post-card">
-    <div class="flex items-center justify-center" m="2" p="b-2" text="sm">
-      <SponsorTag text="green-600 dark:green-100" bg="green-50 dark:(green-700 opacity-80)">
-        <div class="inline-flex" m="r-1" i-icon-park-outline-income />
-        <span>收入：</span>
-        <span font="mono">{{ state.income.toFixed(2) }}</span>
-      </SponsorTag>
-      <span font="mono">-</span>
-      <SponsorTag text="red-600 dark:red-100" bg="red-50 dark:(red-700 opacity-80)">
-        <div class="inline-flex" m="r-1" i-icon-park-outline-expenses />
-        <span>支出：</span>
-        <span font="mono">{{ state.expense.toFixed(2) }}</span>
-      </SponsorTag>
-      <span font="mono">=</span>
-      <SponsorTag text="yellow-600 dark:yellow-100" bg="yellow-50 dark:(yellow-700 opacity-80)">
-        <div class="inline-flex" m="r-1" i-ri-scales-line />
-        <span>盈余：</span>
-        <span font="mono">{{ store.balance.value.toFixed(2) }}</span>
-      </SponsorTag>
-    </div>
-
-    <div flex="~" class="items-center justify-center">
-      <button
-        v-for="tab in tabs"
-        :key="tab.name"
-        class="tab-button" :class="[{ active: currentTab.name === tab.name }]"
-        text="sm"
-        font="serif black"
-        @click="currentTab = tab"
-      >
-        {{ tab.name }}
-      </button>
-    </div>
-    <div class="tab">
-      <component :is="currentTab.component" />
-    </div>
+  <div
+    class="cursor-pointer w-full items-center flex text-$va-c-primary bg-blue/10 hover:bg-blue/20 p-2 rounded gap-1 shadow transition"
+    @click="show = !show"
+  >
+    <div i-ri-money-cny-box-line />
+    {{ show ? '收起' : '查看' }}账簿
   </div>
+
+  <SponsorsAccountContent v-if="show" class="shadow" />
 </template>
 
 <style>
