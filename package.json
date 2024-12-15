@@ -50,15 +50,15 @@
   "devDependencies": {
     "@antfu/eslint-config": "^3.12.0",
     "cross-env": "^7.0.3",
-    "eslint": "^9.16.0",
+    "eslint": "^9.17.0",
     "lint-staged": "^15.2.11",
     "simple-git-hooks": "^2.11.1",
     "typescript": "5.6.2",
-    "valaxy": "^0.21.0",
+    "valaxy": "^0.21.1",
     "valaxy-addon-algolia": "^0.1.0",
     "valaxy-addon-components": "^0.0.4",
     "valaxy-addon-waline": "^0.2.0",
-    "valaxy-theme-yun": "^0.21.0",
+    "valaxy-theme-yun": "^0.21.1",
     "vite-plugin-remote-assets": "^0.6.0",
     "vue-gtag-next": "^1.14.0",
     "vue-tsc": "^2.1.10"
