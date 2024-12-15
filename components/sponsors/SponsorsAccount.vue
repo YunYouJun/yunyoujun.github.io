@@ -3,9 +3,9 @@ import type { Component } from 'vue'
 import { computed, onBeforeMount, shallowRef } from 'vue'
 import { useI18n } from 'vue-i18n'
 
-import ExpenseTable from './ExpenseTable.vue'
-import OtherSponsors from './OtherSponsors.vue'
-import SponsorList from './SponsorList.vue'
+import SponsorExpenseTable from './SponsorsExpenseTable.vue'
+import SponsorsList from './SponsorsList.vue'
+import SponsorsOther from './SponsorsOther.vue'
 
 import { store, sumExpense, sumIncome, useSponsorStore } from './store'
 
@@ -20,13 +20,13 @@ interface TabItem {
 
 const tabs = computed<TabItem[]>(() => [{
   name: t('tab.sponsor_list'),
-  component: SponsorList,
+  component: SponsorsList,
 }, {
   name: t('tab.other_sponsors'),
-  component: OtherSponsors,
+  component: SponsorsOther,
 }, {
   name: t('tab.expense'),
-  component: ExpenseTable,
+  component: SponsorExpenseTable,
 }])
 
 const currentTab = shallowRef<TabItem>(tabs.value[0])

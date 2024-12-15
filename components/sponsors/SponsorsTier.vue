@@ -29,10 +29,20 @@ const sizeClass = computed(() => {
       return ''
   }
 })
+
+function scrollToTop() {
+  window.scrollTo({
+    top: 0,
+    behavior: 'smooth',
+  })
+}
 </script>
 
 <template>
-  <div flex="~ col gap-2" class="w-full shadow items-start justify-start p-4 text-shadow">
+  <div
+    flex="~ col gap-2" class="w-full shadow items-start justify-start p-4 text-shadow transition hover:shadow-lg"
+    @click="scrollToTop"
+  >
     <div class="flex font-black font-serif gap-2 items-center" :class="sizeClass">
       {{ title }}
     </div>

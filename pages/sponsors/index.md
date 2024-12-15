@@ -51,7 +51,7 @@ title: Sponsors
   '小云立牌（通过任意方式联系我！）',
 ]"  />
 
-<SponsorsTier title="Silver Sponsors" amount="$10 / ¥100" class="text-coolgray" size="medium" :advantages="[
+<SponsorsTier title="Silver Sponsors" amount="$10 / ¥100" class="text-coolgray-5 dark:text-coolgray-4" size="medium" :advantages="[
   '展示在我的每个项目中',
   '较大的头像与名称',
   '联系我优先解决相关 Issue'

@@ -1,11 +1,15 @@
 <script setup lang="ts">
+import { useAppStore } from 'valaxy'
+
 import { useI18n } from 'vue-i18n'
+
+const app = useAppStore()
 
 const { t } = useI18n()
 </script>
 
 <template>
-  <div class="post-card" m="auto" p="4" bg="white/60">
+  <div class="post-card" m="auto" p="4">
     <BaseHeader msg="Sponsors" />
 
     <div flex="~ wrap" class="m-2 items-center justify-center gap-4">
@@ -42,7 +46,7 @@ const { t } = useI18n()
         href="https://github.com/sponsors/YunYouJun"
         target="_blank"
       >
-        <SponsorBtn color="dark">
+        <SponsorBtn :color="app.isDark ? 'light' : 'dark'">
           <span>通过</span>
           <span class="flex items-center justify-center" m="x-1">
             <div i-ri-github-line />GitHub
