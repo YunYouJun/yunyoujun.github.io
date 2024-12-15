@@ -1,2 +1,12 @@
 site:
   name: 云游君的小站
+
+tooltip: 祝你玩的开心！
+
+message:
+  projects: 要看看我别的项目吗？
+
+tab:
+  sponsor_list: 经济赞助
+  other_sponsors: 其他赞助
+  expense: 当前支出

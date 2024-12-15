@@ -1,2 +1,12 @@
 site:
   name: YunYouJun's Site
+
+tooltip: Have fun!
+
+message:
+  projects: Would you like to see my other projects?
+
+tab:
+  sponsor_list: Sponsor List
+  other_sponsors: Other Sponsor
+  expense: Expense

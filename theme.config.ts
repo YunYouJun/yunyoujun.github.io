@@ -30,7 +30,7 @@ export default defineThemeConfig({
     },
     {
       name: '赞助者们',
-      url: 'https://sponsors.yunyoujun.cn',
+      url: '/sponsors/',
       icon: 'i-ri-heart-line',
       color: 'red',
     },

@@ -199,6 +199,8 @@ Image theme color extraction. 色尘知有数，劫烬岂无年。
 
 💰 最后是 [赞助者名单](https://sponsors.yunyoujun.cn/)
 
+> 2024-12-15，迁移至 <https://www.yunyoujun.cn/sponsors/>
+
 自动生成 JSON 数据，网站展示页面和手动添加赞助者的脚本工具。
 
 虽然挂着收款二维码之类的，但是真的没想到真的能够收到大家许许多多的支持。

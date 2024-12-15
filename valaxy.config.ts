@@ -5,6 +5,24 @@ import { addonAlgolia } from 'valaxy-addon-algolia'
 import { addonComponents } from 'valaxy-addon-components'
 import { addonWaline } from 'valaxy-addon-waline'
 
+const safelist = [
+  'i-ri-home-line',
+
+  'i-ri-qq-line',
+  'i-ri-wechat-pay-line',
+  'i-ri-alipay-line',
+]
+const colors = ['purple', 'green', 'dark']
+colors.forEach((c) => {
+  safelist.push(...[
+    `border-${c}-300`,
+    `text-${c}-600`,
+    `hover:bg-${c}-600`,
+    `dark:text-${c}-300`,
+    `focus:ring-${c}-300`,
+  ])
+})
+
 /**
  * User Config
  * do not use export const
@@ -20,9 +38,7 @@ export default defineValaxyConfig<UserThemeConfig> ({
   },
 
   unocss: {
-    safelist: [
-      'i-ri-home-line',
-    ],
+    safelist,
   },
 
   addons: [

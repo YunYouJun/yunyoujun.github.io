@@ -10,7 +10,7 @@
 - 备用：<https://yunyoujun.netlify.app>
   - Hexo 版本存档：<https://hexo.yunyoujun.cn>
 - 笔记：<https://notes.yunyoujun.cn>
-- 赞助：<https://sponsors.yunyoujun.cn>
+- 赞助：<https://www.yunyoujun.cn/sponsors/>
 
 ## Use
 

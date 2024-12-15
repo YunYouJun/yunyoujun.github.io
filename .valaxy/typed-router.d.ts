@@ -140,6 +140,7 @@ declare module 'vue-router/auto-routes' {
     '/projects/': RouteRecordInfo<'/projects/', '/projects', Record<never, never>, Record<never, never>>,
     '/README': RouteRecordInfo<'/README', '/README', Record<never, never>, Record<never, never>>,
     '/slides/': RouteRecordInfo<'/slides/', '/slides', Record<never, never>, Record<never, never>>,
+    '/sponsors/': RouteRecordInfo<'/sponsors/', '/sponsors', Record<never, never>, Record<never, never>>,
     '/tags/': RouteRecordInfo<'/tags/', '/tags', Record<never, never>, Record<never, never>>,
   }
 }
