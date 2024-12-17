@@ -40,7 +40,8 @@ function scrollToTop() {
 
 <template>
   <div
-    flex="~ col gap-2" class="w-full shadow items-start justify-start p-4 text-shadow transition hover:shadow-lg"
+    flex="~ col gap-2"
+    class="w-full shadow items-start justify-start p-4 text-shadow transition hover:shadow-lg bg-$va-c-bg-soft rounded"
     @click="scrollToTop"
   >
     <div class="flex font-black font-serif gap-2 items-center" :class="sizeClass">

@@ -5,6 +5,12 @@ title: Sponsors
 <SponsorRecommend />
 
 <SponsorsDisplay />
+<br />
+
+- QQ群：[1050458482](https://qm.qq.com/cgi-bin/qm/qr?k=r-b3949w12L0wGiAmhUWibg3epW1Suik&jump_from=webapi&authKey=nhLrI7D8toe4Ph3LtcQ1l4dtYtUg7RzexTunnf9gI5vvDftcuhg4za+xBH+EiJfh)
+
+<!-- <img class="w-50 rounded" m="auto y-2" src="https://www.yunle.fun/images/yunlefun-user-wechat-group.jpg" alt="微信群"> -->
+<!-- <small>微信群</small> -->
 
 谢谢你们的支持！
 您的每一份支持，都是激励我创造出更多有趣、有价值的事物的动力。

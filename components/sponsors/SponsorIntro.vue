@@ -44,7 +44,7 @@ const { t } = useI18n()
         href="https://github.com/sponsors/YunYouJun"
         target="_blank"
       >
-        <SponsorBtn :color="app.isDark ? 'light' : 'dark'">
+        <SponsorBtn :color="app.isDark ? 'blue' : 'dark'">
           <span>通过</span>
           <span class="flex items-center justify-center" m="x-1">
             <div i-ri-github-line />GitHub

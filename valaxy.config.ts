@@ -12,7 +12,7 @@ const safelist = [
   'i-ri-wechat-pay-line',
   'i-ri-alipay-line',
 ]
-const colors = ['purple', 'green', 'light', 'dark']
+const colors = ['purple', 'green', 'blue', 'dark']
 colors.forEach((c) => {
   safelist.push(...[
     `border-${c}-300`,

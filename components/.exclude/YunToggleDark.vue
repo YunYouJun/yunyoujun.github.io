@@ -30,7 +30,7 @@ const styles = computed(() => {
 })
 
 function toggle(e: MouseEvent) {
-  const mode = appStore.isDark ? 'light' : 'dark'
+  const mode = appStore.isDark ? 'blue' : 'dark'
   // eslint-disable-next-line no-console
   console.log(
     `%c The World %c ${mode} `,
