@@ -49,7 +49,7 @@ katex: true
 
 </div>
 
-<video src="https://r2.yunyoujun.cn/videos/demo/ant-forest-animal-badge-rotation.mp4" alt="徽章旋转" controls></video>
+<video src="https://cos.yunle.fun/videos/demo/ant-forest-animal-badge-rotation.mp4" alt="徽章旋转" controls></video>
 
 > 那么我实现了什么？
 

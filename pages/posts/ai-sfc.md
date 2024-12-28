@@ -107,4 +107,4 @@ categories:
 
 > 红包封面得在「云游君」公众号领～
 
-![「云游君」公众号](http://r2.yunyoujun.cn/images/white-qrcode-and-search.jpg)
+![「云游君」公众号](https://cos.yunle.fun/images/white-qrcode-and-search.jpg)

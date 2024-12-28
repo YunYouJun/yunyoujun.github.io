@@ -99,7 +99,7 @@ iconify: true
 - <span class="iconify-inline" text="blue-500" data-icon="ri:telegram-line"></span> Telegram Channel：[El Psy Congroo](https://t.me/elpsycn)（频道，信息聚合，现在大致 = 随手分享 + 博客 + Twitter + 豆瓣 + 网易云音乐 更新聚合）
 - <span class="iconify-inline" text="blue-500" data-icon="ri:telegram-line"></span> Telegram Group：[云之彼端约定的地方](https://t.me/yunyoujun_group)
 - <span class="iconify-inline" text="blue-500" data-icon="ri:zhihu-line"></span> 知乎：[云游君](https://www.zhihu.com/people/yunyoujun/)（随便看看，没有什么有趣的回答分享）
-- <span class="iconify-inline" text="green-500" data-icon="ri:wechat-line"></span> 微信公众号：[云游君](https://cdn.yunyoujun.cn/img/about/white-qrcode-and-search.jpg) （加了网站跳转链接的菜单，关注勉强可以当作证明收藏过本站的标记？也许日后有空会搬一点文章过去？（咕咕咕））
+- <span class="iconify-inline" text="green-500" data-icon="ri:wechat-line"></span> 微信公众号：[云游君](https://cos.yunle.fun/images/wx-mp-yunyoujun-scan-search-standard.webp) （加了网站跳转链接的菜单，关注勉强可以当作证明收藏过本站的标记？也许日后有空会搬一点文章过去？（咕咕咕））
 - <span class="iconify-inline" text="blue-500" data-icon="ri:twitter-line"></span> Twitter: [云游君](https://twitter.com/YunYouJun)（一些分享和正在进行的项目预告）
 - <span class="iconify-inline" text="orange-500" data-icon="ri:rss-line"></span> RSS：<https://www.yunyoujun.cn/atom.xml> （可以使用 RSS 订阅本站，譬如 [feedly](https://feedly.com/i/subscription/feed%2Fhttps%3A%2F%2Fwww.yunyoujun.cn%2Fatom.xml)
 - 😜 如果你觉得本站点还算有趣或有用，可以给我一个 [Star](https://github.com/YunYouJun/yunyoujun.github.io) 以示鼓励。

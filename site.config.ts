@@ -65,7 +65,7 @@ export default defineSiteConfig({
     },
     {
       name: '微信公众号',
-      link: 'https://cdn.yunyoujun.cn/img/about/white-qrcode-and-search.jpg',
+      link: 'https://cos.yunle.fun/images/wx-mp-yunyoujun-scan-search-standard.webp',
       icon: 'i-ri-wechat-2-line',
       color: '#1AAD19',
     },

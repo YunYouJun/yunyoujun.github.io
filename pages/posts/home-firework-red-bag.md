@@ -19,7 +19,7 @@ tags:
 
 <!-- more -->
 
-![很不幸，时间的流逝永远不会停止](https://assets.yunyoujun.cn/images/you-know-time-never-stop.jpg)
+![很不幸，时间的流逝永远不会停止](https://cos.yunle.fun/images/you-know-time-never-stop.jpg)
 
 <div class="flex-center" text="center">
 <span cursor-pointer hover="font-serif font-black">「我明白了」</span>
@@ -35,11 +35,11 @@ tags:
 <div grid="~ cols-2" pb="4">
 
 <div>
-<img h="full" src="https://assets.yunyoujun.cn/images/empty-beijing-when-spring.jpg" alt="空荡荡的北京" /><em>空荡荡的北京</em>
+<img h="full" src="https://cos.yunle.fun/images/empty-beijing-when-spring.jpg" alt="空荡荡的北京" /><em>空荡荡的北京</em>
 </div>
 
 <div>
-<img h="full" src="https://assets.yunyoujun.cn/images/a-bit-lively-hometown-station.jpg" alt="稍显热闹的家乡终点站" />
+<img h="full" src="https://cos.yunle.fun/images/a-bit-lively-hometown-station.jpg" alt="稍显热闹的家乡终点站" />
 <em>稍显热闹的家乡终点站</em>
 </div>
 
@@ -49,20 +49,20 @@ tags:
 
 不过出站时，又似有些不同，驻足站外向站内翘首以盼的人仿佛更多了。
 
-![翘首以盼的人们](https://assets.yunyoujun.cn/images/people-who-are-waiting.jpg)
+![翘首以盼的人们](https://cos.yunle.fun/images/people-who-are-waiting.jpg)
 
 我从中随机遍历找到了爸妈，并在火车站外第一次见到了春字与两排红红的大灯笼。
 
-![火车站外的装饰](https://assets.yunyoujun.cn/images/decoration-out-of-train-station.jpg)
+![火车站外的装饰](https://cos.yunle.fun/images/decoration-out-of-train-station.jpg)
 
 继续踏上回家的旅途，穿过似曾相识的大路小路，回到熟悉的小镇。
 
-![归家的林间小路](https://assets.yunyoujun.cn/images/small-path-to-home.jpg)
+![归家的林间小路](https://cos.yunle.fun/images/small-path-to-home.jpg)
 
 已是凌晨，路边还有几个稀稀落落的移动油炸烧烤摊。
 由于没吃晚饭，便点了些油炸物下饭。除了烤面筋五元两根，鱼豆腐、素鸡等皆为一元一根，点了一大把不过十五元，我依稀想起还在北京的某日于南锣鼓巷买的一根面筋亦是此价，甚至不够一顿烧烤外卖的起送费。
 
-![十五元大餐](https://assets.yunyoujun.cn/images/fifteen-yuan-big-deal-youzha.jpg)
+![十五元大餐](https://cos.yunle.fun/images/fifteen-yuan-big-deal-youzha.jpg)
 
 摊子架在电动三轮上，玻璃橱窗的上方区域塞满了各类可选的串串，中间的缝隙是满抽屉的调料，下方则是油锅和烤炉，一旁还有些许空间可放垃圾桶。收摊时把滑动的门一合，便可浑然一体。
 我很期待在变形金刚里看到这样的赛博坦星人。
@@ -86,18 +86,18 @@ tags:
 
 当我终于意识到烟花总是转瞬即逝空留灰烬，为了短暂的视听冲击，却要支付积攒许久的零花钱后，我便再也没有放过烟花了。
 
-![盗朋友的图](https://assets.yunyoujun.cn/images/starry-sky-firework-from-friend.jpg)
+![盗朋友的图](https://cos.yunle.fun/images/starry-sky-firework-from-friend.jpg)
 
 最终那盒满天星在我的抽屉里躺了近十年后，被我送给了邻居家的朋友。
 
 在做「**原神**」稻妻的剧情任务时，宵宫的任务正与烟花有关。
 朔次郎回到闭关锁国的稻妻，又被迫出逃，在主角与宵宫的帮助下，朔次郎终于与儿时玩伴佳祐解除误会，再次道别。
 
-![不愿意沟通的话，问题就会永远留在那里。人们就看着，看着…直到眼睁睁地错过所有解决它的机会。](https://assets.yunyoujun.cn/images/question-will-be-left-without-communication.jpg)
+![不愿意沟通的话，问题就会永远留在那里。人们就看着，看着…直到眼睁睁地错过所有解决它的机会。](https://cos.yunle.fun/images/question-will-be-left-without-communication.jpg)
 
 > 缤纷的烟花在稻妻城上空绽开，独自驾着小船驶离稻妻的朔次郎在一片绚烂中，意外看到了自己熟悉的那朵烟花，潸然泪下。
 
-![烟花与朔次郎](https://assets.yunyoujun.cn/images/fireworks-and-shuocilang.jpg)
+![烟花与朔次郎](https://cos.yunle.fun/images/fireworks-and-shuocilang.jpg)
 
 > **宵宫：**「对了，你看到第一枚升空的，那颗金色的大烟花了吗？」
 > 「那就是我拜托老爹为你们做的。」
@@ -134,7 +134,7 @@ tags:
 烟花易逝，人生如梦。
 愿你我心底总存在某些「**无论走了多远，遇到了什么，觉得动摇了，或者累了**」还能想起并越变越漂亮的东西。
 
-![如满天星一般的焰火](https://assets.yunyoujun.cn/images/small-fireworks-like-starry-sky.jpg)
+![如满天星一般的焰火](https://cos.yunle.fun/images/small-fireworks-like-starry-sky.jpg)
 
 ## 红包封面
 
@@ -142,7 +142,7 @@ tags:
 
 对了，小云微信红包封面有效期只有三个月，亦如烟花般转瞬即逝，那么也给 TA 发个红包展示一下可爱的小云作为纪念吧！
 
-![小云红包封面](https://assets.yunyoujun.cn/images/xiaoyun-red-bag-cover.jpg)
+![小云红包封面](https://cos.yunle.fun/images/xiaoyun-red-bag-cover.jpg)
 
 ![公众号-云游君](https://cdn.yunyoujun.cn/img/about/white-qrcode-and-search.jpg)
 
