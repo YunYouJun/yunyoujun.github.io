@@ -70,7 +70,7 @@ categories:
 
 此后我又去追了漫画，男女主终于证明双方是恋人，却又开始好感度的定义，还发明了「奏爱」这一爱情单位（继续被迫害的小奏）。
 
-![zou-love.jpg](https://cos.yunyoujun.cn/blog/zou-love.jpg)
+![zou-love.jpg](https://cos.yunle.fun/images/zou-love.jpg)
 
 只是，智力超群的男女主真的会连简单人际感情也搞不明白吗？也许他们早已明白，只是这样做真的很有趣。
 
@@ -81,7 +81,7 @@ categories:
 
 此外，我一直很想创作一部自己的小说、漫画、动画或是游戏。却始终没有把握做好。但自己的阅历仍旧稍显不足。
 
-![能把自己都觉得很烂的作品发表出来，这对创作者而言是非常重要的。做不到这点的人，只会说等到有拿得出手的作品再发吧，可是这个时机永远都不会来。](https://r2.yunyoujun.cn/images/publish-your-bad-work.jpg)
+![能把自己都觉得很烂的作品发表出来，这对创作者而言是非常重要的。做不到这点的人，只会说等到有拿得出手的作品再发吧，可是这个时机永远都不会来。](https://cos.yunle.fun/images/publish-your-bad-work.jpg)
 
 我认识到，作品稍微结合或者说用自己的一些专业知识来弥补空隙也可以很有趣。
 

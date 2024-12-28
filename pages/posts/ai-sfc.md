@@ -34,9 +34,9 @@ categories:
 
 放一些比较有节目效果的春联示例：
 
-![云游君](https://r2.yunyoujun.cn/images/ai-sfc-yyj.webp)
-![蔡徐坤](https://r2.yunyoujun.cn/images/ai-sfc-cxk.webp)
-![股市](https://r2.yunyoujun.cn/images/ai-sfc-gushi.webp)_有趣的是，这张图在公众号发不出来_
+![云游君](https://cos.yunle.fun/images/ai-sfc-yyj.webp)
+![蔡徐坤](https://cos.yunle.fun/images/ai-sfc-cxk.webp)
+![股市](https://cos.yunle.fun/images/ai-sfc-gushi.webp)_有趣的是，这张图在公众号发不出来_
 
 ## 背后的故事
 
@@ -63,7 +63,7 @@ categories:
 
 但隐隐约约似乎有什么不对劲。
 
-![你今天不上班？](https://r2.yunyoujun.cn/images/ni-bu-shang-ban.webp)
+![你今天不上班？](https://cos.yunle.fun/images/ni-bu-shang-ban.webp)
 
 当群友灵魂质问我「今天你不上班吗？」，我方如梦初醒。
 
@@ -103,7 +103,7 @@ categories:
 
 新的一年，也要做人生的挑战者！
 
-![要永远做人生的挑战者！](https://r2.yunyoujun.cn/images/yao-yong-yuan-zuo-ren-sheng-de-tiao-zhan-zhe.jpeg)
+![要永远做人生的挑战者！](https://cos.yunle.fun/images/yao-yong-yuan-zuo-ren-sheng-de-tiao-zhan-zhe.jpeg)
 
 > 红包封面得在「云游君」公众号领～
 

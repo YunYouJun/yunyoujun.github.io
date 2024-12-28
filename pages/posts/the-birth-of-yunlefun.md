@@ -76,7 +76,7 @@ antfu 在项目和插件上的强大生产力在 GitHub 上吸引了三百多位
 
 冲动之时，我在朋友圈发了这样一篇评论。
 
-![我的朋友圈｜语雀](https://r2.yunyoujun.cn/images/my-timeline-about-yuque.jpg)
+![我的朋友圈｜语雀](https://cos.yunle.fun/images/my-timeline-about-yuque.jpg)
 
 我的语雀会员几乎到 2025 年才会过期，且由于惯性、公司等原因我可能仍需使用其一段时间，但我已决定开始相关的迁移工作。
 尽管这可能帮助这一产品在短期快速获取盈利点，也许它有着很多我考虑不到的决策点，但在我个人看来，这是一个失败的伤害大部分用户的商业化路径。
@@ -105,7 +105,7 @@ Fun 则是根域名，代表「有趣」，同时谐音「坊」，我并没有�
 但这似乎并不完全是徒劳无功，在开发它的过程中，我写了一个虚拟摇杆并抽取为示例将其开源了出去，命名为 [cocos-creator-joystick](https://github.com/YunYouJun/cocos-creator-joystick/)。
 我在 Cocos Creator 论坛中分享了它，意外地收到了很多收藏和鼓励，并成为了我第一个破两位数 Star 的项目。
 
-![cocos-creator-joystick](https://r2.yunyoujun.cn/images/github-cocos-creator-joystick.jpg)
+![cocos-creator-joystick](https://cos.yunle.fun/images/github-cocos-creator-joystick.jpg)
 
 后来我还更新过至 3.0 版本，上过 Cocos 商店首页，当然，是免费的。
 其他便是后话，但毋庸置疑，它是我第一个受到鼓舞的开源项目，大概也算我开源事业的起点。
@@ -151,12 +151,12 @@ Fun 则是根域名，代表「有趣」，同时谐音「坊」，我并没有�
 我突然发现此前写代码时的开心，与写完项目的成就感在工作时已经荡然无存了。
 无非是从一个需求到另一个需求，自己就像是流水线上的工具，被使用直至磨损废弃。
 
-![八小时工作-八小时休息-还有八小时留给我们自己](https://r2.yunyoujun.cn/images/work-8h-sleep-8h.jpg)
+![八小时工作-八小时休息-还有八小时留给我们自己](https://cos.yunle.fun/images/work-8h-sleep-8h.jpg)
 
 我只是想要更开心地做一些有趣的事，比如写想写的代码、看想看的番剧，午后继续悠闲地躺在床上，傍晚去路边揪狗尾巴草，偶尔也会想写写小说画画插图。
 而我突然意识到，实现这一期盼的成本其实并不算很高，也并非不可行。
 
-![与父亲的深夜对话](https://r2.yunyoujun.cn/images/not-work-chat-with-father.jpg)_与父亲的深夜对话_
+![与父亲的深夜对话](https://cos.yunle.fun/images/not-work-chat-with-father.jpg)_与父亲的深夜对话_
 
 趁着国庆期间我回了趟家，父亲骑着电动车带我在镇上兜了会儿风。
 勉强还算夏日，吹着凉风，望着一排排的电线塔与广阔的风景，我联想到的是动画滤镜下的风景，和在这样一个海边小镇的舞台，会发生哪些有趣的故事呢？
@@ -166,7 +166,7 @@ Fun 则是根域名，代表「有趣」，同时谐音「坊」，我并没有�
 
 夏日小镇的故事实在是太多了，一瞬间诞生出了就这样继续下去，不回去上班的想法。
 
-![与父亲在镇上兜风](https://r2.yunyoujun.cn/images/my-town-ride-with-father.jpg)
+![与父亲在镇上兜风](https://cos.yunle.fun/images/my-town-ride-with-father.jpg)
 
 最后回到现实，父亲向我介绍了下小镇上新盖的一栋栋联排别墅，上下两户，5k多一平，两层带车库一百万。
 不要三四千，也不要一两千，只要一百万，北京厕所价位别墅带回家。

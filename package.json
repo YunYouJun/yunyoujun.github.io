@@ -3,7 +3,7 @@
   "type": "module",
   "version": "2.0.0",
   "private": true,
-  "packageManager": "pnpm@9.15.0",
+  "packageManager": "pnpm@9.15.1",
   "description": "YunYouJun Blog",
   "author": {
     "email": "me@yunyoujun.cn",
@@ -48,23 +48,23 @@
     "@vueuse/sound": "^2.0.1"
   },
   "devDependencies": {
-    "@antfu/eslint-config": "^3.12.0",
+    "@antfu/eslint-config": "^3.12.1",
     "@types/md5": "^2.3.5",
     "@yunyoujun/sponsors": "^0.0.4",
     "cross-env": "^7.0.3",
     "eslint": "^9.17.0",
-    "lint-staged": "^15.2.11",
+    "lint-staged": "^15.3.0",
     "md5": "^2.3.0",
     "simple-git-hooks": "^2.11.1",
     "typescript": "5.6.2",
-    "valaxy": "^0.22.2",
+    "valaxy": "^0.22.5",
     "valaxy-addon-algolia": "^0.1.0",
-    "valaxy-addon-components": "^0.0.4",
+    "valaxy-addon-components": "^0.1.0",
     "valaxy-addon-waline": "^0.2.0",
-    "valaxy-theme-yun": "^0.22.2",
+    "valaxy-theme-yun": "^0.22.5",
     "vite-plugin-remote-assets": "^0.6.0",
     "vue-gtag-next": "^1.14.0",
-    "vue-tsc": "^2.1.10"
+    "vue-tsc": "^2.2.0"
   },
   "simple-git-hooks": {
     "pre-commit": "pnpm lint-staged"

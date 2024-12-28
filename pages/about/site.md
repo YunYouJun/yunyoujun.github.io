@@ -123,7 +123,7 @@ emm，目前似乎是的。但如果你是可爱 JK 美少女，欢迎随时报�
 
 <!-- 偷摸摸放个广告。 -->
 
-<!-- [![又拍云 CDN](https://r2.yunyoujun.cn/images/upyun-cdn-adsense.jpg)](https://www.upyun.com/) -->
+<!-- [![又拍云 CDN](https://cos.yunle.fun/images/upyun-cdn-adsense.jpg)](https://www.upyun.com/) -->
 
 ### 2021-03-07 19:43:34
 

@@ -200,7 +200,7 @@ function step(timestamp) {
 
 速度衰减，意味着徽章最后可能停止在任意角度。但这并不是我们想要的，我们希望它能总是保持正/反面。
 
-![旋转到一半停了](https://r2.yunyoujun.cn/images/badge-rotate-to-middle.jpg)
+![旋转到一半停了](https://cos.yunle.fun/images/badge-rotate-to-middle.jpg)
 
 同样我们可以从物理角度进行思考，在水平面施加一个「重力」，使其总是保持正/反面。
 这个重力（加速度）在徽章的左右区间正负是不一样的。

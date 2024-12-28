@@ -76,7 +76,7 @@ LM: 我朋友的朋友
 
 ~~此外也很害怕在饭点时，被提到吃素而引人注目受特别关照。~~
 
-![一个人出差太简单了 带上这个吧](https://r2.yunyoujun.cn/images/one-person-is-too-easy.jpg)_一个人出差太简单了 带上这个吧_
+![一个人出差太简单了 带上这个吧](https://cos.yunle.fun/images/one-person-is-too-easy.jpg)_一个人出差太简单了 带上这个吧_
 
 略去无关紧要的琐事，简而言之，因为出差事项无聊（~~也许只是借口~~），开始探寻同行小伙伴社交账号的活动。
 
@@ -86,11 +86,11 @@ LM: 我朋友的朋友
 
 而 LM 同学则声称各平台均使用了不同 ID，导致我无从下手。尝试使用相同 ID 在各平台检索，得到的似是而非的结果也被一一否定。
 
-![你和人们是联系在一起的](https://r2.yunyoujun.cn/images/you-and-people-are-conected.jpg)
+![你和人们是联系在一起的](https://cos.yunle.fun/images/you-and-people-are-conected.jpg)
 
-![就算李白先生想要孤独](https://r2.yunyoujun.cn/images/even-mr-libai-want-to-be-alone.jpg)
+![就算李白先生想要孤独](https://cos.yunle.fun/images/even-mr-libai-want-to-be-alone.jpg)
 
-![也无法避免和人产生联系](https://r2.yunyoujun.cn/images/cannot-avoid-contact-with-people.jpg)
+![也无法避免和人产生联系](https://cos.yunle.fun/images/cannot-avoid-contact-with-people.jpg)
 
 > 「[春宵苦短，少女前进吧！](https://movie.douban.com/subject/26935251/)」
 
@@ -100,7 +100,7 @@ LM: 我朋友的朋友
 
 > 因为有些不服输，使用了特殊手段~~SGK~~加谷歌/百度检索搜寻到了知乎账号，但也仅限于此。并从源头处获得了表情包。⬇️
 
-![小狗努力](https://r2.yunyoujun.cn/images/dog-is-working-hard.jpg)
+![小狗努力](https://cos.yunle.fun/images/dog-is-working-hard.jpg)
 
 至于微博账号，苦觅不得，决定放弃。
 
@@ -129,7 +129,7 @@ LM: 我朋友的朋友
 
 此时，我也成功意识到，「人类是有极限的。」
 
-![游戏手柄 ｜ 微信](https://r2.yunyoujun.cn/images/wechat-about-gamepad.jpg)
+![游戏手柄 ｜ 微信](https://cos.yunle.fun/images/wechat-about-gamepad.jpg)
 
 当然也进一步可以确定是类似上图的游戏手柄 🎮。
 
@@ -204,7 +204,7 @@ OK，万事俱备。整一个循环来获取用户信息，并下载头像吧！
 
 > 403 Forbidden | nginx
 
-![你的账号已被锁定](https://r2.yunyoujun.cn/images/your-douban-account-is-locked.jpg)
+![你的账号已被锁定](https://cos.yunle.fun/images/your-douban-account-is-locked.jpg)
 
 ```js
 /**
@@ -238,7 +238,7 @@ async function getAllMembers(groupId) {
 
 用户信息的 JSON 数据 683KB，头像的图片一共为 151.7MB。（搜完咱会删掉的～）
 
-![豆瓣小组成员头像](https://r2.yunyoujun.cn/images/douban-group-member-avatars.jpg)
+![豆瓣小组成员头像](https://cos.yunle.fun/images/douban-group-member-avatars.jpg)
 
 想来 LM 同学的头像应当已经位于其中。
 
@@ -375,7 +375,7 @@ AssertionError: Image Not Found /Users/yunyou/github/lab/find-lm/tmp/images/game
 
 注册了个 [wandb](https://www.wandb.com/) 账号，查看训练过程。（虽然好像没什么用）
 
-![wandb-visualize](https://r2.yunyoujun.cn/images/wandb-visualize.jpg)
+![wandb-visualize](https://cos.yunle.fun/images/wandb-visualize.jpg)
 
 ##### Detect
 
@@ -409,11 +409,11 @@ python detect.py --source /Users/yunyou/github/lab/find-lm/tmp/images/avatars --
 
 因为训练集又混乱又少（自己也压根没有标），所以得到一堆并不相关的图片，可爱的玉子也是 Gamepad 了。
 
-![Done in 4884](https://r2.yunyoujun.cn/images/yolov5-done-4884.jpg)
+![Done in 4884](https://cos.yunle.fun/images/yolov5-done-4884.jpg)
 
 跑了 4884.034s，过了遍最后结果（大概几十张图片），果然没有发现什么像游戏手柄的东西。
 
-![玉子也是游戏手柄](https://r2.yunyoujun.cn/images/tomako-is-gamepad.jpg)
+![玉子也是游戏手柄](https://cos.yunle.fun/images/tomako-is-gamepad.jpg)
 
 加之后又从本人处得到了手柄色彩本就与背景十分接近，很难检测到的信息，所以不得不更换方案。
 
@@ -480,19 +480,19 @@ beijingMembers.forEach((member) => {
 
 总共才七百来张，手动过一遍好像也不麻烦。
 
-![小伙子 你不讲武德 | 马保国](https://r2.yunyoujun.cn/images/boy-you-dont-speak-wu-de.jpg)
+![小伙子 你不讲武德 | 马保国](https://cos.yunle.fun/images/boy-you-dont-speak-wu-de.jpg)
 
 打开 finder 画廊模式，啪，很快啊，就找到了。
 
 <!-- ![finder](https://i.loli.net/2020/12/02/DKXF2S6BfkNCQHs.png) -->
 
-![mosaic finder](https://r2.yunyoujun.cn/images/mosaic-finder-placebo.jpg)
+![mosaic finder](https://cos.yunle.fun/images/mosaic-finder-placebo.jpg)
 
 加之名称是此前提过的一个乐队名字的中文含义，因此也较为确信。
 
 在点开个人主页时，则基本可以确定。因为早在半月前便留下了这样一条广播，我却因为走了许多弯路才抵达。
 
-![mosaic 安慰剂的广播](https://r2.yunyoujun.cn/images/mosaic-placebo-broadcast.jpg)
+![mosaic 安慰剂的广播](https://cos.yunle.fun/images/mosaic-placebo-broadcast.jpg)
 
 ~~不要回答！不要回答！不要回答！~~
 

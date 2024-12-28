@@ -19,7 +19,7 @@ aplayer: true
 
 因为标题拟的很像轻小说，并且这件事本身其实并不是什么有趣的事（~~但我希望它能有趣些~~），所以我决定用我的死宅文风以轻小说的方式来记录一下。（~~欢迎吐槽，但别太伤人。~~）
 
-![别骂了别骂了再骂人要傻了](https://r2.yunyoujun.cn/images/dont-scold-me.jpg)
+![别骂了别骂了再骂人要傻了](https://cos.yunle.fun/images/dont-scold-me.jpg)
 
 ## 内容简介
 
@@ -40,7 +40,7 @@ aplayer: true
 
 ## 作者简介
 
-![我不做程序员了](https://r2.yunyoujun.cn/images/not-a-programmer-anymore.jpg)
+![我不做程序员了](https://cos.yunle.fun/images/not-a-programmer-anymore.jpg)
 
 ~~等等，你这种毫无知名度可言的非专业作者根本不需要这个吧。~~
 
@@ -151,9 +151,9 @@ Wappalyzer 告诉我它似乎使用了 jQuery，还是 v1.11.1 的远古版本�
 
 只是这时，意想不到的事情发生了。
 
-![请确认使用的是 IE 系列浏览器](https://r2.yunyoujun.cn/images/please-sure-you-are-using-ie-browser.jpg)_请确认使用的是 IE 系列浏览器_
+![请确认使用的是 IE 系列浏览器](https://cos.yunle.fun/images/please-sure-you-are-using-ie-browser.jpg)_请确认使用的是 IE 系列浏览器_
 
-![真有你的喔！](https://r2.yunyoujun.cn/images/really-have-you.jpg)_真有你的喔_
+![真有你的喔！](https://cos.yunle.fun/images/really-have-you.jpg)_真有你的喔_
 
 已经是 2020 这个接近许多科幻设定的时代了，即便身为母亲的微软也已投敌，IE 却如同延续着青春期的叛逆，仍在倔强的发挥着它的余热。
 系统已经达到很不便使用的程度，竟然还没有更新的打算，也该说不愧是可靠的机关么。
@@ -226,7 +226,7 @@ Wappalyzer 告诉我它似乎使用了 jQuery，还是 v1.11.1 的远古版本�
 
 尽管文不对题，听到时，眼眶却突然湿润起来。
 
-![看这有个傻子](https://r2.yunyoujun.cn/images/look-at-this-idiot.jpg)_新的一天也要加油鸭_
+![看这有个傻子](https://cos.yunle.fun/images/look-at-this-idiot.jpg)_新的一天也要加油鸭_
 
 ### 为通过的审核献上金钱！
 
@@ -243,7 +243,7 @@ Wappalyzer 告诉我它似乎使用了 jQuery，还是 v1.11.1 的远古版本�
 
 返校后，我在淘宝选购了粉笔家的综合素质与教育知识与能力的辅导书，厚厚的数本方才 39 元，还是顺丰包邮，似乎很值的样子。
 
-![你赚了，我亏了，我都亏成首富了](https://r2.yunyoujun.cn/images/i-am-the-richest-man.jpg)
+![你赚了，我亏了，我都亏成首富了](https://cos.yunle.fun/images/i-am-the-richest-man.jpg)
 
 不过粉笔家的专业课书目只有语文、数学、英语等。
 搜来搜去，信息技术的专业课书本似乎只有中公版本，且仅仅两本便售价 53 元，但还是不得不买。
@@ -305,7 +305,7 @@ Wappalyzer 告诉我它似乎使用了 jQuery，还是 v1.11.1 的远古版本�
 
 虽然有些一头雾水，但还是理直气壮地尽可能填满了。
 
-![理直气壮.jpg](https://r2.yunyoujun.cn/images/just-and-forceful.jpg)
+![理直气壮.jpg](https://cos.yunle.fun/images/just-and-forceful.jpg)
 
 ## 成绩公布之后
 
@@ -332,13 +332,13 @@ Wappalyzer 告诉我它似乎使用了 jQuery，还是 v1.11.1 的远古版本�
 
 次日，使用实验室的 Windows 电脑上残存的 IE 浏览器的兼容模式进行了面试报名。（报名费是 215 元。）
 
-![面试报名.png](https://r2.yunyoujun.cn/images/teacher-interview-registration.png)
+![面试报名.png](https://cos.yunle.fun/images/teacher-interview-registration.png)
 
 此外因为面试时间距今还算久远，决定等放寒假再考虑相关的准备（~~学习~~）事宜。
 
 感谢大家的祝福，也祝愿大家在今后的一个月也总能听到更好的消息吧！
 
-![摸鸭子](https://r2.yunyoujun.cn/images/touch-a-duck.gif)
+![摸鸭子](https://cos.yunle.fun/images/touch-a-duck.gif)
 
 ## 欢迎来到教师面试的教室
 
@@ -410,7 +410,7 @@ Wappalyzer 告诉我它似乎使用了 jQuery，还是 v1.11.1 的远古版本�
 | ------------------------ | -------- | -------- | -------- |
 | 455-信息技术（高级中学） | 不合格   | -        | 北京市   |
 
-![我真的有那么菜吗？](https://r2.yunyoujun.cn/images/i-am-so-vegetable.jpg)
+![我真的有那么菜吗？](https://cos.yunle.fun/images/i-am-so-vegetable.jpg)
 
 也有一些其他无法让人高兴起来的事情，有点难过。
 
@@ -472,7 +472,7 @@ GitHub Total Stars 刚好是 996，仿佛在暗示加班 996。
 
 2021-07-02，我登录上 [北京市教师资格](https://yuyuetz.bjtcc.org.cn/) 查看网上认定校验！
 
-![核验已通过](https://r2.yunyoujun.cn/images/teacher-verification-passed.jpg)
+![核验已通过](https://cos.yunle.fun/images/teacher-verification-passed.jpg)
 
 原本的领取时间是 2021-07-19 ～ 2021-08-18。
 为了方便起见，我选择了邮寄，寄送到学校的邮费是 12 元。
@@ -483,7 +483,7 @@ GitHub Total Stars 刚好是 996，仿佛在暗示加班 996。
 
 心心念念的教师证由邮政送达了。
 
-![我的教师证](https://r2.yunyoujun.cn/images/my-teacher-certificate.jpg)
+![我的教师证](https://cos.yunle.fun/images/my-teacher-certificate.jpg)
 
 ~~鸭子是本人~~
 
