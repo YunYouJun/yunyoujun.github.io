@@ -84,7 +84,7 @@ projects:
         emoji: 🧭
         color: pink
         github: YunYouJun/go-far-away
-        url: https://www.yunyoujun.cn/go-far-away/
+        url: https://yunyoujun.github.io/go-far-away/
       - name: birthday
         desc: 祝你生日快乐！（可以改链接 params 参数来替换寿星名称～）
         emoji: 🎂
@@ -153,7 +153,7 @@ projects:
         color: '#2b7489'
         desc: Mirai（QQ 机器人）TypeScript SDK，简单来说 mirai-ts 是零件包，可以用来自由地搭建你想要的机器人。
         github: YunYouJun/mirai-ts
-        docs: https://yunyoujun.cn/mirai-ts/
+        docs: https://yunyoujun.github.io/mirai-ts/
       - name: el-bot
         emoji: 🤖️
         desc: 使用 mirai-ts 构建的 Node 端机器人框架，可以自定义插件，封装了更多内容。el-bot 则是自行车，可以加装各类插件装饰。
@@ -240,7 +240,7 @@ projects:
         color: '#70b7fd'
         textColor: white
         github: YunYouJun/star-markdown-css
-        url: https://www.yunyoujun.cn/star-markdown-css/
+        url: https://yunyoujun.github.io/star-markdown-css/
       - name: explosions
         desc: 爆裂吧！取名自惠惠的爆裂魔法，放一些前端动效的实现。
         emoji: 💥
@@ -269,21 +269,21 @@ projects:
         npm: unplugin-mockery
       - name: hexo-widget-tree
         emoji: 🌲
-        desc: Hexo 文章树状菜单预览插件
+        desc: Hexo 文章树状菜单预览插件（Hexo 插件不再维护，推荐使用 Valaxy）
         color: green
         github: YunYouJun/hexo-widget-tree
-        url: https://www.yunyoujun.cn/yun/widget-tree.html
+        url: https://hexo.yunyoujun.cn/yun/widget-tree.html
       - name: hexo-tag-common
         emoji: 🏷️
-        desc: Hexo 通用标签实现
+        desc: Hexo 通用标签实现（Hexo 插件不再维护，推荐使用 Valaxy）
         color: '#f8d0a0'
         github: YunYouJun/hexo-tag-common
-        url: https://www.yunyoujun.cn/yun/tag-common.html
+        url: https://hexo.yunyoujun.cn/yun/tag-common.html
       - name: wc-github-corners
         emoji: ℹ︎
         desc: 可以在任意地方（框架）使用的 GitHub Corner 挂件（基于 Web Components 实现）
         color: black
-        url: https://www.yunyoujun.cn/wc-github-corners/
+        url: https://yunyoujun.github.io/wc-github-corners/
       - name: vuepress-plugin-google-adsense
         emoji: 🪧
         desc: Vuepress v1 谷歌广告插件
@@ -298,7 +298,7 @@ projects:
         desc: WebGL 辐射度渲染实现
         color: '#face87'
         github: YunYouJun/webgl-radiosity
-        url: https://yunyoujun.cn/webgl-radiosity/
+        url: https://yunyoujun.github.io/webgl-radiosity/
       - name: gaussian-blur
         emoji: ✍️
         desc: 手写一个高斯模糊

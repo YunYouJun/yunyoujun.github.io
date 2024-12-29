@@ -9,8 +9,8 @@ importers:
   .:
     dependencies:
       '@vueuse/sound':
-        specifier: ^2.0.1
-        version: 2.0.1(vue@3.5.13(typescript@5.6.2))
+        specifier: ^2.1.3
+        version: 2.1.3(vue@3.5.13(typescript@5.6.2))
     devDependencies:
       '@antfu/eslint-config':
         specifier: ^3.12.1
@@ -1813,8 +1813,8 @@ packages:
   '@vueuse/shared@12.0.0-beta.1':
     resolution: {integrity: sha512-HuP0Yry3sOZwqcBjB/mTlYEjqcO0MpmheAWUq+RdMKKX4GaF8szkKu3b/MLHKjLGmeeEQKZvtSCfj+Xbg+GNMQ==}
 
-  '@vueuse/sound@2.0.1':
-    resolution: {integrity: sha512-7Fbp9lQkuUnpTXS9vPbvT2FDYHuwJbvKPivOYETaVVSmcZKoczw6zcsebsARkH5Ged0f045YUOZnV/RuCzyLXQ==}
+  '@vueuse/sound@2.1.3':
+    resolution: {integrity: sha512-yZW1dzMJqCp57+ZM1tJ2oPye4RJvWhzkUpGvokB5fhk/jAmOwKGbdvm8O7dJ/YAmP+eLFCBQmELjso6sXSfnAg==}
     peerDependencies:
       '@vue/composition-api': ^1.0.0-rc.1
       vue: ^2.0.0 || >=3.0.0
@@ -6813,7 +6813,7 @@ snapshots:
     transitivePeerDependencies:
       - typescript
 
-  '@vueuse/sound@2.0.1(vue@3.5.13(typescript@5.6.2))':
+  '@vueuse/sound@2.1.3(vue@3.5.13(typescript@5.6.2))':
     dependencies:
       howler: 2.2.4
       vue: 3.5.13(typescript@5.6.2)
