@@ -76,7 +76,7 @@ projects:
         emoji: 📝
         color: gray
         textColor: white
-        github: YunYouJun/chat-dust
+        github: YunYouJun/char-dust
         url: https://yunyoujun.github.io/char-dust/
         docs: https://www.yunyoujun.cn/posts/why-make-char-dust/
       - name: go-far-away

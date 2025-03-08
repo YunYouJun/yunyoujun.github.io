@@ -3,7 +3,7 @@
   "type": "module",
   "version": "2.0.0",
   "private": true,
-  "packageManager": "pnpm@9.15.4",
+  "packageManager": "pnpm@10.6.1",
   "description": "YunYouJun Blog",
   "author": {
     "email": "me@yunyoujun.cn",
@@ -48,23 +48,31 @@
     "@vueuse/sound": "^2.1.3"
   },
   "devDependencies": {
-    "@antfu/eslint-config": "^4.1.0",
+    "@antfu/eslint-config": "^4.8.1",
     "@types/md5": "^2.3.5",
     "@yunyoujun/sponsors": "^0.0.4",
     "cross-env": "^7.0.3",
-    "eslint": "^9.19.0",
+    "eslint": "^9.22.0",
     "lint-staged": "^15.4.3",
     "md5": "^2.3.0",
     "simple-git-hooks": "^2.11.1",
-    "typescript": "5.6.2",
-    "valaxy": "^0.22.7",
+    "typescript": "5.7.3",
+    "valaxy": "^0.22.13",
     "valaxy-addon-algolia": "^0.1.0",
     "valaxy-addon-components": "^0.1.0",
     "valaxy-addon-waline": "^0.2.0",
-    "valaxy-theme-yun": "^0.22.7",
-    "vite-plugin-remote-assets": "^0.6.0",
+    "valaxy-theme-yun": "^0.22.13",
+    "vite-plugin-remote-assets": "^1.0.0",
     "vue-gtag-next": "^1.14.0",
-    "vue-tsc": "^2.2.0"
+    "vue-tsc": "^2.2.8"
+  },
+  "pnpm": {
+    "onlyBuiltDependencies": [
+      "@parcel/watcher",
+      "esbuild",
+      "simple-git-hooks",
+      "vue-demi"
+    ]
   },
   "simple-git-hooks": {
     "pre-commit": "pnpm lint-staged"

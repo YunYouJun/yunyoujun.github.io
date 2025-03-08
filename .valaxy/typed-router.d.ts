@@ -105,7 +105,7 @@ declare module 'vue-router/auto-routes' {
     '/posts/memory-about-summer-camp': RouteRecordInfo<'/posts/memory-about-summer-camp', '/posts/memory-about-summer-camp', Record<never, never>, Record<never, never>>,
     '/posts/methods-for-inverse-kinematics': RouteRecordInfo<'/posts/methods-for-inverse-kinematics', '/posts/methods-for-inverse-kinematics', Record<never, never>, Record<never, never>>,
     '/posts/migrate-from-valine-to-disqus': RouteRecordInfo<'/posts/migrate-from-valine-to-disqus', '/posts/migrate-from-valine-to-disqus', Record<never, never>, Record<never, never>>,
-    '/posts/my-ten-years-on-the-fairy-road': RouteRecordInfo<'/posts/my-ten-years-on-the-fairy-road', '/posts/my-ten-years-on-the-fairy-road', Record<never, never>, Record<never, never>>,
+    '/posts/my-total-war-the-fairy-road': RouteRecordInfo<'/posts/my-total-war-the-fairy-road', '/posts/my-total-war-the-fairy-road', Record<never, never>, Record<never, never>>,
     '/posts/nnrm-new-nrm': RouteRecordInfo<'/posts/nnrm-new-nrm', '/posts/nnrm-new-nrm', Record<never, never>, Record<never, never>>,
     '/posts/npm-and-yarn': RouteRecordInfo<'/posts/npm-and-yarn', '/posts/npm-and-yarn', Record<never, never>, Record<never, never>>,
     '/posts/opengl-with-macos': RouteRecordInfo<'/posts/opengl-with-macos', '/posts/opengl-with-macos', Record<never, never>, Record<never, never>>,
