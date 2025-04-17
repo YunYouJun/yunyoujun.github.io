@@ -56,7 +56,7 @@
     "lint-staged": "^15.5.1",
     "md5": "^2.3.0",
     "simple-git-hooks": "^2.12.1",
-    "typescript": "5.7.3",
+    "typescript": "^5.8.3",
     "valaxy": "^0.23.0",
     "valaxy-addon-algolia": "^0.2.0",
     "valaxy-addon-components": "^0.1.0",

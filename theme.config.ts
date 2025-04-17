@@ -1,4 +1,4 @@
-import { defineThemeConfig } from 'valaxy-theme-yun/node'
+import { defineThemeConfig } from 'valaxy-theme-yun'
 
 export default defineThemeConfig({
   banner: {

@@ -5,7 +5,7 @@
     "lib": ["DOM", "ESNext"],
     "baseUrl": ".",
     "module": "ESNext",
-    "moduleResolution": "Node",
+    "moduleResolution": "bundler",
     "paths": {
       "~/*": ["./*"]
     },
@@ -19,6 +19,7 @@
     "noUnusedLocals": true,
     "esModuleInterop": true,
     "forceConsistentCasingInFileNames": true,
+    "skipDefaultLibCheck": true,
     "skipLibCheck": true
   },
   "exclude": ["dist", "node_modules"]
