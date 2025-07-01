@@ -438,6 +438,7 @@ npm install @explosions/badge-rotation
 
 ```typescript
 import { createInertiaAnimation } from '@explosions/badge-rotation'
+
 const inertiaAnimation = createInertiaAnimation()
 ```
 

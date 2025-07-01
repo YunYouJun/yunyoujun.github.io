@@ -287,6 +287,7 @@ emmm，可是速度很慢，1119\*559 模糊半径 30px 便花了足足 137007ms
 ```typescript
 // 复用计算高斯权重的函数
 import { calculateGaussianWeight } from './index'
+
 export class Blur {
   radius: number
   canvas: HTMLCanvasElement
