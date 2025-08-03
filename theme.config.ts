@@ -9,6 +9,14 @@ export default defineThemeConfig({
     },
   },
 
+  nav: [
+    { text: 'menu.posts', link: '/posts/', icon: 'i-ri-article-line' },
+    { text: '项目列表', link: '/projects', icon: 'i-ri-gallery-view' },
+    { text: '友情链接', link: '/links/', icon: 'i-ri-link' },
+    { text: '老婆列表', link: '/girls/', icon: 'i-ri-women-line' },
+    { text: '赞助者们', link: '/sponsors/', icon: 'i-ri-heart-line' },
+  ],
+
   pages: [
     {
       name: '项目橱窗',
