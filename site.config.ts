@@ -9,7 +9,8 @@ export default defineSiteConfig({
     name: '云游君',
     avatar: '/images/avatar.jpg',
     status: {
-      emoji: '😣',
+      emoji: '☁️',
+      message: '希望能创作出可以成为他人回忆的事物',
     },
   },
   url: 'https://www.yunyoujun.cn',

@@ -47,6 +47,7 @@ declare module 'vue-router/auto-routes' {
     '/girls/': RouteRecordInfo<'/girls/', '/girls', Record<never, never>, Record<never, never>>,
     '/links/': RouteRecordInfo<'/links/', '/links', Record<never, never>, Record<never, never>>,
     '/music/': RouteRecordInfo<'/music/', '/music', Record<never, never>, Record<never, never>>,
+    '/notes/online-dating': RouteRecordInfo<'/notes/online-dating', '/notes/online-dating', Record<never, never>, Record<never, never>>,
     '/page/[page]': RouteRecordInfo<'/page/[page]', '/page/:page', { page: ParamValue<true> }, { page: ParamValue<false> }>,
     '/posts/': RouteRecordInfo<'/posts/', '/posts', Record<never, never>, Record<never, never>>,
     '/posts/2020-summary': RouteRecordInfo<'/posts/2020-summary', '/posts/2020-summary', Record<never, never>, Record<never, never>>,
@@ -271,6 +272,10 @@ declare module 'vue-router/auto-routes' {
     }
     'pages/music/index.md': {
       routes: '/music/'
+      views: never
+    }
+    'pages/notes/online-dating.md': {
+      routes: '/notes/online-dating'
       views: never
     }
     'node_modules/.pnpm/valaxy-theme-yun@0.26.2_vue@3.5.18_typescript@5.9.2_/node_modules/valaxy-theme-yun/pages/page/[page].vue': {
