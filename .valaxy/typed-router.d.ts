@@ -72,6 +72,7 @@ declare module 'vue-router/auto-routes' {
     '/posts/coding-webide-dev-env': RouteRecordInfo<'/posts/coding-webide-dev-env', '/posts/coding-webide-dev-env', Record<never, never>, Record<never, never>>,
     '/posts/coolq-use-note': RouteRecordInfo<'/posts/coolq-use-note', '/posts/coolq-use-note', Record<never, never>, Record<never, never>>,
     '/posts/css-trap-note': RouteRecordInfo<'/posts/css-trap-note', '/posts/css-trap-note', Record<never, never>, Record<never, never>>,
+    '/posts/death-and-rebirth-of-open-source-projects': RouteRecordInfo<'/posts/death-and-rebirth-of-open-source-projects', '/posts/death-and-rebirth-of-open-source-projects', Record<never, never>, Record<never, never>>,
     '/posts/deepin-use-note': RouteRecordInfo<'/posts/deepin-use-note', '/posts/deepin-use-note', Record<never, never>, Record<never, never>>,
     '/posts/discourse-forum': RouteRecordInfo<'/posts/discourse-forum', '/posts/discourse-forum', Record<never, never>, Record<never, never>>,
     '/posts/draw-a-fool-goddess': RouteRecordInfo<'/posts/draw-a-fool-goddess', '/posts/draw-a-fool-goddess', Record<never, never>, Record<never, never>>,
@@ -144,4 +145,532 @@ declare module 'vue-router/auto-routes' {
     '/sponsors/': RouteRecordInfo<'/sponsors/', '/sponsors', Record<never, never>, Record<never, never>>,
     '/tags/': RouteRecordInfo<'/tags/', '/tags', Record<never, never>, Record<never, never>>,
   }
+
+  /**
+   * Route file to route info map by unplugin-vue-router.
+   * Used by the volar plugin to automatically type useRoute()
+   *
+   * Each key is a file path relative to the project root with 2 properties:
+   * - routes: union of route names of the possible routes when in this page (passed to useRoute<...>())
+   * - views: names of nested views (can be passed to <RouterView name="...">)
+   *
+   * @internal
+   */
+  export interface _RouteFileInfoMap {
+    'node_modules/.pnpm/valaxy-theme-yun@0.26.2_vue@3.5.18_typescript@5.9.2_/node_modules/valaxy-theme-yun/pages/index.vue': {
+      routes: '/'
+      views: never
+    }
+    'pages/_drafts/a-story-about-coc-22.md': {
+      routes: '/_drafts/a-story-about-coc-22'
+      views: never
+    }
+    'pages/_drafts/abandon/add-web-notification-for-blog.md': {
+      routes: '/_drafts/abandon/add-web-notification-for-blog'
+      views: never
+    }
+    'pages/_drafts/go-far-away.md': {
+      routes: '/_drafts/go-far-away'
+      views: never
+    }
+    'pages/_drafts/how-to-migrate-element-plus-var.md': {
+      routes: '/_drafts/how-to-migrate-element-plus-var'
+      views: never
+    }
+    'pages/_drafts/how-to-write-a-bezier-curve-sketch-pad.md': {
+      routes: '/_drafts/how-to-write-a-bezier-curve-sketch-pad'
+      views: never
+    }
+    'pages/_drafts/i-and-game.md': {
+      routes: '/_drafts/i-and-game'
+      views: never
+    }
+    'pages/_drafts/imitate-2048-game.md': {
+      routes: '/_drafts/imitate-2048-game'
+      views: never
+    }
+    'pages/_drafts/make-ak-ui.md': {
+      routes: '/_drafts/make-ak-ui'
+      views: never
+    }
+    'pages/_drafts/minecraft-survival-diary.md': {
+      routes: '/_drafts/minecraft-survival-diary'
+      views: never
+    }
+    'pages/_drafts/my-first-internship-and-work.md': {
+      routes: '/_drafts/my-first-internship-and-work'
+      views: never
+    }
+    'pages/_drafts/my-next-blog.md': {
+      routes: '/_drafts/my-next-blog'
+      views: never
+    }
+    'pages/_drafts/my-youth-is-over.md': {
+      routes: '/_drafts/my-youth-is-over'
+      views: never
+    }
+    'pages/_drafts/old/happy-fool-day.md': {
+      routes: '/_drafts/old/happy-fool-day'
+      views: never
+    }
+    'pages/_drafts/old/README.md': {
+      routes: '/_drafts/old/README'
+      views: never
+    }
+    'pages/_drafts/re0-to-be-a-vtuber.md': {
+      routes: '/_drafts/re0-to-be-a-vtuber'
+      views: never
+    }
+    'pages/_drafts/README.md': {
+      routes: '/_drafts/README'
+      views: never
+    }
+    'pages/_drafts/today-let-us-cook.md': {
+      routes: '/_drafts/today-let-us-cook'
+      views: never
+    }
+    'pages/_drafts/what-i-do-for-element-plus-style-system.md': {
+      routes: '/_drafts/what-i-do-for-element-plus-style-system'
+      views: never
+    }
+    'node_modules/.pnpm/valaxy@0.26.2_@babel+parser@7.28.0_@nuxt+kit@3.18.0_@types+markdown-it@14.1.2_@types+no_1bf5ddb64aa5782eadf100ac27f742ea/node_modules/valaxy/client/pages/[...path].vue': {
+      routes: '/[...path]'
+      views: never
+    }
+    'pages/404.md': {
+      routes: '/404'
+      views: never
+    }
+    'pages/about/index.md': {
+      routes: '/about/'
+      views: never
+    }
+    'pages/about/site.md': {
+      routes: '/about/site'
+      views: never
+    }
+    'pages/air-conditioner-room/index.md': {
+      routes: '/air-conditioner-room/'
+      views: never
+    }
+    'pages/archives/index.md': {
+      routes: '/archives/'
+      views: never
+    }
+    'pages/categories/index.md': {
+      routes: '/categories/'
+      views: never
+    }
+    'pages/girls/index.md': {
+      routes: '/girls/'
+      views: never
+    }
+    'pages/links/index.md': {
+      routes: '/links/'
+      views: never
+    }
+    'pages/music/index.md': {
+      routes: '/music/'
+      views: never
+    }
+    'node_modules/.pnpm/valaxy-theme-yun@0.26.2_vue@3.5.18_typescript@5.9.2_/node_modules/valaxy-theme-yun/pages/page/[page].vue': {
+      routes: '/page/[page]'
+      views: never
+    }
+    'node_modules/.pnpm/valaxy-theme-yun@0.26.2_vue@3.5.18_typescript@5.9.2_/node_modules/valaxy-theme-yun/pages/posts/index.vue': {
+      routes: '/posts/'
+      views: never
+    }
+    'pages/posts/2020-summary.md': {
+      routes: '/posts/2020-summary'
+      views: never
+    }
+    'pages/posts/a-blessing-in-disguise.md': {
+      routes: '/posts/a-blessing-in-disguise'
+      views: never
+    }
+    'pages/posts/a-story-about-coc-0.md': {
+      routes: '/posts/a-story-about-coc-0'
+      views: never
+    }
+    'pages/posts/a-story-about-coc-1.md': {
+      routes: '/posts/a-story-about-coc-1'
+      views: never
+    }
+    'pages/posts/a-story-about-coc-2.md': {
+      routes: '/posts/a-story-about-coc-2'
+      views: never
+    }
+    'pages/posts/a-story-about-fantasy-star.md': {
+      routes: '/posts/a-story-about-fantasy-star'
+      views: never
+    }
+    'pages/posts/a-trip-to-nanjing-10th-contest.md': {
+      routes: '/posts/a-trip-to-nanjing-10th-contest'
+      views: never
+    }
+    'pages/posts/a-try-about-watercolor-portrait.md': {
+      routes: '/posts/a-try-about-watercolor-portrait'
+      views: never
+    }
+    'pages/posts/after-2nd-graduate-exam.md': {
+      routes: '/posts/after-2nd-graduate-exam'
+      views: never
+    }
+    'pages/posts/after-2nd-postgraduate-re-exam.md': {
+      routes: '/posts/after-2nd-postgraduate-re-exam'
+      views: never
+    }
+    'pages/posts/after-entering-cuc.md': {
+      routes: '/posts/after-entering-cuc'
+      views: never
+    }
+    'pages/posts/after-graduate-exam.md': {
+      routes: '/posts/after-graduate-exam'
+      views: never
+    }
+    'pages/posts/ai-sfc.md': {
+      routes: '/posts/ai-sfc'
+      views: never
+    }
+    'pages/posts/air-conditioner.md': {
+      routes: '/posts/air-conditioner'
+      views: never
+    }
+    'pages/posts/always-like-this.md': {
+      routes: '/posts/always-like-this'
+      views: never
+    }
+    'pages/posts/as-summer-flowers.md': {
+      routes: '/posts/as-summer-flowers'
+      views: never
+    }
+    'pages/posts/baidu-seo-about-github-pages.md': {
+      routes: '/posts/baidu-seo-about-github-pages'
+      views: never
+    }
+    'pages/posts/blender-learn-note.md': {
+      routes: '/posts/blender-learn-note'
+      views: never
+    }
+    'pages/posts/choose-your-testing-framework.md': {
+      routes: '/posts/choose-your-testing-framework'
+      views: never
+    }
+    'pages/posts/coc-dragon-boat-incident.md': {
+      routes: '/posts/coc-dragon-boat-incident'
+      views: never
+    }
+    'pages/posts/coding-webide-dev-env.md': {
+      routes: '/posts/coding-webide-dev-env'
+      views: never
+    }
+    'pages/posts/coolq-use-note.md': {
+      routes: '/posts/coolq-use-note'
+      views: never
+    }
+    'pages/posts/css-trap-note.md': {
+      routes: '/posts/css-trap-note'
+      views: never
+    }
+    'pages/posts/death-and-rebirth-of-open-source-projects.md': {
+      routes: '/posts/death-and-rebirth-of-open-source-projects'
+      views: never
+    }
+    'pages/posts/deepin-use-note.md': {
+      routes: '/posts/deepin-use-note'
+      views: never
+    }
+    'pages/posts/discourse-forum.md': {
+      routes: '/posts/discourse-forum'
+      views: never
+    }
+    'pages/posts/draw-a-fool-goddess.md': {
+      routes: '/posts/draw-a-fool-goddess'
+      views: never
+    }
+    'pages/posts/eat-hot-pot-together.md': {
+      routes: '/posts/eat-hot-pot-together'
+      views: never
+    }
+    'pages/posts/echo.md': {
+      routes: '/posts/echo'
+      views: never
+    }
+    'pages/posts/everyday-auto-xuexiqiangguo.md': {
+      routes: '/posts/everyday-auto-xuexiqiangguo'
+      views: never
+    }
+    'pages/posts/export-nideriji-and-import-1diary.md': {
+      routes: '/posts/export-nideriji-and-import-1diary'
+      views: never
+    }
+    'pages/posts/find-npy-social-account.md': {
+      routes: '/posts/find-npy-social-account'
+      views: never
+    }
+    'pages/posts/gaussian-blur-for-image.md': {
+      routes: '/posts/gaussian-blur-for-image'
+      views: never
+    }
+    'pages/posts/git-learn-note.md': {
+      routes: '/posts/git-learn-note'
+      views: never
+    }
+    'pages/posts/give-me-money.md': {
+      routes: '/posts/give-me-money'
+      views: never
+    }
+    'pages/posts/hamster.md': {
+      routes: '/posts/hamster'
+      views: never
+    }
+    'pages/posts/hana-saku-iroha-weiwei-bonboru.md': {
+      routes: '/posts/hana-saku-iroha-weiwei-bonboru'
+      views: never
+    }
+    'pages/posts/hexo-build-note.md': {
+      routes: '/posts/hexo-build-note'
+      views: never
+    }
+    'pages/posts/hexo-theme-yun-strato.md': {
+      routes: '/posts/hexo-theme-yun-strato'
+      views: never
+    }
+    'pages/posts/home-firework-red-bag.md': {
+      routes: '/posts/home-firework-red-bag'
+      views: never
+    }
+    'pages/posts/how-much-3d-format.md': {
+      routes: '/posts/how-much-3d-format'
+      views: never
+    }
+    'pages/posts/how-to-build-your-site.md': {
+      routes: '/posts/how-to-build-your-site'
+      views: never
+    }
+    'pages/posts/how-to-realize-badge-rotation.md': {
+      routes: '/posts/how-to-realize-badge-rotation'
+      views: never
+    }
+    'pages/posts/how-to-write-a-web-component.md': {
+      routes: '/posts/how-to-write-a-web-component'
+      views: never
+    }
+    'pages/posts/html5-canvas-nest-js.md': {
+      routes: '/posts/html5-canvas-nest-js'
+      views: never
+    }
+    'pages/posts/i-am-er-ci-yuan-and-try-to-prove.md': {
+      routes: '/posts/i-am-er-ci-yuan-and-try-to-prove'
+      views: never
+    }
+    'pages/posts/i-and-town-and-home.md': {
+      routes: '/posts/i-and-town-and-home'
+      views: never
+    }
+    'pages/posts/laravel-use-note.md': {
+      routes: '/posts/laravel-use-note'
+      views: never
+    }
+    'pages/posts/latex-use-note.md': {
+      routes: '/posts/latex-use-note'
+      views: never
+    }
+    'pages/posts/life-and-work.md': {
+      routes: '/posts/life-and-work'
+      views: never
+    }
+    'pages/posts/life-is-not-a-marathon.md': {
+      routes: '/posts/life-is-not-a-marathon'
+      views: never
+    }
+    'pages/posts/make-an-avg-engine.md': {
+      routes: '/posts/make-an-avg-engine'
+      views: never
+    }
+    'pages/posts/make-el-bot.md': {
+      routes: '/posts/make-el-bot'
+      views: never
+    }
+    'pages/posts/make-hexo-theme-yun.md': {
+      routes: '/posts/make-hexo-theme-yun'
+      views: never
+    }
+    'pages/posts/memory-about-summer-camp.md': {
+      routes: '/posts/memory-about-summer-camp'
+      views: never
+    }
+    'pages/posts/methods-for-inverse-kinematics.md': {
+      routes: '/posts/methods-for-inverse-kinematics'
+      views: never
+    }
+    'pages/posts/migrate-from-valine-to-disqus.md': {
+      routes: '/posts/migrate-from-valine-to-disqus'
+      views: never
+    }
+    'pages/posts/my-total-war-the-fairy-road.md': {
+      routes: '/posts/my-total-war-the-fairy-road'
+      views: never
+    }
+    'pages/posts/nnrm-new-nrm.md': {
+      routes: '/posts/nnrm-new-nrm'
+      views: never
+    }
+    'pages/posts/npm-and-yarn.md': {
+      routes: '/posts/npm-and-yarn'
+      views: never
+    }
+    'pages/posts/opengl-with-macos.md': {
+      routes: '/posts/opengl-with-macos'
+      views: never
+    }
+    'pages/posts/outer-space.md': {
+      routes: '/posts/outer-space'
+      views: never
+    }
+    'pages/posts/planet-of-aqua.md': {
+      routes: '/posts/planet-of-aqua'
+      views: never
+    }
+    'pages/posts/proof-of-love.md': {
+      routes: '/posts/proof-of-love'
+      views: never
+    }
+    'pages/posts/quaternion-and-spatial-rotation.md': {
+      routes: '/posts/quaternion-and-spatial-rotation'
+      views: never
+    }
+    'pages/posts/responsive-canvas-with-vue.md': {
+      routes: '/posts/responsive-canvas-with-vue'
+      views: never
+    }
+    'pages/posts/set-up-my-minecraft-server.md': {
+      routes: '/posts/set-up-my-minecraft-server'
+      views: never
+    }
+    'pages/posts/stop-motion-animation-exchange.md': {
+      routes: '/posts/stop-motion-animation-exchange'
+      views: never
+    }
+    'pages/posts/that-is-what-life-should-be.md': {
+      routes: '/posts/that-is-what-life-should-be'
+      views: never
+    }
+    'pages/posts/the-birth-of-yunlefun.md': {
+      routes: '/posts/the-birth-of-yunlefun'
+      views: never
+    }
+    'pages/posts/the-common-hamster.md': {
+      routes: '/posts/the-common-hamster'
+      views: never
+    }
+    'pages/posts/the-moonlight-is-beautiful.md': {
+      routes: '/posts/the-moonlight-is-beautiful'
+      views: never
+    }
+    'pages/posts/the-shape-of-voice.md': {
+      routes: '/posts/the-shape-of-voice'
+      views: never
+    }
+    'pages/posts/third-party-comment-system.md': {
+      routes: '/posts/third-party-comment-system'
+      views: never
+    }
+    'pages/posts/to-lovely-junior.md': {
+      routes: '/posts/to-lovely-junior'
+      views: never
+    }
+    'pages/posts/trans-learn-latex-in-30-minutes.md': {
+      routes: '/posts/trans-learn-latex-in-30-minutes'
+      views: never
+    }
+    'pages/posts/try-to-become-a-teacher.md': {
+      routes: '/posts/try-to-become-a-teacher'
+      views: never
+    }
+    'pages/posts/use-cdn-speed-up-site.md': {
+      routes: '/posts/use-cdn-speed-up-site'
+      views: never
+    }
+    'pages/posts/use-travis-to-deploy.md': {
+      routes: '/posts/use-travis-to-deploy'
+      views: never
+    }
+    'pages/posts/valaxy-best-practice.md': {
+      routes: '/posts/valaxy-best-practice'
+      views: never
+    }
+    'pages/posts/vscode-config-note.md': {
+      routes: '/posts/vscode-config-note'
+      views: never
+    }
+    'pages/posts/vue-d3-demo.md': {
+      routes: '/posts/vue-d3-demo'
+      views: never
+    }
+    'pages/posts/vue-learn-note.md': {
+      routes: '/posts/vue-learn-note'
+      views: never
+    }
+    'pages/posts/vue-parcel-demo.md': {
+      routes: '/posts/vue-parcel-demo'
+      views: never
+    }
+    'pages/posts/want-more-do-less.md': {
+      routes: '/posts/want-more-do-less'
+      views: never
+    }
+    'pages/posts/wechat-and-chinese-chess.md': {
+      routes: '/posts/wechat-and-chinese-chess'
+      views: never
+    }
+    'pages/posts/why-i-use-upyun-cdn.md': {
+      routes: '/posts/why-i-use-upyun-cdn'
+      views: never
+    }
+    'pages/posts/why-make-char-dust.md': {
+      routes: '/posts/why-make-char-dust'
+      views: never
+    }
+    'pages/posts/wordpress-plugins-themes.md': {
+      routes: '/posts/wordpress-plugins-themes'
+      views: never
+    }
+    'pages/posts/yunyoujun-meme.md': {
+      routes: '/posts/yunyoujun-meme'
+      views: never
+    }
+    'pages/projects/index.md': {
+      routes: '/projects/'
+      views: never
+    }
+    'pages/README.md': {
+      routes: '/README'
+      views: never
+    }
+    'pages/slides/index.md': {
+      routes: '/slides/'
+      views: never
+    }
+    'pages/sponsors/index.md': {
+      routes: '/sponsors/'
+      views: never
+    }
+    'pages/tags/index.md': {
+      routes: '/tags/'
+      views: never
+    }
+  }
+
+  /**
+   * Get a union of possible route names in a certain route component file.
+   * Used by the volar plugin to automatically type useRoute()
+   *
+   * @internal
+   */
+  export type _RouteNamesForFilePath<FilePath extends string> =
+    _RouteFileInfoMap extends Record<FilePath, infer Info>
+      ? Info['routes']
+      : keyof RouteNamedMap
 }
