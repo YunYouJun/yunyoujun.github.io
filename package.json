@@ -48,7 +48,7 @@
     "@vueuse/sound": "^2.1.3"
   },
   "devDependencies": {
-    "@antfu/eslint-config": "^5.2.0",
+    "@antfu/eslint-config": "^5.2.1",
     "@types/md5": "^2.3.5",
     "@yunyoujun/sponsors": "^0.0.4",
     "cross-env": "^10.0.0",
@@ -57,11 +57,11 @@
     "md5": "^2.3.0",
     "simple-git-hooks": "^2.13.1",
     "typescript": "^5.9.2",
-    "valaxy": "^0.26.2",
+    "valaxy": "^0.26.3",
     "valaxy-addon-algolia": "^0.2.0",
     "valaxy-addon-components": "^0.1.0",
     "valaxy-addon-waline": "^0.2.1",
-    "valaxy-theme-yun": "^0.26.2",
+    "valaxy-theme-yun": "^0.26.3",
     "vite-plugin-remote-assets": "^2.0.0",
     "vue-gtag-next": "^1.14.0",
     "vue-tsc": "^3.0.5"

@@ -10,8 +10,6 @@ dist
 dist-ssr
 .idea/
 
-components.d.ts
-
 Thumbs.db
 
 # lock
@@ -27,6 +25,8 @@ node_modules/
 db.json
 
 # valaxy
+.valaxy
+
 public/valaxy-fuse-list.json
 
 # valaxy rss
