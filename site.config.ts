@@ -133,4 +133,8 @@ export default defineSiteConfig({
   statistics: {
     enable: true,
   },
+
+  encrypt: {
+    enable: true,
+  },
 })
