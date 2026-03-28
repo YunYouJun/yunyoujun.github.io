@@ -212,7 +212,7 @@ OK，万事俱备。整一个循环来获取用户信息，并下载头像吧！
  * @param {*} ms
  */
 function sleep(ms) {
-  return new Promise(resolve => setTimeout(() => resolve(), ms))
+  return new Promise(resolve => setTimeout(resolve, ms))
 }
 
 /**

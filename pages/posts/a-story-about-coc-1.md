@@ -189,7 +189,7 @@ aplayer: true
 一年前的的烈和小乔，在我眼中都是个高冷的人物。不苟言笑，只在部落战时不动声色地出手挽救战局，或是在部落里给我们这群渣渣填些那时还过于遥远憧憬的高级兵。
 
 只是……
-[![](https://yunyoujun.cn/wp-content/uploads/2017/01/6f708c22720e0cf3afa3d4180d46f21fbf09aaa4.jpg)](https://yunyoujun.cn/wp-content/uploads/2017/01/6f708c22720e0cf3afa3d4180d46f21fbf09aaa4.jpg)[![](https://yunyoujun.cn/wp-content/uploads/2017/01/a497ddea15ce36d352ed0fd33df33a87e850b10f.jpg)](https://yunyoujun.cn/wp-content/uploads/2017/01/a497ddea15ce36d352ed0fd33df33a87e850b10f.jpg)[![](https://yunyoujun.cn/wp-content/uploads/2017/01/ce8fdfef76094b360f7b970ea4cc7cd98c109d0f.jpg)](https://yunyoujun.cn/wp-content/uploads/2017/01/ce8fdfef76094b360f7b970ea4cc7cd98c109d0f.jpg)[![](https://yunyoujun.cn/wp-content/uploads/2017/01/d9b54dee3d6d55fbd12ffac56a224f4a21a4dd0f-300x221.jpg)](https://yunyoujun.cn/wp-content/uploads/2017/01/d9b54dee3d6d55fbd12ffac56a224f4a21a4dd0f.jpg)
+[![部落截图1](https://yunyoujun.cn/wp-content/uploads/2017/01/6f708c22720e0cf3afa3d4180d46f21fbf09aaa4.jpg)](https://yunyoujun.cn/wp-content/uploads/2017/01/6f708c22720e0cf3afa3d4180d46f21fbf09aaa4.jpg)[![部落截图2](https://yunyoujun.cn/wp-content/uploads/2017/01/a497ddea15ce36d352ed0fd33df33a87e850b10f.jpg)](https://yunyoujun.cn/wp-content/uploads/2017/01/a497ddea15ce36d352ed0fd33df33a87e850b10f.jpg)[![部落截图3](https://yunyoujun.cn/wp-content/uploads/2017/01/ce8fdfef76094b360f7b970ea4cc7cd98c109d0f.jpg)](https://yunyoujun.cn/wp-content/uploads/2017/01/ce8fdfef76094b360f7b970ea4cc7cd98c109d0f.jpg)[![部落截图4](https://yunyoujun.cn/wp-content/uploads/2017/01/d9b54dee3d6d55fbd12ffac56a224f4a21a4dd0f-300x221.jpg)](https://yunyoujun.cn/wp-content/uploads/2017/01/d9b54dee3d6d55fbd12ffac56a224f4a21a4dd0f.jpg)
 现在天天在群里刷表情包的事情我还是不提了。
 
 ### 龙地
@@ -280,7 +280,7 @@ aplayer: true
 我打开电脑，翻着群的消息记录，多半是不可能找到的吧。太多了，于是我试图在 qq 记录里搜索了鸟叔这两个字。
 然后…
 然后竟然看到了。
-[![](https://yunyoujun.cn/wp-content/uploads/2017/02/22e645da81cb39db2b8976b2d7160924aa1830af.jpg)](https://yunyoujun.cn/wp-content/uploads/2017/02/22e645da81cb39db2b8976b2d7160924aa1830af.jpg)
+[![QQ消息记录截图](https://yunyoujun.cn/wp-content/uploads/2017/02/22e645da81cb39db2b8976b2d7160924aa1830af.jpg)](https://yunyoujun.cn/wp-content/uploads/2017/02/22e645da81cb39db2b8976b2d7160924aa1830af.jpg)
 云游的小村庄:鸟叔，来个皮卡。
 鸟叔说:还没造。
 (我截了下图，日期是去年的三月份。)
@@ -346,7 +346,7 @@ aplayer: true
 这大概便是开端。
 
 插播小剧场——小乔的坏心眼（踢 me）
-[![](https://yunyoujun.cn/wp-content/uploads/2017/02/4d338713b07eca808fc26803962397dda0448336-300x169.jpg)](https://yunyoujun.cn/wp-content/uploads/2017/02/4d338713b07eca808fc26803962397dda0448336.jpg)
+[![小乔踢人截图](https://yunyoujun.cn/wp-content/uploads/2017/02/4d338713b07eca808fc26803962397dda0448336-300x169.jpg)](https://yunyoujun.cn/wp-content/uploads/2017/02/4d338713b07eca808fc26803962397dda0448336.jpg)
 
 而继那开端之后，便形成了不平衡的现象。琦开得胜歌舞升平，琦琦部落则内部空虚。若以琦开得胜为外，琦琦部落为内来看的话，大概便算是金玉其外败絮其中。
 
@@ -477,7 +477,7 @@ aplayer: true
 
 称呼他为小乔并不是因为他年龄小，毕竟小乔已然为人父了。但我们不得不承认小乔的心态很年轻，与我们这群学生聊起来也是全无代沟。若不是有悄悄见到了小乔空间的照片，我会怀疑他和我们一样不过是刚刚进入大学的年轻人。
 
-[![](https://yunyoujun.cn/wp-content/uploads/2017/04/0814bbc379310a5521d0a413b04543a983261007-169x300.jpg)](https://yunyoujun.cn/wp-content/uploads/2017/04/0814bbc379310a5521d0a413b04543a983261007.jpg)
+[![小乔龇牙表情截图](https://yunyoujun.cn/wp-content/uploads/2017/04/0814bbc379310a5521d0a413b04543a983261007-169x300.jpg)](https://yunyoujun.cn/wp-content/uploads/2017/04/0814bbc379310a5521d0a413b04543a983261007.jpg)
 如上图所示，小乔很喜欢发龇牙的表情来表达自己开心的心情。
 (小乔的朋友 sdc 则是喜欢在自己说的每句话后面加上感叹号！我不知道是不是他们那里说话都有个癖好！)
 
@@ -700,7 +700,7 @@ aplayer: true
 当然，这是有过许多次惨痛的经验后的我们才领悟的。
 
 那是很久很久以前，比琦开得胜创立还要早的时候。若不是熊二提了一句，以及我找到了它残存在手机里的唯一一张截图，我估计我差不多已经要将它遗忘了。
-![](https://yunyoujun.cn/wp-content/uploads/2017/08/%E7%90%A6%E7%90%A6%E6%A0%B8%E5%AE%A1%E5%9B%A2-300x169.jpg)
+![琦琦核审团截图](https://yunyoujun.cn/wp-content/uploads/2017/08/%E7%90%A6%E7%90%A6%E6%A0%B8%E5%AE%A1%E5%9B%A2-300x169.jpg)
 琦琦核审团，琦琦部落时候建立的分部。或许它才是我们亲手将其诞生又将其埋葬的第一个部落。
 那时候，我们年轻气傲，想着四处招兵买马，干番事业。所以这应该是它的来源。我也不记得那时候是谁提议，又是谁将其创立起来的了。
 

@@ -5,4 +5,8 @@ import { defineConfig } from 'vite'
 export default defineConfig({
   // todo wait upyun assets
   // plugins: [RemoteAssets()],
+
+  optimizeDeps: {
+    include: ['vue-gtag-next'],
+  },
 })

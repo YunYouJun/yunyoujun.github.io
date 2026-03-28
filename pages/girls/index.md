@@ -2,17 +2,13 @@
 title: Lovely Girls
 date: 2019-01-07 11:17:35
 updated: 2022-05-12 11:17:35
-# - name:
-#   avatar:
-#   from:
-#   url:
-#   reason:
-# https://github.com/YunYouJun/girls
-# girls: https://cdn.jsdelivr.net/gh/YunYouJun/wives@gh-pages/girls.json
 icon: i-ri-women-line
 girls: https://wives.yunyoujun.cn/girls.json
 random: true
 ---
+
+<!-- https://github.com/YunYouJun/wives -->
+<!-- https://cdn.jsdelivr.net/gh/YunYouJun/wives@gh-pages/girls.json -->
 
 <!-- <div class="text-center" m="2" title="我全都要！">
 !大家都是我的天使!
