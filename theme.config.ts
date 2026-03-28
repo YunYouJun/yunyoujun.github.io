@@ -49,6 +49,7 @@ export default defineThemeConfig({
     beian: {
       enable: true,
       icp: '苏ICP备17038157号',
+      police: '',
     },
   },
 })

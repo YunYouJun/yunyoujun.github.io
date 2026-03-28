@@ -58,7 +58,7 @@
     "simple-git-hooks": "^2.13.1",
     "typescript": "^5.9.3",
     "valaxy": "^0.28.4",
-    "valaxy-addon-algolia": "^0.2.0",
+    "valaxy-addon-algolia": "^0.2.1",
     "valaxy-addon-components": "^0.1.0",
     "valaxy-addon-waline": "^0.2.1",
     "valaxy-theme-yun": "^0.28.4",
