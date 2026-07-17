@@ -23,6 +23,7 @@ type FetchLike = (input: string | URL | Request, init?: RequestInit) => Promise<
 export const FRIENDS_CACHE_KEY = 'yunyoujun:friends:v1'
 export const FRIENDS_CACHE_MAX_BYTES = 128 * 1024
 export const FRIENDS_CACHE_TTL_MS = 30 * 24 * 60 * 60 * 1000
+export const FRIENDS_SOURCE_URL = 'https://friends.yunyoujun.cn/links.json'
 
 function byteLength(value: string) {
   return new TextEncoder().encode(value).byteLength
@@ -172,6 +173,23 @@ function canonicalFriends(links: FriendLink[]) {
 
 export function sameFriends(left: FriendLink[], right: FriendLink[]) {
   return JSON.stringify(canonicalFriends(left)) === JSON.stringify(canonicalFriends(right))
+}
+
+export async function refreshFriends(
+  current: FriendLink[],
+  options: {
+    fetchImpl?: FetchLike
+    storage: FriendsStorage
+    url: string
+  },
+) {
+  const links = await fetchFriends(options.url, options.fetchImpl)
+  writeFriendsCache(options.storage, links)
+
+  if (sameFriends(current, links))
+    return { changed: false as const, links: current }
+
+  return { changed: true as const, links }
 }
 
 export function chooseInitialFriends(buildLinks: unknown, cachedLinks: unknown) {

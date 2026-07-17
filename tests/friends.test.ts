@@ -9,6 +9,7 @@ import {
   FRIENDS_CACHE_TTL_MS,
   normalizeFriends,
   readFriendsCache,
+  refreshFriends,
   sameFriends,
   shuffleFriends,
   writeFriendsCache,
@@ -100,6 +101,34 @@ test('storage failures never break page rendering', () => {
 test('friend equality ignores display order', () => {
   const another = { ...friend, url: 'https://b.example' }
   assert.equal(sameFriends([friend, another], [another, friend]), true)
+})
+
+test('background refresh only replaces changed data and always refreshes the cache', async () => {
+  const storage = new MemoryStorage()
+  const reordered = [{ ...friend, url: 'https://b.example' }, friend]
+  const current = [friend, reordered[0]]
+  const unchangedFetch = async () => Response.json(reordered)
+
+  const unchanged = await refreshFriends(current, {
+    fetchImpl: unchangedFetch,
+    storage,
+    url: 'https://example.com/links.json',
+  })
+
+  assert.equal(unchanged.changed, false)
+  assert.equal(unchanged.links, current)
+  assert.deepEqual(readFriendsCache(storage), reordered)
+
+  const updatedFriend = { ...friend, desc: 'Updated' }
+  const changedFetch = async () => Response.json([updatedFriend])
+  const changed = await refreshFriends(current, {
+    fetchImpl: changedFetch,
+    storage,
+    url: 'https://example.com/links.json',
+  })
+
+  assert.equal(changed.changed, true)
+  assert.deepEqual(changed.links, [updatedFriend])
 })
 
 test('shuffle returns a new array without mutating its input', () => {

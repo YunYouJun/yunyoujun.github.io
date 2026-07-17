@@ -3,7 +3,7 @@ import { mkdir, rename, writeFile } from 'node:fs/promises'
 import { dirname, resolve } from 'node:path'
 import process from 'node:process'
 import { pathToFileURL } from 'node:url'
-import { fetchFriends } from '../utils/friends.ts'
+import { fetchFriends, FRIENDS_SOURCE_URL } from '../utils/friends.ts'
 
 type FetchLike = (input: string | URL | Request, init?: RequestInit) => Promise<Response>
 
@@ -19,7 +19,6 @@ export interface SyncFriendsOptions {
   url?: string
 }
 
-export const FRIENDS_SOURCE_URL = 'https://friends.yunyoujun.cn/links.json'
 export const FRIENDS_GENERATED_FILE = resolve('.valaxy/friends.generated.ts')
 
 function renderFriendsModule(links: FriendLink[]) {
