@@ -7,8 +7,15 @@ import { addonWaline } from 'valaxy-addon-waline'
 
 const safelist = [
   'i-ri-home-line',
+  'i-ri-article-line',
+  'i-ri-book-open-line',
+  'i-ri-code-box-line',
+  'i-ri-flask-line',
 
   'i-ri-qq-line',
+  'i-ri-share-line',
+  'i-ri-sticky-note-line',
+  'i-ri-tools-line',
   'i-ri-wechat-pay-line',
   'i-ri-alipay-line',
 ]
