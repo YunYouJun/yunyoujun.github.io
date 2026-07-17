@@ -37,3 +37,7 @@ public/atom.xml
 
 # valaxy rss
 public/feed.json
+
+# Local agent artifacts
+docs/superpowers/
+.worktrees/
