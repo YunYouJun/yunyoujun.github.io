@@ -200,6 +200,41 @@ export function chooseInitialFriends(buildLinks: unknown, cachedLinks: unknown) 
   return normalizeFriends(cachedLinks)
 }
 
+export function applyFriendOverrides(
+  links: FriendLink[],
+  overrides: Record<string, Partial<FriendLink>>,
+) {
+  return links.map(link => ({ ...link, ...overrides[link.url] }))
+}
+
+export function friendUrlKey(value: string) {
+  try {
+    const url = new URL(value)
+    const pathname = url.pathname.replace(/\/+$/, '')
+    return `${url.hostname.toLowerCase()}${pathname}${url.search}`
+  }
+  catch {
+    return value.replace(/\/+$/, '').toLowerCase()
+  }
+}
+
+export function splitFriendsByHiddenLinks(
+  links: FriendLink[],
+  hiddenLinks: FriendLink[],
+) {
+  const currentByUrl = new Map(
+    links.map(link => [friendUrlKey(link.url), link]),
+  )
+  const hiddenUrls = new Set(
+    hiddenLinks.map(link => friendUrlKey(link.url)),
+  )
+
+  return {
+    active: links.filter(link => !hiddenUrls.has(friendUrlKey(link.url))),
+    hidden: hiddenLinks.map(link => currentByUrl.get(friendUrlKey(link.url)) ?? link),
+  }
+}
+
 export function shuffleFriends(
   links: FriendLink[],
   random: () => number = Math.random,

@@ -8,11 +8,6 @@ comments: true
 
 <FriendsLinks />
 
-<details>
-<summary>神隐</summary>
-
-</details>
-
 ## 友链说明
 
 每次刷新为随机顺序展示～
