@@ -1,7 +1,9 @@
 import assert from 'node:assert/strict'
 // eslint-disable-next-line test/no-import-node-test
 import test from 'node:test'
+import hiddenFriends from '../config/friends.ts'
 import {
+  applyFriendOverrides,
   chooseInitialFriends,
   fetchFriends,
   FRIENDS_CACHE_KEY,
@@ -12,6 +14,7 @@ import {
   refreshFriends,
   sameFriends,
   shuffleFriends,
+  splitFriendsByHiddenLinks,
   writeFriendsCache,
 } from '../utils/friends.ts'
 
@@ -145,4 +148,28 @@ test('build data wins and cache is only the empty-build fallback', () => {
   assert.deepEqual(chooseInitialFriends([friend], cached), [friend])
   assert.deepEqual(chooseInitialFriends([], cached), cached)
   assert.deepEqual(chooseInitialFriends([], null), [])
+})
+
+test('applies local overrides and separates hidden friends', () => {
+  const hidden = { ...friend, url: 'https://hidden.example/' }
+  const overridden = applyFriendOverrides([friend, hidden], {
+    'https://example.com': { url: 'https://new.example', desc: 'Updated' },
+  })
+  const groups = splitFriendsByHiddenLinks(overridden, [{ ...hidden, desc: 'Archived' }])
+
+  assert.deepEqual(groups.active, [{ ...friend, url: 'https://new.example', desc: 'Updated' }])
+  assert.deepEqual(groups.hidden, [hidden])
+})
+
+test('keeps confirmed unavailable friends, including haozi.moe, out of the active list', () => {
+  const haozi = hiddenFriends.find(link => link.url === 'https://haozi.moe/')
+  assert.equal(haozi?.name, '月月月子喵')
+
+  const groups = splitFriendsByHiddenLinks(
+    [{ ...friend, name: '月月月子喵', url: 'http://haozi.moe' }],
+    hiddenFriends,
+  )
+
+  assert.deepEqual(groups.active, [])
+  assert.equal(groups.hidden.some(link => link.name === '月月月子喵'), true)
 })

@@ -34,6 +34,7 @@
     "build": "npm run sync:friends && npm run fuse && npm run build:ssg",
     "build:spa": "valaxy build",
     "build:ssg": "valaxy build --ssg --log=info",
+    "check:friends": "tsx scripts/check-friends.ts",
     "clean": "rm -rf dist",
     "dev": "valaxy",
     "fuse": "valaxy fuse",
