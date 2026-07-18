@@ -8,9 +8,5 @@
       <div class="i-ri-advertisement-line" />
       <span>广告位招租</span>
     </a>
-
-    <AppLink to="/notes/online-dating">
-      小云在线征婚
-    </AppLink>
   </YunCard>
 </template>

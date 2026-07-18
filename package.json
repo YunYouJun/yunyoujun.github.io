@@ -60,11 +60,11 @@
     "simple-git-hooks": "^2.13.1",
     "tsx": "^4.23.0",
     "typescript": "^6.0.3",
-    "valaxy": "^0.28.11",
+    "valaxy": "1.0.0-beta.2",
     "valaxy-addon-algolia": "^0.2.1",
     "valaxy-addon-components": "^0.1.0",
     "valaxy-addon-waline": "^0.2.1",
-    "valaxy-theme-yun": "^0.28.11",
+    "valaxy-theme-yun": "1.0.0-beta.2",
     "vite-plugin-remote-assets": "^2.1.0",
     "vue-gtag-next": "^1.14.0",
     "vue-tsc": "^3.3.6"
