@@ -1,0 +1,17 @@
+/* Keep prose links styled while embedded UI surfaces opt out of Markdown underlines. */
+.markdown-body {
+  :where(.not-prose) a,
+  a:where(.not-prose, .yun-link-plain, .yun-icon-btn) {
+    border-bottom: 0;
+    background-image: none;
+    text-decoration: none;
+  }
+
+  :where(.not-prose) a:hover,
+  :where(.not-prose) a:focus-visible,
+  a:where(.not-prose, .yun-link-plain, .yun-icon-btn):hover,
+  a:where(.not-prose, .yun-link-plain, .yun-icon-btn):focus-visible {
+    border-bottom: 0;
+    text-decoration: none;
+  }
+}

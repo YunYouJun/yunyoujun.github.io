@@ -4,6 +4,8 @@ import { computed, ref } from 'vue'
 
 import { siteGroups, siteMapCenter } from '../../config/sites'
 
+type FaviconStage = 'ico' | 'fallback'
+
 const activeGroupId = ref(siteGroups[0].id)
 
 const activeGroup = computed(() => {
@@ -11,6 +13,8 @@ const activeGroup = computed(() => {
 })
 
 const activeLeadSite = computed(() => activeGroup.value.sites[0])
+
+const faviconStages = ref<Record<string, FaviconStage>>({})
 
 const totalSites = computed(() => {
   return siteGroups.reduce((total, group) => total + group.sites.length, 0)
@@ -74,6 +78,30 @@ function getHost(url: string) {
   return new URL(url, siteMapCenter.url).host
 }
 
+function getSiteOrigin(url: string) {
+  return new URL(url, siteMapCenter.url).origin
+}
+
+function getDisplayHost(url: string) {
+  return getHost(url).replace(/^www\./, '')
+}
+
+function getFaviconUrl(url: string) {
+  const origin = getSiteOrigin(url)
+  const file = faviconStages.value[origin] === 'ico' ? 'favicon.ico' : 'favicon.svg'
+
+  return `${origin}/${file}`
+}
+
+function shouldShowFavicon(url: string) {
+  return faviconStages.value[getSiteOrigin(url)] !== 'fallback'
+}
+
+function markFaviconFailed(url: string) {
+  const origin = getSiteOrigin(url)
+  faviconStages.value[origin] = faviconStages.value[origin] === 'ico' ? 'fallback' : 'ico'
+}
+
 function getStatusLabel(status?: SiteStatus) {
   return statusLabels[status || 'active']
 }
@@ -90,7 +118,7 @@ function getSatelliteStyle(group: YunSiteGroup, index: number) {
 </script>
 
 <template>
-  <section class="site-galaxy" aria-label="云游星图">
+  <section class="site-galaxy not-prose" aria-label="云游星图">
     <header class="site-galaxy__intro">
       <p class="site-galaxy__subtitle">
         散落在不同域名里的小站、项目与实验。
@@ -100,11 +128,12 @@ function getSatelliteStyle(group: YunSiteGroup, index: number) {
       </p>
     </header>
 
-    <div class="site-galaxy__map" aria-label="云游君站点星图">
+    <div class="site-galaxy__map" role="group" aria-label="云游君站点星图">
       <span
         v-for="star in stars"
         :key="`${star.x}-${star.y}`"
         class="site-galaxy__star"
+        aria-hidden="true"
         :style="{
           left: `${star.x}%`,
           top: `${star.y}%`,
@@ -127,11 +156,14 @@ function getSatelliteStyle(group: YunSiteGroup, index: number) {
       <a
         class="site-galaxy__center"
         :href="siteMapCenter.url"
+        :aria-label="`前往${siteMapCenter.name}`"
         :style="{ '--node-color': siteMapCenter.accent }"
       >
         <span class="site-galaxy__center-mark i-ri-planet-line" aria-hidden="true" />
         <span class="site-galaxy__center-name">{{ siteMapCenter.shortTitle }}</span>
-        <span class="site-galaxy__center-url">{{ getHost(siteMapCenter.url) }}</span>
+        <span class="site-galaxy__center-url" :title="getHost(siteMapCenter.url)">
+          {{ getDisplayHost(siteMapCenter.url) }}
+        </span>
       </a>
 
       <span
@@ -177,6 +209,7 @@ function getSatelliteStyle(group: YunSiteGroup, index: number) {
           v-for="site, index in group.sites.slice(0, 3)"
           :key="site.url"
           class="site-galaxy__satellite"
+          aria-hidden="true"
           :title="site.name"
           :style="getSatelliteStyle(group, index)"
         />
@@ -188,10 +221,17 @@ function getSatelliteStyle(group: YunSiteGroup, index: number) {
         {{ activeGroup.shortTitle }}
       </p>
       <strong>{{ activeGroup.title }}</strong>
-      <span v-if="activeLeadSite" class="site-galaxy__tooltip-url">
-        {{ getHost(activeLeadSite.url) }}
+      <a
+        v-if="activeLeadSite"
+        class="site-galaxy__tooltip-url"
+        :href="activeLeadSite.url"
+        target="_blank"
+        rel="noopener noreferrer"
+        :title="getHost(activeLeadSite.url)"
+      >
+        {{ getDisplayHost(activeLeadSite.url) }}
         <span class="i-ri-arrow-right-up-line" aria-hidden="true" />
-      </span>
+      </a>
       <p>{{ activeGroup.desc }}</p>
     </aside>
 
@@ -230,9 +270,21 @@ function getSatelliteStyle(group: YunSiteGroup, index: number) {
           <ul class="site-directory__list">
             <li v-for="site in group.sites" :key="site.url">
               <a :href="site.url" target="_blank" rel="noopener noreferrer">
+                <span class="site-directory__site-icon" aria-hidden="true">
+                  <img
+                    v-if="shouldShowFavicon(site.url)"
+                    :src="getFaviconUrl(site.url)"
+                    alt=""
+                    decoding="async"
+                    loading="lazy"
+                    referrerpolicy="no-referrer"
+                    @error="markFaviconFailed(site.url)"
+                  >
+                  <span v-else :class="group.icon" />
+                </span>
                 <span class="site-directory__site-main">
                   <strong>{{ site.name }}</strong>
-                  <span>{{ getHost(site.url) }}</span>
+                  <span :title="getHost(site.url)">{{ getDisplayHost(site.url) }}</span>
                 </span>
                 <span class="site-directory__site-desc">{{ site.desc }}</span>
                 <span class="site-directory__site-meta" :data-status="site.status || 'active'">
@@ -256,11 +308,13 @@ function getSatelliteStyle(group: YunSiteGroup, index: number) {
   --sites-stage-grid-x: rgba(37, 99, 235, 0.08);
   --sites-stage-grid-y: rgba(37, 99, 235, 0.07);
   --sites-stage-gradient:
-    radial-gradient(ellipse at 50% 48%, rgba(37, 99, 235, 0.13), transparent 48%),
-    linear-gradient(135deg, rgba(240, 249, 255, 0.76), rgba(245, 243, 255, 0.56) 48%, rgba(240, 253, 250, 0.46));
+    radial-gradient(ellipse at 50% 46%, rgba(37, 99, 235, 0.12), transparent 46%),
+    linear-gradient(135deg, rgba(248, 250, 252, 0.82), rgba(238, 242, 255, 0.58) 45%, rgba(236, 253, 245, 0.48));
   --sites-stage-glass: rgba(255, 255, 255, 0.46);
 
+  box-sizing: border-box;
   color: var(--sites-text);
+  padding-inline: clamp(0.75rem, 1.8vw, 1rem);
 }
 
 :global(.site-galaxy-page-title) {
@@ -275,7 +329,7 @@ function getSatelliteStyle(group: YunSiteGroup, index: number) {
 }
 
 .site-galaxy__intro {
-  margin: -0.35rem auto 1.75rem;
+  margin: 0 auto 1.75rem;
   text-align: center;
 }
 
@@ -287,10 +341,14 @@ function getSatelliteStyle(group: YunSiteGroup, index: number) {
 }
 
 .site-galaxy__summary {
-  margin: 0.35rem 0 0;
-  color: rgba(37, 99, 235, 0.76);
+  display: inline-flex;
+  margin: 0.55rem 0 0;
+  border-radius: 999px;
+  background: rgba(37, 99, 235, 0.06);
+  color: rgba(29, 78, 216, 0.82);
   font-size: 0.9rem;
   line-height: 1.7;
+  padding: 0.12rem 0.65rem;
 }
 
 .site-galaxy__map {
@@ -368,11 +426,12 @@ function getSatelliteStyle(group: YunSiteGroup, index: number) {
   top: 50%;
   left: 50%;
   display: inline-flex;
-  width: 8.75rem;
-  height: 8.75rem;
+  width: 9.2rem;
+  height: 9.2rem;
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  box-sizing: border-box;
   border: 0;
   border-radius: 999px;
   background:
@@ -383,6 +442,8 @@ function getSatelliteStyle(group: YunSiteGroup, index: number) {
     0 0 0 3rem rgba(99, 102, 241, 0.025),
     0 18px 42px rgba(37, 99, 235, 0.13);
   color: var(--node-color);
+  overflow: hidden;
+  padding: 1rem 0.78rem 0.9rem;
   text-align: center;
   text-decoration: none;
   transition: transform 180ms ease, box-shadow 180ms ease;
@@ -400,20 +461,34 @@ function getSatelliteStyle(group: YunSiteGroup, index: number) {
 }
 
 .site-galaxy__center-mark {
+  flex: none;
   font-size: 2rem;
+  line-height: 1;
 }
 
 .site-galaxy__center-name {
-  margin-top: 0.3rem;
+  margin-top: 0.28rem;
   color: #1e3a8a;
   font-size: 0.95rem;
   font-weight: 700;
+  line-height: 1.25;
 }
 
 .site-galaxy__center-url {
-  margin-top: 0.18rem;
-  color: rgba(30, 58, 138, 0.78);
-  font-size: 0.72rem;
+  display: block;
+  max-width: 100%;
+  margin-top: 0.34rem;
+  overflow: hidden;
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.72);
+  box-shadow: inset 0 0 0 1px rgba(37, 99, 235, 0.1);
+  color: rgba(30, 64, 175, 0.86);
+  font-size: 0.68rem;
+  font-weight: 700;
+  line-height: 1.45;
+  padding: 0.12rem 0.48rem;
+  text-overflow: ellipsis;
+  white-space: nowrap;
 }
 
 .site-galaxy__halo {
@@ -510,15 +585,19 @@ function getSatelliteStyle(group: YunSiteGroup, index: number) {
 .site-galaxy__tooltip {
   position: relative;
   z-index: 4;
-  width: min(20rem, 42%);
-  margin: 1.15rem 0 0 auto;
+  display: grid;
+  width: 100%;
+  grid-template-columns: auto minmax(10rem, 0.72fr) minmax(0, 1.35fr);
+  align-items: center;
+  gap: 0.2rem 1.1rem;
+  margin: 1rem 0 0;
   border: 0;
   border-radius: 8px;
   background:
-    linear-gradient(135deg, color-mix(in srgb, var(--active-color), white 88%), var(--sites-panel-strong)),
+    linear-gradient(120deg, color-mix(in srgb, var(--active-color), white 90%), var(--sites-panel-strong) 46%, rgba(255, 255, 255, 0.78)),
     var(--sites-panel-strong);
-  box-shadow: 0 16px 36px rgba(15, 23, 42, 0.08);
-  padding: 0.9rem 1rem;
+  box-shadow: 0 14px 34px rgba(15, 23, 42, 0.07);
+  padding: 0.95rem 1.05rem;
   text-align: left;
 }
 
@@ -535,15 +614,23 @@ function getSatelliteStyle(group: YunSiteGroup, index: number) {
 }
 
 .site-galaxy__tooltip-label {
-  margin: 0 0 0.2rem;
+  display: inline-flex;
+  grid-row: 1 / span 2;
+  align-items: center;
+  justify-content: center;
+  margin: 0;
+  border-radius: 999px;
+  background: color-mix(in srgb, var(--active-color), transparent 88%);
   color: var(--active-color);
-  font-size: 0.78rem;
+  font-size: 0.76rem;
   font-weight: 700;
   line-height: 1.5;
+  padding: 0.2rem 0.65rem;
 }
 
 .site-galaxy__tooltip strong {
   display: block;
+  grid-column: 2;
   color: var(--sites-text);
   font-size: 1.05rem;
   line-height: 1.5;
@@ -551,23 +638,43 @@ function getSatelliteStyle(group: YunSiteGroup, index: number) {
 
 .site-galaxy__tooltip-url {
   display: inline-flex;
+  grid-column: 2;
   align-items: center;
   gap: 0.25rem;
-  margin-top: 0.25rem;
+  width: fit-content;
+  max-width: 100%;
+  overflow: hidden;
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.58);
+  box-shadow: inset 0 0 0 1px color-mix(in srgb, var(--active-color), transparent 86%);
   color: #1d4ed8;
-  font-size: 0.86rem;
+  font-size: 0.82rem;
+  font-weight: 700;
+  line-height: 1.45;
+  padding: 0.12rem 0.52rem;
   text-decoration: none;
+  transition: background 160ms ease, box-shadow 160ms ease, color 160ms ease;
+  white-space: nowrap;
+}
+
+.site-galaxy__tooltip-url:hover,
+.site-galaxy__tooltip-url:focus-visible {
+  background: color-mix(in srgb, var(--active-color), white 88%);
+  box-shadow: inset 0 0 0 1px color-mix(in srgb, var(--active-color), transparent 72%);
+  outline: none;
 }
 
 .site-galaxy__tooltip p:last-of-type {
-  margin: 0.55rem 0 0;
+  grid-column: 3;
+  grid-row: 1 / span 2;
+  margin: 0;
   color: var(--sites-muted);
   font-size: 0.88rem;
   line-height: 1.65;
 }
 
 .site-directory {
-  margin-top: 2.1rem;
+  margin-top: 1.55rem;
 }
 
 .site-directory__header {
@@ -602,16 +709,26 @@ function getSatelliteStyle(group: YunSiteGroup, index: number) {
   flex: none;
   align-items: center;
   gap: 0.25rem;
+  border-radius: 999px;
+  background: rgba(37, 99, 235, 0.08);
+  box-shadow: inset 0 0 0 1px rgba(37, 99, 235, 0.08);
   color: #1d4ed8;
   font-size: 0.92rem;
   font-weight: 700;
+  line-height: 1.45;
+  padding: 0.38rem 0.7rem;
   text-decoration: none;
+  transition: background 160ms ease, box-shadow 160ms ease, color 160ms ease;
+}
+
+.site-directory__home:hover {
+  background: rgba(37, 99, 235, 0.12);
+  box-shadow: inset 0 0 0 1px rgba(37, 99, 235, 0.14);
 }
 
 .site-directory__home:focus-visible {
-  border-radius: 4px;
   outline: 2px solid rgba(37, 99, 235, 0.42);
-  outline-offset: 0.28rem;
+  outline-offset: 0.2rem;
 }
 
 .site-directory__groups {
@@ -621,6 +738,7 @@ function getSatelliteStyle(group: YunSiteGroup, index: number) {
 }
 
 .site-directory__group {
+  position: relative;
   border: 0;
   border-radius: 8px;
   background:
@@ -628,6 +746,23 @@ function getSatelliteStyle(group: YunSiteGroup, index: number) {
     var(--sites-panel);
   box-shadow: 0 14px 34px color-mix(in srgb, var(--group-color), transparent 92%);
   overflow: hidden;
+  transition: transform 180ms ease, box-shadow 180ms ease;
+}
+
+.site-directory__group::before {
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  height: 2px;
+  background: linear-gradient(90deg, transparent, color-mix(in srgb, var(--group-color), white 18%), transparent);
+  content: "";
+  opacity: 0.72;
+}
+
+.site-directory__group:hover {
+  box-shadow: 0 18px 42px color-mix(in srgb, var(--group-color), transparent 88%);
+  transform: translateY(-2px);
 }
 
 .site-directory__group-header {
@@ -678,14 +813,14 @@ function getSatelliteStyle(group: YunSiteGroup, index: number) {
 
 .site-directory__list a {
   display: grid;
-  grid-template-columns: minmax(0, 1.1fr) minmax(0, 1.25fr) auto;
-  gap: 0.9rem;
+  grid-template-columns: 2.35rem minmax(8.5rem, 0.9fr) minmax(0, 1fr) auto;
+  gap: 0.75rem;
   align-items: center;
   min-height: 4.2rem;
   padding: 0.85rem 1rem;
   color: inherit;
   text-decoration: none;
-  transition: background 160ms ease;
+  transition: background 160ms ease, box-shadow 160ms ease;
 }
 
 .site-directory__list a:hover,
@@ -702,25 +837,53 @@ function getSatelliteStyle(group: YunSiteGroup, index: number) {
   gap: 0.2rem;
 }
 
-.site-directory__site-main strong {
+.site-directory__site-icon {
+  display: inline-flex;
+  width: 2.35rem;
+  height: 2.35rem;
+  align-items: center;
+  justify-content: center;
+  border-radius: 8px;
+  background: color-mix(in srgb, var(--group-color), white 90%);
+  box-shadow:
+    inset 0 0 0 1px color-mix(in srgb, var(--group-color), transparent 88%),
+    0 8px 18px color-mix(in srgb, var(--group-color), transparent 90%);
+  color: var(--group-color);
   overflow: hidden;
+}
+
+.site-directory__site-icon img {
+  width: 1.35rem;
+  height: 1.35rem;
+  border-radius: 4px;
+  object-fit: contain;
+}
+
+.site-directory__site-icon span {
+  font-size: 1.08rem;
+  line-height: 1;
+}
+
+.site-directory__site-main strong {
   color: var(--sites-text);
   font-size: 0.94rem;
   line-height: 1.4;
-  text-overflow: ellipsis;
-  white-space: nowrap;
+  overflow-wrap: anywhere;
 }
 
-.site-directory__site-main span,
-.site-directory__site-desc {
-  overflow-wrap: anywhere;
+.site-directory__site-main span {
   color: var(--sites-muted);
   font-size: 0.78rem;
   line-height: 1.5;
+  overflow-wrap: break-word;
+  word-break: normal;
 }
 
 .site-directory__site-desc {
   font-size: 0.84rem;
+  overflow-wrap: anywhere;
+  color: var(--sites-muted);
+  line-height: 1.5;
 }
 
 .site-directory__site-meta {
@@ -797,6 +960,11 @@ function getSatelliteStyle(group: YunSiteGroup, index: number) {
   box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.06), 0 20px 56px rgba(2, 6, 23, 0.28);
 }
 
+:global(html.dark .site-galaxy__summary) {
+  background: rgba(147, 197, 253, 0.12);
+  color: #bfdbfe;
+}
+
 :global(html.dark .site-galaxy__center) {
   background:
     radial-gradient(circle at 50% 35%, rgba(30, 41, 59, 0.92), var(--sites-stage-glass)),
@@ -809,9 +977,13 @@ function getSatelliteStyle(group: YunSiteGroup, index: number) {
 
 :global(html.dark .site-galaxy__tooltip) {
   background:
-    linear-gradient(135deg, color-mix(in srgb, var(--active-color), #020617 78%), var(--sites-panel-strong)),
+    linear-gradient(120deg, color-mix(in srgb, var(--active-color), #020617 80%), var(--sites-panel-strong) 48%, rgba(15, 23, 42, 0.74)),
     var(--sites-panel-strong);
   box-shadow: 0 16px 36px rgba(2, 6, 23, 0.34);
+}
+
+:global(html.dark .site-galaxy__tooltip-label) {
+  background: color-mix(in srgb, var(--active-color), transparent 84%);
 }
 
 :global(html.dark .site-galaxy__center-name) {
@@ -819,9 +991,22 @@ function getSatelliteStyle(group: YunSiteGroup, index: number) {
 }
 
 :global(html.dark .site-galaxy__center-url),
+:global(html.dark .site-galaxy__tooltip-url) {
+  background: rgba(15, 23, 42, 0.68);
+  box-shadow: inset 0 0 0 1px rgba(147, 197, 253, 0.12);
+}
+
+:global(html.dark .site-galaxy__center-url),
 :global(html.dark .site-galaxy__tooltip-url),
 :global(html.dark .site-directory__home) {
   color: #93c5fd;
+}
+
+:global(html.dark .site-galaxy__tooltip-url:hover),
+:global(html.dark .site-galaxy__tooltip-url:focus-visible),
+:global(html.dark .site-directory__home:hover) {
+  background: rgba(59, 130, 246, 0.16);
+  box-shadow: inset 0 0 0 1px rgba(147, 197, 253, 0.18);
 }
 
 :global(html.dark .site-galaxy__node-label) {
@@ -839,6 +1024,43 @@ function getSatelliteStyle(group: YunSiteGroup, index: number) {
   background: color-mix(in srgb, var(--group-color), #020617 72%);
 }
 
+:global(html.dark .site-directory__site-icon) {
+  background: color-mix(in srgb, var(--group-color), #020617 78%);
+  box-shadow:
+    inset 0 0 0 1px color-mix(in srgb, var(--group-color), transparent 82%),
+    0 8px 18px color-mix(in srgb, var(--group-color), transparent 88%);
+}
+
+:global(html.dark .site-directory__home) {
+  background: rgba(37, 99, 235, 0.12);
+  box-shadow: inset 0 0 0 1px rgba(147, 197, 253, 0.12);
+}
+
+:global(html.dark .site-directory__site-meta) {
+  background: rgba(34, 197, 94, 0.16);
+  color: #86efac;
+}
+
+:global(html.dark .site-directory__site-meta[data-status="wip"]) {
+  background: rgba(59, 130, 246, 0.18);
+  color: #93c5fd;
+}
+
+:global(html.dark .site-directory__site-meta[data-status="archive"]) {
+  background: rgba(148, 163, 184, 0.18);
+  color: #cbd5e1;
+}
+
+:global(html.dark .site-directory__site-meta[data-status="service"]) {
+  background: rgba(14, 165, 233, 0.18);
+  color: #7dd3fc;
+}
+
+:global(html.dark .site-directory__site-meta[data-status="external"]) {
+  background: rgba(129, 140, 248, 0.2);
+  color: #c4b5fd;
+}
+
 @media (max-width: 860px) {
   :global(.content.no-aside:has(.site-galaxy)) {
     width: 100% !important;
@@ -849,12 +1071,27 @@ function getSatelliteStyle(group: YunSiteGroup, index: number) {
   }
 
   .site-galaxy__center {
-    width: 7.2rem;
-    height: 7.2rem;
+    width: 7.65rem;
+    height: 7.65rem;
+    padding: 0.82rem 0.62rem 0.72rem;
   }
 
   .site-galaxy__tooltip {
+    grid-template-columns: minmax(0, 1fr);
+    gap: 0.35rem;
     width: 100%;
+  }
+
+  .site-galaxy__tooltip-label,
+  .site-galaxy__tooltip strong,
+  .site-galaxy__tooltip-url,
+  .site-galaxy__tooltip p:last-of-type {
+    grid-column: 1;
+    grid-row: auto;
+  }
+
+  .site-galaxy__tooltip-label {
+    justify-self: start;
   }
 
   .site-directory__groups {
@@ -876,8 +1113,8 @@ function getSatelliteStyle(group: YunSiteGroup, index: number) {
   }
 
   .site-galaxy__center {
-    width: 6.2rem;
-    height: 6.2rem;
+    width: 7rem;
+    height: 7rem;
   }
 
   .site-galaxy__center-mark {
@@ -889,7 +1126,10 @@ function getSatelliteStyle(group: YunSiteGroup, index: number) {
   }
 
   .site-galaxy__center-url {
-    display: none;
+    max-width: 100%;
+    margin-top: 0.28rem;
+    font-size: 0.58rem;
+    padding: 0.1rem 0.38rem;
   }
 
   .site-galaxy__node {
@@ -918,12 +1158,30 @@ function getSatelliteStyle(group: YunSiteGroup, index: number) {
   }
 
   .site-directory__list a {
-    grid-template-columns: 1fr;
-    gap: 0.45rem;
+    grid-template-columns: 2.35rem minmax(0, 1fr) auto;
+    gap: 0.45rem 0.75rem;
+    align-items: start;
+  }
+
+  .site-directory__site-icon {
+    grid-column: 1;
+    grid-row: 1;
+  }
+
+  .site-directory__site-main {
+    grid-column: 2;
+    grid-row: 1;
+  }
+
+  .site-directory__site-desc {
+    grid-column: 2 / -1;
   }
 
   .site-directory__site-meta {
-    justify-self: start;
+    grid-column: 3;
+    grid-row: 1;
+    justify-self: end;
+    margin-top: 0.1rem;
   }
 }
 
