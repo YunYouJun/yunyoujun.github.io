@@ -28,6 +28,9 @@
     "云游君的小站",
     "www.yunyoujun.cn"
   ],
+  "engines": {
+    "node": "24.x"
+  },
   "scripts": {
     "algolia": "echo todo",
     "backup": "sh bash/backup.sh",
