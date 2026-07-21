@@ -27,6 +27,7 @@ projects:
         textColor: white
         github: YunYouJun/give-me-money
         url: https://gmm.yunyoujun.cn
+        hideInBeian: true
       - name: electric-fan
         emoji: ♻️
         desc: 电风扇，便携夏日小风扇！纯 CSS 编写，小空调的前辈。

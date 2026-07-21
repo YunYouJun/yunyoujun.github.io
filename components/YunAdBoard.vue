@@ -1,5 +1,9 @@
+<script lang="ts" setup>
+const isBeianMode = import.meta.env.VITE_BEIAN_MODE === 'true'
+</script>
+
 <template>
-  <YunCard>
+  <YunCard v-if="!isBeianMode">
     <a
       href="mailto:me@yunyoujun.cn"
       target="_blank"

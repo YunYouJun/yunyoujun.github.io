@@ -1,4 +1,5 @@
 import { defineSiteConfig } from 'valaxy'
+import { isBeianMode } from './config/beian'
 
 export default defineSiteConfig({
   lang: 'zh-CN',
@@ -16,18 +17,22 @@ export default defineSiteConfig({
   url: 'https://www.yunyoujun.cn',
   mediumZoom: { enable: true },
   social: [
-    {
-      name: 'RSS',
-      link: '/atom.xml',
-      icon: 'i-ri-rss-line',
-      color: 'orange',
-    },
-    {
-      name: 'QQ 群 1050458482',
-      link: 'http://qm.qq.com/cgi-bin/qm/qr?_wv=1027&k=Znfp7iGZpYjAJLIUlB6lEK-b9taKuK0h&authKey=OjWij7kKhi%2Bvc8JsHVdYm9Q8pBIF4tClK8ulupn28MTZ8jDyPhZWCB8q7K7u9PTT&noverify=0&group_code=1050458482',
-      icon: 'i-ri-qq-line',
-      color: '#12B7F5',
-    },
+    ...(!isBeianMode
+      ? [
+          {
+            name: 'RSS',
+            link: '/atom.xml',
+            icon: 'i-ri-rss-line',
+            color: 'orange',
+          },
+          {
+            name: 'QQ 群 1050458482',
+            link: 'http://qm.qq.com/cgi-bin/qm/qr?_wv=1027&k=Znfp7iGZpYjAJLIUlB6lEK-b9taKuK0h&authKey=OjWij7kKhi%2Bvc8JsHVdYm9Q8pBIF4tClK8ulupn28MTZ8jDyPhZWCB8q7K7u9PTT&noverify=0&group_code=1050458482',
+            icon: 'i-ri-qq-line',
+            color: '#12B7F5',
+          },
+        ]
+      : []),
     {
       name: 'GitHub',
       link: 'https://github.com/YunYouJun',
@@ -76,12 +81,14 @@ export default defineSiteConfig({
       icon: 'i-ri-twitter-line',
       color: '#1da1f2',
     },
-    {
-      name: 'Telegram Channel',
-      link: 'https://t.me/elpsycn',
-      icon: 'i-ri-telegram-line',
-      color: '#0088CC',
-    },
+    ...(!isBeianMode
+      ? [{
+          name: 'Telegram Channel',
+          link: 'https://t.me/elpsycn',
+          icon: 'i-ri-telegram-line',
+          color: '#0088CC',
+        }]
+      : []),
     {
       name: 'E-Mail',
       link: 'mailto:me@yunyoujun.cn',
@@ -97,7 +104,7 @@ export default defineSiteConfig({
   ],
 
   sponsor: {
-    enable: true,
+    enable: !isBeianMode,
     title: '我很可爱，请给我钱！',
     methods: [
       {
@@ -122,12 +129,16 @@ export default defineSiteConfig({
   },
 
   search: {
-    enable: true,
+    enable: !isBeianMode,
     provider: 'fuse',
   },
 
+  fuse: {
+    pattern: isBeianMode ? 'pages/.beian-search-disabled/**/*.md' : undefined,
+  },
+
   comment: {
-    enable: true,
+    enable: !isBeianMode,
   },
 
   statistics: {

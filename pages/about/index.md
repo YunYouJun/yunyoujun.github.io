@@ -49,7 +49,11 @@ iconify: true
 当然我也有许多不切实际的梦想，比如成为一名独立游戏开发者、漫画家、作家、动画人、全职开源作者。
 简而言之就是可以不用上班，自己在家做觉得有趣的事情的人！（想必大家也是）
 
+<BeianHide>
+
 ~~欢迎给我[打钱](/sponsors/)，助我圆梦！~~
+
+</BeianHide>
 
 <details>
 <summary>列表</summary>
@@ -97,7 +101,13 @@ iconify: true
 - <span class="iconify-inline" text="pink-500" data-icon="ri:bilibili-line"></span> 哔哩哔哩: [云游君 Official](https://space.bilibili.com/1579790)（主要用来看番剧，新一年打算好好经营下，以小云的身份开始 Vtuber 活动，hhh，也可能做一些编程方面的教程）
 
 - <span class="iconify-inline" text="blue-500" data-icon="ri:telegram-line"></span> Telegram Channel：[El Psy Congroo](https://t.me/elpsycn)（频道，信息聚合，现在大致 = 随手分享 + 博客 + Twitter + 豆瓣 + 网易云音乐 更新聚合）
+
+<BeianHide>
+
 - <span class="iconify-inline" text="blue-500" data-icon="ri:telegram-line"></span> Telegram Group：[云之彼端约定的地方](https://t.me/yunyoujun_group)
+
+</BeianHide>
+
 - <span class="iconify-inline" text="blue-500" data-icon="ri:zhihu-line"></span> 知乎：[云游君](https://www.zhihu.com/people/yunyoujun/)（随便看看，没有什么有趣的回答分享）
 - <span class="iconify-inline" text="green-500" data-icon="ri:wechat-line"></span> 微信公众号：[云游君](https://cos.yunle.fun/images/wx-mp-yunyoujun-scan-search-standard.webp) （加了网站跳转链接的菜单，关注勉强可以当作证明收藏过本站的标记？也许日后有空会搬一点文章过去？（咕咕咕））
 - <span class="iconify-inline" text="blue-500" data-icon="ri:twitter-line"></span> Twitter: [云游君](https://twitter.com/YunYouJun)（一些分享和正在进行的项目预告）
@@ -115,6 +125,8 @@ iconify: true
 
 </details>
 
+<BeianHide>
+
 ### 其他
 
 - <span class="iconify-inline" text="blue-500" data-icon="ri:qq-line"></span> 闲聊 QQ 群：
@@ -122,6 +134,8 @@ iconify: true
   - 389401003: 下头飞升群
   - 707408530: 技术交流群
   - [云乐坊｜ QQ 频道](https://pd.qq.com/s/fpb1he0c)
+
+</BeianHide>
 
 <details>
 <summary>🐦</summary>
@@ -133,11 +147,17 @@ iconify: true
 > 我对普通的人类没有兴趣。你们之中如果有外星人、未来人、异世界来客或者超能力者以及喜爱一切有趣事物之人的话就来找我，完毕。
 > ——「凉宫春日」
 
+<BeianHide>
+
 #### 下方评论区作为留言板（欢迎留言）
+
+</BeianHide>
 
 如果你有其他任何想问我的，也可以前往 [YunYouJun | GitHub Issues](https://github.com/YunYouJun/YunYouJun/issues)。
 
 如果是本博客相关的内容，也可以前往这里 [yunyoujun.github.io | GitHub Issues](https://github.com/YunYouJun/yunyoujun.github.io/issues) ~
+
+<BeianHide>
 
 ## 💰 Donate
 
@@ -154,3 +174,5 @@ iconify: true
 - [赞助名单](https://www.yunyoujun.cn/sponsors/)
 
 喂，看到下面发光的按钮了吗！
+
+</BeianHide>

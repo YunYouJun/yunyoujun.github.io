@@ -4,6 +4,7 @@ import { addonAlgolia } from 'valaxy-addon-algolia'
 
 import { addonComponents } from 'valaxy-addon-components'
 import { addonWaline } from 'valaxy-addon-waline'
+import { isBeianMode } from './config/beian'
 
 const safelist = [
   'i-ri-home-line',
@@ -58,7 +59,7 @@ export default defineValaxyConfig<UserThemeConfig> ({
     addonWaline({
       serverURL: 'https://waline.yunyoujun.cn',
       // pageview: true,
-      comment: true,
+      comment: !isBeianMode,
     }),
   ],
 

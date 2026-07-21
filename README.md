@@ -51,6 +51,24 @@ git remote set-url --add origin https://e.coding.net/YunYouJun/yunyoujun.coding.
 - [~~yunyoujun.github.io - Travis CI~~](https://www.travis-ci.com/YunYouJun/yunyoujun.github.io)
 - [GitHub Actions](https://github.com/YunYouJun/yunyoujun.github.io/actions): 现已改为使用 GitHub Actions
 
+### 备案模式
+
+备案期间默认使用备案模式构建：
+
+```bash
+pnpm build
+# 等同于
+pnpm build:beian
+```
+
+需要构建完整站点时使用：
+
+```bash
+pnpm build:normal
+```
+
+本地开发默认展示完整站点，可通过 `pnpm dev:beian` 预览备案模式。备案模式由环境变量 `VITE_BEIAN_MODE=true` 控制，仅隐藏广告、赞助、群聊、评论、搜索等公开入口，原有文章和子页面 URL 仍然保留。
+
 <details>
 <summary>旧版 - Hexo 版本</summary><br />
 

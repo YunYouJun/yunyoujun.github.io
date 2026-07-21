@@ -1,4 +1,5 @@
 import { defineThemeConfig } from 'valaxy-theme-yun'
+import { isBeianMode } from './config/beian'
 
 export default defineThemeConfig({
   banner: {
@@ -15,7 +16,9 @@ export default defineThemeConfig({
     { text: '站点地图', link: '/sites/', icon: 'i-ri-planet-line' },
     { text: '友情链接', link: '/links/', icon: 'i-ri-link' },
     { text: '老婆列表', link: '/girls/', icon: 'i-ri-women-line' },
-    { text: '赞助者们', link: '/sponsors/', icon: 'i-ri-heart-line' },
+    ...(!isBeianMode
+      ? [{ text: '赞助者们', link: '/sponsors/', icon: 'i-ri-heart-line' }]
+      : []),
   ],
 
   pages: [
@@ -43,16 +46,21 @@ export default defineThemeConfig({
       icon: 'i-ri-women-line',
       color: 'hotpink',
     },
-    {
-      name: '赞助者们',
-      url: '/sponsors/',
-      icon: 'i-ri-heart-line',
-      color: 'red',
-    },
+    ...(!isBeianMode
+      ? [{
+          name: '赞助者们',
+          url: '/sponsors/',
+          icon: 'i-ri-heart-line',
+          color: 'red',
+        }]
+      : []),
   ],
 
   footer: {
     since: 2016,
+    icon: {
+      enable: !isBeianMode,
+    },
     beian: {
       enable: true,
       icp: '苏ICP备17038157号',
