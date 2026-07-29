@@ -53,18 +53,18 @@ git remote set-url --add origin https://e.coding.net/YunYouJun/yunyoujun.coding.
 
 ### 备案模式
 
-备案期间默认使用备案模式构建：
+默认构建完整站点：
 
 ```bash
 pnpm build
 # 等同于
-pnpm build:beian
+pnpm build:normal
 ```
 
-需要构建完整站点时使用：
+需要临时切换为备案模式时使用：
 
 ```bash
-pnpm build:normal
+pnpm build:beian
 ```
 
 本地开发默认展示完整站点，可通过 `pnpm dev:beian` 预览备案模式。备案模式由环境变量 `VITE_BEIAN_MODE=true` 控制，仅隐藏广告、赞助、群聊、评论、搜索等公开入口，原有文章和子页面 URL 仍然保留。

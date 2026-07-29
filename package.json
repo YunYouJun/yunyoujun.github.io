@@ -34,7 +34,7 @@
   "scripts": {
     "algolia": "echo todo",
     "backup": "sh bash/backup.sh",
-    "build": "pnpm build:beian",
+    "build": "pnpm build:normal",
     "build:beian": "cross-env VITE_BEIAN_MODE=true pnpm build:site",
     "build:normal": "cross-env VITE_BEIAN_MODE=false pnpm build:site",
     "build:site": "npm run sync:friends && npm run fuse && npm run build:ssg",
