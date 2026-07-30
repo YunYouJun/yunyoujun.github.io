@@ -43,20 +43,20 @@ importers:
         specifier: ^6.0.3
         version: 6.0.3
       valaxy:
-        specifier: 1.0.0-beta.2
-        version: 1.0.0-beta.2(@babel/parser@7.29.7)(@nuxt/kit@3.21.8(magicast@0.5.3))(@types/markdown-it@14.1.2)(@types/node@26.1.0)(@vue/compiler-dom@3.5.39)(axios@1.18.1)(change-case@5.4.4)(esbuild@0.28.1)(eslint@10.6.0(jiti@2.7.0))(rolldown@1.1.4)(rollup@4.46.2)(terser@5.43.1)(tsx@4.23.1)(typescript@6.0.3)(vue-router@5.0.4(@vue/compiler-sfc@3.5.39)(esbuild@0.28.1)(pinia@3.0.4(typescript@6.0.3)(vue@3.5.39(typescript@6.0.3)))(rolldown@1.1.4)(rollup@4.46.2)(vite@8.1.3(@types/node@26.1.0)(esbuild@0.28.1)(jiti@2.7.0)(sass@1.101.0)(terser@5.43.1)(tsx@4.23.1)(yaml@2.9.0))(vue@3.5.39(typescript@6.0.3)))(vue@3.5.39(typescript@6.0.3))(yaml@2.9.0)
+        specifier: 1.0.0-rc.1
+        version: 1.0.0-rc.1(@babel/parser@7.29.7)(@nuxt/kit@3.21.8(magicast@0.5.3))(@types/markdown-it@14.1.2)(@types/node@26.1.0)(@vue/compiler-dom@3.5.39)(axios@1.18.1)(change-case@5.4.4)(esbuild@0.28.1)(eslint@10.6.0(jiti@2.7.0))(rolldown@1.1.4)(rollup@4.46.2)(terser@5.43.1)(tsx@4.23.1)(typescript@6.0.3)(vue-router@5.0.4(@vue/compiler-sfc@3.5.39)(esbuild@0.28.1)(pinia@3.0.4(typescript@6.0.3)(vue@3.5.39(typescript@6.0.3)))(rolldown@1.1.4)(rollup@4.46.2)(vite@8.1.3(@types/node@26.1.0)(esbuild@0.28.1)(jiti@2.7.0)(sass@1.101.0)(terser@5.43.1)(tsx@4.23.1)(yaml@2.9.0))(vue@3.5.39(typescript@6.0.3)))(vue@3.5.39(typescript@6.0.3))(yaml@2.9.0)
       valaxy-addon-algolia:
         specifier: ^0.2.1
-        version: 0.2.1(valaxy@1.0.0-beta.2(@babel/parser@7.29.7)(@nuxt/kit@3.21.8(magicast@0.5.3))(@types/markdown-it@14.1.2)(@types/node@26.1.0)(@vue/compiler-dom@3.5.39)(axios@1.18.1)(change-case@5.4.4)(esbuild@0.28.1)(eslint@10.6.0(jiti@2.7.0))(rolldown@1.1.4)(rollup@4.46.2)(terser@5.43.1)(tsx@4.23.1)(typescript@6.0.3)(vue-router@5.0.4(@vue/compiler-sfc@3.5.39)(esbuild@0.28.1)(pinia@3.0.4(typescript@6.0.3)(vue@3.5.39(typescript@6.0.3)))(rolldown@1.1.4)(rollup@4.46.2)(vite@8.1.3(@types/node@26.1.0)(esbuild@0.28.1)(jiti@2.7.0)(sass@1.101.0)(terser@5.43.1)(tsx@4.23.1)(yaml@2.9.0))(vue@3.5.39(typescript@6.0.3)))(vue@3.5.39(typescript@6.0.3))(yaml@2.9.0))
+        version: 0.2.1(valaxy@1.0.0-rc.1(@babel/parser@7.29.7)(@nuxt/kit@3.21.8(magicast@0.5.3))(@types/markdown-it@14.1.2)(@types/node@26.1.0)(@vue/compiler-dom@3.5.39)(axios@1.18.1)(change-case@5.4.4)(esbuild@0.28.1)(eslint@10.6.0(jiti@2.7.0))(rolldown@1.1.4)(rollup@4.46.2)(terser@5.43.1)(tsx@4.23.1)(typescript@6.0.3)(vue-router@5.0.4(@vue/compiler-sfc@3.5.39)(esbuild@0.28.1)(pinia@3.0.4(typescript@6.0.3)(vue@3.5.39(typescript@6.0.3)))(rolldown@1.1.4)(rollup@4.46.2)(vite@8.1.3(@types/node@26.1.0)(esbuild@0.28.1)(jiti@2.7.0)(sass@1.101.0)(terser@5.43.1)(tsx@4.23.1)(yaml@2.9.0))(vue@3.5.39(typescript@6.0.3)))(vue@3.5.39(typescript@6.0.3))(yaml@2.9.0))
       valaxy-addon-components:
         specifier: ^0.1.0
         version: 0.1.0
       valaxy-addon-waline:
         specifier: ^0.2.1
-        version: 0.2.1(typescript@6.0.3)(valaxy@1.0.0-beta.2(@babel/parser@7.29.7)(@nuxt/kit@3.21.8(magicast@0.5.3))(@types/markdown-it@14.1.2)(@types/node@26.1.0)(@vue/compiler-dom@3.5.39)(axios@1.18.1)(change-case@5.4.4)(esbuild@0.28.1)(eslint@10.6.0(jiti@2.7.0))(rolldown@1.1.4)(rollup@4.46.2)(terser@5.43.1)(tsx@4.23.1)(typescript@6.0.3)(vue-router@5.0.4(@vue/compiler-sfc@3.5.39)(esbuild@0.28.1)(pinia@3.0.4(typescript@6.0.3)(vue@3.5.39(typescript@6.0.3)))(rolldown@1.1.4)(rollup@4.46.2)(vite@8.1.3(@types/node@26.1.0)(esbuild@0.28.1)(jiti@2.7.0)(sass@1.101.0)(terser@5.43.1)(tsx@4.23.1)(yaml@2.9.0))(vue@3.5.39(typescript@6.0.3)))(vue@3.5.39(typescript@6.0.3))(yaml@2.9.0))
+        version: 0.2.1(typescript@6.0.3)(valaxy@1.0.0-rc.1(@babel/parser@7.29.7)(@nuxt/kit@3.21.8(magicast@0.5.3))(@types/markdown-it@14.1.2)(@types/node@26.1.0)(@vue/compiler-dom@3.5.39)(axios@1.18.1)(change-case@5.4.4)(esbuild@0.28.1)(eslint@10.6.0(jiti@2.7.0))(rolldown@1.1.4)(rollup@4.46.2)(terser@5.43.1)(tsx@4.23.1)(typescript@6.0.3)(vue-router@5.0.4(@vue/compiler-sfc@3.5.39)(esbuild@0.28.1)(pinia@3.0.4(typescript@6.0.3)(vue@3.5.39(typescript@6.0.3)))(rolldown@1.1.4)(rollup@4.46.2)(vite@8.1.3(@types/node@26.1.0)(esbuild@0.28.1)(jiti@2.7.0)(sass@1.101.0)(terser@5.43.1)(tsx@4.23.1)(yaml@2.9.0))(vue@3.5.39(typescript@6.0.3)))(vue@3.5.39(typescript@6.0.3))(yaml@2.9.0))
       valaxy-theme-yun:
-        specifier: 1.0.0-beta.2
-        version: 1.0.0-beta.2(magicast@0.5.3)(vue@3.5.39(typescript@6.0.3))
+        specifier: 1.0.0-rc.1
+        version: 1.0.0-rc.1(magicast@0.5.3)(vue@3.5.39(typescript@6.0.3))
       vite:
         specifier: ^8.1.3
         version: 8.1.3(@types/node@26.1.0)(esbuild@0.28.1)(jiti@2.7.0)(sass@1.101.0)(terser@5.43.1)(tsx@4.23.1)(yaml@2.9.0)
@@ -1795,11 +1795,11 @@ packages:
   '@upsetjs/venn.js@2.0.0':
     resolution: {integrity: sha512-WbBhLrooyePuQ1VZxrJjtLvTc4NVfpOyKx0sKqioq9bX1C1m7Jgykkn8gLrtwumBioXIqam8DLxp88Adbue6Hw==}
 
-  '@valaxyjs/devtools@1.0.0-beta.2':
-    resolution: {integrity: sha512-dui1lMCcl6dIeyD9K7LaKK4+Yhq3fi6eeGTzcN7l7k3DgyLgyoxVROTa1qZe+r1JHrT3PSIgUOMC3QBJU+mBmQ==}
+  '@valaxyjs/devtools@1.0.0-rc.1':
+    resolution: {integrity: sha512-AyFXSIhLCCazSXobf2/AhygjsHRrBV1QsXBmrivhkM4N/Ion1OcEzubI1K8ZkTsKst+Y1vBn9KOnSiXE9NyHcA==}
 
-  '@valaxyjs/utils@1.0.0-beta.2':
-    resolution: {integrity: sha512-eCc+tUeDHBdtQKMn1/0QkLVEvhQi1F0eaWi6r4aF5YFSWihlnD/LX22pBnzbAbO5XkW7C8C0/p/qRaXmCuwFQQ==}
+  '@valaxyjs/utils@1.0.0-rc.1':
+    resolution: {integrity: sha512-v7omBkkpUg6McgS29QVArhJDxc30+Dtc9vtGJ2G8+ZEyGfEidIE48miZSEe0Da41YPzsy+z0F3o6O2zUsP/pMg==}
 
   '@vitejs/plugin-vue@6.0.7':
     resolution: {integrity: sha512-km+p+XdSz9Sxm5rqUbqcSfZYaAniKxWBj1KURl+Jr7UaPvvX7BmaWMdP69I5rrFDeQGyxAG7NXdc57vz+snhWg==}
@@ -4620,11 +4620,11 @@ packages:
     peerDependencies:
       valaxy: '>=0.22'
 
-  valaxy-theme-yun@1.0.0-beta.2:
-    resolution: {integrity: sha512-sv6qUOKFPbb3WhBY0zlm6iIYAcWK3JPU1AkAHSBDNAMocoIcVRpVvAz9q/3TUHpzbOBHRoQ5GE7dY9itRDBasA==}
+  valaxy-theme-yun@1.0.0-rc.1:
+    resolution: {integrity: sha512-WRVQctwbA8YxyHlLZlHiG/w5gIkrbdUHqo8T2chiMdQ8rhqWDbdqkl3flx7eD2Que+9GvtlY343d3s1PXEspDA==}
 
-  valaxy@1.0.0-beta.2:
-    resolution: {integrity: sha512-2XhhZvyEYFDkoDYCcxW0LbzKooj297AuIItYLQi7V8sxUCmUaGR6Ty1+BGUxE4o3DlqL7K6EDI1zWlpeMRkUvg==}
+  valaxy@1.0.0-rc.1:
+    resolution: {integrity: sha512-6xhdp2YbmC0Qya49LuqnGocqhQ1Txa/HL0Ria50nA0FxaYayHTe4sdpD9Kxc0iq41GTgl7tkOQDKsggofEMWbg==}
     engines: {node: '>=22.12.0'}
     hasBin: true
     peerDependencies:
@@ -6569,7 +6569,7 @@ snapshots:
       d3-selection: 3.0.0
       d3-transition: 3.0.1(d3-selection@3.0.0)
 
-  '@valaxyjs/devtools@1.0.0-beta.2(debug@4.4.3)(rollup@4.46.2)':
+  '@valaxyjs/devtools@1.0.0-rc.1(debug@4.4.3)(rollup@4.46.2)':
     dependencies:
       '@rollup/pluginutils': 5.4.0(rollup@4.46.2)
       axios: 1.18.1(debug@4.4.3)
@@ -6586,7 +6586,7 @@ snapshots:
       - rollup
       - supports-color
 
-  '@valaxyjs/utils@1.0.0-beta.2': {}
+  '@valaxyjs/utils@1.0.0-rc.1': {}
 
   '@vitejs/plugin-vue@6.0.7(vite@8.1.3(@types/node@26.1.0)(esbuild@0.28.1)(jiti@2.7.0)(sass@1.101.0)(terser@5.43.1)(tsx@4.23.1)(yaml@2.9.0))(vue@3.5.39(typescript@6.0.3))':
     dependencies:
@@ -9800,22 +9800,22 @@ snapshots:
 
   uuid@14.0.1: {}
 
-  valaxy-addon-algolia@0.2.1(valaxy@1.0.0-beta.2(@babel/parser@7.29.7)(@nuxt/kit@3.21.8(magicast@0.5.3))(@types/markdown-it@14.1.2)(@types/node@26.1.0)(@vue/compiler-dom@3.5.39)(axios@1.18.1)(change-case@5.4.4)(esbuild@0.28.1)(eslint@10.6.0(jiti@2.7.0))(rolldown@1.1.4)(rollup@4.46.2)(terser@5.43.1)(tsx@4.23.1)(typescript@6.0.3)(vue-router@5.0.4(@vue/compiler-sfc@3.5.39)(esbuild@0.28.1)(pinia@3.0.4(typescript@6.0.3)(vue@3.5.39(typescript@6.0.3)))(rolldown@1.1.4)(rollup@4.46.2)(vite@8.1.3(@types/node@26.1.0)(esbuild@0.28.1)(jiti@2.7.0)(sass@1.101.0)(terser@5.43.1)(tsx@4.23.1)(yaml@2.9.0))(vue@3.5.39(typescript@6.0.3)))(vue@3.5.39(typescript@6.0.3))(yaml@2.9.0)):
+  valaxy-addon-algolia@0.2.1(valaxy@1.0.0-rc.1(@babel/parser@7.29.7)(@nuxt/kit@3.21.8(magicast@0.5.3))(@types/markdown-it@14.1.2)(@types/node@26.1.0)(@vue/compiler-dom@3.5.39)(axios@1.18.1)(change-case@5.4.4)(esbuild@0.28.1)(eslint@10.6.0(jiti@2.7.0))(rolldown@1.1.4)(rollup@4.46.2)(terser@5.43.1)(tsx@4.23.1)(typescript@6.0.3)(vue-router@5.0.4(@vue/compiler-sfc@3.5.39)(esbuild@0.28.1)(pinia@3.0.4(typescript@6.0.3)(vue@3.5.39(typescript@6.0.3)))(rolldown@1.1.4)(rollup@4.46.2)(vite@8.1.3(@types/node@26.1.0)(esbuild@0.28.1)(jiti@2.7.0)(sass@1.101.0)(terser@5.43.1)(tsx@4.23.1)(yaml@2.9.0))(vue@3.5.39(typescript@6.0.3)))(vue@3.5.39(typescript@6.0.3))(yaml@2.9.0)):
     dependencies:
       '@docsearch/css': 4.6.3
       '@docsearch/js': 4.6.3
-      valaxy: 1.0.0-beta.2(@babel/parser@7.29.7)(@nuxt/kit@3.21.8(magicast@0.5.3))(@types/markdown-it@14.1.2)(@types/node@26.1.0)(@vue/compiler-dom@3.5.39)(axios@1.18.1)(change-case@5.4.4)(esbuild@0.28.1)(eslint@10.6.0(jiti@2.7.0))(rolldown@1.1.4)(rollup@4.46.2)(terser@5.43.1)(tsx@4.23.1)(typescript@6.0.3)(vue-router@5.0.4(@vue/compiler-sfc@3.5.39)(esbuild@0.28.1)(pinia@3.0.4(typescript@6.0.3)(vue@3.5.39(typescript@6.0.3)))(rolldown@1.1.4)(rollup@4.46.2)(vite@8.1.3(@types/node@26.1.0)(esbuild@0.28.1)(jiti@2.7.0)(sass@1.101.0)(terser@5.43.1)(tsx@4.23.1)(yaml@2.9.0))(vue@3.5.39(typescript@6.0.3)))(vue@3.5.39(typescript@6.0.3))(yaml@2.9.0)
+      valaxy: 1.0.0-rc.1(@babel/parser@7.29.7)(@nuxt/kit@3.21.8(magicast@0.5.3))(@types/markdown-it@14.1.2)(@types/node@26.1.0)(@vue/compiler-dom@3.5.39)(axios@1.18.1)(change-case@5.4.4)(esbuild@0.28.1)(eslint@10.6.0(jiti@2.7.0))(rolldown@1.1.4)(rollup@4.46.2)(terser@5.43.1)(tsx@4.23.1)(typescript@6.0.3)(vue-router@5.0.4(@vue/compiler-sfc@3.5.39)(esbuild@0.28.1)(pinia@3.0.4(typescript@6.0.3)(vue@3.5.39(typescript@6.0.3)))(rolldown@1.1.4)(rollup@4.46.2)(vite@8.1.3(@types/node@26.1.0)(esbuild@0.28.1)(jiti@2.7.0)(sass@1.101.0)(terser@5.43.1)(tsx@4.23.1)(yaml@2.9.0))(vue@3.5.39(typescript@6.0.3)))(vue@3.5.39(typescript@6.0.3))(yaml@2.9.0)
 
   valaxy-addon-components@0.1.0: {}
 
-  valaxy-addon-waline@0.2.1(typescript@6.0.3)(valaxy@1.0.0-beta.2(@babel/parser@7.29.7)(@nuxt/kit@3.21.8(magicast@0.5.3))(@types/markdown-it@14.1.2)(@types/node@26.1.0)(@vue/compiler-dom@3.5.39)(axios@1.18.1)(change-case@5.4.4)(esbuild@0.28.1)(eslint@10.6.0(jiti@2.7.0))(rolldown@1.1.4)(rollup@4.46.2)(terser@5.43.1)(tsx@4.23.1)(typescript@6.0.3)(vue-router@5.0.4(@vue/compiler-sfc@3.5.39)(esbuild@0.28.1)(pinia@3.0.4(typescript@6.0.3)(vue@3.5.39(typescript@6.0.3)))(rolldown@1.1.4)(rollup@4.46.2)(vite@8.1.3(@types/node@26.1.0)(esbuild@0.28.1)(jiti@2.7.0)(sass@1.101.0)(terser@5.43.1)(tsx@4.23.1)(yaml@2.9.0))(vue@3.5.39(typescript@6.0.3)))(vue@3.5.39(typescript@6.0.3))(yaml@2.9.0)):
+  valaxy-addon-waline@0.2.1(typescript@6.0.3)(valaxy@1.0.0-rc.1(@babel/parser@7.29.7)(@nuxt/kit@3.21.8(magicast@0.5.3))(@types/markdown-it@14.1.2)(@types/node@26.1.0)(@vue/compiler-dom@3.5.39)(axios@1.18.1)(change-case@5.4.4)(esbuild@0.28.1)(eslint@10.6.0(jiti@2.7.0))(rolldown@1.1.4)(rollup@4.46.2)(terser@5.43.1)(tsx@4.23.1)(typescript@6.0.3)(vue-router@5.0.4(@vue/compiler-sfc@3.5.39)(esbuild@0.28.1)(pinia@3.0.4(typescript@6.0.3)(vue@3.5.39(typescript@6.0.3)))(rolldown@1.1.4)(rollup@4.46.2)(vite@8.1.3(@types/node@26.1.0)(esbuild@0.28.1)(jiti@2.7.0)(sass@1.101.0)(terser@5.43.1)(tsx@4.23.1)(yaml@2.9.0))(vue@3.5.39(typescript@6.0.3)))(vue@3.5.39(typescript@6.0.3))(yaml@2.9.0)):
     dependencies:
       '@waline/client': 3.4.1(typescript@6.0.3)
-      valaxy: 1.0.0-beta.2(@babel/parser@7.29.7)(@nuxt/kit@3.21.8(magicast@0.5.3))(@types/markdown-it@14.1.2)(@types/node@26.1.0)(@vue/compiler-dom@3.5.39)(axios@1.18.1)(change-case@5.4.4)(esbuild@0.28.1)(eslint@10.6.0(jiti@2.7.0))(rolldown@1.1.4)(rollup@4.46.2)(terser@5.43.1)(tsx@4.23.1)(typescript@6.0.3)(vue-router@5.0.4(@vue/compiler-sfc@3.5.39)(esbuild@0.28.1)(pinia@3.0.4(typescript@6.0.3)(vue@3.5.39(typescript@6.0.3)))(rolldown@1.1.4)(rollup@4.46.2)(vite@8.1.3(@types/node@26.1.0)(esbuild@0.28.1)(jiti@2.7.0)(sass@1.101.0)(terser@5.43.1)(tsx@4.23.1)(yaml@2.9.0))(vue@3.5.39(typescript@6.0.3)))(vue@3.5.39(typescript@6.0.3))(yaml@2.9.0)
+      valaxy: 1.0.0-rc.1(@babel/parser@7.29.7)(@nuxt/kit@3.21.8(magicast@0.5.3))(@types/markdown-it@14.1.2)(@types/node@26.1.0)(@vue/compiler-dom@3.5.39)(axios@1.18.1)(change-case@5.4.4)(esbuild@0.28.1)(eslint@10.6.0(jiti@2.7.0))(rolldown@1.1.4)(rollup@4.46.2)(terser@5.43.1)(tsx@4.23.1)(typescript@6.0.3)(vue-router@5.0.4(@vue/compiler-sfc@3.5.39)(esbuild@0.28.1)(pinia@3.0.4(typescript@6.0.3)(vue@3.5.39(typescript@6.0.3)))(rolldown@1.1.4)(rollup@4.46.2)(vite@8.1.3(@types/node@26.1.0)(esbuild@0.28.1)(jiti@2.7.0)(sass@1.101.0)(terser@5.43.1)(tsx@4.23.1)(yaml@2.9.0))(vue@3.5.39(typescript@6.0.3)))(vue@3.5.39(typescript@6.0.3))(yaml@2.9.0)
     transitivePeerDependencies:
       - typescript
 
-  valaxy-theme-yun@1.0.0-beta.2(magicast@0.5.3)(vue@3.5.39(typescript@6.0.3)):
+  valaxy-theme-yun@1.0.0-rc.1(magicast@0.5.3)(vue@3.5.39(typescript@6.0.3)):
     dependencies:
       '@ctrl/tinycolor': 4.2.0
       '@explosions/fireworks': 0.2.0
@@ -9832,7 +9832,7 @@ snapshots:
       - three
       - vue
 
-  valaxy@1.0.0-beta.2(@babel/parser@7.29.7)(@nuxt/kit@3.21.8(magicast@0.5.3))(@types/markdown-it@14.1.2)(@types/node@26.1.0)(@vue/compiler-dom@3.5.39)(axios@1.18.1)(change-case@5.4.4)(esbuild@0.28.1)(eslint@10.6.0(jiti@2.7.0))(rolldown@1.1.4)(rollup@4.46.2)(terser@5.43.1)(tsx@4.23.1)(typescript@6.0.3)(vue-router@5.0.4(@vue/compiler-sfc@3.5.39)(esbuild@0.28.1)(pinia@3.0.4(typescript@6.0.3)(vue@3.5.39(typescript@6.0.3)))(rolldown@1.1.4)(rollup@4.46.2)(vite@8.1.3(@types/node@26.1.0)(esbuild@0.28.1)(jiti@2.7.0)(sass@1.101.0)(terser@5.43.1)(tsx@4.23.1)(yaml@2.9.0))(vue@3.5.39(typescript@6.0.3)))(vue@3.5.39(typescript@6.0.3))(yaml@2.9.0):
+  valaxy@1.0.0-rc.1(@babel/parser@7.29.7)(@nuxt/kit@3.21.8(magicast@0.5.3))(@types/markdown-it@14.1.2)(@types/node@26.1.0)(@vue/compiler-dom@3.5.39)(axios@1.18.1)(change-case@5.4.4)(esbuild@0.28.1)(eslint@10.6.0(jiti@2.7.0))(rolldown@1.1.4)(rollup@4.46.2)(terser@5.43.1)(tsx@4.23.1)(typescript@6.0.3)(vue-router@5.0.4(@vue/compiler-sfc@3.5.39)(esbuild@0.28.1)(pinia@3.0.4(typescript@6.0.3)(vue@3.5.39(typescript@6.0.3)))(rolldown@1.1.4)(rollup@4.46.2)(vite@8.1.3(@types/node@26.1.0)(esbuild@0.28.1)(jiti@2.7.0)(sass@1.101.0)(terser@5.43.1)(tsx@4.23.1)(yaml@2.9.0))(vue@3.5.39(typescript@6.0.3)))(vue@3.5.39(typescript@6.0.3))(yaml@2.9.0):
     dependencies:
       '@antfu/install-pkg': 1.1.0
       '@antfu/utils': 9.3.0
@@ -9844,8 +9844,8 @@ snapshots:
       '@unhead/addons': 2.1.15(esbuild@0.28.1)(rolldown@1.1.4)(rollup@4.46.2)(unhead@2.1.15)(vite@8.1.3(@types/node@26.1.0)(esbuild@0.28.1)(jiti@2.7.0)(sass@1.101.0)(terser@5.43.1)(tsx@4.23.1)(yaml@2.9.0))
       '@unhead/schema-org': 2.1.15(@unhead/vue@2.1.15(vue@3.5.39(typescript@6.0.3)))
       '@unhead/vue': 2.1.15(vue@3.5.39(typescript@6.0.3))
-      '@valaxyjs/devtools': 1.0.0-beta.2(debug@4.4.3)(rollup@4.46.2)
-      '@valaxyjs/utils': 1.0.0-beta.2
+      '@valaxyjs/devtools': 1.0.0-rc.1(debug@4.4.3)(rollup@4.46.2)
+      '@valaxyjs/utils': 1.0.0-rc.1
       '@vitejs/plugin-vue': 6.0.7(vite@8.1.3(@types/node@26.1.0)(esbuild@0.28.1)(jiti@2.7.0)(sass@1.101.0)(terser@5.43.1)(tsx@4.23.1)(yaml@2.9.0))(vue@3.5.39(typescript@6.0.3))
       '@vue/devtools-api': 7.7.2
       '@vueuse/core': 14.3.0(vue@3.5.39(typescript@6.0.3))
