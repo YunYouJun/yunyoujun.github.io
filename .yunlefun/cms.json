@@ -1,0 +1,291 @@
+{
+  "$schema": "https://cms.yunle.fun/spec/manifest.v1.schema.json",
+  "version": 1,
+  "name": "云游君的小站",
+  "help": {
+    "title": "云游君的小站内容维护",
+    "description": "文章、草稿和独立页面都在这里维护。发布前请确认当前仓库为 YunYouJun/yunyoujun.github.io、目标分支为 valaxy，并以 Pull Request 预览为最终效果。",
+    "url": "https://github.com/YunYouJun/yunyoujun.github.io/blob/valaxy/docs/cms.md",
+    "linkLabel": "查看 CMS 维护手册"
+  },
+  "onboarding": {
+    "version": 1,
+    "title": "开始维护云游君的小站",
+    "description": "先确认当前仓库与 valaxy 分支，再选择文章、草稿或独立页面；所有改动都会先保存为云草稿，并通过 Pull Request 发布。",
+    "replayLabel": "查看本站编辑指引",
+    "steps": [
+      {
+        "id": "posts",
+        "title": "发布或更新文章",
+        "description": "在“文章”中搜索现有内容，或以英文短横线文件名新建文章。发布日期沿用 YYYY-MM-DD HH:mm:ss 格式。",
+        "collectionId": "posts"
+      },
+      {
+        "id": "drafts",
+        "title": "继续未完成草稿",
+        "description": "“草稿”只展示仍在维护的顶层草稿；abandon 和 old 归档默认保持只读。",
+        "collectionId": "drafts",
+        "optional": true
+      },
+      {
+        "id": "pages",
+        "title": "维护独立页面",
+        "description": "About、友链、项目、赞助等非文章页面集中在“独立页面”，修改前请留意它们的专用布局字段。",
+        "collectionId": "pages",
+        "optional": true
+      },
+      {
+        "id": "review",
+        "title": "检查预览并发布",
+        "description": "CMS 预览只覆盖安全 Markdown；Valaxy 容器与主题组件请以 Pull Request 的站点预览为准，确认目标分支为 valaxy 后再合并。"
+      }
+    ]
+  },
+  "collections": [
+    {
+      "id": "posts",
+      "label": "文章",
+      "help": {
+        "title": "文章维护",
+        "description": "发布日期与更新日期保留 Valaxy 现有的 YYYY-MM-DD HH:mm:ss 格式；自定义容器和主题组件以 Pull Request 预览为准。",
+        "url": "https://github.com/YunYouJun/yunyoujun.github.io/blob/valaxy/docs/cms.md#文章",
+        "linkLabel": "查看文章编辑说明"
+      },
+      "root": "pages/posts",
+      "format": "markdown",
+      "include": [
+        "**/*.md"
+      ],
+      "fields": {
+        "title": {
+          "type": "string",
+          "label": "标题",
+          "required": true,
+          "initial": "filename"
+        },
+        "date": {
+          "type": "string",
+          "label": "发布日期",
+          "description": "推荐格式：YYYY-MM-DD HH:mm:ss；仅使用日期时可写 YYYY-MM-DD",
+          "required": true,
+          "placeholder": "2026-07-31 12:00:00"
+        },
+        "updated": {
+          "type": "string",
+          "label": "更新日期",
+          "description": "推荐格式：YYYY-MM-DD HH:mm:ss",
+          "placeholder": "2026-07-31 12:00:00"
+        },
+        "categories": {
+          "type": "list",
+          "label": "分类",
+          "placeholder": "用逗号分隔"
+        },
+        "tags": {
+          "type": "list",
+          "label": "标签",
+          "placeholder": "用逗号分隔"
+        },
+        "draft": {
+          "type": "boolean",
+          "label": "草稿",
+          "default": false
+        },
+        "end": {
+          "type": "boolean",
+          "label": "完结",
+          "default": false
+        },
+        "type": {
+          "type": "string",
+          "label": "文章类型"
+        },
+        "url": {
+          "type": "string",
+          "label": "原文链接",
+          "placeholder": "https://..."
+        },
+        "katex": {
+          "type": "boolean",
+          "label": "启用 KaTeX",
+          "default": false
+        }
+      }
+    },
+    {
+      "id": "drafts",
+      "label": "草稿",
+      "help": {
+        "title": "草稿维护",
+        "description": "这里只显示 pages/_drafts 下仍在维护的顶层草稿；abandon、old 和 README 默认不参与编辑，避免误发布历史内容。",
+        "url": "https://github.com/YunYouJun/yunyoujun.github.io/blob/valaxy/docs/cms.md#草稿",
+        "linkLabel": "查看草稿说明"
+      },
+      "root": "pages/_drafts",
+      "format": "markdown",
+      "include": [
+        "*.md"
+      ],
+      "exclude": [
+        "README.md"
+      ],
+      "fields": {
+        "title": {
+          "type": "string",
+          "label": "标题",
+          "required": true,
+          "initial": "filename"
+        },
+        "date": {
+          "type": "string",
+          "label": "发布日期",
+          "description": "推荐格式：YYYY-MM-DD HH:mm:ss；仅使用日期时可写 YYYY-MM-DD",
+          "placeholder": "2026-07-31 12:00:00"
+        },
+        "updated": {
+          "type": "string",
+          "label": "更新日期",
+          "description": "推荐格式：YYYY-MM-DD HH:mm:ss",
+          "placeholder": "2026-07-31 12:00:00"
+        },
+        "categories": {
+          "type": "list",
+          "label": "分类",
+          "placeholder": "用逗号分隔"
+        },
+        "tags": {
+          "type": "list",
+          "label": "标签",
+          "placeholder": "用逗号分隔"
+        },
+        "draft": {
+          "type": "boolean",
+          "label": "草稿",
+          "default": true
+        },
+        "end": {
+          "type": "boolean",
+          "label": "完结",
+          "default": false
+        },
+        "type": {
+          "type": "string",
+          "label": "文章类型"
+        },
+        "url": {
+          "type": "string",
+          "label": "原文链接",
+          "placeholder": "https://..."
+        },
+        "katex": {
+          "type": "boolean",
+          "label": "启用 KaTeX",
+          "default": false
+        }
+      }
+    },
+    {
+      "id": "pages",
+      "label": "独立页面",
+      "help": {
+        "title": "独立页面维护",
+        "description": "About、友链、项目、赞助等页面可能依赖专用 layout、图标和开关；未知 frontmatter 字段会保持原样。",
+        "url": "https://github.com/YunYouJun/yunyoujun.github.io/blob/valaxy/docs/cms.md#独立页面",
+        "linkLabel": "查看页面编辑说明"
+      },
+      "root": "pages",
+      "format": "markdown",
+      "include": [
+        "**/*.md"
+      ],
+      "exclude": [
+        "_drafts/**",
+        "posts/**",
+        "README.md"
+      ],
+      "fields": {
+        "title": {
+          "type": "string",
+          "label": "页面标题",
+          "required": true,
+          "initial": "filename"
+        },
+        "description": {
+          "type": "string",
+          "label": "页面摘要",
+          "control": "textarea"
+        },
+        "date": {
+          "type": "string",
+          "label": "发布日期",
+          "description": "推荐格式：YYYY-MM-DD HH:mm:ss；仅使用日期时可写 YYYY-MM-DD",
+          "placeholder": "2026-07-31 12:00:00"
+        },
+        "updated": {
+          "type": "string",
+          "label": "更新日期",
+          "description": "推荐格式：YYYY-MM-DD HH:mm:ss",
+          "placeholder": "2026-07-31 12:00:00"
+        },
+        "layout": {
+          "type": "string",
+          "label": "页面布局",
+          "description": "修改前请确认对应 Valaxy 布局存在"
+        },
+        "icon": {
+          "type": "string",
+          "label": "页面图标",
+          "placeholder": "i-ri-file-line"
+        },
+        "categories": {
+          "type": "list",
+          "label": "分类",
+          "placeholder": "用逗号分隔"
+        },
+        "tags": {
+          "type": "list",
+          "label": "标签",
+          "placeholder": "用逗号分隔"
+        },
+        "toc": {
+          "type": "boolean",
+          "label": "显示目录",
+          "default": true
+        },
+        "aside": {
+          "type": "boolean",
+          "label": "显示侧栏",
+          "default": true
+        },
+        "nav": {
+          "type": "boolean",
+          "label": "显示导航",
+          "default": true
+        },
+        "reward": {
+          "type": "boolean",
+          "label": "显示赞赏",
+          "default": true
+        },
+        "comment": {
+          "type": "boolean",
+          "label": "启用评论",
+          "default": true
+        },
+        "comments": {
+          "type": "boolean",
+          "label": "启用评论（兼容字段）",
+          "default": true
+        }
+      }
+    }
+  ],
+  "workflow": {
+    "defaultBaseRef": "valaxy",
+    "allowBaseRefSelection": false,
+    "reviewPreferred": true
+  },
+  "extensions": {
+    "valaxy.discovery": "manifest"
+  }
+}

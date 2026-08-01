@@ -14,6 +14,16 @@
 
 ## Use
 
+### CMS 内容维护
+
+日常文章、草稿和独立页面可以通过 [云笺](https://cms.yunle.fun/) 维护。仓库已配置 `.yunlefun/cms.json`，连接时选择：
+
+- 仓库：`YunYouJun/yunyoujun.github.io`
+- 分支：`valaxy`
+- 项目目录：`.`
+
+CMS 只保存云草稿，并通过独立分支和 Pull Request 发布，不会直接修改目标分支。日期格式、内容集合、预览边界和当前已知注意事项见 [CMS 内容维护手册](docs/cms.md)。
+
 ### 日常发布
 
 发布时，同时推送至 GitHub 与 Coding 的 hexo 分支备份，使用 CI （GitHub Actions） 生成静态页面推送至 GitHub
