@@ -7,6 +7,11 @@ shamefullyHoist: true
 shellEmulator: true
 trustLockfile: true
 trustPolicy: no-downgrade
+trustPolicyExclude:
+  - semver@6.3.1
+  - valaxy-addon-algolia@0.2.1
+  - valaxy-addon-components@0.1.0
+  - valaxy-addon-waline@0.2.1
 packages:
   - .
 onlyBuiltDependencies:
