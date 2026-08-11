@@ -71,6 +71,7 @@
     "valaxy": "^1.0.0-rc.2",
     "valaxy-addon-algolia": "^0.2.1",
     "valaxy-addon-components": "^0.1.0",
+    "valaxy-addon-girls": "^0.1.0",
     "valaxy-addon-waline": "^0.2.1",
     "valaxy-theme-yun": "^1.0.0-rc.2",
     "vite": "^8.2.0",

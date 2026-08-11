@@ -3,6 +3,7 @@ minimumReleaseAgeExclude:
   - '@valaxyjs/utils@1.0.0-rc.2'
   - valaxy-theme-yun@1.0.0-rc.2
   - valaxy@1.0.0-rc.2
+  - valaxy-addon-girls@0.1.0
 shamefullyHoist: true
 shellEmulator: true
 trustLockfile: true

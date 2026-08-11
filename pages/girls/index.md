@@ -1,10 +1,11 @@
 ---
 title: Lovely Girls
 date: 2019-01-07 11:17:35
-updated: 2022-05-12 11:17:35
+updated: 2026-08-10 00:00:00
 icon: i-ri-women-line
 girls: https://wives.yunyoujun.cn/girls.json
 random: true
+aside: false
 ---
 
 <!-- https://github.com/YunYouJun/wives -->
@@ -14,7 +15,12 @@ random: true
 !大家都是我的天使!
 </div> -->
 
-<YunGirls :girls="frontmatter.girls" :random="frontmatter.random" />
+<ValaxyGirls
+  :girls="frontmatter.girls"
+  :random="frontmatter.random"
+  layout="bubbles"
+  switchable
+/>
 
 ![喜欢二次元这件事很恶心这一点我还是知道的](https://cdn.yunyoujun.cn/img/meme/love-er-ci-yuan-is-sick.jpg)
 

@@ -3,6 +3,7 @@ import { defineValaxyConfig } from 'valaxy'
 import { addonAlgolia } from 'valaxy-addon-algolia'
 
 import { addonComponents } from 'valaxy-addon-components'
+import { addonGirls } from 'valaxy-addon-girls'
 import { addonWaline } from 'valaxy-addon-waline'
 import { isBeianMode } from './config/beian'
 
@@ -56,6 +57,7 @@ export default defineValaxyConfig<UserThemeConfig> ({
       indexName: 'my-hexo-blog',
     }),
     addonComponents(),
+    addonGirls(),
     addonWaline({
       serverURL: 'https://waline.yunyoujun.cn',
       // pageview: true,
