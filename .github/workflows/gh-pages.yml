@@ -23,32 +23,26 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v7
 
-      - name: Install pnpm
-        uses: pnpm/action-setup@v4
+      - name: Set up pnpm and Node.js
+        uses: pnpm/setup@v2
         with:
-          run_install: true
-
-      - name: Use Node.js LTS
-        uses: actions/setup-node@v4
-        with:
-          node-version: lts/*
-          registry-url: https://registry.npmjs.org/
-          cache: pnpm
+          runtime: node@24
+          cache: true
 
       - name: 🔍 Genereate Algolia
         env:
           HEXO_ALGOLIA_INDEXING_KEY: ${{ secrets.HEXO_ALGOLIA_INDEXING_KEY }}
-        run: npm run algolia
+        run: pnpm run algolia
 
       - name: 🌌 Build Valaxy Blog
-        run: npm run build
+        run: pnpm run build
         env:
           NODE_OPTIONS: --max-old-space-size=6144
 
       - name: ⏫ Upload artifact
-        uses: actions/upload-pages-artifact@v3
+        uses: actions/upload-pages-artifact@v5
         with:
           path: ./dist
 
@@ -64,4 +58,4 @@ jobs:
     steps:
       - name: 🪤 Deploy to GitHub Pages
         id: deployment
-        uses: actions/deploy-pages@v4
+        uses: actions/deploy-pages@v5
