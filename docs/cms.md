@@ -1,10 +1,10 @@
-# 使用云笺维护内容
+# 使用云栈维护内容
 
-日常内容维护可以直接使用 [云笺（Yunle CMS）](https://cms.yunle.fun/)。云笺只读取和编辑仓库中的 Markdown，不执行本仓库的 Valaxy 配置、组件或插件；所有正式变更仍通过独立分支和 Pull Request 发布。
+日常内容维护可以直接使用 [云栈（Yunle CMS）](https://cms.yunle.fun/)。云栈只读取和编辑仓库中的 Markdown，不执行本仓库的 Valaxy 配置、组件或插件；所有正式变更仍通过独立分支和 Pull Request 发布。
 
 ## 第一次连接
 
-1. 登录云笺，并确认已关联 GitHub 账号 `@YunYouJun`。
+1. 登录云栈，并确认已关联 GitHub 账号 `@YunYouJun`。
 2. 选择仓库 `YunYouJun/yunyoujun.github.io`。
 3. 目标分支保持 `valaxy`，项目目录保持 `.`。
 4. CMS 会读取仓库根目录的 [`.yunlefun/cms.json`](../.yunlefun/cms.json)，把内容分成“文章”“草稿”和“独立页面”。
@@ -19,6 +19,12 @@
 4. 点击“审阅并发布”，核对真实差异和目标分支。
 5. 创建 Pull Request，等待 CI 生成站点预览。
 6. 在站点预览中检查 Valaxy 组件、主题样式和链接，再合并到 `valaxy`。
+
+## 与 Studio 联动
+
+为公众号准备长文时，正文仍只维护在本仓库：写作中的内容放在 `pages/_drafts/*.md`，正式博客文章放在 `pages/posts/**/*.md`。
+
+Studio 的微信公众号发布包可以记录对应文件路径，并通过“在云栈编辑”直接打开当前文章。编辑并保存后回到 Studio 刷新源稿；Studio 会重新读取 Markdown、固定 GitHub revision 和内容 hash，再生成公众号预览与可复制的富文本正文。标题默认读取 `title`，分享摘要优先读取 `description`，正文不会在 Studio 中另存一份需要独立维护的文案。
 
 CMS 的内容预览不会运行仓库代码，因此 `::: tip` 等 Valaxy/VitePress 容器、Vue 组件和主题专用能力可能与最终页面不同。最终效果以 Pull Request 的站点预览为准。
 
@@ -57,7 +63,7 @@ CMS 的内容预览不会运行仓库代码，因此 `::: tip` 等 Valaxy/VitePr
 在 CMS 修复以下问题前，编辑时遵循这些保护动作：
 
 - 切换站点或文章后，等待正文、面包屑和右侧标题同时更新，再开始输入。
-- 从“帮助 → 关于云笺”返回后重新确认站点选择器仍是 `YunYouJun/yunyoujun.github.io`。
+- 从“帮助 → 关于云栈”返回后重新确认站点选择器仍是 `YunYouJun/yunyoujun.github.io`。
 - 发布弹窗可能仍写“不会直接修改 main”；本仓库实际目标分支应为 `valaxy`，以顶部和 Pull Request 的 base branch 为准。
 - `::: tip`、Vue 组件和主题样式不会在安全 Markdown 预览中完整还原，以 CI 生成的站点预览为准。
 

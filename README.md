@@ -16,7 +16,7 @@
 
 ### CMS 内容维护
 
-日常文章、草稿和独立页面可以通过 [云笺](https://cms.yunle.fun/) 维护。仓库已配置 `.yunlefun/cms.json`，连接时选择：
+日常文章、草稿和独立页面可以通过 [云栈](https://cms.yunle.fun/) 维护。仓库已配置 `.yunlefun/cms.json`，连接时选择：
 
 - 仓库：`YunYouJun/yunyoujun.github.io`
 - 分支：`valaxy`
