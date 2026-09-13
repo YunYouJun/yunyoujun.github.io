@@ -1,0 +1,139 @@
+/* Opt-in project surfaces. Keep the surrounding Yun theme and article typography intact. */
+[data-project-theme='ak-ui'] {
+  --studio-surface: #edf2f3;
+  --studio-text: #18272c;
+  --studio-muted: #4b6067;
+  --studio-line: #bccbd0;
+  --studio-accent: #076c82;
+  --studio-button: #163942;
+  --studio-button-text: #ffffff;
+  --studio-hover: #d5eef2;
+}
+
+.dark [data-project-theme='ak-ui'] {
+  --studio-surface: #1a242a;
+  --studio-text: #edf5f6;
+  --studio-muted: #acbec5;
+  --studio-line: #40565f;
+  --studio-accent: #71d3e2;
+  --studio-button: #71d3e2;
+  --studio-button-text: #102229;
+  --studio-hover: #233e47;
+}
+
+.studio-showcase .studio-episode[data-project-theme='ak-ui'] {
+  position: relative;
+  border: 1px solid var(--studio-line);
+  border-top: 3px solid var(--studio-accent);
+  border-radius: 2px;
+  color: var(--studio-text);
+  background: var(--studio-surface);
+  box-shadow: none;
+}
+
+.studio-episode[data-project-theme='ak-ui'] .studio-episode-heading {
+  padding-bottom: 12px;
+  border-bottom: 1px solid var(--studio-line);
+  color: var(--studio-muted);
+  font-family: ui-monospace, monospace;
+}
+
+.studio-episode[data-project-theme='ak-ui'] .studio-number {
+  padding-left: 10px;
+  border-left: 3px solid var(--studio-accent);
+  color: var(--studio-accent);
+}
+
+.studio-project-heading {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  gap: 8px 16px;
+  margin: 20px 0;
+}
+
+.studio-project-name {
+  font-family: ui-monospace, monospace;
+  font-size: 32px;
+  font-weight: 800;
+  line-height: 1;
+  letter-spacing: -.05em;
+  text-transform: uppercase;
+}
+
+.studio-project-label {
+  color: var(--studio-muted);
+  font-size: 11px;
+  letter-spacing: .08em;
+}
+
+.studio-episode[data-project-theme='ak-ui'] .studio-episode-body h3 {
+  color: var(--studio-text);
+  font-family: system-ui, sans-serif;
+  font-size: clamp(20px, 2.6vw, 25px);
+  font-weight: 700;
+  line-height: 1.6;
+}
+
+.studio-episode[data-project-theme='ak-ui'] .studio-episode-body p {
+  color: var(--studio-muted);
+}
+
+.studio-episode[data-project-theme='ak-ui'] .studio-links {
+  gap: 8px 16px;
+  padding-top: 20px;
+  border-top: 1px solid var(--studio-line);
+}
+
+.studio-episode[data-project-theme='ak-ui'] .studio-links a {
+  display: inline-flex;
+  align-items: center;
+  min-height: 44px;
+  color: var(--studio-accent);
+}
+
+.studio-episode[data-project-theme='ak-ui'] .studio-links .studio-primary-link {
+  border-radius: 2px;
+  background: var(--studio-button);
+  color: var(--studio-button-text);
+}
+
+.studio-episode[data-project-theme='ak-ui'] .studio-links a:hover,
+.studio-episode[data-project-theme='ak-ui'] .studio-links a:focus-visible {
+  outline-color: var(--studio-accent);
+}
+
+.studio-video[data-project-theme='ak-ui'] .studio-video-frame {
+  border: 1px solid var(--studio-line);
+  border-radius: 2px;
+  background: var(--studio-surface);
+}
+
+.studio-video[data-project-theme='ak-ui'] .studio-video-play {
+  border: 1px solid var(--studio-button);
+  border-radius: 2px;
+  background: var(--studio-button);
+  color: var(--studio-button-text);
+}
+
+.studio-video[data-project-theme='ak-ui'] .studio-video-start:hover .studio-video-play {
+  border-color: var(--studio-accent);
+  background: var(--studio-hover);
+  color: var(--studio-accent);
+}
+
+.studio-video[data-project-theme='ak-ui'] .studio-video-start:focus-visible {
+  outline-color: var(--studio-accent);
+}
+
+.studio-video[data-project-theme='ak-ui'] .studio-video-fallback {
+  color: var(--studio-text);
+}
+
+.studio-video[data-project-theme='ak-ui'] .studio-video-caption {
+  color: var(--studio-muted);
+}
+
+.studio-video[data-project-theme='ak-ui'] .studio-video-caption a {
+  color: var(--studio-accent);
+}
