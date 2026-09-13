@@ -1,8 +1,8 @@
 minimumReleaseAgeExclude:
-  - '@valaxyjs/devtools@1.0.0-rc.8'
-  - '@valaxyjs/utils@1.0.0-rc.8'
-  - valaxy-theme-yun@1.0.0-rc.8
-  - valaxy@1.0.0-rc.8
+  - '@valaxyjs/devtools@1.0.0-rc.10'
+  - '@valaxyjs/utils@1.0.0-rc.10'
+  - valaxy-theme-yun@1.0.0-rc.10
+  - valaxy@1.0.0-rc.10
   - valaxy-addon-girls@0.1.0
   - eslint@10.9.1
 shamefullyHoist: true
@@ -21,8 +21,6 @@ allowBuilds:
   esbuild: true
   simple-git-hooks: true
   vue-demi: true
-patchedDependencies:
-  valaxy-theme-yun@1.0.0-rc.8: patches/valaxy-theme-yun@1.0.0-rc.8.patch
 onlyBuiltDependencies:
   - '@parcel/watcher'
   - esbuild

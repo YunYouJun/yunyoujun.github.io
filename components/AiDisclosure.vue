@@ -48,7 +48,7 @@ onBeforeUnmount(cancelClose)
           <span>{{ label }}</span>
         </button>
       </PopoverTrigger>
-      <PopoverPortal>
+      <PopoverPortal to="#valaxy-teleports">
         <PopoverContent
           class="ai-disclosure-popover" side="bottom" align="center" :side-offset="6" :collision-padding="16"
           :aria-label="`${label}：创作说明`"
