@@ -9,7 +9,7 @@ test.beforeEach(async ({ page }) => {
   await expect(page.locator('.yun-nav-menu')).not.toHaveClass(/animate-fade-in/)
 })
 
-test('search panel supports keyboard navigation, focus containment, and dismissal', async ({ page }) => {
+test('fullscreen search supports keyboard navigation, focus containment, and dismissal', async ({ page }) => {
   const errors: string[] = []
   page.on('pageerror', error => errors.push(error.message))
   const trigger = page.locator('.yun-search-btn')
@@ -17,6 +17,9 @@ test('search panel supports keyboard navigation, focus containment, and dismissa
   const dialog = page.getByRole('dialog')
   const input = dialog.getByRole('searchbox')
   await expect(dialog).toBeVisible()
+  await expect(page.locator('#valaxy-teleports [role="dialog"]')).toBeVisible()
+  await expect(dialog).toHaveAccessibleName(/搜索文章|Search articles/)
+  await expect(dialog).toHaveAccessibleDescription(/方向键|arrow keys/)
   await expect(input).toBeFocused()
   await input.fill('Valaxy')
   const results = dialog.locator('.yun-search-result')
