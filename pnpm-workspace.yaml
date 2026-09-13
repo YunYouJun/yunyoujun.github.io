@@ -1,8 +1,8 @@
 minimumReleaseAgeExclude:
-  - '@valaxyjs/devtools@1.0.0-rc.10'
-  - '@valaxyjs/utils@1.0.0-rc.10'
-  - valaxy-theme-yun@1.0.0-rc.10
-  - valaxy@1.0.0-rc.10
+  - '@valaxyjs/devtools@1.0.0-rc.11'
+  - '@valaxyjs/utils@1.0.0-rc.11'
+  - valaxy-theme-yun@1.0.0-rc.11
+  - valaxy@1.0.0-rc.11
   - valaxy-addon-girls@0.1.0
   - eslint@10.9.1
 shamefullyHoist: true
