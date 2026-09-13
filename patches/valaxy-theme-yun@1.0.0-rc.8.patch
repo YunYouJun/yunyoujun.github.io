@@ -1,0 +1,1591 @@
+diff --git a/components/YunBanner.vue b/components/YunBanner.vue
+index 7ac50158908465593eaad9bf6d8e72726ca3ad55..69dd12b0f0c452bdf1adf7367f2f9843322e609e 100644
+--- a/components/YunBanner.vue
++++ b/components/YunBanner.vue
+@@ -26,7 +26,7 @@ const bannerStyles = computed<CSSProperties>(() => {
+     'justify-content': 'space-between',
+   }
+   if (yun.isStrato)
+-    styles.borderBottom = `1px solid var(--banner-line-color)`
++    styles.borderBottom = `1px solid var(--yun-banner-divider-color, var(--banner-line-color))`
+ 
+   return styles
+ })
+@@ -58,7 +58,7 @@ onMounted(async () => {
+ </script>
+ 
+ <template>
+-  <div id="yun-banner" border="b-1px b-solid b-$banner-line-color" :style="bannerStyles">
++  <div id="yun-banner" border="b-1px b-solid" :style="bannerStyles">
+     <div class="banner-line-container">
+       <div
+         class="banner-line vertical-line-top"
+@@ -94,6 +94,10 @@ onMounted(async () => {
+ @use "../styles/widgets/banner.scss" as *;
+ @use "../styles/modules/prologue.scss" as *;
+ 
++#yun-banner {
++  border-bottom-color: var(--yun-banner-divider-color, var(--banner-line-color));
++}
++
+ :root {
+   // banner
+   --banner-line-color: black;
+diff --git a/components/YunCard.vue b/components/YunCard.vue
+index 5e31473435463d1261c754154c8611586bd91948..af9d20834ef2142cfd14f8965d8d4d9e28b875c5 100644
+--- a/components/YunCard.vue
++++ b/components/YunCard.vue
+@@ -4,7 +4,7 @@ defineProps<{ cover?: string }>()
+ 
+ <template>
+   <div
+-    class="yun-card flex-center rounded-2 overflow-hidden" flex="col"
++    class="yun-card flex-center overflow-hidden" flex="col"
+     min-h="100px"
+     bg="$va-c-bg-light"
+   >
+@@ -23,3 +23,9 @@ defineProps<{ cover?: string }>()
+     </div>
+   </div>
+ </template>
++
++<style scoped>
++.yun-card {
++  border-radius: var(--va-card-border-radius, 0.5rem);
++}
++</style>
+diff --git a/components/YunPostCard.vue b/components/YunPostCard.vue
+index 49c087d665858e6f24b2c785a362cff3bb56b25c..11cae6492bc96b9e95b68fa8b7ced3e90c3336e1 100644
+--- a/components/YunPostCard.vue
++++ b/components/YunPostCard.vue
+@@ -3,12 +3,13 @@ import type { Post } from 'valaxy'
+ import { usePostCollections, useValaxyI18n } from 'valaxy'
+ import { computed, ref } from 'vue'
+ import { useI18n } from 'vue-i18n'
+-import { usePostProperty } from '../composables'
++import { usePostProperty, useThemeConfig } from '../composables'
+ 
+ const props = defineProps<{
+   post: Post
+ }>()
+ 
++const themeConfig = useThemeConfig()
+ const { t } = useI18n()
+ const { $tO } = useValaxyI18n()
+ 
+@@ -21,7 +22,7 @@ const postTitleClass = computed(() => {
+   if (color.value) {
+     return ''
+   }
+-  return props.post.postTitleClass || gradientClasses.value
++  return props.post.postTitleClass ?? themeConfig.value.postCard?.titleClass ?? gradientClasses.value
+ })
+ </script>
+ 
+@@ -57,20 +58,20 @@ const postTitleClass = computed(() => {
+             <template v-if="post.excerpt">
+               <div
+                 v-if="post.excerpt_type === 'html'"
+-                class="post-card-excerpt-content markdown-body" op="90" text="left" w="full" p="x-6 y-2"
++                class="post-card-excerpt-content markdown-body" text="left" w="full" p="x-6 y-2"
+               >
+                 <ValaxyDynamicComponent :template-str="post.excerpt" />
+               </div>
+               <div
+                 v-else
+-                class="post-card-excerpt-content markdown-body" op="90" text="left" w="full" p="x-6 y-2"
++                class="post-card-excerpt-content markdown-body" text="left" w="full" p="x-6 y-2"
+                 v-html="post.excerpt"
+               />
+             </template>
+             <div v-else m="b-5" />
+           </div>
+ 
+-          <YunExcerptBottomGradient v-if="post.excerpt" />
++          <YunExcerptBottomGradient v-if="post.excerpt && themeConfig.postCard?.excerptGradient !== false" />
+ 
+           <a
+             v-if="post.url" :href="post.url" class="post-link-btn shadow hover:shadow-md" rounded target="_blank"
+@@ -123,8 +124,8 @@ const postTitleClass = computed(() => {
+   z-index: 1;
+ 
+   &:focus-visible {
+-    outline: 2px solid var(--va-c-primary);
+-    outline-offset: 2px;
++    outline: 2px solid var(--yun-focus-color);
++    outline-offset: -3px;
+     border-radius: var(--va-card-border-radius, 0.5rem);
+   }
+ }
+@@ -140,10 +141,22 @@ const postTitleClass = computed(() => {
+ 
+ .post-card-excerpt-content {
+   font-size: 0.875rem;
+-  line-height: 1.7;
++  line-height: var(--yun-post-excerpt-line-height, 1.7);
++  color: var(--yun-post-excerpt-color, inherit);
++  opacity: var(--yun-post-excerpt-opacity, 0.9);
+ }
+ 
+ .yun-card-actions {
+-  border-top: 1px solid rgb(122 122 122 / 0.08);
++  border-top: 1px solid var(--yun-surface-line);
++}
++
++@media (prefers-reduced-motion: reduce) {
++  .yun-card.post-card-wrapper {
++    transition: none;
++
++    &:hover {
++      scale: 1;
++    }
++  }
+ }
+ </style>
+diff --git a/components/YunPrologue.vue b/components/YunPrologue.vue
+index a33386098957f9567b1297b15dd18b72e6d647d2..dd03a8a5ff9fc405d0184f2bcef2671fc01c85bb 100644
+--- a/components/YunPrologue.vue
++++ b/components/YunPrologue.vue
+@@ -1,17 +1,122 @@
++<script setup lang="ts">
++import type { YunTheme } from '../types'
++import { useMediaQuery, usePreferredReducedMotion } from '@vueuse/core'
++import { computed, onBeforeUnmount, shallowRef, useTemplateRef, watch } from 'vue'
++
++const props = defineProps<{
++  /** Grid options. The slot contains the homepage banner and its navigation. */
++  grid?: YunTheme.BannerGrid
++}>()
++
++const surface = useTemplateRef<HTMLElement>('surface')
++const finePointer = useMediaQuery('(hover: hover) and (pointer: fine)')
++const reducedMotion = usePreferredReducedMotion()
++const interactive = computed(() => props.grid?.enable !== false
++  && props.grid?.interactive === true && finePointer.value && reducedMotion.value !== 'reduce')
++const active = shallowRef(false)
++let frame = 0
++let pointerX = 0
++let pointerY = 0
++
++function resetPointer() {
++  active.value = false
++  if (frame)
++    cancelAnimationFrame(frame)
++  frame = 0
++}
++
++function onPointerMove(event: PointerEvent) {
++  if (!interactive.value || event.pointerType !== 'mouse')
++    return
++
++  pointerX = event.clientX
++  pointerY = event.clientY
++  if (frame)
++    return
++
++  // Update the decorative layer at most once per frame without rerendering the banner.
++  frame = requestAnimationFrame(() => {
++    frame = 0
++    const element = surface.value
++    if (!element)
++      return
++    const rect = element.getBoundingClientRect()
++    element.style.setProperty('--yun-grid-pointer-x', `${pointerX - rect.left}px`)
++    element.style.setProperty('--yun-grid-pointer-y', `${pointerY - rect.top}px`)
++    active.value = true
++  })
++}
++
++watch(interactive, resetPointer)
++onBeforeUnmount(resetPointer)
++</script>
++
+ <template>
+-  <div class="grid-bg">
+-    <!-- <YunAEFrame /> -->
+-    <!-- <YunAERect /> -->
++  <div ref="surface" class="yun-prologue" @pointermove="onPointerMove" @pointerleave="resetPointer" @pointercancel="resetPointer">
++    <div
++      v-if="grid?.enable !== false"
++      class="grid-bg yun-prologue-grid"
++      :class="{ 'is-faded': grid?.fade, 'is-active': active }"
++      aria-hidden="true"
++    />
++    <slot />
+   </div>
+ </template>
+ 
+-<style lang="scss">
+-.grid-bg {
+-  --size: 40px;
++<style lang="scss" scoped>
++.yun-prologue {
++  position: relative;
++  isolation: isolate;
++  width: 100%;
++}
++
++.yun-prologue-grid {
++  --grid-line: var(--yun-grid-color);
++
++  position: absolute;
++  inset: 0;
++  z-index: -1;
++  pointer-events: none;
++
++  &,
++  &::after {
++    background-image:
++      linear-gradient(90deg, var(--grid-line) 1px, transparent 1px),
++      linear-gradient(var(--grid-line) 1px, transparent 1px);
++    background-size: var(--yun-grid-size) var(--yun-grid-size);
++  }
++
++  &.is-faded {
++    mask-image: radial-gradient(
++      ellipse at 50% 45%,
++      rgb(0 0 0 / var(--yun-grid-center-opacity, 1)) 15%,
++      rgb(0 0 0 / var(--yun-grid-center-opacity, 1)) 35%,
++      transparent 75%
++    );
++  }
++
++  &::after {
++    --grid-line: var(--yun-grid-highlight-color);
++
++    content: '';
++    position: absolute;
++    inset: 0;
++    opacity: 0;
++    mask-image: radial-gradient(
++      circle var(--yun-grid-highlight-radius) at var(--yun-grid-pointer-x, 50%) var(--yun-grid-pointer-y, 50%),
++      black, transparent
++    );
++    transition: opacity 250ms ease;
++  }
++
++  &.is-active::after {
++    opacity: 1;
++  }
++}
+ 
+-  background:
+-    linear-gradient(90deg, rgb(255 255 255 / .1) 1px, transparent 1px),
+-    linear-gradient(rgb(255 255 255 / .1) 1px, transparent 1px);
+-  background-size: var(--size) var(--size);
++@media (prefers-reduced-motion: reduce), (hover: none), (pointer: coarse) {
++  .yun-prologue-grid::after {
++    display: none;
++  }
+ }
+ </style>
+diff --git a/components/YunSay.vue b/components/YunSay.vue
+index 70067d5b74967e2c050fe33383bceee56c12a13a..ef37dfc03193ec1383a56be4f47c855390901d5a 100644
+--- a/components/YunSay.vue
++++ b/components/YunSay.vue
+@@ -64,15 +64,15 @@ onMounted(() => {
+ 
+ <style lang="scss">
+ .say {
+-  color: var(--va-c-text);
++  color: var(--yun-say-color, var(--va-c-text));
+   display: block;
+   text-align: center;
+   font-family: var(--va-font-serif);
+-  font-weight: bold;
++  font-weight: var(--yun-say-font-weight, bold);
+   padding: 0.5rem;
+ 
+   // border-top: var(--va-border-width) solid var(--va-c-text-light);
+-  border-bottom: var(--va-border-width) solid var(--va-c-text-light);
++  border-bottom: var(--va-border-width) solid var(--yun-say-border-color, var(--va-c-text-light));
+ 
+   .say-content {
+     display: block;
+diff --git a/components/animation/YunAnimLineDraw.vue b/components/animation/YunAnimLineDraw.vue
+index c2a371a1022e1f17b6f772bcb271a62ce9546bfc..ab355e36abe71b3efe1a6c2134edb98ed146170b 100644
+--- a/components/animation/YunAnimLineDraw.vue
++++ b/components/animation/YunAnimLineDraw.vue
+@@ -28,7 +28,7 @@ const props = withDefaults(defineProps<{
+   height: 1px;
+   width: 0%;
+   left: 0;
+-  background-color: var(--va-c-text);
++  background-color: var(--yun-prologue-divider-color, var(--va-c-text));
+   transition: width 1s map.get($cubic-bezier, 'ease-in');
+ 
+   &.enter {
+diff --git a/components/collection/YunCollectionMobile.vue b/components/collection/YunCollectionMobile.vue
+new file mode 100644
+index 0000000000000000000000000000000000000000..05b88400dcf00ce0eab5b6e9d58e6a5a266819e6
+--- /dev/null
++++ b/components/collection/YunCollectionMobile.vue
+@@ -0,0 +1,129 @@
++<script setup lang="ts">
++import { useI18n } from 'vue-i18n'
++import { useYunCollection } from '../../composables/collection'
++
++const { collection } = useYunCollection()
++const { t } = useI18n()
++</script>
++
++<template>
++  <details v-if="collection" :key="collection.key" class="yun-collection-mobile">
++    <summary class="collection-toggle">
++      <span class="i-ri-list-check collection-icon" aria-hidden="true" />
++      <span class="collection-heading">
++        <span class="collection-label">{{ t('theme.collectionContents') }}</span>
++        <span class="collection-name" :title="collection.title || collection.name || collection.key">
++          {{ collection.title || collection.name || collection.key }}
++        </span>
++      </span>
++      <span class="i-ri-arrow-down-s-line collection-chevron" aria-hidden="true" />
++    </summary>
++    <div class="collection-panel">
++      <YunCollectionSidebar />
++    </div>
++  </details>
++</template>
++
++<style scoped>
++.yun-collection-mobile {
++  box-sizing: border-box;
++  width: 100%;
++  min-width: 0;
++  max-width: calc(100% - 48px);
++  margin: 16px 24px;
++  border: 1px solid var(--va-c-divider);
++  border-radius: 12px;
++  background: var(--va-c-bg-light);
++  text-align: start;
++}
++
++.collection-toggle {
++  box-sizing: border-box;
++  display: flex;
++  align-items: center;
++  gap: 12px;
++  width: 100%;
++  height: 64px;
++  padding: 10px 16px;
++  border-radius: 12px;
++  list-style: none;
++  cursor: pointer;
++}
++
++.collection-toggle::-webkit-details-marker {
++  display: none;
++}
++
++.collection-icon,
++.collection-chevron {
++  flex: 0 0 20px;
++  width: 20px;
++  height: 20px;
++  color: var(--va-c-primary);
++}
++
++.collection-heading {
++  display: grid;
++  flex: 1;
++  min-width: 0;
++  gap: 2px;
++}
++
++.collection-label {
++  color: var(--va-c-text-2);
++  font-size: 12px;
++  line-height: 18px;
++}
++
++.collection-name {
++  overflow: hidden;
++  color: var(--va-c-text);
++  font-size: 14px;
++  font-weight: 600;
++  line-height: 20px;
++  text-overflow: ellipsis;
++  white-space: nowrap;
++}
++
++.collection-chevron {
++  color: var(--va-c-text-2);
++  transition: transform 150ms ease;
++}
++
++.yun-collection-mobile[open] .collection-chevron {
++  transform: rotate(180deg);
++}
++
++.collection-panel {
++  max-height: min(50dvh, 24rem);
++  overflow: auto;
++  overscroll-behavior: contain;
++  border-top: 1px solid var(--va-c-divider);
++  border-radius: 0 0 12px 12px;
++}
++
++.collection-panel :deep(.yun-collection-sidebar) {
++  min-height: 0;
++  border: 0;
++  border-radius: 0;
++  background: transparent;
++  box-shadow: none;
++}
++
++.collection-toggle:focus-visible {
++  outline: 2px solid var(--va-c-primary);
++  outline-offset: 3px;
++}
++
++@media (prefers-reduced-motion: reduce) {
++  .collection-chevron {
++    transition: none;
++  }
++}
++
++@media (width >= 1024px) {
++  .yun-collection-mobile {
++    display: none;
++  }
++}
++</style>
+diff --git a/components/collection/YunCollectionSidebar.vue b/components/collection/YunCollectionSidebar.vue
+index 281a9eded4a1c04cf0a2c0d9e65a2a8fbbdfae57..02fa488498ab32599aee547976b62e75c1f8e656 100644
+--- a/components/collection/YunCollectionSidebar.vue
++++ b/components/collection/YunCollectionSidebar.vue
+@@ -1,97 +1,121 @@
+ <script setup lang="ts">
+-import { resolveCollectionItemHref, useCollection } from 'valaxy'
++import { resolveCollectionItemHref, useCollections } from 'valaxy'
+ import { computed } from 'vue'
++import { useI18n } from 'vue-i18n'
++import { useRouter } from 'vue-router'
++import { useYunCollection } from '../../composables/collection'
+ 
+-const { collection } = useCollection()
++const { collection } = useYunCollection()
++const { collections } = useCollections()
++const { t } = useI18n()
++const router = useRouter()
++const choices = computed(() => collections.value.filter(item => item.key))
++const resolvedItems = computed(() => (collection.value?.items || []).map(item => ({
++  ...item,
++  ...resolveCollectionItemHref(collection.value!.key!, item),
++})).filter(item => item.href))
+ 
+-const resolvedItems = computed(() => {
+-  if (!collection.value?.items || !collection.value.key)
+-    return []
+-  return collection.value.items.map(item => ({
+-    ...item,
+-    ...resolveCollectionItemHref(collection.value.key!, item),
+-  }))
++const selectedKey = computed({
++  get: () => collection.value?.key || '',
++  set: (key: string) => {
++    if (choices.value.some(item => item.key === key))
++      router.push(`/collections/${key}/`)
++  },
+ })
+ </script>
+ 
+ <template>
+-  <YunCard v-if="collection" class="collection p-4 justify-start items-start" flex="~ col gap-1">
+-    <section class="yun-sidebar-item w-full">
++  <YunCard v-if="collection" class="yun-collection-sidebar p-4">
++    <nav class="yun-sidebar-item w-full" :aria-label="t('theme.collectionContents')">
++      <label v-if="choices.length > 1" class="collection-switcher">
++        <span>{{ t('theme.switchCollection') }}</span>
++        <select v-model="selectedKey">
++          <option v-for="choice in choices" :key="choice.key" :value="choice.key">
++            {{ choice.title || choice.name || choice.key }}
++          </option>
++        </select>
++      </label>
+       <RouterLink :to="`/collections/${collection.key}/`" class="title">
+-        {{ collection.title }}
++        {{ collection.title || collection.name || collection.key }}
+       </RouterLink>
+-      <div class="items">
+-        <div v-for="item in resolvedItems" :key="item.key || item.link" class="item">
+-          <div class="indicator" />
+-          <a
+-            v-if="item.isExternal"
+-            :href="item.href"
+-            target="_blank"
+-            rel="noopener noreferrer"
+-          >
+-            <p class="text inline-flex items-center gap-1">
+-              {{ item.title }}
+-              <span class="i-ri-external-link-line text-xs op-50" />
+-            </p>
++      <ol class="items">
++        <li v-for="item in resolvedItems" :key="item.href" class="item">
++          <a v-if="item.isExternal" :href="item.href" target="_blank" rel="noopener noreferrer">
++            {{ item.title || item.key || item.link }}
++            <span class="i-ri-external-link-line inline-block" aria-hidden="true" />
+           </a>
+-          <RouterLink
+-            v-else
+-            :to="item.href"
+-          >
+-            <p class="text">
+-              {{ item.title }}
+-            </p>
++          <RouterLink v-else :to="item.href">
++            {{ item.title || item.key || item.link }}
+           </RouterLink>
+-        </div>
+-      </div>
+-    </section>
++        </li>
++      </ol>
++      <RouterLink to="/collections/" class="collection-all">
++        {{ t('menu.collections') }} →
++      </RouterLink>
++    </nav>
+   </YunCard>
+ </template>
+ 
+-<style lang="scss">
+-.collection {
+-  .yun-sidebar-item {
+-    .title {
+-      font-weight: 500;
+-      font-size: 16px;
+-      color: var(--va-c-text-1);
+-    }
++<style scoped>
++.yun-collection-sidebar {
++  width: 100%;
++  text-align: start;
++}
++
++.collection-switcher {
++  display: grid;
++  gap: 6px;
++  margin-bottom: 16px;
++  font-size: 12px;
++}
++
++.collection-switcher select {
++  width: 100%;
++  min-height: 40px;
++  padding: 8px;
++  border: 1px solid var(--va-c-divider);
++  border-radius: 6px;
++  color: var(--va-c-text);
++  background: var(--va-c-bg);
++  font: inherit;
++  font-size: 14px;
++}
++
++.title {
++  font-weight: 600;
++}
+ 
+-    .items {
+-      border-left: 1px solid var(--va-c-divider);
+-      color: #666;
+-      font-size: 0.9em;
+-      padding-left: 16px;
++.items {
++  list-style: none;
++  padding: 0;
++  margin: 16px 0;
++  border-left: 1px solid var(--va-c-divider);
++}
+ 
+-      .item {
+-        .text {
+-          color: var(--va-c-text-2);
+-          flex-grow: 1;
+-          padding: 4px 0;
+-          font-size: 14px;
+-          line-height: 24px;
+-          transition: color var(--va-transition-duration);
+-        }
++.item a {
++  display: block;
++  padding: 8px 12px;
++  overflow-wrap: anywhere;
++  color: var(--va-c-text-2);
++  font-size: 14px;
++  line-height: 1.6;
++}
+ 
+-        .indicator {
+-          border-radius: 2px;
+-          width: 2px;
+-          transition: background-color var(--va-transition-duration);
+-          position: absolute;
+-          top: 6px;
+-          bottom: 6px;
+-        }
++.item .router-link-exact-active {
++  border-left: 2px solid var(--va-c-primary);
++  margin-left: -1px;
++  color: var(--va-c-primary);
++  font-weight: 600;
++}
+ 
+-        .router-link-active {
+-          color: var(--va-c-primary);
+-          font-weight: 500;
++.collection-all {
++  font-size: 13px;
++  color: var(--va-c-primary);
++}
+ 
+-          .text {
+-            color: var(--va-c-primary);
+-          }
+-        }
+-      }
+-    }
+-  }
++a:focus-visible,
++select:focus-visible {
++  outline: 2px solid var(--va-c-primary);
++  outline-offset: 3px;
+ }
+ </style>
+diff --git a/components/layout/YunLayoutLeft.vue b/components/layout/YunLayoutLeft.vue
+index b1bc43db92a8001ef7b9f57049e108a32f08a143..df04a5595ffc7375a2494a0c374964874eb5dd0c 100644
+--- a/components/layout/YunLayoutLeft.vue
++++ b/components/layout/YunLayoutLeft.vue
+@@ -1,8 +1,10 @@
+ <script setup lang="ts">
+ import { useFrontmatter } from 'valaxy'
+ import { computed } from 'vue'
++import { useYunCollection } from '../../composables/collection'
+ 
+ const fm = useFrontmatter()
++const { collection } = useYunCollection()
+ 
+ /**
+  * When frontmatter.sidebar is explicitly set to false, the sidebar is not rendered.
+@@ -21,8 +23,11 @@ const sidebarExplicit = computed(() => {
+     class="yun-layout-left gap-4 sticky top-$yun-margin-top w-80"
+   >
+     <slot>
+-      <YunSidebarCard />
+-      <YunAdBoard />
++      <YunCollectionSidebar v-if="collection" />
++      <template v-else>
++        <YunSidebarCard />
++        <YunAdBoard />
++      </template>
+     </slot>
+   </div>
+ </template>
+diff --git a/components/prologue/YunPrologueSquare.vue b/components/prologue/YunPrologueSquare.vue
+index 6e4e2aeb0f0cd90497eba93a225548c993f97379..945e35c26631afff81850f74610b5e2f5ab9f834 100644
+--- a/components/prologue/YunPrologueSquare.vue
++++ b/components/prologue/YunPrologueSquare.vue
+@@ -1,5 +1,5 @@
+ <script setup lang="ts">
+-import { ref } from 'vue'
++import { computed, ref } from 'vue'
+ import { useI18n } from 'vue-i18n'
+ 
+ import { useThemeConfig } from '../../composables'
+@@ -8,12 +8,14 @@ const themeConfig = useThemeConfig()
+ const { t } = useI18n()
+ 
+ const showContent = ref(false)
++const grouped = computed(() => themeConfig.value.banner?.prologue === 'grouped')
+ </script>
+ 
+ <template>
+   <div
+     flex="~ col"
+     class="yun-square-container items-center justify-center text-center max-w-2xl"
++    :class="{ 'is-grouped': grouped }"
+   >
+     <slot />
+ 
+@@ -59,25 +61,25 @@ const showContent = ref(false)
+         <YunAuthorName class="mt-3" />
+         <YunAuthorIntro />
+ 
+-        <div class="py-4 md:py-5 lg:pt-6">
++        <div :class="grouped ? 'prologue-divider' : 'py-4 md:py-5 lg:pt-6'">
+           <YunAnimLineDraw :active="showContent" />
+         </div>
+         <div
+           flex="~ col"
+-          class="gap-2 items-center justify-center"
++          class="prologue-introduction gap-2 items-center justify-center"
+         >
+           <YunSiteTitle />
+           <YunSiteSubtitle />
+           <YunSiteDescription />
+         </div>
+-        <div class="scale-x--100 py-4 md:py-5 lg:pb-6">
++        <div class="scale-x--100" :class="grouped ? 'prologue-divider' : 'py-4 md:py-5 lg:pb-6'">
+           <YunAnimLineDraw :active="showContent" />
+         </div>
+ 
+-        <YunSocialLinks />
++        <YunSocialLinks class="prologue-social" />
+ 
+         <div
+-          class="mt-4 flex-center w-72 md:w-150 m-auto gap-2"
++          class="prologue-navigation mt-4 flex-center w-72 md:w-150 m-auto gap-2"
+           flex="~ wrap"
+         >
+           <YunSiteLinkItem
+@@ -145,4 +147,18 @@ const showContent = ref(false)
+     }
+   }
+ }
++
++.yun-square-container.is-grouped {
++  .prologue-divider {
++    position: relative;
++    width: min(var(--yun-prologue-divider-width, 320px), calc(100% - 32px));
++    height: 1px;
++    margin: 20px auto;
++    mask-image: linear-gradient(to right, transparent, black 20%, black 80%, transparent);
++  }
++
++  .prologue-navigation {
++    margin-top: 32px;
++  }
++}
+ </style>
+diff --git a/components/theme/nimbo/YunNimboNavMenu.vue b/components/theme/nimbo/YunNimboNavMenu.vue
+index 03476d6b17352a73f50a705aefd7ae273782070b..3fed5607d4136ed5730f4b932d261d147794da42 100644
+--- a/components/theme/nimbo/YunNimboNavMenu.vue
++++ b/components/theme/nimbo/YunNimboNavMenu.vue
+@@ -48,6 +48,7 @@ const app = useAppStore()
+       class="yun-nav-menu z-$yun-z-nav-menu fixed bg-transparent"
+       :class="{
+         'shadow play': playAnimation,
++        'is-glass': themeConfig.navbar?.glass === 'always',
+       }"
+     >
+       <!--  -->
+@@ -129,12 +130,6 @@ const app = useAppStore()
+     backdrop-filter var(--va-transition-duration-moderate) map.get($cubic-bezier, 'ease-in'),
+     box-shadow var(--va-transition-duration-moderate) map.get($cubic-bezier, 'ease-in');
+ 
+-  &.play {
+-    background-color: var(--yun-nav-bg-color);
+-    backdrop-filter: blur(var(--yun-nav-blur));
+-    -webkit-backdrop-filter: blur(var(--yun-nav-blur));
+-  }
+-
+   .vt-hamburger-top, .vt-hamburger-middle, .vt-hamburger-bottom {
+     background-color: var(--va-c-text);
+   }
+diff --git a/components/theme/strato/YunStratoNavMenu.vue b/components/theme/strato/YunStratoNavMenu.vue
+index ac55fdbf2f0cc0f91dde59a06629aeafd4194c3d..46b202600496f70b1d1327cb81f954792b98c3de 100644
+--- a/components/theme/strato/YunStratoNavMenu.vue
++++ b/components/theme/strato/YunStratoNavMenu.vue
+@@ -2,13 +2,13 @@
+ import { useAppStore, useSiteConfig } from 'valaxy'
+ import { computed, onMounted, ref, watch } from 'vue'
+ import { useRoute } from 'vue-router'
++import { useThemeConfig } from '../../../composables'
+ import { useYunAppStore } from '../../../stores'
+-// import { useThemeConfig } from '../composables'
+ 
+ // const app = useAppStore()
+ const yunApp = useYunAppStore()
+ const siteConfig = useSiteConfig()
+-// const themeConfig = useThemeConfig()
++const themeConfig = useThemeConfig()
+ 
+ // Always render the menu to avoid SSG hydration mismatch.
+ const showMenu = ref(true)
+@@ -66,7 +66,8 @@ const isHomePage = computed(() => route.meta.layout === 'home')
+       v-if="showMenu"
+       class="yun-nav-menu z-$yun-z-nav-menu fixed w-full flex justify-between items-center top-0"
+       :class="{
+-        play: playAnimation,
++        'play': playAnimation,
++        'is-glass': themeConfig.navbar?.glass === 'always',
+       }"
+     >
+       <!--  -->
+@@ -96,10 +97,5 @@ const isHomePage = computed(() => route.meta.layout === 'home')
+   height: var(--yun-nav-height, 50px);
+   transition: all var(--va-transition-duration-moderate) map.get($cubic-bezier, 'ease-in');
+ 
+-  &.play {
+-    background-color: var(--yun-nav-bg-color);
+-    backdrop-filter: blur(var(--yun-nav-blur));
+-    -webkit-backdrop-filter: blur(var(--yun-nav-blur));
+-  }
+ }
+ </style>
+diff --git a/components/ui/YunExcerptBottomGradient.vue b/components/ui/YunExcerptBottomGradient.vue
+index 30cecf674cdb6700f5655f30f76950b6e8782a0f..2d77e5cd2a0666f86de0eb4b577410b0d75f4ccf 100644
+--- a/components/ui/YunExcerptBottomGradient.vue
++++ b/components/ui/YunExcerptBottomGradient.vue
+@@ -1,6 +1,6 @@
+ <template>
+   <div
+     w="full" h="30%"
+-    class="absolute bottom-0 pointer-events-none bg-gradient-to-t from-$va-c-bg-light to-transparent z-1"
++    class="yun-excerpt-bottom-gradient absolute bottom-0 pointer-events-none bg-gradient-to-t from-$va-c-bg-light to-transparent z-1"
+   />
+ </template>
+diff --git a/composables/collection.ts b/composables/collection.ts
+new file mode 100644
+index 0000000000000000000000000000000000000000..4d289cccb325ce22a1965f6f1854d333d509b4ea
+--- /dev/null
++++ b/composables/collection.ts
+@@ -0,0 +1,16 @@
++import { useCollection, usePostCollections } from 'valaxy'
++import { computed } from 'vue'
++import { useRoute } from 'vue-router'
++
++/** Resolve both collection routes and existing posts referenced by items.link. */
++export function useYunCollection() {
++  const route = useRoute()
++  const { collection: routeCollection } = useCollection()
++  const memberships = usePostCollections(computed(() => route.path))
++  const collection = computed(() => routeCollection.value || memberships.value[0]?.collection)
++  const currentIndex = computed(() => memberships.value.find(
++    item => item.collection.key === collection.value?.key,
++  )?.itemIndex ?? -1)
++
++  return { collection, currentIndex }
++}
+diff --git a/layouts/collection.vue b/layouts/collection.vue
+index 4d3d2c1060e91990c1df7e60a0dc84d8fa26d277..5726681313e08a77763a8d785db3e7c57fb2103f 100644
+--- a/layouts/collection.vue
++++ b/layouts/collection.vue
+@@ -1,24 +1,7 @@
+ <script setup lang="ts">
+-import { useCollection } from 'valaxy'
+-import { computed } from 'vue'
+-import { useRoute } from 'vue-router'
++import { useYunCollection } from '../composables/collection'
+ 
+-const { collection } = useCollection()
+-const route = useRoute()
+-
+-const currentItemIndex = computed(() => {
+-  if (!collection.value?.items)
+-    return -1
+-  const slug = route.path.split('/').pop()
+-  return collection.value.items.findIndex((item) => {
+-    if (item.key === slug)
+-      return true
+-    // Match internal link items against current route path
+-    if (item.link && !(/^https?:\/\//).test(item.link) && item.link === route.path)
+-      return true
+-    return false
+-  })
+-})
++const { collection, currentIndex: currentItemIndex } = useYunCollection()
+ </script>
+ 
+ <template>
+@@ -35,10 +18,11 @@ const currentItemIndex = computed(() => {
+             :collection="collection"
+             :current-index="currentItemIndex"
+           />
+-          <YunMainHeaderAfter />
++          <YunMainHeaderAfter v-if="currentItemIndex >= 0" />
++          <YunCollectionMobile />
+         </template>
+         <template #main-content-after>
+-          <YunMainContentAfter />
++          <YunMainContentAfter v-if="currentItemIndex >= 0" />
+         </template>
+         <template #aside-custom>
+           <slot name="aside-custom" />
+diff --git a/layouts/home.vue b/layouts/home.vue
+index b013e1ce10631ceef974b09d58ceaf34da41d868..5cbab85b41758c381bc3787d4f6b60156add0557 100644
+--- a/layouts/home.vue
++++ b/layouts/home.vue
+@@ -23,33 +23,34 @@ const showNotice = computed(() => {
+       <template v-if="themeConfig.banner?.enable">
+         <template v-if="!isPage">
+           <div class="w-full">
+-            <ClientOnly>
+-              <YunBanner />
+-              <template #fallback>
+-                <div id="yun-banner-placeholder" class="w-full h-[var(--banner-container-height,100vh)]" />
+-              </template>
+-            </ClientOnly>
+-            <Transition
+-              v-if="yun.isNimbo && yun.bannerAnimationDone"
+-              enter-from-class="scale-60"
+-              enter-to-class="scale-100"
+-              enter-active-class="transition-300 transition-cubic-bezier-ease-in-out"
+-              appear
+-            >
+-              <div class="absolute top-0 left-5 right-5 bottom-0 flex-center">
+-                <Transition
+-                  enter-from-class="op-0"
+-                  enter-to-class="op-100"
+-                  enter-active-class="transition-800"
+-                  appear
+-                >
+-                  <YunPrologueSquare class="z-1" />
+-                </Transition>
+-              </div>
+-            </Transition>
++            <YunPrologue :grid="yun.isNimbo ? themeConfig.banner.grid : { enable: false }">
++              <ClientOnly>
++                <YunBanner />
++                <template #fallback>
++                  <div id="yun-banner-placeholder" class="w-full h-[var(--banner-container-height,100vh)]" />
++                </template>
++              </ClientOnly>
++              <Transition
++                v-if="yun.isNimbo && yun.bannerAnimationDone"
++                enter-from-class="scale-60"
++                enter-to-class="scale-100"
++                enter-active-class="transition-300 transition-cubic-bezier-ease-in-out"
++                appear
++              >
++                <div class="absolute top-0 left-5 right-5 bottom-0 flex-center">
++                  <Transition
++                    enter-from-class="op-0"
++                    enter-to-class="op-100"
++                    enter-active-class="transition-800"
++                    appear
++                  >
++                    <YunPrologueSquare class="z-1" />
++                  </Transition>
++                </div>
++              </Transition>
++            </YunPrologue>
+             <YunSay v-if="themeConfig.say?.enable" w="full" />
+           </div>
+-          <YunPrologue v-if="yun.isNimbo" class="absolute left-0 top-0 right-0 bottom-0" />
+         </template>
+       </template>
+       <div v-else class="h-$yun-nav-height" />
+diff --git a/layouts/post.vue b/layouts/post.vue
+index e3b799600857d0498f46b8a4f20d9b92c425d3e3..2264127fe8bd1ce822a89fe322d9406c0158046c 100644
+--- a/layouts/post.vue
++++ b/layouts/post.vue
+@@ -3,7 +3,9 @@ import { defineArticle, useSchemaOrg } from '@unhead/schema-org/vue'
+ 
+ import dayjs from 'dayjs'
+ import { useFrontmatter, useSiteConfig, useValaxyI18n } from 'valaxy'
++import { useYunCollection } from '../composables/collection'
+ 
++const { collection, currentIndex } = useYunCollection()
+ const siteConfig = useSiteConfig()
+ const frontmatter = useFrontmatter()
+ 
+@@ -39,12 +41,17 @@ useSchemaOrg(
+       <component :is="Component">
+         <template #main-header-after>
+           <YunMainHeaderAfter />
++          <YunCollectionMobile />
+         </template>
+ 
+         <template #main-content-after>
+           <YunMainContentAfter />
+         </template>
+ 
++        <template v-if="collection" #main-nav>
++          <YunCollectionPrevNext :collection="collection" :current-index="currentIndex" />
++        </template>
++
+         <template #aside-custom>
+           <slot name="aside-custom" />
+         </template>
+diff --git a/locales/en.yml b/locales/en.yml
+index 7179df99e5b242bebddd2674eb9670df1761e566..43bea42fc7c582208f22e44af66c8d91c94ecdfb 100644
+--- a/locales/en.yml
++++ b/locales/en.yml
+@@ -1,6 +1,8 @@
+ valaxy_theme_yun: Valaxy Theme Yun
+ 
+ theme:
++  switchCollection: Switch collection
++  collectionContents: Collection contents
+   docsSidebar: Documentation navigation
+   outlineTitle: On this page
+   toggleSection: Toggle {title}
+diff --git a/locales/zh-CN.yml b/locales/zh-CN.yml
+index a10e3608a736fece8bfc8e5dcf00ca4e88e3e1ee..4728e13467bb4d2beed3d81bdf5c9db3ff23cdd9 100644
+--- a/locales/zh-CN.yml
++++ b/locales/zh-CN.yml
+@@ -1,6 +1,8 @@
+ valaxy_theme_yun: Valaxy 主题 云
+ 
+ theme:
++  switchCollection: 切换合集
++  collectionContents: 合集目录
+   docsSidebar: 文档导航
+   outlineTitle: 本页
+   toggleSection: 展开或收起{title}
+diff --git a/node/config.ts b/node/config.ts
+index 1cfa8a5b4d6fdae48c856f5067a640b5cffff0f5..644259ac7377408ba8e7666d916b5da990e132ed 100644
+--- a/node/config.ts
++++ b/node/config.ts
+@@ -17,6 +17,18 @@ export const defaultThemeConfig: ThemeConfig = {
+   banner: {
+     enable: true,
+     title: '云游君的小站',
++    grid: {
++      enable: true,
++      fade: false,
++      interactive: false,
++    },
++  },
++
++  postCard: {
++    excerptGradient: true,
++  },
++  navbar: {
++    glass: 'scroll',
+   },
+ 
+   bg_image: {
+diff --git a/styles/common/button.scss b/styles/common/button.scss
+index f6b1b3cea5fb1b1499f87bad10195eebd32d41b8..84d570172471e79c457e4da5ddc0c60b454e72f6 100644
+--- a/styles/common/button.scss
++++ b/styles/common/button.scss
+@@ -22,3 +22,10 @@
+     background-color: rgb(var(--va-c-primary-rgb), 0.16);
+   }
+ }
++
++.yun-icon-btn:focus-visible,
++.yun-nav-menu a:focus-visible,
++.yun-main .markdown-body a:focus-visible {
++  outline: 2px solid var(--yun-focus-color);
++  outline-offset: 3px;
++}
+diff --git a/styles/common/markdown.scss b/styles/common/markdown.scss
+index f75e5144ff404d2cde8921ee159b9d2e7d7daa71..44ee07cdbef58b31728ef932752b26e01211ec62 100644
+--- a/styles/common/markdown.scss
++++ b/styles/common/markdown.scss
+@@ -16,6 +16,7 @@
+ /* stylelint-disable-next-line no-duplicate-selectors */
+ .markdown-body {
+   overflow-wrap: break-word;
++  line-height: var(--yun-prose-line-height, 1.8);
+ 
+   a {
+     color: var(--va-c-link);
+diff --git a/styles/common/nav.scss b/styles/common/nav.scss
+new file mode 100644
+index 0000000000000000000000000000000000000000..b16cca7b79f633bc5365cc2706fa05e5789ae3f0
+--- /dev/null
++++ b/styles/common/nav.scss
+@@ -0,0 +1,32 @@
++// Shared by nimbo and strato; keep the glass outside the search popup's ancestors.
++.yun-nav-menu {
++  border-bottom: 1px solid transparent;
++
++  &::before {
++    content: '';
++    position: absolute;
++    inset: 0;
++    z-index: -1;
++    pointer-events: none;
++    transition: background-color var(--va-transition-duration-moderate);
++  }
++
++  &.play,
++  &.is-glass {
++    border-bottom-color: var(--yun-nav-border-color, transparent);
++
++    &::before {
++      background-color: var(--yun-nav-bg-color);
++      /* stylelint-disable-next-line property-no-vendor-prefix */
++      -webkit-backdrop-filter: blur(var(--yun-nav-blur));
++      backdrop-filter: blur(var(--yun-nav-blur));
++    }
++  }
++}
++
++@supports not ((backdrop-filter: blur(1px)) or (-webkit-backdrop-filter: blur(1px))) {
++  .yun-nav-menu.play::before,
++  .yun-nav-menu.is-glass::before {
++    background-color: var(--yun-nav-solid);
++  }
++}
+diff --git a/styles/css-vars.scss b/styles/css-vars.scss
+index 6b4db302407289324ac9bb09e7c6d1a7328651a9..c4b888fe07087d181e80a7d845d330f44e08f3eb 100644
+--- a/styles/css-vars.scss
++++ b/styles/css-vars.scss
+@@ -11,6 +11,13 @@
+   --yun-nav-height: 50px;
+   --yun-nav-bg-color: rgb(255 255 255 / 0.8);
+   --yun-nav-blur: 12px;
++  --yun-nav-solid: #fff;
++  --yun-surface-line: rgb(122 122 122 / 0.08);
++  --yun-focus-color: var(--va-c-link);
++  --yun-grid-size: 40px;
++  --yun-grid-color: rgb(30 50 70 / 0.06);
++  --yun-grid-highlight-color: rgb(var(--va-c-primary-rgb), 0.3);
++  --yun-grid-highlight-radius: 220px;
+ }
+ 
+ :root {
+@@ -34,6 +41,9 @@ html.dark {
+   --va-c-bg-soft: #121215;
+   --yun-home-hero-name-background: linear-gradient(120deg, var(--va-c-primary) 30%, #41d1ff);
+   --yun-nav-bg-color: rgb(26 26 29 / 0.8);
++  --yun-nav-solid: #1a1a1d;
++  --yun-grid-color: rgb(255 255 255 / 0.07);
++  --yun-grid-highlight-color: color-mix(in srgb, var(--va-c-link) 45%, transparent);
+ }
+ 
+ // animation
+diff --git a/styles/index.ts b/styles/index.ts
+index 5eeda535ea03952cc0fd4a554e805e515ccdd548..acd9608fd6849a914732573d77b64e30952a3417 100644
+--- a/styles/index.ts
++++ b/styles/index.ts
+@@ -3,3 +3,4 @@ import './main.scss'
+ 
+ import 'valaxy/client/styles/common/index.scss'
+ import './global.scss'
++import './common/nav.scss'
+diff --git a/styles/layout/post.scss b/styles/layout/post.scss
+index 90d9bda8878d0c16e37e2a1cee70f6635c64d5d3..95e9a9386affa6b24144f2b7edb4da734ee41b18 100644
+--- a/styles/layout/post.scss
++++ b/styles/layout/post.scss
+@@ -41,8 +41,8 @@
+ .post-title-link {
+   position: relative;
+   padding: 0.7rem 1.2rem;
+-  color: var(--card-c-primary, var(--va-c-link));
+-  font-weight: 900;
++  color: var(--card-c-primary, var(--yun-post-title-color, var(--va-c-link)));
++  font-weight: var(--yun-post-title-font-weight, 900);
+ 
+   .icon {
+     width: 1.6rem;
+@@ -76,6 +76,10 @@
+     transform: translate3d(-10px, -10px, 0);
+   }
+ 
++  &:hover {
++    color: var(--yun-post-title-hover-color, var(--card-c-primary, var(--yun-post-title-color, var(--va-c-link))));
++  }
++
+   &:hover::before,
+   &:hover::after {
+     opacity: 1;
+@@ -122,3 +126,27 @@
+     color: var(--yun-tag-hover-color, var(--va-c-primary));
+   }
+ }
++
++.post-card-title,
++.post-header .post-title {
++  font-family: var(--yun-post-title-font-family, var(--va-font-serif));
++  font-weight: var(--yun-post-title-font-weight, 900);
++  letter-spacing: var(--yun-post-title-letter-spacing, normal);
++  line-height: var(--yun-post-title-line-height, 1.5);
++}
++
++.post-header .post-title > span {
++  line-height: inherit;
++}
++
++.post-meta {
++  color: var(--yun-post-meta-color, inherit);
++}
++
++@media (prefers-reduced-motion: reduce) {
++  .post-title-link::before,
++  .post-title-link::after {
++    transition: none;
++    transform: none;
++  }
++}
+diff --git a/types/index.d.ts b/types/index.d.ts
+index 3e9ed8f208920ea26affed49a606ee9d1e021e55..1fbf7faa0ddfff60a08fb670b115e3a1029252fa 100644
+--- a/types/index.d.ts
++++ b/types/index.d.ts
+@@ -30,6 +30,16 @@ export namespace YunTheme {
+     target?: string
+   }
+ 
++  /** Homepage grid decoration. Pointer effects are opt-in. */
++  export interface BannerGrid {
++    /** Show the grid. @default true */
++    enable?: boolean
++    /** Fade the grid toward the edges. @default false */
++    fade?: boolean
++    /** Highlight grid lines near a mouse pointer. @default false */
++    interactive?: boolean
++  }
++
+   export interface Banner {
+     /**
+      * 是否启用
+@@ -57,6 +67,12 @@ export namespace YunTheme {
+      */
+     siteNameClass?: string
+ 
++    /** Grid appearance for the nimbo homepage. */
++    grid?: BannerGrid
++
++    /** Nimbo introduction layout. Grouped uses compact introduction dividers. @default 'classic' */
++    prologue?: 'classic' | 'grouped'
++
+     /**
+      * @nimbo
+      * @en Banner Animation Duration
+@@ -139,6 +155,20 @@ export interface ThemeConfig extends DefaultTheme.Config {
+    * 首页标语
+    */
+   banner: YunTheme.Banner
++
++  /** Post list presentation; per-post title classes take precedence. */
++  postCard?: {
++    /** Show the bottom excerpt gradient. @default true */
++    excerptGradient?: boolean
++    /** Title classes. Set to an empty string for a solid color. */
++    titleClass?: string
++  }
++
++  /** Navigation material. */
++  navbar?: {
++    /** Apply glass after scrolling, or also at the top. @default 'scroll' */
++    glass?: 'scroll' | 'always'
++  }
+   // /**
+   //  * prologue
+   //  * 开场白
+diff --git a/components/YunFuseSearch.vue b/components/YunFuseSearch.vue
+--- a/components/YunFuseSearch.vue
++++ b/components/YunFuseSearch.vue
+@@ -1,85 +1,151 @@
+ <script lang="ts" setup>
+-import { isClient, onClickOutside, useScrollLock } from '@vueuse/core'
++import { isClient, useScrollLock } from '@vueuse/core'
+ import { useFuseSearch } from 'valaxy'
+-import { ref, watch } from 'vue'
+-
++import { computed, nextTick, onBeforeUnmount, shallowRef, watch } from 'vue'
+ import { useI18n } from 'vue-i18n'
+ 
+-const props = defineProps<{
+-  open: boolean
+-}>()
+-const emit = defineEmits(['close'])
+-
+-const input = ref('')
+-
++const props = defineProps<{ open: boolean }>()
++const emit = defineEmits<{ close: [] }>()
++const { t, locale } = useI18n()
++const zh = computed(() => locale.value.startsWith('zh'))
++const input = shallowRef('')
++const query = computed(() => input.value.trim())
++const { results, fetchFuseListData } = useFuseSearch(query)
++const dialog = shallowRef<HTMLDialogElement>()
++const searchInput = shallowRef<HTMLInputElement>()
++const activeIndex = shallowRef(0)
++const loading = shallowRef(false)
++const failed = shallowRef(false)
+ const isLocked = useScrollLock(isClient ? document.documentElement : null)
+-const { t } = useI18n()
+-const { results, fetchFuseListData } = useFuseSearch(input)
+-
+-const searchInputRef = ref<HTMLInputElement>()
+-const searchContainer = ref<HTMLElement>()
+-
+-onClickOutside(searchInputRef, () => {
+-  // emit('close')
++let loaded = false
++
++async function load() {
++  if (loaded || loading.value)
++    return
++  loading.value = true
++  failed.value = false
++  try {
++    await fetchFuseListData()
++    loaded = true
++  }
++  catch {
++    failed.value = true
++  }
++  finally {
++    loading.value = false
++  }
++}
++
++watch(() => props.open, async (open) => {
++  await nextTick()
++  if (open) {
++    dialog.value?.showModal()
++    isLocked.value = true
++    searchInput.value?.focus()
++    void load()
++  }
++  else {
++    dialog.value?.close()
++    isLocked.value = false
++  }
++}, { immediate: true, flush: 'post' })
++watch(query, () => {
++  activeIndex.value = 0
+ })
+-
+-watch(() => props.open, () => {
+-  if (props.open)
+-    fetchFuseListData()
++onBeforeUnmount(() => {
++  isLocked.value = false
+ })
++
++function onKeydown(event: KeyboardEvent) {
++  if (event.key === 'Tab') {
++    const controls = Array.from(dialog.value?.querySelectorAll<HTMLElement>('input, button, a[href]') || [])
++    const first = controls[0]
++    const last = controls.at(-1)
++    if (event.shiftKey && event.target === first) {
++      event.preventDefault()
++      last?.focus()
++    }
++    else if (!event.shiftKey && event.target === last) {
++      event.preventDefault()
++      first?.focus()
++    }
++    return
++  }
++  if (event.isComposing || !results.value.length)
++    return
++  if (event.key === 'ArrowDown' || event.key === 'ArrowUp') {
++    event.preventDefault()
++    activeIndex.value = (activeIndex.value + (event.key === 'ArrowDown' ? 1 : -1) + results.value.length) % results.value.length
++    nextTick(() => dialog.value?.querySelectorAll<HTMLElement>('.yun-search-result')[activeIndex.value]?.focus())
++  }
++  else if (event.key === 'Enter' && event.target === searchInput.value) {
++    event.preventDefault()
++    dialog.value?.querySelectorAll<HTMLElement>('.yun-search-result')[activeIndex.value]?.click()
++  }
++}
++
++function onBackdrop(event: MouseEvent) {
++  if (event.target !== dialog.value)
++    return
++  emit('close')
++}
++
++function excerpt(text: string = '') {
++  return text.replace(/<!--[\s\S]*?(?:-->|$)/g, '').replace(/!\[[^\]]*\]\([^)]*\)/g, '').replace(/\[([^\]]+)\]\([^)]*\)/g, '$1').replace(/<[^>]*>/g, '').replace(/[#*>`_]/g, '').replace(/\s+/g, ' ').trim().slice(0, 180)
++}
+ </script>
+ 
+ <template>
+-  <Transition
+-    name="fade"
+-    @enter="isLocked = true"
+-    @after-leave="isLocked = false"
++  <dialog
++    ref="dialog" class="yun-fuse-dialog" :aria-label="zh ? '搜索文章' : 'Search articles'"
++    @cancel.prevent="emit('close')" @click="onBackdrop" @keydown="onKeydown"
+   >
+-    <div
+-      v-if="open" ref="searchContainer"
+-      class="yun-popup yun-search-popup yun-fuse-search flex-center pointer-events-auto" flex="col"
+-      justify="start"
+-      pt-12
+-    >
+-      <div class="yun-search-input-container flex-center" w="full">
+-        <input ref="searchInputRef" v-model="input" class="yun-search-input" :placeholder="t('search.placeholder')">
+-      </div>
+-      <div v-if="input" class="flex-center" w="full" py="4">
+-        {{ t('search.hits', results.length || 0) }}
+-      </div>
+-      <div v-if="results.length > 0" overflow="auto" flex="~" w="full" class="justify-center">
+-        <div class="yun-fuse-result-container max-w-3xl" flex="~ col" w="full">
+-          <AppLink
+-            v-for="result in results" :key="result.item.title"
+-            :to="result.item.link"
+-            class="yun-fuse-result-item text-$va-c-text hover:(text-$va-c-bg bg-$va-c-text-dark bg-opacity-100) text-left p-2"
+-            flex="~ col"
+-            @click="emit('close')"
+-          >
+-            <h3 font="medium">
+-              {{ result.item.title }}
+-            </h3>
+-            <span text="sm" font="light" opacity="80">
+-              {{ result.item.excerpt }}
+-            </span>
+-            <div class="flex justify-between op-50" text-xs mt="1" font="light">
+-              <span>
+-                {{ result.item.link }}
+-              </span>
+-              <span flex="~ gap-1">
+-                <span>Score Index:</span>
+-                <div class="text-right w-4">{{ result.refIndex }}</div>
+-              </span>
+-            </div>
+-          </AppLink>
+-
+-          <div class="flex op-30 justify-end text-xs p-4">
+-            Search by Local
+-          </div>
+-        </div>
+-      </div>
++    <div class="yun-search-field">
++      <span class="i-ri-search-line" aria-hidden="true" />
++      <input
++        ref="searchInput" v-model="input" type="search" autocomplete="off"
++        :placeholder="zh ? '搜索文章…' : 'Search articles…'" :aria-label="zh ? '搜索文章' : 'Search articles'"
++      >
++      <button class="yun-search-dismiss" type="button" :aria-label="zh ? '关闭搜索' : 'Close search'" @click="emit('close')">
++        <span class="i-ri-close-line" aria-hidden="true" />
++      </button>
+     </div>
+-  </Transition>
++    <div class="yun-search-status" role="status" aria-live="polite">
++      <template v-if="loading">
++        {{ zh ? '正在加载文章…' : 'Loading articles…' }}
++      </template>
++      <template v-else-if="failed">
++        {{ zh ? '文章加载失败。' : 'Unable to load articles.' }}
++        <button type="button" @click="load">
++          {{ zh ? '重试' : 'Retry' }}
++        </button>
++      </template>
++      <template v-else-if="query">
++        {{ t('search.hits', results.length) }}
++      </template>
++      <template v-else>
++        {{ zh ? '搜索标题、正文或标签' : 'Search titles, content, or tags' }}
++      </template>
++    </div>
++    <div v-if="query && results.length" class="yun-search-results">
++      <AppLink
++        v-for="(result, index) in results" :key="result.item.link" :to="result.item.link"
++        class="yun-search-result" :class="{ 'is-selected': index === activeIndex }"
++        @focus="activeIndex = index" @click="emit('close')"
++      >
++        <span class="yun-search-result-title">{{ result.item.title }}</span>
++        <span v-if="result.item.excerpt" class="yun-search-result-excerpt">{{ excerpt(result.item.excerpt) }}</span>
++        <span class="yun-search-result-path">{{ result.item.link }}</span>
++      </AppLink>
++    </div>
++    <p v-else-if="query && !loading && !failed" class="yun-search-empty">
++      {{ zh ? '没有匹配的文章，试试更短的关键词。' : 'No matching articles. Try a shorter keyword.' }}
++    </p>
++    <footer class="yun-search-footer">
++      <span>{{ zh ? '站内搜索' : 'Site search' }}</span>
++      <span class="yun-search-shortcuts"><kbd>↑</kbd><kbd>↓</kbd> {{ zh ? '选择' : 'Select' }} <kbd>↵</kbd> {{ zh ? '打开' : 'Open' }} <kbd>esc</kbd> {{ zh ? '关闭' : 'Close' }}</span>
++    </footer>
++  </dialog>
+ </template>
+ 
+ <style lang="scss">
+@@ -141,3 +207,106 @@
+   }
+ }
+ </style>
++
++<style lang="scss" scoped>
++.yun-fuse-dialog {
++  --search-line: rgb(30 40 60 / 0.14);
++  --search-selection: rgb(0 102 204 / 0.05);
++  --search-muted: #626b77;
++  position: fixed;
++  inset: 0;
++  width: 100%;
++  height: 100dvh;
++  max-width: none;
++  max-height: none;
++  margin: 0;
++  padding: clamp(64px, 10vh, 100px) 24px 24px;
++  overflow: hidden;
++  border: 0;
++  border-radius: 0;
++  color: var(--va-c-text);
++  background: transparent;
++  box-shadow: none;
++  font-family: var(--va-font-sans, sans-serif);
++  font-weight: 400;
++  line-height: 1.5;
++  text-align: left;
++  box-sizing: border-box;
++
++  &[open] { display: flex; flex-direction: column; align-items: center; animation: search-appear 180ms ease-out; }
++  &::backdrop {
++    background: rgb(250 251 253 / 0.84);
++    -webkit-backdrop-filter: blur(30px);
++    backdrop-filter: blur(30px);
++  }
++  button { font: inherit; cursor: pointer; }
++  button:focus-visible, a:focus-visible { outline: 2px solid var(--yun-focus-color, #0066cc); outline-offset: -2px; }
++}
++:global(html.dark .yun-fuse-dialog) {
++  --search-line: rgb(255 255 255 / 0.14);
++  --search-selection: rgb(100 181 246 / 0.07);
++  --search-muted: #aeb6c2;
++}
++:global(html.dark .yun-fuse-dialog)::backdrop { background: rgb(22 24 29 / 0.84); }
++.yun-search-field {
++  width: min(100%, 960px);
++  flex-shrink: 0;
++  > span { display: none; }
++  input {
++    box-sizing: border-box;
++    width: 100%;
++    min-width: 0;
++    padding: 20px 40px;
++    border: 1px solid var(--search-line);
++    outline: none;
++    border-radius: 999px;
++    background: transparent;
++    color: inherit;
++    font-family: var(--va-font-serif, serif);
++    font-weight: 500;
++    font-size: clamp(26px, 3vw, 36px);
++    line-height: 1.5;
++    text-align: center;
++    transition: border-color 160ms ease, box-shadow 160ms ease;
++    &::placeholder { color: var(--search-muted); }
++    &:focus { border-color: var(--yun-focus-color, #0066cc); box-shadow: 0 0 0 1px var(--yun-focus-color, #0066cc); }
++    &::-webkit-search-cancel-button { display: none; }
++  }
++}
++.yun-search-dismiss {
++  position: absolute; top: max(12px, env(safe-area-inset-top)); right: max(16px, env(safe-area-inset-right));
++  display: grid; place-items: center; width: 44px; height: 44px;
++  border: 0; border-radius: 50%; background: transparent; color: var(--search-muted);
++  &:hover { background: var(--search-selection); color: var(--va-c-text); }
++  span { width: 28px; height: 28px; }
++}
++.yun-search-status { padding: 24px 0 20px; font-size: 13px; letter-spacing: 0.04em; color: var(--search-muted); flex-shrink: 0; text-align: center; button { color: var(--va-c-link); margin-left: 4px; } }
++.yun-search-results { width: min(100%, 800px); padding: 0 8px; overflow-y: auto; overscroll-behavior: contain; min-height: 0; }
++.yun-search-result {
++  display: flex; flex-direction: column; gap: 8px; padding: 22px 16px; border-top: 1px solid var(--search-line); border-radius: 0;
++  color: inherit; text-decoration: none; overflow-wrap: anywhere; font-weight: 400;
++  &.is-selected, &:hover { background: var(--search-selection); }
++  &.is-selected .yun-search-result-title { color: var(--va-c-link); }
++}
++.yun-search-result-title { font-family: var(--va-font-serif, serif); font-size: 22px; font-weight: 600; line-height: 1.5; }
++.yun-search-result-excerpt { font-size: 14px; line-height: 1.8; color: var(--search-muted); display: -webkit-box; -webkit-box-orient: vertical; -webkit-line-clamp: 2; overflow: hidden; }
++.yun-search-result-path { font-size: 12px; color: var(--search-muted); white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
++.yun-search-empty { margin: 0; padding: 32px 0; font-size: 14px; color: var(--search-muted); text-align: center; }
++.yun-search-footer { display: flex; justify-content: center; align-items: center; gap: 24px; padding-top: 24px; margin-top: auto; color: var(--search-muted); font-size: 11px; flex-shrink: 0; }
++.yun-search-shortcuts { display: flex; align-items: center; gap: 6px; kbd { font: inherit; min-width: 16px; text-align: center; border: 1px solid var(--search-line); border-radius: 4px; padding: 0 3px; } }
++@keyframes search-appear { from { opacity: 0; } to { opacity: 1; } }
++@media (max-width: 640px) {
++  .yun-fuse-dialog { padding: max(76px, calc(env(safe-area-inset-top) + 60px)) 20px max(20px, env(safe-area-inset-bottom)); }
++  .yun-search-field input { padding: 14px 24px; font-size: 26px; }
++  .yun-search-status { padding: 20px 0; }
++  .yun-search-results { padding: 0; }
++  .yun-search-result { padding: 18px 8px; }
++  .yun-search-result-title { font-size: 19px; }
++  .yun-search-footer { padding-top: 16px; }
++  .yun-search-shortcuts { display: none; }
++}
++@media (prefers-reduced-motion: reduce) { .yun-fuse-dialog[open] { animation: none; } .yun-search-field input { transition: none; } }
++@media (prefers-reduced-transparency: reduce) {
++  .yun-fuse-dialog { background: var(--va-c-bg); &::backdrop { -webkit-backdrop-filter: none; backdrop-filter: none; background: var(--va-c-bg); } }
++}
++</style>

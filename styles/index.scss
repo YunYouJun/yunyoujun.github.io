@@ -1,3 +1,6 @@
+@use './appearance';
+@use './dark';
+
 /* Keep prose links styled while embedded UI surfaces opt out of Markdown underlines. */
 .markdown-body {
   :where(.not-prose) a,

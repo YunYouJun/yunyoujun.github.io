@@ -1,0 +1,22 @@
+// Personal typography and material choices; component behavior lives in the theme.
+:root {
+  --yun-grid-center-opacity: 0.5;
+  --yun-prologue-divider-color: rgb(20 20 30 / 0.12);
+  --yun-banner-divider-color: var(--yun-surface-line);
+  --yun-surface-line: rgb(20 20 30 / 0.09);
+  --yun-focus-color: #0066cc;
+  --yun-nav-blur: 20px;
+  --yun-nav-border-color: var(--yun-surface-line);
+  --yun-post-title-color: var(--va-c-text-dark);
+  --yun-post-title-hover-color: var(--va-c-link);
+  --yun-post-title-font-weight: 650;
+  --yun-post-title-letter-spacing: 0.01em;
+  --yun-post-excerpt-line-height: 1.85;
+  --yun-post-excerpt-color: var(--va-c-text-light);
+  --yun-post-excerpt-opacity: 1;
+  --yun-post-meta-color: var(--va-c-text-2);
+  --yun-prose-line-height: 1.85;
+  --yun-say-color: var(--va-c-text-light);
+  --yun-say-font-weight: 500;
+  --yun-say-border-color: var(--yun-surface-line);
+}

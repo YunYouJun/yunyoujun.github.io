@@ -1,0 +1,59 @@
+import { expect, test } from '@playwright/test'
+
+test.beforeEach(async ({ page }) => {
+  await page.route('https://fonts.googleapis.com/**', route => route.fulfill({ contentType: 'text/css', body: '' }))
+  await page.goto('/', { waitUntil: 'domcontentloaded' })
+  await page.waitForTimeout(2500)
+  await expect(page.locator('.yun-search-btn')).toBeVisible()
+  // Wait for the home navigation's entrance animation before opening its dialog.
+  await expect(page.locator('.yun-nav-menu')).not.toHaveClass(/animate-fade-in/)
+})
+
+test('search panel supports keyboard navigation, focus containment, and dismissal', async ({ page }) => {
+  const errors: string[] = []
+  page.on('pageerror', error => errors.push(error.message))
+  const trigger = page.locator('.yun-search-btn')
+  await trigger.click()
+  const dialog = page.getByRole('dialog')
+  const input = dialog.getByRole('searchbox')
+  await expect(dialog).toBeVisible()
+  await expect(input).toBeFocused()
+  await input.fill('Valaxy')
+  const results = dialog.locator('.yun-search-result')
+  await expect(results.first()).toBeVisible()
+  await expect(dialog).not.toContainText('Score Index')
+  await page.keyboard.press('ArrowDown')
+  await expect(dialog.locator('.is-selected')).toBeFocused()
+  await page.keyboard.press('ArrowUp')
+  await expect(results.first()).toBeFocused()
+  await input.focus()
+  await page.keyboard.press('Shift+Tab')
+  expect(await dialog.evaluate(el => el.contains(document.activeElement))).toBe(true)
+  expect(await dialog.evaluate(el => el.scrollWidth <= el.clientWidth)).toBe(true)
+  expect(await dialog.evaluate((el) => {
+    const rect = el.getBoundingClientRect()
+    return rect.left >= 0 && rect.right <= innerWidth && rect.bottom <= innerHeight
+  })).toBe(true)
+  await page.keyboard.press('Escape')
+  await expect(dialog).not.toBeVisible()
+  await expect(trigger).toBeFocused()
+  expect(await page.evaluate(() => document.documentElement.style.overflow)).not.toBe('hidden')
+  await trigger.click()
+  await input.fill('zzzz-no-matching-article-998877')
+  await expect(dialog.locator('.yun-search-empty')).toBeVisible()
+  await page.mouse.click(2, 2)
+  await expect(dialog).not.toBeVisible()
+  expect(errors).toEqual([])
+})
+
+test('Enter opens the selected article and closes search', async ({ page }) => {
+  await page.locator('.yun-search-btn').click()
+  const dialog = page.getByRole('dialog')
+  await dialog.getByRole('searchbox').fill('Hexo 静态博客搭建笔记')
+  const first = dialog.locator('.yun-search-result').first()
+  await expect(first).toBeVisible()
+  const href = await first.getAttribute('href')
+  await page.keyboard.press('Enter')
+  await expect(dialog).not.toBeVisible()
+  await expect(page).toHaveURL(new RegExp(`${href?.replace(/[.*+?^${}()|[\]\\]/g, '\\$&')}/?$`))
+})

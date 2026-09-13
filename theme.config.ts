@@ -2,9 +2,17 @@ import { defineThemeConfig } from 'valaxy-theme-yun'
 import { isBeianMode } from './config/beian'
 
 export default defineThemeConfig({
+  postCard: {
+    excerptGradient: false,
+    titleClass: '',
+  },
+  navbar: { glass: 'always' },
+
   banner: {
     enable: true,
     title: '云游君的小站',
+    grid: { enable: true, fade: true, interactive: true },
+    prologue: 'grouped',
     cloud: {
       enable: true,
     },
@@ -13,6 +21,7 @@ export default defineThemeConfig({
   nav: [
     { text: 'menu.posts', link: '/posts/', icon: 'i-ri-article-line' },
     { text: '项目列表', link: '/projects', icon: 'i-ri-gallery-view' },
+    { text: '小云梦工坊', link: '/collections/xiaoyun/', icon: 'i-ri-film-line' },
     { text: '站点地图', link: '/sites/', icon: 'i-ri-planet-line' },
     { text: '友情链接', link: '/links/', icon: 'i-ri-link' },
     { text: '老婆列表', link: '/girls/', icon: 'i-ri-women-line' },
@@ -22,6 +31,12 @@ export default defineThemeConfig({
   ],
 
   pages: [
+    {
+      name: '小云梦工坊',
+      url: '/collections/xiaoyun/',
+      icon: 'i-ri-film-line',
+      color: '#38a1db',
+    },
     {
       name: '项目橱窗',
       url: '/projects/',

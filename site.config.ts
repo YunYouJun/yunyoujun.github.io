@@ -2,6 +2,7 @@ import { defineSiteConfig } from 'valaxy'
 import { isBeianMode } from './config/beian'
 
 export default defineSiteConfig({
+  redirects: { useVueRouter: true },
   lang: 'zh-CN',
   title: '云游君的小站',
   subtitle: 'All at sea.',

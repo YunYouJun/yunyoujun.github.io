@@ -16,13 +16,15 @@ trustPolicyExclude:
   - valaxy-addon-waline@0.2.1
 packages:
   - .
-onlyBuiltDependencies:
-  - '@parcel/watcher'
-  - esbuild
-  - simple-git-hooks
-  - vue-demi
 allowBuilds:
   '@parcel/watcher': true
   esbuild: true
   simple-git-hooks: true
   vue-demi: true
+patchedDependencies:
+  valaxy-theme-yun@1.0.0-rc.8: patches/valaxy-theme-yun@1.0.0-rc.8.patch
+onlyBuiltDependencies:
+  - '@parcel/watcher'
+  - esbuild
+  - simple-git-hooks
+  - vue-demi

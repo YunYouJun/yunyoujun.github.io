@@ -1,0 +1,27 @@
+// Site-level dark appearance: solid reading surfaces and restrained navigation glass.
+html.dark {
+  --va-c-bg: #111114;
+  --va-c-bg-dark: #111114;
+  --va-c-bg-alt: #161619;
+  --va-c-bg-light: #1c1c20;
+  --va-c-bg-soft: #222227;
+  --va-c-bg-mute: #303037;
+  --va-c-bg-elevated: #28282d;
+  --va-c-bg-opacity: rgb(28 28 32 / 0.92);
+  --va-c-text: #e8e8ed;
+  --va-c-text-1: #e8e8ed;
+  --va-c-text-2: #a1a1aa;
+  --va-c-text-3: #9696a0;
+  --va-c-text-light: #b5b5bf;
+  --va-c-text-lighter: #a1a1aa;
+  --va-c-text-dark: #f5f5f7;
+  --va-c-link: #64b5f6;
+  --va-code-block-bg: #161619;
+  --yun-prologue-divider-color: rgb(255 255 255 / 0.14);
+  --yun-surface-line: rgb(255 255 255 / 0.09);
+  --yun-focus-color: #64b5f6;
+  --yun-bg-img: radial-gradient(ellipse at 50% 0%, #19232f 0%, #111114 65%);
+  --yun-sidebar-bg-color: #1c1c20;
+  --yun-nav-bg-color: rgb(28 28 32 / 0.86);
+  --yun-nav-solid: #1c1c20;
+}
