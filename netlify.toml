@@ -1,11 +1,9 @@
 [build]
-publish = "public"
-command = "npx pnpm i --store=node_modules/.pnpm-store && npx pnpm run build"
+publish = "dist"
+command = "pnpm run build"
 
 [build.environment]
-# bypass npm auto install
-NPM_FLAGS = "--version"
-NODE_VERSION = "22.12.0"
+NODE_VERSION = "24"
 
 [[redirects]]
 from = "/*"
