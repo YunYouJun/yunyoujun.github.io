@@ -23,6 +23,10 @@ overrides:
   '@vitejs/devtools@0.7.5>@devframes/plugin-inspect': 1.2.0
   '@vitejs/devtools@0.7.5>@devframes/plugin-messages': 1.2.0
   '@vitejs/devtools@0.7.5>@devframes/plugin-terminals': 1.2.0
+  # Keep older indirect and auto-installed peer dependencies on patched versions.
+  axios@>=1 <1.20.0: ^1.20.0
+  brace-expansion@>=5 <5.0.12: ^5.0.12
+  rollup@>=4 <4.59.0: ^4.64.0
 allowBuilds:
   '@parcel/watcher': true
   esbuild: true
