@@ -99,36 +99,45 @@ test('collection index and legacy URL lead to the single-collection directory', 
   await expect(page.locator('.yun-collection-sidebar select')).toHaveCount(0)
   await expect(page.locator('.post-meta')).toHaveCount(0)
   if (page.viewportSize()!.width < 1024)
-    await page.locator('.yun-collection-mobile summary').click()
+    await page.getByRole('button', { name: '合集目录', exact: true }).click()
   const directory = page.locator('.yun-collection-sidebar:visible')
   await directory.getByRole('link', { name: '第 01 期 · 用 AI 复活七年前的 ak-ui' }).click()
   await expect(page).toHaveURL(/\/posts\/xiaoyun-studio-01-ak-ui/)
-  if (page.viewportSize()!.width < 1024)
-    await page.locator('.yun-collection-mobile summary').click()
+  if (page.viewportSize()!.width < 1024) {
+    const toggle = page.getByRole('button', { name: '合集目录', exact: true })
+    await expect(toggle).toHaveAttribute('aria-expanded', 'false')
+    await toggle.click()
+  }
   await expect(page.locator('.yun-collection-sidebar:visible .item a[aria-current="page"]')).toBeVisible()
   await page.goto('/collections/', { waitUntil: 'domcontentloaded' })
   await expect(page.getByRole('link', { name: /小云梦工坊/ }).first()).toBeVisible()
   await expect(page.locator('.yun-collection-sidebar')).toHaveCount(0)
 })
 
-test('mobile collection toggle keeps its geometry when expanded with keyboard', async ({ page }) => {
+test('mobile collection drawer supports keyboard control without shifting its trigger', async ({ page }) => {
   await page.setViewportSize({ width: 390, height: 844 })
   await page.goto('/collections/xiaoyun/', { waitUntil: 'domcontentloaded' })
-  const directory = page.locator('.yun-collection-mobile')
-  const toggle = directory.locator('summary')
+  const directory = page.getByRole('complementary', { name: '合集目录', exact: true })
+  const toggle = page.getByRole('button', { name: '合集目录', exact: true })
   await expect(toggle).toBeVisible()
+  await expect(toggle).toHaveAttribute('aria-expanded', 'false')
   const initial = (await toggle.boundingBox())!
-  expect(initial.height).toBe(64)
-  for (let index = 0; index < 4; index++) {
+  for (let index = 0; index < 2; index++) {
     await toggle.focus()
     await page.keyboard.press('Enter')
+    await expect(toggle).toHaveAttribute('aria-expanded', 'true')
+    await expect(directory).toBeVisible()
+    await expect(directory.getByRole('button', { name: '关闭菜单' })).toBeFocused()
     const current = (await toggle.boundingBox())!
     expect(Math.abs(current.x - initial.x)).toBeLessThan(1)
+    expect(Math.abs(current.y - initial.y)).toBeLessThan(1)
     expect(Math.abs(current.width - initial.width)).toBeLessThan(1)
     expect(Math.abs(current.height - initial.height)).toBeLessThan(1)
+    await page.keyboard.press('Escape')
+    await expect(directory).not.toBeVisible()
+    await expect(toggle).toHaveAttribute('aria-expanded', 'false')
+    await expect(toggle).toBeFocused()
   }
-  await expect(directory).not.toHaveAttribute('open')
-  await toggle.focus()
   await page.keyboard.press('Enter')
   await expect(directory.getByRole('link', { name: '第 01 期 · 用 AI 复活七年前的 ak-ui' })).toBeVisible()
   expect(await page.evaluate(() => document.documentElement.scrollWidth <= window.innerWidth)).toBe(true)

@@ -1,8 +1,8 @@
 minimumReleaseAgeExclude:
-  - '@valaxyjs/devtools@1.0.0-rc.15'
-  - '@valaxyjs/utils@1.0.0-rc.15'
-  - valaxy-theme-yun@1.0.0-rc.16
-  - valaxy@1.0.0-rc.15
+  - '@valaxyjs/devtools@1.1.0'
+  - '@valaxyjs/utils@1.1.0'
+  - valaxy-theme-yun@1.1.0
+  - valaxy@1.1.0
   - valaxy-addon-girls@0.1.0
   - eslint@10.9.1
 shamefullyHoist: true
@@ -16,6 +16,13 @@ trustPolicyExclude:
   - valaxy-addon-waline@0.2.1
 packages:
   - .
+# Align Vite DevTools plugins with the Devframe 1.2.0 used by Valaxy DevTools.
+overrides:
+  '@vitejs/devtools@0.7.5>@devframes/hub-ui': 1.2.0
+  '@vitejs/devtools@0.7.5>@devframes/json-render-ui': 1.2.0
+  '@vitejs/devtools@0.7.5>@devframes/plugin-inspect': 1.2.0
+  '@vitejs/devtools@0.7.5>@devframes/plugin-messages': 1.2.0
+  '@vitejs/devtools@0.7.5>@devframes/plugin-terminals': 1.2.0
 allowBuilds:
   '@parcel/watcher': true
   esbuild: true
