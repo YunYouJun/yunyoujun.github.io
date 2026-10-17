@@ -22,7 +22,14 @@ const imgUrl = computed(() => {
 
 <template>
   <img
-    class="inline-flex shadow m-0! mr-2! size-5"
-    rounded="full" :src="imgUrl" :onerror="`this.src='${anonymousImage}'`"
+    class="sponsor-avatar inline-flex shadow m-0! mr-2! size-5 rounded-full!"
+    :src="imgUrl" :onerror="`this.src='${anonymousImage}'`"
   >
 </template>
+
+<style lang="scss">
+// 匿名占位图为白底线稿，暗色模式下反相，避免出现一排白块
+.dark .sponsor-avatar[src$='/avatar/none.jpg'] {
+  filter: invert(1);
+}
+</style>
