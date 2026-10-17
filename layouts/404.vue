@@ -48,10 +48,10 @@ const issueLink = computed(() => {
       </button>
       <!-- a 元素自带 text 属性，不能用 attributify 的 text="sm" -->
       <a
-        class="yun-404-report yun-title-effects inline-flex items-center gap-1 text-sm"
+        class="yun-404-report inline-flex items-center gap-1 text-sm"
         :href="issueLink" target="_blank" rel="noopener"
       >
-        <div i-ri-github-line />
+        <div class="yun-404-report-icon" i-ri-github-line />
         {{ t('message.report_404') }}
       </a>
     </div>
@@ -155,11 +155,29 @@ $char-stagger: 0.08s;
   border-radius: 9999px;
   transition:
     color var(--va-transition-duration),
-    border-color var(--va-transition-duration);
+    border-color var(--va-transition-duration),
+    background-color var(--va-transition-duration);
 
-  &:hover {
+  // 胶囊形按钮不用 yun-title-effects，角标会落在圆角外
+  &:hover,
+  &:focus-visible {
     color: var(--va-c-primary);
     border-color: var(--va-c-primary);
+    background-color: rgb(var(--va-c-primary-rgb), 0.08);
+  }
+
+  &:focus-visible {
+    outline: 2px solid rgb(var(--va-c-primary-rgb), 0.4);
+    outline-offset: 2px;
+  }
+
+  &-icon {
+    transition: transform var(--va-transition-duration) $ease-in;
+  }
+
+  &:hover &-icon,
+  &:focus-visible &-icon {
+    transform: rotate(-12deg) scale(1.15);
   }
 }
 
