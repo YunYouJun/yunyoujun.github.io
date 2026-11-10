@@ -62,6 +62,10 @@ export default defineValaxyConfig<UserThemeConfig> ({
       serverURL: 'https://waline.yunyoujun.cn',
       // pageview: true,
       comment: !isBeianMode,
+      // Protocol-relative //unpkg.com becomes http on the preview server.
+      // That host redirects to https without CORS headers, so emoji fetches
+      // fail in browser tests. Production is already https.
+      cdn: 'https://unpkg.com/',
     }),
   ],
 
