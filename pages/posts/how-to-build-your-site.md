@@ -10,6 +10,12 @@ categories:
   - 云游的小安利
 ---
 
+::: warning 本文已过时
+
+文中的 Hexo、Travis CI 与 taobao 镜像（`registry.npm.taobao.org`）等做法都已不再推荐。2026 年的新版教程请移步：[《用 Valaxy 从零搭建一个属于自己的网站》](/posts/build-your-site-with-valaxy)。
+
+:::
+
 > 写给想要拥有一个自己的网站但没有资金成本的小白与曾经的自己。
 
 ## 前言
