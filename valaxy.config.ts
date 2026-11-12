@@ -60,6 +60,7 @@ export default defineValaxyConfig<UserThemeConfig> ({
     addonGirls(),
     addonWaline({
       serverURL: 'https://waline.yunyoujun.cn',
+      cdn: 'https://unpkg.com/',
       // pageview: true,
       comment: !isBeianMode,
     }),
