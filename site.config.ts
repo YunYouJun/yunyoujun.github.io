@@ -9,7 +9,7 @@ export default defineSiteConfig({
   description: '希望能成为一个有趣的人',
   author: {
     name: '云游君',
-    avatar: '/images/avatar.jpg',
+    avatar: '/images/avatar.webp',
     status: {
       emoji: '☁️',
       message: '希望能创作出可以成为他人回忆的事物',
