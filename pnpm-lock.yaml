@@ -55,23 +55,23 @@ importers:
         specifier: ^6.0.3
         version: 6.0.3
       valaxy:
-        specifier: 1.3.1
-        version: 1.3.1(@devframes/agentic@1.2.5(crossws@0.4.17(srvx@1.0.8))(devframe@1.2.5))(@nuxt/kit@3.21.8(magicast@0.5.5))(@oxc-project/types@0.156.0)(@types/markdown-it@14.1.2)(@types/node@26.1.0)(@vue/compiler-dom@3.5.41)(@vue/devtools-api@8.1.5)(cac@7.1.0)(change-case@5.4.4)(crossws@0.4.17(srvx@1.0.8))(esbuild@0.28.1)(lightningcss@1.33.0)(oxc-parser@0.153.0)(rolldown@1.2.18)(srvx@1.0.8)(terser@5.43.1)(tsx@4.23.15)(typescript@6.0.3)(vue-router@5.0.4(@vue/compiler-sfc@3.5.41)(esbuild@0.28.1)(pinia@3.0.4(typescript@6.0.3)(vue@3.5.41(typescript@6.0.3)))(rolldown@1.2.18)(vite@8.3.7)(vue@3.5.41(typescript@6.0.3)))(vue@3.5.41(typescript@6.0.3))(yaml@2.9.0)
+        specifier: 1.3.2
+        version: 1.3.2(@devframes/agentic@1.2.5(crossws@0.4.17(srvx@1.0.8))(devframe@1.2.5))(@nuxt/kit@3.21.8(magicast@0.5.5))(@oxc-project/types@0.156.0)(@types/markdown-it@14.1.2)(@types/node@26.1.0)(@vue/compiler-dom@3.5.41)(@vue/devtools-api@8.1.5)(cac@7.1.0)(change-case@5.4.4)(crossws@0.4.17(srvx@1.0.8))(esbuild@0.28.1)(lightningcss@1.33.0)(oxc-parser@0.153.0)(rolldown@1.2.18)(srvx@1.0.8)(terser@5.43.1)(tsx@4.23.15)(typescript@6.0.3)(vue-router@5.0.4(@vue/compiler-sfc@3.5.41)(esbuild@0.28.1)(pinia@3.0.4(typescript@6.0.3)(vue@3.5.41(typescript@6.0.3)))(rolldown@1.2.18)(vite@8.3.7)(vue@3.5.41(typescript@6.0.3)))(vue@3.5.41(typescript@6.0.3))(yaml@2.9.0)
       valaxy-addon-algolia:
         specifier: ^0.2.1
-        version: 0.2.1(valaxy@1.3.1(@devframes/agentic@1.2.5(crossws@0.4.17(srvx@1.0.8))(devframe@1.2.5))(@nuxt/kit@3.21.8(magicast@0.5.5))(@oxc-project/types@0.156.0)(@types/markdown-it@14.1.2)(@types/node@26.1.0)(@vue/compiler-dom@3.5.41)(@vue/devtools-api@8.1.5)(cac@7.1.0)(change-case@5.4.4)(crossws@0.4.17(srvx@1.0.8))(esbuild@0.28.1)(lightningcss@1.33.0)(oxc-parser@0.153.0)(rolldown@1.2.18)(srvx@1.0.8)(terser@5.43.1)(tsx@4.23.15)(typescript@6.0.3)(vue-router@5.0.4(@vue/compiler-sfc@3.5.41)(esbuild@0.28.1)(pinia@3.0.4(typescript@6.0.3)(vue@3.5.41(typescript@6.0.3)))(rolldown@1.2.18)(vite@8.3.7)(vue@3.5.41(typescript@6.0.3)))(vue@3.5.41(typescript@6.0.3))(yaml@2.9.0))
+        version: 0.2.1(valaxy@1.3.2(@devframes/agentic@1.2.5(crossws@0.4.17(srvx@1.0.8))(devframe@1.2.5))(@nuxt/kit@3.21.8(magicast@0.5.5))(@oxc-project/types@0.156.0)(@types/markdown-it@14.1.2)(@types/node@26.1.0)(@vue/compiler-dom@3.5.41)(@vue/devtools-api@8.1.5)(cac@7.1.0)(change-case@5.4.4)(crossws@0.4.17(srvx@1.0.8))(esbuild@0.28.1)(lightningcss@1.33.0)(oxc-parser@0.153.0)(rolldown@1.2.18)(srvx@1.0.8)(terser@5.43.1)(tsx@4.23.15)(typescript@6.0.3)(vue-router@5.0.4(@vue/compiler-sfc@3.5.41)(esbuild@0.28.1)(pinia@3.0.4(typescript@6.0.3)(vue@3.5.41(typescript@6.0.3)))(rolldown@1.2.18)(vite@8.3.7)(vue@3.5.41(typescript@6.0.3)))(vue@3.5.41(typescript@6.0.3))(yaml@2.9.0))
       valaxy-addon-components:
         specifier: ^0.1.0
         version: 0.1.0
       valaxy-addon-girls:
         specifier: ^0.1.0
-        version: 0.1.0(valaxy@1.3.1(@devframes/agentic@1.2.5(crossws@0.4.17(srvx@1.0.8))(devframe@1.2.5))(@nuxt/kit@3.21.8(magicast@0.5.5))(@oxc-project/types@0.156.0)(@types/markdown-it@14.1.2)(@types/node@26.1.0)(@vue/compiler-dom@3.5.41)(@vue/devtools-api@8.1.5)(cac@7.1.0)(change-case@5.4.4)(crossws@0.4.17(srvx@1.0.8))(esbuild@0.28.1)(lightningcss@1.33.0)(oxc-parser@0.153.0)(rolldown@1.2.18)(srvx@1.0.8)(terser@5.43.1)(tsx@4.23.15)(typescript@6.0.3)(vue-router@5.0.4(@vue/compiler-sfc@3.5.41)(esbuild@0.28.1)(pinia@3.0.4(typescript@6.0.3)(vue@3.5.41(typescript@6.0.3)))(rolldown@1.2.18)(vite@8.3.7)(vue@3.5.41(typescript@6.0.3)))(vue@3.5.41(typescript@6.0.3))(yaml@2.9.0))(vue-i18n@11.4.18(vue@3.5.41(typescript@6.0.3)))(vue@3.5.41(typescript@6.0.3))
+        version: 0.1.0(valaxy@1.3.2(@devframes/agentic@1.2.5(crossws@0.4.17(srvx@1.0.8))(devframe@1.2.5))(@nuxt/kit@3.21.8(magicast@0.5.5))(@oxc-project/types@0.156.0)(@types/markdown-it@14.1.2)(@types/node@26.1.0)(@vue/compiler-dom@3.5.41)(@vue/devtools-api@8.1.5)(cac@7.1.0)(change-case@5.4.4)(crossws@0.4.17(srvx@1.0.8))(esbuild@0.28.1)(lightningcss@1.33.0)(oxc-parser@0.153.0)(rolldown@1.2.18)(srvx@1.0.8)(terser@5.43.1)(tsx@4.23.15)(typescript@6.0.3)(vue-router@5.0.4(@vue/compiler-sfc@3.5.41)(esbuild@0.28.1)(pinia@3.0.4(typescript@6.0.3)(vue@3.5.41(typescript@6.0.3)))(rolldown@1.2.18)(vite@8.3.7)(vue@3.5.41(typescript@6.0.3)))(vue@3.5.41(typescript@6.0.3))(yaml@2.9.0))(vue-i18n@11.4.18(vue@3.5.41(typescript@6.0.3)))(vue@3.5.41(typescript@6.0.3))
       valaxy-addon-waline:
         specifier: ^0.2.1
-        version: 0.2.1(typescript@6.0.3)(valaxy@1.3.1(@devframes/agentic@1.2.5(crossws@0.4.17(srvx@1.0.8))(devframe@1.2.5))(@nuxt/kit@3.21.8(magicast@0.5.5))(@oxc-project/types@0.156.0)(@types/markdown-it@14.1.2)(@types/node@26.1.0)(@vue/compiler-dom@3.5.41)(@vue/devtools-api@8.1.5)(cac@7.1.0)(change-case@5.4.4)(crossws@0.4.17(srvx@1.0.8))(esbuild@0.28.1)(lightningcss@1.33.0)(oxc-parser@0.153.0)(rolldown@1.2.18)(srvx@1.0.8)(terser@5.43.1)(tsx@4.23.15)(typescript@6.0.3)(vue-router@5.0.4(@vue/compiler-sfc@3.5.41)(esbuild@0.28.1)(pinia@3.0.4(typescript@6.0.3)(vue@3.5.41(typescript@6.0.3)))(rolldown@1.2.18)(vite@8.3.7)(vue@3.5.41(typescript@6.0.3)))(vue@3.5.41(typescript@6.0.3))(yaml@2.9.0))
+        version: 0.2.1(typescript@6.0.3)(valaxy@1.3.2(@devframes/agentic@1.2.5(crossws@0.4.17(srvx@1.0.8))(devframe@1.2.5))(@nuxt/kit@3.21.8(magicast@0.5.5))(@oxc-project/types@0.156.0)(@types/markdown-it@14.1.2)(@types/node@26.1.0)(@vue/compiler-dom@3.5.41)(@vue/devtools-api@8.1.5)(cac@7.1.0)(change-case@5.4.4)(crossws@0.4.17(srvx@1.0.8))(esbuild@0.28.1)(lightningcss@1.33.0)(oxc-parser@0.153.0)(rolldown@1.2.18)(srvx@1.0.8)(terser@5.43.1)(tsx@4.23.15)(typescript@6.0.3)(vue-router@5.0.4(@vue/compiler-sfc@3.5.41)(esbuild@0.28.1)(pinia@3.0.4(typescript@6.0.3)(vue@3.5.41(typescript@6.0.3)))(rolldown@1.2.18)(vite@8.3.7)(vue@3.5.41(typescript@6.0.3)))(vue@3.5.41(typescript@6.0.3))(yaml@2.9.0))
       valaxy-theme-yun:
-        specifier: 1.3.1
-        version: 1.3.1(magicast@0.5.5)(valaxy@1.3.1(@devframes/agentic@1.2.5(crossws@0.4.17(srvx@1.0.8))(devframe@1.2.5))(@nuxt/kit@3.21.8(magicast@0.5.5))(@oxc-project/types@0.156.0)(@types/markdown-it@14.1.2)(@types/node@26.1.0)(@vue/compiler-dom@3.5.41)(@vue/devtools-api@8.1.5)(cac@7.1.0)(change-case@5.4.4)(crossws@0.4.17(srvx@1.0.8))(esbuild@0.28.1)(lightningcss@1.33.0)(oxc-parser@0.153.0)(rolldown@1.2.18)(srvx@1.0.8)(terser@5.43.1)(tsx@4.23.15)(typescript@6.0.3)(vue-router@5.0.4(@vue/compiler-sfc@3.5.41)(esbuild@0.28.1)(pinia@3.0.4(typescript@6.0.3)(vue@3.5.41(typescript@6.0.3)))(rolldown@1.2.18)(vite@8.3.7)(vue@3.5.41(typescript@6.0.3)))(vue@3.5.41(typescript@6.0.3))(yaml@2.9.0))(vue-i18n@11.4.18(vue@3.5.41(typescript@6.0.3)))(vue@3.5.41(typescript@6.0.3))
+        specifier: 1.3.2
+        version: 1.3.2(magicast@0.5.5)(valaxy@1.3.2(@devframes/agentic@1.2.5(crossws@0.4.17(srvx@1.0.8))(devframe@1.2.5))(@nuxt/kit@3.21.8(magicast@0.5.5))(@oxc-project/types@0.156.0)(@types/markdown-it@14.1.2)(@types/node@26.1.0)(@vue/compiler-dom@3.5.41)(@vue/devtools-api@8.1.5)(cac@7.1.0)(change-case@5.4.4)(crossws@0.4.17(srvx@1.0.8))(esbuild@0.28.1)(lightningcss@1.33.0)(oxc-parser@0.153.0)(rolldown@1.2.18)(srvx@1.0.8)(terser@5.43.1)(tsx@4.23.15)(typescript@6.0.3)(vue-router@5.0.4(@vue/compiler-sfc@3.5.41)(esbuild@0.28.1)(pinia@3.0.4(typescript@6.0.3)(vue@3.5.41(typescript@6.0.3)))(rolldown@1.2.18)(vite@8.3.7)(vue@3.5.41(typescript@6.0.3)))(vue@3.5.41(typescript@6.0.3))(yaml@2.9.0))(vue-i18n@11.4.18(vue@3.5.41(typescript@6.0.3)))(vue@3.5.41(typescript@6.0.3))
       vite:
         specifier: ^8.3.7
         version: 8.3.7(@types/node@26.1.0)(@vitejs/devtools@0.8.0)(esbuild@0.28.1)(jiti@2.7.0)(sass@1.104.1)(terser@5.43.1)(tsx@4.23.15)(yaml@2.9.0)
@@ -1659,11 +1659,11 @@ packages:
     peerDependencies:
       vite: ^5.0.0-0 || ^6.0.0-0 || ^7.0.0-0 || ^8.0.0-0
 
-  '@valaxyjs/devtools@1.3.1':
-    resolution: {integrity: sha512-HcIOX7vyaU5Q8mD0y0MNxqKiAYUdLcPJW00XgYvnXic0v95OpLY6PSRoJNlL6qv9fbWMCo0O/M9cmowrm97sKg==}
+  '@valaxyjs/devtools@1.3.2':
+    resolution: {integrity: sha512-OVyXgFQXZJ+nnKOYLUVFOllLJOkv6tNnFwqMsOvIOG9r7fbye+dSOBj+Jioj6hnjjVKv/X3z5GAiIWL5jie7lQ==}
 
-  '@valaxyjs/utils@1.3.1':
-    resolution: {integrity: sha512-MwB7Vgar4Jfx+XbpWQvYaF73h3pBqM1eCaSjcSq4AgzfA0f33Yrn2jXu9WeL7dj/naol6+zqEy/1g2z9PZs23A==}
+  '@valaxyjs/utils@1.3.2':
+    resolution: {integrity: sha512-+mXysXh0H4MBvDouTJKn089HWSQdZQ98QsgCxNrjdgpDJIb9oMbSKjTfW1N32hwZFnUwuMarsBzvGXZJVraU/g==}
 
   '@vitejs/devtools-kit@0.8.0':
     resolution: {integrity: sha512-R4bXaPpKXbNY2sUuJMhnsSSgHkxOorkMa1gFI6I8ISSARW6TjXbj+GZK6JRdmn9TTn/kKMCGUhREHr/UcHXLAw==}
@@ -4048,11 +4048,11 @@ packages:
     peerDependencies:
       valaxy: '>=0.22'
 
-  valaxy-theme-yun@1.3.1:
-    resolution: {integrity: sha512-NP2PEiFqqbx0mKq0Uj6T/RVEg1ZQsvf7UKAYccIXChZhmyecSms4vSzCkzR+j3S0jlsQR/NWfFFHK9pYz/sCrA==}
+  valaxy-theme-yun@1.3.2:
+    resolution: {integrity: sha512-6qHOMxgmFi9UQzBPQEYQplvwZ7NuBigOJpvLCv0yy8d1lIcuKvwSflOv26Rf0ZHERgCrQrC/KRXZFGg+Chl7hg==}
 
-  valaxy@1.3.1:
-    resolution: {integrity: sha512-RRVTuZlV6+EHJ/P5bNzJT/xAB0XCNIPcdmEowxyMPdPC35k6aq6L9TZ/da+A91hsmAvSurLffjKlh131fMaCYA==}
+  valaxy@1.3.2:
+    resolution: {integrity: sha512-4ovLT1DEHgGTBBKE0N8Bsm9RIyPXuDEMu9jWrcSjazphYnyBlAG76FnZc0xUU7pET7cDLl+mDBj4WYw2cxzMJA==}
     engines: {node: '>=22.12.0'}
     hasBin: true
     peerDependencies:
@@ -5854,13 +5854,13 @@ snapshots:
       - ocache
       - srvx
 
-  '@valaxyjs/devtools@1.3.1(cac@7.1.0)(crossws@0.4.17(srvx@1.0.8))(srvx@1.0.8)(typescript@6.0.3)(vite@8.3.7)':
+  '@valaxyjs/devtools@1.3.2(cac@7.1.0)(crossws@0.4.17(srvx@1.0.8))(srvx@1.0.8)(typescript@6.0.3)(vite@8.3.7)':
     dependencies:
       '@11ty/gray-matter': 3.0.0
       '@devframes/agentic': 1.2.5(crossws@0.4.17(srvx@1.0.8))(devframe@1.2.5)
       '@devframes/service-open': 1.2.5(devframe@1.2.5)
       '@devframes/service-shiki': 1.2.5(devframe@1.2.5)
-      '@valaxyjs/utils': 1.3.1
+      '@valaxyjs/utils': 1.3.2
       '@vitejs/devtools-kit': 0.8.0(@devframes/agentic@1.2.5)(cac@7.1.0)(crossws@0.4.17(srvx@1.0.8))(srvx@1.0.8)(vite@8.3.7)
       consola: 3.4.2
       cross-spawn: 7.0.6
@@ -5881,7 +5881,7 @@ snapshots:
       - typescript
       - vite
 
-  '@valaxyjs/utils@1.3.1': {}
+  '@valaxyjs/utils@1.3.2': {}
 
   '@vitejs/devtools-kit@0.8.0(@devframes/agentic@1.2.5)(cac@7.1.0)(crossws@0.4.17(srvx@1.0.8))(srvx@1.0.8)(vite@8.3.7)':
     dependencies:
@@ -8544,28 +8544,28 @@ snapshots:
 
   util-deprecate@1.0.2: {}
 
-  valaxy-addon-algolia@0.2.1(valaxy@1.3.1(@devframes/agentic@1.2.5(crossws@0.4.17(srvx@1.0.8))(devframe@1.2.5))(@nuxt/kit@3.21.8(magicast@0.5.5))(@oxc-project/types@0.156.0)(@types/markdown-it@14.1.2)(@types/node@26.1.0)(@vue/compiler-dom@3.5.41)(@vue/devtools-api@8.1.5)(cac@7.1.0)(change-case@5.4.4)(crossws@0.4.17(srvx@1.0.8))(esbuild@0.28.1)(lightningcss@1.33.0)(oxc-parser@0.153.0)(rolldown@1.2.18)(srvx@1.0.8)(terser@5.43.1)(tsx@4.23.15)(typescript@6.0.3)(vue-router@5.0.4(@vue/compiler-sfc@3.5.41)(esbuild@0.28.1)(pinia@3.0.4(typescript@6.0.3)(vue@3.5.41(typescript@6.0.3)))(rolldown@1.2.18)(vite@8.3.7)(vue@3.5.41(typescript@6.0.3)))(vue@3.5.41(typescript@6.0.3))(yaml@2.9.0)):
+  valaxy-addon-algolia@0.2.1(valaxy@1.3.2(@devframes/agentic@1.2.5(crossws@0.4.17(srvx@1.0.8))(devframe@1.2.5))(@nuxt/kit@3.21.8(magicast@0.5.5))(@oxc-project/types@0.156.0)(@types/markdown-it@14.1.2)(@types/node@26.1.0)(@vue/compiler-dom@3.5.41)(@vue/devtools-api@8.1.5)(cac@7.1.0)(change-case@5.4.4)(crossws@0.4.17(srvx@1.0.8))(esbuild@0.28.1)(lightningcss@1.33.0)(oxc-parser@0.153.0)(rolldown@1.2.18)(srvx@1.0.8)(terser@5.43.1)(tsx@4.23.15)(typescript@6.0.3)(vue-router@5.0.4(@vue/compiler-sfc@3.5.41)(esbuild@0.28.1)(pinia@3.0.4(typescript@6.0.3)(vue@3.5.41(typescript@6.0.3)))(rolldown@1.2.18)(vite@8.3.7)(vue@3.5.41(typescript@6.0.3)))(vue@3.5.41(typescript@6.0.3))(yaml@2.9.0)):
     dependencies:
       '@docsearch/css': 4.6.3
       '@docsearch/js': 4.6.3
-      valaxy: 1.3.1(@devframes/agentic@1.2.5(crossws@0.4.17(srvx@1.0.8))(devframe@1.2.5))(@nuxt/kit@3.21.8(magicast@0.5.5))(@oxc-project/types@0.156.0)(@types/markdown-it@14.1.2)(@types/node@26.1.0)(@vue/compiler-dom@3.5.41)(@vue/devtools-api@8.1.5)(cac@7.1.0)(change-case@5.4.4)(crossws@0.4.17(srvx@1.0.8))(esbuild@0.28.1)(lightningcss@1.33.0)(oxc-parser@0.153.0)(rolldown@1.2.18)(srvx@1.0.8)(terser@5.43.1)(tsx@4.23.15)(typescript@6.0.3)(vue-router@5.0.4(@vue/compiler-sfc@3.5.41)(esbuild@0.28.1)(pinia@3.0.4(typescript@6.0.3)(vue@3.5.41(typescript@6.0.3)))(rolldown@1.2.18)(vite@8.3.7)(vue@3.5.41(typescript@6.0.3)))(vue@3.5.41(typescript@6.0.3))(yaml@2.9.0)
+      valaxy: 1.3.2(@devframes/agentic@1.2.5(crossws@0.4.17(srvx@1.0.8))(devframe@1.2.5))(@nuxt/kit@3.21.8(magicast@0.5.5))(@oxc-project/types@0.156.0)(@types/markdown-it@14.1.2)(@types/node@26.1.0)(@vue/compiler-dom@3.5.41)(@vue/devtools-api@8.1.5)(cac@7.1.0)(change-case@5.4.4)(crossws@0.4.17(srvx@1.0.8))(esbuild@0.28.1)(lightningcss@1.33.0)(oxc-parser@0.153.0)(rolldown@1.2.18)(srvx@1.0.8)(terser@5.43.1)(tsx@4.23.15)(typescript@6.0.3)(vue-router@5.0.4(@vue/compiler-sfc@3.5.41)(esbuild@0.28.1)(pinia@3.0.4(typescript@6.0.3)(vue@3.5.41(typescript@6.0.3)))(rolldown@1.2.18)(vite@8.3.7)(vue@3.5.41(typescript@6.0.3)))(vue@3.5.41(typescript@6.0.3))(yaml@2.9.0)
 
   valaxy-addon-components@0.1.0: {}
 
-  valaxy-addon-girls@0.1.0(valaxy@1.3.1(@devframes/agentic@1.2.5(crossws@0.4.17(srvx@1.0.8))(devframe@1.2.5))(@nuxt/kit@3.21.8(magicast@0.5.5))(@oxc-project/types@0.156.0)(@types/markdown-it@14.1.2)(@types/node@26.1.0)(@vue/compiler-dom@3.5.41)(@vue/devtools-api@8.1.5)(cac@7.1.0)(change-case@5.4.4)(crossws@0.4.17(srvx@1.0.8))(esbuild@0.28.1)(lightningcss@1.33.0)(oxc-parser@0.153.0)(rolldown@1.2.18)(srvx@1.0.8)(terser@5.43.1)(tsx@4.23.15)(typescript@6.0.3)(vue-router@5.0.4(@vue/compiler-sfc@3.5.41)(esbuild@0.28.1)(pinia@3.0.4(typescript@6.0.3)(vue@3.5.41(typescript@6.0.3)))(rolldown@1.2.18)(vite@8.3.7)(vue@3.5.41(typescript@6.0.3)))(vue@3.5.41(typescript@6.0.3))(yaml@2.9.0))(vue-i18n@11.4.18(vue@3.5.41(typescript@6.0.3)))(vue@3.5.41(typescript@6.0.3)):
+  valaxy-addon-girls@0.1.0(valaxy@1.3.2(@devframes/agentic@1.2.5(crossws@0.4.17(srvx@1.0.8))(devframe@1.2.5))(@nuxt/kit@3.21.8(magicast@0.5.5))(@oxc-project/types@0.156.0)(@types/markdown-it@14.1.2)(@types/node@26.1.0)(@vue/compiler-dom@3.5.41)(@vue/devtools-api@8.1.5)(cac@7.1.0)(change-case@5.4.4)(crossws@0.4.17(srvx@1.0.8))(esbuild@0.28.1)(lightningcss@1.33.0)(oxc-parser@0.153.0)(rolldown@1.2.18)(srvx@1.0.8)(terser@5.43.1)(tsx@4.23.15)(typescript@6.0.3)(vue-router@5.0.4(@vue/compiler-sfc@3.5.41)(esbuild@0.28.1)(pinia@3.0.4(typescript@6.0.3)(vue@3.5.41(typescript@6.0.3)))(rolldown@1.2.18)(vite@8.3.7)(vue@3.5.41(typescript@6.0.3)))(vue@3.5.41(typescript@6.0.3))(yaml@2.9.0))(vue-i18n@11.4.18(vue@3.5.41(typescript@6.0.3)))(vue@3.5.41(typescript@6.0.3)):
     dependencies:
-      valaxy: 1.3.1(@devframes/agentic@1.2.5(crossws@0.4.17(srvx@1.0.8))(devframe@1.2.5))(@nuxt/kit@3.21.8(magicast@0.5.5))(@oxc-project/types@0.156.0)(@types/markdown-it@14.1.2)(@types/node@26.1.0)(@vue/compiler-dom@3.5.41)(@vue/devtools-api@8.1.5)(cac@7.1.0)(change-case@5.4.4)(crossws@0.4.17(srvx@1.0.8))(esbuild@0.28.1)(lightningcss@1.33.0)(oxc-parser@0.153.0)(rolldown@1.2.18)(srvx@1.0.8)(terser@5.43.1)(tsx@4.23.15)(typescript@6.0.3)(vue-router@5.0.4(@vue/compiler-sfc@3.5.41)(esbuild@0.28.1)(pinia@3.0.4(typescript@6.0.3)(vue@3.5.41(typescript@6.0.3)))(rolldown@1.2.18)(vite@8.3.7)(vue@3.5.41(typescript@6.0.3)))(vue@3.5.41(typescript@6.0.3))(yaml@2.9.0)
+      valaxy: 1.3.2(@devframes/agentic@1.2.5(crossws@0.4.17(srvx@1.0.8))(devframe@1.2.5))(@nuxt/kit@3.21.8(magicast@0.5.5))(@oxc-project/types@0.156.0)(@types/markdown-it@14.1.2)(@types/node@26.1.0)(@vue/compiler-dom@3.5.41)(@vue/devtools-api@8.1.5)(cac@7.1.0)(change-case@5.4.4)(crossws@0.4.17(srvx@1.0.8))(esbuild@0.28.1)(lightningcss@1.33.0)(oxc-parser@0.153.0)(rolldown@1.2.18)(srvx@1.0.8)(terser@5.43.1)(tsx@4.23.15)(typescript@6.0.3)(vue-router@5.0.4(@vue/compiler-sfc@3.5.41)(esbuild@0.28.1)(pinia@3.0.4(typescript@6.0.3)(vue@3.5.41(typescript@6.0.3)))(rolldown@1.2.18)(vite@8.3.7)(vue@3.5.41(typescript@6.0.3)))(vue@3.5.41(typescript@6.0.3))(yaml@2.9.0)
       vue: 3.5.41(typescript@6.0.3)
       vue-i18n: 11.4.18(vue@3.5.41(typescript@6.0.3))
 
-  valaxy-addon-waline@0.2.1(typescript@6.0.3)(valaxy@1.3.1(@devframes/agentic@1.2.5(crossws@0.4.17(srvx@1.0.8))(devframe@1.2.5))(@nuxt/kit@3.21.8(magicast@0.5.5))(@oxc-project/types@0.156.0)(@types/markdown-it@14.1.2)(@types/node@26.1.0)(@vue/compiler-dom@3.5.41)(@vue/devtools-api@8.1.5)(cac@7.1.0)(change-case@5.4.4)(crossws@0.4.17(srvx@1.0.8))(esbuild@0.28.1)(lightningcss@1.33.0)(oxc-parser@0.153.0)(rolldown@1.2.18)(srvx@1.0.8)(terser@5.43.1)(tsx@4.23.15)(typescript@6.0.3)(vue-router@5.0.4(@vue/compiler-sfc@3.5.41)(esbuild@0.28.1)(pinia@3.0.4(typescript@6.0.3)(vue@3.5.41(typescript@6.0.3)))(rolldown@1.2.18)(vite@8.3.7)(vue@3.5.41(typescript@6.0.3)))(vue@3.5.41(typescript@6.0.3))(yaml@2.9.0)):
+  valaxy-addon-waline@0.2.1(typescript@6.0.3)(valaxy@1.3.2(@devframes/agentic@1.2.5(crossws@0.4.17(srvx@1.0.8))(devframe@1.2.5))(@nuxt/kit@3.21.8(magicast@0.5.5))(@oxc-project/types@0.156.0)(@types/markdown-it@14.1.2)(@types/node@26.1.0)(@vue/compiler-dom@3.5.41)(@vue/devtools-api@8.1.5)(cac@7.1.0)(change-case@5.4.4)(crossws@0.4.17(srvx@1.0.8))(esbuild@0.28.1)(lightningcss@1.33.0)(oxc-parser@0.153.0)(rolldown@1.2.18)(srvx@1.0.8)(terser@5.43.1)(tsx@4.23.15)(typescript@6.0.3)(vue-router@5.0.4(@vue/compiler-sfc@3.5.41)(esbuild@0.28.1)(pinia@3.0.4(typescript@6.0.3)(vue@3.5.41(typescript@6.0.3)))(rolldown@1.2.18)(vite@8.3.7)(vue@3.5.41(typescript@6.0.3)))(vue@3.5.41(typescript@6.0.3))(yaml@2.9.0)):
     dependencies:
       '@waline/client': 3.4.1(typescript@6.0.3)
-      valaxy: 1.3.1(@devframes/agentic@1.2.5(crossws@0.4.17(srvx@1.0.8))(devframe@1.2.5))(@nuxt/kit@3.21.8(magicast@0.5.5))(@oxc-project/types@0.156.0)(@types/markdown-it@14.1.2)(@types/node@26.1.0)(@vue/compiler-dom@3.5.41)(@vue/devtools-api@8.1.5)(cac@7.1.0)(change-case@5.4.4)(crossws@0.4.17(srvx@1.0.8))(esbuild@0.28.1)(lightningcss@1.33.0)(oxc-parser@0.153.0)(rolldown@1.2.18)(srvx@1.0.8)(terser@5.43.1)(tsx@4.23.15)(typescript@6.0.3)(vue-router@5.0.4(@vue/compiler-sfc@3.5.41)(esbuild@0.28.1)(pinia@3.0.4(typescript@6.0.3)(vue@3.5.41(typescript@6.0.3)))(rolldown@1.2.18)(vite@8.3.7)(vue@3.5.41(typescript@6.0.3)))(vue@3.5.41(typescript@6.0.3))(yaml@2.9.0)
+      valaxy: 1.3.2(@devframes/agentic@1.2.5(crossws@0.4.17(srvx@1.0.8))(devframe@1.2.5))(@nuxt/kit@3.21.8(magicast@0.5.5))(@oxc-project/types@0.156.0)(@types/markdown-it@14.1.2)(@types/node@26.1.0)(@vue/compiler-dom@3.5.41)(@vue/devtools-api@8.1.5)(cac@7.1.0)(change-case@5.4.4)(crossws@0.4.17(srvx@1.0.8))(esbuild@0.28.1)(lightningcss@1.33.0)(oxc-parser@0.153.0)(rolldown@1.2.18)(srvx@1.0.8)(terser@5.43.1)(tsx@4.23.15)(typescript@6.0.3)(vue-router@5.0.4(@vue/compiler-sfc@3.5.41)(esbuild@0.28.1)(pinia@3.0.4(typescript@6.0.3)(vue@3.5.41(typescript@6.0.3)))(rolldown@1.2.18)(vite@8.3.7)(vue@3.5.41(typescript@6.0.3)))(vue@3.5.41(typescript@6.0.3))(yaml@2.9.0)
     transitivePeerDependencies:
       - typescript
 
-  valaxy-theme-yun@1.3.1(magicast@0.5.5)(valaxy@1.3.1(@devframes/agentic@1.2.5(crossws@0.4.17(srvx@1.0.8))(devframe@1.2.5))(@nuxt/kit@3.21.8(magicast@0.5.5))(@oxc-project/types@0.156.0)(@types/markdown-it@14.1.2)(@types/node@26.1.0)(@vue/compiler-dom@3.5.41)(@vue/devtools-api@8.1.5)(cac@7.1.0)(change-case@5.4.4)(crossws@0.4.17(srvx@1.0.8))(esbuild@0.28.1)(lightningcss@1.33.0)(oxc-parser@0.153.0)(rolldown@1.2.18)(srvx@1.0.8)(terser@5.43.1)(tsx@4.23.15)(typescript@6.0.3)(vue-router@5.0.4(@vue/compiler-sfc@3.5.41)(esbuild@0.28.1)(pinia@3.0.4(typescript@6.0.3)(vue@3.5.41(typescript@6.0.3)))(rolldown@1.2.18)(vite@8.3.7)(vue@3.5.41(typescript@6.0.3)))(vue@3.5.41(typescript@6.0.3))(yaml@2.9.0))(vue-i18n@11.4.18(vue@3.5.41(typescript@6.0.3)))(vue@3.5.41(typescript@6.0.3)):
+  valaxy-theme-yun@1.3.2(magicast@0.5.5)(valaxy@1.3.2(@devframes/agentic@1.2.5(crossws@0.4.17(srvx@1.0.8))(devframe@1.2.5))(@nuxt/kit@3.21.8(magicast@0.5.5))(@oxc-project/types@0.156.0)(@types/markdown-it@14.1.2)(@types/node@26.1.0)(@vue/compiler-dom@3.5.41)(@vue/devtools-api@8.1.5)(cac@7.1.0)(change-case@5.4.4)(crossws@0.4.17(srvx@1.0.8))(esbuild@0.28.1)(lightningcss@1.33.0)(oxc-parser@0.153.0)(rolldown@1.2.18)(srvx@1.0.8)(terser@5.43.1)(tsx@4.23.15)(typescript@6.0.3)(vue-router@5.0.4(@vue/compiler-sfc@3.5.41)(esbuild@0.28.1)(pinia@3.0.4(typescript@6.0.3)(vue@3.5.41(typescript@6.0.3)))(rolldown@1.2.18)(vite@8.3.7)(vue@3.5.41(typescript@6.0.3)))(vue@3.5.41(typescript@6.0.3))(yaml@2.9.0))(vue-i18n@11.4.18(vue@3.5.41(typescript@6.0.3)))(vue@3.5.41(typescript@6.0.3)):
     dependencies:
       '@ctrl/tinycolor': 4.2.1
       '@explosions/fireworks': 0.2.0
@@ -8575,7 +8575,7 @@ snapshots:
       animejs: 4.5.0
       gsap: 3.15.0
       reka-ui: 2.10.5(vue@3.5.41(typescript@6.0.3))
-      valaxy-addon-girls: 0.1.0(valaxy@1.3.1(@devframes/agentic@1.2.5(crossws@0.4.17(srvx@1.0.8))(devframe@1.2.5))(@nuxt/kit@3.21.8(magicast@0.5.5))(@oxc-project/types@0.156.0)(@types/markdown-it@14.1.2)(@types/node@26.1.0)(@vue/compiler-dom@3.5.41)(@vue/devtools-api@8.1.5)(cac@7.1.0)(change-case@5.4.4)(crossws@0.4.17(srvx@1.0.8))(esbuild@0.28.1)(lightningcss@1.33.0)(oxc-parser@0.153.0)(rolldown@1.2.18)(srvx@1.0.8)(terser@5.43.1)(tsx@4.23.15)(typescript@6.0.3)(vue-router@5.0.4(@vue/compiler-sfc@3.5.41)(esbuild@0.28.1)(pinia@3.0.4(typescript@6.0.3)(vue@3.5.41(typescript@6.0.3)))(rolldown@1.2.18)(vite@8.3.7)(vue@3.5.41(typescript@6.0.3)))(vue@3.5.41(typescript@6.0.3))(yaml@2.9.0))(vue-i18n@11.4.18(vue@3.5.41(typescript@6.0.3)))(vue@3.5.41(typescript@6.0.3))
+      valaxy-addon-girls: 0.1.0(valaxy@1.3.2(@devframes/agentic@1.2.5(crossws@0.4.17(srvx@1.0.8))(devframe@1.2.5))(@nuxt/kit@3.21.8(magicast@0.5.5))(@oxc-project/types@0.156.0)(@types/markdown-it@14.1.2)(@types/node@26.1.0)(@vue/compiler-dom@3.5.41)(@vue/devtools-api@8.1.5)(cac@7.1.0)(change-case@5.4.4)(crossws@0.4.17(srvx@1.0.8))(esbuild@0.28.1)(lightningcss@1.33.0)(oxc-parser@0.153.0)(rolldown@1.2.18)(srvx@1.0.8)(terser@5.43.1)(tsx@4.23.15)(typescript@6.0.3)(vue-router@5.0.4(@vue/compiler-sfc@3.5.41)(esbuild@0.28.1)(pinia@3.0.4(typescript@6.0.3)(vue@3.5.41(typescript@6.0.3)))(rolldown@1.2.18)(vite@8.3.7)(vue@3.5.41(typescript@6.0.3)))(vue@3.5.41(typescript@6.0.3))(yaml@2.9.0))(vue-i18n@11.4.18(vue@3.5.41(typescript@6.0.3)))(vue@3.5.41(typescript@6.0.3))
     transitivePeerDependencies:
       - '@types/three'
       - '@vue/composition-api'
@@ -8585,7 +8585,7 @@ snapshots:
       - vue
       - vue-i18n
 
-  valaxy@1.3.1(@devframes/agentic@1.2.5(crossws@0.4.17(srvx@1.0.8))(devframe@1.2.5))(@nuxt/kit@3.21.8(magicast@0.5.5))(@oxc-project/types@0.156.0)(@types/markdown-it@14.1.2)(@types/node@26.1.0)(@vue/compiler-dom@3.5.41)(@vue/devtools-api@8.1.5)(cac@7.1.0)(change-case@5.4.4)(crossws@0.4.17(srvx@1.0.8))(esbuild@0.28.1)(lightningcss@1.33.0)(oxc-parser@0.153.0)(rolldown@1.2.18)(srvx@1.0.8)(terser@5.43.1)(tsx@4.23.15)(typescript@6.0.3)(vue-router@5.0.4(@vue/compiler-sfc@3.5.41)(esbuild@0.28.1)(pinia@3.0.4(typescript@6.0.3)(vue@3.5.41(typescript@6.0.3)))(rolldown@1.2.18)(vite@8.3.7)(vue@3.5.41(typescript@6.0.3)))(vue@3.5.41(typescript@6.0.3))(yaml@2.9.0):
+  valaxy@1.3.2(@devframes/agentic@1.2.5(crossws@0.4.17(srvx@1.0.8))(devframe@1.2.5))(@nuxt/kit@3.21.8(magicast@0.5.5))(@oxc-project/types@0.156.0)(@types/markdown-it@14.1.2)(@types/node@26.1.0)(@vue/compiler-dom@3.5.41)(@vue/devtools-api@8.1.5)(cac@7.1.0)(change-case@5.4.4)(crossws@0.4.17(srvx@1.0.8))(esbuild@0.28.1)(lightningcss@1.33.0)(oxc-parser@0.153.0)(rolldown@1.2.18)(srvx@1.0.8)(terser@5.43.1)(tsx@4.23.15)(typescript@6.0.3)(vue-router@5.0.4(@vue/compiler-sfc@3.5.41)(esbuild@0.28.1)(pinia@3.0.4(typescript@6.0.3)(vue@3.5.41(typescript@6.0.3)))(rolldown@1.2.18)(vite@8.3.7)(vue@3.5.41(typescript@6.0.3)))(vue@3.5.41(typescript@6.0.3))(yaml@2.9.0):
     dependencies:
       '@11ty/gray-matter': 3.0.0
       '@antfu/install-pkg': 2.1.0
@@ -8598,8 +8598,8 @@ snapshots:
       '@unhead/bundler': 3.4.1(@oxc-project/types@0.156.0)(esbuild@0.28.1)(lightningcss@1.33.0)(oxc-parser@0.153.0)(rolldown@1.2.18)(unhead@3.4.1(esbuild@0.28.1)(rolldown@1.2.18)(vite@8.3.7))(vite@8.3.7)
       '@unhead/schema-org': 3.4.1(@unhead/vue@3.4.1(@oxc-project/types@0.156.0)(esbuild@0.28.1)(lightningcss@1.33.0)(oxc-parser@0.153.0)(rolldown@1.2.18)(vite@8.3.7)(vue@3.5.41(typescript@6.0.3)))(esbuild@0.28.1)(rolldown@1.2.18)(vite@8.3.7)
       '@unhead/vue': 3.4.1(@oxc-project/types@0.156.0)(esbuild@0.28.1)(lightningcss@1.33.0)(oxc-parser@0.153.0)(rolldown@1.2.18)(vite@8.3.7)(vue@3.5.41(typescript@6.0.3))
-      '@valaxyjs/devtools': 1.3.1(cac@7.1.0)(crossws@0.4.17(srvx@1.0.8))(srvx@1.0.8)(typescript@6.0.3)(vite@8.3.7)
-      '@valaxyjs/utils': 1.3.1
+      '@valaxyjs/devtools': 1.3.2(cac@7.1.0)(crossws@0.4.17(srvx@1.0.8))(srvx@1.0.8)(typescript@6.0.3)(vite@8.3.7)
+      '@valaxyjs/utils': 1.3.2
       '@vitejs/devtools': 0.8.0(crossws@0.4.17(srvx@1.0.8))(srvx@1.0.8)(vite@8.3.7)
       '@vitejs/plugin-vue': 6.0.9(vite@8.3.7)(vue@3.5.41(typescript@6.0.3))
       '@vueuse/core': 15.0.0(vue@3.5.41(typescript@6.0.3))
