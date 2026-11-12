@@ -2,6 +2,7 @@ import { defineThemeConfig } from 'valaxy-theme-yun'
 import { isBeianMode } from './config/beian'
 
 export default defineThemeConfig({
+  serifFont: 'except-home',
   postCard: {
     excerptGradient: false,
     titleClass: '',

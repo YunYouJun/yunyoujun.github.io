@@ -20,3 +20,28 @@
   --yun-say-font-weight: 500;
   --yun-say-border-color: var(--yun-surface-line);
 }
+
+/* Noto Serif SC 900, subset to the six characters in 云游君的小站. */
+@font-face {
+  font-family: 'Yun Home Serif';
+  src: url('/fonts/noto-serif-sc-home.woff2') format('woff2');
+  font-style: normal;
+  font-weight: 900;
+  font-display: swap;
+  unicode-range: U+4E91, U+541B, U+5C0F, U+6E38, U+7684, U+7AD9;
+}
+
+.yun-home-layout {
+  .yun-card-body {
+    --va-font-sans: system-ui, sans-serif;
+    --va-font-serif: system-ui, sans-serif;
+    --yun-post-title-font-family: system-ui, sans-serif;
+
+    font-family: system-ui, sans-serif;
+  }
+
+  .yun-home-prologue-content :is(.site-name, .site-author-name) {
+    font-family: 'Yun Home Serif', 'Songti SC', STSong, serif;
+    font-weight: 900;
+  }
+}
