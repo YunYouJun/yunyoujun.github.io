@@ -4,11 +4,14 @@ import { isBeianMode } from './config/beian'
 export default defineSiteConfig({
   redirects: { useVueRouter: true },
   lang: 'zh-CN',
+  timezone: 'Asia/Shanghai',
   title: '云游君的小站',
   subtitle: 'All at sea.',
   description: '希望能成为一个有趣的人',
   author: {
     name: '云游君',
+    email: 'me@yunyoujun.cn',
+    link: 'https://www.yunyoujun.cn',
     avatar: '/images/avatar.webp',
     status: {
       emoji: '☁️',

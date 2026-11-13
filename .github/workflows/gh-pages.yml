@@ -31,11 +31,6 @@ jobs:
           runtime: node@24
           cache: true
 
-      - name: 🔍 Genereate Algolia
-        env:
-          HEXO_ALGOLIA_INDEXING_KEY: ${{ secrets.HEXO_ALGOLIA_INDEXING_KEY }}
-        run: pnpm run algolia
-
       - name: 🌌 Build Valaxy Blog
         run: pnpm run build
         env:

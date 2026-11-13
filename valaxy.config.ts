@@ -1,6 +1,5 @@
 import type { UserThemeConfig } from 'valaxy-theme-yun'
 import { defineValaxyConfig } from 'valaxy'
-import { addonAlgolia } from 'valaxy-addon-algolia'
 
 import { addonComponents } from 'valaxy-addon-components'
 import { addonGirls } from 'valaxy-addon-girls'
@@ -51,11 +50,6 @@ export default defineValaxyConfig<UserThemeConfig> ({
   },
 
   addons: [
-    addonAlgolia({
-      appId: 'CJXXAGRCYN',
-      apiKey: 'ae1966d2aeab22bf9335679f45d2cd9a',
-      indexName: 'my-hexo-blog',
-    }),
     addonComponents(),
     addonGirls(),
     addonWaline({

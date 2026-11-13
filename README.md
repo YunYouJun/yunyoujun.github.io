@@ -1,14 +1,12 @@
 # [云游君的小站](https://www.yunyoujun.cn)站点源文件
 
 [![Deploy Valaxy site to GitHub Pages](https://github.com/YunYouJun/yunyoujun.github.io/actions/workflows/gh-pages.yml/badge.svg)](https://github.com/YunYouJun/yunyoujun.github.io/actions/workflows/gh-pages.yml)
-[![Netlify Status](https://api.netlify.com/api/v1/badges/4acb3c9b-fbcd-488e-be70-18942eb2669f/deploy-status)](https://app.netlify.com/sites/yunyoujun/deploys)
 
 - 已迁移至 [valaxy](https://github.com/YunYouJun/valaxy) + [valaxy-theme-yun](https://github.com/YunYouJun/valaxy/tree/main/packages/valaxy-theme-yun)
 - 旧版 Hexo 主题：[Yun](https://github.com/YunYouJun/hexo-theme-yun/)
 
 - 主站：[yunyoujun.cn](https://www.yunyoujun.cn) | [yunyoujun.github.io](https://yunyoujun.github.io)
-- 备用：<https://yunyoujun.netlify.app>
-  - Hexo 版本存档：<https://hexo.yunyoujun.cn>
+- Hexo 版本存档：<https://hexo.yunyoujun.cn>
 - 笔记：<https://notes.yunyoujun.cn>
 - 赞助：<https://www.yunyoujun.cn/sponsors/>
 
