@@ -51,7 +51,7 @@ yum -y install java-latest-openjdk
 
 几经辗转，发现官服是安装不了插件的。
 
-<http://mineplugin.org>
+<https://mineplugin.org>
 
 如有兴趣，可参考百科安装不同服务器版本。
 
