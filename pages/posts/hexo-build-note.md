@@ -117,7 +117,7 @@ hexo algolia // 生成index
 [**LeanCloud**](http://leancloud.cn)
 采用第三方 LeanCloud 服务实现
 
-[Next](http://theme-next.iissnan.com/) 主题集成了 LeanCloud 统计。
+[Next](https://theme-next.iissnan.com/) 主题集成了 LeanCloud 统计。
 
 - 进入官网，注册账号，创建应用（开发版为免费使用）
 - 进入创建的应用中，选择左侧导航栏中的“存储”，随后点击“创建 Class”，将 Class 名称填为 Counter，并选择**无限制**选项。

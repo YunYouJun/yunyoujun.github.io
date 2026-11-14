@@ -1,5 +1,6 @@
 ---
 title: npm & yarn 常用包与命令
+description: 整理 npm 与 Yarn 的常用命令和 Node.js 工具包，完整笔记收录在语雀。
 tags:
   - Node.js
   - 分享

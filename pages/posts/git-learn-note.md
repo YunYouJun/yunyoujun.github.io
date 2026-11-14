@@ -1,5 +1,6 @@
 ---
 title: Git 学习笔记
+description: 汇总 Git 常用命令与学习笔记，完整内容收录在语雀。
 tags:
   - 学习
   - 笔记

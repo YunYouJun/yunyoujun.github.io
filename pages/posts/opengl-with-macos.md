@@ -25,7 +25,7 @@ More info in [从零开始的 WebGL](https://www.yuque.com/docs/share/a32e7cdc-b
 ### Online
 
 - [LearnOpenGL CN](https://learnopengl-cn.github.io/)
-- [opengl-tutorial](http://www.opengl-tutorial.org/cn/)
+- [opengl-tutorial](https://www.opengl-tutorial.org/cn/)
 
 ## Progress
 

@@ -59,6 +59,12 @@ git remote set-url --add origin https://e.coding.net/YunYouJun/yunyoujun.coding.
 - [~~yunyoujun.github.io - Travis CI~~](https://www.travis-ci.com/YunYouJun/yunyoujun.github.io)
 - [GitHub Actions](https://github.com/YunYouJun/yunyoujun.github.io/actions): 现已改为使用 GitHub Actions
 
+### 主域名与旧链接
+
+`https://www.yunyoujun.cn` 由 EdgeOne Makers 提供站点。Cloudflare 将 `yunyoujun.cn` 的 HTTP 和 HTTPS 请求 301 到主域名，保留路径和查询参数；`www` 的 HTTP 请求由 EdgeOne 301 到 HTTPS。
+
+EdgeOne 的旧链接规则在 `edgeone.json`。日期路径取自 Hexo 备份 `329d27d` 的 `:year/:month/:day/:title/` 规则，按当时的文件名（含目录）和发布日期对应到仍公开的文章。添加规则前先确认目标；上线后检查旧地址的 HTTP 301 和最终页面。`public/_redirects` 用于仍读取该格式的托管平台。
+
 ### 备案模式
 
 默认构建完整站点：

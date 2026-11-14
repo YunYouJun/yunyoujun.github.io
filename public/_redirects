@@ -1,5 +1,5 @@
-/rss https://yyj.moe/feed.xml 301
-/blog https://yunyoujun.cn 301
+/rss /feed.xml 301
+/blog / 301
 
 /github https://github.com/YunYouJun 301
 /twitter https://twitter.com/YunYouJun 301

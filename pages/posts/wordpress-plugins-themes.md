@@ -16,7 +16,7 @@ updated: 2017-08-04 10:56:26
 
 ### Akismet Anti-Spam
 
-由 [Automattic](http://automattic.com/wordpress-plugins/)
+由 [Automattic](https://automattic.com/wordpress-plugins/)
 
 > Description
 
@@ -112,7 +112,7 @@ Spice up your navigation menus with pretty icons, easily.
 
 ### Slimstat Analytics
 
-由 [Jason Crouse](http://www.wp-slimstat.com/)
+由 [Jason Crouse](https://www.wp-slimstat.com/)
 
 > Description:
 

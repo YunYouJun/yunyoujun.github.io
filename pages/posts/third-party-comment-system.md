@@ -30,9 +30,9 @@ categories:
 
 ## 评论系统
 
-### [Disqus](http://disqus.com/)
+### [Disqus](https://disqus.com/)
 
-[Disqus](http://disqus.com/) 作为当前最大的第三方评论系统，功能强大，也不用担心数据跑路。
+[Disqus](https://disqus.com/) 作为当前最大的第三方评论系统，功能强大，也不用担心数据跑路。
 使用广泛，一个账号可以通用许多博客评论，甚至可以和均使用 Disqus 作为评论系统的网站建立联系，形成社区。
 
 但对于国内来说，却有一个致命缺点，需要科学上网。
@@ -143,7 +143,7 @@ Waline 的数据结构继承自 Valine，因此数据是可以无缝迁移的。
 > 对了，LeanCloud 官方导出的 JSON 数据，每项末尾都少了 `,`，还得自己用编辑器批量加上。
 > [LeanCloud 国内版迁移国际版](https://www.yuque.com/docs/share/f1b15bed-9464-4c61-a41d-238a175af5d4)
 
-### [畅言](http://changyan.kuaizhan.com/)
+### [畅言](https://changyan.kuaizhan.com/)
 
 国内搜狐旗下的评论系统。（算是国内还幸存的屈指可数的几家）（多说、网易云跟帖均已关闭。）
 
