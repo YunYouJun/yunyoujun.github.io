@@ -14,13 +14,21 @@ const notFoundPage = `<!doctype html>
 </body>
 </html>`
 
+const directNotFoundPaths = ['/404', '/404.html']
+const legacyNovelPrefix = '/2017/07/10/creation/novel'
+
 export const config = {
-  matcher: ['/404', '/404.html'],
+  matcher: ['/404', '/404.html', '/2017/07/10/creation/novel/:path*'],
 }
 
 export function middleware({ request, next }) {
-  const { pathname } = new URL(request.url)
-  if (!config.matcher.includes(pathname))
+  const url = new URL(request.url)
+  // The EdgeOne JSON redirect matcher misses this old slug's apostrophe.
+  const path = url.pathname.replace(/%27/g, '\'').replace(/\/$/, '')
+  if (path === `${legacyNovelPrefix}/aqua's-planet`)
+    return Response.redirect(new URL(`/posts/planet-of-aqua${url.search}`, url), 301)
+
+  if (!directNotFoundPaths.includes(url.pathname))
     return next()
 
   return new Response(request.method === 'HEAD' ? null : notFoundPage, {

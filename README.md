@@ -113,7 +113,7 @@ git clone https://github.com/YunYouJun/hexo-theme-yun themes/yun
 tccli auth login
 ```
 
-EdgeOne 的 `middleware.js` 只拦截 `/404` 和 `/404.html`，确保直接访问这两个地址时返回 HTTP 404。构建仍保留 `404.html`，供其他静态托管平台使用。
+EdgeOne 的 `middleware.js` 将 `/404` 和 `/404.html` 返回 HTTP 404，也处理 `edgeone.json` 无法匹配的带撇号 Hexo 旧地址。构建仍保留 `404.html`，供其他静态托管平台使用。
 
 #### EdgeOne 刷新缓存
 

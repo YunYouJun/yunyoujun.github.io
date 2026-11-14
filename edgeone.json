@@ -121,16 +121,6 @@
       "statusCode": 301
     },
     {
-      "source": "/2017/07/10/creation/novel/aqua's-planet",
-      "destination": "/posts/planet-of-aqua",
-      "statusCode": 301
-    },
-    {
-      "source": "/2017/07/10/creation/novel/aqua's-planet/",
-      "destination": "/posts/planet-of-aqua",
-      "statusCode": 301
-    },
-    {
       "source": "/2017/07/12/creation/draw/a-try-about-watercolor-portrait",
       "destination": "/posts/a-try-about-watercolor-portrait",
       "statusCode": 301

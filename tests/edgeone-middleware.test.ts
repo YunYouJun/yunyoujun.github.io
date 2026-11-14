@@ -10,8 +10,7 @@ function next() {
 }
 
 test('returns a real 404 for direct requests to the fallback document', async () => {
-  assert.deepEqual(config.matcher, ['/404', '/404.html'])
-  for (const path of config.matcher) {
+  for (const path of ['/404', '/404.html']) {
     const response = middleware({ request: new Request(`${origin}${path}?from=old-link`), next })
     assert.equal(response.status, 404)
     assert.equal(response.headers.get('content-type'), 'text/html; charset=utf-8')
@@ -21,8 +20,20 @@ test('returns a real 404 for direct requests to the fallback document', async ()
 })
 
 test('leaves normal pages, redirects, and other missing paths to EdgeOne', async () => {
-  for (const path of ['/', '/rss', '/404/', '/posts/404-notes']) {
+  for (const path of ['/', '/rss', '/404/', '/posts/404-notes', '/2017/07/10/creation/novel/other']) {
     const response = middleware({ request: new Request(`${origin}${path}`), next })
     assert.equal(await response.text(), 'original response')
+  }
+})
+
+test('redirects the historical novel URL with either apostrophe spelling', () => {
+  assert.ok(config.matcher.includes('/2017/07/10/creation/novel/:path*'))
+  for (const slug of ['aqua\'s-planet', 'aqua%27s-planet']) {
+    for (const slash of ['', '/']) {
+      const request = new Request(`${origin}/2017/07/10/creation/novel/${slug}${slash}?from=old`)
+      const response = middleware({ request, next })
+      assert.equal(response.status, 301)
+      assert.equal(response.headers.get('location'), `${origin}/posts/planet-of-aqua?from=old`)
+    }
   }
 })
