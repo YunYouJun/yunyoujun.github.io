@@ -156,7 +156,7 @@ GitHub 项目地址：[software-engineering-notes](https://github.com/YunYouJun/
 
 ## Links
 
-- [中国传媒大学研招网](http://yz.cuc.edu.cn/)
+- [中国传媒大学研招网](https://yz.cuc.edu.cn/)
 
 ### 中传研招办官网 RSS
 
@@ -197,7 +197,7 @@ GitHub 项目地址：[software-engineering-notes](https://github.com/YunYouJun/
 
 ### 中传计算机分数线
 
-这个[中国传媒大学研招网](http://yz.cuc.edu.cn/)上是可以查到的。
+这个[中国传媒大学研招网](https://yz.cuc.edu.cn/)上是可以查到的。
 大家要善于观察和检索 = =。
 
 [中国传媒大学 2019 年全国硕士研究生招生考试考生进入复试的初试成绩基本要求](http://yz.cuc.edu.cn/newsWYFHY/680ca73e-760e-4539-abef-f1aaec7bd206.htm)

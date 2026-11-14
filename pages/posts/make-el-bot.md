@@ -157,7 +157,7 @@ el-bot-js 也使用 TypeScript 进行了一番重构，并完全去除了 node-m
 
 ### 2020-06-27 长大的 mirai-ts
 
-刚好赶在了端午假期结束前。mirai-ts 终于可以独当一面（完全封装实现 mirai-api-http）后，从 el-bot-js 的 packages 目录下，分离出来发布了 npm 包 [mirai-ts](http://npmjs.com/package/mirai-ts/)。
+刚好赶在了端午假期结束前。mirai-ts 终于可以独当一面（完全封装实现 mirai-api-http）后，从 el-bot-js 的 packages 目录下，分离出来发布了 npm 包 [mirai-ts](https://www.npmjs.com/package/mirai-ts/)。
 
 > 🤣 也算是回馈社区了，只要 mirai 还在，mirai-ts 我就会尽可能坚持维护下去的，毕竟相当于我自己也在用自己封的库。
 

@@ -50,7 +50,7 @@ categories:
 
 现在有许多可以提供静态站点托管的服务商（大善人）。（谢谢你们！）
 
-- [GitHub Pages](http://pages.github.com/): 学生免费申请 Pro 账户后，可支持私有个人仓库（GitHub 国内速度欠佳）
+- [GitHub Pages](https://pages.github.com/): 学生免费申请 Pro 账户后，可支持私有个人仓库（GitHub 国内速度欠佳）
 - [Netlify](https://www.netlify.com/): 支持私有个人/组织仓库（国内速度可能欠佳）
 - [Vercel](https://vercel.com/): 支持公开仓库（私有仓库须付费）（最近域名同样开始被屏蔽，国内速度可能欠佳）
 - [Cloudflare Pages](https://pages.cloudflare.com/): 支持私有个人/组织仓库

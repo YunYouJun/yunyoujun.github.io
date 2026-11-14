@@ -1,5 +1,6 @@
 ---
 title: LaTeX 使用笔记
+description: 整理 LaTeX 的使用笔记，正文和示例收录在语雀。
 date: 2019-10-21 14:16:18
 updated: 2019-10-21 14:16:18
 tags:

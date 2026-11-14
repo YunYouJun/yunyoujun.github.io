@@ -1,5 +1,6 @@
 ---
 title: 【花开物语|MAD】幹物女(WeiWei)-Bonboru!
+description: 《花开物语》动画剪辑，以《幹物女 (WeiWei)》为配乐，可在哔哩哔哩观看。
 tags:
   - MAD
   - 动画
