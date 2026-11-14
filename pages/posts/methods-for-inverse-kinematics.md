@@ -1,5 +1,6 @@
 ---
 title: 使用 CCDIK 或 FABRIK 实现逆向动力学
+description: 用示例代码和演示介绍两种逆向动力学算法：循环坐标下降（CCDIK）和前后延伸（FABRIK）。
 date: 2020-01-14 22:16:27
 updated: 2020-01-14 22:16:27
 tags:
@@ -23,7 +24,7 @@ categories:
 还有几何分析与雅可比矩阵的方法，计算起来比较复杂，用的不是太多。
 
 - [Inverse kinematics](https://en.wikipedia.org/wiki/Inverse_kinematics)
-- [Making Kine More Flexible](http://www.cs.cmu.edu/~15464-s13/lectures/lecture6/jlander_gamedev_nov98.pdf)
+- [Making Kine More Flexible](https://www.cs.cmu.edu/~15464-s13/lectures/lecture6/jlander_gamedev_nov98.pdf)
 - [角色动画研究 —— IK 的三种结算方法](https://blog.csdn.net/noahzuo/article/details/53908141)
 
 维基百科和一些论文、博客也讲得很清楚了。
@@ -35,7 +36,7 @@ categories:
 ## CCDIK
 
 - [角色动画研究 —— IK 的三种结算方法](https://blog.csdn.net/noahzuo/article/details/53908141)
-- [Cyclic Coordinate Descent in 2D](http://www.ryanjuckett.com/programming/cyclic-coordinate-descent-in-2d/)
+- [Cyclic Coordinate Descent in 2D](https://www.ryanjuckett.com/programming/cyclic-coordinate-descent-in-2d/)
 
 ### CCD - [p5.js](https://p5js.org/zh-Hans/)
 

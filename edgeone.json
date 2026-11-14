@@ -1,0 +1,304 @@
+{
+  "redirects": [
+    {
+      "source": "/rss",
+      "destination": "/feed.xml",
+      "statusCode": 301
+    },
+    {
+      "source": "/rss/",
+      "destination": "/feed.xml",
+      "statusCode": 301
+    },
+    {
+      "source": "/blog",
+      "destination": "/",
+      "statusCode": 301
+    },
+    {
+      "source": "/blog/",
+      "destination": "/",
+      "statusCode": 301
+    },
+    {
+      "source": "/github",
+      "destination": "https://github.com/YunYouJun",
+      "statusCode": 301
+    },
+    {
+      "source": "/github/",
+      "destination": "https://github.com/YunYouJun",
+      "statusCode": 301
+    },
+    {
+      "source": "/twitter",
+      "destination": "https://twitter.com/YunYouJun",
+      "statusCode": 301
+    },
+    {
+      "source": "/twitter/",
+      "destination": "https://twitter.com/YunYouJun",
+      "statusCode": 301
+    },
+    {
+      "source": "/live",
+      "destination": "https://live.bilibili.com/822719",
+      "statusCode": 301
+    },
+    {
+      "source": "/live/",
+      "destination": "https://live.bilibili.com/822719",
+      "statusCode": 301
+    },
+    {
+      "source": "/2016/05/12/memory/clan/clan-initial",
+      "destination": "/posts/a-story-about-coc-0",
+      "statusCode": 301
+    },
+    {
+      "source": "/2016/05/12/memory/clan/clan-initial/",
+      "destination": "/posts/a-story-about-coc-0",
+      "statusCode": 301
+    },
+    {
+      "source": "/2016/09/20/creation/novel/outer-space",
+      "destination": "/posts/outer-space",
+      "statusCode": 301
+    },
+    {
+      "source": "/2016/09/20/creation/novel/outer-space/",
+      "destination": "/posts/outer-space",
+      "statusCode": 301
+    },
+    {
+      "source": "/2017/01/22/creation/video/Hana-Saku-Iroha-weiwei-bonboru",
+      "destination": "/posts/hana-saku-iroha-weiwei-bonboru",
+      "statusCode": 301
+    },
+    {
+      "source": "/2017/01/22/creation/video/Hana-Saku-Iroha-weiwei-bonboru/",
+      "destination": "/posts/hana-saku-iroha-weiwei-bonboru",
+      "statusCode": 301
+    },
+    {
+      "source": "/2017/01/23/share/html5-canvas-nest-js",
+      "destination": "/posts/html5-canvas-nest-js",
+      "statusCode": 301
+    },
+    {
+      "source": "/2017/01/23/share/html5-canvas-nest-js/",
+      "destination": "/posts/html5-canvas-nest-js",
+      "statusCode": 301
+    },
+    {
+      "source": "/2017/02/04/creation/novel/echo",
+      "destination": "/posts/echo",
+      "statusCode": 301
+    },
+    {
+      "source": "/2017/02/04/creation/novel/echo/",
+      "destination": "/posts/echo",
+      "statusCode": 301
+    },
+    {
+      "source": "/2017/02/11/creation/novel/hamster",
+      "destination": "/posts/hamster",
+      "statusCode": 301
+    },
+    {
+      "source": "/2017/02/11/creation/novel/hamster/",
+      "destination": "/posts/hamster",
+      "statusCode": 301
+    },
+    {
+      "source": "/2017/07/10/creation/draw/yunyoujun-meme",
+      "destination": "/posts/yunyoujun-meme",
+      "statusCode": 301
+    },
+    {
+      "source": "/2017/07/10/creation/draw/yunyoujun-meme/",
+      "destination": "/posts/yunyoujun-meme",
+      "statusCode": 301
+    },
+    {
+      "source": "/2017/07/10/creation/novel/aqua's-planet",
+      "destination": "/posts/planet-of-aqua",
+      "statusCode": 301
+    },
+    {
+      "source": "/2017/07/10/creation/novel/aqua's-planet/",
+      "destination": "/posts/planet-of-aqua",
+      "statusCode": 301
+    },
+    {
+      "source": "/2017/07/12/creation/draw/a-try-about-watercolor-portrait",
+      "destination": "/posts/a-try-about-watercolor-portrait",
+      "statusCode": 301
+    },
+    {
+      "source": "/2017/07/12/creation/draw/a-try-about-watercolor-portrait/",
+      "destination": "/posts/a-try-about-watercolor-portrait",
+      "statusCode": 301
+    },
+    {
+      "source": "/2017/07/18/diary/memory-about-summer-camp",
+      "destination": "/posts/memory-about-summer-camp",
+      "statusCode": 301
+    },
+    {
+      "source": "/2017/07/18/diary/memory-about-summer-camp/",
+      "destination": "/posts/memory-about-summer-camp",
+      "statusCode": 301
+    },
+    {
+      "source": "/2017/07/21/memory/association/a-story-about-fantasy-star",
+      "destination": "/posts/a-story-about-fantasy-star",
+      "statusCode": 301
+    },
+    {
+      "source": "/2017/07/21/memory/association/a-story-about-fantasy-star/",
+      "destination": "/posts/a-story-about-fantasy-star",
+      "statusCode": 301
+    },
+    {
+      "source": "/2017/07/24/creation/video/stop-motion-animation-exchange",
+      "destination": "/posts/stop-motion-animation-exchange",
+      "statusCode": 301
+    },
+    {
+      "source": "/2017/07/24/creation/video/stop-motion-animation-exchange/",
+      "destination": "/posts/stop-motion-animation-exchange",
+      "statusCode": 301
+    },
+    {
+      "source": "/2017/08/04/share/wordpress-plugins-themes",
+      "destination": "/posts/wordpress-plugins-themes",
+      "statusCode": 301
+    },
+    {
+      "source": "/2017/08/04/share/wordpress-plugins-themes/",
+      "destination": "/posts/wordpress-plugins-themes",
+      "statusCode": 301
+    },
+    {
+      "source": "/2017/08/21/diary/a-trip-to-nanjing-10th-contest",
+      "destination": "/posts/a-trip-to-nanjing-10th-contest",
+      "statusCode": 301
+    },
+    {
+      "source": "/2017/08/21/diary/a-trip-to-nanjing-10th-contest/",
+      "destination": "/posts/a-trip-to-nanjing-10th-contest",
+      "statusCode": 301
+    },
+    {
+      "source": "/2017/08/21/note/git-learn",
+      "destination": "/posts/git-learn-note",
+      "statusCode": 301
+    },
+    {
+      "source": "/2017/08/21/note/git-learn/",
+      "destination": "/posts/git-learn-note",
+      "statusCode": 301
+    },
+    {
+      "source": "/2017/08/21/note/laravel-use-note",
+      "destination": "/posts/laravel-use-note",
+      "statusCode": 301
+    },
+    {
+      "source": "/2017/08/21/note/laravel-use-note/",
+      "destination": "/posts/laravel-use-note",
+      "statusCode": 301
+    },
+    {
+      "source": "/2017/08/25/creation/draw/draw-a-fool-goddess",
+      "destination": "/posts/draw-a-fool-goddess",
+      "statusCode": 301
+    },
+    {
+      "source": "/2017/08/25/creation/draw/draw-a-fool-goddess/",
+      "destination": "/posts/draw-a-fool-goddess",
+      "statusCode": 301
+    },
+    {
+      "source": "/2017/09/05/share/the-moonlight-is-beautiful",
+      "destination": "/posts/the-moonlight-is-beautiful",
+      "statusCode": 301
+    },
+    {
+      "source": "/2017/09/05/share/the-moonlight-is-beautiful/",
+      "destination": "/posts/the-moonlight-is-beautiful",
+      "statusCode": 301
+    },
+    {
+      "source": "/2017/09/23/diary/as-summer-flowers",
+      "destination": "/posts/as-summer-flowers",
+      "statusCode": 301
+    },
+    {
+      "source": "/2017/09/23/diary/as-summer-flowers/",
+      "destination": "/posts/as-summer-flowers",
+      "statusCode": 301
+    },
+    {
+      "source": "/2017/10/06/share/npm-common-use",
+      "destination": "/posts/npm-and-yarn",
+      "statusCode": 301
+    },
+    {
+      "source": "/2017/10/06/share/npm-common-use/",
+      "destination": "/posts/npm-and-yarn",
+      "statusCode": 301
+    },
+    {
+      "source": "/2017/10/11/share/coding-webide-dev-env",
+      "destination": "/posts/coding-webide-dev-env",
+      "statusCode": 301
+    },
+    {
+      "source": "/2017/10/11/share/coding-webide-dev-env/",
+      "destination": "/posts/coding-webide-dev-env",
+      "statusCode": 301
+    },
+    {
+      "source": "/2017/10/13/note/hexo-build-note",
+      "destination": "/posts/hexo-build-note",
+      "statusCode": 301
+    },
+    {
+      "source": "/2017/10/13/note/hexo-build-note/",
+      "destination": "/posts/hexo-build-note",
+      "statusCode": 301
+    },
+    {
+      "source": "/2017/10/15/share/discourse-forum",
+      "destination": "/posts/discourse-forum",
+      "statusCode": 301
+    },
+    {
+      "source": "/2017/10/15/share/discourse-forum/",
+      "destination": "/posts/discourse-forum",
+      "statusCode": 301
+    },
+    {
+      "source": "/2017/11/11/diary/that-is-what-life-should-be",
+      "destination": "/posts/that-is-what-life-should-be",
+      "statusCode": 301
+    },
+    {
+      "source": "/2017/11/11/diary/that-is-what-life-should-be/",
+      "destination": "/posts/that-is-what-life-should-be",
+      "statusCode": 301
+    },
+    {
+      "source": "/2017/12/11/essay/life-and-work",
+      "destination": "/posts/life-and-work",
+      "statusCode": 301
+    },
+    {
+      "source": "/2017/12/11/essay/life-and-work/",
+      "destination": "/posts/life-and-work",
+      "statusCode": 301
+    }
+  ]
+}

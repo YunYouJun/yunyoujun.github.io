@@ -23,7 +23,7 @@ katex: true
 
 ## Why char-dust?
 
-[![npm](https://img.shields.io/npm/v/char-dust)](http://npmjs.com/package/char-dust)
+[![npm](https://img.shields.io/npm/v/char-dust)](https://www.npmjs.com/package/char-dust)
 
 有一部电影叫做[「星尘 Stardust」](https://movie.douban.com/subject/1867335/)，名字挺酷。
 
