@@ -113,7 +113,7 @@ git clone https://github.com/YunYouJun/hexo-theme-yun themes/yun
 tccli auth login
 ```
 
-EdgeOne 的 `middleware.js` 将 `/404` 和 `/404.html` 返回 HTTP 404，也处理 `edgeone.json` 无法匹配的带撇号 Hexo 旧地址。构建仍保留 `404.html`，供其他静态托管平台使用。
+构建会把 Valaxy 生成的 `dist/404.html` 打包进 EdgeOne 中间件，让直接访问 `/404`、`/404.html` 及其尾斜杠版本时，返回同一份博客 404 页面和 HTTP 404。普通缺失路径仍由 EdgeOne 回退到 `dist/404.html`；该文件也保留给其他静态托管平台。中间件还处理 `edgeone.json` 无法匹配的带撇号 Hexo 旧地址。
 
 #### EdgeOne 刷新缓存
 

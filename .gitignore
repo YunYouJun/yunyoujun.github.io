@@ -38,6 +38,9 @@ public/atom.xml
 # valaxy rss
 public/feed.json
 
+# EdgeOne middleware build input
+/.edgeone-not-found.mjs
+
 # Local agent artifacts
 docs/superpowers/
 .worktrees/

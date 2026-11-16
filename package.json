@@ -38,7 +38,7 @@
     "build:normal": "cross-env VITE_BEIAN_MODE=false pnpm build:site",
     "build:site": "pnpm sync:friends && pnpm build:ssg",
     "build:spa": "valaxy build",
-    "build:ssg": "valaxy build --ssg --log=info && cp public/robots.txt dist/robots.txt",
+    "build:ssg": "valaxy build --ssg --log=info && cp public/robots.txt dist/robots.txt && node scripts/build-edgeone-404.mjs",
     "check:friends": "tsx scripts/check-friends.ts",
     "clean": "rm -rf dist",
     "dev": "valaxy",
