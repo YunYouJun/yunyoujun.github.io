@@ -136,13 +136,9 @@ tccli cdn PurgePathCache --Paths '["https://www.yunyoujun.cn/links/"]' --FlushTy
 tccli cdn PurgeUrlsCache --Urls '["https://www.yunyoujun.cn/links/index.html"]'
 ```
 
-### 又拍云
+### 图床
 
-<a href="https://console.upyun.com/register/?invite=SyeQw09Bz" title="又拍云" target="_blank">
-  <img src="https://cdn.yunyoujun.cn/img/logo/upyun-logo.png" width="100" alt="upyun">
-</a>
-
-图床：又拍云云存储 + PicGo = <https://upyun.yunyoujun.cn>
+图片托管于 <https://cos.yunle.fun>。
 
 ## Commit Lint
 

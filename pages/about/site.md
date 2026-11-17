@@ -133,7 +133,7 @@ emm，目前似乎是的。但如果你是可爱 JK 美少女，欢迎随时报�
 
 [SM.MS](https://sm.ms) 国内节点似乎挂了，免费图床终究有点不放心。
 
-尝试了又拍云云存储 + [PicGo](https://github.com/Molunerfinn/PicGo) 的解决方案，打算重要的图片放到[这边](https://upyun.yunyoujun.cn)来。
+尝试了又拍云云存储 + [PicGo](https://github.com/Molunerfinn/PicGo) 的解决方案，打算重要的图片放到这边（现已停用）来。
 
 ### 2021-01-30
 
