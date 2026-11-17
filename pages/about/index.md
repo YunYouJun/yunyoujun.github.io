@@ -167,10 +167,6 @@ iconify: true
 
 谢谢你们！
 
-感谢[又拍云](https://www.upyun.com/)为本网站提供的 CDN 支持。
-
-[![又拍云 CDN](https://cos.yunle.fun/images/upyun-cdn-adsense.jpg)](https://www.upyun.com/league)
-
 - [赞助名单](https://www.yunyoujun.cn/sponsors/)
 
 喂，看到下面发光的按钮了吗！

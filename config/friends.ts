@@ -16,7 +16,7 @@ export const friendOverrides: Record<string, Partial<FriendLink>> = {
 
 const hiddenFriends = [
   {
-    avatar: 'https://upyun.yunyoujun.cn/images/angelic47-avatar.jpg',
+    avatar: 'https://cos.yunle.fun/images/angelic47-avatar.jpg',
     name: 'Angelic47',
     url: 'https://www.angelic47.com/',
     color: '#4fbff9',
@@ -36,7 +36,7 @@ const hiddenFriends = [
     reason: '域名已无法解析',
   },
   {
-    avatar: 'https://upyun.yunyoujun.cn/images/hydropower-avatar.jpg',
+    avatar: 'https://cos.yunle.fun/images/hydropower-avatar.jpg',
     name: 'Andy Chen',
     url: 'https://hydropwr.ca/',
     color: '#00A9EF',

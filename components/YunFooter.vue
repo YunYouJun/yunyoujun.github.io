@@ -6,7 +6,6 @@ const isBeianMode = import.meta.env.VITE_BEIAN_MODE === 'true'
 
 <template>
   <YunFooter>
-    <!-- <CdnLogo /> -->
     <a v-if="!isBeianMode" href="/about/advertise">
       推广合作
     </a>
