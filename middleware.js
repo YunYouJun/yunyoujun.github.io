@@ -20,7 +20,9 @@ const legacyNovelPrefix = '/2017/07/10/creation/novel'
 export const config = {
   matcher: [
     '/404',
+    '/404/',
     '/404.html',
+    '/404.html/',
     // Match the full path before EdgeOne decodes or normalizes the apostrophe.
     '^/2017/07/10/creation/novel/aqua[^/]+s-planet/?$',
   ],
@@ -35,7 +37,7 @@ export function middleware({ request, next }) {
     return new Response(null, { status: 301, headers: { Location: target.href } })
   }
 
-  if (!directNotFoundPaths.includes(url.pathname))
+  if (!directNotFoundPaths.includes(path))
     return next()
 
   return new Response(request.method === 'HEAD' ? null : notFoundPage, {

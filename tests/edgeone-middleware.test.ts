@@ -10,17 +10,26 @@ function next() {
 }
 
 test('returns a real 404 for direct requests to the fallback document', async () => {
-  for (const path of ['/404', '/404.html']) {
-    const response = middleware({ request: new Request(`${origin}${path}?from=old-link`), next })
+  const bodies = new Set<string>()
+  for (const path of ['/404', '/404/', '/404.html', '/404.html/']) {
+    assert.ok(config.matcher.includes(path), `EdgeOne middleware must match ${path}`)
+    const url = `${origin}${path}?from=old-link`
+    const response = middleware({ request: new Request(url), next })
     assert.equal(response.status, 404)
     assert.equal(response.headers.get('content-type'), 'text/html; charset=utf-8')
-    assert.match(await response.text(), /未曾触及的未来/)
-    assert.equal(middleware({ request: new Request(`${origin}${path}`, { method: 'HEAD' }), next }).body, null)
+    const body = await response.text()
+    assert.match(body, /未曾触及的未来/)
+    bodies.add(body)
+
+    const head = middleware({ request: new Request(url, { method: 'HEAD' }), next })
+    assert.equal(head.status, 404)
+    assert.equal(head.body, null)
   }
+  assert.equal(bodies.size, 1)
 })
 
 test('leaves normal pages, redirects, and other missing paths to EdgeOne', async () => {
-  for (const path of ['/', '/rss', '/404/', '/posts/404-notes', '/2017/07/10/creation/novel/other', '/2017/07/10/creation/novel/aquaxs-planet']) {
+  for (const path of ['/', '/rss', '/404/other', '/posts/404-notes', '/2017/07/10/creation/novel/other', '/2017/07/10/creation/novel/aquaxs-planet']) {
     const response = middleware({ request: new Request(`${origin}${path}`), next })
     assert.equal(await response.text(), 'original response')
   }
