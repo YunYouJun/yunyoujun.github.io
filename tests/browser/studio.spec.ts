@@ -117,6 +117,10 @@ test('collection index and legacy URL lead to the single-collection directory', 
 test('mobile collection drawer supports keyboard control without shifting its trigger', async ({ page }) => {
   await page.setViewportSize({ width: 390, height: 844 })
   await page.goto('/collections/xiaoyun/', { waitUntil: 'domcontentloaded' })
+  await page.waitForFunction(() => {
+    const app = document.querySelector('#app')
+    return app && '__vue_app__' in app
+  })
   const directory = page.getByRole('complementary', { name: '合集目录', exact: true })
   const toggle = page.getByRole('button', { name: '合集目录', exact: true })
   await expect(toggle).toBeVisible()
