@@ -23,12 +23,14 @@ export const config = {
     '/404/',
     '/404.html',
     '/404.html/',
-    // Match the full path before EdgeOne decodes or normalizes the apostrophe.
-    '^/2017/07/10/creation/novel/aqua[^/]+s-planet/?$',
+    // Check the legacy slug in the handler so both literal and encoded apostrophes work.
+    '/2017/07/10/creation/novel/:path*',
   ],
 }
 
-export function middleware({ request, next }) {
+export function middleware(context) {
+  // EdgeOne supplies a context object. Vercel passes a Request directly.
+  const request = context.request ?? context
   const url = new URL(request.url)
   // The EdgeOne JSON redirect matcher misses this old slug's apostrophe.
   const path = url.pathname.replace(/%27/g, '\'').replace(/\/$/, '')
@@ -37,11 +39,16 @@ export function middleware({ request, next }) {
     return new Response(null, { status: 301, headers: { Location: target.href } })
   }
 
-  if (!directNotFoundPaths.includes(path))
-    return next()
+  if (!directNotFoundPaths.includes(path)) {
+    return context.next
+      ? context.next()
+      : new Response(null, { headers: { 'x-middleware-next': '1' } })
+  }
 
   return new Response(request.method === 'HEAD' ? null : notFoundPage, {
     status: 404,
     headers: { 'Content-Type': 'text/html; charset=utf-8' },
   })
 }
+
+export default middleware

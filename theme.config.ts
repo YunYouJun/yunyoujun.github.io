@@ -14,6 +14,7 @@ export default defineThemeConfig({
     title: '云游君的小站',
     grid: { enable: true, fade: true, interactive: true },
     prologue: 'grouped',
+    navStyle: 'glass',
     cloud: {
       enable: true,
     },
@@ -21,8 +22,8 @@ export default defineThemeConfig({
 
   nav: [
     { text: 'menu.posts', link: '/posts/', icon: 'i-ri-article-line' },
-    { text: '项目列表', link: '/projects', icon: 'i-ri-gallery-view' },
     { text: '小云梦工坊', link: '/collections/xiaoyun/', icon: 'i-ri-film-line' },
+    { text: '项目橱窗', link: '/projects/', icon: 'i-ri-code-s-slash-line' },
     { text: '站点地图', link: '/sites/', icon: 'i-ri-planet-line' },
     { text: '友情链接', link: '/links/', icon: 'i-ri-link' },
     { text: '老婆列表', link: '/girls/', icon: 'i-ri-women-line' },
@@ -36,38 +37,38 @@ export default defineThemeConfig({
       name: '小云梦工坊',
       url: '/collections/xiaoyun/',
       icon: 'i-ri-film-line',
-      color: '#38a1db',
+      iconColor: 'var(--yun-nav-accent-studio)',
     },
     {
       name: '项目橱窗',
       url: '/projects/',
       icon: 'i-ri-code-s-slash-line',
-      // color: 'var',
+      iconColor: 'var(--yun-nav-accent-projects)',
     },
     {
       name: '站点地图',
       url: '/sites/',
       icon: 'i-ri-planet-line',
-      color: '#2563eb',
+      iconColor: 'var(--yun-nav-accent-sites)',
     },
     {
       name: '友情链接',
       url: '/links/',
-      icon: 'i-ri-genderless-line',
-      color: 'dodgerblue',
+      icon: 'i-ri-link',
+      iconColor: 'var(--yun-nav-accent-links)',
     },
     {
       name: '老婆列表',
       url: '/girls/',
       icon: 'i-ri-women-line',
-      color: 'hotpink',
+      iconColor: 'var(--yun-nav-accent-girls)',
     },
     ...(!isBeianMode
       ? [{
           name: '赞助者们',
           url: '/sponsors/',
           icon: 'i-ri-heart-line',
-          color: 'red',
+          iconColor: 'var(--yun-nav-accent-sponsors)',
         }]
       : []),
   ],

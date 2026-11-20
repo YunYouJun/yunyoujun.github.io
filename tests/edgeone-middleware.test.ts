@@ -1,7 +1,7 @@
 import assert from 'node:assert/strict'
 // eslint-disable-next-line test/no-import-node-test
 import { test } from 'node:test'
-import { config, middleware } from '../middleware.js'
+import vercelMiddleware, { config, middleware } from '../middleware.js'
 
 const origin = 'https://www.yunyoujun.cn'
 
@@ -36,14 +36,24 @@ test('leaves normal pages, redirects, and other missing paths to EdgeOne', async
 })
 
 test('redirects the historical novel URL with either apostrophe spelling', () => {
-  const matcher = new RegExp(config.matcher.find(pattern => pattern.includes('/creation/novel/'))!)
+  assert.ok(config.matcher.includes('/2017/07/10/creation/novel/:path*'))
   for (const slug of ['aqua\'s-planet', 'aqua%27s-planet']) {
     for (const slash of ['', '/']) {
       const request = new Request(`${origin}/2017/07/10/creation/novel/${slug}${slash}?from=old`)
-      assert.match(new URL(request.url).pathname, matcher)
-      const response = middleware({ request, next })
-      assert.equal(response.status, 301)
-      assert.equal(response.headers.get('location'), `${origin}/posts/planet-of-aqua?from=old`)
+      for (const response of [middleware({ request, next }), vercelMiddleware(request)]) {
+        assert.equal(response.status, 301)
+        assert.equal(response.headers.get('location'), `${origin}/posts/planet-of-aqua?from=old`)
+      }
     }
   }
+})
+
+test('Vercel accepts the matchers and handles direct requests', () => {
+  assert.ok(config.matcher.every(pattern => pattern.startsWith('/')))
+  const missing = vercelMiddleware(new Request(`${origin}/404.html/`, { method: 'HEAD' }))
+  assert.equal(missing.status, 404)
+  assert.equal(missing.body, null)
+
+  const otherNovel = vercelMiddleware(new Request(`${origin}/2017/07/10/creation/novel/other`))
+  assert.equal(otherNovel.headers.get('x-middleware-next'), '1')
 })
