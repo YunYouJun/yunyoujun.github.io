@@ -427,7 +427,7 @@ git push -u origin main
 
 ##### 开启自动部署
 
-> 下面这份工作流适用于 `create-valaxy` 1.2.3 及之后生成的项目。之前生成的项目可以直接把下面这份工作流复制过去，覆盖原来的 `.github/workflows/gh-pages.yml`。
+> GitHub Pages 的发布流程从 `create-valaxy` 1.3.0 起随脚手架提供。较早创建的项目也可以用下方配置替换原来的 `.github/workflows/gh-pages.yml`，并在 `package.json` 的 `packageManager` 字段中填写项目使用的 pnpm 版本，例如 `pnpm@12.5.1`。
 
 脚手架已经帮你生成了 `.github/workflows/gh-pages.yml`，也就是 GitHub Actions 的工作流。它不再往 `gh-pages` 分支推静态文件，而是用 GitHub 官方的 Pages Actions，把构建好的 `dist/` 直接发布出去。大致是这样：
 
@@ -437,7 +437,7 @@ git push -u origin main
 
 工作流里的 `fetch-depth: 0` 是故意的：Valaxy 可以用 Git 提交时间当作文章日期，浅克隆拿不到完整历史，日期会不准，所以需要把历史都拉下来。
 
-完整内容是这样的（来自即将随 `create-valaxy` 1.2.3 发布的脚手架）：
+下面是 `create-valaxy` 1.3.0 的完整工作流。
 
 ```yaml
 name: GitHub Pages
@@ -474,15 +474,13 @@ jobs:
           # 文章的 Git 日期需要完整提交历史。
           fetch-depth: 0
 
+      # Read the exact pnpm version from package.json's packageManager field.
       - uses: pnpm/action-setup@v6
-        with:
-          # Template requires pnpm >=10.26 (allowBuilds). No packageManager pin.
-          version: '>=10.26.0'
 
-      - name: Use Node.js from package.json engines
+      - name: Use Node.js LTS
         uses: actions/setup-node@v7
         with:
-          node-version-file: package.json
+          node-version: lts/*
 
       - name: Setup Pages
         uses: actions/configure-pages@v6
@@ -498,6 +496,7 @@ jobs:
         uses: actions/upload-pages-artifact@v5
         with:
           path: dist
+          include-hidden-files: true
 
   deploy:
     needs: build
