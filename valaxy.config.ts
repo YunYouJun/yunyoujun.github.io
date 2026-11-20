@@ -52,6 +52,9 @@ export default defineValaxyConfig<UserThemeConfig> ({
   addons: [
     addonComponents(),
     addonGirls(),
+    // Protocol-relative //unpkg.com becomes http on the preview server.
+    // That host redirects to https without CORS headers, so emoji fetches
+    // fail in browser tests. Production is already https.
     addonWaline({
       serverURL: 'https://waline.yunyoujun.cn',
       cdn: 'https://unpkg.com/',
