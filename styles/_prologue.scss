@@ -1,0 +1,312 @@
+// Scoped homepage hero refinement for social links and frosted-glass navigation pills.
+.yun-square-container {
+  .prologue-social {
+    max-width: 34rem;
+    margin-inline: auto;
+    gap: 0.125rem;
+
+    .links-of-author-item {
+      width: 2.35rem;
+      height: 2.35rem;
+      transition:
+        background-color var(--va-transition-duration) ease,
+        box-shadow var(--va-transition-duration) ease;
+
+      .icon {
+        width: 1.2rem;
+        height: 1.2rem;
+        color: var(--va-c-text-2);
+        color: color-mix(in srgb, currentColor var(--yun-social-soft-mix), var(--yun-social-soft-base));
+        opacity: 0.88;
+        transition:
+          color var(--va-transition-duration) ease,
+          opacity var(--va-transition-duration) ease,
+          transform var(--va-transition-duration) ease;
+      }
+
+      &:focus-visible {
+        background-color: color-mix(in srgb, currentColor 13%, transparent);
+        box-shadow: 0 0 12px color-mix(in srgb, currentColor 22%, transparent);
+
+        .icon {
+          color: inherit;
+          opacity: 1;
+          transform: translateY(-1px) scale(1.1);
+        }
+      }
+    }
+  }
+
+  .prologue-navigation .yun-site-link-item[href='/posts/'] {
+    --yun-nav-item-accent: var(--yun-nav-accent-posts);
+
+    .icon {
+      color: var(--yun-nav-accent-posts);
+    }
+  }
+}
+
+@media (hover: hover) and (pointer: fine) {
+  .yun-square-container .prologue-social .links-of-author-item:hover {
+    background-color: color-mix(in srgb, currentColor 13%, transparent);
+    box-shadow: 0 0 12px color-mix(in srgb, currentColor 22%, transparent);
+
+    .icon {
+      color: inherit;
+      opacity: 1;
+      transform: translateY(-1px) scale(1.1);
+    }
+  }
+
+  html.dark .yun-square-container .prologue-social .links-of-author-item:hover .icon {
+    filter: brightness(1.22);
+  }
+}
+
+html.dark .yun-square-container .prologue-social .links-of-author-item:focus-visible .icon {
+  filter: brightness(1.22);
+}
+
+@media (pointer: coarse) {
+  .yun-square-container .prologue-social .links-of-author-item {
+    width: 2.75rem;
+    height: 2.75rem;
+  }
+}
+
+@media (width > 639px) {
+  .yun-square-container .prologue-navigation:not(.is-compact) {
+    width: min(100%, 37.5rem);
+    max-width: 37.5rem;
+    gap: 0.625rem;
+
+    .yun-site-link-item {
+      position: relative;
+      padding: 0.45rem 0.95rem;
+      gap: 0.45rem;
+      border: 1px solid var(--yun-hero-pill-border);
+      border-radius: 999px;
+      background-color: color-mix(in srgb, var(--va-c-bg) 88%, transparent);
+      background-image: linear-gradient(180deg, var(--yun-hero-pill-sheen) 0%, transparent 56%);
+      box-shadow: var(--yun-hero-pill-shadow);
+      color: var(--va-c-text);
+      font-size: 0.9375rem;
+      font-weight: 500;
+      line-height: 1.4;
+      transition:
+        background-color 180ms ease,
+        border-color 180ms ease,
+        box-shadow 220ms ease,
+        transform 220ms cubic-bezier(0.2, 0.8, 0.2, 1);
+
+      @supports ((backdrop-filter: blur(14px)) or (-webkit-backdrop-filter: blur(14px))) {
+        background-color: var(--yun-hero-pill-bg);
+        -webkit-backdrop-filter: blur(14px) saturate(165%);
+        backdrop-filter: blur(14px) saturate(165%);
+      }
+
+      .icon {
+        width: 1.125rem;
+        height: 1.125rem;
+        color: var(--yun-nav-item-accent, var(--yun-site-link-accent));
+        transition: transform 220ms cubic-bezier(0.2, 0.8, 0.2, 1);
+      }
+
+      &:active {
+        background-color: var(--yun-hero-pill-active-bg);
+        box-shadow: var(--yun-hero-pill-active-shadow);
+        transform: scale(0.98);
+      }
+
+      &:focus-visible {
+        outline: 2px solid var(--yun-focus-color);
+        outline-offset: 2px;
+      }
+    }
+
+    @supports ((mask-composite: exclude) or (-webkit-mask-composite: xor)) {
+      .yun-site-link-item::before {
+        content: '';
+        position: absolute;
+        inset: -1px;
+        padding: 1px;
+        border-radius: inherit;
+        background: linear-gradient(
+          145deg,
+          var(--yun-hero-pill-edge),
+          transparent 36%,
+          transparent 64%,
+          var(--yun-hero-pill-edge-soft)
+        );
+        -webkit-mask: linear-gradient(#000 0 0) content-box, linear-gradient(#000 0 0);
+        mask: linear-gradient(#000 0 0) content-box, linear-gradient(#000 0 0);
+        -webkit-mask-composite: xor;
+        mask-composite: exclude;
+        pointer-events: none;
+      }
+    }
+
+    @media (hover: hover) and (pointer: fine) {
+      .yun-site-link-item:hover:not(:active) {
+        background-color: color-mix(
+          in srgb,
+          var(--yun-nav-item-accent, var(--yun-site-link-accent)) var(--yun-hero-pill-hover-tint),
+          var(--yun-hero-pill-hover-bg)
+        );
+        border-color: color-mix(
+          in srgb,
+          var(--yun-nav-item-accent, var(--yun-site-link-accent)) var(--yun-hero-pill-hover-border-tint),
+          var(--yun-hero-pill-border)
+        );
+        box-shadow: var(--yun-hero-pill-hover-shadow);
+        transform: translateY(-1px);
+
+        .icon {
+          transform: scale(1.08);
+        }
+      }
+    }
+  }
+
+  @media (prefers-reduced-transparency: reduce), (prefers-contrast: more) {
+    .yun-square-container .prologue-navigation:not(.is-compact) .yun-site-link-item {
+      border-color: color-mix(in srgb, var(--va-c-text) 45%, transparent);
+      background-color: var(--va-c-bg);
+      background-image: none;
+      box-shadow: none;
+      -webkit-backdrop-filter: none;
+      backdrop-filter: none;
+
+      &::before {
+        display: none;
+      }
+    }
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .yun-square-container {
+    .prologue-social .links-of-author-item,
+    .prologue-social .links-of-author-item .icon,
+    .prologue-navigation .yun-site-link-item,
+    .prologue-navigation .yun-site-link-item .icon {
+      transition: none;
+    }
+
+    .prologue-social .links-of-author-item:hover .icon,
+    .prologue-social .links-of-author-item:focus-visible .icon,
+    .prologue-navigation .yun-site-link-item:hover,
+    .prologue-navigation .yun-site-link-item:active,
+    .prologue-navigation .yun-site-link-item:hover .icon {
+      transform: none;
+    }
+  }
+}
+
+#yun-banner .go-down {
+  width: 2.5rem;
+  height: 2.5rem;
+  bottom: 1.25rem;
+  padding: 0;
+  border: 1px solid var(--yun-hero-pill-border);
+  border-radius: 999px;
+  background-color: color-mix(in srgb, var(--va-c-bg) 88%, transparent);
+  background-image: linear-gradient(180deg, var(--yun-hero-pill-sheen) 0%, transparent 58%);
+  box-shadow: var(--yun-hero-pill-shadow);
+  color: var(--va-c-text-2);
+  transition:
+    background-color 180ms ease,
+    border-color 180ms ease,
+    box-shadow 220ms ease,
+    color 180ms ease;
+
+  @supports ((backdrop-filter: blur(12px)) or (-webkit-backdrop-filter: blur(12px))) {
+    background-color: var(--yun-hero-pill-bg);
+    -webkit-backdrop-filter: blur(12px) saturate(150%);
+    backdrop-filter: blur(12px) saturate(150%);
+  }
+
+  > div {
+    display: none;
+  }
+
+  &::after {
+    content: '';
+    width: 8px;
+    height: 8px;
+    border-right: 1.75px solid currentColor;
+    border-bottom: 1.75px solid currentColor;
+    transform: translateY(-2px) rotate(45deg);
+    pointer-events: none;
+  }
+
+  &:focus-visible {
+    outline: 2px solid var(--yun-focus-color);
+    outline-offset: 2px;
+    border-color: color-mix(in srgb, var(--va-c-link) 36%, var(--yun-hero-pill-border));
+    background-color: var(--yun-hero-pill-hover-bg);
+    box-shadow: var(--yun-hero-pill-hover-shadow);
+    color: var(--va-c-link);
+  }
+}
+
+@supports ((mask-composite: exclude) or (-webkit-mask-composite: xor)) {
+  #yun-banner .go-down::before {
+    content: '';
+    position: absolute;
+    inset: -1px;
+    padding: 1px;
+    border-radius: inherit;
+    background: linear-gradient(
+      145deg,
+      var(--yun-hero-pill-edge),
+      transparent 36%,
+      transparent 64%,
+      var(--yun-hero-pill-edge-soft)
+    );
+    -webkit-mask: linear-gradient(#000 0 0) content-box, linear-gradient(#000 0 0);
+    mask: linear-gradient(#000 0 0) content-box, linear-gradient(#000 0 0);
+    -webkit-mask-composite: xor;
+    mask-composite: exclude;
+    pointer-events: none;
+  }
+}
+
+@media (hover: hover) and (pointer: fine) {
+  #yun-banner .go-down:hover {
+    border-color: color-mix(in srgb, var(--va-c-link) 36%, var(--yun-hero-pill-border));
+    background-color: var(--yun-hero-pill-hover-bg);
+    box-shadow: var(--yun-hero-pill-hover-shadow);
+    color: var(--va-c-link);
+  }
+}
+
+@media (width <= 768px) {
+  #yun-banner .go-down {
+    width: 2.25rem;
+    height: 2.25rem;
+    bottom: 0.5rem;
+  }
+}
+
+@media (prefers-reduced-transparency: reduce), (prefers-contrast: more) {
+  #yun-banner .go-down {
+    border-color: color-mix(in srgb, var(--va-c-text) 45%, transparent);
+    background-color: var(--va-c-bg);
+    background-image: none;
+    box-shadow: none;
+    -webkit-backdrop-filter: none;
+    backdrop-filter: none;
+
+    &::before {
+      display: none;
+    }
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  #yun-banner .go-down {
+    animation: none;
+    transition: none;
+  }
+}

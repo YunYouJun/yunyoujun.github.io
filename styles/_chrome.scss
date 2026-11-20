@@ -1,0 +1,245 @@
+// Aligned site chrome, card feed, taxonomy pills, pagination, and back-to-top glass surfaces.
+
+.yun-nav-menu {
+  padding-inline: 0.35rem;
+}
+
+html .yun-nav-menu a.va-link {
+  width: 2.35rem;
+  height: 2.35rem;
+  margin-inline: 0.125rem;
+  border-radius: 0.625rem;
+  transition:
+    background-color 180ms ease,
+    opacity 180ms ease,
+    color 180ms ease;
+
+  > div {
+    width: 1.25rem;
+    height: 1.25rem;
+  }
+
+  &[aria-current='page'] {
+    color: var(--va-c-link);
+    opacity: 1;
+  }
+}
+
+@media (pointer: coarse) {
+  html .yun-nav-menu a.va-link {
+    width: 2.75rem;
+    height: 2.75rem;
+  }
+}
+
+@media (hover: hover) and (pointer: fine) {
+  html .yun-nav-menu a.va-link:hover,
+  html .yun-nav-menu .yun-icon-btn:hover {
+    background-color: color-mix(in srgb, var(--va-c-text) 7%, transparent);
+    opacity: 1;
+  }
+}
+
+.yun-post-list {
+  .yun-card.post-card-wrapper,
+  .yun-card.collection-card {
+    border: 1px solid var(--yun-surface-line);
+    transition:
+      transform 220ms cubic-bezier(0.2, 0.8, 0.2, 1),
+      border-color 220ms ease,
+      box-shadow 220ms ease;
+  }
+
+  .yun-card.collection-card {
+    border-left: 3px solid color-mix(in srgb, var(--yun-nav-accent-studio) 78%, transparent);
+
+    .collection-card-badge {
+      color: var(--yun-nav-accent-studio);
+      opacity: 0.92;
+    }
+
+    .collection-card-title-text {
+      background: none;
+      -webkit-text-fill-color: currentColor;
+      color: var(--yun-post-title-color);
+      font-weight: var(--yun-post-title-font-weight, 650);
+      transition: color 180ms ease;
+    }
+
+    .collection-card-count {
+      color: var(--va-c-text-2);
+      opacity: 0.9;
+    }
+
+    .collection-card-desc {
+      color: var(--yun-post-excerpt-color, var(--va-c-text-light));
+      opacity: 1;
+    }
+
+    .collection-card-item {
+      color: var(--va-c-text-2);
+      opacity: 0.88;
+    }
+
+    .collection-card-item-dot {
+      background: var(--yun-nav-accent-studio);
+      opacity: 0.75;
+    }
+  }
+}
+
+@media (hover: hover) and (pointer: fine) {
+  .yun-post-list {
+    .yun-card.post-card-wrapper:hover,
+    .yun-card.collection-card:hover {
+      scale: 1;
+      transform: translateY(-2px);
+      border-color: color-mix(in srgb, var(--va-c-link) 28%, var(--yun-surface-line));
+      box-shadow: var(--yun-card-hover-shadow);
+    }
+
+    .yun-card.collection-card:hover {
+      border-left-color: var(--yun-nav-accent-studio);
+
+      .collection-card-title-text {
+        color: var(--yun-post-title-hover-color);
+      }
+
+      .collection-card-item {
+        opacity: 1;
+      }
+    }
+  }
+}
+
+.yun-card-actions {
+  :is(.post-category, .post-tag, .post-collection-badge) {
+    color: var(--va-c-text-2);
+    border-color: var(--yun-surface-line);
+    background-color: color-mix(in srgb, var(--va-c-text) 2.5%, transparent);
+    transition:
+      color 180ms ease,
+      border-color 180ms ease,
+      background-color 180ms ease;
+  }
+
+  :is(.post-category, .post-tag):is(:hover, :focus-visible) {
+    color: var(--va-c-link);
+    border-color: color-mix(in srgb, var(--va-c-link) 42%, transparent);
+    background-color: color-mix(in srgb, var(--va-c-link) 10%, transparent);
+  }
+
+  .post-collection-badge:is(:hover, :focus-visible) {
+    color: var(--yun-nav-accent-sites);
+    border-color: color-mix(in srgb, var(--yun-nav-accent-sites) 42%, transparent);
+    background-color: color-mix(in srgb, var(--yun-nav-accent-sites) 10%, transparent);
+  }
+}
+
+html nav.pagination {
+  gap: 0.25rem;
+  padding: 0.25rem;
+  border-radius: 999px;
+  border: 1px solid var(--yun-hero-pill-border);
+  background-color: color-mix(in srgb, var(--va-c-bg) 88%, transparent);
+  background-image: linear-gradient(180deg, var(--yun-hero-pill-sheen) 0%, transparent 56%);
+  box-shadow: var(--yun-hero-pill-shadow);
+
+  @supports ((backdrop-filter: blur(14px)) or (-webkit-backdrop-filter: blur(14px))) {
+    background-color: var(--yun-hero-pill-bg);
+    -webkit-backdrop-filter: blur(14px) saturate(165%);
+    backdrop-filter: blur(14px) saturate(165%);
+  }
+
+  .prev,
+  .next,
+  .page-number,
+  .space {
+    min-width: 2.125rem;
+    width: auto;
+    height: 2.125rem;
+    padding-inline: 0.5rem;
+    border-radius: 999px;
+    background-color: transparent;
+    font-size: 0.875rem;
+    font-weight: 500;
+    transition:
+      background-color 180ms ease,
+      color 180ms ease;
+  }
+
+  .page-number:hover:not(.active),
+  .prev:hover,
+  .next:hover {
+    background-color: color-mix(in srgb, var(--va-c-link) 12%, transparent);
+    color: var(--va-c-link);
+  }
+
+  .page-number.active {
+    background: var(--va-c-primary);
+    color: #fff;
+    box-shadow: 0 2px 8px rgb(var(--va-c-primary-rgb), 0.28);
+  }
+
+  .space[disabled] {
+    background-color: transparent;
+    color: var(--va-c-text-3);
+  }
+}
+
+html .back-to-top.yun-icon-btn {
+  color: var(--va-c-link);
+
+  &::before {
+    border-color: var(--yun-hero-pill-border);
+    background-color: color-mix(in srgb, var(--va-c-bg) 88%, transparent);
+    background-image: linear-gradient(180deg, var(--yun-hero-pill-sheen) 0%, transparent 58%);
+    box-shadow: var(--yun-hero-pill-shadow);
+
+    @supports ((backdrop-filter: blur(14px)) or (-webkit-backdrop-filter: blur(14px))) {
+      background-color: var(--yun-hero-pill-bg);
+      -webkit-backdrop-filter: blur(14px) saturate(165%);
+      backdrop-filter: blur(14px) saturate(165%);
+    }
+  }
+
+  &.show:active::before {
+    background-color: var(--yun-hero-pill-active-bg);
+    box-shadow: var(--yun-hero-pill-active-shadow);
+  }
+}
+
+@media (hover: hover) and (pointer: fine) {
+  html .back-to-top.yun-icon-btn.show:hover::before {
+    border-color: color-mix(in srgb, var(--va-c-link) 36%, var(--yun-hero-pill-border));
+    background-color: var(--yun-hero-pill-hover-bg);
+    box-shadow: var(--yun-hero-pill-hover-shadow);
+  }
+}
+
+@media (prefers-reduced-transparency: reduce), (prefers-contrast: more) {
+  html nav.pagination,
+  html .back-to-top.yun-icon-btn::before {
+    border-color: color-mix(in srgb, var(--va-c-text) 45%, transparent);
+    background-color: var(--va-c-bg);
+    background-image: none;
+    box-shadow: none;
+    -webkit-backdrop-filter: none;
+    backdrop-filter: none;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html .yun-nav-menu a.va-link,
+  .yun-post-list .yun-card.post-card-wrapper,
+  .yun-post-list .yun-card.collection-card,
+  .yun-post-list .yun-card.collection-card .collection-card-title-text,
+  .yun-card-actions :is(.post-category, .post-tag, .post-collection-badge),
+  html nav.pagination :is(.prev, .next, .page-number) {
+    transition: none;
+  }
+
+  .yun-post-list :is(.yun-card.post-card-wrapper, .yun-card.collection-card):hover {
+    transform: none;
+  }
+}
