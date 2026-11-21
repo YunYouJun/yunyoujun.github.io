@@ -33,7 +33,7 @@ watch(() => props.episode.id, () => {
       />
       <button v-else class="studio-video-start" type="button" :aria-label="`加载视频：${episode.title}`" @click="playing = true">
         <img v-if="!coverFailed" ref="coverImage" :src="episode.cover" alt="" width="960" height="540" loading="lazy" referrerpolicy="no-referrer" @error="coverFailed = true">
-        <span v-else class="studio-video-fallback">小云梦工坊 / {{ episode.number }}<br>{{ episode.title }}</span>
+        <span v-else class="studio-video-fallback">小云梦工坊{{ episode.number ? ` / ${episode.number}` : '' }}<br>{{ episode.title }}</span>
         <span class="studio-video-play"><span aria-hidden="true">▶</span> 加载视频</span>
       </button>
     </div>

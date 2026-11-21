@@ -1,12 +1,12 @@
 # 小云梦工坊视频专栏
 
-专栏使用 Valaxy collections，地址为 `/collections/xiaoyun/`；旧 `/studio/` 地址自动跳转。合集总览为 `/collections/`。导航与侧栏入口配置在 `theme.config.ts`。
+专栏使用 Valaxy collections，地址为 `/collections/studio/`；旧 `/studio/` 与 `/collections/xiaoyun/` 地址自动跳转。合集总览为 `/collections/`。导航与侧栏入口配置在 `theme.config.ts`。
 
 ## 增加一期视频
 
-1. 在 `config/studio.ts` 的 `studioVideos` 中以文章路径为键加入公开的视频资料。日期使用视频实际发布日期，不保存会过期的播放量。
-2. 在 `pages/posts/` 中新增配套文章，设置标题、文章日期、分类和标签。标题包含 `#` 时使用引号。
-3. 在 `pages/collections/xiaoyun/index.ts` 的 `items` 中通过 `link` 引用文章。此列表是合集归属和阅读顺序的唯一来源；专栏按此顺序展示视频。文章加入返回 `/collections/xiaoyun/` 的链接，并使用 `StudioVideo` 展示视频。
+1. 在 `config/studio.ts` 的 `studioVideos` 中以文章路径为键加入公开的视频资料。日期使用视频实际发布日期，不保存会过期的播放量；`number` 为可选字段（独立作品可省略，专栏卡片角标会自动回退显示 `projectName`）。
+2. 在 `pages/posts/` 中新增配套文章，推荐使用不含期号的语义化文件名（如 `/posts/cook-app`），方便后续插期或调整顺序而不影响已发布 URL；设置标题、文章日期、分类和标签，标题包含 `#` 时使用引号。
+3. 在 `pages/collections/studio/index.ts` 的 `items` 中通过 `link` 引用文章。此列表是合集归属和阅读顺序的唯一来源；专栏按此顺序展示视频。文章加入返回 `/collections/studio/` 的链接，并使用 `StudioVideo` 展示视频。
 4. 运行 `pnpm test`、`pnpm lint`、`pnpm typecheck` 和 `pnpm test:browser`。
 
 播放器只在点击后加载，关闭自动播放；B 站直达链接始终保留。封面加载失败时显示文字回退。无需将视频二进制文件加入博客仓库。
@@ -36,7 +36,7 @@ CI 会运行单元测试与浏览器回归。生产发布仍由仓库现有的�
 
 Yun 主题的合集目录支持多个合集切换、文章高亮和手机折叠目录。普通 `/posts/` 文章通过 `items.link` 识别所属合集，保留原地址。未归属合集的文章继续显示个人侧栏；同一文章属于多个合集时，目录默认采用配置顺序中的首个合集。
 
-小云梦工坊设置 `collapse: false`，不额外生成首页合集卡片，原文章仍正常出现在首页和 RSS 中。
+小云梦工坊设置 `collapse: false`，并将配套文章放在 `pages/posts/` 下由 `items[].link` 引用——因为每个项目视频都是独立的低频作品发布，适合正常进入首页文章流、归档和 RSS（Valaxy RSS 只扫描 `pages/posts/**/*.md`）；而直接放在 `pages/collections/<key>/` 下（配合 `collapse: true`）更适合多章节连载或不想分散推送到 RSS 的系列笔记。
 
 主题实现位于 `YunYouJun/valaxy` 的 `packages/valaxy-theme-yun`。在包含此功能的主题版本发布前，博客通过 `patches/valaxy-theme-yun@1.0.0-rc.8.patch` 使用相同实现。升级到包含该改动的版本后，移除 `pnpm-workspace.yaml` 中的对应 `patchedDependencies` 和补丁文件，并重新安装依赖、运行回归。不要修改 `node_modules` 或添加本地仓库路径依赖。
 
