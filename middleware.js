@@ -30,8 +30,9 @@ const notFoundPage = `<!doctype html>
   h1 span + span { border-inline-start: 0; }
   p { font: 700 1.25rem ui-serif, serif; }
   nav {
-    display: grid;
-    grid-template-columns: repeat(2, minmax(0, 1fr));
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
     gap: 0.5rem;
   }
   a {
