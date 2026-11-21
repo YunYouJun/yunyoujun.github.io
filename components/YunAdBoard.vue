@@ -72,12 +72,12 @@ const isBeianMode = import.meta.env.VITE_BEIAN_MODE === 'true'
 .recommendation:hover,
 .recommendation:focus-visible {
   background: var(--va-c-bg-soft);
-  color: var(--va-c-primary);
+  color: var(--va-c-link);
 }
 
 .recommendation:focus-visible,
 .recommendations-contact:focus-visible {
-  outline: 2px solid var(--va-c-primary);
+  outline: 2px solid var(--yun-focus-color);
   outline-offset: 2px;
 }
 
@@ -85,7 +85,7 @@ const isBeianMode = import.meta.env.VITE_BEIAN_MODE === 'true'
   flex-shrink: 0;
   margin-top: 0.25rem;
   font-size: 1.25rem;
-  color: var(--va-c-primary);
+  color: var(--va-c-link);
 }
 
 .recommendation-copy {
