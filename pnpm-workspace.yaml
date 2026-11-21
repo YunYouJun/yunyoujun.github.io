@@ -1,8 +1,8 @@
 minimumReleaseAgeExclude:
-  - '@valaxyjs/devtools@1.4.0'
-  - '@valaxyjs/utils@1.4.0'
-  - valaxy-theme-yun@1.4.0
-  - valaxy@1.4.0
+  - '@valaxyjs/devtools@1.4.1'
+  - '@valaxyjs/utils@1.4.1'
+  - valaxy-theme-yun@1.4.1
+  - valaxy@1.4.1
   - valaxy-addon-girls@0.1.0
   - eslint@10.9.1
 shamefullyHoist: true
@@ -31,8 +31,3 @@ allowBuilds:
   esbuild: true
   simple-git-hooks: true
   vue-demi: true
-onlyBuiltDependencies:
-  - '@parcel/watcher'
-  - esbuild
-  - simple-git-hooks
-  - vue-demi

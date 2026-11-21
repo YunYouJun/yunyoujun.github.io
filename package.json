@@ -3,7 +3,7 @@
   "type": "module",
   "version": "2.0.0",
   "private": true,
-  "packageManager": "pnpm@11.23.0",
+  "packageManager": "pnpm@12.21.0",
   "description": "YunYouJun Blog",
   "author": {
     "email": "me@yunyoujun.cn",
@@ -29,7 +29,7 @@
     "www.yunyoujun.cn"
   ],
   "engines": {
-    "node": "24.x"
+    "node": "26.x"
   },
   "scripts": {
     "backup": "sh bash/backup.sh",
@@ -67,16 +67,16 @@
     "simple-git-hooks": "^2.13.1",
     "tsx": "^4.23.15",
     "typescript": "^6.0.3",
-    "valaxy": "1.4.0",
+    "valaxy": "1.4.1",
     "valaxy-addon-components": "^0.1.0",
     "valaxy-addon-girls": "^0.1.0",
     "valaxy-addon-waline": "^0.2.1",
-    "valaxy-theme-yun": "1.4.0",
-    "vite": "^8.3.7",
-    "vue": "3.5.43",
+    "valaxy-theme-yun": "1.4.1",
+    "vite": "^8.3.8",
+    "vue": "3.5.46",
     "vue-gtag-next": "^1.14.0",
     "vue-router": "5.3.1",
-    "vue-tsc": "^3.3.12"
+    "vue-tsc": "^3.3.14"
   },
   "simple-git-hooks": {
     "pre-commit": "pnpm lint-staged"

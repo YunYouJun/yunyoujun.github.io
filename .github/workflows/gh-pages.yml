@@ -26,9 +26,9 @@ jobs:
       - uses: actions/checkout@v7
 
       - name: Set up pnpm and Node.js
-        uses: pnpm/setup@v2
+        uses: pnpm/setup@v3
         with:
-          runtime: node@24
+          runtime: node@26
           cache: true
 
       - name: 🌌 Build Valaxy Blog
