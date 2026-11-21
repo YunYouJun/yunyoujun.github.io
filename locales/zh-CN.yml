@@ -8,7 +8,7 @@ message:
 
 not_found:
   title: 未曾触及的未来
-  report: 在 GitHub 反馈失效链接
+  report: 在 GitHub 反馈
 
 tab:
   sponsor_list: 经济赞助

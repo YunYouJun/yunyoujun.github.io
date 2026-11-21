@@ -55,17 +55,17 @@ const issueLink = computed(() => {
     </p>
     <code v-if="missingPath" class="yun-404-path">{{ missingPath }}</code>
 
-    <div class="yun-404-actions" flex="~ col" items="center" gap="1">
-      <button type="button" class="yun-404-action yun-404-back" @click="back">
+    <div class="yun-404-actions">
+      <button type="button" class="yun-404-action" @click="back">
         <span i-ri-arrow-left-line aria-hidden="true" />
         {{ t('button.back') }}
       </button>
       <AppLink
-        v-if="issueLink" class="yun-404-action yun-404-report"
-        :to="issueLink" rel="noreferrer" show-external-icon
+        v-if="issueLink" class="yun-404-action"
+        :to="issueLink" rel="noreferrer"
       >
         <span i-ri-github-line aria-hidden="true" />
-        <span class="yun-404-report-label">{{ t('not_found.report') }}</span>
+        {{ t('not_found.report') }}
       </AppLink>
     </div>
   </main>
@@ -156,21 +156,30 @@ $char-stagger: 0.06s;
 }
 
 .yun-404-actions {
+  display: grid;
+  grid-auto-flow: column;
+  grid-auto-columns: minmax(0, 1fr);
+  gap: 0.5rem;
+  max-width: 100%;
   margin-top: 1.25rem;
 }
 
 .yun-404-action {
+  @include glass.surface;
+
   display: inline-flex;
   align-items: center;
   justify-content: center;
   gap: 0.5rem;
   min-height: 2.75rem;
   padding: 0.5rem 0.875rem;
+  color: var(--va-c-text);
   font-size: 0.875rem;
   font-weight: 500;
+  text-decoration: none;
   border-radius: 9999px;
+  cursor: pointer;
   transition:
-    color var(--va-transition-duration),
     background-color var(--va-transition-duration),
     box-shadow var(--va-transition-duration);
 
@@ -179,18 +188,10 @@ $char-stagger: 0.06s;
     outline-offset: 2px;
   }
 
-  > [aria-hidden='true'],
-  :deep(.icon-link) {
+  > span {
     flex: none;
     font-size: 1rem;
   }
-}
-
-.yun-404-back {
-  @include glass.surface;
-
-  color: var(--va-c-text);
-  cursor: pointer;
 
   @media (hover: hover) {
     &:hover {
@@ -205,37 +206,6 @@ $char-stagger: 0.06s;
       @include glass.solid;
     }
   }
-}
-
-.yun-404-report {
-  color: var(--va-c-text-2);
-
-  &:hover,
-  &:focus-visible {
-    color: var(--va-c-link);
-    background-color: color-mix(in srgb, var(--va-c-link) 8%, transparent);
-
-    .yun-404-report-label {
-      text-decoration-style: solid;
-      text-decoration-color: currentColor;
-    }
-  }
-
-  @media (prefers-reduced-motion: no-preference) {
-    :deep(.icon-link) {
-      transition: transform var(--va-transition-duration-fast);
-    }
-
-    &:hover :deep(.icon-link),
-    &:focus-visible :deep(.icon-link) {
-      transform: translate(2px, -2px);
-    }
-  }
-}
-
-.yun-404-report-label {
-  text-decoration: underline dashed color-mix(in srgb, currentColor 55%, transparent);
-  text-underline-offset: 0.26em;
 }
 
 @keyframes yun-404-extend {
