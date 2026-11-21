@@ -19,6 +19,7 @@ test('returns a real 404 for direct requests to the fallback document', async ()
     assert.equal(response.headers.get('content-type'), 'text/html; charset=utf-8')
     const body = await response.text()
     assert.match(body, /未曾触及的未来/)
+    assert.ok(body.includes('href="https://github.com/YunYouJun/yunyoujun.github.io/issues/new?title=404"'))
     bodies.add(body)
 
     const head = middleware({ request: new Request(url, { method: 'HEAD' }), next })
