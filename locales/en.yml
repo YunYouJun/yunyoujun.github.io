@@ -8,7 +8,7 @@ message:
 
 not_found:
   title: A future yet to be reached
-  report: Report broken link on GitHub
+  report: Report on GitHub
 
 tab:
   sponsor_list: Sponsor List

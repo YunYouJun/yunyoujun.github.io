@@ -20,7 +20,7 @@ test('reports a missing page and provides a way back', async ({ context, page })
   await expect(page.locator('.yun-404-path')).toHaveText(missingPath)
   expect(await page.evaluate(() => document.documentElement.scrollWidth)).toBeLessThanOrEqual(await page.evaluate(() => window.innerWidth))
 
-  const report = page.getByRole('link', { name: /GitHub/ })
+  const report = page.getByRole('link', { name: '在 GitHub 反馈', exact: true })
   await expect(report).toHaveAttribute('rel', 'noreferrer')
   const [issue] = await Promise.all([page.waitForEvent('popup'), report.click()])
   await expect(issue.getByText('Issue form')).toBeVisible()
@@ -40,7 +40,7 @@ test.describe('before hydration', () => {
   test('offers a generic report link on the static fallback', async ({ page }) => {
     await page.goto(missingPath)
 
-    const report = page.getByRole('link', { name: /GitHub/ })
+    const report = page.getByRole('link', { name: '在 GitHub 反馈', exact: true })
     await expect(report).toBeVisible()
     await expect(report).toHaveAttribute('href', /\/issues\/new\?title=404&body=/)
     await expect(page.locator('.yun-404-path')).toHaveCount(0)

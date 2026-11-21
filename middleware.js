@@ -30,30 +30,24 @@ const notFoundPage = `<!doctype html>
   h1 span + span { border-inline-start: 0; }
   p { font: 700 1.25rem ui-serif, serif; }
   nav {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 0.25rem;
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 0.5rem;
   }
   a {
     display: inline-flex;
     min-height: 2.75rem;
     align-items: center;
+    justify-content: center;
     padding-inline: 0.875rem;
-    border-radius: 9999px;
-    font-size: 0.875rem;
-  }
-  .home {
     border: 1px solid GrayText;
+    border-radius: 9999px;
     color: CanvasText;
+    font-size: 0.875rem;
     text-decoration: none;
   }
-  .report {
-    text-decoration-style: dashed;
-    text-underline-offset: 0.26em;
-  }
-  .report:is(:hover, :focus-visible) {
-    text-decoration-style: solid;
+  a:hover {
+    background-color: color-mix(in srgb, CanvasText 7%, Canvas);
   }
   a:focus-visible {
     outline: 2px solid LinkText;
@@ -66,8 +60,8 @@ const notFoundPage = `<!doctype html>
 <h1 aria-label="404"><span aria-hidden="true">4</span><span aria-hidden="true">0</span><span aria-hidden="true">4</span></h1>
 <p>未曾触及的未来</p>
 <nav>
-<a class="home" href="/">返回首页</a>
-<a class="report" href="https://github.com/YunYouJun/yunyoujun.github.io/issues/new?title=404" target="_blank" rel="noreferrer">在 GitHub 反馈失效链接</a>
+<a href="/">返回首页</a>
+<a href="https://github.com/YunYouJun/yunyoujun.github.io/issues/new?title=404" target="_blank" rel="noreferrer">在 GitHub 反馈</a>
 </nav>
 </main>
 </body>
