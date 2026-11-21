@@ -156,9 +156,9 @@ $char-stagger: 0.06s;
 }
 
 .yun-404-actions {
-  display: grid;
-  grid-auto-flow: column;
-  grid-auto-columns: minmax(0, 1fr);
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
   gap: 0.5rem;
   max-width: 100%;
   margin-top: 1.25rem;
