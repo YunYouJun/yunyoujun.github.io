@@ -2,6 +2,7 @@
 title: 用 Valaxy 从零搭建一个属于自己的网站
 date: 2026-11-10
 updated: 2026-11-10
+draft: true
 description: 2026 年新版的个人网站搭建教程：用 Valaxy（Vite + Vue 3）从零创建博客，涵盖环境准备、一条命令建站、类型提示配置、Markdown 写作、GitHub Pages / Netlify / Vercel / Cloudflare Pages 部署、AI 协作（AGENTS.md、llms.txt、MCP），以及从 Hexo 迁移的对照。
 categories:
   - 云游的小安利
