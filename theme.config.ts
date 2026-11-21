@@ -8,6 +8,9 @@ export default defineThemeConfig({
     titleClass: '',
   },
   navbar: { glass: 'always' },
+  notFound: {
+    issueLink: 'https://github.com/YunYouJun/yunyoujun.github.io/issues/new',
+  },
 
   banner: {
     enable: true,

@@ -3,13 +3,65 @@ const notFoundPage = `<!doctype html>
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="color-scheme" content="light dark">
 <title>404 · 云游君的小站</title>
+<style>
+  body {
+    display: grid;
+    min-height: 100vh;
+    min-height: 100svh;
+    margin: 0;
+    place-items: center;
+    font: 1rem/1.5 system-ui, sans-serif;
+  }
+  main {
+    padding: 2rem 1rem;
+    text-align: center;
+  }
+  h1 {
+    display: inline-flex;
+    margin: 0;
+    font: 900 clamp(4rem, 18vw, 8rem)/1 ui-serif, serif;
+  }
+  h1 span {
+    padding: 0.08em 0.16em;
+    border: 1px solid GrayText;
+  }
+  h1 span + span { border-inline-start: 0; }
+  p { font: 700 1.25rem ui-serif, serif; }
+  nav {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 0.5rem;
+  }
+  a {
+    display: inline-flex;
+    min-height: 2.75rem;
+    align-items: center;
+    padding-inline: 0.875rem;
+    border-radius: 9999px;
+    font-size: 0.875rem;
+  }
+  .home {
+    border: 1px solid GrayText;
+    color: CanvasText;
+    text-decoration: none;
+  }
+  a:focus-visible {
+    outline: 2px solid LinkText;
+    outline-offset: 2px;
+  }
+</style>
 </head>
 <body>
 <main>
-<h1>404</h1>
+<h1 aria-label="404"><span aria-hidden="true">4</span><span aria-hidden="true">0</span><span aria-hidden="true">4</span></h1>
 <p>未曾触及的未来</p>
-<p><a href="/">返回首页</a></p>
+<nav>
+<a class="home" href="/">返回首页</a>
+<a href="https://github.com/YunYouJun/yunyoujun.github.io/issues/new?title=404" target="_blank" rel="noreferrer">在 GitHub 反馈失效链接</a>
+</nav>
 </main>
 </body>
 </html>`

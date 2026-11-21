@@ -1,6 +1,7 @@
 <script setup lang="ts">
 import { useBack, useFrontmatter } from 'valaxy'
-import { computed } from 'vue'
+import { useThemeConfig } from 'valaxy-theme-yun/client'
+import { computed, onMounted, shallowRef } from 'vue'
 import { useI18n } from 'vue-i18n'
 import { useRoute } from 'vue-router'
 
@@ -8,24 +9,36 @@ const { t } = useI18n()
 const { back } = useBack()
 const route = useRoute()
 const frontmatter = useFrontmatter()
+const themeConfig = useThemeConfig()
 
 const chars = ['4', '0', '4']
-// 未知路径匹配不到 404.md，frontmatter 为空时用 locale 兜底
-const title = computed(() => frontmatter.value.title || t('message.not_found_title'))
+const title = computed(() => frontmatter.value.title || t('not_found.title'))
 
-// 预填当前路径，方便定位失效链接
+// 静态托管共用同一份 404.html，挂载后才读取访客访问的路径。
+const mounted = shallowRef(false)
+onMounted(() => {
+  mounted.value = true
+})
+const missingPath = computed(() =>
+  mounted.value && !/^\/404(?:\.html)?\/?$/.test(route.path) ? route.path : '',
+)
+
 const issueLink = computed(() => {
-  const params = new URLSearchParams({
-    title: `404: ${route.fullPath}`,
-    body: `页面不存在：${route.fullPath}\n\n从哪里点进来的（可选）：`,
-  })
-  return `https://github.com/YunYouJun/yunyoujun.github.io/issues/new?${params}`
+  const issueUrl = themeConfig.value.notFound?.issueLink
+  if (!issueUrl)
+    return ''
+
+  const url = new URL(issueUrl)
+  const path = missingPath.value
+  url.searchParams.set('title', path ? `404: ${path}` : '404')
+  url.searchParams.set('body', t('not_found.issue_body', { path }))
+  return url.href
 })
 </script>
 
 <template>
   <main class="yun-404 va-main w-full min-h-screen" text="center" flex="~ col" justify="center" items="center">
-    <div class="yun-404-line top" />
+    <div class="yun-404-line top" aria-hidden="true" />
 
     <h1 class="yun-404-code" aria-label="404">
       <span
@@ -35,60 +48,61 @@ const issueLink = computed(() => {
       >{{ char }}</span>
     </h1>
 
-    <div class="yun-404-line bottom" />
+    <div class="yun-404-line bottom" aria-hidden="true" />
 
-    <p class="yun-404-title yun-404-fade">
+    <p class="yun-404-title">
       {{ title }}
     </p>
-    <code class="yun-404-path yun-404-fade">{{ route.path }}</code>
+    <code v-if="missingPath" class="yun-404-path">{{ missingPath }}</code>
 
-    <div class="yun-404-actions yun-404-fade" flex="~ wrap" justify="center" items="center" gap="3">
-      <button class="btn rounded-full" p="x-6 y-2" text="sm" :title="t('button.back')" @click="back">
+    <div class="yun-404-actions" flex="~ wrap" justify="center" items="center" gap="2">
+      <button type="button" class="yun-404-action yun-404-back" @click="back">
+        <span i-ri-arrow-left-line aria-hidden="true" />
         {{ t('button.back') }}
       </button>
-      <!-- a 元素自带 text 属性，不能用 attributify 的 text="sm" -->
-      <a
-        class="yun-404-report inline-flex items-center gap-1 text-sm"
-        :href="issueLink" target="_blank" rel="noopener"
+      <AppLink
+        v-if="issueLink" class="yun-404-action yun-404-report"
+        :to="issueLink" rel="noreferrer" show-external-icon
       >
-        <div class="yun-404-report-icon" i-ri-github-line />
-        {{ t('message.report_404') }}
-      </a>
+        <span i-ri-github-line aria-hidden="true" />
+        {{ t('not_found.report') }}
+      </AppLink>
     </div>
   </main>
 </template>
 
 <style lang="scss" scoped>
-@use 'sass:map';
-@use 'valaxy-theme-yun/styles/vars.scss' as *;
+@use 'valaxy-theme-yun/styles/mixins/_glass.scss' as glass;
 
-$ease-in: map.get($cubic-bezier, 'ease-in');
-$line-duration: 0.4s;
-$char-duration: 0.4s;
-$char-stagger: 0.08s;
+$line-duration: 0.25s;
+$char-duration: 0.3s;
+$char-stagger: 0.06s;
 
 .yun-404 {
-  --yun-404-line-color: var(--va-c-text-3);
-  --yun-404-char-size: clamp(4rem, 18vw, 8rem);
+  --yun-404-line-color: color-mix(in srgb, var(--banner-line-color) 42%, transparent);
 
+  min-height: 100svh;
   padding: 2rem 1rem;
 }
 
 // 与首页 banner 一致：竖线先延伸，字块再浮现
 .yun-404-line {
   width: 1px;
-  height: 0;
+  height: var(--yun-404-line-height);
   background-color: var(--yun-404-line-color);
-  animation: yun-404-extend $line-duration $ease-in forwards;
+  animation: yun-404-extend $line-duration var(--yun-ease-in) both;
 
   &.top {
-    --yun-404-line-height: 12vh;
+    --yun-404-line-height: clamp(2rem, 8vh, 4.5rem);
+
+    transform-origin: bottom;
   }
 
   &.bottom {
-    --yun-404-line-height: 4vh;
+    --yun-404-line-height: clamp(1rem, 4vh, 2.25rem);
 
     animation-delay: calc($line-duration + $char-duration + 2 * $char-stagger);
+    transform-origin: top;
   }
 }
 
@@ -96,40 +110,36 @@ $char-stagger: 0.08s;
   display: flex;
   margin: 0;
   font-family: var(--va-font-serif);
-  font-size: var(--yun-404-char-size);
+  font-size: clamp(4rem, 18vw, 8rem);
   font-weight: 900;
   line-height: 1;
 }
 
 .yun-404-char {
   padding: 0.08em 0.16em;
-  color: var(--va-c-text);
+  color: var(--banner-char-color);
+  background-color: var(--banner-char-bg-color);
   border: 1px solid var(--yun-404-line-color);
-  opacity: 0;
   transition:
     color var(--va-transition-duration) ease-in-out,
     background-color var(--va-transition-duration) ease-in-out;
-  animation: yun-404-char-in $char-duration $ease-in forwards;
+  animation: yun-404-char-in $char-duration var(--yun-ease-in) both;
   animation-delay: calc($line-duration + var(--char-index) * $char-stagger);
 
   & + & {
     margin-left: -1px;
   }
 
-  &:hover {
-    color: var(--va-c-bg);
-    background-color: var(--va-c-text);
+  @media (hover: hover) {
+    &:hover {
+      color: var(--banner-char-hover-color);
+      background-color: var(--banner-char-color);
+    }
   }
 }
 
-.yun-404-fade {
-  opacity: 0;
-  animation: yun-404-fade-in var(--va-transition-duration-moderate) ease-out forwards;
-  animation-delay: calc(2 * $line-duration + $char-duration + 2 * $char-stagger);
-}
-
 .yun-404-title {
-  margin: 1rem 0 0.25rem;
+  margin: 0.875rem 0 0;
   font-family: var(--va-font-serif);
   font-size: 1.25rem;
   font-weight: 700;
@@ -137,53 +147,79 @@ $char-stagger: 0.08s;
 }
 
 .yun-404-path {
-  max-width: 100%;
+  max-width: min(100%, 48ch);
+  margin-top: 0.375rem;
   overflow-wrap: anywhere;
-  font-size: 0.8rem;
-  color: var(--va-c-text-3);
+  font-size: 0.8125rem;
+  color: var(--va-c-text-2);
   background: none;
 }
 
 .yun-404-actions {
-  margin-top: 2rem;
+  margin-top: 1.25rem;
 }
 
-.yun-404-report {
-  padding: 0.5rem 1.25rem;
-  color: var(--va-c-text-2);
-  border: 1px solid var(--yun-404-line-color);
+.yun-404-action {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  min-height: 2.75rem;
+  padding: 0.5rem 0.875rem;
+  font-size: 0.875rem;
+  font-weight: 500;
   border-radius: 9999px;
   transition:
     color var(--va-transition-duration),
-    border-color var(--va-transition-duration),
-    background-color var(--va-transition-duration);
-
-  // 胶囊形按钮不用 yun-title-effects，角标会落在圆角外
-  &:hover,
-  &:focus-visible {
-    color: var(--va-c-primary);
-    border-color: var(--va-c-primary);
-    background-color: rgb(var(--va-c-primary-rgb), 0.08);
-  }
+    background-color var(--va-transition-duration),
+    box-shadow var(--va-transition-duration);
 
   &:focus-visible {
-    outline: 2px solid rgb(var(--va-c-primary-rgb), 0.4);
+    outline: 2px solid var(--yun-focus-color);
     outline-offset: 2px;
   }
 
-  &-icon {
-    transition: transform var(--va-transition-duration) $ease-in;
+  > span,
+  :deep(.icon-link) {
+    flex: none;
+    font-size: 1rem;
+  }
+}
+
+.yun-404-back {
+  @include glass.surface;
+
+  color: var(--va-c-text);
+  cursor: pointer;
+
+  @media (hover: hover) {
+    &:hover {
+      background-color: var(--yun-glass-hover-fill);
+      box-shadow: var(--yun-glass-hover-shadow);
+    }
   }
 
-  &:hover &-icon,
-  &:focus-visible &-icon {
-    transform: rotate(-12deg) scale(1.15);
+  @media (prefers-reduced-transparency: reduce), (prefers-contrast: more) {
+    &,
+    &:hover {
+      @include glass.solid;
+    }
+  }
+}
+
+.yun-404-report {
+  color: var(--va-c-text-2);
+
+  &:hover,
+  &:focus-visible {
+    color: var(--va-c-link);
+    background-color: color-mix(in srgb, var(--va-c-link) 8%, transparent);
   }
 }
 
 @keyframes yun-404-extend {
-  to {
-    height: var(--yun-404-line-height);
+  from {
+    transform: scaleY(0);
   }
 }
 
@@ -199,29 +235,15 @@ $char-stagger: 0.08s;
   }
 }
 
-@keyframes yun-404-fade-in {
-  from {
-    opacity: 0;
-    transform: translateY(0.5rem);
-  }
-
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
-
 @media (prefers-reduced-motion: reduce) {
   .yun-404-line,
-  .yun-404-char,
-  .yun-404-fade {
+  .yun-404-char {
     animation: none;
-    opacity: 1;
   }
 
-  .yun-404-line.top,
-  .yun-404-line.bottom {
-    height: var(--yun-404-line-height);
+  .yun-404-char,
+  .yun-404-action {
+    transition: none;
   }
 }
 </style>

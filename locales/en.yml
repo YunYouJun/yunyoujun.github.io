@@ -5,8 +5,10 @@ tooltip: Have fun!
 
 message:
   projects: Would you like to see my other projects?
-  not_found_title: A future yet to be reached
-  report_404: Broken link? Let me know
+
+not_found:
+  title: A future yet to be reached
+  report: Report broken link on GitHub
 
 tab:
   sponsor_list: Sponsor List

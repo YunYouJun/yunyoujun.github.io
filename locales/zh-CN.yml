@@ -5,8 +5,10 @@ tooltip: 祝你玩的开心！
 
 message:
   projects: 要看看我别的项目吗？
-  not_found_title: 未曾触及的未来
-  report_404: 链接失效了？反馈给我
+
+not_found:
+  title: 未曾触及的未来
+  report: 在 GitHub 反馈失效链接
 
 tab:
   sponsor_list: 经济赞助
