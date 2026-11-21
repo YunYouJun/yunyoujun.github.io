@@ -3,6 +3,8 @@ layout: collection
 from:
   - /studio/
   - /studio
+  - /collections/xiaoyun/
+  - /collections/xiaoyun
 title: 小云梦工坊
 description: 用视频记录开源项目的故事，收集从想法变成作品的瞬间。
 icon: i-ri-film-line

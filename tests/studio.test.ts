@@ -19,7 +19,7 @@ test('episodes have unique IDs and link to real articles with a return to the co
     assert.match(episode.id, /^BV[\da-z]{10}$/i)
     assert.equal(new URL(episode.cover).protocol, 'https:')
     const article = await readFile(new URL(`../pages${articlePath}.md`, import.meta.url), 'utf8')
-    assert.match(article, /\]\(\/collections\/xiaoyun\/\)/)
+    assert.match(article, /\]\(\/collections\/studio\/\)/)
     assert.match(article, /<StudioVideo /)
   }
 })

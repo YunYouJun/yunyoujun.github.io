@@ -25,7 +25,7 @@ export default defineThemeConfig({
 
   nav: [
     { text: 'menu.posts', link: '/posts/', icon: 'i-ri-article-line' },
-    { text: '小云梦工坊', link: '/collections/xiaoyun/', icon: 'i-ri-film-line' },
+    { text: '小云梦工坊', link: '/collections/studio/', icon: 'i-ri-film-line' },
     { text: '项目橱窗', link: '/projects/', icon: 'i-ri-code-s-slash-line' },
     { text: '站点地图', link: '/sites/', icon: 'i-ri-planet-line' },
     { text: '友情链接', link: '/links/', icon: 'i-ri-link' },
@@ -38,7 +38,7 @@ export default defineThemeConfig({
   pages: [
     {
       name: '小云梦工坊',
-      url: '/collections/xiaoyun/',
+      url: '/collections/studio/',
       icon: 'i-ri-film-line',
       iconColor: 'var(--yun-nav-accent-studio)',
     },
