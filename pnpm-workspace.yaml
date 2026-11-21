@@ -31,8 +31,3 @@ allowBuilds:
   esbuild: true
   simple-git-hooks: true
   vue-demi: true
-onlyBuiltDependencies:
-  - '@parcel/watcher'
-  - esbuild
-  - simple-git-hooks
-  - vue-demi
