@@ -16,9 +16,9 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v7
-      - uses: pnpm/setup@v2
+      - uses: pnpm/setup@v3
         with:
-          runtime: node@24
+          runtime: node@26
           cache: true
 
       - name: Lint
@@ -28,9 +28,9 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v7
-      - uses: pnpm/setup@v2
+      - uses: pnpm/setup@v3
         with:
-          runtime: node@24
+          runtime: node@26
           cache: true
 
       - name: Typecheck
@@ -40,9 +40,9 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v7
-      - uses: pnpm/setup@v2
+      - uses: pnpm/setup@v3
         with:
-          runtime: node@24
+          runtime: node@26
           cache: true
       - run: pnpm test
       - run: pnpm exec playwright install --with-deps chromium
