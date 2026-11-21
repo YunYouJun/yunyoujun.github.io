@@ -1,8 +1,9 @@
 ---
 title: 用 Valaxy 从零搭建一个属于自己的网站
-date: 2026-11-10
-updated: 2026-11-10
-description: 2026 年新版的个人网站搭建教程：用 Valaxy（Vite + Vue 3）从零创建博客，涵盖环境准备、一条命令建站、类型提示配置、Markdown 写作、GitHub Pages / Netlify / Vercel / Cloudflare Pages 部署、AI 协作（AGENTS.md、llms.txt、MCP），以及从 Hexo 迁移的对照。
+date: 2026-11-20
+updated: 2026-11-20
+cover: /images/valaxy-guide/cover-editorial.webp
+description: "六年前我写过一篇用 Hexo 从零建站的教程，这篇是换成 Valaxy 的新版。从准备环境、写下第一篇文章，到用 GitHub Pages 把网站发布出去，一步步带你搭出自己的博客。如果你已经在用 Hexo，文末也有一份迁移对照。"
 categories:
   - 云游的小安利
 tags:
@@ -11,7 +12,7 @@ tags:
   - 分享
 ---
 
-> 写给想要拥有一个自己的网站但没有资金成本的小白与曾经的自己。
+> 写给想要拥有一个自己的网站但囊中羞涩的小白与曾经的自己。
 >
 > 这是 2020 年那篇《[教你如何从零开始搭建一个属于自己的网站](/posts/how-to-build-your-site)》的 2026 新版。
 
@@ -21,26 +22,53 @@ tags:
 
 这一点，六年过去了，依然没有变。
 
-变的是工具。
+---
 
-2020 年写旧文时，我用的是 Hexo、`hexo-theme-yun`、GitHub Pages 和 Travis CI。后来我自己动手做了 [Valaxy](https://valaxy.site/zh/guide/why)，现在我的博客就跑在它上面。所以这篇文章换了一条主线：**用 Valaxy 从零搭一个站**。
+但自那以来，框架与技术栈已经发生了翻天覆地的变化。
 
-为什么是 Valaxy？简单讲，它面向的是**想要更现代的开发体验**的人：
+React/Vue/Svelte/Solid 前端框架层出不穷，各领风骚。但如今却被 AI 洪流逐一碾过，悄无声息。
 
-- **Vite + Vue 3**：开发服务器启动很快，页面和主题都是 Vue 写的，Vue 与 Vite 生态的插件可以直接用。
-- **热更新**：改文章、改配置、改标签分类，保存后浏览器立刻变化，而且是局部更新，不用整页刷新。
-- **带类型提示的配置**：`site.config.ts` 和 `valaxy.config.ts` 是 TypeScript，编辑器里鼠标悬浮就能看到每个选项的说明。
-- **AI 友好**：新项目自带给编程助手看的 `AGENTS.md`，可以生成 `llms.txt`，还可以让 Cursor 之类的工具通过 MCP 帮你检查文章（后面会讲）。
+AI 时代，个人博客是否真的有意义呢？
+我想，答案依然是肯定的。
 
-> Hexo 依然是一个很棒的博客框架，我的博客就是在它上面长大的。如果你现在正在用某个很喜欢的 Hexo 主题或插件，继续用它完全没问题。Valaxy 只是给那些想换一套更现代工作流的人，多一个选项。
+当然，有些答案也逐渐发生了变化。
 
-这依然是一篇新手向教程，也许会有点科普的感觉。我会尽量保持「点到为止」：讲清楚每一步在干嘛，但不会教你怎么注册账号、安装时怎么点下一步。希望看完之后，没有基础的小白也能搭出一个属于自己的站点。（前提是认识基础的英语单词和善用搜索引擎，现在还可以善用 AI。）
+## 我们还需要框架吗？
+
+2020 年写旧文时，我用的是 Hexo、`hexo-theme-yun`、GitHub Pages 和 Travis CI。后来我自己动手做了 [Valaxy](https://valaxy.site/zh/guide/why)，现在我的博客就跑在它上面。
+
+所以这篇文章换了一条主线：**用 Valaxy 从零搭一个站**。
+
+为什么换成 Valaxy？这几年维护自己的博客，顺手把写文章时在意的几件事也做进了 Valaxy。
+
+- 本地开发用 **Vite 和 Vue 3**，启动与热更新迅速。页面和主题都是 Vue 组件，想折腾时可以接着用 Vue 和 Vite 的插件。
+- 写文章时，改完保存就能在浏览器里看到变化。换个标签或分类，也可以马上看看效果。
+- `site.config.ts` 和 `valaxy.config.ts` 都带类型提示。忘了某一项是做什么的，把鼠标放上去就能看说明。
+
+当然这些都诞生于前 AI 时代，如今热更新开发体验与类型提示，在 AI 面前，似乎已无足轻重。
+
+但写博客并不是一件可以完全交给 AI 的事。我觉得在书写的过程里融入自己的感受和思考，并真实地参与其中，依然是一件很重要的事。
+
+Valaxy 负责把博客的基础功能搭稳，让你不用从零折腾一整套前端代码，打开编辑器就能直接用 Markdown 写作，改完保存、切回浏览器就能立刻看到效果。等你想把小站打扮成自己喜欢的样子时，也依然可以自由定制主题风格。
+
+当然，它也为 AI 做了相关适配。
+
+- 如果你会让 AI 帮忙改站点，脚手架也带了给编程助手读的 `AGENTS.md`。后面会讲怎么生成 `llms.txt`，还有怎么用 MCP 检查文章里的链接和图片。
+
+> Hexo 是一个很棒的博客框架，我的博客就是在它上面长大的。如果你现在正在用某个很喜欢的 Hexo 主题或插件，继续用它完全没问题。
+
+如果你想换一套更顺手的写作和开发流程，Valaxy 可以是另一个选择。我也会继续维护它，慢慢把好用的新功能加进来。
+
+这依然是一篇新手向教程，也许会有点科普的感觉。我会尽量保持「点到为止」：讲清楚每一步在干嘛，但不会教你怎么注册账号、安装时怎么点下一步。
+希望看完之后，没有基础的小白也能搭出一个属于自己的站点。（前提是认识基础的英语单词和善用搜索引擎，现在还可以善用 AI。）
+
+其实我也有点想写给 Agent。你可以把这篇文章交给 AI 助手，请它陪你用 Valaxy 把站搭起来。走到哪一步不太明白，也可以顺手问一句，为什么要这么做？
 
 已经有基础的同学可以大胆跳读。
 
 > 注释处多为相关补充说明，对正常流程没有影响，若没有兴趣，可以略过。
 
-文中的命令和文件内容，我都是用 Valaxy v1.2.2 实际跑过一遍写下来的。如果你看到时版本已经更新，以 [Valaxy 官方文档](https://valaxy.site/zh/guide/getting-started)为准。
+后面的建站终端示例里显示的是 v1.2.2，部署小节则按 `create-valaxy` 从 1.3.0 起发布的官方模板说明。如果你看到的选项有变化，可以翻一下 [Valaxy 官方文档](https://valaxy.site/zh/guide/getting-started)。
 
 <!-- more -->
 
@@ -54,6 +82,8 @@ tags:
 - AI 协作（`llms.txt` / MCP）
 
 ## 步骤
+
+第一次搭站，可以顺着这条主线走：先准备环境，创建并预览小站，再做一点基础配置、写下第一篇文章，最后把它发布出去。走完这几步，你的网站就已经正式上线了；后面的进阶玩法和常见问题，等有需要时再回来翻就行。
 
 ### 准备环境
 
@@ -199,7 +229,7 @@ themeConfig: {
 
 > 这是我做 Valaxy 的最初动机之一。Hexo 每次改完要重新生成、刷新页面，而现代前端框架早就能做到「保存即所见」了。
 
-### 看看生成了什么
+#### 看看生成了什么
 
 用 `ls` 或者在 VS Code 里看一下目录，主要的内容是这些：
 
@@ -324,6 +354,8 @@ description: 这是我的第一篇文章。
 
 保存后，首页的文章列表会立刻更新。
 
+![左边是 Markdown 标题，右边是带 Valaxy 标识和同一标题的博客预览](/images/valaxy-guide/first-page.webp)
+
 > 文章标题下面如果想控制首页展示的摘要，可以在正文里加一行 `<!-- more -->`，它前面的内容会作为摘要。注意 `more` 前后要有空格。
 
 #### 标签与分类
@@ -347,37 +379,7 @@ categories:
 
 > 更多可以写在 frontmatter 里的选项（比如 `top` 置顶、`hide` 隐藏、`draft` 草稿等）见 [文章 | Valaxy](https://valaxy.site/zh/guide/post)。
 
-#### 在 Markdown 里写 Vue 组件
-
-这是 Valaxy 和很多博客框架的一个不同点：**`components/` 文件夹下的 Vue 组件会被自动注册，可以直接在 Markdown 里使用**。
-
-新建 `components/HelloCounter.vue`：
-
-```vue
-<script setup lang="ts">
-import { ref } from 'vue'
-
-const count = ref(0)
-</script>
-
-<template>
-  <button class="rounded px-4 py-2 bg-blue text-white" @click="count++">
-    你已经点了 {{ count }} 次
-  </button>
-</template>
-```
-
-然后在任意文章里直接用：
-
-```md
-下面是一个可以点的按钮：
-
-<HelloCounter />
-```
-
-> 文章里写的 `class="rounded px-4 ..."` 这种是 UnoCSS 的原子化 CSS（类似 TailwindCSS），Valaxy 内置了，Markdown 和组件里都能直接用。
-
-> 脚手架自带的示例文章《Hello, Valaxy!》就用了同样的方法：在文章里放了一个可交互的 Vue 星座封面。想看更多可以翻文档：[在 Markdown 中使用 Vue](https://valaxy.site/zh/guide/markdown#using-vue-in-markdown)。
+#### 构建并预览
 
 写完文章，想看看最终效果，可以构建一次：
 
@@ -423,100 +425,27 @@ git push -u origin main
 
 > 如果觉得每次都要敲 `git add` / `commit` / `push` 很烦，也可以像旧文那样写个脚本，或者直接用 VS Code 左侧的源代码管理面板，点点鼠标就行。
 
-> 这一步以前叫「备份」，现在它同时也是**部署的触发器**：推送一次，GitHub 就会帮你构建并发布。
+> 这一步以前叫「备份」。等选好发布来源，以后每次推送也会触发部署。
 
 ##### 开启自动部署
 
-> GitHub Pages 的发布流程从 `create-valaxy` 1.3.0 起随脚手架提供。较早创建的项目也可以用下方配置替换原来的 `.github/workflows/gh-pages.yml`，并在 `package.json` 的 `packageManager` 字段中填写项目使用的 pnpm 版本，例如 `pnpm@12.5.1`。
+到 GitHub 仓库的 `Settings` → `Pages`，把 `Build and deployment` 下的 `Source` 设为 **GitHub Actions**。
 
-脚手架已经帮你生成了 `.github/workflows/gh-pages.yml`，也就是 GitHub Actions 的工作流。它不再往 `gh-pages` 分支推静态文件，而是用 GitHub 官方的 Pages Actions，把构建好的 `dist/` 直接发布出去。大致是这样：
+从 `create-valaxy` 1.3.0 起，脚手架默认生成的 `.github/workflows/gh-pages.yml`（可查看[官方模板](https://github.com/YunYouJun/valaxy/blob/v1.3.4/packages/create-valaxy/template-blog/.github/workflows/gh-pages.yml)）采用 GitHub 官方的 Pages Actions 流程。把代码推送到 `main`、`master` 或 `valaxy` 分支后，GitHub Actions 会自动做这三件事。
 
-1. 把代码推送到 `main` / `master` / `valaxy` 分支时触发（也可以在 Actions 页面手动跑一次）；
-2. 检出完整的提交历史，用 pnpm 安装依赖，再执行 `pnpm run build`；
-3. 把 `dist/` 上传为 Pages 产物，部署到 GitHub Pages。
+1. 拉取完整的 Git 提交历史，读取 `package.json` 中 `packageManager` 指定的 pnpm 版本。
+2. 用 pnpm 安装依赖并执行 `pnpm run build`。
+3. 将构建产物 `dist/` 上传并部署到 GitHub Pages。
 
-工作流里的 `fetch-depth: 0` 是故意的：Valaxy 可以用 Git 提交时间当作文章日期，浅克隆拿不到完整历史，日期会不准，所以需要把历史都拉下来。
+> 什么是持续集成（CI）？可以理解为「把代码推上去，让平台自动完成构建和发布」。旧文里用的是 Travis CI，现在直接用 GitHub Actions 就够了。所需权限已经写在工作流文件里。
 
-下面是 `create-valaxy` 1.3.0 的完整工作流。
+推送之后，可以切到仓库顶部的 `Actions` 标签页查看构建日志和部署状态。如果第一次部署没跑起来，打开 `GitHub Pages` 工作流，点一次 `Run workflow`。
 
-```yaml
-name: GitHub Pages
+- 源码用自定义分支的话，记得修改 `.github/workflows/gh-pages.yml` 里的 `on.push.branches`。
+- 保留工作流里的 `fetch-depth: 0`。Valaxy 可以用 Git 提交时间作为文章日期，浅克隆拿到的历史可能不够。
+- 如果项目还在用 1.2.2 那套工作流，迁移时对照上面的模板和[同版本的 package.json](https://github.com/YunYouJun/valaxy/blob/v1.3.4/packages/create-valaxy/template-blog/package.json)一起调整。先核对 Node.js 和 `packageManager`。
 
-on:
-  push:
-    branches:
-      # The branch where the project source code resides
-      # 项目源代码所在的分支
-      - main
-      - master
-      - valaxy
-  workflow_dispatch:
-
-# Publish the built site with GitHub Pages. The workflow token can read
-# the repository and upload the artifact.
-permissions:
-  contents: read
-  pages: write
-  id-token: write
-
-# One deployment at a time. Let an in-progress production deploy finish.
-concurrency:
-  group: pages
-  cancel-in-progress: false
-
-jobs:
-  build:
-    runs-on: ubuntu-latest
-    steps:
-      - uses: actions/checkout@v7
-        with:
-          # Git dates for posts need the full history.
-          # 文章的 Git 日期需要完整提交历史。
-          fetch-depth: 0
-
-      # Read the exact pnpm version from package.json's packageManager field.
-      - uses: pnpm/action-setup@v6
-
-      - name: Use Node.js LTS
-        uses: actions/setup-node@v7
-        with:
-          node-version: lts/*
-
-      - name: Setup Pages
-        uses: actions/configure-pages@v6
-
-      - name: Install dependencies
-        # The scaffold ships package.json without a lockfile.
-        run: pnpm install
-
-      - name: Build
-        run: pnpm run build
-
-      - name: Upload Pages artifact
-        uses: actions/upload-pages-artifact@v5
-        with:
-          path: dist
-          include-hidden-files: true
-
-  deploy:
-    needs: build
-    runs-on: ubuntu-latest
-    environment:
-      name: github-pages
-      url: ${{ steps.deployment.outputs.page_url }}
-    steps:
-      - name: Deploy to GitHub Pages
-        id: deployment
-        uses: actions/deploy-pages@v5
-```
-
-> 什么是持续集成（CI）？可以理解为「你把代码推上去，机器人自动帮你构建、测试、发布」。旧文里我用的是 Travis CI，现在 GitHub Actions 已经足够好用，而且不用额外注册、不用额外设置 Token。权限已经写在工作流里了（`contents: read`、`pages: write`、`id-token: write`），一般不必再去改仓库的 Actions 权限。
-
-接着打开仓库的 `Settings` -> `Pages`，在 Build and deployment 的 Source 里选择 **GitHub Actions**。注意不是选 `gh-pages` 分支——这条新工作流不会再生成那个分支。
-
-> 如果你的源码分支不叫 `main`、`master` 或 `valaxy`，要修改 `gh-pages.yml` 里的 `on.push.branches`。选好发布源之后，如果第一次没有把站点发出来，到 Actions 页面把这次工作流再跑一遍就行。
-
-稍等一两分钟，打开 `https://你的用户名.github.io`，就能看到线上的网站了。
+等 `Actions` 里的构建和部署步骤都显示通过后，打开 `https://你的用户名.github.io`（或在部署记录里点击生成的页面链接），就能看到已经上线的网站了。
 
 > 使用 HTTPS，建议开启强制跳转：`Settings` -> `Pages` -> `Enforce HTTPS`。
 
@@ -546,6 +475,46 @@ jobs:
 > 它们的共同点就是：构建命令 `pnpm build`，输出目录 `dist`。记住这两个，换到别的平台（比如 Render，甚至自己的服务器）也一样。
 
 更多细节（包括 Nginx、Docker）见 [部署 | Valaxy](https://valaxy.site/zh/guide/deploy)。
+
+## 进阶与迁移
+
+小站上线后，想再折腾一点，可以从这里挑着看。下面几节分别聊怎么在文章里用 Vue 组件、怎么让 AI 搭把手，以及已有的 Hexo 博客怎么搬过来。
+
+### 在 Markdown 里写 Vue 组件
+
+这是 Valaxy 和很多博客框架的一个不同点：**`components/` 文件夹下的 Vue 组件会被自动注册，可以直接在 Markdown 里使用**。
+
+新建 `components/HelloCounter.vue`：
+
+```vue
+<script setup lang="ts">
+import { ref } from 'vue'
+
+const count = ref(0)
+</script>
+
+<template>
+  <button class="rounded px-4 py-2 bg-blue text-white" @click="count++">
+    你已经点了 {{ count }} 次
+  </button>
+</template>
+```
+
+然后在任意文章里直接用：
+
+```md
+下面是一个可以点的按钮：
+
+<HelloCounter />
+```
+
+> 文章里写的 `class="rounded px-4 ..."` 这种是 UnoCSS 的原子化 CSS（类似 TailwindCSS），Valaxy 内置了，Markdown 和组件里都能直接用。
+
+> 脚手架自带的示例文章《Hello, Valaxy!》就用了同样的方法：在文章里放了一个可交互的 Vue 星座封面。想看更多可以翻文档：[在 Markdown 中使用 Vue](https://valaxy.site/zh/guide/markdown#using-vue-in-markdown)。
+
+再试试下面这个组件。点一下「写作」「保存」或「预览」，就能看到刚才那次改标题的过程。它把 Valaxy 的标识、按钮状态和一小段 CSS 动画放在 `components/ValaxyWritingFlow.vue` 里，文章中只要写一行 `<ValaxyWritingFlow />`。
+
+<ValaxyWritingFlow />
 
 ### AI 时代的新玩法
 
@@ -629,25 +598,7 @@ export default defineValaxyConfig<UserThemeConfig>({
 
 > 列出我的博客文章，检查第一篇的最终路由、布局和本地链接，并根据诊断修复 Markdown。
 
-为了看看实际效果，我临时写了一篇《写给周末的一点随记》，正文里链到了一篇还不存在的 `/posts/getting-started`。按照上面的地址连上 MCP 之后（Cursor、Claude 连的也是同一个地址），调用 `valaxy_check_page`，检查的文件是 `pages/posts/weekend-notes.md`，返回是这样的（有删节）：
-
-```json
-{
-  "ok": true,
-  "diagnostics": [
-    {
-      "code": "missing-link",
-      "severity": "warning",
-      "message": "Local link target not found: /posts/getting-started",
-      "hint": "Check the resolved route, source-relative file path or public asset path. Custom runtime routes and asset resolvers are not checked.",
-      "line": 10
-    }
-  ],
-  "totalDiagnostics": 1
-}
-```
-
-它准确地指出了第 10 行那个坏掉的内部链接，并给了修复提示。`ok` 仍是 `true`，因为这是 warning 而不是 error——文章本身能正常生成。同一篇文章用命令行 `pnpm exec valaxy check --file pages/posts/weekend-notes.md` 检查，结果一致：`passed (1 diagnostics)`，并打出同一条 `missing-link` 警告。
+比如你在写一篇周末随记，顺手链到一个还没建的本地页面。连上 MCP 后，AI 调用 `valaxy_check_page` 检查这篇文章，就能找出这个断链、标出对应的行号，并附上排查提示。这类断链会提示警告，发布前可以顺手补上。
 
 几点需要知道的：
 
@@ -660,8 +611,6 @@ export default defineValaxyConfig<UserThemeConfig>({
 > ```bash
 > pnpm exec valaxy check --file pages/posts/hello-valaxy.md
 > ```
->
-> 我本地跑了一下，示例文章的结果是 `passed (0 diagnostics)`。
 
 ### 从 Hexo 迁过来
 
@@ -771,10 +720,6 @@ footer: {
 
 依然没有视频，一是懒，二是文字更利于更新勘误。
 
-### 其他平台
-
-毕竟自己的站点可能还是不会有什么人看，所以发到其他平台了（然而还是没有人）。不过在这里阅读体验应该是最好的。
-
 ## 结语
 
 六年前我写下这篇教程的时候，想的是：个人网站可以用来记录生活、回忆、创作、学习笔记、开发经验，包括作为一个试验平台。可以与熟悉的人分享，也可以作为另一个世界另一个自己的展示。
@@ -787,7 +732,11 @@ footer: {
 
 > 臣闻善作者，不必善成；善始者，不必善终。「史记·乐毅列传」
 
-希望大家能有毅力坚持下去，不忘初心。
+能一直写当然很好。忙起来停一阵也没关系，小站会在那里等你。
+
+Valaxy 从 2019 年持续维护至今，一路也变了不少。我希望它还能陪大家多写下一些想留下的东西。
+
+如果你也像六年前的我一样，手头没多少预算，却想在网上留一个自由、不用畏惧他人眼光的角落，那就现在新建一个 Markdown 文件，随便用一句话开头，写下你的第一篇文章吧。不用等它完美，说不定几年后的你，还会回来笑着读这一句。
 
 > 永远相信美好的事情即将发生
 
