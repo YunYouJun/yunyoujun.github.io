@@ -9,7 +9,7 @@ defineProps<{ episode: StudioEpisode, article: string }>()
 <template>
   <article class="studio-episode" :data-project-theme="episode.appearance">
     <div class="studio-episode-heading">
-      <span class="studio-number">EP. {{ episode.number }}</span>
+      <span class="studio-number">{{ episode.number ? `EP. ${episode.number}` : episode.projectName }}</span>
       <time :datetime="episode.date">{{ episode.date }}</time>
     </div>
     <div v-if="episode.appearance" class="studio-project-heading">
@@ -20,7 +20,7 @@ defineProps<{ episode: StudioEpisode, article: string }>()
     <div class="studio-episode-body">
       <h3>{{ episode.title }}</h3>
       <p>{{ episode.description }}</p>
-      <nav class="studio-links" :aria-label="`第 ${episode.number} 期相关链接`">
+      <nav class="studio-links" :aria-label="episode.number ? `第 ${episode.number} 期相关链接` : `${episode.projectName} 相关链接`">
         <RouterLink class="studio-primary-link" :to="article">
           阅读本期手记 →
         </RouterLink>

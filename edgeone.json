@@ -289,6 +289,16 @@
       "source": "/2017/12/11/essay/life-and-work/",
       "destination": "/posts/life-and-work",
       "statusCode": 301
+    },
+    {
+      "source": "/collections/xiaoyun",
+      "destination": "/collections/studio/",
+      "statusCode": 301
+    },
+    {
+      "source": "/collections/xiaoyun/",
+      "destination": "/collections/studio/",
+      "statusCode": 301
     }
   ]
 }

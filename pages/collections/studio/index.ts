@@ -2,7 +2,7 @@ import { defineCollection } from 'valaxy'
 import { studioVideos } from '../../../config/studio'
 
 export default defineCollection({
-  key: 'xiaoyun',
+  key: 'studio',
   title: '小云梦工坊',
   description: '用视频记录开源项目的故事，收集从想法变成作品的瞬间。',
   cover: studioVideos['/posts/xiaoyun-studio-01-ak-ui'].cover,

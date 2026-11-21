@@ -19,6 +19,8 @@ const safelist = [
   'i-ri-tools-line',
   'i-ri-wechat-pay-line',
   'i-ri-alipay-line',
+  'i-ri-bowl-line',
+  'i-ri-film-line',
 ]
 const colors = ['purple', 'green', 'blue', 'dark']
 colors.forEach((c) => {

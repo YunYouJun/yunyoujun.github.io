@@ -37,7 +37,7 @@ const isBeianMode = import.meta.env.VITE_BEIAN_MODE === 'true'
 <style scoped>
 .recommendations {
   width: 100%;
-  padding: 1rem;
+  padding: 0.9rem 1rem;
   box-sizing: border-box;
   text-align: left;
 }
@@ -47,7 +47,7 @@ const isBeianMode = import.meta.env.VITE_BEIAN_MODE === 'true'
   justify-content: space-between;
   align-items: center;
   gap: 0.5rem;
-  margin-bottom: 0.75rem;
+  margin-bottom: 0.65rem;
   font-size: 0.85rem;
   font-weight: 600;
 }
@@ -63,7 +63,7 @@ const isBeianMode = import.meta.env.VITE_BEIAN_MODE === 'true'
   display: flex;
   align-items: flex-start;
   gap: 0.65rem;
-  padding: 0.8rem 0.5rem;
+  padding: 0.65rem 0.5rem;
   border-radius: 0.5rem;
   color: inherit;
   text-decoration: none;
@@ -113,8 +113,8 @@ const isBeianMode = import.meta.env.VITE_BEIAN_MODE === 'true'
 
 .recommendations-contact {
   display: block;
-  margin-top: 0.75rem;
-  padding-top: 0.75rem;
+  margin-top: 0.65rem;
+  padding-top: 0.65rem;
   border-top: 1px solid var(--va-c-divider);
   font-size: 0.75rem;
   text-align: right;

@@ -18,7 +18,7 @@ test('column links to article, discloses AI, and loads video only on keyboard ac
     playerRequests++
     await route.fulfill({ contentType: 'text/html', body: '<p>Test player</p>' })
   })
-  await page.goto('/collections/xiaoyun/', { waitUntil: 'domcontentloaded' })
+  await page.goto('/collections/studio/', { waitUntil: 'domcontentloaded' })
   await expect(page).toHaveTitle(/小云梦工坊/)
   expect(await page.evaluate(() => window.innerWidth)).toBe(page.viewportSize()!.width)
   await expect(page.getByRole('heading', { name: /把没做完的想法，\s*继续做下去。/ })).toBeVisible()
@@ -74,7 +74,7 @@ test('column links to article, discloses AI, and loads video only on keyboard ac
   await expect(page.getByRole('link', { name: '在 B 站观看' })).toHaveAttribute('href', 'https://www.bilibili.com/video/BV11RY26oEs6')
   await page.screenshot({ path: test.info().outputPath('article.png'), fullPage: true })
   await page.getByRole('link', { name: '小云梦工坊视频专栏' }).click()
-  await expect(page).toHaveURL(/\/collections\/xiaoyun\/?$/)
+  await expect(page).toHaveURL(/\/collections\/studio\/?$/)
   await expect(page.locator('.studio-video iframe')).toHaveCount(0)
 
   await page.goto('/posts/death-and-rebirth-of-open-source-projects', { waitUntil: 'domcontentloaded' })
@@ -85,7 +85,7 @@ test('column links to article, discloses AI, and loads video only on keyboard ac
 
 test('video stays usable when the cover fails', async ({ page }) => {
   await page.route('**/63bd1317e9d1c16d5f187be334b6c841c4b8dd72.jpg', route => route.abort())
-  await page.goto('/collections/xiaoyun/', { waitUntil: 'domcontentloaded' })
+  await page.goto('/collections/studio/', { waitUntil: 'domcontentloaded' })
   await expect(page.locator('.studio-video-fallback')).toBeVisible()
   await expect(page.getByRole('button', { name: /^加载视频：/ })).toBeEnabled()
   await expect(page.getByRole('link', { name: '在 B 站观看' })).toBeVisible()
@@ -93,8 +93,10 @@ test('video stays usable when the cover fails', async ({ page }) => {
 })
 
 test('collection index and legacy URL lead to the single-collection directory', async ({ page }) => {
+  await page.goto('/collections/xiaoyun/', { waitUntil: 'domcontentloaded' })
+  await expect(page).toHaveURL(/\/collections\/studio\/?$/)
   await page.goto('/studio/', { waitUntil: 'domcontentloaded' })
-  await expect(page).toHaveURL(/\/collections\/xiaoyun\/?$/)
+  await expect(page).toHaveURL(/\/collections\/studio\/?$/)
   await expect(page.getByRole('heading', { name: '小云梦工坊', exact: true })).toBeVisible()
   await expect(page.locator('.yun-collection-sidebar select')).toHaveCount(0)
   await expect(page.locator('.post-meta')).toHaveCount(0)
@@ -116,7 +118,7 @@ test('collection index and legacy URL lead to the single-collection directory', 
 
 test('mobile collection drawer supports keyboard control without shifting its trigger', async ({ page }) => {
   await page.setViewportSize({ width: 390, height: 844 })
-  await page.goto('/collections/xiaoyun/', { waitUntil: 'domcontentloaded' })
+  await page.goto('/collections/studio/', { waitUntil: 'domcontentloaded' })
   await page.waitForFunction(() => {
     const app = document.querySelector('#app')
     return app && '__vue_app__' in app
@@ -149,7 +151,7 @@ test('mobile collection drawer supports keyboard control without shifting its tr
 })
 
 test('ak-ui surfaces switch palettes with readable text and stay local to the project', async ({ page }) => {
-  await page.goto('/collections/xiaoyun/', { waitUntil: 'domcontentloaded' })
+  await page.goto('/collections/studio/', { waitUntil: 'domcontentloaded' })
   const card = page.locator('.studio-episode[data-project-theme="ak-ui"]')
   await expect(card).toBeVisible()
   const surfaces: string[] = []
