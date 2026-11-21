@@ -55,7 +55,7 @@ const issueLink = computed(() => {
     </p>
     <code v-if="missingPath" class="yun-404-path">{{ missingPath }}</code>
 
-    <div class="yun-404-actions" flex="~ wrap" justify="center" items="center" gap="2">
+    <div class="yun-404-actions" flex="~ col" items="center" gap="1">
       <button type="button" class="yun-404-action yun-404-back" @click="back">
         <span i-ri-arrow-left-line aria-hidden="true" />
         {{ t('button.back') }}
@@ -65,7 +65,7 @@ const issueLink = computed(() => {
         :to="issueLink" rel="noreferrer" show-external-icon
       >
         <span i-ri-github-line aria-hidden="true" />
-        {{ t('not_found.report') }}
+        <span class="yun-404-report-label">{{ t('not_found.report') }}</span>
       </AppLink>
     </div>
   </main>
@@ -179,7 +179,7 @@ $char-stagger: 0.06s;
     outline-offset: 2px;
   }
 
-  > span,
+  > [aria-hidden='true'],
   :deep(.icon-link) {
     flex: none;
     font-size: 1rem;
@@ -214,7 +214,28 @@ $char-stagger: 0.06s;
   &:focus-visible {
     color: var(--va-c-link);
     background-color: color-mix(in srgb, var(--va-c-link) 8%, transparent);
+
+    .yun-404-report-label {
+      text-decoration-style: solid;
+      text-decoration-color: currentColor;
+    }
   }
+
+  @media (prefers-reduced-motion: no-preference) {
+    :deep(.icon-link) {
+      transition: transform var(--va-transition-duration-fast);
+    }
+
+    &:hover :deep(.icon-link),
+    &:focus-visible :deep(.icon-link) {
+      transform: translate(2px, -2px);
+    }
+  }
+}
+
+.yun-404-report-label {
+  text-decoration: underline dashed color-mix(in srgb, currentColor 55%, transparent);
+  text-underline-offset: 0.26em;
 }
 
 @keyframes yun-404-extend {

@@ -31,9 +31,9 @@ const notFoundPage = `<!doctype html>
   p { font: 700 1.25rem ui-serif, serif; }
   nav {
     display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 0.5rem;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.25rem;
   }
   a {
     display: inline-flex;
@@ -48,6 +48,13 @@ const notFoundPage = `<!doctype html>
     color: CanvasText;
     text-decoration: none;
   }
+  .report {
+    text-decoration-style: dashed;
+    text-underline-offset: 0.26em;
+  }
+  .report:is(:hover, :focus-visible) {
+    text-decoration-style: solid;
+  }
   a:focus-visible {
     outline: 2px solid LinkText;
     outline-offset: 2px;
@@ -60,7 +67,7 @@ const notFoundPage = `<!doctype html>
 <p>未曾触及的未来</p>
 <nav>
 <a class="home" href="/">返回首页</a>
-<a href="https://github.com/YunYouJun/yunyoujun.github.io/issues/new?title=404" target="_blank" rel="noreferrer">在 GitHub 反馈失效链接</a>
+<a class="report" href="https://github.com/YunYouJun/yunyoujun.github.io/issues/new?title=404" target="_blank" rel="noreferrer">在 GitHub 反馈失效链接</a>
 </nav>
 </main>
 </body>
