@@ -25,6 +25,14 @@ const { state, primaryRgb } = useGuideSite()
 const charSizePattern = [1.02, 0.88, 0.94, 1.0, 0.9, 0.96, 0.88, 0.94]
 
 const displayUrl = computed(() => props.urlOverride || 'http://localhost:4859/')
+const brokenAssetUrl = computed(() => {
+  try {
+    return `${new URL(displayUrl.value).origin}/assets/index.css`
+  }
+  catch {
+    return '/assets/index.css'
+  }
+})
 const displayBannerTitle = computed(() => {
   const raw = state.bannerTitle.trim() || 'Valaxy'
   return Array.from(raw).slice(0, 8).join('')
@@ -71,7 +79,7 @@ function zoneClasses(zone: Exclude<GuideHighlightZone, 'none' | 'all'>) {
 
     <div v-if="brokenBase" class="vg-broken-viewport">
       <div class="vg-broken-alert">
-        <code>GET {{ displayUrl }}assets/index.css → 404 Not Found</code>
+        <code>GET {{ brokenAssetUrl }} → 404 Not Found</code>
       </div>
       <div class="vg-broken-raw">
         <h1>{{ state.siteTitle || 'Valaxy Blog' }}</h1>

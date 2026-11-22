@@ -23,7 +23,7 @@ const steps: RoadmapStep[] = [
     title: '准备环境',
     summary: '安装 Node.js（≥22.12.0）、pnpm（≥10.26.0）、Git 与 VS Code。',
     anchor: '#准备环境',
-    command: 'node --version && pnpm --version',
+    command: 'node --version · pnpm --version',
     outcome: '终端可运行 Valaxy 脚手架，编辑器打开即可获得类型提示。',
     timeHint: '约 5 分钟',
   },

@@ -12,7 +12,7 @@ interface EnvToolCard {
   url: string
   urlLabel: string
   summary: string
-  command?: string
+  commands?: string[]
   mirrorCommand?: string
   extraLink?: { label: string, url: string }
   extraNote?: string
@@ -27,7 +27,7 @@ const tools: EnvToolCard[] = [
     url: 'https://nodejs.org/',
     urlLabel: '官网下载',
     summary: '把 JavaScript 运行环境从浏览器搬到电脑上的「水缸」，Valaxy 的开发和构建都靠它运行（推荐选 LTS 版，更稳）。',
-    command: 'node --version',
+    commands: ['node --version'],
   },
   {
     id: 'pnpm',
@@ -37,7 +37,7 @@ const tools: EnvToolCard[] = [
     url: 'https://pnpm.io/installation',
     urlLabel: '安装文档',
     summary: '「软件商店的命令行版」，装依赖比 npm 更快、更省空间。装好 Node.js 后可用 npm 全局安装并核对版本。',
-    command: 'npm install -g pnpm && pnpm --version',
+    commands: ['npm install -g pnpm', 'pnpm --version'],
     mirrorCommand: 'pnpm config set registry https://registry.npmmirror.com',
   },
   {
@@ -48,7 +48,7 @@ const tools: EnvToolCard[] = [
     url: 'https://git-scm.com/',
     urlLabel: '官网下载',
     summary: '代码「后悔药」，写乱了可以一键退回之前的版本，也是后面把小站代码推送到 GitHub 的桥梁。',
-    command: 'git --version',
+    commands: ['git --version'],
   },
   {
     id: 'vscode',
@@ -66,7 +66,7 @@ const tools: EnvToolCard[] = [
   },
 ]
 
-const batchCheckCmd = 'node --version && pnpm --version && git --version'
+const batchCheckCmd = ['node --version', 'pnpm --version', 'git --version'].join('\n')
 
 const { state, setAllEnvTools, toggleEnvTool } = useGuideSite()
 const copiedKey = shallowRef<string>('')
@@ -154,17 +154,19 @@ async function copyText(key: string, text: string) {
           {{ tool.summary }}
         </p>
 
-        <div v-if="tool.command" class="vg-env-cmd-row">
-          <code class="vg-env-cmd">{{ tool.command }}</code>
-          <button
-            type="button"
-            class="vg-env-copy-btn"
-            :aria-label="`复制 ${tool.name} 命令`"
-            @click="copyText(tool.id, tool.command)"
-          >
-            <span :class="copiedKey === tool.id ? 'i-ri-check-line' : 'i-ri-file-copy-line'" aria-hidden="true" />
-            <span>{{ copiedKey === tool.id ? '已复制' : '复制' }}</span>
-          </button>
+        <div v-if="tool.commands?.length" class="vg-env-cmd-list">
+          <div v-for="(cmd, cmdIdx) in tool.commands" :key="cmd" class="vg-env-cmd-row">
+            <code class="vg-env-cmd">{{ cmd }}</code>
+            <button
+              type="button"
+              class="vg-env-copy-btn"
+              :aria-label="tool.commands.length > 1 ? `复制命令 ${cmd}` : `复制 ${tool.name} 命令`"
+              @click="copyText(`${tool.id}-${cmdIdx}`, cmd)"
+            >
+              <span :class="copiedKey === `${tool.id}-${cmdIdx}` ? 'i-ri-check-line' : 'i-ri-file-copy-line'" aria-hidden="true" />
+              <span>{{ copiedKey === `${tool.id}-${cmdIdx}` ? '已复制' : '复制' }}</span>
+            </button>
+          </div>
         </div>
 
         <div v-if="tool.mirrorCommand" class="vg-env-mirror">
@@ -224,7 +226,7 @@ async function copyText(key: string, text: string) {
     <template #actions>
       <button type="button" class="vg-btn" @click="copyText('batch', batchCheckCmd)">
         <span :class="copiedKey === 'batch' ? 'i-ri-check-line' : 'i-ri-terminal-line'" aria-hidden="true" />
-        <span>{{ copiedKey === 'batch' ? '已复制组合自检命令' : '复制一行版本自检命令' }}</span>
+        <span>{{ copiedKey === 'batch' ? '已复制版本自检命令' : '复制版本自检命令' }}</span>
       </button>
 
       <button
@@ -323,6 +325,12 @@ async function copyText(key: string, text: string) {
   color: var(--va-c-text-2);
   font-size: 0.8rem;
   line-height: 1.55;
+}
+
+.vg-env-cmd-list {
+  display: flex;
+  flex-direction: column;
+  gap: 0.35rem;
 }
 
 .vg-env-cmd-row {

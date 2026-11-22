@@ -46,6 +46,8 @@ test.beforeEach(async ({ page }) => {
 })
 
 test('tutorial guide components render and work end-to-end without console errors', async ({ page }) => {
+  // Note: PLAYWRIGHT_INCLUDE_DRAFTS=1 only lifts this skip guard; production `pnpm build`
+  // still filters out draft posts, so pair it with `pnpm dev`.
   test.skip(
     isTutorialDraft && process.env.PLAYWRIGHT_INCLUDE_DRAFTS !== '1',
     'Skip production SSG check while build-your-site-with-valaxy.md is marked draft: true',
@@ -101,7 +103,11 @@ test('tutorial guide components render and work end-to-end without console error
   await stack.getByRole('tab', { name: 'Vue 3' }).click()
   await expect(stack.locator('.vg-stack-note')).toContainText('交互组件体系')
 
-  // 0.5 Env checklist -> syncs Step 1 completion with Roadmap
+  // 0.5 Env checklist -> syncs Step 1 completion with Roadmap (and stays PowerShell 5.1 compatible)
+  await expect(env).toContainText('npm install -g pnpm')
+  await expect(env).toContainText('pnpm --version')
+  await expect(env).not.toContainText('&&')
+  await expect(roadmap).not.toContainText('&&')
   await env.getByRole('button', { name: '标记 Node.js 已就绪' }).click()
   await env.getByRole('button', { name: '标记 pnpm 已就绪' }).click()
   await env.getByRole('button', { name: '标记 Git 已就绪' }).click()
@@ -220,9 +226,14 @@ test('tutorial guide components render and work end-to-end without console error
   await expect(flow.locator('.vg-more-readmore')).toContainText('阅读全文')
 
   // 6. Deploy pipeline + repo base diff + broken base 404 mode
+  await expect(deploy).toContainText('actions/checkout@v7')
   await expect(deploy).toContainText('fetch-depth: 0')
+
+  await deploy.getByRole('button', { name: /pnpm install/ }).click()
+  await expect(deploy.locator('.vg-deploy-step-detail code')).toHaveText('run: pnpm install')
+
   await deploy.getByRole('button', { name: /actions\/deploy-pages/ }).click()
-  await expect(deploy).toContainText('actions/deploy-pages@v4')
+  await expect(deploy).toContainText('actions/deploy-pages@v5')
 
   await deploy.getByRole('button', { name: 'my-blog' }).click()
   await expect(deploy.locator('.vg-deploy-repo-result')).toContainText('https://you.github.io/my-blog/')
@@ -230,7 +241,8 @@ test('tutorial guide components render and work end-to-end without console error
 
   await deploy.getByRole('button', { name: '模拟忘了加 base' }).click()
   await expect(deploy.locator('.vg-minisite.is-broken-base')).toBeVisible()
-  await expect(deploy.locator('.vg-broken-alert')).toContainText('404 Not Found')
+  await expect(deploy.locator('.vg-broken-alert')).toContainText('GET https://you.github.io/assets/index.css → 404 Not Found')
+  await expect(deploy.locator('.vg-broken-alert')).not.toContainText('/my-blog/assets/index.css')
 
   // 6.5 Multi-platform hosting switcher
   await hosts.getByRole('tab', { name: 'Vercel' }).click()

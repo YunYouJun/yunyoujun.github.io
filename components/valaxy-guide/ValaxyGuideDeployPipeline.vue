@@ -24,15 +24,15 @@ const actionSteps: ActionStep[] = [
     id: 'checkout',
     name: 'Checkout · fetch-depth: 0',
     duration: '1.8s',
-    command: 'uses: actions/checkout@v4  # with: { fetch-depth: 0 }',
+    command: 'uses: actions/checkout@v7  # with: { fetch-depth: 0 }',
     note: '拉取完整 Git 提交历史，确保文章创建与更新时间准确读取。',
   },
   {
     id: 'install',
     name: '安装依赖 · pnpm install',
     duration: '14.2s',
-    command: 'run: pnpm install --frozen-lockfile',
-    note: '按锁文件还原完全一致的 Valaxy 与 Yun 主题版本。',
+    command: 'run: pnpm install',
+    note: 'v1.5.0 脚手架默认不附带锁文件，工作流会先通过 pnpm/action-setup@v6 与 actions/setup-node@v7 准备环境再安装依赖；本地提交 pnpm-lock.yaml 后也可按需加上 --frozen-lockfile。',
   },
   {
     id: 'build',
@@ -45,8 +45,8 @@ const actionSteps: ActionStep[] = [
     id: 'deploy',
     name: '发布站点 · actions/deploy-pages',
     duration: '5.1s',
-    command: 'uses: actions/deploy-pages@v4  # 托管 dist/ 产物',
-    note: '直接由官方 Pages Actions 部署上线，无需额外维护 gh-pages 分支。',
+    command: 'uses: actions/deploy-pages@v5  # 托管 dist/ 产物',
+    note: '由 actions/upload-pages-artifact@v5 与官方 Pages Actions 直接部署上线，无需额外维护 gh-pages 分支。',
   },
 ]
 
