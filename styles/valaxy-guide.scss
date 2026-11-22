@@ -1,0 +1,519 @@
+@use 'valaxy-theme-yun/styles/mixins/_glass.scss' as glass;
+
+/* Shared design primitives aligned with Valaxy 1.4.1 & valaxy-theme-yun 1.4.1 */
+.vg-figure {
+  box-sizing: border-box;
+  container-type: inline-size;
+  container-name: vg-card;
+  width: 100%;
+  max-width: 100%;
+  margin: 1.5rem 0;
+  color: var(--va-c-text);
+  font-size: 0.9375rem;
+  line-height: 1.6;
+  text-align: start;
+}
+
+.vg-figure *,
+.vg-figure *::before,
+.vg-figure *::after {
+  box-sizing: border-box;
+}
+
+.vg-box {
+  width: 100%;
+  max-width: 100%;
+  border: 1px solid var(--yun-surface-line);
+  border-radius: var(--va-card-border-radius, 0.5rem);
+  background: transparent;
+  text-align: start;
+  overflow: clip;
+}
+
+@media (max-width: 639.9px) {
+  .vg-figure {
+    margin-inline: -0.75rem;
+    width: calc(100% + 1.5rem);
+  }
+
+  .vg-box {
+    border-inline: none;
+    border-radius: 0;
+  }
+}
+
+.vg-head {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.5rem 0.75rem;
+  padding: 0.6rem 0.9rem;
+  border-bottom: 1px solid var(--yun-surface-line);
+  font-size: 0.8125rem;
+  color: var(--va-c-text-2);
+}
+
+.vg-eyebrow-group {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.35rem 0.65rem;
+  min-width: 0;
+}
+
+.vg-eyebrow {
+  margin: 0;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  color: var(--va-c-text-dark);
+  font-family: var(--yun-post-title-font-family, var(--va-font-serif));
+  font-size: 0.92rem;
+  font-weight: var(--yun-post-title-font-weight, 700);
+  line-height: 1.35;
+}
+
+.vg-status {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.3rem;
+  color: var(--va-c-text-3);
+  font-size: 0.75rem;
+  font-variant-numeric: tabular-nums;
+}
+
+.vg-head-right {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.4rem;
+}
+
+.vg-body {
+  padding: 0.85rem 0.9rem;
+}
+
+.vg-body--flush {
+  padding: 0;
+}
+
+.vg-actions-bar {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.5rem 0.75rem;
+  margin-top: 0;
+  padding: 0.55rem 0.9rem;
+  border-top: 1px solid var(--yun-surface-line);
+  font-size: 0.8125rem;
+}
+
+.vg-caption {
+  margin-top: 0.5rem;
+  padding-inline: 0.5rem;
+  color: var(--va-c-text-2);
+  font-size: 0.8rem;
+  line-height: 1.5;
+  text-align: center;
+}
+
+/* Single-layer signature Yun canvas stage */
+.vg-stage {
+  background-color: var(--va-c-bg-alt);
+  background-image:
+    linear-gradient(to right, var(--yun-grid-color) 1px, transparent 1px),
+    linear-gradient(to bottom, var(--yun-grid-color) 1px, transparent 1px);
+  background-size: var(--yun-grid-size, 40px) var(--yun-grid-size, 40px);
+}
+
+/* Buttons & chips matching Yun action buttons / post badges */
+.vg-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.35rem;
+  min-height: 2rem;
+  padding: 0.25rem 0.65rem;
+  border: 1px solid var(--yun-surface-line);
+  border-radius: var(--yun-action-btn-radius, 0.625rem);
+  background: transparent;
+  color: var(--va-c-text);
+  font-family: inherit;
+  font-size: 0.8rem;
+  font-weight: 500;
+  line-height: 1.3;
+  text-decoration: none;
+  cursor: pointer;
+  transition:
+    background-color 160ms var(--yun-ease-in, ease),
+    border-color 160ms var(--yun-ease-in, ease),
+    color 160ms var(--yun-ease-in, ease);
+}
+
+.vg-btn:hover:not(:disabled) {
+  background: var(--yun-action-btn-hover-bg);
+  border-color: color-mix(in srgb, var(--va-c-link) 34%, var(--yun-surface-line));
+}
+
+.vg-btn:active:not(:disabled) {
+  background: var(--yun-action-btn-active-bg);
+}
+
+.vg-btn:focus-visible,
+.vg-chip:focus-visible,
+.vg-tab:focus-visible,
+.vg-shiki-key:focus-visible,
+.vg-shiki-bool:focus-visible,
+.vg-shiki-input:focus-visible {
+  outline: 2px solid var(--yun-focus-color);
+  outline-offset: 2px;
+}
+
+.vg-btn:disabled {
+  opacity: 0.45;
+  cursor: not-allowed;
+}
+
+.vg-btn--primary {
+  background: color-mix(in srgb, var(--va-c-primary) 12%, transparent);
+  border-color: color-mix(in srgb, var(--va-c-primary) 34%, var(--yun-surface-line));
+  color: var(--va-c-link);
+}
+
+.vg-btn--primary:hover:not(:disabled) {
+  background: color-mix(in srgb, var(--va-c-primary) 18%, transparent);
+  border-color: var(--va-c-link);
+}
+
+.vg-chip {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.3rem;
+  min-height: 1.85rem;
+  padding: 0.2rem 0.65rem;
+  border: 1px solid var(--yun-surface-line);
+  border-radius: 999px;
+  background: transparent;
+  color: var(--va-c-text-2);
+  font-family: inherit;
+  font-size: 0.75rem;
+  font-weight: 500;
+  line-height: 1.25;
+  cursor: pointer;
+  transition:
+    background-color 160ms var(--yun-ease-in, ease),
+    border-color 160ms var(--yun-ease-in, ease),
+    color 160ms var(--yun-ease-in, ease);
+}
+
+.vg-chip:hover:not(:disabled) {
+  background: var(--yun-action-btn-hover-bg);
+  color: var(--va-c-text);
+}
+
+.vg-chip.is-active {
+  border-color: transparent;
+  background: color-mix(in srgb, var(--va-c-primary) 14%, transparent);
+  color: var(--va-c-link);
+  font-weight: 600;
+}
+
+.vg-pill {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.28rem;
+  padding: 0.14rem 0.48rem;
+  border-radius: 999px;
+  font-size: 0.72rem;
+  font-weight: 500;
+  line-height: 1.35;
+  background: var(--yun-action-btn-hover-bg);
+  color: var(--va-c-text-2);
+}
+
+.vg-pill--green {
+  background: var(--va-c-green-soft);
+  color: var(--va-c-green-1);
+}
+
+.vg-pill--amber {
+  background: var(--va-c-yellow-soft);
+  color: var(--va-c-yellow-1);
+}
+
+.vg-pill--red {
+  background: var(--va-c-red-soft);
+  color: var(--va-c-red-1);
+}
+
+.vg-pill--brand {
+  background: var(--va-c-brand-soft);
+  color: var(--va-c-brand-1);
+}
+
+.vg-code-inline {
+  padding: 0.12em 0.38em;
+  border-radius: 4px;
+  background: var(--yun-action-btn-hover-bg);
+  color: var(--va-c-text-dark);
+  font-family: var(--va-font-mono);
+  font-size: 0.8em;
+}
+
+.vg-kbd {
+  display: inline-flex;
+  align-items: center;
+  padding: 0.12rem 0.4rem;
+  border: 1px solid var(--yun-surface-line);
+  border-radius: 4px;
+  background: var(--va-c-bg-alt);
+  color: var(--va-c-text-2);
+  font-family: var(--va-font-mono);
+  font-size: 0.72rem;
+  line-height: 1.25;
+}
+
+/* Split workspace without nested boxed cards */
+.vg-split {
+  display: grid;
+  grid-template-columns: minmax(0, 1.05fr) minmax(0, 0.95fr);
+  border-top: none;
+}
+
+.vg-split-pane {
+  min-width: 0;
+}
+
+.vg-split-pane + .vg-split-pane {
+  border-left: 1px solid var(--yun-surface-line);
+}
+
+@container vg-card (max-width: 600px) {
+  .vg-split {
+    grid-template-columns: minmax(0, 1fr);
+  }
+
+  .vg-split-pane + .vg-split-pane {
+    border-left: none;
+    border-top: 1px solid var(--yun-surface-line);
+  }
+}
+
+/* Code group tab strip aligned with Valaxy --va-code-tab-* */
+.vg-code-tabs {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.5rem;
+  padding-inline: 0.75rem;
+  background: var(--va-code-tab-bg);
+  border-bottom: 1px solid var(--va-code-block-divider-color);
+  overflow-x: auto;
+}
+
+.vg-code-tablist {
+  display: flex;
+  align-items: center;
+  gap: 0.25rem;
+}
+
+.vg-tab {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+  padding: 0.55rem 0.65rem;
+  border: none;
+  background: transparent;
+  color: var(--va-code-tab-text-color);
+  font-family: inherit;
+  font-size: 0.8rem;
+  font-weight: 500;
+  white-space: nowrap;
+  cursor: pointer;
+  transition: color 160ms ease;
+}
+
+.vg-tab:hover {
+  color: var(--va-code-tab-hover-text-color);
+}
+
+.vg-tab.is-active {
+  color: var(--va-code-tab-active-text-color);
+}
+
+.vg-tab.is-active::after {
+  content: '';
+  position: absolute;
+  left: 0.45rem;
+  right: 0.45rem;
+  bottom: 0;
+  height: 2px;
+  border-radius: 1px;
+  background: var(--va-code-tab-active-bar-color);
+}
+
+/* Normalize Shiki blocks inside vg-figure so mobile margin rules do not overflow */
+.vg-figure div[class*='language-'].vg-shiki {
+  margin: 0;
+  border-radius: 0;
+  background: var(--va-code-block-bg);
+}
+
+.vg-figure .vg-shiki pre.shiki {
+  margin: 0;
+  padding: 0.85rem 1rem;
+  background: transparent;
+  font-family: var(--va-font-mono);
+  font-size: 0.8125rem;
+  line-height: 1.65;
+  overflow-x: auto;
+}
+
+/* Inline interactive Shiki spans */
+.vg-shiki-key {
+  padding: 0 1px;
+  border: none;
+  border-bottom: 1px dashed color-mix(in srgb, var(--va-c-link) 42%, transparent);
+  border-radius: 2px;
+  background: transparent;
+  color: var(--shiki-light, #24292e);
+  font: inherit;
+  cursor: help;
+  transition: background-color 140ms ease;
+}
+
+.dark .vg-shiki-key {
+  color: var(--shiki-dark, #e1e4e8);
+}
+
+.vg-shiki-key:hover,
+.vg-shiki-key[aria-expanded='true'] {
+  background: color-mix(in srgb, var(--va-c-link) 12%, transparent);
+}
+
+.vg-shiki-bool {
+  padding: 0 0.3rem;
+  border: 1px solid color-mix(in srgb, var(--va-c-link) 28%, var(--yun-surface-line));
+  border-radius: 4px;
+  background: color-mix(in srgb, var(--va-c-link) 8%, transparent);
+  color: var(--shiki-light, #005cc5);
+  font: inherit;
+  cursor: pointer;
+  transition:
+    background-color 140ms ease,
+    border-color 140ms ease;
+}
+
+.dark .vg-shiki-bool {
+  color: var(--shiki-dark, #79b8ff);
+}
+
+.vg-shiki-bool:hover {
+  background: color-mix(in srgb, var(--va-c-link) 16%, transparent);
+  border-color: var(--va-c-link);
+}
+
+.vg-shiki-input {
+  display: inline-block;
+  min-width: 4ch;
+  max-width: 100%;
+  padding: 0 0.25rem;
+  border: 1px solid transparent;
+  border-bottom: 1px dashed color-mix(in srgb, var(--va-c-link) 52%, transparent);
+  border-radius: 3px;
+  background: color-mix(in srgb, var(--va-c-bg) 55%, transparent);
+  color: var(--shiki-light, #032f62);
+  font: inherit;
+  line-height: 1.4;
+}
+
+.dark .vg-shiki-input {
+  color: var(--shiki-dark, #9ecbff);
+}
+
+.vg-shiki-input:hover {
+  border-color: color-mix(in srgb, var(--va-c-link) 45%, var(--yun-surface-line));
+}
+
+.vg-mcp-squiggle {
+  padding: 0 2px;
+  border: none;
+  border-radius: 3px;
+  background: color-mix(in srgb, var(--va-c-red-1) 8%, transparent);
+  color: var(--shiki-light, #032f62);
+  font: inherit;
+  text-decoration: underline wavy var(--va-c-red-1);
+  text-underline-offset: 3px;
+  cursor: pointer;
+}
+
+.dark .vg-mcp-squiggle {
+  color: var(--shiki-dark, #9ecbff);
+}
+
+.vg-mcp-squiggle:hover,
+.vg-mcp-squiggle[aria-expanded='true'] {
+  background: color-mix(in srgb, var(--va-c-red-1) 14%, transparent);
+}
+
+.vg-mcp-squiggle:focus-visible {
+  outline: 2px solid var(--yun-focus-color);
+  outline-offset: 2px;
+}
+
+/* Reka-UI Portal Popover (rendered inside #valaxy-teleports outside .vg-figure) */
+.vg-popover {
+  @include glass.surface;
+
+  z-index: 60;
+  max-width: min(21rem, calc(100vw - 1.5rem));
+  padding: 0.7rem 0.8rem;
+  border-radius: var(--va-card-border-radius, 0.5rem);
+  color: var(--va-c-text);
+  font-size: 0.8125rem;
+  line-height: 1.5;
+}
+
+.vg-popover,
+.vg-popover * {
+  box-sizing: border-box;
+}
+
+@media (prefers-reduced-transparency: reduce) {
+  .vg-popover {
+    @include glass.solid;
+  }
+}
+
+/* Coarse touch targets */
+@media (pointer: coarse) {
+  .vg-btn,
+  .vg-chip,
+  .vg-tab {
+    min-height: 44px;
+  }
+}
+
+/* Heading highlight flash on roadmap navigation */
+.is-vg-target {
+  border-radius: 4px;
+  animation: vg-target-flash 1.1s var(--yun-ease-in, ease-out);
+}
+
+@keyframes vg-target-flash {
+  0% {
+    background-color: color-mix(in srgb, var(--va-c-link) 22%, transparent);
+  }
+  100% {
+    background-color: transparent;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .is-vg-target {
+    animation: none;
+  }
+}
