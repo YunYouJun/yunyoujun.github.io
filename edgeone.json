@@ -1,4 +1,7 @@
 {
+  "nodeVersion": "24.11.0",
+  "installCommand": "npm exec --yes --package=node@26.13.1 --package=pnpm@12.21.0 -- pnpm install --frozen-lockfile",
+  "buildCommand": "npm exec --yes --package=node@26.13.1 --package=pnpm@12.21.0 -- pnpm build",
   "redirects": [
     {
       "source": "/rss",

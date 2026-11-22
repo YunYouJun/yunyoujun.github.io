@@ -25,3 +25,5 @@ allowBuilds:
   esbuild: true
   simple-git-hooks: true
   vue-demi: true
+patchedDependencies:
+  valaxy-theme-yun@1.5.0: patches/valaxy-theme-yun@1.5.0.patch
