@@ -1,8 +1,7 @@
 ---
 title: 用 Valaxy 从零搭建一个属于自己的网站
 date: 2026-11-20
-updated: 2026-11-21
-draft: true
+updated: 2026-11-22
 outline: [2, 3]
 cover: /images/valaxy-guide/cover-editorial.webp
 description: "六年前我写过一篇用 Hexo 从零建站的教程，这篇是换成 Valaxy 的新版。从准备环境、写下第一篇文章，到用 GitHub Pages 把网站发布出去，一步步带你搭出自己的博客。如果你已经在用 Hexo，文末也有一份迁移对照。"
@@ -309,7 +308,7 @@ git push -u origin main
 
 到 GitHub 仓库的 `Settings` → `Pages`，把 `Build and deployment` 下的 `Source` 设为 **GitHub Actions**。
 
-脚手架已内置 `.github/workflows/gh-pages.yml`（可参考[官方模板](https://github.com/YunYouJun/valaxy/blob/v1.3.4/packages/create-valaxy/template-blog/.github/workflows/gh-pages.yml)）：推送到 `main`、`master` 或 `valaxy` 分支时，Actions 会自动安装依赖、构建 `dist/` 并直接发布到 GitHub Pages。下面点「模拟一次 git push」看每一步怎么跑，也可以切到 `my-blog` 体验子路径忘了加 `base` 的样子：
+脚手架已内置 `.github/workflows/gh-pages.yml`（可参考[官方模板](https://github.com/YunYouJun/valaxy/blob/v1.5.0/packages/create-valaxy/template-blog/.github/workflows/gh-pages.yml)）：推送到 `main`、`master` 或 `valaxy` 分支时，Actions 会自动安装依赖、构建 `dist/` 并直接发布到 GitHub Pages。下面点「模拟一次 git push」看每一步怎么跑，也可以切到 `my-blog` 体验子路径忘了加 `base` 的样子：
 
 <ValaxyGuideDeployPipeline />
 
@@ -319,7 +318,7 @@ git push -u origin main
 
 - 源码用自定义分支的话，记得修改 `.github/workflows/gh-pages.yml` 里的 `on.push.branches`。
 - 保留工作流里的 `fetch-depth: 0`。Valaxy 可以用 Git 提交时间作为文章日期，浅克隆拿到的历史可能不够。
-- 如果项目还在用 1.2.2 那套工作流，迁移时对照上面的模板和[同版本的 package.json](https://github.com/YunYouJun/valaxy/blob/v1.3.4/packages/create-valaxy/template-blog/package.json)一起调整。先核对 Node.js 和 `packageManager`。
+- 如果项目还在用 1.2.2 那套工作流，迁移时对照上面的模板和[同版本的 package.json](https://github.com/YunYouJun/valaxy/blob/v1.5.0/packages/create-valaxy/template-blog/package.json)一起调整。先核对 Node.js 和 `packageManager`。
 
 等 `Actions` 里的构建和部署步骤都显示通过后，打开 `https://你的用户名.github.io`（或在部署记录里点击生成的页面链接），就能看到已经上线的网站了。
 
