@@ -79,6 +79,11 @@ test('homepage hero navigation and social icons reflect harmonized theme styling
   await expect(firstCard).toBeVisible()
   await firstCard.scrollIntoViewIfNeeded()
 
+  const firstPostWithExcerpt = page.locator('.yun-post-list .post-card-wrapper:has(.post-card-excerpt-content)').first()
+  const excerptGradient = firstPostWithExcerpt.locator('.yun-excerpt-bottom-gradient')
+  await expect(excerptGradient).toBeVisible()
+  await expect(excerptGradient).toHaveCSS('background-image', /^linear-gradient\(/)
+
   const backToTop = page.locator('.back-to-top.show')
   await expect(backToTop).toBeVisible()
 
