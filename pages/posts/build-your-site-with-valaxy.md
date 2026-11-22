@@ -1,9 +1,10 @@
 ---
 title: 用 Valaxy 从零搭建一个属于自己的网站
-date: 2026-11-10
-updated: 2026-11-10
-draft: true
-description: 2026 年新版的个人网站搭建教程：用 Valaxy（Vite + Vue 3）从零创建博客，涵盖环境准备、一条命令建站、类型提示配置、Markdown 写作、GitHub Pages / Netlify / Vercel / Cloudflare Pages 部署、AI 协作（AGENTS.md、llms.txt、MCP），以及从 Hexo 迁移的对照。
+date: 2026-11-20
+updated: 2026-11-22
+outline: [2, 3]
+cover: /images/valaxy-guide/cover-editorial.webp
+description: "六年前我写过一篇用 Hexo 从零建站的教程，这篇是换成 Valaxy 的新版。从准备环境、写下第一篇文章，到用 GitHub Pages 把网站发布出去，一步步带你搭出自己的博客。如果你已经在用 Hexo，文末也有一份迁移对照。"
 categories:
   - 云游的小安利
 tags:
@@ -12,7 +13,7 @@ tags:
   - 分享
 ---
 
-> 写给想要拥有一个自己的网站但没有资金成本的小白与曾经的自己。
+> 写给想要拥有一个自己的网站但囊中羞涩的小白与曾经的自己。
 >
 > 这是 2020 年那篇《[教你如何从零开始搭建一个属于自己的网站](/posts/how-to-build-your-site)》的 2026 新版。
 
@@ -22,89 +23,66 @@ tags:
 
 这一点，六年过去了，依然没有变。
 
-变的是工具。
+---
 
-2020 年写旧文时，我用的是 Hexo、`hexo-theme-yun`、GitHub Pages 和 Travis CI。后来我自己动手做了 [Valaxy](https://valaxy.site/zh/guide/why)，现在我的博客就跑在它上面。所以这篇文章换了一条主线：**用 Valaxy 从零搭一个站**。
+但自那以来，框架与技术栈已经发生了翻天覆地的变化。
 
-为什么是 Valaxy？简单讲，它面向的是**想要更现代的开发体验**的人：
+React/Vue/Svelte/Solid 前端框架层出不穷，各领风骚。但如今却被 AI 洪流逐一碾过，悄无声息。
 
-- **Vite + Vue 3**：开发服务器启动很快，页面和主题都是 Vue 写的，Vue 与 Vite 生态的插件可以直接用。
-- **热更新**：改文章、改配置、改标签分类，保存后浏览器立刻变化，而且是局部更新，不用整页刷新。
-- **带类型提示的配置**：`site.config.ts` 和 `valaxy.config.ts` 是 TypeScript，编辑器里鼠标悬浮就能看到每个选项的说明。
-- **AI 友好**：新项目自带给编程助手看的 `AGENTS.md`，可以生成 `llms.txt`，还可以让 Cursor 之类的工具通过 MCP 帮你检查文章（后面会讲）。
+AI 时代，个人博客是否真的有意义呢？
+我想，答案依然是肯定的。
 
-> Hexo 依然是一个很棒的博客框架，我的博客就是在它上面长大的。如果你现在正在用某个很喜欢的 Hexo 主题或插件，继续用它完全没问题。Valaxy 只是给那些想换一套更现代工作流的人，多一个选项。
+当然，有些答案也逐渐发生了变化。
 
-这依然是一篇新手向教程，也许会有点科普的感觉。我会尽量保持「点到为止」：讲清楚每一步在干嘛，但不会教你怎么注册账号、安装时怎么点下一步。希望看完之后，没有基础的小白也能搭出一个属于自己的站点。（前提是认识基础的英语单词和善用搜索引擎，现在还可以善用 AI。）
+## 我们还需要框架吗？
 
-已经有基础的同学可以大胆跳读。
+2020 年写旧文时，我用的是 Hexo、`hexo-theme-yun`、GitHub Pages 和 Travis CI。后来我自己动手做了 [Valaxy](https://valaxy.site/zh/guide/why)，现在我的博客就跑在它上面。
 
-> 注释处多为相关补充说明，对正常流程没有影响，若没有兴趣，可以略过。
+所以这篇文章换了一条主线：**用 Valaxy 从零搭一个站**。
 
-文中的命令和文件内容，我都是用 Valaxy v1.2.2 实际跑过一遍写下来的。如果你看到时版本已经更新，以 [Valaxy 官方文档](https://valaxy.site/zh/guide/getting-started)为准。
+为什么换成 Valaxy？这几年维护自己的博客，顺手把写文章时在意的几件事也做进了 Valaxy：
+
+- **Vite + Vue 3 开发体验**：本地启动与热更新足够快；修改配置、文章、标签或分类时，浏览器能立刻看到变化，也可以接着复用 Vue / Vite 的插件生态。
+- **TypeScript 类型提示**：`site.config.ts` 和 `valaxy.config.ts` 都带类型定义，忘了哪一项是做什么的，鼠标放上去就能看说明。
+- **交互式博客文章**：Markdown 里可以直接写 Vue 组件，让文章不只是静态排版，还可以塞进边读边试的小控件。**你在这篇教程里看到的路线图、模拟终端、配置实验室和部署流水线，全都是直接写在 Markdown 正文里的 Vue 组件。**
+- **顺手的 AI 协作**：脚手架自带 `AGENTS.md` 让编程助手看懂站点约定；后面还会讲怎么生成 `llms.txt`，以及怎么用 MCP 检查文章里的断链和图片。
 
 <!-- more -->
 
-### 关键词
+到了 AI 时代，热更新和类型提示看起来没那么新鲜了，但写博客时我依然偏爱这些细小的便利：改完一句话就能看到页面效果，哪天想给文章加一段交互小动画，让 AI 帮写个组件放进 `components/`，一篇普通笔记立刻就能「动起来」。至于哪些事值得写、写下来是什么心情，我还是想自己拿主意。
 
-- Valaxy
-- 静态博客
-- Vite / Vue 3
-- 无服务器
-- GitHub Pages
-- AI 协作（`llms.txt` / MCP）
+> Hexo 是一个很棒的博客框架，我的博客就是在它上面长大的。如果你正用着顺手的 Hexo 主题或插件，继续用完全没问题；如果你想换一套更现代的写作和折腾流程，Valaxy 可以是另一个选择。我也会继续维护它，慢慢把好用的新功能加进来。
+
+这依然是一篇新手向教程，我会尽量保持「点到为止」：讲清楚每一步在干嘛，但不会细抠安装向导怎么点下一步。已经有基础的同学可以大胆跳读；你也可以把这篇文章直接交给 AI 助手，让它陪你一步步把站搭好。如果实际运行脚手架时界面细节略有变化，以 [Valaxy 官方文档](https://valaxy.site/zh/guide/getting-started) 为准。
+
+> 注释处多为补充说明，对正常建站没有影响，不想看可以直接略过。
+
+### 顺便科普：静态博客和动态博客有什么区别？
+
+如果把搭建一个网站比作开店：
+
+- **动态博客**（如 WordPress、Typecho、Ghost）：就像**现点现炒的餐馆**。文章存在数据库里，每当有人推门访问，服务器都要现查数据库、现拼出完整网页再端给读者。自带后台很方便，但代价是你得自己租一台服务器并照看环境。
+- **静态博客**（如 Valaxy、Hexo、Hugo）：更像**提前印好的精致立体绘本**。文章平时躺在本地的 Markdown 文件里，发布前一次性构建成纯 HTML / CSS / JS 文件；读者访问时直接把现成页面递过去就行，**不需要自己的后端服务器**，所以能直接免费托管在 GitHub Pages 上，打开速度也往往更快。
+
+> 很多人听到「静态」会误以为页面不能动——其实「静态」指的是**不靠服务器现场现算**，不是内容只能当白纸看。就像立体绘本虽已印好，翻开依然藏着可以拉动的小机关；Valaxy 的页面也都是运行在浏览器里的 Vue 组件，写互动演示和动画反倒比动态博客更轻巧（只有评论区这类需要「帮不同访客存数据」的功能，才需要再挂一个第三方服务）。
+
+### 技术栈
+
+<ValaxyGuideTechStack />
 
 ## 步骤
 
+第一次搭站，可以顺着这条主线走：先准备环境，创建并预览小站，再做一点基础配置、写下第一篇文章，最后把它发布出去。走完这几步，你的网站就已经正式上线了；后面的进阶玩法和常见问题，等有需要时再回来翻就行。
+
+<ValaxyGuideRoadmap />
+
 ### 准备环境
 
-你需要三样东西：Node.js、pnpm、Git。再加一个顺手的编辑器：VS Code。
+开工前先准备三件基础工具：**Node.js**（`>=22.12.0`）、**pnpm**（`>=10.26.0`）、**Git**，外加顺手的编辑器 **VS Code**。后文说「输入命令」，都是指打开终端（Windows 用 PowerShell 或命令提示符，macOS 用「终端」）输入。
 
-#### Node.js
+按下面 4 张工具卡里的官网链接装好后，可以顺手勾选标记进度；装完也可以复制底部的版本自检命令验明版本：
 
-> 什么是 Node.js？它是一个能让 JavaScript 脱离浏览器运行的环境。JavaScript 原本只能待在浏览器这个「水缸」里，Node.js 相当于把水缸也搬到了你的电脑上。你不用懂更多，只需要知道：**Valaxy 的开发和构建都跑在 Node.js 上**。
-
-前往 [Node.js 官网](https://nodejs.org/)下载 **LTS（长期支持版）**。Valaxy 要求 Node.js `>=22.12.0`，所以请确认版本不要太旧。
-
-> 为什么推荐 LTS 而不是最新版？因为最新版偶尔会遇到一些奇妙的 bug，LTS 更稳。
-
-打开终端（Windows 打开 PowerShell 或命令提示符，macOS 打开「终端」），输入：
-
-```bash
-node --version
-```
-
-如果显示的版本号不低于 `v22.12.0`，就没问题了。
-
-> 后文说「输入命令」，都是指在终端里输入。
-
-#### pnpm
-
-> pnpm 是一个包管理工具，你可以理解成「软件商店的命令行版」，作用和 Node.js 自带的 `npm` 差不多，但装依赖更快更省空间。Valaxy 的脚手架推荐用 pnpm，要求 `>=10.26.0`。
-
-安装方式见 [pnpm 官网](https://pnpm.io/installation)，其中一种是用 npm 装：
-
-```bash
-npm install -g pnpm
-pnpm --version
-```
-
-> 国内下载依赖慢的话，可以切换到 npmmirror 镜像。旧文里的 `registry.npm.taobao.org` 早就不能用了，请使用新域名：
->
-> ```bash
-> pnpm config set registry https://registry.npmmirror.com
-> ```
-
-#### Git 和 VS Code
-
-> Git 是一个版本管理工具。比如设计师做好了第三版海报，客户却说还是要第一版，这时就可以用 Git 一键回到最初的版本。它还是后面把网站推送到 GitHub 的桥梁。
-
-- 安装 [Git](https://git-scm.com/)。
-- 安装 [VS Code](https://code.visualstudio.com/)。
-
-> VS Code 是 Visual Studio Code 的简称，一个轻量又强大的编辑器（宇宙第一编辑器，这里不接受反驳）。注意它不是 Visual Studio（VS），那是一个体积大一个量级的 IDE。
-
-> Valaxy 的脚手架会在 `.vscode/extensions.json` 里推荐一些插件，用 VS Code 打开项目时，它会提示你安装，装上就能在编辑器里直接预览图标、国际化文字等。还有一个 [Valaxy 扩展](https://marketplace.visualstudio.com/items?itemName=YunYouJun.valaxy)，可以在编辑器里查看文章列表和本地预览。
+<ValaxyGuideEnvChecklist />
 
 ### 一条命令建站
 
@@ -118,110 +96,34 @@ pnpm create valaxy@latest
 
 > `create` 是 pnpm 的一个小技巧：`pnpm create xxx` 会去下载并运行名为 `create-xxx` 的脚手架包。「脚手架」就是帮你生成项目模板的工具。
 
-接下来会出现几个问题，依次选择就好：
+接下来会出现几个问题，你可以先在下面这个模拟终端里用方向键或点击试选一遍，改改项目目录名，再点端口预览本地首页：
 
-```text
-  🌌 Valaxy  v1.2.2
-
-? Select a type: › - Use arrow-keys. Return to submit.
-❯   Blog - For Most Users
-    Theme - For Theme Developers
-    Addon - For Addon Developers
-
-? Select a theme:
-❯   Yun - A light & clean theme (default)
-    Press - A document-oriented theme
-    Custom - Enter a custom theme name
-
-? Project name: › valaxy-blog
-```
+<ValaxyGuideCli />
 
 1. `Select a type`：选 **Blog**（我们是来搭博客的）。
 2. `Select a theme`：选 **Yun**（默认的博客主题，也是我自己在用的）。`Press` 是偏文档风格的主题，`Custom` 可以输入自定义主题名。
-3. `Project name`：项目文件夹名，比如 `valaxy-blog`。如果你准备部署到 GitHub Pages 的根路径，可以直接用 `你的用户名.github.io`（后面会讲）。
-4. `Install and start it now?`：我建议先选 **No**，我们手动来，这样你知道每一步在干什么。
+3. `Project name`：项目文件夹名，比如 `valaxy-blog`；如果要部署到 GitHub Pages 的根路径，也可以直接写成 `你的用户名.github.io`（后面会讲）。
+4. `Install and start it now?`：我建议新手先选 **No**，再按模拟终端里那三条命令依次运行：`cd 目录名`、`pnpm install`（装好 `package.json` 里的依赖）和 `pnpm dev`（`pnpm run dev` 的简写，启动本地开发服务器），这样你更清楚每一步在干什么。
 
-脚手架跑完之后，会提示你接下来该做什么：
+> 脚手架生成的 `pnpm-workspace.yaml` 记录了依赖安装的构建权限，请保留它，不要删。
 
-```bash
-cd valaxy-blog
-pnpm install
-pnpm run dev
-```
-
-- `pnpm install` 会安装 `package.json` 里提到的所有依赖。
-- `pnpm run dev` 会启动本地开发服务器（写成 `pnpm dev` 也可以，效果一样）。
-
-> 脚手架生成的 `pnpm-workspace.yaml` 里记录了依赖安装的构建权限，请保留它，不要删。
-
-启动成功后，终端会显示类似这样的内容：
-
-```text
-  🌌 Valaxy  v1.2.2
-
-  🪐 theme   > yun (v1.2.2)
-  📁 /path/to/valaxy-blog
-
-  Preview    > http://localhost:4859/
-  Network    > http://你的局域网 IP:4859/
-
-  shortcuts  > restart | open | qr | edit
-```
-
-打开 `Preview` 后面的地址（默认是 `http://localhost:4859/`，端口被占用时会自动换一个，以终端为准），你就能看到你的第一个 Valaxy 站点了。刚打开时，首页会先出现一行竖排的大字（脚手架默认是「我的小站」），动画结束后往下翻，就能看到一篇示例文章《Hello, Valaxy!》。
+启动成功后打开终端 `Preview` 后面的地址（默认 `http://localhost:4859/`，按 `Ctrl + C` 可以停止服务），首页先会出现竖排大字「我的小站」，往下翻就能看到示例文章《Hello, Valaxy!》：
 
 ![Valaxy 脚手架首页，可见示例文章《Hello, Valaxy!》](/images/valaxy-home.png)
 
-这是本地预览往下翻之后的样子。
-
-按 `Ctrl + C` 可以停止服务器。
-
 #### 热更新体验一下
 
-保持 `pnpm dev` 运行，用 VS Code 打开项目，找到 `valaxy.config.ts`。脚手架里首页大字默认就是「我的小站」，你可以改成自己喜欢的文字：
-
-<!-- eslint-skip -->
-```ts
-themeConfig: {
-  banner: {
-    enable: true,
-    title: '你好，世界', // 改成你喜欢的文字
-  },
-},
-```
-
-保存，然后看浏览器。
-
-没错，你不需要手动刷新。这就是 Vite 带来的热更新，不光是配置，文章内容、标签、分类的修改也都是即时生效的。比如把 `pages/posts/hello-valaxy.md` 开头的 `title` 改成「你好，Valaxy！」，文章页上的标题会立刻变过去：
+保持 `pnpm dev` 运行，用 VS Code 打开项目修改 `valaxy.config.ts` 或 `pages/posts/hello-valaxy.md`，**保存瞬间浏览器就会局部刷新**——不光文章文字、标签与分类，主题配色和首页大字也能即时生效（封面上组件写死的文案除外）：
 
 ![把示例文章标题改成「你好，Valaxy！」后，页面立即更新](/images/valaxy-hmr.gif)
 
-保存后标题从「Hello, Valaxy!」变成了「你好，Valaxy！」，不用手动刷新。封面图上的那行字是组件里写死的，所以还是原来的文案，这也正常。
+> 这是我做 Valaxy 的最初动机之一：Hexo 每次改完要重新生成、整页刷新，而基于 Vite 的现代框架早就能做到「保存即所见」了。
 
-> 这是我做 Valaxy 的最初动机之一。Hexo 每次改完要重新生成、刷新页面，而现代前端框架早就能做到「保存即所见」了。
+#### 看看生成了什么
 
-### 看看生成了什么
+打开项目目录时，文件看起来会有点多。其实一开始你只需要关心标注了「必改」的几项——点选下面的文件，可以直接看它们各自管什么（需要纯文本结构时，点右下角就能一键复制）。
 
-用 `ls` 或者在 VS Code 里看一下目录，主要的内容是这些：
-
-```text
-valaxy-blog
-├── .github/workflows/gh-pages.yml   # GitHub Actions 自动部署
-├── .vscode/                         # 推荐的 VS Code 插件
-├── AGENTS.md                        # 给 AI 编程助手看的说明
-├── components/                      # 自定义组件（会被自动注册）
-├── layouts/                         # 自定义布局
-├── locales/                         # 自定义国际化文字
-├── pages/                           # 所有页面和文章
-│   └── posts/hello-valaxy.md        # 示例文章
-├── public/                          # 静态资源（原样复制）
-├── styles/                          # 覆盖主题样式
-├── netlify.toml                     # Netlify 配置
-├── vercel.json                      # Vercel 配置
-├── site.config.ts                   # 站点信息
-├── valaxy.config.ts                 # 主题与框架配置
-└── package.json
-```
+<ValaxyGuideFileTree />
 
 > 脚手架还生成了 `Dockerfile` 和 `nginx.conf`，如果你想把站点放到自己的服务器上，可以用它们。新手可以忽略。
 
@@ -287,6 +189,10 @@ export default defineValaxyConfig<UserThemeConfig>({
 
 保存，主题色就变了。
 
+还没搭好本地环境也没关系，先在下面这个小实验室里调一下标题、主题色或首页大字，点一点代码里带下划线的字段，直接感受一下热更新和类型提示：
+
+<ValaxyGuideConfigPlayground />
+
 > 这个 `defineValaxyConfig<UserThemeConfig>` 就是类型提示的来源。在 VS Code 里把鼠标悬浮在 `colors`、`primary` 这些字段上，就能看到注释和默认值；输入时还会自动补全。写错字段名，编辑器会直接标红。比起去翻 YAML 文档，是不是友好不少？
 
 > `.ts` 是 TypeScript 的后缀名，TypeScript 可以简单理解成「带类型的 JavaScript」。你不需要系统学它，照着模板改值就行。
@@ -310,7 +216,7 @@ pnpm exec valaxy new first-post
 ```md
 ---
 title: 我的第一篇文章
-date: 2026-11-10
+date: 2026-11-20
 tags:
   - 日常
 categories:
@@ -325,6 +231,8 @@ description: 这是我的第一篇文章。
 
 保存后，首页的文章列表会立刻更新。
 
+![左边是 Markdown 标题，右边是带 Valaxy 标识和同一标题的博客预览](/images/valaxy-guide/first-page.webp)
+
 > 文章标题下面如果想控制首页展示的摘要，可以在正文里加一行 `<!-- more -->`，它前面的内容会作为摘要。注意 `more` 前后要有空格。
 
 #### 标签与分类
@@ -334,7 +242,7 @@ description: 这是我的第一篇文章。
 ```md
 ---
 title: 用 Valaxy 从零搭建一个属于自己的网站
-date: 2026-11-10
+date: 2026-11-20
 tags:
   - 教程
   - Valaxy
@@ -348,37 +256,7 @@ categories:
 
 > 更多可以写在 frontmatter 里的选项（比如 `top` 置顶、`hide` 隐藏、`draft` 草稿等）见 [文章 | Valaxy](https://valaxy.site/zh/guide/post)。
 
-#### 在 Markdown 里写 Vue 组件
-
-这是 Valaxy 和很多博客框架的一个不同点：**`components/` 文件夹下的 Vue 组件会被自动注册，可以直接在 Markdown 里使用**。
-
-新建 `components/HelloCounter.vue`：
-
-```vue
-<script setup lang="ts">
-import { ref } from 'vue'
-
-const count = ref(0)
-</script>
-
-<template>
-  <button class="rounded px-4 py-2 bg-blue text-white" @click="count++">
-    你已经点了 {{ count }} 次
-  </button>
-</template>
-```
-
-然后在任意文章里直接用：
-
-```md
-下面是一个可以点的按钮：
-
-<HelloCounter />
-```
-
-> 文章里写的 `class="rounded px-4 ..."` 这种是 UnoCSS 的原子化 CSS（类似 TailwindCSS），Valaxy 内置了，Markdown 和组件里都能直接用。
-
-> 脚手架自带的示例文章《Hello, Valaxy!》就用了同样的方法：在文章里放了一个可交互的 Vue 星座封面。想看更多可以翻文档：[在 Markdown 中使用 Vue](https://valaxy.site/zh/guide/markdown#using-vue-in-markdown)。
+#### 构建并预览
 
 写完文章，想看看最终效果，可以构建一次：
 
@@ -424,100 +302,25 @@ git push -u origin main
 
 > 如果觉得每次都要敲 `git add` / `commit` / `push` 很烦，也可以像旧文那样写个脚本，或者直接用 VS Code 左侧的源代码管理面板，点点鼠标就行。
 
-> 这一步以前叫「备份」，现在它同时也是**部署的触发器**：推送一次，GitHub 就会帮你构建并发布。
+> 这一步以前叫「备份」。等选好发布来源，以后每次推送也会触发部署。
 
 ##### 开启自动部署
 
-> GitHub Pages 的发布流程从 `create-valaxy` 1.3.0 起随脚手架提供。较早创建的项目也可以用下方配置替换原来的 `.github/workflows/gh-pages.yml`，并在 `package.json` 的 `packageManager` 字段中填写项目使用的 pnpm 版本，例如 `pnpm@12.5.1`。
+到 GitHub 仓库的 `Settings` → `Pages`，把 `Build and deployment` 下的 `Source` 设为 **GitHub Actions**。
 
-脚手架已经帮你生成了 `.github/workflows/gh-pages.yml`，也就是 GitHub Actions 的工作流。它不再往 `gh-pages` 分支推静态文件，而是用 GitHub 官方的 Pages Actions，把构建好的 `dist/` 直接发布出去。大致是这样：
+脚手架已内置 `.github/workflows/gh-pages.yml`（可参考[官方模板](https://github.com/YunYouJun/valaxy/blob/v1.5.0/packages/create-valaxy/template-blog/.github/workflows/gh-pages.yml)）：推送到 `main`、`master` 或 `valaxy` 分支时，Actions 会自动安装依赖、构建 `dist/` 并直接发布到 GitHub Pages。下面点「模拟一次 git push」看每一步怎么跑，也可以切到 `my-blog` 体验子路径忘了加 `base` 的样子：
 
-1. 把代码推送到 `main` / `master` / `valaxy` 分支时触发（也可以在 Actions 页面手动跑一次）；
-2. 检出完整的提交历史，用 pnpm 安装依赖，再执行 `pnpm run build`；
-3. 把 `dist/` 上传为 Pages 产物，部署到 GitHub Pages。
+<ValaxyGuideDeployPipeline />
 
-工作流里的 `fetch-depth: 0` 是故意的：Valaxy 可以用 Git 提交时间当作文章日期，浅克隆拿不到完整历史，日期会不准，所以需要把历史都拉下来。
+> 什么是持续集成（CI）？可以理解为「把代码推上去，让平台自动完成构建和发布」。旧文里用的是 Travis CI，现在直接用 GitHub Actions 就够了。所需权限已经写在工作流文件里。
 
-下面是 `create-valaxy` 1.3.0 的完整工作流。
+推送之后，可以切到仓库顶部的 `Actions` 标签页查看构建日志和部署状态。如果第一次部署没跑起来，打开 `GitHub Pages` 工作流，点一次 `Run workflow`。
 
-```yaml
-name: GitHub Pages
+- 源码用自定义分支的话，记得修改 `.github/workflows/gh-pages.yml` 里的 `on.push.branches`。
+- 保留工作流里的 `fetch-depth: 0`。Valaxy 可以用 Git 提交时间作为文章日期，浅克隆拿到的历史可能不够。
+- 如果项目还在用 1.2.2 那套工作流，迁移时对照上面的模板和[同版本的 package.json](https://github.com/YunYouJun/valaxy/blob/v1.5.0/packages/create-valaxy/template-blog/package.json)一起调整。先核对 Node.js 和 `packageManager`。
 
-on:
-  push:
-    branches:
-      # The branch where the project source code resides
-      # 项目源代码所在的分支
-      - main
-      - master
-      - valaxy
-  workflow_dispatch:
-
-# Publish the built site with GitHub Pages. The workflow token can read
-# the repository and upload the artifact.
-permissions:
-  contents: read
-  pages: write
-  id-token: write
-
-# One deployment at a time. Let an in-progress production deploy finish.
-concurrency:
-  group: pages
-  cancel-in-progress: false
-
-jobs:
-  build:
-    runs-on: ubuntu-latest
-    steps:
-      - uses: actions/checkout@v7
-        with:
-          # Git dates for posts need the full history.
-          # 文章的 Git 日期需要完整提交历史。
-          fetch-depth: 0
-
-      # Read the exact pnpm version from package.json's packageManager field.
-      - uses: pnpm/action-setup@v6
-
-      - name: Use Node.js LTS
-        uses: actions/setup-node@v7
-        with:
-          node-version: lts/*
-
-      - name: Setup Pages
-        uses: actions/configure-pages@v6
-
-      - name: Install dependencies
-        # The scaffold ships package.json without a lockfile.
-        run: pnpm install
-
-      - name: Build
-        run: pnpm run build
-
-      - name: Upload Pages artifact
-        uses: actions/upload-pages-artifact@v5
-        with:
-          path: dist
-          include-hidden-files: true
-
-  deploy:
-    needs: build
-    runs-on: ubuntu-latest
-    environment:
-      name: github-pages
-      url: ${{ steps.deployment.outputs.page_url }}
-    steps:
-      - name: Deploy to GitHub Pages
-        id: deployment
-        uses: actions/deploy-pages@v5
-```
-
-> 什么是持续集成（CI）？可以理解为「你把代码推上去，机器人自动帮你构建、测试、发布」。旧文里我用的是 Travis CI，现在 GitHub Actions 已经足够好用，而且不用额外注册、不用额外设置 Token。权限已经写在工作流里了（`contents: read`、`pages: write`、`id-token: write`），一般不必再去改仓库的 Actions 权限。
-
-接着打开仓库的 `Settings` -> `Pages`，在 Build and deployment 的 Source 里选择 **GitHub Actions**。注意不是选 `gh-pages` 分支——这条新工作流不会再生成那个分支。
-
-> 如果你的源码分支不叫 `main`、`master` 或 `valaxy`，要修改 `gh-pages.yml` 里的 `on.push.branches`。选好发布源之后，如果第一次没有把站点发出来，到 Actions 页面把这次工作流再跑一遍就行。
-
-稍等一两分钟，打开 `https://你的用户名.github.io`，就能看到线上的网站了。
+等 `Actions` 里的构建和部署步骤都显示通过后，打开 `https://你的用户名.github.io`（或在部署记录里点击生成的页面链接），就能看到已经上线的网站了。
 
 > 使用 HTTPS，建议开启强制跳转：`Settings` -> `Pages` -> `Enforce HTTPS`。
 
@@ -538,19 +341,61 @@ jobs:
 
 #### Netlify / Vercel / Cloudflare Pages
 
-不想用 GitHub Pages？这几个平台也都可以免费托管静态站点，并且都是「连接仓库就能自动部署」。
+不想用 GitHub Pages？这几个平台也都可以免费托管静态站点，而且都遵循 **「连接仓库 → 执行 `pnpm build` → 发布 `dist/`」** 这一套流程，切到下面任意平台就能看对应内置配置与操作步骤：
 
-- **Netlify**：脚手架已经内置了 `netlify.toml`（构建命令 `pnpm run build`，发布目录 `dist`）。在 Netlify 里连接你的 GitHub 仓库即可自动部署。
-- **Vercel**：脚手架内置了 `vercel.json`（开启了 `cleanUrls`）。在 Vercel 里 `Add New...` -> `Project`，选择仓库并 `Import`，将 `Framework Preset` 设置为 `Other`，`Output Directory` 设置为 `dist`，然后点 `Deploy`。
-- **Cloudflare Pages**：在 Cloudflare 控制台进入「Workers 和 Pages」，创建项目并连接 Git 仓库，选择部署分支，将构建命令设为 `pnpm build`，构建输出目录设为 `dist`，保存并部署。
+<ValaxyGuideHostMatrix />
 
-> 它们的共同点就是：构建命令 `pnpm build`，输出目录 `dist`。记住这两个，换到别的平台（比如 Render，甚至自己的服务器）也一样。
+更多平台细节（包括 Render、Nginx、Docker）见 [部署 | Valaxy](https://valaxy.site/zh/guide/deploy)。
 
-更多细节（包括 Nginx、Docker）见 [部署 | Valaxy](https://valaxy.site/zh/guide/deploy)。
+## 进阶与迁移
+
+小站上线后，想再折腾一点，可以从这里挑着看。下面几节分别聊怎么在文章里用 Vue 组件、怎么让 AI 搭把手，以及已有的 Hexo 博客怎么搬过来。
+
+### 在 Markdown 里写 Vue 组件
+
+这是 Valaxy 和很多博客框架最大的不同点之一：**`components/` 文件夹下的 Vue 组件会被自动注册，直接就能在 Markdown 里写标签渲染**。你在本文前面一路点过来的路线图、环境清单、模拟终端、配置实验室和部署流水线，全都是用这个机制直接嵌进 Markdown 正文里的。
+
+新建 `components/HelloCounter.vue`：
+
+```vue
+<script setup lang="ts">
+import { ref } from 'vue'
+
+const count = ref(0)
+</script>
+
+<template>
+  <button class="rounded px-4 py-2 bg-blue text-white" @click="count++">
+    你已经点了 {{ count }} 次
+  </button>
+</template>
+```
+
+然后在任意文章里直接用：
+
+```md
+下面是一个可以点的按钮：
+
+<HelloCounter />
+```
+
+> 文章里写的 `class="rounded px-4 ..."` 这种是 UnoCSS 的原子化 CSS（类似 TailwindCSS），Valaxy 内置了，Markdown 和组件里都能直接用。
+
+> 脚手架自带的示例文章《Hello, Valaxy!》就用了同样的方法：在文章里放了一个可交互的 Vue 星座封面。想看更多可以翻文档：[在 Markdown 中使用 Vue](https://valaxy.site/zh/guide/markdown#using-vue-in-markdown)。
+
+再试试下面这个组件。先在右边预览卡里点几次按钮累加计数，再把左侧的标题改掉、按 `Ctrl / ⌘ + S` 保存（或点保存按钮），你会看到右侧标题立刻跟着局部热更新，但刚才点的次数依然保留——还可以用底部的「模拟整页刷新」对比状态归零的区别，或切到第二个标签体验 `<!-- more -->` 如何裁剪首页摘要。组件源码放在 `components/ValaxyWritingFlow.vue`，文章中只要写一行 `<ValaxyWritingFlow />`。
+
+<ValaxyWritingFlow />
+
+顺带一提，这也是我在开头说「有些答案发生了变化」的其中一个想法。
+
+以前如果想在博客里塞几个交互演示，往往得花比写正文多出几倍的时间去手搓前端代码、调暗黑模式和边界细节，大多数时候想想就放弃了。到了 AI 时代，纯文字的教程和总结越来越容易生成，但反过来，写一个小组件放进 `components/` 的门槛却被大幅拉低了——作者只需要想清楚「我想让读者亲手试试什么」，具体实现可以交给 AI 搭把手。而且正因为静态博客把文章、组件和样式都放在同一个代码仓库里走同一条构建管线，写完就能热更新预览、上线也不用守着后端进程，做起交互式文章反而轻快顺手。
+
+于是个人博客多了一种很有意思的新形态：**页面上是让人把玩的「立体机关」，底层依然是一份干净的 Markdown 原文（顺便还能给 AI 读）**。工具换了一代又一代，能把自己的小心思变成别人伸手就能碰到的样子，大概也是让博客一直保持温度的一点小浪漫吧。
 
 ### AI 时代的新玩法
 
-旧文写的时候，ChatGPT 还没有出现。现在写博客、改站点，很多人都会让 AI 帮一把。Valaxy 在这方面做了一些准备，下面说的都是目前文档里实际存在的功能，详见 [与 AI 协作](https://valaxy.site/zh/guide/work-with-ai)。
+旧文写的时候，ChatGPT 还没有出现。现在写博客、改站点，很多人都会让 AI 帮一把。Valaxy 在这方面也做了一些准备，详见 [与 AI 协作](https://valaxy.site/zh/guide/work-with-ai)。
 
 #### AGENTS.md：给 AI 看的说明书
 
@@ -630,25 +475,9 @@ export default defineValaxyConfig<UserThemeConfig>({
 
 > 列出我的博客文章，检查第一篇的最终路由、布局和本地链接，并根据诊断修复 Markdown。
 
-为了看看实际效果，我临时写了一篇《写给周末的一点随记》，正文里链到了一篇还不存在的 `/posts/getting-started`。按照上面的地址连上 MCP 之后（Cursor、Claude 连的也是同一个地址），调用 `valaxy_check_page`，检查的文件是 `pages/posts/weekend-notes.md`，返回是这样的（有删节）：
+比如你在写一篇周末随记，顺手链到一个还没建的本地页面。连上 MCP 后，AI 调用 `valaxy_check_page` 检查这篇文章，就能找出这个断链、标出对应的行号，并附上排查提示（点击下面带波浪线的链接就能看到）：
 
-```json
-{
-  "ok": true,
-  "diagnostics": [
-    {
-      "code": "missing-link",
-      "severity": "warning",
-      "message": "Local link target not found: /posts/getting-started",
-      "hint": "Check the resolved route, source-relative file path or public asset path. Custom runtime routes and asset resolvers are not checked.",
-      "line": 10
-    }
-  ],
-  "totalDiagnostics": 1
-}
-```
-
-它准确地指出了第 10 行那个坏掉的内部链接，并给了修复提示。`ok` 仍是 `true`，因为这是 warning 而不是 error——文章本身能正常生成。同一篇文章用命令行 `pnpm exec valaxy check --file pages/posts/weekend-notes.md` 检查，结果一致：`passed (1 diagnostics)`，并打出同一条 `missing-link` 警告。
+<ValaxyGuideMcpCheck />
 
 几点需要知道的：
 
@@ -661,12 +490,10 @@ export default defineValaxyConfig<UserThemeConfig>({
 > ```bash
 > pnpm exec valaxy check --file pages/posts/hello-valaxy.md
 > ```
->
-> 我本地跑了一下，示例文章的结果是 `passed (0 diagnostics)`。
 
 ### 从 Hexo 迁过来
 
-如果你和当年的我一样，博客在 Hexo 上，想换一套更现代的开发体验，可以参考下面的对应关系。
+如果你和当年的我一样，博客在 Hexo 上，想换一套更现代的开发体验，可以参考下面的对应关系（<span class="i-simple-icons-hexo inline-block align-text-bottom" aria-hidden="true" /> Hexo → Valaxy）：
 
 | 用途 | Hexo | Valaxy |
 | --- | --- | --- |
@@ -739,22 +566,19 @@ export default defineValaxyConfig({
 
 ### 备案
 
-如果想用国内的云服务器，或者国内 CDN，不备案确实寸步难行。不过先要分清两件事：你的网站到底是不是托管在中国内地。
+想使用中国内地的云服务器或国内 CDN 时，不备案确实寸步难行；不过动手前先区分一件事：**你的站点是不是托管在中国内地**。
 
-如果你只是把站点放在 GitHub Pages、Netlify、Vercel 或 Cloudflare Pages 上，服务器在境外，一般**不需要**做工信部的 ICP 备案，绑定自己的域名也是如此。想用中国内地的云服务器，或把域名解析到国内 CDN（比如阿里云、腾讯云的内地节点）时，才需要先完成 ICP 备案，否则国内接入商不会让未备案的域名上线。
+如果你只是把站点放在 GitHub Pages、Netlify、Vercel 或 Cloudflare Pages 上，服务器在境外，一般**不需要**做工信部的 ICP 备案（绑自定义域名也是如此）；只有用到中国内地云服务器或把域名解析到内地 CDN 节点时，才需要先完成 ICP 备案。
 
-依据是《[非经营性互联网信息服务备案管理办法](https://www.miit.gov.cn/gyhxxhb/jgsj/cyzcyfgs/bmgz/xxtxl/art/2024/art_84a0cfa0ebd049bbbe751dca9a008e56.html)》：在中国境内提供非经营性互联网信息服务，应当履行备案手续。查询和办理入口是工信部的 [ICP/IP地址/域名信息备案管理系统](https://beian.miit.gov.cn/)。
+<details>
+<summary>展开查看：2026 国内云资源门槛、页脚配置与公安备案说明</summary>
 
-要通过阿里云或腾讯云备案，需要先有符合条件的中国内地云资源，再由这家接入商代为提交。备案本身不收费，但云资源是要花钱的。2026 年两边的门槛大致是：
+- **国内接入规则与门槛（2026 参考）**：需按《[非经营性互联网信息服务备案管理办法](https://www.miit.gov.cn/gyhxxhb/jgsj/cyzcyfgs/bmgz/xxtxl/art/2024/art_84a0cfa0ebd049bbbe751dca9a008e56.html)》履行备案手续（入口：[ICP/IP地址/域名信息备案管理系统](https://beian.miit.gov.cn/)）。接入商代交备案不收费，但要求自备符合条件的中国内地云资源（旧文里「用学生优惠买 1 个月服务器」的做法如今已不适用）：
+  - [腾讯云](https://cloud.tencent.com/document/product/243/18908)：中国境内包年包月且购买时长不少于 3 个月（含续费）、备案期间剩余有效期不少于 1 个月，且具备公网 IP。
+  - [阿里云](https://help.aliyun.com/zh/icp-filing/basic-icp-service/user-guide/overview)：中国内地节点包年包月，购买时长大于 3 个月（含续费累计）并购买公网带宽；免费试用 ECS 不能备案。
+- **个人备案注意事项**：个人性质通常只能做个人博客或个人空间（见 [腾讯云说明](https://cloud.tencent.com/document/product/243/19628)），域名需完成实名认证且为工信部批复后缀；各地管局要求有差异，办理前请以接入商与当地管局规则为准。
 
-- [腾讯云](https://cloud.tencent.com/document/product/243/18908)（文档更新于 2026 年 10 月 16 日）：中国境内、包年包月、购买时长不少于 3 个月（含续费），备案期间剩余有效期不少于 1 个月，并且要有公网 IP。
-- [阿里云](https://help.aliyun.com/zh/icp-filing/basic-icp-service/user-guide/overview)：中国内地节点、包年包月，购买时长大于 3 个月（含续费累计），并购买公网带宽。免费试用的 ECS 不能用来备案。
-
-旧文里写过「用学生优惠买一个月服务器，关联一下就行」——现在已经不行了，最短基本是三个月起。
-
-个人备案通常只能做个人博客、个人空间这类个人性质的网站（[腾讯云的说明](https://cloud.tencent.com/document/product/243/19628)）。域名得先完成实名认证，后缀也得是工信部批复过的，一些少见后缀在国内备案不了。具体要交哪些材料、网站名称和内容怎么写，各省管局并不完全一样，请以接入商和当地管局的最新规则为准。我不是政策专家，上面这些都来自 2026 年仍在公开的官方和云厂商说明，执行时请再核对一遍原文。
-
-备案成功后，页脚必须清晰地展示备案号，并链接到工信部备案管理系统（现在的地址是 `https://beian.miit.gov.cn/`）。Valaxy 的 Yun 主题已经预留了备案配置，脚手架的 `valaxy.config.ts` 里就有，默认关闭：
+备案通过后，页脚必须展示备案号并链接回 `https://beian.miit.gov.cn/`。Valaxy 的 Yun 主题已经在 `valaxy.config.ts` 里预留了开关（默认关闭）：
 
 <!-- eslint-skip -->
 ```ts
@@ -766,15 +590,13 @@ footer: {
 },
 ```
 
-另外还有一套独立的 **公安备案**（也叫联网备案），不是同一回事，要在 [全国互联网安全管理服务平台](https://beian.mps.gov.cn/) 办理。阿里云的文档写过：ICP 备案通过、网站开通后 30 天内应完成公安备案；即便服务器在境外、不需要 ICP 备案，若网站要对中国内地提供服务，他们也建议做公安联网备案（见 [阿里云 ICP 备案流程概述](https://help.aliyun.com/zh/icp-filing/basic-icp-service/user-guide/icp-filing-application-overview)）。各地执行尺度不同，请以当地公安机关和平台说明为准。
+- **关于公安备案**：另外还有一套独立的 **公安联网备案**，要在 [全国互联网安全管理服务平台](https://beian.mps.gov.cn/) 办理。阿里云文档指出 ICP 备案通过、网站开通后 30 天内应完成公安备案；即使服务器在境外无需 ICP 备案，若面向中国内地提供服务，同样建议完成公安备案（见 [阿里云 ICP 备案流程概述](https://help.aliyun.com/zh/icp-filing/basic-icp-service/user-guide/icp-filing-application-overview)）。具体以当地公安机关与平台说明为准。
+
+</details>
 
 ### 视频？
 
 依然没有视频，一是懒，二是文字更利于更新勘误。
-
-### 其他平台
-
-毕竟自己的站点可能还是不会有什么人看，所以发到其他平台了（然而还是没有人）。不过在这里阅读体验应该是最好的。
 
 ## 结语
 
@@ -788,7 +610,11 @@ footer: {
 
 > 臣闻善作者，不必善成；善始者，不必善终。「史记·乐毅列传」
 
-希望大家能有毅力坚持下去，不忘初心。
+能一直写当然很好。忙起来停一阵也没关系，小站会在那里等你。
+
+从 2019 年写出 `hexo-theme-yun`，到 2022 年正式立项 Valaxy 一路维护至今，工具形态变了不少，但初衷一直没变——我希望它还能陪大家多写下一些想留下的东西。
+
+如果你也像六年前的我一样，手头没多少预算，却想在网上留一个自由、不用畏惧他人眼光的角落，那就现在新建一个 Markdown 文件，随便用一句话开头，写下你的第一篇文章吧。不用等它完美，说不定几年后的你，还会回来笑着读这一句。
 
 > 永远相信美好的事情即将发生
 

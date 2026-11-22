@@ -1,8 +1,8 @@
 minimumReleaseAgeExclude:
-  - '@valaxyjs/devtools@1.4.1'
-  - '@valaxyjs/utils@1.4.1'
-  - valaxy-theme-yun@1.4.1
-  - valaxy@1.4.1
+  - '@valaxyjs/devtools@1.5.0'
+  - '@valaxyjs/utils@1.5.0'
+  - valaxy-theme-yun@1.5.0
+  - valaxy@1.5.0
   - valaxy-addon-girls@0.1.0
   - eslint@10.9.1
 shamefullyHoist: true
@@ -15,13 +15,7 @@ trustPolicyExclude:
   - valaxy-addon-waline@0.2.1
 packages:
   - .
-# Align Vite DevTools plugins with the Devframe 1.2.0 used by Valaxy DevTools.
 overrides:
-  '@vitejs/devtools@0.7.5>@devframes/hub-ui': 1.2.0
-  '@vitejs/devtools@0.7.5>@devframes/json-render-ui': 1.2.0
-  '@vitejs/devtools@0.7.5>@devframes/plugin-inspect': 1.2.0
-  '@vitejs/devtools@0.7.5>@devframes/plugin-messages': 1.2.0
-  '@vitejs/devtools@0.7.5>@devframes/plugin-terminals': 1.2.0
   # Keep older indirect and auto-installed peer dependencies on patched versions.
   axios@>=1 <1.20.0: ^1.20.0
   brace-expansion@>=5 <5.0.12: ^5.0.12
