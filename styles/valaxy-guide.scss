@@ -129,6 +129,7 @@
 }
 
 /* Buttons & chips matching Yun action buttons / post badges */
+.markdown-body a.vg-btn,
 .vg-btn {
   display: inline-flex;
   align-items: center;
@@ -152,11 +153,14 @@
     color 160ms var(--yun-ease-in, ease);
 }
 
+.markdown-body a.vg-btn:hover:not(:disabled),
 .vg-btn:hover:not(:disabled) {
   background: var(--yun-action-btn-hover-bg);
   border-color: color-mix(in srgb, var(--va-c-link) 34%, var(--yun-surface-line));
+  color: var(--va-c-text);
 }
 
+.markdown-body a.vg-btn:active:not(:disabled),
 .vg-btn:active:not(:disabled) {
   background: var(--yun-action-btn-active-bg);
 }
@@ -176,15 +180,18 @@
   cursor: not-allowed;
 }
 
+.markdown-body a.vg-btn.vg-btn--primary,
 .vg-btn--primary {
   background: color-mix(in srgb, var(--va-c-primary) 12%, transparent);
   border-color: color-mix(in srgb, var(--va-c-primary) 34%, var(--yun-surface-line));
   color: var(--va-c-link);
 }
 
+.markdown-body a.vg-btn.vg-btn--primary:hover:not(:disabled),
 .vg-btn--primary:hover:not(:disabled) {
   background: color-mix(in srgb, var(--va-c-primary) 18%, transparent);
   border-color: var(--va-c-link);
+  color: var(--va-c-link);
 }
 
 .vg-chip {

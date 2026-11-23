@@ -1,9 +1,10 @@
 ---
 title: 用 Valaxy 从零搭建一个属于自己的网站
 date: 2026-11-20
-updated: 2026-11-22
+updated: 2026-11-24
 outline: [2, 3]
 cover: /images/valaxy-guide/cover-editorial.webp
+coverComponent: ValaxyGuideCover
 description: "六年前我写过一篇用 Hexo 从零建站的教程，这篇是换成 Valaxy 的新版。从准备环境、写下第一篇文章，到用 GitHub Pages 把网站发布出去，一步步带你搭出自己的博客。如果你已经在用 Hexo，文末也有一份迁移对照。"
 categories:
   - 云游的小安利
@@ -27,7 +28,7 @@ tags:
 
 但自那以来，框架与技术栈已经发生了翻天覆地的变化。
 
-React/Vue/Svelte/Solid 前端框架层出不穷，各领风骚。但如今却被 AI 洪流逐一碾过，悄无声息。
+[<span class="inline-tech-icon i-logos-react" aria-hidden="true"></span>React](https://react.dev/) / [<span class="inline-tech-icon i-logos-vue" aria-hidden="true"></span>Vue](https://vuejs.org/) / [<span class="inline-tech-icon i-logos-svelte-icon" aria-hidden="true"></span>Svelte](https://svelte.dev/) / [<span class="inline-tech-icon i-logos-solidjs-icon" aria-hidden="true"></span>Solid](https://www.solidjs.com/) 前端框架层出不穷，各领风骚。但如今却被 AI 洪流逐一碾过，悄无声息。
 
 AI 时代，个人博客是否真的有意义呢？
 我想，答案依然是肯定的。
@@ -36,7 +37,7 @@ AI 时代，个人博客是否真的有意义呢？
 
 ## 我们还需要框架吗？
 
-2020 年写旧文时，我用的是 Hexo、`hexo-theme-yun`、GitHub Pages 和 Travis CI。后来我自己动手做了 [Valaxy](https://valaxy.site/zh/guide/why)，现在我的博客就跑在它上面。
+2020 年写旧文时，我用的是 [<span class="inline-tech-icon i-logos-hexo" aria-hidden="true"></span>Hexo](https://hexo.io/)、[<span class="inline-tech-icon i-ri-cloud-line" aria-hidden="true"></span>hexo-theme-yun](https://github.com/YunYouJun/hexo-theme-yun)、[<span class="inline-tech-icon i-simple-icons-github" aria-hidden="true"></span>GitHub Pages](https://pages.github.com/) 和 [<span class="inline-tech-icon i-logos-travis-ci" aria-hidden="true"></span>Travis CI](https://www.travis-ci.com/)。后来我自己动手做了 [<span class="inline-tech-icon inline-tech-icon--valaxy" aria-hidden="true"></span>Valaxy](https://valaxy.site/zh/guide/why)，现在我的博客就跑在它上面。
 
 所以这篇文章换了一条主线：**用 Valaxy 从零搭一个站**。
 
@@ -44,27 +45,31 @@ AI 时代，个人博客是否真的有意义呢？
 
 - **Vite + Vue 3 开发体验**：本地启动与热更新足够快；修改配置、文章、标签或分类时，浏览器能立刻看到变化，也可以接着复用 Vue / Vite 的插件生态。
 - **TypeScript 类型提示**：`site.config.ts` 和 `valaxy.config.ts` 都带类型定义，忘了哪一项是做什么的，鼠标放上去就能看说明。
-- **交互式博客文章**：Markdown 里可以直接写 Vue 组件，让文章不只是静态排版，还可以塞进边读边试的小控件。**你在这篇教程里看到的路线图、模拟终端、配置实验室和部署流水线，全都是直接写在 Markdown 正文里的 Vue 组件。**
+- **交互式文章**：Markdown 里可以直接写 Vue 组件，不用只靠纯文字配图。从顶部会随亮暗模式切换、可点开轨道动效的封面，到正文里的路线图、模拟终端、配置预览和部署演示，都是直接运行的 Vue 组件。
 - **顺手的 AI 协作**：脚手架自带 `AGENTS.md` 让编程助手看懂站点约定；后面还会讲怎么生成 `llms.txt`，以及怎么用 MCP 检查文章里的断链和图片。
 
 <!-- more -->
 
-到了 AI 时代，热更新和类型提示看起来没那么新鲜了，但写博客时我依然偏爱这些细小的便利：改完一句话就能看到页面效果，哪天想给文章加一段交互小动画，让 AI 帮写个组件放进 `components/`，一篇普通笔记立刻就能「动起来」。至于哪些事值得写、写下来是什么心情，我还是想自己拿主意。
+到了 AI 时代，热更新和类型提示早就不算什么新鲜事，但平时写文章，这些顺手的小细节依然很省心：改完保存立刻能看到效果，偶尔想加个交互演示，让 AI 帮写个组件丢进 `components/` 就能直接用。
 
-> Hexo 是一个很棒的博客框架，我的博客就是在它上面长大的。如果你正用着顺手的 Hexo 主题或插件，继续用完全没问题；如果你想换一套更现代的写作和折腾流程，Valaxy 可以是另一个选择。我也会继续维护它，慢慢把好用的新功能加进来。
+不过，具体写什么、怎么写，还是自己说了算。
 
-这依然是一篇新手向教程，我会尽量保持「点到为止」：讲清楚每一步在干嘛，但不会细抠安装向导怎么点下一步。已经有基础的同学可以大胆跳读；你也可以把这篇文章直接交给 AI 助手，让它陪你一步步把站搭好。如果实际运行脚手架时界面细节略有变化，以 [Valaxy 官方文档](https://valaxy.site/zh/guide/getting-started) 为准。
+> Hexo 依然是一个很棒的博客框架，我的博客就是在它上面长大的。如果你现在用着顺手的 Hexo 主题或插件，继续用完全没问题；如果想换一套基于 Vite 和 Vue 的工作流，Valaxy 可以是另一个选择，我也会一直维护它。
+
+这依然是一篇新手向教程，我会尽量保持「点到为止」：讲清楚每一步在干嘛，但不会细讲安装时怎么点下一步。已经有基础的同学可以大胆跳读。
+
+当然，现在你也可以把这篇文章直接丢给 AI 助手，让它陪你一步步把站搭好。如果实际运行脚手架时界面细节略有变化，以 [Valaxy 官方文档](https://valaxy.site/zh/guide/getting-started) 为准。
 
 > 注释处多为补充说明，对正常建站没有影响，不想看可以直接略过。
 
 ### 顺便科普：静态博客和动态博客有什么区别？
 
-如果把搭建一个网站比作开店：
+- **动态博客**（如 WordPress、Typecho、Ghost）：文章存在数据库里，每次有人访问，服务器都要查询数据库并实时拼出网页。自带管理后台很方便，但你需要自己租服务器并维护运行环境。
+- **静态博客**（如 Valaxy、Hexo、Hugo）：文章就是本地的 Markdown 文件，发布前一次性构建成纯 HTML / CSS / JS。访问时直接返回现成的页面，**不需要自己的后端服务器**，可以免费托管在 GitHub Pages 上，打开速度通常也更快。
 
-- **动态博客**（如 WordPress、Typecho、Ghost）：就像**现点现炒的餐馆**。文章存在数据库里，每当有人推门访问，服务器都要现查数据库、现拼出完整网页再端给读者。自带后台很方便，但代价是你得自己租一台服务器并照看环境。
-- **静态博客**（如 Valaxy、Hexo、Hugo）：更像**提前印好的精致立体绘本**。文章平时躺在本地的 Markdown 文件里，发布前一次性构建成纯 HTML / CSS / JS 文件；读者访问时直接把现成页面递过去就行，**不需要自己的后端服务器**，所以能直接免费托管在 GitHub Pages 上，打开速度也往往更快。
-
-> 很多人听到「静态」会误以为页面不能动——其实「静态」指的是**不靠服务器现场现算**，不是内容只能当白纸看。就像立体绘本虽已印好，翻开依然藏着可以拉动的小机关；Valaxy 的页面也都是运行在浏览器里的 Vue 组件，写互动演示和动画反倒比动态博客更轻巧（只有评论区这类需要「帮不同访客存数据」的功能，才需要再挂一个第三方服务）。
+> 很多人看到「静态」会以为页面只能是纯文字、不能交互。其实「静态」指的是**页面不需要后端服务器实时渲染**，而不是浏览器里不能动。
+>
+> Valaxy 生成的页面本身就运行着 Vue，做动画和交互演示都很方便；只有评论区这类需要跨访客存数据的功能，才需要接入第三方服务。
 
 ### 技术栈
 
@@ -72,15 +77,17 @@ AI 时代，个人博客是否真的有意义呢？
 
 ## 步骤
 
-第一次搭站，可以顺着这条主线走：先准备环境，创建并预览小站，再做一点基础配置、写下第一篇文章，最后把它发布出去。走完这几步，你的网站就已经正式上线了；后面的进阶玩法和常见问题，等有需要时再回来翻就行。
+第一次搭站，按下面这五步走就行：准备环境、创建并预览、改基础配置、写第一篇文章、部署上线。走完这一套，网站就正式上线了；后面的进阶玩法和常见问题，等有需要再回来看。
 
 <ValaxyGuideRoadmap />
 
 ### 准备环境
 
-开工前先准备三件基础工具：**Node.js**（`>=22.12.0`）、**pnpm**（`>=10.26.0`）、**Git**，外加顺手的编辑器 **VS Code**。后文说「输入命令」，都是指打开终端（Windows 用 PowerShell 或命令提示符，macOS 用「终端」）输入。
+开工前先准备三件基础工具：**Node.js**（`>=22.12.0`）、**pnpm**（`>=10.26.0`）、**Git**，外加顺手的编辑器 **VS Code**。
 
-按下面 4 张工具卡里的官网链接装好后，可以顺手勾选标记进度；装完也可以复制底部的版本自检命令验明版本：
+后文说「输入命令」，都是指打开终端（Windows 用 PowerShell 或命令提示符，macOS 用「终端」）输入。
+
+按下面卡片里的官网链接装好后，可以顺手勾选记录进度；装完也可以复制底部的命令检查一下版本：
 
 <ValaxyGuideEnvChecklist />
 
@@ -103,17 +110,17 @@ pnpm create valaxy@latest
 1. `Select a type`：选 **Blog**（我们是来搭博客的）。
 2. `Select a theme`：选 **Yun**（默认的博客主题，也是我自己在用的）。`Press` 是偏文档风格的主题，`Custom` 可以输入自定义主题名。
 3. `Project name`：项目文件夹名，比如 `valaxy-blog`；如果要部署到 GitHub Pages 的根路径，也可以直接写成 `你的用户名.github.io`（后面会讲）。
-4. `Install and start it now?`：我建议新手先选 **No**，再按模拟终端里那三条命令依次运行：`cd 目录名`、`pnpm install`（装好 `package.json` 里的依赖）和 `pnpm dev`（`pnpm run dev` 的简写，启动本地开发服务器），这样你更清楚每一步在干什么。
+4. `Install and start it now?`：建议新手先选 **No**，再依次手动执行那三条命令：`cd 目录名`、`pnpm install`（安装依赖）和 `pnpm dev`（启动本地开发服务器），这样能更清楚每一步在做什么。
 
 > 脚手架生成的 `pnpm-workspace.yaml` 记录了依赖安装的构建权限，请保留它，不要删。
 
-启动成功后打开终端 `Preview` 后面的地址（默认 `http://localhost:4859/`，按 `Ctrl + C` 可以停止服务），首页先会出现竖排大字「我的小站」，往下翻就能看到示例文章《Hello, Valaxy!》：
+启动后打开终端里 `Preview` 后面的地址（默认 `http://localhost:4859/`，按 `Ctrl + C` 可以停止服务），首页能看到竖排大字「我的小站」，往下翻就是示例文章《Hello, Valaxy!》：
 
 ![Valaxy 脚手架首页，可见示例文章《Hello, Valaxy!》](/images/valaxy-home.png)
 
 #### 热更新体验一下
 
-保持 `pnpm dev` 运行，用 VS Code 打开项目修改 `valaxy.config.ts` 或 `pages/posts/hello-valaxy.md`，**保存瞬间浏览器就会局部刷新**——不光文章文字、标签与分类，主题配色和首页大字也能即时生效（封面上组件写死的文案除外）：
+保持 `pnpm dev` 运行，用 VS Code 打开项目修改 `valaxy.config.ts` 或 `pages/posts/hello-valaxy.md`，**保存后浏览器就会局部刷新**。不光文章文字、标签和分类，主题配色和首页大字也能即时生效（封面上组件写死的文案除外）：
 
 ![把示例文章标题改成「你好，Valaxy！」后，页面立即更新](/images/valaxy-hmr.gif)
 
@@ -121,7 +128,7 @@ pnpm create valaxy@latest
 
 #### 看看生成了什么
 
-打开项目目录时，文件看起来会有点多。其实一开始你只需要关心标注了「必改」的几项——点选下面的文件，可以直接看它们各自管什么（需要纯文本结构时，点右下角就能一键复制）。
+打开项目目录时，文件看起来可能有点多。一开始其实只要关心标着「必改」的那几项，点选下面的文件就能看各自的作用（需要纯文本目录树的话，点右下角可以一键复制）。
 
 <ValaxyGuideFileTree />
 
@@ -308,7 +315,9 @@ git push -u origin main
 
 到 GitHub 仓库的 `Settings` → `Pages`，把 `Build and deployment` 下的 `Source` 设为 **GitHub Actions**。
 
-脚手架已内置 `.github/workflows/gh-pages.yml`（可参考[官方模板](https://github.com/YunYouJun/valaxy/blob/v1.5.0/packages/create-valaxy/template-blog/.github/workflows/gh-pages.yml)）：推送到 `main`、`master` 或 `valaxy` 分支时，Actions 会自动安装依赖、构建 `dist/` 并直接发布到 GitHub Pages。下面点「模拟一次 git push」看每一步怎么跑，也可以切到 `my-blog` 体验子路径忘了加 `base` 的样子：
+脚手架已内置 `.github/workflows/gh-pages.yml`（可参考[官方模板](https://github.com/YunYouJun/valaxy/blob/v1.5.0/packages/create-valaxy/template-blog/.github/workflows/gh-pages.yml)）：推送到 `main`、`master` 或 `valaxy` 分支时，Actions 会自动安装依赖、构建 `dist/` 并发布到 GitHub Pages。
+
+可以在下面点「模拟一次 git push」看每一步怎么跑，也可以切到 `my-blog` 看看子路径忘了配 `base` 会怎样：
 
 <ValaxyGuideDeployPipeline />
 
@@ -341,7 +350,7 @@ git push -u origin main
 
 #### Netlify / Vercel / Cloudflare Pages
 
-不想用 GitHub Pages？这几个平台也都可以免费托管静态站点，而且都遵循 **「连接仓库 → 执行 `pnpm build` → 发布 `dist/`」** 这一套流程，切到下面任意平台就能看对应内置配置与操作步骤：
+不想用 GitHub Pages？这几个平台也都可以免费托管静态站点，而且都遵循 **「连接仓库 → 执行 `pnpm build` → 发布 `dist/`」** 这一套流程，切到下面对应平台就能看配置和步骤：
 
 <ValaxyGuideHostMatrix />
 
@@ -349,11 +358,11 @@ git push -u origin main
 
 ## 进阶与迁移
 
-小站上线后，想再折腾一点，可以从这里挑着看。下面几节分别聊怎么在文章里用 Vue 组件、怎么让 AI 搭把手，以及已有的 Hexo 博客怎么搬过来。
+小站上线后，想再折腾一点，可以从这里挑着看。下面几节分别聊怎么在文章里用 Vue 组件、怎么配合 AI 使用，以及已有的 Hexo 博客怎么搬过来。
 
 ### 在 Markdown 里写 Vue 组件
 
-这是 Valaxy 和很多博客框架最大的不同点之一：**`components/` 文件夹下的 Vue 组件会被自动注册，直接就能在 Markdown 里写标签渲染**。你在本文前面一路点过来的路线图、环境清单、模拟终端、配置实验室和部署流水线，全都是用这个机制直接嵌进 Markdown 正文里的。
+这是 Valaxy 和很多博客框架最大的不同之一：**`components/` 目录下的 Vue 组件会自动注册，直接就能在 Markdown 里当标签用**。前面出现过的那些交互演示，全都是靠这个机制嵌进正文里的。
 
 新建 `components/HelloCounter.vue`：
 
@@ -381,17 +390,21 @@ const count = ref(0)
 
 > 文章里写的 `class="rounded px-4 ..."` 这种是 UnoCSS 的原子化 CSS（类似 TailwindCSS），Valaxy 内置了，Markdown 和组件里都能直接用。
 
-> 脚手架自带的示例文章《Hello, Valaxy!》就用了同样的方法：在文章里放了一个可交互的 Vue 星座封面。想看更多可以翻文档：[在 Markdown 中使用 Vue](https://valaxy.site/zh/guide/markdown#using-vue-in-markdown)。
+> 除了正文，文章封面也能直接用 Vue 组件。本文顶部的封面就是 `components/covers/ValaxyGuideCover.vue`，在 frontmatter 里加一行 `coverComponent: ValaxyGuideCover` 就能同时渲染到文章页顶部和首页卡片——既能跟着 `html.dark` 适配亮暗模式，也能直接点开轨道动画，同时保留 `cover` 作为兜底和社交分享图。脚手架自带的示例文章《Hello, Valaxy!》也用了同样的机制。更多用法见文档：[图片与 Vue 组件封面](https://valaxy.site/zh/guide/post#cover) 与 [在 Markdown 中使用 Vue](https://valaxy.site/zh/guide/markdown#using-vue-in-markdown)。
 
-再试试下面这个组件。先在右边预览卡里点几次按钮累加计数，再把左侧的标题改掉、按 `Ctrl / ⌘ + S` 保存（或点保存按钮），你会看到右侧标题立刻跟着局部热更新，但刚才点的次数依然保留——还可以用底部的「模拟整页刷新」对比状态归零的区别，或切到第二个标签体验 `<!-- more -->` 如何裁剪首页摘要。组件源码放在 `components/ValaxyWritingFlow.vue`，文章中只要写一行 `<ValaxyWritingFlow />`。
+再试试下面这个组件（源码在 `components/ValaxyWritingFlow.vue`，文章里只写了一行 `<ValaxyWritingFlow />`）：
+
+先在右侧预览里点几次计数按钮，再改掉左侧标题并按 `Ctrl / ⌘ + S` 保存，可以看到标题会局部更新，但计数不会清零。也可以点底部的「模拟整页刷新」做个对比，或切到第二个标签看看 `<!-- more -->` 是怎么截取首页摘要的。
 
 <ValaxyWritingFlow />
 
-顺带一提，这也是我在开头说「有些答案发生了变化」的其中一个想法。
+顺带一提，这也是我在开头说「有些答案发生了变化」的其中一个原因。
 
-以前如果想在博客里塞几个交互演示，往往得花比写正文多出几倍的时间去手搓前端代码、调暗黑模式和边界细节，大多数时候想想就放弃了。到了 AI 时代，纯文字的教程和总结越来越容易生成，但反过来，写一个小组件放进 `components/` 的门槛却被大幅拉低了——作者只需要想清楚「我想让读者亲手试试什么」，具体实现可以交给 AI 搭把手。而且正因为静态博客把文章、组件和样式都放在同一个代码仓库里走同一条构建管线，写完就能热更新预览、上线也不用守着后端进程，做起交互式文章反而轻快顺手。
+以前想在博客里加几个交互演示，写代码、调暗黑模式和各种细节，花的时间往往比写正文还多，大多数时候想想就算了。现在纯文字教程越来越容易生成，但反过来，写一个小组件丢进 `components/` 的门槛也低了很多——你只需要想清楚想让读者体验什么，具体实现可以让 AI 帮着写。
 
-于是个人博客多了一种很有意思的新形态：**页面上是让人把玩的「立体机关」，底层依然是一份干净的 Markdown 原文（顺便还能给 AI 读）**。工具换了一代又一代，能把自己的小心思变成别人伸手就能碰到的样子，大概也是让博客一直保持温度的一点小浪漫吧。
+而且静态博客把文章、组件和样式都放在同一个仓库里，改完立刻能热更新预览，上线也不用操心后端服务，做交互式文章反而很顺手。
+
+页面上可以是能直接上手玩的交互演示，底层依然是干净的 Markdown 原文（顺便也方便 AI 读取）。技术栈换了一轮又一轮，但能把自己的想法做成点开就能互动的小东西，博客这件事好像又变得更有意思了。
 
 ### AI 时代的新玩法
 
@@ -399,7 +412,7 @@ const count = ref(0)
 
 #### AGENTS.md：给 AI 看的说明书
 
-还记得目录里那个 `AGENTS.md` 吗？它是给在你的站点里干活的编程助手（比如 Cursor、Claude Code 等）看的：里面写了常用命令、该改哪些文件、`llms.txt` 怎么回事等等。你让 AI 帮你改站点时，它能读到这些，就不容易乱改框架本身的东西。
+还记得目录里那个 `AGENTS.md` 吗？它是写给编程助手（比如 Cursor、Claude Code 等）看的说明文件，里面列出了常用命令、该改哪些文件、`llms.txt` 的作用等。让 AI 帮你改站点时，它会先读这份文件，不容易乱改不该动的地方。
 
 > 你也可以安装 Valaxy 的 Agent Skills（实验性功能），让 AI 更懂 Valaxy 的配置、主题和插件：
 >
@@ -493,7 +506,7 @@ export default defineValaxyConfig<UserThemeConfig>({
 
 ### 从 Hexo 迁过来
 
-如果你和当年的我一样，博客在 Hexo 上，想换一套更现代的开发体验，可以参考下面的对应关系（<span class="i-simple-icons-hexo inline-block align-text-bottom" aria-hidden="true" /> Hexo → Valaxy）：
+如果你和当年的我一样，博客在 Hexo 上，想换一套更现代的开发体验，可以参考下面的对应关系（<span class="inline-tech-icon i-logos-hexo" aria-hidden="true"></span>Hexo → <span class="inline-tech-icon inline-tech-icon--valaxy" aria-hidden="true"></span>Valaxy）：
 
 | 用途 | Hexo | Valaxy |
 | --- | --- | --- |
@@ -508,13 +521,17 @@ export default defineValaxyConfig<UserThemeConfig>({
 | 输出目录 | `public` | `dist` |
 | 部署 | `hexo-deployer-git` / CI | GitHub Actions 等（脚手架自带） |
 
-> 文章的 Markdown 和 frontmatter 大多可以直接复制过去；但 Hexo 的主题不能在 Valaxy 上直接运行，需要换成 Valaxy 的主题（比如 Yun）。另外 Markdown 解析基于 `markdown-it`，如果遇到换行之类的细节差别，可以看迁移文档里的常见问题。
+> 文章的 Markdown 和 frontmatter 大多可以直接复制过去；但 Hexo 的主题无法直接在 Valaxy 上运行，需要换成 Valaxy 的主题（比如 Yun）。
+>
+> 另外 Valaxy 的 Markdown 解析基于 `markdown-it`，如果遇到换行之类的细节差异，可以看迁移文档里的常见问题。
 
 - 完整的迁移步骤：[从其他博客框架迁移](https://valaxy.site/zh/migration/)（页面里还有一个「AI 迁移助手」，选好原框架，复制提示词给 AI 就行）。
 - 想对比 Valaxy、Hexo 和 VitePress 各自适合什么场景：[VitePress 能做博客吗？](https://valaxy.site/zh/guide/vitepress)、[静态博客框架怎么选](https://valaxy.site/zh/guide/choose)。
 - 我自己博客的迁移就是一个真实案例，可以对比 [yunyoujun.github.io](https://github.com/YunYouJun/yunyoujun.github.io) 仓库的 `hexo` 分支和 `valaxy` 分支。
 
 > 如果某个 Hexo 主题或插件对你来说就是不可替换的，留在 Hexo 也是很好的选择。工具是为人服务的。
+>
+> （但如今，我想用 AI 重写实现类似的功能应该不是什么难事。）
 
 ## FAQ
 
@@ -530,7 +547,9 @@ export default defineValaxyConfig<UserThemeConfig>({
 2. 打开仓库的 `Settings` -> `Pages`，在 **Custom domain** 里填上你的域名（比如 `blog.example.com`），点 Save。
 3. 把 `site.config.ts` 里的 `url` 改成你的域名。
 
-> 以前走 `gh-pages` 分支发布时，需要在 `public/` 下放一个 `CNAME` 文件，不然下次部署会把设置里自动加进去的那个文件盖掉。现在这份工作流改成用 GitHub Actions 发布了，按 [GitHub 的说明](https://docs.github.com/zh/pages/configuring-a-custom-domain-for-your-github-pages-site/managing-a-custom-domain-for-your-github-pages-site)，这种发布方式下不会再生成 `CNAME` 文件，仓库里即使放了也会被忽略，自定义域名只要在 Pages 设置里填写就行。
+> 以前走 `gh-pages` 分支发布时，需要在 `public/` 下放一个 `CNAME` 文件，不然下次部署会把后台自动生成的文件覆盖掉。
+>
+> 现在改成 GitHub Actions 发布了。按 [GitHub 的说明](https://docs.github.com/zh/pages/configuring-a-custom-domain-for-your-github-pages-site/managing-a-custom-domain-for-your-github-pages-site)，这种方式不再使用 `CNAME` 文件（放了也会被忽略），直接在 Pages 设置里填写自定义域名就行。
 
 Netlify、Vercel、Cloudflare Pages 绑定域名则在各自的控制台里添加即可。
 
@@ -602,7 +621,7 @@ footer: {
 
 六年前我写下这篇教程的时候，想的是：个人网站可以用来记录生活、回忆、创作、学习笔记、开发经验，包括作为一个试验平台。可以与熟悉的人分享，也可以作为另一个世界另一个自己的展示。
 
-六年后，工具换了一茬又一茬，这个想法一点没变。
+六年后，工具换了许多，这个想法一点没变。AI 很擅长写出工整的答案，但它无法替你记住某个普通夜晚的心情；留在这个域名下的，才是真正属于你自己的时间切片。
 
 多年后回看自己当初写下的内容，未尝不是件有趣的事情。
 
@@ -612,10 +631,14 @@ footer: {
 
 能一直写当然很好。忙起来停一阵也没关系，小站会在那里等你。
 
-从 2019 年写出 `hexo-theme-yun`，到 2022 年正式立项 Valaxy 一路维护至今，工具形态变了不少，但初衷一直没变——我希望它还能陪大家多写下一些想留下的东西。
+从 2019 年写出 `hexo-theme-yun`，到 2022 年立项 Valaxy 一路维护到现在，形态变了不少，但还是希望它能陪大家多留一点文字下来。
 
-如果你也像六年前的我一样，手头没多少预算，却想在网上留一个自由、不用畏惧他人眼光的角落，那就现在新建一个 Markdown 文件，随便用一句话开头，写下你的第一篇文章吧。不用等它完美，说不定几年后的你，还会回来笑着读这一句。
+如果你也像当年的我一样，手头没多少预算，不妨现在就新建一个 Markdown 文件，随便写下第一句吧。不必在意流量，也不必一开始就写得多好，哪怕全网只有你一个读者，这个网址依然是只属于你的小房间。
 
-> 永远相信美好的事情即将发生
+<ValaxyGuideFirstPost />
 
-文章相关的讨论，可以直接在文末评论区留言。如果是 Valaxy 本身的问题或建议，欢迎到 [Valaxy Discussions](https://github.com/YunYouJun/valaxy/discussions) 或 [Issues](https://github.com/YunYouJun/valaxy/issues) 反馈。
+<ValaxyGuideBlessing>永远相信美好的事情即将发生</ValaxyGuideBlessing>
+
+---
+
+<ValaxyGuideFeedback />

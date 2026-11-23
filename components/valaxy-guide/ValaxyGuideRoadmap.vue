@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { computed, nextTick, onBeforeUnmount, onMounted, shallowRef } from 'vue'
+import { computed, nextTick, onBeforeUnmount, onMounted, shallowRef, watch } from 'vue'
 import { prefersReducedMotion, useGuideSite } from './useGuideSite'
 import ValaxyGuideFrame from './ValaxyGuideFrame.vue'
 
@@ -73,13 +73,27 @@ const steps: RoadmapStep[] = [
   },
 ]
 
+const burstParticles = [
+  { dx: '-52px', dy: '-20px', delay: '0ms', color: 'var(--va-c-primary)' },
+  { dx: '-28px', dy: '-28px', delay: '40ms', color: 'var(--va-c-green-1)' },
+  { dx: '-10px', dy: '-24px', delay: '80ms', color: 'var(--va-c-yellow-1)' },
+  { dx: '8px', dy: '-28px', delay: '20ms', color: 'var(--va-c-primary)' },
+  { dx: '26px', dy: '-22px', delay: '70ms', color: 'var(--va-c-green-1)' },
+  { dx: '48px', dy: '-26px', delay: '50ms', color: 'var(--va-c-link)' },
+  { dx: '-38px', dy: '-14px', delay: '110ms', color: 'var(--va-c-yellow-1)' },
+  { dx: '38px', dy: '-15px', delay: '95ms', color: 'var(--va-c-primary)' },
+] as const
+
 const { state, siteUrl, toggleStepCompleted } = useGuideSite()
 const activeIndex = shallowRef(0)
 const readingIndex = shallowRef<number | null>(null)
 const tabEls = shallowRef<HTMLButtonElement[]>([])
+const burstKey = shallowRef(0)
+const showBurst = shallowRef(false)
 
 const currentStep = computed(() => steps[activeIndex.value])
 const completedCount = computed(() => state.completedSteps.length)
+const allCompleted = computed(() => steps.every(step => state.completedSteps.includes(step.id)))
 const currentCompleted = computed(() => state.completedSteps.includes(currentStep.value.id))
 const currentOutcome = computed(() =>
   currentStep.value.id === 'deploy'
@@ -89,6 +103,21 @@ const currentOutcome = computed(() =>
 
 let observer: IntersectionObserver | undefined
 let flashTimer: ReturnType<typeof setTimeout> | undefined
+let burstTimer: ReturnType<typeof setTimeout> | undefined
+let readyTimer: ReturnType<typeof setTimeout> | undefined
+let mountedReady = false
+
+watch(allCompleted, (next, prev) => {
+  if (!mountedReady || !next || prev || prefersReducedMotion())
+    return
+
+  burstKey.value += 1
+  showBurst.value = true
+  clearTimeout(burstTimer)
+  burstTimer = setTimeout(() => {
+    showBurst.value = false
+  }, 1200)
+})
 
 function selectStep(index: number) {
   activeIndex.value = index
@@ -154,6 +183,10 @@ function isStepDone(stepId: string): boolean {
 }
 
 onMounted(() => {
+  readyTimer = setTimeout(() => {
+    mountedReady = true
+  }, 0)
+
   if (typeof window === 'undefined' || typeof IntersectionObserver === 'undefined')
     return
 
@@ -187,6 +220,8 @@ onMounted(() => {
 onBeforeUnmount(() => {
   observer?.disconnect()
   clearTimeout(flashTimer)
+  clearTimeout(burstTimer)
+  clearTimeout(readyTimer)
 })
 </script>
 
@@ -202,7 +237,11 @@ onBeforeUnmount(() => {
     </template>
 
     <template #head-right>
-      <span class="vg-pill">预计 15 分钟</span>
+      <span v-if="allCompleted" class="vg-pill vg-pill--green">
+        <span class="i-ri-sparkling-2-line" aria-hidden="true" />
+        <span>全程通关</span>
+      </span>
+      <span v-else class="vg-pill">预计 15 分钟</span>
     </template>
 
     <div class="vg-roadmap-track" role="tablist" aria-label="建站步骤切换">
@@ -230,6 +269,27 @@ onBeforeUnmount(() => {
         </span>
         <span class="vg-roadmap-label">{{ step.title }}</span>
       </button>
+    </div>
+
+    <div v-if="allCompleted" class="vg-roadmap-celebrate" role="status" aria-live="polite">
+      <span class="i-ri-sparkling-2-line vg-roadmap-celebrate-icon" aria-hidden="true" />
+      <span>
+        <strong>5/5 全部完成</strong> · 你的小站已在 <code>{{ siteUrl }}</code> 就位，去写下第一篇吧！
+      </span>
+
+      <span v-if="showBurst" :key="burstKey" class="vg-roadmap-particles" aria-hidden="true">
+        <span
+          v-for="(particle, idx) in burstParticles"
+          :key="idx"
+          class="vg-roadmap-particle"
+          :style="{
+            '--vg-dx': particle.dx,
+            '--vg-dy': particle.dy,
+            '--vg-delay': particle.delay,
+            '--vg-color': particle.color,
+          }"
+        />
+      </span>
     </div>
 
     <div class="vg-roadmap-detail" role="tabpanel">
@@ -460,6 +520,73 @@ onBeforeUnmount(() => {
   gap: 0.45rem;
 }
 
+.vg-roadmap-celebrate {
+  position: relative;
+  display: flex;
+  align-items: center;
+  gap: 0.45rem;
+  margin-bottom: 0.8rem;
+  padding: 0.55rem 0.75rem;
+  border: 1px solid color-mix(in srgb, var(--va-c-green-1) 36%, var(--yun-surface-line));
+  border-radius: var(--yun-action-btn-radius, 0.625rem);
+  background: var(--va-c-green-soft);
+  color: var(--va-c-text);
+  font-size: 0.8125rem;
+  line-height: 1.5;
+  overflow: visible;
+}
+
+.vg-roadmap-celebrate code {
+  padding: 0.08em 0.32em;
+  border-radius: 4px;
+  background: color-mix(in srgb, var(--va-c-bg) 70%, transparent);
+  font-family: var(--va-font-mono);
+  font-size: 0.85em;
+}
+
+.vg-roadmap-celebrate-icon {
+  flex: none;
+  color: var(--va-c-green-1);
+  font-size: 1rem;
+}
+
+.vg-roadmap-particles {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  width: 0;
+  height: 0;
+  pointer-events: none;
+}
+
+.vg-roadmap-particle {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 6px;
+  height: 6px;
+  border-radius: 999px;
+  background: var(--vg-color, var(--va-c-primary));
+  opacity: 0;
+  animation: vg-roadmap-burst 1100ms cubic-bezier(0.22, 1, 0.36, 1) var(--vg-delay, 0ms) forwards;
+}
+
+@keyframes vg-roadmap-burst {
+  0% {
+    opacity: 0;
+    transform: translate(-50%, -50%) scale(0.4);
+  }
+
+  20% {
+    opacity: 0.95;
+  }
+
+  100% {
+    opacity: 0;
+    transform: translate(calc(-50% + var(--vg-dx)), calc(-50% + var(--vg-dy))) scale(1);
+  }
+}
+
 @container vg-card (max-width: 544px) {
   .vg-roadmap-node {
     justify-content: center;
@@ -478,6 +605,12 @@ onBeforeUnmount(() => {
 @media (pointer: coarse) {
   .vg-roadmap-node {
     min-height: 44px;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .vg-roadmap-particles {
+    display: none;
   }
 }
 </style>

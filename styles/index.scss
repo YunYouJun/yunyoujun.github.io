@@ -3,18 +3,79 @@
 
 /* Keep prose links styled while embedded UI surfaces opt out of Markdown underlines. */
 .markdown-body {
-  :where(.not-prose) a,
+  :where(.not-prose) a:not(.vg-btn),
   a:where(.not-prose, .yun-link-plain, .yun-icon-btn, .yun-action-btn) {
     border-bottom: 0;
     background-image: none;
     text-decoration: none;
   }
 
-  :where(.not-prose) a:hover,
-  :where(.not-prose) a:focus-visible,
+  :where(.not-prose) a:not(.vg-btn):hover,
+  :where(.not-prose) a:not(.vg-btn):focus-visible,
   a:where(.not-prose, .yun-link-plain, .yun-icon-btn, .yun-action-btn):hover,
   a:where(.not-prose, .yun-link-plain, .yun-icon-btn, .yun-action-btn):focus-visible {
     border-bottom: 0;
     text-decoration: none;
+  }
+}
+
+/* Inline tech stack links with a leading icon (works in both post body and home excerpt). */
+.markdown-body a:has(> .inline-tech-icon) {
+  white-space: nowrap;
+}
+
+.markdown-body .inline-tech-icon {
+  display: inline-block;
+  font-size: 0.85em;
+  vertical-align: -0.15em;
+  margin-right: 0.24em;
+  transition: transform 260ms cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+.markdown-body .inline-tech-icon--valaxy {
+  width: 1.2em;
+  height: 1.2em;
+  background: url('/images/valaxy-guide/valaxy-logo.png') center / contain no-repeat;
+}
+
+.markdown-body a:has(> .inline-tech-icon):is(:hover, :focus-visible) .inline-tech-icon {
+  transform: translateY(-1.5px) scale(1.08);
+}
+
+.markdown-body a:has(> .inline-tech-icon):is(:hover, :focus-visible) .i-logos-react {
+  transform: rotate(180deg) scale(1.06);
+  transition-duration: 520ms;
+}
+
+.markdown-body a:has(> .inline-tech-icon):is(:hover, :focus-visible) .i-ri-cloud-line {
+  animation: inline-tech-cloud-float 900ms ease-in-out infinite;
+}
+
+.markdown-body a:has(> .inline-tech-icon):is(:hover, :focus-visible) .inline-tech-icon--valaxy {
+  transform: translateY(-1.5px) scale(1.14) rotate(-8deg);
+}
+
+@keyframes inline-tech-cloud-float {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+
+  50% {
+    transform: translateY(-2.5px);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .markdown-body .inline-tech-icon {
+    transition: none;
+  }
+
+  .markdown-body a:has(> .inline-tech-icon):is(:hover, :focus-visible) .inline-tech-icon,
+  .markdown-body a:has(> .inline-tech-icon):is(:hover, :focus-visible) .i-logos-react,
+  .markdown-body a:has(> .inline-tech-icon):is(:hover, :focus-visible) .i-ri-cloud-line,
+  .markdown-body a:has(> .inline-tech-icon):is(:hover, :focus-visible) .inline-tech-icon--valaxy {
+    transform: none;
+    animation: none;
   }
 }
