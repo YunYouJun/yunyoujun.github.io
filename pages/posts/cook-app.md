@@ -2,7 +2,6 @@
 title: 四年前的「隔离食用手册」，我把它做成了原生 iOS App｜云食册
 date: 2026-11-22
 updated: 2026-11-22
-draft: true
 description: 从 2022 年的开源小网页「隔离食用手册」出发，聊聊原生 iOS / iPadOS App「云食册」的诞生与功能。
 categories:
   - 小云梦工坊

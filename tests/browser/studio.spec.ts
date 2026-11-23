@@ -28,7 +28,17 @@ test('column links to article, discloses AI, and loads video only on keyboard ac
   expect(await page.evaluate(() => document.documentElement.scrollWidth <= window.innerWidth)).toBe(true)
   await page.screenshot({ path: test.info().outputPath('studio.png'), fullPage: true })
 
-  await page.getByRole('link', { name: '阅读本期手记' }).click()
+  const episodes = page.locator('.studio-episode')
+  await expect(episodes).toHaveCount(2)
+  const cookCard = episodes.nth(0)
+  const akCard = episodes.nth(1)
+  await expect(cookCard.locator('.studio-number')).toHaveText('云食册')
+  await expect(cookCard).toContainText('云食册')
+  expect(await cookCard.getAttribute('data-project-theme')).toBeNull()
+  await expect(akCard).toHaveAttribute('data-project-theme', 'ak-ui')
+  await expect(akCard.locator('.studio-number')).toHaveText('EP. 01')
+
+  await akCard.getByRole('link', { name: '阅读本期手记' }).click()
   await expect(page).toHaveURL(/\/posts\/xiaoyun-studio-01-ak-ui/)
   await expect(page).toHaveTitle(/小云梦工坊 #01/)
   const disclosure = page.locator('.ai-disclosure')
@@ -77,6 +87,21 @@ test('column links to article, discloses AI, and loads video only on keyboard ac
   await expect(page).toHaveURL(/\/collections\/studio\/?$/)
   await expect(page.locator('.studio-video iframe')).toHaveCount(0)
 
+  await cookCard.getByRole('link', { name: '阅读本期手记' }).click()
+  await expect(page).toHaveURL(/\/posts\/cook-app\/?$/)
+  await expect(page).toHaveTitle(/云食册/)
+  await expect(page.locator('.ai-disclosure button')).toHaveText('AI 生成')
+  await expect(page.locator('.studio-video iframe')).toHaveCount(0)
+  const cookPlay = page.getByRole('button', { name: /^加载视频：/ })
+  await cookPlay.focus()
+  await page.keyboard.press('Enter')
+  await expect(page.locator('.studio-video iframe')).toHaveAttribute('src', /bvid=BV14LyezKE6J.*autoplay=0/)
+  await expect.poll(() => playerRequests).toBe(2)
+  await expect(page.getByRole('link', { name: '在 B 站观看' })).toHaveAttribute('href', 'https://www.bilibili.com/video/BV14LyezKE6J')
+  await page.getByRole('link', { name: '小云梦工坊视频专栏' }).click()
+  await expect(page).toHaveURL(/\/collections\/studio\/?$/)
+  await expect(page.locator('.studio-video iframe')).toHaveCount(0)
+
   await page.goto('/posts/death-and-rebirth-of-open-source-projects', { waitUntil: 'domcontentloaded' })
   await expect(page.getByRole('heading', { name: '开源项目的「死与新生」', exact: true })).toBeVisible()
   await expect(page.locator('.ai-disclosure')).toHaveCount(0)
@@ -86,9 +111,10 @@ test('column links to article, discloses AI, and loads video only on keyboard ac
 test('video stays usable when the cover fails', async ({ page }) => {
   await page.route('**/63bd1317e9d1c16d5f187be334b6c841c4b8dd72.jpg', route => route.abort())
   await page.goto('/collections/studio/', { waitUntil: 'domcontentloaded' })
-  await expect(page.locator('.studio-video-fallback')).toBeVisible()
-  await expect(page.getByRole('button', { name: /^加载视频：/ })).toBeEnabled()
-  await expect(page.getByRole('link', { name: '在 B 站观看' })).toBeVisible()
+  const akCard = page.locator('.studio-episode[data-project-theme="ak-ui"]')
+  await expect(akCard.locator('.studio-video-fallback')).toBeVisible()
+  await expect(akCard.getByRole('button', { name: /^加载视频：/ })).toBeEnabled()
+  await expect(akCard.getByRole('link', { name: '在 B 站观看' })).toBeVisible()
   expect(await page.evaluate(() => document.documentElement.scrollWidth <= window.innerWidth)).toBe(true)
 })
 
@@ -103,6 +129,8 @@ test('collection index and legacy URL lead to the single-collection directory', 
   if (page.viewportSize()!.width < 1024)
     await page.getByRole('button', { name: '合集目录', exact: true }).click()
   const directory = page.locator('.yun-collection-sidebar:visible')
+  await expect(directory.getByRole('link', { name: '云食册 · 从「隔离食用手册」到原生 iOS App' })).toBeVisible()
+  await expect(directory.getByRole('link', { name: '第 01 期 · 用 AI 复活七年前的 ak-ui' })).toBeVisible()
   await directory.getByRole('link', { name: '第 01 期 · 用 AI 复活七年前的 ak-ui' }).click()
   await expect(page).toHaveURL(/\/posts\/xiaoyun-studio-01-ak-ui/)
   if (page.viewportSize()!.width < 1024) {
@@ -110,7 +138,15 @@ test('collection index and legacy URL lead to the single-collection directory', 
     await expect(toggle).toHaveAttribute('aria-expanded', 'false')
     await toggle.click()
   }
-  await expect(page.locator('.yun-collection-sidebar:visible .item a[aria-current="page"]')).toBeVisible()
+  await expect(page.locator('.yun-collection-sidebar:visible .item a[aria-current="page"]')).toHaveText('第 01 期 · 用 AI 复活七年前的 ak-ui')
+  await directory.getByRole('link', { name: '云食册 · 从「隔离食用手册」到原生 iOS App' }).click()
+  await expect(page).toHaveURL(/\/posts\/cook-app\/?$/)
+  if (page.viewportSize()!.width < 1024) {
+    const toggle = page.getByRole('button', { name: '合集目录', exact: true })
+    await expect(toggle).toHaveAttribute('aria-expanded', 'false')
+    await toggle.click()
+  }
+  await expect(page.locator('.yun-collection-sidebar:visible .item a[aria-current="page"]')).toHaveText('云食册 · 从「隔离食用手册」到原生 iOS App')
   await page.goto('/collections/', { waitUntil: 'domcontentloaded' })
   await expect(page.getByRole('link', { name: /小云梦工坊/ }).first()).toBeVisible()
   await expect(page.locator('.yun-collection-sidebar')).toHaveCount(0)
@@ -145,6 +181,7 @@ test('mobile collection drawer supports keyboard control without shifting its tr
     await expect(toggle).toBeFocused()
   }
   await page.keyboard.press('Enter')
+  await expect(directory.getByRole('link', { name: '云食册 · 从「隔离食用手册」到原生 iOS App' })).toBeVisible()
   await expect(directory.getByRole('link', { name: '第 01 期 · 用 AI 复活七年前的 ak-ui' })).toBeVisible()
   expect(await page.evaluate(() => document.documentElement.scrollWidth <= window.innerWidth)).toBe(true)
   await page.screenshot({ path: test.info().outputPath('collection-directory.png'), animations: 'disabled' })
@@ -152,6 +189,9 @@ test('mobile collection drawer supports keyboard control without shifting its tr
 
 test('ak-ui surfaces switch palettes with readable text and stay local to the project', async ({ page }) => {
   await page.goto('/collections/studio/', { waitUntil: 'domcontentloaded' })
+  const cookCard = page.locator('.studio-episode').first()
+  await expect(cookCard).toBeVisible()
+  expect(await cookCard.getAttribute('data-project-theme')).toBeNull()
   const card = page.locator('.studio-episode[data-project-theme="ak-ui"]')
   await expect(card).toBeVisible()
   const surfaces: string[] = []

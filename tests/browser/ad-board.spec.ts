@@ -5,7 +5,7 @@ test.beforeEach(async ({ page }) => {
   await page.route('https://fonts.googleapis.com/**', route => route.fulfill({ contentType: 'text/css', body: '' }))
 })
 
-test('ad board renders compact promotion cards with icons and navigates to studio collection', async ({ page }) => {
+test('ad board renders compact promotion cards with icons and navigates to cook article and studio collection', async ({ page }) => {
   await page.goto('/about/advertise', { waitUntil: 'domcontentloaded' })
   await page.waitForFunction(() => {
     const app = document.querySelector('#app')
@@ -19,7 +19,8 @@ test('ad board renders compact promotion cards with icons and navigates to studi
 
   const cookLink = board.getByRole('link', { name: /云食册/ })
   const studioLink = board.getByRole('link', { name: /小云梦工坊/ })
-  await expect(cookLink).toHaveAttribute('href', 'https://cook.yunle.fun')
+  await expect(cookLink).toHaveAttribute('href', '/posts/cook-app')
+  await expect(cookLink).not.toHaveAttribute('target', '_blank')
   await expect(studioLink).toHaveAttribute('href', '/collections/studio/')
 
   const icons = board.locator('.recommendation-icon')
@@ -46,7 +47,18 @@ test('ad board renders compact promotion cards with icons and navigates to studi
   const card = page.locator('.yun-card:has(aside[aria-label="小云广告之家"]):visible')
   await card.screenshot({ path: test.info().outputPath('ad-board.png') })
 
-  await studioLink.scrollIntoViewIfNeeded()
-  await studioLink.click()
+  await cookLink.scrollIntoViewIfNeeded()
+  await cookLink.click()
+  await expect(page).toHaveURL(/\/posts\/cook-app\/?$/)
+  await expect(page.getByRole('heading', { level: 1, name: /云食册/ })).toBeVisible()
+
+  await page.goto('/about/advertise', { waitUntil: 'domcontentloaded' })
+  await page.waitForFunction(() => {
+    const app = document.querySelector('#app')
+    return app && '__vue_app__' in app
+  })
+  const studioLinkAgain = page.locator('aside[aria-label="小云广告之家"]:visible').getByRole('link', { name: /小云梦工坊/ })
+  await studioLinkAgain.scrollIntoViewIfNeeded()
+  await studioLinkAgain.click()
   await expect(page).toHaveURL(/\/collections\/studio\/?$/)
 })

@@ -8,6 +8,7 @@ export default defineCollection({
   cover: studioVideos['/posts/xiaoyun-studio-01-ak-ui'].cover,
   collapse: false,
   items: [
+    { title: '云食册 · 从「隔离食用手册」到原生 iOS App', link: '/posts/cook-app' },
     { title: '第 01 期 · 用 AI 复活七年前的 ak-ui', link: '/posts/xiaoyun-studio-01-ak-ui' },
   ],
 })
