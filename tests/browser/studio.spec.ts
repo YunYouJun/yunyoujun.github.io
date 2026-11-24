@@ -1,4 +1,12 @@
+import type { Page } from '@playwright/test'
 import { expect, test } from '@playwright/test'
+
+async function waitForHydration(page: Page) {
+  await page.waitForFunction(() => {
+    const app = document.querySelector('#app')
+    return Boolean(app && '__vue_app__' in app)
+  })
+}
 
 // External font stylesheets can block DOMContentLoaded; navigation tests use system fonts.
 test.beforeEach(async ({ page }) => {
@@ -85,10 +93,12 @@ test('column links to article, discloses AI, and loads video only on keyboard ac
   await page.screenshot({ path: test.info().outputPath('article.png'), fullPage: true })
   await page.getByRole('link', { name: '小云梦工坊视频专栏' }).click()
   await expect(page).toHaveURL(/\/collections\/studio\/?$/)
+  await waitForHydration(page)
   await expect(page.locator('.studio-video iframe')).toHaveCount(0)
 
   await cookCard.getByRole('link', { name: '阅读本期手记' }).click()
   await expect(page).toHaveURL(/\/posts\/cook-app\/?$/)
+  await waitForHydration(page)
   await expect(page).toHaveTitle(/云食册/)
   await expect(page.locator('.ai-disclosure button')).toHaveText('AI 生成')
   await expect(page.locator('.studio-video iframe')).toHaveCount(0)
@@ -155,10 +165,7 @@ test('collection index and legacy URL lead to the single-collection directory', 
 test('mobile collection drawer supports keyboard control without shifting its trigger', async ({ page }) => {
   await page.setViewportSize({ width: 390, height: 844 })
   await page.goto('/collections/studio/', { waitUntil: 'domcontentloaded' })
-  await page.waitForFunction(() => {
-    const app = document.querySelector('#app')
-    return app && '__vue_app__' in app
-  })
+  await waitForHydration(page)
   const directory = page.getByRole('complementary', { name: '合集目录', exact: true })
   const toggle = page.getByRole('button', { name: '合集目录', exact: true })
   await expect(toggle).toBeVisible()
@@ -189,6 +196,7 @@ test('mobile collection drawer supports keyboard control without shifting its tr
 
 test('ak-ui surfaces switch palettes with readable text and stay local to the project', async ({ page }) => {
   await page.goto('/collections/studio/', { waitUntil: 'domcontentloaded' })
+  await waitForHydration(page)
   const cookCard = page.locator('.studio-episode').first()
   await expect(cookCard).toBeVisible()
   expect(await cookCard.getAttribute('data-project-theme')).toBeNull()
