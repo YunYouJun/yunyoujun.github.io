@@ -1,12 +1,37 @@
 <script setup lang="ts">
 import type { StudioEpisode } from '../../config/studio'
-import { onMounted, shallowRef, useTemplateRef, watch } from 'vue'
+import { computed, onMounted, shallowRef, useTemplateRef, watch } from 'vue'
 import '../../styles/studio-projects.css'
 
-const props = defineProps<{ episode: StudioEpisode }>()
+const props = defineProps<{
+  episode: StudioEpisode
+  seekSeconds?: number | null
+  seekNonce?: number
+  seekLabel?: string
+}>()
 const playing = shallowRef(false)
 const coverFailed = shallowRef(false)
 const coverImage = useTemplateRef<HTMLImageElement>('coverImage')
+const activeSeekSeconds = shallowRef<number | null>(null)
+const iframeKey = shallowRef(0)
+
+function formatTimestamp(seconds: number) {
+  const safe = Math.max(0, Math.floor(seconds))
+  const mins = Math.floor(safe / 60)
+  const secs = safe % 60
+  return `${String(mins).padStart(2, '0')}:${String(secs).padStart(2, '0')}`
+}
+
+const iframeSrc = computed(() => {
+  const base = `https://player.bilibili.com/player.html?bvid=${props.episode.id}&page=1`
+  if (activeSeekSeconds.value != null)
+    return `${base}&t=${activeSeekSeconds.value}&autoplay=0`
+  return `${base}&autoplay=0`
+})
+
+const activeSeekTime = computed(() =>
+  activeSeekSeconds.value != null ? formatTimestamp(activeSeekSeconds.value) : null,
+)
 
 // An SSR image can fail before hydration attaches the error listener.
 onMounted(() => {
@@ -18,6 +43,15 @@ onMounted(() => {
 watch(() => props.episode.id, () => {
   playing.value = false
   coverFailed.value = false
+  activeSeekSeconds.value = null
+})
+
+watch(() => props.seekNonce, (nonce) => {
+  if (nonce && nonce > 0 && typeof props.seekSeconds === 'number') {
+    activeSeekSeconds.value = props.seekSeconds
+    iframeKey.value += 1
+    playing.value = true
+  }
 })
 </script>
 
@@ -26,7 +60,8 @@ watch(() => props.episode.id, () => {
     <div class="studio-video-frame">
       <iframe
         v-if="playing"
-        :src="`https://player.bilibili.com/player.html?bvid=${episode.id}&page=1&autoplay=0`"
+        :key="iframeKey"
+        :src="iframeSrc"
         :title="episode.title"
         allow="fullscreen"
         allowfullscreen
@@ -38,8 +73,21 @@ watch(() => props.episode.id, () => {
       </button>
     </div>
     <div class="studio-video-caption">
-      <span>{{ episode.duration }} · {{ playing ? '若播放受限，可前往 B 站观看' : '点击后加载 B 站播放器' }}</span>
-      <a :href="`https://www.bilibili.com/video/${episode.id}`" target="_blank" rel="noopener noreferrer">在 B 站观看 ↗</a>
+      <span>
+        {{ episode.duration }} · {{ playing ? '若播放受限，可前往 B 站观看' : '点击后加载 B 站播放器' }}
+        <template v-if="activeSeekTime">
+          · <span class="studio-video-seek" :title="seekLabel || undefined">已定位到 {{ activeSeekTime }}</span>
+        </template>
+      </span>
+      <span class="studio-video-links">
+        <a
+          v-if="activeSeekTime && activeSeekSeconds !== null"
+          :href="`https://www.bilibili.com/video/${episode.id}?t=${activeSeekSeconds}`"
+          target="_blank"
+          rel="noopener noreferrer"
+        >B 站空降 {{ activeSeekTime }} ↗</a>
+        <a :href="`https://www.bilibili.com/video/${episode.id}`" target="_blank" rel="noopener noreferrer">在 B 站观看 ↗</a>
+      </span>
     </div>
   </div>
 </template>
@@ -55,5 +103,7 @@ watch(() => props.episode.id, () => {
 .studio-video-start:focus-visible { outline: 3px solid #38bdf8; outline-offset: -4px; }
 .studio-video-fallback { padding: 24px; line-height: 1.8; align-self: start; }
 .studio-video-caption { display: flex; flex-wrap: wrap; justify-content: space-between; gap: 8px; padding-top: 10px; font-size: 12px; color: var(--va-c-text-light); }
+.studio-video-links { display: inline-flex; flex-wrap: wrap; align-items: center; gap: 12px; }
+.studio-video-seek { font-variant-numeric: tabular-nums; font-weight: 600; color: var(--va-c-text); }
 .studio-video-caption a { color: var(--va-c-primary); }
 </style>
