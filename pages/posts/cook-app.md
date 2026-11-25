@@ -41,8 +41,9 @@ const { state } = useCookArticle()
 
 <CookAppRenameStamp />
 
-目前云食册很快会上架 App Store，Android 版也在开发中。从网页到 App，菜谱和代码依然全部开源在 GitHub，欢迎点 Star、提 Issue 反馈建议，也欢迎提 PR 添一道你的拿手家常菜：
+云食册已在 App Store 上架，Android 版也在开发中。从网页到 App，菜谱和代码依然全部开源在 GitHub，欢迎点 Star、提 Issue 反馈建议，也欢迎提 PR 添一道你的拿手家常菜：
 
+- **iPhone / iPad 下载**：[App Store（中国大陆）](https://apps.apple.com/cn/app/id6824589542)
 - **App 官网**：[cook.yunle.fun](https://cook.yunle.fun)
 - **网页版**：[cook.yunyoujun.cn](https://cook.yunyoujun.cn)
 - **开源仓库**：[YunYouJun/cook](https://github.com/YunYouJun/cook)
