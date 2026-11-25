@@ -58,7 +58,11 @@ AI 时代，个人博客是否真的有意义呢？
 
 这依然是一篇新手向教程，我会尽量保持「点到为止」：讲清楚每一步在干嘛，但不会细讲安装时怎么点下一步。已经有基础的同学可以大胆跳读。
 
-当然，现在你也可以把这篇文章直接丢给 AI 助手，让它陪你一步步把站搭好。如果实际运行脚手架时界面细节略有变化，以 [Valaxy 官方文档](https://valaxy.site/zh/guide/getting-started) 为准。
+::: tip 想直接让 AI 帮你把站搭好？
+如果你已经在用 Cursor、Claude Code、Codex 或其他 AI 编程助手，可以直接跳到下方的 [AI 建站提示词](#ai-建站提示词)，复制后发给 AI，让它一步步陪你把博客搭起来并部署上线。
+:::
+
+如果实际运行脚手架时界面细节略有变化，以 [Valaxy 官方文档](https://valaxy.site/zh/guide/getting-started) 为准。
 
 > 注释处多为补充说明，对正常建站没有影响，不想看可以直接略过。
 
@@ -409,6 +413,23 @@ const count = ref(0)
 ### AI 时代的新玩法
 
 旧文写的时候，ChatGPT 还没有出现。现在写博客、改站点，很多人都会让 AI 帮一把。Valaxy 在这方面也做了一些准备，详见 [与 AI 协作](https://valaxy.site/zh/guide/work-with-ai)。
+
+#### AI 建站提示词
+
+如果你想直接让 Cursor、Claude Code、Codex 等 AI 编程助手从零陪你搭好一个 Valaxy 博客，可以直接复制下面这段提示词发给它：
+
+```text
+请帮我使用 Valaxy 从零搭建并部署一个个人博客。请按以下要求一步步协助我：
+
+1. 先检查当前环境的 Node.js（>=22.12.0）、pnpm（>=10.26.0）和 Git 是否可用；如有缺失，先指导我安装。
+2. 在动手创建或修改文件前，先向我确认以下信息：
+   - 站点名称、副标题、作者昵称、个人简介与站点域名/目标 URL
+   - 目标项目目录名（如直接部署到 GitHub Pages 根路径，通常为 `<用户名>.github.io`）
+   - 首选部署平台（GitHub Pages / Netlify / Vercel / Cloudflare Pages）
+3. 使用 `pnpm create valaxy@latest` 创建 Blog 类型（Yun 主题）项目，安装依赖前先确认 `pnpm-workspace.yaml` 保留完整；创建后先阅读项目自带的 `AGENTS.md`（如有需要可参考 Valaxy 官方文档或 `npx skills add YunYouJun/valaxy`）。
+4. 仅修改我确认过的内容：更新 `site.config.ts`、`valaxy.config.ts`，并帮我写好第一篇测试文章与 `<!-- more -->` 摘要分隔线。
+5. 启动 `pnpm dev` 带我本地预览确认效果后，再运行 `pnpm build` 验证构建，并一步步指导我完成 Git 推送与对应平台（如 GitHub Pages Actions）部署配置。
+```
 
 #### AGENTS.md：给 AI 看的说明书
 
