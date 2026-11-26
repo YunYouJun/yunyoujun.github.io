@@ -3,7 +3,8 @@ minimumReleaseAgeExclude:
   - '@valaxyjs/utils@1.6.0'
   - valaxy-theme-yun@1.6.0
   - valaxy@1.6.0
-  - valaxy-addon-girls@0.1.0
+  - valaxy-addon-girls@0.1.1
+  - valaxy-addon-waline@0.2.2
   - eslint@10.9.1
 shamefullyHoist: true
 shellEmulator: true
@@ -12,7 +13,6 @@ trustPolicy: no-downgrade
 trustPolicyExclude:
   - semver@6.3.1
   - valaxy-addon-components@0.1.0
-  - valaxy-addon-waline@0.2.1
 packages:
   - .
 overrides:

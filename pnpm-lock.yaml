@@ -223,11 +223,11 @@ importers:
         specifier: ^0.1.0
         version: 0.1.0
       valaxy-addon-girls:
-        specifier: ^0.1.0
-        version: 0.1.0(valaxy@1.6.0(@devframes/agentic@1.2.5)(@nuxt/kit@3.21.8(magicast@0.5.5))(@oxc-project/types@0.156.0)(@types/markdown-it@14.1.2)(@types/node@26.1.0)(@vue/devtools-api@8.1.5)(cac@7.1.0)(change-case@5.4.4)(crossws@0.4.17(srvx@1.0.8))(esbuild@0.28.1)(lightningcss@1.33.0)(oxc-parser@0.153.0)(rolldown@1.2.18)(srvx@1.0.8)(terser@5.43.1)(tsx@4.23.15)(typescript@6.0.3)(vue-router@5.3.1(@vue/compiler-sfc@3.5.46)(esbuild@0.28.1)(pinia@4.0.3(@vue/devtools-api@8.1.5)(typescript@6.0.3)(vue@3.5.46(typescript@6.0.3)))(rolldown@1.2.18)(vite@8.3.8)(vue@3.5.46(typescript@6.0.3)))(vue@3.5.46(typescript@6.0.3))(yaml@2.9.0))(vue-i18n@11.4.23(vue@3.5.46(typescript@6.0.3)))(vue@3.5.46(typescript@6.0.3))
+        specifier: ^0.1.1
+        version: 0.1.1(valaxy@1.6.0(@devframes/agentic@1.2.5)(@nuxt/kit@3.21.8(magicast@0.5.5))(@oxc-project/types@0.156.0)(@types/markdown-it@14.1.2)(@types/node@26.1.0)(@vue/devtools-api@8.1.5)(cac@7.1.0)(change-case@5.4.4)(crossws@0.4.17(srvx@1.0.8))(esbuild@0.28.1)(lightningcss@1.33.0)(oxc-parser@0.153.0)(rolldown@1.2.18)(srvx@1.0.8)(terser@5.43.1)(tsx@4.23.15)(typescript@6.0.3)(vue-router@5.3.1(@vue/compiler-sfc@3.5.46)(esbuild@0.28.1)(pinia@4.0.3(@vue/devtools-api@8.1.5)(typescript@6.0.3)(vue@3.5.46(typescript@6.0.3)))(rolldown@1.2.18)(vite@8.3.8)(vue@3.5.46(typescript@6.0.3)))(vue@3.5.46(typescript@6.0.3))(yaml@2.9.0))(vue-i18n@11.4.23(vue@3.5.46(typescript@6.0.3)))(vue@3.5.46(typescript@6.0.3))
       valaxy-addon-waline:
-        specifier: ^0.2.1
-        version: 0.2.1(typescript@6.0.3)(valaxy@1.6.0(@devframes/agentic@1.2.5)(@nuxt/kit@3.21.8(magicast@0.5.5))(@oxc-project/types@0.156.0)(@types/markdown-it@14.1.2)(@types/node@26.1.0)(@vue/devtools-api@8.1.5)(cac@7.1.0)(change-case@5.4.4)(crossws@0.4.17(srvx@1.0.8))(esbuild@0.28.1)(lightningcss@1.33.0)(oxc-parser@0.153.0)(rolldown@1.2.18)(srvx@1.0.8)(terser@5.43.1)(tsx@4.23.15)(typescript@6.0.3)(vue-router@5.3.1(@vue/compiler-sfc@3.5.46)(esbuild@0.28.1)(pinia@4.0.3(@vue/devtools-api@8.1.5)(typescript@6.0.3)(vue@3.5.46(typescript@6.0.3)))(rolldown@1.2.18)(vite@8.3.8)(vue@3.5.46(typescript@6.0.3)))(vue@3.5.46(typescript@6.0.3))(yaml@2.9.0))
+        specifier: ^0.2.2
+        version: 0.2.2(typescript@6.0.3)(valaxy@1.6.0(@devframes/agentic@1.2.5)(@nuxt/kit@3.21.8(magicast@0.5.5))(@oxc-project/types@0.156.0)(@types/markdown-it@14.1.2)(@types/node@26.1.0)(@vue/devtools-api@8.1.5)(cac@7.1.0)(change-case@5.4.4)(crossws@0.4.17(srvx@1.0.8))(esbuild@0.28.1)(lightningcss@1.33.0)(oxc-parser@0.153.0)(rolldown@1.2.18)(srvx@1.0.8)(terser@5.43.1)(tsx@4.23.15)(typescript@6.0.3)(vue-router@5.3.1(@vue/compiler-sfc@3.5.46)(esbuild@0.28.1)(pinia@4.0.3(@vue/devtools-api@8.1.5)(typescript@6.0.3)(vue@3.5.46(typescript@6.0.3)))(rolldown@1.2.18)(vite@8.3.8)(vue@3.5.46(typescript@6.0.3)))(vue@3.5.46(typescript@6.0.3))(yaml@2.9.0))
       valaxy-theme-yun:
         specifier: ^1.6.0
         version: 1.6.0(magicast@0.5.5)(valaxy@1.6.0(@devframes/agentic@1.2.5)(@nuxt/kit@3.21.8(magicast@0.5.5))(@oxc-project/types@0.156.0)(@types/markdown-it@14.1.2)(@types/node@26.1.0)(@vue/devtools-api@8.1.5)(cac@7.1.0)(change-case@5.4.4)(crossws@0.4.17(srvx@1.0.8))(esbuild@0.28.1)(lightningcss@1.33.0)(oxc-parser@0.153.0)(rolldown@1.2.18)(srvx@1.0.8)(terser@5.43.1)(tsx@4.23.15)(typescript@6.0.3)(vue-router@5.3.1(@vue/compiler-sfc@3.5.46)(esbuild@0.28.1)(pinia@4.0.3(@vue/devtools-api@8.1.5)(typescript@6.0.3)(vue@3.5.46(typescript@6.0.3)))(rolldown@1.2.18)(vite@8.3.8)(vue@3.5.46(typescript@6.0.3)))(vue@3.5.46(typescript@6.0.3))(yaml@2.9.0))(vue-i18n@11.4.23(vue@3.5.46(typescript@6.0.3)))(vue@3.5.46(typescript@6.0.3))
@@ -1624,9 +1624,6 @@ packages:
   '@types/unist@3.0.3':
     resolution: {integrity: sha512-ko/gIFJRv177XgZsZcBwnqJN5x/Gien8qNOn0D5bQU/zAzVf9Zt3BlcUiLqhV9y4ARk0GbT3tnUiPNgnTXzc/Q==}
 
-  '@types/web-bluetooth@0.0.20':
-    resolution: {integrity: sha512-g9gZnnXVq7gM7v3tJCWV/qw7w+KeOlSHAhgF9RytFyifW6AF61hdT2ucrYhPq9hLs5JIryeupHV3qGk95dH9ow==}
-
   '@types/web-bluetooth@0.0.21':
     resolution: {integrity: sha512-oIQLCGWtcFZy2JW77j9k8nHzAOpqMHLQejDA48XXMWH6tjCQHz5RCFz1bzsmROyL6PUm+LLnUiI4BCn221inxA==}
 
@@ -1993,9 +1990,6 @@ packages:
   '@vue/shared@3.5.46':
     resolution: {integrity: sha512-P1WePbdzHrcIciWtmY2Im9EFhdakd3rZxYqvalOa3SfoxtF35Q8Uhmj1tKn6bWP4utcOpN8ao6BoJUItq0Uf+g==}
 
-  '@vueuse/core@12.0.0':
-    resolution: {integrity: sha512-C12RukhXiJCbx4MGhjmd/gH52TjJsc3G0E0kQj/kb19H3Nt6n1CA4DRWuTdWWcaFRdlTe0npWDS942mvacvNBw==}
-
   '@vueuse/core@13.9.0':
     resolution: {integrity: sha512-ts3regBQyURfCE2BcytLqzm8+MmLlo5Ln/KLoxDVcsZ2gzIwVNnQpQOL/UKV8alUqjSZOlpFZcRNsLRqj+OzyA==}
     peerDependencies:
@@ -2055,9 +2049,6 @@ packages:
       universal-cookie:
         optional: true
 
-  '@vueuse/metadata@12.0.0':
-    resolution: {integrity: sha512-Yzimd1D3sjxTDOlF05HekU5aSGdKjxhuhRFHA7gDWLn57PRbBIh+SF5NmjhJ0WRgF3my7T8LBucyxdFJjIfRJQ==}
-
   '@vueuse/metadata@13.9.0':
     resolution: {integrity: sha512-1AFRvuiGphfF7yWixZa0KwjYH8ulyjDCC0aFgrGRz8+P4kvDFSdXLVfTk5xAN9wEuD1J6z4/myMoYbnHoX07zg==}
 
@@ -2072,9 +2063,6 @@ packages:
     resolution: {integrity: sha512-4B+ITsxCI9cojikvrpaJcLXyq0spj3sdlzXjzesWdMRd99hhtFI6OJ/1JsqwtF73YooLe0hUn/xDR6qCtmn5GQ==}
     peerDependencies:
       vue: '>=3.0.0'
-
-  '@vueuse/shared@12.0.0':
-    resolution: {integrity: sha512-3i6qtcq2PIio5i/vVYidkkcgvmTjCqrf26u+Fd4LhnbBmIT6FN8y6q/GJERp8lfcB9zVEfjdV0Br0443qZuJpw==}
 
   '@vueuse/shared@13.9.0':
     resolution: {integrity: sha512-e89uuTLMh0U5cZ9iDpEI2senqPGfbPRTHM/0AaQkcxnpqjkZqDYP8rpfm7edOz8s+pOCOROEy1PIveSW8+fL5g==}
@@ -2092,13 +2080,16 @@ packages:
     peerDependencies:
       vue: ^3.5.0
 
-  '@waline/api@1.0.0-alpha.8':
-    resolution: {integrity: sha512-S6pgUUfv+gcXU3hiW3PNUwiUvPy7bXmmLB/bwdU3hN5YVT5Q7CxyVSLA3oJkrNO5lcisKK1GBPv0H2W1uB0eGA==}
-    engines: {node: '>=18'}
+  '@waline/api@1.1.2':
+    resolution: {integrity: sha512-r1H+XL+/Ww4qXv8vjq09HJQtMvYqMofgfueuokgsDW1kJ9/6CYY7g6LkksYlDJmWm0aqkLR/9ZTI/bbozL4FBA==}
+    engines: {node: '>=22'}
 
-  '@waline/client@3.4.1':
-    resolution: {integrity: sha512-BnqW45kWzFowAaHzrpDQhOlRLXT6e9v1v45nzO6R1jyNoTu/BcbFyPdzY83NejAtGwTDjFnX5R5lBOBh95m7pQ==}
-    engines: {node: '>=18'}
+  '@waline/client@3.16.2':
+    resolution: {integrity: sha512-KXv1rHtCiqRckib5UnSIdk3y5up8Ugw3/723BMUuMM4sH66WFUuTD6z1RoRHQ+BlGr/6YgQ45GIVQnNrUFyzlw==}
+    engines: {node: '>=22'}
+
+  '@webc.site/math@0.1.41':
+    resolution: {integrity: sha512-Tev02lqJLaEO+MNMq74lWpzuNZT/8bp2rSSzyDJR/u2ovh1jI3bW5HVveGILVKK+7Owf48KaUG9pd35BNf9mrw==}
 
   '@yunyoujun/sponsors@0.0.4':
     resolution: {integrity: sha512-9HP1wPRvIIL1zOQyuTExLgfVRT2ukWNIgDZZFlxxTiMnYiduauBrm6crnyBy/QYpJlEYOII6Mi0yZcX7bH89jg==}
@@ -3311,9 +3302,9 @@ packages:
     peerDependencies:
       marked: '>=4 <19'
 
-  marked@15.0.12:
-    resolution: {integrity: sha512-8dD6FusOQSrpv9Z1rdNMdlSgQOIP880DHqnohobOmYLElGEqAL/JvxvuxZO16r4HtjTlfPRDC1hbvxC9dPN2nA==}
-    engines: {node: '>= 18'}
+  marked@18.3.0:
+    resolution: {integrity: sha512-ed8zmPXlBb3UfGXN5iHMQyMhFpdqLgoV5umUXx/Q1R+FW3q8VpqpyoKUwlENL9appo2UMvNLURDVaT3AMOryGA==}
+    engines: {node: '>= 20'}
     hasBin: true
 
   md5@2.3.0:
@@ -4186,8 +4177,15 @@ packages:
       vue: ^3.5.0
       vue-i18n: ^11.0.0
 
-  valaxy-addon-waline@0.2.1:
-    resolution: {integrity: sha512-A95cnjyAsdypP/QJWIYbfqPyCOhGeMcbFfqSZnJxdAutUdgHH3gQBRrUM6G+/4KR6YHYmk2thNrpGRlGC6CWLg==}
+  valaxy-addon-girls@0.1.1:
+    resolution: {integrity: sha512-LFBfzu5qHtpW6xLgrI3RSK+qEaYb+8NTtIhm0rtmI4oghzM5XpzVB/02pOBA++/8TPv36/dAlt6YL0gd+EsMIg==}
+    peerDependencies:
+      valaxy: '>=1.0.0-rc.2'
+      vue: ^3.5.0
+      vue-i18n: ^11.0.0
+
+  valaxy-addon-waline@0.2.2:
+    resolution: {integrity: sha512-s4/YKzIPk2UYGRqLCU9B+8YvM2zsC5jKggapeTPKWUeJjtndP6c5VBrz8JIE63N9KTq+ZQ1sG9dWcgxZvdH9gA==}
     peerDependencies:
       valaxy: '>=0.22'
 
@@ -5702,8 +5700,6 @@ snapshots:
 
   '@types/unist@3.0.3': {}
 
-  '@types/web-bluetooth@0.0.20': {}
-
   '@types/web-bluetooth@0.0.21': {}
 
   '@typescript-eslint/eslint-plugin@8.67.0(@typescript-eslint/parser@8.67.0(eslint@10.9.1(jiti@2.7.0))(typescript@6.0.3))(eslint@10.9.1(jiti@2.7.0))(typescript@6.0.3)':
@@ -6303,15 +6299,6 @@ snapshots:
 
   '@vue/shared@3.5.46': {}
 
-  '@vueuse/core@12.0.0(typescript@6.0.3)':
-    dependencies:
-      '@types/web-bluetooth': 0.0.20
-      '@vueuse/metadata': 12.0.0
-      '@vueuse/shared': 12.0.0(typescript@6.0.3)
-      vue: 3.5.46(typescript@6.0.3)
-    transitivePeerDependencies:
-      - typescript
-
   '@vueuse/core@13.9.0(vue@3.5.46(typescript@6.0.3))':
     dependencies:
       '@types/web-bluetooth': 0.0.21
@@ -6344,8 +6331,6 @@ snapshots:
       nprogress: 0.2.0
       qrcode: 1.5.4
 
-  '@vueuse/metadata@12.0.0': {}
-
   '@vueuse/metadata@13.9.0': {}
 
   '@vueuse/metadata@14.3.0': {}
@@ -6366,12 +6351,6 @@ snapshots:
     transitivePeerDependencies:
       - magicast
 
-  '@vueuse/shared@12.0.0(typescript@6.0.3)':
-    dependencies:
-      vue: 3.5.46(typescript@6.0.3)
-    transitivePeerDependencies:
-      - typescript
-
   '@vueuse/shared@13.9.0(vue@3.5.46(typescript@6.0.3))':
     dependencies:
       vue: 3.5.46(typescript@6.0.3)
@@ -6384,19 +6363,22 @@ snapshots:
     dependencies:
       vue: 3.5.46(typescript@6.0.3)
 
-  '@waline/api@1.0.0-alpha.8': {}
+  '@waline/api@1.1.2': {}
 
-  '@waline/client@3.4.1(typescript@6.0.3)':
+  '@waline/client@3.16.2(typescript@6.0.3)':
     dependencies:
-      '@vueuse/core': 12.0.0(typescript@6.0.3)
-      '@waline/api': 1.0.0-alpha.8
+      '@vueuse/core': 15.0.0(vue@3.5.46(typescript@6.0.3))
+      '@waline/api': 1.1.2
+      '@webc.site/math': 0.1.41
       autosize: 6.0.1
-      marked: 15.0.12
-      marked-highlight: 2.2.4(marked@15.0.12)
+      marked: 18.3.0
+      marked-highlight: 2.2.4(marked@18.3.0)
       recaptcha-v3: 1.11.3
       vue: 3.5.46(typescript@6.0.3)
     transitivePeerDependencies:
       - typescript
+
+  '@webc.site/math@0.1.41': {}
 
   '@yunyoujun/sponsors@0.0.4': {}
 
@@ -7593,11 +7575,11 @@ snapshots:
 
   markdown-table@3.0.4: {}
 
-  marked-highlight@2.2.4(marked@15.0.12):
+  marked-highlight@2.2.4(marked@18.3.0):
     dependencies:
-      marked: 15.0.12
+      marked: 18.3.0
 
-  marked@15.0.12: {}
+  marked@18.3.0: {}
 
   md5@2.3.0:
     dependencies:
@@ -8717,9 +8699,15 @@ snapshots:
       vue: 3.5.46(typescript@6.0.3)
       vue-i18n: 11.4.23(vue@3.5.46(typescript@6.0.3))
 
-  valaxy-addon-waline@0.2.1(typescript@6.0.3)(valaxy@1.6.0(@devframes/agentic@1.2.5)(@nuxt/kit@3.21.8(magicast@0.5.5))(@oxc-project/types@0.156.0)(@types/markdown-it@14.1.2)(@types/node@26.1.0)(@vue/devtools-api@8.1.5)(cac@7.1.0)(change-case@5.4.4)(crossws@0.4.17(srvx@1.0.8))(esbuild@0.28.1)(lightningcss@1.33.0)(oxc-parser@0.153.0)(rolldown@1.2.18)(srvx@1.0.8)(terser@5.43.1)(tsx@4.23.15)(typescript@6.0.3)(vue-router@5.3.1(@vue/compiler-sfc@3.5.46)(esbuild@0.28.1)(pinia@4.0.3(@vue/devtools-api@8.1.5)(typescript@6.0.3)(vue@3.5.46(typescript@6.0.3)))(rolldown@1.2.18)(vite@8.3.8)(vue@3.5.46(typescript@6.0.3)))(vue@3.5.46(typescript@6.0.3))(yaml@2.9.0)):
+  valaxy-addon-girls@0.1.1(valaxy@1.6.0(@devframes/agentic@1.2.5)(@nuxt/kit@3.21.8(magicast@0.5.5))(@oxc-project/types@0.156.0)(@types/markdown-it@14.1.2)(@types/node@26.1.0)(@vue/devtools-api@8.1.5)(cac@7.1.0)(change-case@5.4.4)(crossws@0.4.17(srvx@1.0.8))(esbuild@0.28.1)(lightningcss@1.33.0)(oxc-parser@0.153.0)(rolldown@1.2.18)(srvx@1.0.8)(terser@5.43.1)(tsx@4.23.15)(typescript@6.0.3)(vue-router@5.3.1(@vue/compiler-sfc@3.5.46)(esbuild@0.28.1)(pinia@4.0.3(@vue/devtools-api@8.1.5)(typescript@6.0.3)(vue@3.5.46(typescript@6.0.3)))(rolldown@1.2.18)(vite@8.3.8)(vue@3.5.46(typescript@6.0.3)))(vue@3.5.46(typescript@6.0.3))(yaml@2.9.0))(vue-i18n@11.4.23(vue@3.5.46(typescript@6.0.3)))(vue@3.5.46(typescript@6.0.3)):
     dependencies:
-      '@waline/client': 3.4.1(typescript@6.0.3)
+      valaxy: 1.6.0(@devframes/agentic@1.2.5)(@nuxt/kit@3.21.8(magicast@0.5.5))(@oxc-project/types@0.156.0)(@types/markdown-it@14.1.2)(@types/node@26.1.0)(@vue/devtools-api@8.1.5)(cac@7.1.0)(change-case@5.4.4)(crossws@0.4.17(srvx@1.0.8))(esbuild@0.28.1)(lightningcss@1.33.0)(oxc-parser@0.153.0)(rolldown@1.2.18)(srvx@1.0.8)(terser@5.43.1)(tsx@4.23.15)(typescript@6.0.3)(vue-router@5.3.1(@vue/compiler-sfc@3.5.46)(esbuild@0.28.1)(pinia@4.0.3(@vue/devtools-api@8.1.5)(typescript@6.0.3)(vue@3.5.46(typescript@6.0.3)))(rolldown@1.2.18)(vite@8.3.8)(vue@3.5.46(typescript@6.0.3)))(vue@3.5.46(typescript@6.0.3))(yaml@2.9.0)
+      vue: 3.5.46(typescript@6.0.3)
+      vue-i18n: 11.4.23(vue@3.5.46(typescript@6.0.3))
+
+  valaxy-addon-waline@0.2.2(typescript@6.0.3)(valaxy@1.6.0(@devframes/agentic@1.2.5)(@nuxt/kit@3.21.8(magicast@0.5.5))(@oxc-project/types@0.156.0)(@types/markdown-it@14.1.2)(@types/node@26.1.0)(@vue/devtools-api@8.1.5)(cac@7.1.0)(change-case@5.4.4)(crossws@0.4.17(srvx@1.0.8))(esbuild@0.28.1)(lightningcss@1.33.0)(oxc-parser@0.153.0)(rolldown@1.2.18)(srvx@1.0.8)(terser@5.43.1)(tsx@4.23.15)(typescript@6.0.3)(vue-router@5.3.1(@vue/compiler-sfc@3.5.46)(esbuild@0.28.1)(pinia@4.0.3(@vue/devtools-api@8.1.5)(typescript@6.0.3)(vue@3.5.46(typescript@6.0.3)))(rolldown@1.2.18)(vite@8.3.8)(vue@3.5.46(typescript@6.0.3)))(vue@3.5.46(typescript@6.0.3))(yaml@2.9.0)):
+    dependencies:
+      '@waline/client': 3.16.2(typescript@6.0.3)
       valaxy: 1.6.0(@devframes/agentic@1.2.5)(@nuxt/kit@3.21.8(magicast@0.5.5))(@oxc-project/types@0.156.0)(@types/markdown-it@14.1.2)(@types/node@26.1.0)(@vue/devtools-api@8.1.5)(cac@7.1.0)(change-case@5.4.4)(crossws@0.4.17(srvx@1.0.8))(esbuild@0.28.1)(lightningcss@1.33.0)(oxc-parser@0.153.0)(rolldown@1.2.18)(srvx@1.0.8)(terser@5.43.1)(tsx@4.23.15)(typescript@6.0.3)(vue-router@5.3.1(@vue/compiler-sfc@3.5.46)(esbuild@0.28.1)(pinia@4.0.3(@vue/devtools-api@8.1.5)(typescript@6.0.3)(vue@3.5.46(typescript@6.0.3)))(rolldown@1.2.18)(vite@8.3.8)(vue@3.5.46(typescript@6.0.3)))(vue@3.5.46(typescript@6.0.3))(yaml@2.9.0)
     transitivePeerDependencies:
       - typescript
