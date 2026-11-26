@@ -11,6 +11,33 @@ async function waitForHydration(page: Page) {
 // External font stylesheets can block DOMContentLoaded; navigation tests use system fonts.
 test.beforeEach(async ({ page }) => {
   await page.route('https://fonts.googleapis.com/**', route => route.fulfill({ contentType: 'text/css', body: '' }))
+  await page.route('https://waline.yunyoujun.cn/**', (route) => {
+    const url = route.request().url()
+    if (url.includes('/api/comment') && url.includes('type=count')) {
+      return route.fulfill({
+        contentType: 'application/json',
+        body: JSON.stringify({ errno: 0, errmsg: '', data: [0] }),
+      })
+    }
+    if (url.includes('/api/article')) {
+      return route.fulfill({
+        contentType: 'application/json',
+        body: JSON.stringify({ errno: 0, errmsg: '', data: [{ time: 0 }] }),
+      })
+    }
+    return route.fulfill({
+      contentType: 'application/json',
+      body: JSON.stringify({
+        errno: 0,
+        errmsg: '',
+        data: { data: [], count: 0, totalPages: 1, page: 1, pageSize: 10 },
+      }),
+    })
+  })
+  await page.route('https://unpkg.com/**', route => route.fulfill({
+    contentType: 'application/json',
+    body: JSON.stringify({ name: 'emoji', folder: '', icon: 'smile', prefix: '', type: 'png', items: [] }),
+  }))
 })
 
 test('column links to article, discloses AI, and loads video only on keyboard activation', async ({ page, isMobile }) => {
@@ -49,6 +76,7 @@ test('column links to article, discloses AI, and loads video only on keyboard ac
   await akCard.getByRole('link', { name: '阅读本期手记' }).click()
   await expect(page).toHaveURL(/\/posts\/xiaoyun-studio-01-ak-ui/)
   await expect(page).toHaveTitle(/小云梦工坊 #01/)
+  await expect(page.locator('html')).not.toHaveClass(/yun-route-transition/)
   const disclosure = page.locator('.ai-disclosure')
   await expect(disclosure.locator('button')).toHaveText('AI 生成')
   await expect(disclosure.locator('svg[aria-hidden="true"]')).toBeVisible()
