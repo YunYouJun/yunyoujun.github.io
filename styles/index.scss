@@ -19,6 +19,12 @@
   }
 }
 
+:where(.markdown-body .not-prose) img {
+  margin: 0;
+  border-radius: 0;
+  box-shadow: none;
+}
+
 /* Inline tech stack links with a leading icon (works in both post body and home excerpt). */
 .markdown-body a:has(> .inline-tech-icon) {
   white-space: nowrap;

@@ -401,6 +401,9 @@ function handleDividerKeydown(event: KeyboardEvent) {
   display: block;
   width: 1rem;
   height: 1rem;
+  margin: 0;
+  border-radius: 0;
+  box-shadow: none;
   pointer-events: none;
   user-select: none;
 }

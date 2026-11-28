@@ -154,6 +154,7 @@ function handleKeydown(event: KeyboardEvent, index: number) {
 .vg-stack-pills {
   display: flex;
   flex-wrap: wrap;
+  align-items: center;
   gap: 0.42rem;
 }
 
@@ -168,6 +169,9 @@ function handleKeydown(event: KeyboardEvent, index: number) {
   flex: none;
   width: 0.95rem;
   height: 0.95rem;
+  margin: 0;
+  border-radius: 0;
+  box-shadow: none;
   object-fit: contain;
   pointer-events: none;
   user-select: none;

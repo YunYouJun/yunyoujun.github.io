@@ -152,10 +152,27 @@ test('tutorial guide components render and work end-to-end without console error
   }
 
   // 0. Tech stack pills + Valaxy logo pointer-events check
-  const stackLogoPointerEvents = await stack.locator('.vg-stack-img').evaluate(
-    el => window.getComputedStyle(el).pointerEvents,
-  )
-  expect(stackLogoPointerEvents).toBe('none')
+  const stackLogoStyles = await stack.locator('.vg-stack-img').evaluate((el) => {
+    const cs = window.getComputedStyle(el)
+    return {
+      pointerEvents: cs.pointerEvents,
+      marginTop: cs.marginTop,
+      marginBottom: cs.marginBottom,
+      boxShadow: cs.boxShadow,
+    }
+  })
+  expect(stackLogoStyles).toEqual({
+    pointerEvents: 'none',
+    marginTop: '0px',
+    marginBottom: '0px',
+    boxShadow: 'none',
+  })
+  const valaxyBox = await stack.getByRole('tab', { name: 'Valaxy' }).boundingBox()
+  const mcpBox = await stack.getByRole('tab', { name: 'MCP' }).boundingBox()
+  expect(valaxyBox).not.toBeNull()
+  expect(mcpBox).not.toBeNull()
+  expect(Math.abs(valaxyBox!.height - mcpBox!.height)).toBeLessThanOrEqual(1)
+  expect(valaxyBox!.height).toBeLessThanOrEqual(48)
   await stack.getByRole('tab', { name: 'Vue 3' }).click()
   await expect(stack.locator('.vg-stack-note')).toContainText('交互组件体系')
 
@@ -280,10 +297,21 @@ test('tutorial guide components render and work end-to-end without console error
   await flow.getByRole('button', { name: /模拟整页刷新/ }).click()
   await expect(counterBtn).toContainText('Count: 0')
 
-  const logoPointerEvents = await flow.locator('.vg-flow-logo img').evaluate(
-    el => window.getComputedStyle(el).pointerEvents,
-  )
-  expect(logoPointerEvents).toBe('none')
+  const flowLogoStyles = await flow.locator('.vg-flow-logo img').evaluate((el) => {
+    const cs = window.getComputedStyle(el)
+    return {
+      pointerEvents: cs.pointerEvents,
+      marginTop: cs.marginTop,
+      marginBottom: cs.marginBottom,
+      boxShadow: cs.boxShadow,
+    }
+  })
+  expect(flowLogoStyles).toEqual({
+    pointerEvents: 'none',
+    marginTop: '0px',
+    marginBottom: '0px',
+    boxShadow: 'none',
+  })
 
   await flow.getByRole('tab', { name: /<!-- more --> 摘要裁剪/ }).click()
   await flow.getByRole('button', { name: '把 <!-- more --> 移到第 1 段后面' }).click()
